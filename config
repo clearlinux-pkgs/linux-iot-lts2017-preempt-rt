@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 4.14.71 Kernel Configuration
+# Linux/x86 4.14.93 Kernel Configuration
 #
 CONFIG_64BIT=y
 CONFIG_X86_64=y
@@ -1352,6 +1352,7 @@ CONFIG_NET_SCH_SFQ=m
 # CONFIG_NET_SCH_TBF is not set
 # CONFIG_NET_SCH_CBS is not set
 # CONFIG_NET_SCH_ETF is not set
+# CONFIG_NET_SCH_TAPRIO is not set
 # CONFIG_NET_SCH_GRED is not set
 # CONFIG_NET_SCH_DSMARK is not set
 # CONFIG_NET_SCH_NETEM is not set
@@ -2726,6 +2727,7 @@ CONFIG_RPMB=y
 CONFIG_RPMB_INTF_DEV=y
 CONFIG_RPMB_SIM=m
 # CONFIG_VIRTIO_RPMB is not set
+# CONFIG_RPMB_MUX is not set
 
 #
 # I2C support
@@ -3591,6 +3593,7 @@ CONFIG_VIDEO_SMIAPP=m
 # CONFIG_VIDEO_AD5816G is not set
 # CONFIG_VIDEO_VCM_STUB is not set
 # CONFIG_VIDEO_TI964 is not set
+# CONFIG_VIDEO_TI960 is not set
 # CONFIG_VIDEO_AS3638 is not set
 
 #
@@ -6369,7 +6372,3 @@ CONFIG_ARCH_HAS_PMEM_API=y
 CONFIG_ARCH_HAS_UACCESS_FLUSHCACHE=y
 CONFIG_SBITMAP=y
 # CONFIG_STRING_SELFTEST is not set
-
-# kernel-config sources:
-# FILEVER=/usr/share/kernel-config/base-4.14-3-8
-# FILEVER=/usr/share/kernel-config/mandatory-4.14-3-8
