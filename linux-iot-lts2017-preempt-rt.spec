@@ -23,6 +23,8 @@ Requires: systemd-bin
 %define debug_package %{nil}
 %define __strip /bin/true
 
+# kernel-lts-quilt: lts-v4.14.74-preempt-rt-181008T180856Z
+
 # PK XXXX: Series
 Patch0001: 0001-rtmutex-Make-rt_mutex_futex_unlock-safe-for-irq-off-.patch
 Patch0002: 0002-rcu-Suppress-lockdep-false-positive-boost_mtx-compla.patch
