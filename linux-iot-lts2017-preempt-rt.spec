@@ -2,7 +2,7 @@
 
 Name:           linux-iot-lts2017-preempt-rt
 Version:        4.14.93
-Release:        2
+Release:        3
 License:        GPL-2.0
 Summary:        The Linux kernel
 Url:            http://www.kernel.org/
@@ -2307,6 +2307,7 @@ Patch2278: 2278-net-sched-fix-build-issue-on-sch_taprio-file.patch
 
 # Bug fixes
 Patch8001: 8001-add-include-irq-h-vmbus_drv.patch
+Patch8002: 8002-cpu-intel-rdt-update-cpus_allowed.patch
 
 # Clear Linux patch
 # needs to add to PK series
@@ -4607,6 +4608,7 @@ Linux kernel extra files
 # End XXXX PK Series
 
 %patch8001 -p1
+%patch8002 -p1
 
 %patch9001 -p1
 
