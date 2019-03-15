@@ -23,7 +23,9 @@ Requires: systemd-bin
 %define debug_package %{nil}
 %define __strip /bin/true
 
-# kernel-lts-quilt: lts-v4.14.93-preempt-rt-190123T184244Z
+# quilt.url: https://github.com/intel/linux-intel-quilt
+# quilt.branch: 4.14/preempt-rt
+# quilt.tag:  lts-v4.14.93-preempt-rt-190123T184244Z
 
 # PK XXXX: Series
 Patch0001: 0001-rtmutex-Make-rt_mutex_futex_unlock-safe-for-irq-off-.patch
