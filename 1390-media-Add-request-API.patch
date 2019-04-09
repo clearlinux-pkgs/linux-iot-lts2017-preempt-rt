@@ -1,7 +1,7 @@
-From 915a703cfb976b008f8c9ff03bb83d3ef01205a4 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: wu xia <xia.wu@intel.com>
 Date: Tue, 3 Nov 2015 08:02:06 +0200
-Subject: [PATCH 1390/2278] media: Add request API
+Subject: [PATCH] media: Add request API
 
 The request API allows bundling media device parameters with request
 objects and applying them atomically, either synchronously or
@@ -10,8 +10,8 @@ asynchronously.
 Signed-off-by: Sakari Ailus <sakari.ailus@linux.intel.com>
 Signed-off-by: wu xia <xia.wu@intel.com>
 ---
- drivers/media/media-device.c | 233 +++++++++++++++++++++++++++++++++++++++++--
- include/media/media-device.h |  43 ++++++++
+ drivers/media/media-device.c | 233 +++++++++++++++++++++++++++++++++--
+ include/media/media-device.h |  43 +++++++
  include/uapi/linux/media.h   |  11 ++
  3 files changed, 280 insertions(+), 7 deletions(-)
 
@@ -27,10 +27,11 @@ index 4af75d7..2469ca5 100644
  };
  
  static inline struct media_device_fh *media_device_fh(struct file *filp)
-@@ -44,6 +45,192 @@ static inline struct media_device_fh *media_device_fh(struct file *filp)
+@@ -43,6 +44,192 @@ static inline struct media_device_fh *media_device_fh(struct file *filp)
+ 	return container_of(filp->private_data, struct media_device_fh, fh);
  }
  
- /* -----------------------------------------------------------------------------
++/* -----------------------------------------------------------------------------
 + * Requests
 + */
 +
@@ -216,10 +217,9 @@ index 4af75d7..2469ca5 100644
 +	return 0;
 +}
 +
-+/* -----------------------------------------------------------------------------
+ /* -----------------------------------------------------------------------------
   * Userspace API
   */
- 
 @@ -60,6 +247,7 @@ static int media_device_open(struct file *filp)
  	if (!fh)
  		return -ENOMEM;
@@ -475,5 +475,5 @@ index b9b9446..ed44c41 100644
  
  #endif /* __LINUX_MEDIA_H */
 -- 
-2.7.4
+https://clearlinux.org
 

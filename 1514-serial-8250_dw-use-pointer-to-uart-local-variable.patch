@@ -1,7 +1,7 @@
-From 90737a9b1ed63e32eb0e552f822296106bc88526 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
 Date: Thu, 17 Nov 2016 12:35:00 +0200
-Subject: [PATCH 1514/2278] serial: 8250_dw: use pointer to uart local variable
+Subject: [PATCH] serial: 8250_dw: use pointer to uart local variable
 
 The use of pointer will simplify enabling runtime PM for the driver.
 
@@ -41,5 +41,5 @@ index 3209d47..e5324d0 100644
  		err = data->line;
  		goto err_reset;
 -- 
-2.7.4
+https://clearlinux.org
 

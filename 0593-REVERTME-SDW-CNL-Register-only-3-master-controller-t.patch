@@ -1,8 +1,7 @@
-From 0270340cca7081da4bb9bec7eaf1530ec8f62ea5 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Hardik T Shah <hardik.t.shah@intel.com>
 Date: Thu, 17 Mar 2016 11:19:29 +0530
-Subject: [PATCH 0593/2278] REVERTME:SDW:CNL: Register only 3 master controller
- to bus.
+Subject: [PATCH] REVERTME:SDW:CNL: Register only 3 master controller to bus.
 
 There is constant BUS errors from the slaves on the 4th
 SDW bus. This results in kernel dumps, as bus driver reports
@@ -33,5 +32,5 @@ index dc2030f..e6e1023 100644
  			(sizeof(*master) * dsp->num_sdw_controllers),
  			GFP_KERNEL);
 -- 
-2.7.4
+https://clearlinux.org
 

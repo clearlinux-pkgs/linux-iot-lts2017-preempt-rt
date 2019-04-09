@@ -1,8 +1,7 @@
-From b50f84cd3c720ea3ad9ba91047b48c3db99ebfd0 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Steven Rostedt (VMware)" <rostedt@goodmis.org>
 Date: Fri, 22 Sep 2017 16:59:02 -0400
-Subject: [PATCH 0071/2278] ring-buffer: Rewrite trace_recursive_(un)lock() to
- be simpler
+Subject: [PATCH] ring-buffer: Rewrite trace_recursive_(un)lock() to be simpler
 
 The current method to prevent the ring buffer from entering into a recursize
 loop is to use a bitmask and set the bit that maps to the current context
@@ -24,7 +23,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
 (cherry picked from commit 1a149d7d3f45d311da1f63473736c05f30ae8a75)
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- kernel/trace/ring_buffer.c | 64 ++++++++++++----------------------------------
+ kernel/trace/ring_buffer.c | 64 ++++++++++----------------------------
  1 file changed, 17 insertions(+), 47 deletions(-)
 
 diff --git a/kernel/trace/ring_buffer.c b/kernel/trace/ring_buffer.c
@@ -119,5 +118,5 @@ index a1d5e09..ade8493 100644
  
  /**
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,7 +1,7 @@
-From 0be3a2e19e33bd51306068fcba1dd627bd8770b8 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Pawse, GuruprasadX" <guruprasadx.pawse@intel.com>
 Date: Tue, 21 Nov 2017 10:52:12 +0530
-Subject: [PATCH 1153/2278] ASoC: Intel: Skylake: Add BE DAI for WoV usecase.
+Subject: [PATCH] ASoC: Intel: Skylake: Add BE DAI for WoV usecase.
 
 Currently DMIC capture and WoV usecase uses same BE DAI but operate at
 different sampling rates, this results in config mismatch for
@@ -23,10 +23,11 @@ diff --git a/sound/soc/intel/skylake/skl-pcm.c b/sound/soc/intel/skylake/skl-pcm
 index 4e3842e..562d6ee 100644
 --- a/sound/soc/intel/skylake/skl-pcm.c
 +++ b/sound/soc/intel/skylake/skl-pcm.c
-@@ -1458,6 +1458,17 @@ static struct snd_soc_dai_driver skl_platform_dai[] = {
+@@ -1457,6 +1457,17 @@ static struct snd_soc_dai_driver skl_platform_dai[] = {
+ 		.formats = SNDRV_PCM_FMTBIT_S16_LE | SNDRV_PCM_FMTBIT_S24_LE,
  	},
  },
- {
++{
 +	.name = "DMIC16k Pin",
 +	.ops = &skl_dmic_dai_ops,
 +	.capture = {
@@ -37,10 +38,9 @@ index 4e3842e..562d6ee 100644
 +		.formats = SNDRV_PCM_FMTBIT_S16_LE,
 +	},
 +},
-+{
+ {
  	.name = "HD-Codec Pin",
  	.ops = &skl_link_dai_ops,
- 	.playback = {
 -- 
-2.7.4
+https://clearlinux.org
 

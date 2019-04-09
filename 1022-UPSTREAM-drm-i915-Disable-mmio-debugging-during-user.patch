@@ -1,8 +1,7 @@
-From ea4d3fbf9860a7698c10baef972b89cd916e5a7a Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Chris Wilson <chris@chris-wilson.co.uk>
 Date: Thu, 7 Sep 2017 14:44:41 +0100
-Subject: [PATCH 1022/2278] UPSTREAM: drm/i915: Disable mmio debugging during
- user access
+Subject: [PATCH] UPSTREAM: drm/i915: Disable mmio debugging during user access
 
 If the user bypasses i915 and accesses mmio directly, that easily
 confuses our automatic mmio debugging (any error we then detect is
@@ -23,9 +22,9 @@ Link: https://patchwork.freedesktop.org/patch/msgid/20170907134441.12881-1-chris
 (cherry picked from commit ad4dba88b71aa9653060fd1b7641844e5e47d4f4)
 Signed-off-by: Asif Haswarey <asif.haswarey@intel.com>
 ---
- drivers/gpu/drm/i915/i915_debugfs.c | 19 ++++++++------
- drivers/gpu/drm/i915/intel_uncore.c | 51 +++++++++++++++++++++++++++++++++++++
- drivers/gpu/drm/i915/intel_uncore.h | 13 ++++++++++
+ drivers/gpu/drm/i915/i915_debugfs.c | 19 ++++++-----
+ drivers/gpu/drm/i915/intel_uncore.c | 51 +++++++++++++++++++++++++++++
+ drivers/gpu/drm/i915/intel_uncore.h | 13 ++++++++
  3 files changed, 75 insertions(+), 8 deletions(-)
 
 diff --git a/drivers/gpu/drm/i915/i915_debugfs.c b/drivers/gpu/drm/i915/i915_debugfs.c
@@ -81,10 +80,11 @@ diff --git a/drivers/gpu/drm/i915/intel_uncore.c b/drivers/gpu/drm/i915/intel_un
 index d2f3e12..b051e11 100644
 --- a/drivers/gpu/drm/i915/intel_uncore.c
 +++ b/drivers/gpu/drm/i915/intel_uncore.c
-@@ -496,6 +496,57 @@ void intel_uncore_forcewake_get(struct drm_i915_private *dev_priv,
+@@ -495,6 +495,57 @@ void intel_uncore_forcewake_get(struct drm_i915_private *dev_priv,
+ 	spin_unlock_irqrestore(&dev_priv->uncore.lock, irqflags);
  }
  
- /**
++/**
 + * intel_uncore_forcewake_user_get - claim forcewake on behalf of userspace
 + * @dev_priv: i915 device instance
 + *
@@ -135,10 +135,9 @@ index d2f3e12..b051e11 100644
 +	spin_unlock_irq(&dev_priv->uncore.lock);
 +}
 +
-+/**
+ /**
   * intel_uncore_forcewake_get__locked - grab forcewake domain references
   * @dev_priv: i915 device instance
-  * @fw_domains: forcewake domains to get reference on
 diff --git a/drivers/gpu/drm/i915/intel_uncore.h b/drivers/gpu/drm/i915/intel_uncore.h
 index 8ca98dc..8ed41ed 100644
 --- a/drivers/gpu/drm/i915/intel_uncore.h
@@ -178,5 +177,5 @@ index 8ca98dc..8ed41ed 100644
  int intel_wait_for_register(struct drm_i915_private *dev_priv,
  			    i915_reg_t reg,
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,7 @@
-From 3b1ec9597294ed82851a851e94c7d20ed5494f59 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Yael Samet <yael.samet@intel.com>
 Date: Tue, 5 Sep 2017 14:07:32 +0300
-Subject: [PATCH 0998/2278] mei: dal: add character device for user space
- interface
+Subject: [PATCH] mei: dal: add character device for user space interface
 
 DAL user space interface allow sending raw messages from user-space
 (usually from JHI - DAL SW) to DAL FW, without any modifications,
@@ -13,9 +12,9 @@ Change-Id: I5f6d2c17744ad2481387c9a4427c8de5962bca8d
 Signed-off-by: Yael Samet <yael.samet@intel.com>
 ---
  drivers/misc/mei/dal/Makefile    |   1 +
- drivers/misc/mei/dal/dal_cdev.c  | 300 +++++++++++++++++++++++++++++++++++++++
- drivers/misc/mei/dal/dal_cdev.h  |  68 +++++++++
- drivers/misc/mei/dal/dal_class.c |  18 ++-
+ drivers/misc/mei/dal/dal_cdev.c  | 300 +++++++++++++++++++++++++++++++
+ drivers/misc/mei/dal/dal_cdev.h  |  68 +++++++
+ drivers/misc/mei/dal/dal_class.c |  18 +-
  4 files changed, 386 insertions(+), 1 deletion(-)
  create mode 100644 drivers/misc/mei/dal/dal_cdev.c
  create mode 100644 drivers/misc/mei/dal/dal_cdev.h
@@ -481,5 +480,5 @@ index 733bdb2..b808f2e 100644
  	class_destroy(dal_class);
  	return ret;
 -- 
-2.7.4
+https://clearlinux.org
 

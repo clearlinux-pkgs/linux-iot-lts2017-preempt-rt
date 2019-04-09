@@ -1,8 +1,7 @@
-From 5d0eeb13ef946dc924fa75d8bc119a3087606b4b Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Dietmar Eggemann <dietmar.eggemann@arm.com>
 Date: Tue, 26 Sep 2017 17:41:09 +0100
-Subject: [PATCH 0800/2278] cpufreq: dt: invoke frequency-invariance setter
- function
+Subject: [PATCH] cpufreq: dt: invoke frequency-invariance setter function
 
 Call the frequency-invariance setter function arch_set_freq_scale()
 if the new frequency has been successfully set which is indicated by
@@ -16,7 +15,7 @@ Signed-off-by: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
  1 file changed, 10 insertions(+), 2 deletions(-)
 
 diff --git a/drivers/cpufreq/cpufreq-dt.c b/drivers/cpufreq/cpufreq-dt.c
-index ca6ee9f..9546218e 100644
+index ca6ee9f..9546218 100644
 --- a/drivers/cpufreq/cpufreq-dt.c
 +++ b/drivers/cpufreq/cpufreq-dt.c
 @@ -44,9 +44,17 @@ static struct freq_attr *cpufreq_dt_attr[] = {
@@ -40,5 +39,5 @@ index ca6ee9f..9546218e 100644
  
  /*
 -- 
-2.7.4
+https://clearlinux.org
 

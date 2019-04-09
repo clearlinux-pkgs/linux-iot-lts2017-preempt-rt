@@ -1,7 +1,7 @@
-From 3f8550ea33634ff181d84ed8e6ce3737213ad284 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Fei Jiang <fei.jiang@intel.com>
 Date: Thu, 26 Jul 2018 13:43:28 +0800
-Subject: [PATCH 1857/2278] drm/i915/gvt: enable plane wm pvmmio level through
+Subject: [PATCH] drm/i915/gvt: enable plane wm pvmmio level through
  enable_pvmmio param
 
 plane wm update pvmmio level is 0x4, need set it in enable_pvmmio for both
@@ -32,5 +32,5 @@ index 1cfbdf1..f94ff99 100644
  	.enable_conformance_check = true,
  	.disable_gvt_fw_loading = true,
 -- 
-2.7.4
+https://clearlinux.org
 

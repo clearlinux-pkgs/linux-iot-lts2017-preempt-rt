@@ -1,8 +1,8 @@
-From 4cbb4311c5400d0c7f41ac02ed97d2e47ef3941b Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 Date: Tue, 13 Mar 2018 13:49:16 +0100
-Subject: [PATCH 0301/2278] block: blk-mq: move
- blk_queue_usage_counter_release() into process context
+Subject: [PATCH] block: blk-mq: move blk_queue_usage_counter_release() into
+ process context
 
 | BUG: sleeping function called from invalid context at kernel/locking/rtmutex.c:914
 | in_atomic(): 1, irqs_disabled(): 0, pid: 255, name: kworker/u257:6
@@ -116,5 +116,5 @@ index a32b7ad..cbf9d57 100644
  	struct list_head	all_q_node;
  
 -- 
-2.7.4
+https://clearlinux.org
 

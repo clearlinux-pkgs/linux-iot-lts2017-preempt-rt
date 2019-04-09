@@ -1,8 +1,8 @@
-From 78b4869fcae2b5bf7968db011a8d2cdb076ecde9 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Pawse, GuruprasadX" <guruprasadx.pawse@intel.com>
 Date: Wed, 18 Jan 2017 15:53:24 +0530
-Subject: [PATCH 0688/2278] ASoC: Intel: Skylake: Support all I2S ports with
- all possible capabilities
+Subject: [PATCH] ASoC: Intel: Skylake: Support all I2S ports with all possible
+ capabilities
 
 This patch adds all possible capabilities that the platform supports. This is
 the superset of the capabilities that all machines support.
@@ -22,7 +22,7 @@ Reviewed-by: Nc, Shreyas <shreyas.nc@intel.com>
 Reviewed-by: Kp, Jeeja <jeeja.kp@intel.com>
 Tested-by: Sm, Bhadur A <bhadur.a.sm@intel.com>
 ---
- sound/soc/intel/skylake/skl-pcm.c | 129 +++++++++++++++++++++-----------------
+ sound/soc/intel/skylake/skl-pcm.c | 129 ++++++++++++++++--------------
  1 file changed, 71 insertions(+), 58 deletions(-)
 
 diff --git a/sound/soc/intel/skylake/skl-pcm.c b/sound/soc/intel/skylake/skl-pcm.c
@@ -248,5 +248,5 @@ index f85c7f9..aa36acb 100644
  },
  {
 -- 
-2.7.4
+https://clearlinux.org
 

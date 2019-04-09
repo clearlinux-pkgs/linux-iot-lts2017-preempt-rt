@@ -1,8 +1,8 @@
-From a9a37ff3a4d6fd0395f064907ba5f1de2bda9476 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 Date: Wed, 20 Jan 2016 15:39:05 +0100
-Subject: [PATCH 0319/2278] net: provide a way to delegate processing a softirq
- to ksoftirqd
+Subject: [PATCH] net: provide a way to delegate processing a softirq to
+ ksoftirqd
 
 If the NET_RX uses up all of his budget it moves the following NAPI
 invocations into the `ksoftirqd`. On -RT it does not do so. Instead it
@@ -42,10 +42,11 @@ diff --git a/kernel/softirq.c b/kernel/softirq.c
 index da87715..e3f89bc 100644
 --- a/kernel/softirq.c
 +++ b/kernel/softirq.c
-@@ -690,6 +690,27 @@ void __raise_softirq_irqoff(unsigned int nr)
+@@ -689,6 +689,27 @@ void __raise_softirq_irqoff(unsigned int nr)
+ 		wakeup_proper_softirq(nr);
  }
  
- /*
++/*
 + * Same as __raise_softirq_irqoff() but will process them in ksoftirqd
 + */
 +void __raise_softirq_irqoff_ksoft(unsigned int nr)
@@ -66,10 +67,9 @@ index da87715..e3f89bc 100644
 +	wakeup_proper_softirq(nr);
 +}
 +
-+/*
+ /*
   * This function must run with irqs disabled!
   */
- void raise_softirq_irqoff(unsigned int nr)
 diff --git a/net/core/dev.c b/net/core/dev.c
 index 8d35a35..b5f1f2c 100644
 --- a/net/core/dev.c
@@ -84,5 +84,5 @@ index 8d35a35..b5f1f2c 100644
  	net_rps_action_and_irq_enable(sd);
  out:
 -- 
-2.7.4
+https://clearlinux.org
 

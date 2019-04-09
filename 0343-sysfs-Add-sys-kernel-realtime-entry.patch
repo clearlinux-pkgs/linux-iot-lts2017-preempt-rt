@@ -1,7 +1,7 @@
-From 7fe271bd7097623d745ebb1afcd1bb65e77e4425 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Clark Williams <williams@redhat.com>
 Date: Sat, 30 Jul 2011 21:55:53 -0500
-Subject: [PATCH 0343/2278] sysfs: Add /sys/kernel/realtime entry
+Subject: [PATCH] sysfs: Add /sys/kernel/realtime entry
 
 Add a /sys/kernel entry to indicate that the kernel is a
 realtime kernel.
@@ -38,16 +38,16 @@ index 46ba853..9a23632 100644
  /* whether file capabilities are enabled */
  static ssize_t fscaps_show(struct kobject *kobj,
  				  struct kobj_attribute *attr, char *buf)
-@@ -231,6 +240,9 @@ static struct attribute * kernel_attrs[] = {
+@@ -230,6 +239,9 @@ static struct attribute * kernel_attrs[] = {
+ #ifndef CONFIG_TINY_RCU
  	&rcu_expedited_attr.attr,
  	&rcu_normal_attr.attr,
- #endif
++#endif
 +#ifdef CONFIG_PREEMPT_RT_FULL
 +	&realtime_attr.attr,
-+#endif
+ #endif
  	NULL
  };
- 
 -- 
-2.7.4
+https://clearlinux.org
 

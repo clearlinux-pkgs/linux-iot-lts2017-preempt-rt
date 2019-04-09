@@ -1,8 +1,7 @@
-From 447cd291807324cd961c2badaf434dc74ea7fb07 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 Date: Wed, 13 Jan 2016 15:55:02 +0100
-Subject: [PATCH 0317/2278] net: move xmit_recursion to per-task variable on
- -RT
+Subject: [PATCH] net: move xmit_recursion to per-task variable on -RT
 
 A softirq on -RT can be preempted. That means one task is in
 __dev_queue_xmit(), gets preempted and another task may enter
@@ -17,7 +16,7 @@ the recursion properly on -RT.
 Cc: stable-rt@vger.kernel.org
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- include/linux/netdevice.h | 41 ++++++++++++++++++++++++++++++++++++++++-
+ include/linux/netdevice.h | 41 ++++++++++++++++++++++++++++++++++++++-
  include/linux/sched.h     |  3 +++
  net/core/dev.c            |  9 +++++----
  net/core/filter.c         |  6 +++---
@@ -86,16 +85,16 @@ diff --git a/include/linux/sched.h b/include/linux/sched.h
 index 675cbae..ff13666 100644
 --- a/include/linux/sched.h
 +++ b/include/linux/sched.h
-@@ -1156,6 +1156,9 @@ struct task_struct {
+@@ -1155,6 +1155,9 @@ struct task_struct {
+ #endif
  #ifdef CONFIG_DEBUG_ATOMIC_SLEEP
  	unsigned long			task_state_change;
- #endif
++#endif
 +#ifdef CONFIG_PREEMPT_RT_FULL
 +	int				xmit_recursion;
-+#endif
+ #endif
  	int				pagefault_disabled;
  #ifdef CONFIG_MMU
- 	struct task_struct		*oom_reaper_list;
 diff --git a/net/core/dev.c b/net/core/dev.c
 index 093b2bf..73161f5 100644
 --- a/net/core/dev.c
@@ -159,5 +158,5 @@ index d5158a1..ad96ec7 100644
  	return ret;
  }
 -- 
-2.7.4
+https://clearlinux.org
 

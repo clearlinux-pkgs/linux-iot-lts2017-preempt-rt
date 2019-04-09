@@ -1,8 +1,8 @@
-From 5fa5aa07302ef43b1fe4123f2dfd37eccd3e1046 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Daniel Bristot de Oliveira <bristot@redhat.com>
 Date: Mon, 26 Jun 2017 17:07:15 +0200
-Subject: [PATCH 0222/2278] rt: Increase/decrease the nr of migratory tasks
- when enabling/disabling migration
+Subject: [PATCH] rt: Increase/decrease the nr of migratory tasks when
+ enabling/disabling migration
 
 There is a problem in the migrate_disable()/enable() implementation
 regarding the number of migratory tasks in the rt/dl RQs. The problem
@@ -77,7 +77,7 @@ Cc: LKML <linux-kernel@vger.kernel.org>
 Cc: linux-rt-users <linux-rt-users@vger.kernel.org>
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- kernel/sched/core.c | 49 ++++++++++++++++++++++++++++++++++++++++++++-----
+ kernel/sched/core.c | 49 ++++++++++++++++++++++++++++++++++++++++-----
  1 file changed, 44 insertions(+), 5 deletions(-)
 
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
@@ -157,5 +157,5 @@ index 82da2b9..b5738ac 100644
  	if (p->migrate_disable_update) {
  		struct rq *rq;
 -- 
-2.7.4
+https://clearlinux.org
 

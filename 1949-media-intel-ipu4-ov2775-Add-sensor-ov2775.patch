@@ -1,7 +1,7 @@
-From 697e80f9db58e9512650b31fc16ae7af32205442 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Leo Zhao <leo.zhao@intel.com>
 Date: Mon, 4 Jun 2018 14:20:08 +0800
-Subject: [PATCH 1949/2278] media: intel-ipu4: ov2775: Add sensor ov2775
+Subject: [PATCH] media: intel-ipu4: ov2775: Add sensor ov2775
 
 Message for Open Source:
 Sensor ov2775 driver enabling
@@ -14,11 +14,11 @@ Change-Id: Iccd101a32ed731c2c1e5a028ad47cbbb7b1f6dc2
 Signed-off-by: Leo Zhao <leo.zhao@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- .../media/i2c/crlmodule/crl_ov2775_configuration.h | 2807 ++++++++++++++++++++
- drivers/media/i2c/crlmodule/crlmodule-data.c       |    2 +
- drivers/media/platform/intel/Kconfig               |    8 +-
- drivers/media/platform/intel/ipu4-bxt-p-pdata.c    |   40 +
- include/uapi/linux/crlmodule.h                     |    2 +-
+ .../i2c/crlmodule/crl_ov2775_configuration.h  | 2807 +++++++++++++++++
+ drivers/media/i2c/crlmodule/crlmodule-data.c  |    2 +
+ drivers/media/platform/intel/Kconfig          |    8 +-
+ .../media/platform/intel/ipu4-bxt-p-pdata.c   |   40 +
+ include/uapi/linux/crlmodule.h                |    2 +-
  5 files changed, 2857 insertions(+), 2 deletions(-)
  create mode 100644 drivers/media/i2c/crlmodule/crl_ov2775_configuration.h
 
@@ -2919,16 +2919,16 @@ index 1638d9d..52cab10 100755
  /*
   * Map buttress output sensor clocks to sensors -
   * this should be coming from ACPI
-@@ -989,6 +1026,9 @@ static struct ipu_isys_subdev_pdata pdata = {
+@@ -988,6 +1025,9 @@ static struct ipu_isys_subdev_pdata pdata = {
+ #if IS_ENABLED(CONFIG_VIDEO_TI964)
  		&ti964_sd,
  		&ti964_sd_2,
- #endif
++#endif
 +#ifdef CONFIG_INTEL_IPU4_OV2775
 +		&ov2775_crl_sd,
-+#endif
+ #endif
  		NULL,
  	},
- 	.clk_map = clk_mapping,
 diff --git a/include/uapi/linux/crlmodule.h b/include/uapi/linux/crlmodule.h
 index b7195ec..73dd651 100644
 --- a/include/uapi/linux/crlmodule.h
@@ -2943,5 +2943,5 @@ index b7195ec..73dd651 100644
  /* set analog gain for HDR frames */
  #define CRL_CID_ANALOG_GAIN_L		(V4L2_CID_CRLMODULE_BASE + 20)
 -- 
-2.7.4
+https://clearlinux.org
 

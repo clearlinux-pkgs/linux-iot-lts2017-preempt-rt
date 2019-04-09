@@ -1,8 +1,8 @@
-From 3333e266ec3e7458260a334fe64b03cff50c087b Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 Date: Wed, 21 Aug 2013 17:48:46 +0200
-Subject: [PATCH 0197/2278] genirq: Do not invoke the affinity callback via a
- workqueue on RT
+Subject: [PATCH] genirq: Do not invoke the affinity callback via a workqueue
+ on RT
 
 Joe Korty reported, that __irq_set_affinity_locked() schedules a
 workqueue while holding a rawlock which results in a might_sleep()
@@ -12,11 +12,11 @@ This patch uses swork_queue() instead.
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
  include/linux/interrupt.h |  6 ++++++
- kernel/irq/manage.c       | 43 ++++++++++++++++++++++++++++++++++++++++---
+ kernel/irq/manage.c       | 43 ++++++++++++++++++++++++++++++++++++---
  2 files changed, 46 insertions(+), 3 deletions(-)
 
 diff --git a/include/linux/interrupt.h b/include/linux/interrupt.h
-index 2395ebb44..172376b 100644
+index 2395ebb..172376b 100644
 --- a/include/linux/interrupt.h
 +++ b/include/linux/interrupt.h
 @@ -15,6 +15,7 @@
@@ -126,5 +126,5 @@ index f9934b6..ead9da1 100644
  
  	raw_spin_lock_irqsave(&desc->lock, flags);
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,7 +1,7 @@
-From 5a71c1237c2ae01a1fe23b65f86769b525e29ca3 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Thomas Gleixner <tglx@linutronix.de>
 Date: Wed, 19 Sep 2012 14:50:37 +0200
-Subject: [PATCH 0330/2278] printk: Make rt aware
+Subject: [PATCH] printk: Make rt aware
 
 Drop the lock before calling the console driver and do not disable
 interrupts while printing to a serial console.
@@ -77,5 +77,5 @@ index 624d503..a2b73f7 100644
  		if (do_cond_resched)
  			cond_resched();
 -- 
-2.7.4
+https://clearlinux.org
 

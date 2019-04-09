@@ -1,8 +1,7 @@
-From 71d2562cccf0c1313f4424a4a13bc5eba59ee7e5 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tomas Winkler <tomas.winkler@intel.com>
 Date: Sun, 1 Feb 2015 10:17:24 +0200
-Subject: [PATCH 1707/2278] rpmb: add Replay Protected Memory Block (RPMB)
- subsystem
+Subject: [PATCH] rpmb: add Replay Protected Memory Block (RPMB) subsystem
 
 Few storage technologies such is EMMC, UFS, and NVMe support RPMB
 a hardware partition with common protocol and frame layout.
@@ -54,10 +53,10 @@ Tested-by: Avri Altman <avri.altman@sandisk.com>
  MAINTAINERS                |   7 +
  drivers/char/Kconfig       |   2 +
  drivers/char/Makefile      |   1 +
- drivers/char/rpmb/Kconfig  |   9 ++
+ drivers/char/rpmb/Kconfig  |   9 +
  drivers/char/rpmb/Makefile |   5 +
- drivers/char/rpmb/core.c   | 333 +++++++++++++++++++++++++++++++++++++++++++++
- include/linux/rpmb.h       | 250 ++++++++++++++++++++++++++++++++++
+ drivers/char/rpmb/core.c   | 333 +++++++++++++++++++++++++++++++++++++
+ include/linux/rpmb.h       | 250 ++++++++++++++++++++++++++++
  7 files changed, 607 insertions(+)
  create mode 100644 drivers/char/rpmb/Kconfig
  create mode 100644 drivers/char/rpmb/Makefile
@@ -725,5 +724,5 @@ index 0000000..6acd9b1
 +
 +#endif /* __RPMB_H__ */
 -- 
-2.7.4
+https://clearlinux.org
 

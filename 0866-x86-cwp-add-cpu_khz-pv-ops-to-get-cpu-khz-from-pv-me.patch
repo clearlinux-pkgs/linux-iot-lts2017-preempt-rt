@@ -1,8 +1,7 @@
-From 1aa3e10365260543e1a8097b8123846f1f9e1c03 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Jason Chen CJ <jason.cj.chen@intel.com>
 Date: Tue, 26 Dec 2017 03:22:14 +0800
-Subject: [PATCH 0866/2278] x86:cwp: add cpu_khz pv ops to get cpu khz from pv
- method
+Subject: [PATCH] x86:cwp: add cpu_khz pv ops to get cpu khz from pv method
 
 added pv ops cpu_khz into pv_cpu_ops, the function cpu_khz_from_paravirt
 is to get cpu khz from paravirt way.
@@ -132,5 +131,5 @@ index 36d0248..380f590 100644
  	if (fast_calibrate)
  		return fast_calibrate;
 -- 
-2.7.4
+https://clearlinux.org
 

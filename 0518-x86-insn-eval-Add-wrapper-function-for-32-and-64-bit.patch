@@ -1,8 +1,8 @@
-From 6a715f6e13b084b64ccef523ff07fa3312f7ab44 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ricardo Neri <ricardo.neri-calderon@linux.intel.com>
 Date: Tue, 5 Sep 2017 15:43:34 -0700
-Subject: [PATCH 0518/2278] x86/insn-eval: Add wrapper function for 32 and
- 64-bit addresses
+Subject: [PATCH] x86/insn-eval: Add wrapper function for 32 and 64-bit
+ addresses
 
 The function insn_get_addr_ref() is capable of handling only 64-bit
 addresses. A previous commit introduced a function to handle 32-bit
@@ -35,7 +35,7 @@ Cc: Ravi V. Shankar <ravi.v.shankar@intel.com>
 Cc: x86@kernel.org
 Signed-off-by: Ricardo Neri <ricardo.neri-calderon@linux.intel.com>
 ---
- arch/x86/lib/insn-eval.c | 51 +++++++++++++++++++++++++++++++++++++++++++-----
+ arch/x86/lib/insn-eval.c | 51 ++++++++++++++++++++++++++++++++++++----
  1 file changed, 46 insertions(+), 5 deletions(-)
 
 diff --git a/arch/x86/lib/insn-eval.c b/arch/x86/lib/insn-eval.c
@@ -113,5 +113,5 @@ index d303c31..d9c593e 100644
 +	}
 +}
 -- 
-2.7.4
+https://clearlinux.org
 

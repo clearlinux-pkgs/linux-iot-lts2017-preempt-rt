@@ -1,8 +1,8 @@
-From 68378e1976c916b03eb9e31630b27582ba88b2f5 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Sathyanarayanan Kuppuswamy <sathyanarayanan.kuppuswamy@intel.com>
 Date: Tue, 20 Jun 2017 11:07:07 -0700
-Subject: [PATCH 0567/2278] net: dhd_linux: Fix build regression due to netdev
- destructor fix.
+Subject: [PATCH] net: dhd_linux: Fix build regression due to netdev destructor
+ fix.
 
 Fixes the regression introduced by netdev destructor fix.
 
@@ -48,5 +48,5 @@ index 378e11a..5b91865 100644
  	ifp->name[IFNAMSIZ - 1] = '\0';
  	dhdinfo->iflist[ifidx] = ifp;
 -- 
-2.7.4
+https://clearlinux.org
 

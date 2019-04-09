@@ -1,15 +1,14 @@
-From eb8f12362381fe1a9e2304eb60542b287c7b65c6 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Felipe Balbi <felipe.balbi@linux.intel.com>
 Date: Wed, 17 Jan 2018 13:20:11 +0200
-Subject: [PATCH 1552/2278] mfd: intel-lpss: add children devices
- asynchronously
+Subject: [PATCH] mfd: intel-lpss: add children devices asynchronously
 
 TBD
 
 Signed-off-by: Felipe Balbi <felipe.balbi@linux.intel.com>
 Signed-off-by: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
 ---
- drivers/mfd/intel-lpss.c | 64 +++++++++++++++++++++++++++---------------------
+ drivers/mfd/intel-lpss.c | 64 ++++++++++++++++++++++------------------
  1 file changed, 36 insertions(+), 28 deletions(-)
 
 diff --git a/drivers/mfd/intel-lpss.c b/drivers/mfd/intel-lpss.c
@@ -112,5 +111,5 @@ index 40e8d9b..27e6f3c 100644
  	ida_simple_remove(&intel_lpss_devid_ida, lpss->devid);
  
 -- 
-2.7.4
+https://clearlinux.org
 

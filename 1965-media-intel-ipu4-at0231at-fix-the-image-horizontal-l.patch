@@ -1,8 +1,7 @@
-From fb106ab757fe552a1d15724196c8ebb97d8a409e Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: liyong4x <yongx.a.li@intel.com>
 Date: Tue, 12 Jun 2018 21:25:58 -0400
-Subject: [PATCH 1965/2278] media: intel-ipu4: at0231at: fix the image
- horizontal lines
+Subject: [PATCH] media: intel-ipu4: at0231at: fix the image horizontal lines
 
 Message for Open Source:
 Modify the frame_length_line and line_length_pclk to
@@ -24,7 +23,7 @@ Change-Id: I870a1927081b0ebc39336531df555da580a0b993
 Signed-off-by: liyong4x <yongx.a.li@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- drivers/media/i2c/crlmodule/crl_ar0231at_configuration.h | 12 ++++++------
+ .../media/i2c/crlmodule/crl_ar0231at_configuration.h | 12 ++++++------
  1 file changed, 6 insertions(+), 6 deletions(-)
 
 diff --git a/drivers/media/i2c/crlmodule/crl_ar0231at_configuration.h b/drivers/media/i2c/crlmodule/crl_ar0231at_configuration.h
@@ -65,5 +64,5 @@ index 3b35854..bd17255 100644
  	{ 0x3238, CRL_REG_LEN_16BIT, 0x0222, 0x10 },
  	{ 0x3238, CRL_REG_LEN_16BIT, 0x0222, 0x10 },
 -- 
-2.7.4
+https://clearlinux.org
 

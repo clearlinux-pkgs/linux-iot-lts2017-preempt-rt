@@ -1,8 +1,7 @@
-From 7f7115a068afc7825fc40316d5cbbd94b6ead329 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Vinod Koul <vinod.koul@intel.com>
 Date: Wed, 15 Nov 2017 10:11:02 +0530
-Subject: [PATCH 1215/2278] ASoC: Intel: Add help text for
- SND_SOC_INTEL_SST_TOPLEVEL
+Subject: [PATCH] ASoC: Intel: Add help text for SND_SOC_INTEL_SST_TOPLEVEL
 
 Symbol SND_SOC_INTEL_SST_TOPLEVEL is user selectable so add the
 help text for this symbol.
@@ -31,5 +30,5 @@ index 97685f6..392f7ba 100644
  config SND_SOC_INTEL_HASWELL
  	tristate "Intel ASoC SST driver for Haswell/Broadwell"
 -- 
-2.7.4
+https://clearlinux.org
 

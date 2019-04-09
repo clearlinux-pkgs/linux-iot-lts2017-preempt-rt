@@ -1,7 +1,7 @@
-From 7c36176ca160129f81c7b6c7f30664287cab4c1d Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tom Zanussi <tom.zanussi@linux.intel.com>
 Date: Mon, 15 Jan 2018 20:51:40 -0600
-Subject: [PATCH 0083/2278] ring-buffer: Redefine the unimplemented
+Subject: [PATCH] ring-buffer: Redefine the unimplemented
  RINGBUF_TYPE_TIME_STAMP
 
 RINGBUF_TYPE_TIME_STAMP is defined but not used, and from what I can
@@ -28,8 +28,8 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
 (cherry picked from commit 58c0bd803060b0c0c9de8751382a7af5f507d74d)
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- include/linux/ring_buffer.h |  12 ++---
- kernel/trace/ring_buffer.c  | 104 ++++++++++++++++++++++++++++++++------------
+ include/linux/ring_buffer.h |  12 +++--
+ kernel/trace/ring_buffer.c  | 104 ++++++++++++++++++++++++++----------
  2 files changed, 83 insertions(+), 33 deletions(-)
 
 diff --git a/include/linux/ring_buffer.h b/include/linux/ring_buffer.h
@@ -326,5 +326,5 @@ index c74b329..1976170 100644
  			ring_buffer_normalize_time_stamp(buffer,
  							 cpu_buffer->cpu, ts);
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,8 @@
-From d4a184991c0da86189965f55715d2958e5a9d365 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tianshu Qiu <tian.shu.qiu@intel.com>
 Date: Wed, 16 May 2018 11:19:56 +0800
-Subject: [PATCH 1925/2278] media: intel-ipu4: imx319: Fix pm usage and add
- error handling
+Subject: [PATCH] media: intel-ipu4: imx319: Fix pm usage and add error
+ handling
 
 Message for Open Source:
 Fix pm usage and add error handling.
@@ -80,5 +80,5 @@ index 2d15e19..bb84981 100644
  
  	return 0;
 -- 
-2.7.4
+https://clearlinux.org
 

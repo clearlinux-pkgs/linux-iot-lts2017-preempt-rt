@@ -1,8 +1,7 @@
-From a8452820c38dae68c471370d9dac03d3ba6b6c9b Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Qi, Yadong" <yadong.qi@intel.com>
 Date: Fri, 16 Mar 2018 15:42:07 +0800
-Subject: [PATCH 1129/2278] trusty: add RAX into clobber list of inline asm for
- ACRN
+Subject: [PATCH] trusty: add RAX into clobber list of inline asm for ACRN
 
 The RAX regiser will be modified when do "vmcall" for ACRN
 hypervisor. So the RAX register should to be listed in asm
@@ -59,5 +58,5 @@ index e253ee4..4d33f26 100755
  }
  
 -- 
-2.7.4
+https://clearlinux.org
 

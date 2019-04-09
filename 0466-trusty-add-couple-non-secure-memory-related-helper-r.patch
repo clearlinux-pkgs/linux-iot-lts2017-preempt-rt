@@ -1,8 +1,7 @@
-From efff68a436ebe08ae61978d6bc1c934e9450e53a Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Michael Ryleev <gmar@google.com>
 Date: Thu, 26 Mar 2015 19:31:25 -0700
-Subject: [PATCH 0466/2278] trusty: add couple non-secure memory related helper
- routines
+Subject: [PATCH] trusty: add couple non-secure memory related helper routines
 
 trusty_encode_page_info - encodes page physical address, memory
 type and other attributes into architecture specific structure
@@ -18,8 +17,8 @@ Change-Id: I79aadca85e2329bb89469b4c8f183cf0752f7641
 Signed-off-by: Michael Ryleev <gmar@google.com>
 ---
  drivers/trusty/Makefile       |   1 +
- drivers/trusty/trusty-mem.c   | 134 ++++++++++++++++++++++++++++++++++++++++++
- include/linux/trusty/trusty.h |  15 +++++
+ drivers/trusty/trusty-mem.c   | 134 ++++++++++++++++++++++++++++++++++
+ include/linux/trusty/trusty.h |  15 ++++
  3 files changed, 150 insertions(+)
  create mode 100644 drivers/trusty/trusty-mem.c
 
@@ -204,5 +203,5 @@ index abb77f1..d084d9d 100644
 +
  #endif
 -- 
-2.7.4
+https://clearlinux.org
 

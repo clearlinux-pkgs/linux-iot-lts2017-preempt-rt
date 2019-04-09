@@ -1,8 +1,8 @@
-From 694b102758ad20d58d1cc3ffb5b50b19fb6316a6 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Dietmar Eggemann <dietmar.eggemann@arm.com>
 Date: Tue, 26 Sep 2017 17:41:08 +0100
-Subject: [PATCH 0799/2278] cpufreq: arm_big_little: invoke
- frequency-invariance setter function
+Subject: [PATCH] cpufreq: arm_big_little: invoke frequency-invariance setter
+ function
 
 Call the frequency-invariance setter function arch_set_freq_scale()
 if the new frequency has been successfully set which is indicated by
@@ -44,5 +44,5 @@ index 1750412..0c41ab3 100644
  
  static inline u32 get_table_count(struct cpufreq_frequency_table *table)
 -- 
-2.7.4
+https://clearlinux.org
 

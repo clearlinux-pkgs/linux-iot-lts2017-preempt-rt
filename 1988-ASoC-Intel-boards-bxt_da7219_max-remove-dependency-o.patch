@@ -1,8 +1,8 @@
-From 307cd7b4598d5105f590ade615cdcdb6bfb382ea Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Tue, 31 Jul 2018 16:47:49 -0500
-Subject: [PATCH 1988/2278] ASoC: Intel: boards: bxt_da7219_max: remove
- dependency on dmic-codec
+Subject: [PATCH] ASoC: Intel: boards: bxt_da7219_max: remove dependency on
+ dmic-codec
 
 Not sure why this was ever needed, there are no GPIO controlling the
 DMICs.
@@ -28,5 +28,5 @@ index 17f4ad9..ff93566 100644
  		.ignore_suspend = 1,
  		.be_hw_params_fixup = broxton_dmic_fixup,
 -- 
-2.7.4
+https://clearlinux.org
 

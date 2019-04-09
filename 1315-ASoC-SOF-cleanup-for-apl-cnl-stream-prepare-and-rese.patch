@@ -1,12 +1,11 @@
-From 52f7cdab327f97ac2498c2cd88a6e4996b37b7c8 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Keyon Jie <yang.jie@linux.intel.com>
 Date: Mon, 19 Mar 2018 17:20:15 +0800
-Subject: [PATCH 1315/2278] ASoC: SOF: cleanup for apl/cnl stream prepare and
- reset
+Subject: [PATCH] ASoC: SOF: cleanup for apl/cnl stream prepare and reset
 
 Signed-off-by: Keyon Jie <yang.jie@linux.intel.com>
 ---
- sound/soc/sof/hw-apl.c | 252 ++++++++++++++++++-------------------------------
+ sound/soc/sof/hw-apl.c | 252 +++++++++++++++--------------------------
  1 file changed, 92 insertions(+), 160 deletions(-)
 
 diff --git a/sound/soc/sof/hw-apl.c b/sound/soc/sof/hw-apl.c
@@ -356,5 +355,5 @@ index 7fdbe5d..a6505fd 100644
  
  /* appololake ops */
 -- 
-2.7.4
+https://clearlinux.org
 

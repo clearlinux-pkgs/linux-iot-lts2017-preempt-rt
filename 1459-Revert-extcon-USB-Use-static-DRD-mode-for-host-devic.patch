@@ -1,8 +1,8 @@
-From 9e882b59f73daca5de4fd162b883ab9594850aff Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Kuppuswamy Sathyanarayanan <sathyanarayanan.kuppuswamy@linux.intel.com>
 Date: Mon, 21 May 2018 14:54:05 -0700
-Subject: [PATCH 1459/2278] Revert "extcon: USB: Use static DRD mode for
- host/device mode switch"
+Subject: [PATCH] Revert "extcon: USB: Use static DRD mode for host/device mode
+ switch"
 
 This reverts commit 2ea804f5435ef30d534295a0fd9faf693fbeab64.
 
@@ -48,5 +48,5 @@ index 26b043d..9290eb7 100644
  	mux->edev.supported_cable = intel_mux_cable;
  
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,7 +1,7 @@
-From 230b135c2a405b85cea8dc18d0585f0e84b25a61 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Wu Zhigang <zhigang.wu@linux.intel.com>
 Date: Fri, 3 Aug 2018 13:22:19 +0800
-Subject: [PATCH 1990/2278] ssp:support additional SSP register bits
+Subject: [PATCH] ssp:support additional SSP register bits
 
 add the code to support additional SSP register bits.
 
@@ -90,5 +90,5 @@ index 35518f7..a228880 100644
  
  /* DMIC */
 -- 
-2.7.4
+https://clearlinux.org
 

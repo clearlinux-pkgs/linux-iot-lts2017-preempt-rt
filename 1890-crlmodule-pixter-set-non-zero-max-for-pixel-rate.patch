@@ -1,7 +1,7 @@
-From bd27f5139ae1593457f267805bc875b903cced6e Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Chen Meng J <meng.j.chen@intel.com>
 Date: Mon, 14 May 2018 15:37:57 +0800
-Subject: [PATCH 1890/2278] crlmodule:pixter: set non-zero max for pixel rate
+Subject: [PATCH] crlmodule:pixter: set non-zero max for pixel rate
 
 Change-Id: I41ea988660923db5bfb56acdcd2cc513ec915cd7
 Signed-off-by: Chen Meng J <meng.j.chen@intel.com>
@@ -33,5 +33,5 @@ index ce675aa..d33eb18 100644
  		.data.std_data.def = 0,
  		.flags = 0,
 -- 
-2.7.4
+https://clearlinux.org
 

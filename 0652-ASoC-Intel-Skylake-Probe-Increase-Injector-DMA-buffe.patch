@@ -1,8 +1,7 @@
-From d340e05a3da698a9e3b0da4267455eb5d4bcfa05 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Pawse, GuruprasadX" <guruprasadx.pawse@intel.com>
 Date: Tue, 12 Jul 2016 10:57:10 +0530
-Subject: [PATCH 0652/2278] ASoC: Intel: Skylake: Probe-Increase Injector DMA
- buffer size
+Subject: [PATCH] ASoC: Intel: Skylake: Probe-Increase Injector DMA buffer size
 
     DMA buffer size needed for 48KHz, 4 channel, 32 bit data scheduled
     at 4ms for 2 probe packets is = 2* [ 24 + (48*4*4*32/8) + 8]  = 6208.
@@ -45,5 +44,5 @@ index 2db2053..5a20939 100644
  
  	ret = skl_set_module_params(ctx, (u32 *)&ad,
 -- 
-2.7.4
+https://clearlinux.org
 

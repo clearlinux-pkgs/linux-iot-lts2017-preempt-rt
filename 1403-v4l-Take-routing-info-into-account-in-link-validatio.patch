@@ -1,8 +1,7 @@
-From 8e6b97b45e84a0b59200a0968c99f1ddba9c8681 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: wu xia <xia.wu@intel.com>
 Date: Mon, 13 Jun 2016 17:37:34 +0300
-Subject: [PATCH 1403/2278] v4l: Take routing info into account in link
- validation
+Subject: [PATCH] v4l: Take routing info into account in link validation
 
 The routing information is essential in link validation
 for multiplexed links:
@@ -15,7 +14,7 @@ Signed-off-by: Sakari Ailus <sakari.ailus@linux.intel.com>
 Signed-off-by: Jianxu Zheng <jian.xu.zheng@intel.com>
 Signed-off-by: wu xia <xia.wu@intel.com>
 ---
- drivers/media/v4l2-core/v4l2-subdev.c | 143 ++++++++++++++++++++++++++++++++--
+ drivers/media/v4l2-core/v4l2-subdev.c | 143 +++++++++++++++++++++++++-
  1 file changed, 138 insertions(+), 5 deletions(-)
 
 diff --git a/drivers/media/v4l2-core/v4l2-subdev.c b/drivers/media/v4l2-core/v4l2-subdev.c
@@ -188,5 +187,5 @@ index 5033759..9180b64 100644
  
  struct v4l2_subdev_pad_config *
 -- 
-2.7.4
+https://clearlinux.org
 

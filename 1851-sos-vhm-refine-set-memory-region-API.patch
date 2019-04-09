@@ -1,7 +1,7 @@
-From 10ce88d318537bd513dd455532b5b8235e413812 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Li, Fei1" <fei1.li@intel.com>
 Date: Wed, 25 Jul 2018 00:31:39 +0800
-Subject: [PATCH 1851/2278] sos: vhm: refine set memory region API
+Subject: [PATCH] sos: vhm: refine set memory region API
 
 1. rename set_mmio_map to add_memory_region;
 unset_mmio_map to del_memory_region.
@@ -12,12 +12,12 @@ set_memmaps to set_memory_region;
 Signed-off-by: Li, Fei1 <fei1.li@intel.com>
 Acked-by: Eddie Dong <eddie.dong@intel.com>
 ---
- drivers/gpu/drm/i915/gvt/acrn-gvt.c |  8 ++--
- drivers/vhm/vhm_hugetlb.c           | 61 +++++++++++++------------
- drivers/vhm/vhm_hypercall.c         |  9 +---
- drivers/vhm/vhm_mm.c                | 89 +++++++++++++++++--------------------
- include/linux/vhm/acrn_hv_defs.h    | 39 +++++-----------
- include/linux/vhm/acrn_vhm_mm.h     | 31 ++++++-------
+ drivers/gpu/drm/i915/gvt/acrn-gvt.c |  8 +--
+ drivers/vhm/vhm_hugetlb.c           | 61 ++++++++++----------
+ drivers/vhm/vhm_hypercall.c         |  9 +--
+ drivers/vhm/vhm_mm.c                | 89 ++++++++++++++---------------
+ include/linux/vhm/acrn_hv_defs.h    | 39 ++++---------
+ include/linux/vhm/acrn_vhm_mm.h     | 31 +++++-----
  include/linux/vhm/vhm_hypercall.h   |  4 +-
  7 files changed, 102 insertions(+), 139 deletions(-)
 
@@ -177,7 +177,7 @@ index 8611bb1..9a92d68 100644
  
  inline long hcall_write_protect_page(unsigned long vmid, unsigned long wp)
 diff --git a/drivers/vhm/vhm_mm.c b/drivers/vhm/vhm_mm.c
-index c7ca8e99..4d5854d 100644
+index c7ca8e9..4d5854d 100644
 --- a/drivers/vhm/vhm_mm.c
 +++ b/drivers/vhm/vhm_mm.c
 @@ -102,56 +102,59 @@ static bool _free_memblk(struct device *dev, u64 vm0_gpa, size_t len)
@@ -489,5 +489,5 @@ index 99d1a3f..bc9feec 100644
  		unsigned long wp);
  inline long hcall_set_ioreq_buffer(unsigned long vmid,
 -- 
-2.7.4
+https://clearlinux.org
 

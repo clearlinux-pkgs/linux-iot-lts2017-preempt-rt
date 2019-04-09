@@ -1,7 +1,7 @@
-From 6ae5dc66354fd7b4452d0784748b6482718360ac Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Jeremy Rocher <jeremy.rocher@intel.com>
 Date: Wed, 20 Jul 2016 10:00:44 +0200
-Subject: [PATCH 1495/2278] reboot: add reboot_panic parameter
+Subject: [PATCH] reboot: add reboot_panic parameter
 
 This "reboot_panic" kernel cmdline parameter allow to change the
 reboot mode in case of panic only. It use the same format as the
@@ -10,8 +10,8 @@ reboot mode in case of panic only. It use the same format as the
 Signed-off-by: Jeremy Rocher <jeremy.rocher@intel.com>
 Signed-off-by: Tian, Baofeng <baofeng.tian@intel.com>
 ---
- Documentation/admin-guide/kernel-parameters.txt |  3 +++
- kernel/reboot.c                                 | 29 ++++++++++++++++++++++++-
+ .../admin-guide/kernel-parameters.txt         |  3 ++
+ kernel/reboot.c                               | 29 ++++++++++++++++++-
  2 files changed, 31 insertions(+), 1 deletion(-)
 
 diff --git a/Documentation/admin-guide/kernel-parameters.txt b/Documentation/admin-guide/kernel-parameters.txt
@@ -80,5 +80,5 @@ index bd30a97..38ea394 100644
 +}
 +__setup("reboot_panic=", reboot_panic_setup);
 -- 
-2.7.4
+https://clearlinux.org
 

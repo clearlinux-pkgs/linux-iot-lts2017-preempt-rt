@@ -1,7 +1,7 @@
-From 76f22d59382c49c5e378affe4edd5ecfdb0361c2 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Jesus Sanchez-Palencia <jesus.sanchez-palencia@intel.com>
 Date: Tue, 3 Jul 2018 15:42:54 -0700
-Subject: [PATCH 1834/2278] net/sched: Add HW offloading capability to ETF
+Subject: [PATCH] net/sched: Add HW offloading capability to ETF
 
 Add infra so etf qdisc supports HW offload of time-based transmission.
 
@@ -30,7 +30,7 @@ Signed-off-by: David S. Miller <davem@davemloft.net>
 ---
  include/net/pkt_sched.h        |  5 +++
  include/uapi/linux/pkt_sched.h |  1 +
- net/sched/sch_etf.c            | 71 +++++++++++++++++++++++++++++++++++++++++-
+ net/sched/sch_etf.c            | 71 +++++++++++++++++++++++++++++++++-
  3 files changed, 76 insertions(+), 1 deletion(-)
 
 diff --git a/include/net/pkt_sched.h b/include/net/pkt_sched.h
@@ -60,7 +60,7 @@ index a841035..86744b0 100644
  
  enum {
 diff --git a/net/sched/sch_etf.c b/net/sched/sch_etf.c
-index 4b7f4903..932a136 100644
+index 4b7f490..932a136 100644
 --- a/net/sched/sch_etf.c
 +++ b/net/sched/sch_etf.c
 @@ -20,8 +20,10 @@
@@ -194,5 +194,5 @@ index 4b7f4903..932a136 100644
  		opt.flags |= TC_ETF_DEADLINE_MODE_ON;
  
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,7 @@
-From 68f6f5a566ba5e5fa5de9a0866aabd6fb2c49b2a Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Fri, 8 Sep 2017 00:13:04 -0500
-Subject: [PATCH 1162/2278] ASoC: Intel: cht_bsw_max98090: Fix I2S config +
- unused code
+Subject: [PATCH] ASoC: Intel: cht_bsw_max98090: Fix I2S config + unused code
 
 This driver probably never worked, the slots are configured
 for 2ch 16 bit and the SSP2 as 24 bits, the cpu_dai configured as
@@ -41,5 +40,5 @@ index a02dec2..196adc7 100644
  }
  
 -- 
-2.7.4
+https://clearlinux.org
 

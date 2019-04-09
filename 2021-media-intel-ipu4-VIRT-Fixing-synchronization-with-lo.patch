@@ -1,8 +1,7 @@
-From 5893449f9be6c6dadd31c62fd0fb8d6dd48e1746 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Bandi, Kushal" <kushal.bandi@intel.com>
 Date: Mon, 2 Jul 2018 19:11:33 -0700
-Subject: [PATCH 2021/2278] media: intel-ipu4: [VIRT] Fixing synchronization
- with locks
+Subject: [PATCH] media: intel-ipu4: [VIRT] Fixing synchronization with locks
 
 Adding mutext lock to prevent poll.
 
@@ -14,8 +13,8 @@ Change-Id: I78b2ad988199874098b35e3c037c47b180b6dc9b
 Signed-off-by: Bandi, Kushal <kushal.bandi@intel.com>
 Signed-off-by: Ong Hock Yu <ong.hock.yu@intel.com>
 ---
- drivers/media/pci/intel/ici/ici-isys-frame-buf.c   |  2 +-
- .../pci/intel/virtio/intel-ipu4-para-virt-drv.c    | 25 ++++++++++++++++++++--
+ .../media/pci/intel/ici/ici-isys-frame-buf.c  |  2 +-
+ .../intel/virtio/intel-ipu4-para-virt-drv.c   | 25 +++++++++++++++++--
  2 files changed, 24 insertions(+), 3 deletions(-)
 
 diff --git a/drivers/media/pci/intel/ici/ici-isys-frame-buf.c b/drivers/media/pci/intel/ici/ici-isys-frame-buf.c
@@ -145,5 +144,5 @@ index d17aafb..e900406 100644
  		}
  		kfree(data);
 -- 
-2.7.4
+https://clearlinux.org
 

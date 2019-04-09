@@ -1,8 +1,8 @@
-From ba547c765f139bd0ae06a3dd1a46410e68993b4a Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Thu, 8 Mar 2018 18:23:38 -0600
-Subject: [PATCH 1597/2278] ASoC: core: Add name prefix for machines with
- topology rewrites
+Subject: [PATCH] ASoC: core: Add name prefix for machines with topology
+ rewrites
 
 Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 ---
@@ -50,5 +50,5 @@ index 2d116b3..e70fc37 100644
  }
  
 -- 
-2.7.4
+https://clearlinux.org
 

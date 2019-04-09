@@ -1,7 +1,7 @@
-From a4f097ce277ffffa3e704d62a31459e487fafc1b Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ding Yunliang <yunliang.ding@intel.com>
 Date: Mon, 28 May 2018 14:52:03 +0800
-Subject: [PATCH 1933/2278] media: intel-ipu4: make some symbol static
+Subject: [PATCH] media: intel-ipu4: make some symbol static
 
 Message for Open Source:
 sparse warning (like below) fix:
@@ -293,5 +293,5 @@ index 4cc47d1..1638d9d 100755
  	{ CLKDEV_INIT("2-001a", NULL, NULL), "OSC_CLK_OUT0" },
  	{ CLKDEV_INIT("4-001a", NULL, NULL), "OSC_CLK_OUT1" },
 -- 
-2.7.4
+https://clearlinux.org
 

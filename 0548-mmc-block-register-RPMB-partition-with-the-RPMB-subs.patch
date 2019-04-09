@@ -1,8 +1,7 @@
-From fe10337a03cfaa5135e09cbce01fc2789020f1bf Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tomas Winkler <tomas.winkler@intel.com>
 Date: Wed, 28 Jan 2015 17:01:34 +0200
-Subject: [PATCH 0548/2278] mmc: block: register RPMB partition with the RPMB
- subsystem
+Subject: [PATCH] mmc: block: register RPMB partition with the RPMB subsystem
 
 Register eMMC RPMB partition with the RPMB subsystem and provide
 implementation for the RPMB access operations abstracting
@@ -25,7 +24,7 @@ Signed-off-by: Alexander Usyskin <alexander.usyskin@intel.com>
 Tested-by: Avri Altman <avri.altman@sandisk.com>
 ---
  drivers/mmc/core/Kconfig |   1 +
- drivers/mmc/core/block.c | 261 ++++++++++++++++++++++++++++++++++++++++++++++-
+ drivers/mmc/core/block.c | 261 ++++++++++++++++++++++++++++++++++++++-
  2 files changed, 259 insertions(+), 3 deletions(-)
 
 diff --git a/drivers/mmc/core/Kconfig b/drivers/mmc/core/Kconfig
@@ -362,5 +361,5 @@ index ce6dd49..3962cf1 100644
  }
  
 -- 
-2.7.4
+https://clearlinux.org
 

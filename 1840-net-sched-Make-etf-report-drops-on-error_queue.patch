@@ -1,7 +1,7 @@
-From 27d863e48bb97261924e14fcaece60cccfc89814 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Jesus Sanchez-Palencia <jesus.sanchez-palencia@intel.com>
 Date: Tue, 3 Jul 2018 15:43:00 -0700
-Subject: [PATCH 1840/2278] net/sched: Make etf report drops on error_queue
+Subject: [PATCH] net/sched: Make etf report drops on error_queue
 
 Use the socket error queue for reporting dropped packets if the
 socket has enabled that feature through the SO_TXTIME API.
@@ -28,7 +28,7 @@ Signed-off-by: David S. Miller <davem@davemloft.net>
  include/uapi/linux/errqueue.h   |  4 ++++
  include/uapi/linux/net_tstamp.h |  5 ++++-
  net/core/sock.c                 |  4 ++++
- net/sched/sch_etf.c             | 35 +++++++++++++++++++++++++++++++++--
+ net/sched/sch_etf.c             | 35 +++++++++++++++++++++++++++++++--
  5 files changed, 47 insertions(+), 4 deletions(-)
 
 diff --git a/include/net/sock.h b/include/net/sock.h
@@ -181,5 +181,5 @@ index 932a136..1538d6f 100644
  		timesortedlist_erase(sch, skb, true);
  		skb = NULL;
 -- 
-2.7.4
+https://clearlinux.org
 

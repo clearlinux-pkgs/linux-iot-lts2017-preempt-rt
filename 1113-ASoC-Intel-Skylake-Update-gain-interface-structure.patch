@@ -1,8 +1,7 @@
-From 3646e7d3fdbf49e9feec8e8d187ff56e2c1f7536 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Shaik, ShahinaX" <shahinax.shaik@intel.com>
 Date: Mon, 5 Feb 2018 20:12:17 +0530
-Subject: [PATCH 1113/2278] ASoC: Intel: Skylake: Update gain interface
- structure
+Subject: [PATCH] ASoC: Intel: Skylake: Update gain interface structure
 
 This patch updates gain structure alignment as per
 firmware interface requirement.
@@ -21,7 +20,7 @@ Tested-by: Madiwalar, MadiwalappaX <madiwalappax.madiwalar@intel.com>
  1 file changed, 1 insertion(+)
 
 diff --git a/sound/soc/intel/skylake/skl-tplg-interface.h b/sound/soc/intel/skylake/skl-tplg-interface.h
-index ef019a5..72544755 100644
+index ef019a5..7254475 100644
 --- a/sound/soc/intel/skylake/skl-tplg-interface.h
 +++ b/sound/soc/intel/skylake/skl-tplg-interface.h
 @@ -208,6 +208,7 @@ struct skl_gain_config {
@@ -33,5 +32,5 @@ index ef019a5..72544755 100644
  } __packed;
  
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,7 @@
-From da5dc1bb59c429cb16c6533a4602c0a7c2001060 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "he, bo" <bo.he@intel.com>
 Date: Tue, 2 May 2017 11:43:49 +0800
-Subject: [PATCH 1120/2278] extcon: USB: Use static DRD mode for host/device
- mode switch
+Subject: [PATCH] extcon: USB: Use static DRD mode for host/device mode switch
 
 Currently, dynamic DRD mode is used for handling the host/device mode
 switch. But this method creates issues when switching the mode after S3
@@ -58,5 +57,5 @@ index 9290eb7..26b043d 100644
  	mux->edev.supported_cable = intel_mux_cable;
  
 -- 
-2.7.4
+https://clearlinux.org
 

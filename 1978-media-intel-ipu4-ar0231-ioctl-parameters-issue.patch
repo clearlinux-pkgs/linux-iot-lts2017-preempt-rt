@@ -1,7 +1,7 @@
-From 0eb424e79297ae155019059f77c59395bb3cb859 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: yzha108 <yanli.l.zhang@intel.com>
 Date: Mon, 9 Jul 2018 18:52:49 +0800
-Subject: [PATCH 1978/2278] media: intel-ipu4: ar0231: ioctl parameters issue.
+Subject: [PATCH] media: intel-ipu4: ar0231: ioctl parameters issue.
 
 Message for Open Source:
 Make sure IOCTL parameters value is correct
@@ -18,7 +18,7 @@ TrackedOn: #JIIAP-531
 Signed-off-by: yzha108 <yanli.l.zhang@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- .../i2c/crlmodule/crl_ar0231at_configuration.h     | 34 +++++++++++-----------
+ .../crlmodule/crl_ar0231at_configuration.h    | 34 +++++++++----------
  1 file changed, 17 insertions(+), 17 deletions(-)
 
 diff --git a/drivers/media/i2c/crlmodule/crl_ar0231at_configuration.h b/drivers/media/i2c/crlmodule/crl_ar0231at_configuration.h
@@ -114,5 +114,5 @@ index 697e35e..fc639c0 100644
  		.impact = CRL_IMPACTS_NO_IMPACT,
  		.ctrl = 0,
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,7 +1,7 @@
-From a462270df821a0433ef83c99845611ffaf575dcb Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Zhi Jin <zhi.jin@intel.com>
 Date: Wed, 1 Aug 2018 14:58:50 +0800
-Subject: [PATCH 2056/2278] acrn: add hv_npk_log module
+Subject: [PATCH] acrn: add hv_npk_log module
 
 The hv_npk_log driver is used to enable/disable/configure the
 hypervisor NPK log via the hypercall HC_SETUP_HV_NPK_LOG.
@@ -11,8 +11,8 @@ Reviewed-by: Zhao Yakui <yakui.zhao@intel.com>
 ---
  drivers/acrn/Kconfig      |   8 +
  drivers/acrn/Makefile     |   1 +
- drivers/acrn/hv_npk_log.c | 384 ++++++++++++++++++++++++++++++++++++++++++++++
- drivers/acrn/hv_npk_log.h | 109 +++++++++++++
+ drivers/acrn/hv_npk_log.c | 384 ++++++++++++++++++++++++++++++++++++++
+ drivers/acrn/hv_npk_log.h | 109 +++++++++++
  4 files changed, 502 insertions(+)
  create mode 100644 drivers/acrn/hv_npk_log.c
  create mode 100644 drivers/acrn/hv_npk_log.h
@@ -548,5 +548,5 @@ index 0000000..68bd682
 +
 +#endif /* _HV_NPK_LOG_H_ */
 -- 
-2.7.4
+https://clearlinux.org
 

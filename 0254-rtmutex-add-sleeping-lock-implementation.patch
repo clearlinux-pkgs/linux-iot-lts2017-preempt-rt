@@ -1,7 +1,7 @@
-From 98f87393bb71188d9f89259bb66cd7cf5cc99a02 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Thomas Gleixner <tglx@linutronix.de>
 Date: Thu, 12 Oct 2017 17:11:19 +0200
-Subject: [PATCH 0254/2278] rtmutex: add sleeping lock implementation
+Subject: [PATCH] rtmutex: add sleeping lock implementation
 
 Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
@@ -9,14 +9,14 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  include/linux/kernel.h            |   4 +
  include/linux/rtmutex.h           |  21 +-
  include/linux/sched.h             |   9 +
- include/linux/sched/wake_q.h      |  27 ++-
- include/linux/spinlock_rt.h       | 159 ++++++++++++++
+ include/linux/sched/wake_q.h      |  27 +-
+ include/linux/spinlock_rt.h       | 159 +++++++++++
  include/linux/spinlock_types_rt.h |  48 ++++
  kernel/fork.c                     |   1 +
  kernel/futex.c                    |  11 +-
- kernel/locking/rtmutex.c          | 449 +++++++++++++++++++++++++++++++++++---
+ kernel/locking/rtmutex.c          | 449 +++++++++++++++++++++++++++---
  kernel/locking/rtmutex_common.h   |  15 +-
- kernel/sched/core.c               |  28 ++-
+ kernel/sched/core.c               |  28 +-
  11 files changed, 713 insertions(+), 59 deletions(-)
  create mode 100644 include/linux/spinlock_rt.h
  create mode 100644 include/linux/spinlock_types_rt.h
@@ -1221,5 +1221,5 @@ index e4c9a2f..b34002b 100644
  	}
  }
 -- 
-2.7.4
+https://clearlinux.org
 

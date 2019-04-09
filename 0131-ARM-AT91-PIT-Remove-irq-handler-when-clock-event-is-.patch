@@ -1,8 +1,7 @@
-From 80348a1b7a6bd623578462c09af6f77177e45818 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Benedikt Spranger <b.spranger@linutronix.de>
 Date: Sat, 6 Mar 2010 17:47:10 +0100
-Subject: [PATCH 0131/2278] ARM: AT91: PIT: Remove irq handler when clock event
- is unused
+Subject: [PATCH] ARM: AT91: PIT: Remove irq handler when clock event is unused
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -18,8 +17,8 @@ commit 8fe82a55 ("ARM: at91: sparse irq support") which is included since v3.6.
 Patch based on what Sami Pietikäinen <Sami.Pietikainen@wapice.com> suggested].
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- drivers/clocksource/timer-atmel-pit.c | 19 +++++++++----------
- drivers/clocksource/timer-atmel-st.c  | 34 ++++++++++++++++++++++------------
+ drivers/clocksource/timer-atmel-pit.c | 19 +++++++--------
+ drivers/clocksource/timer-atmel-st.c  | 34 +++++++++++++++++----------
  2 files changed, 31 insertions(+), 22 deletions(-)
 
 diff --git a/drivers/clocksource/timer-atmel-pit.c b/drivers/clocksource/timer-atmel-pit.c
@@ -153,5 +152,5 @@ index d2e660f..c63b96c 100644
  	if (IS_ERR(sclk)) {
  		pr_err("Unable to get slow clock\n");
 -- 
-2.7.4
+https://clearlinux.org
 

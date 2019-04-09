@@ -1,8 +1,7 @@
-From f573255a9ed8ff89a11b47f63e021aa5b169c9a2 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Chris Wilson <chris@chris-wilson.co.uk>
 Date: Tue, 3 Oct 2017 21:34:53 +0100
-Subject: [PATCH 1081/2278] UPSTREAM: drm/i915/scheduler: Support user-defined
- priorities
+Subject: [PATCH] UPSTREAM: drm/i915/scheduler: Support user-defined priorities
 
 Use a priority stored in the context as the initial value when
 submitting a request. This allows us to change the default priority on a
@@ -81,7 +80,7 @@ index 322e996..3164df8 100644
  			if (INTEL_INFO(dev_priv)->has_logical_ring_preemption &&
  			    i915_modparams.enable_execlists &&
 diff --git a/drivers/gpu/drm/i915/i915_gem_context.c b/drivers/gpu/drm/i915/i915_gem_context.c
-index 67cef036..1895687 100644
+index 67cef03..1895687 100644
 --- a/drivers/gpu/drm/i915/i915_gem_context.c
 +++ b/drivers/gpu/drm/i915/i915_gem_context.c
 @@ -1076,6 +1076,9 @@ int i915_gem_context_getparam_ioctl(struct drm_device *dev, void *data,
@@ -179,5 +178,5 @@ index 8d450f9..791368c 100644
  };
  
 -- 
-2.7.4
+https://clearlinux.org
 

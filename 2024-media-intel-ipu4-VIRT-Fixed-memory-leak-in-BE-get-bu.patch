@@ -1,8 +1,8 @@
-From 646a485246b06feb7ef7be07994754d9c25acd0b Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ong Hock Yu <ong.hock.yu@intel.com>
 Date: Mon, 6 Aug 2018 08:33:33 +0800
-Subject: [PATCH 2024/2278] media: intel-ipu4: [VIRT] Fixed memory leak in BE
- get buf function.
+Subject: [PATCH] media: intel-ipu4: [VIRT] Fixed memory leak in BE get buf
+ function.
 
 Also fixed use of req after freeing its memory in poll function
 
@@ -11,13 +11,13 @@ Replacing all printks with respective log level.
 Change-Id: I94a25bc2c2471f09d1801fe657e9a34c4f956e52
 Signed-off-by: Ong Hock Yu <ong.hock.yu@intel.com>
 ---
- .../pci/intel/virtio/intel-ipu4-para-virt-drv.c    | 18 +++----
- .../pci/intel/virtio/intel-ipu4-para-virt-drv.h    |  2 +
- .../pci/intel/virtio/intel-ipu4-virtio-be-bridge.c |  8 +--
- .../intel/virtio/intel-ipu4-virtio-be-pipeline.c   |  4 +-
- .../pci/intel/virtio/intel-ipu4-virtio-be-stream.c | 58 +++++++++++-----------
- .../media/pci/intel/virtio/intel-ipu4-virtio-be.c  | 12 ++---
- .../media/pci/intel/virtio/intel-ipu4-virtio-fe.c  |  1 -
+ .../intel/virtio/intel-ipu4-para-virt-drv.c   | 18 +++---
+ .../intel/virtio/intel-ipu4-para-virt-drv.h   |  2 +
+ .../virtio/intel-ipu4-virtio-be-bridge.c      |  8 +--
+ .../virtio/intel-ipu4-virtio-be-pipeline.c    |  4 +-
+ .../virtio/intel-ipu4-virtio-be-stream.c      | 58 +++++++++----------
+ .../pci/intel/virtio/intel-ipu4-virtio-be.c   | 12 ++--
+ .../pci/intel/virtio/intel-ipu4-virtio-fe.c   |  1 -
  7 files changed, 50 insertions(+), 53 deletions(-)
 
 diff --git a/drivers/media/pci/intel/virtio/intel-ipu4-para-virt-drv.c b/drivers/media/pci/intel/virtio/intel-ipu4-para-virt-drv.c
@@ -414,5 +414,5 @@ index a800113..d95e52a 100644
  	if (!priv)
  		return -ENOMEM;
 -- 
-2.7.4
+https://clearlinux.org
 

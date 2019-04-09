@@ -1,7 +1,7 @@
-From f3eee986fe6e1abc0d5fba45246129b6445aadc3 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Thomas Gleixner <tglx@linutronix.de>
 Date: Thu, 12 Oct 2017 17:28:34 +0200
-Subject: [PATCH 0256/2278] rtmutex: add rwsem implementation based on rtmutex
+Subject: [PATCH] rtmutex: add rwsem implementation based on rtmutex
 
 The RT specific R/W semaphore implementation restricts the number of readers
 to one because a writer cannot block on multiple readers and inherit its
@@ -42,8 +42,8 @@ the approach.
 Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- include/linux/rwsem_rt.h  |  67 ++++++++++++
- kernel/locking/rwsem-rt.c | 269 ++++++++++++++++++++++++++++++++++++++++++++++
+ include/linux/rwsem_rt.h  |  67 ++++++++++
+ kernel/locking/rwsem-rt.c | 269 ++++++++++++++++++++++++++++++++++++++
  2 files changed, 336 insertions(+)
  create mode 100644 include/linux/rwsem_rt.h
  create mode 100644 kernel/locking/rwsem-rt.c
@@ -397,5 +397,5 @@ index 0000000..a8f7ce5
 +	__up_write_unlock(sem, WRITER_BIAS - 1, flags);
 +}
 -- 
-2.7.4
+https://clearlinux.org
 

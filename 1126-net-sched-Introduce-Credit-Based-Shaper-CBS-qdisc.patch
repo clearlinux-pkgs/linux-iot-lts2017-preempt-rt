@@ -1,8 +1,7 @@
-From d7a0d3973d36e0fd9ebf19ce029bf2b5289e2ef3 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Vinicius Costa Gomes <vinicius.gomes@intel.com>
 Date: Mon, 16 Oct 2017 18:01:26 -0700
-Subject: [PATCH 1126/2278] net/sched: Introduce Credit Based Shaper (CBS)
- qdisc
+Subject: [PATCH] net/sched: Introduce Credit Based Shaper (CBS) qdisc
 
 This queueing discipline implements the shaper algorithm defined by
 the 802.1Q-2014 Section 8.6.8.2 and detailed in Annex L.
@@ -21,7 +20,7 @@ Signed-off-by: Jeff Kirsher <jeffrey.t.kirsher@intel.com>
  include/uapi/linux/pkt_sched.h |  19 +++
  net/sched/Kconfig              |  11 ++
  net/sched/Makefile             |   1 +
- net/sched/sch_cbs.c            | 293 +++++++++++++++++++++++++++++++++++++++++
+ net/sched/sch_cbs.c            | 293 +++++++++++++++++++++++++++++++++
  4 files changed, 324 insertions(+)
  create mode 100644 net/sched/sch_cbs.c
 
@@ -387,5 +386,5 @@ index 0000000..0e85133
 +module_exit(cbs_module_exit)
 +MODULE_LICENSE("GPL");
 -- 
-2.7.4
+https://clearlinux.org
 

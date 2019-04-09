@@ -1,8 +1,7 @@
-From 65ba485e93c68393cb89361d8f21144b3f1225ae Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Leoni Prodduvaka <leoni.prodduvaka@intel.com>
 Date: Wed, 15 Feb 2017 17:04:40 +0530
-Subject: [PATCH 0715/2278] ASoC: Intel: Skylake: Add D0i3 support for Icelake
- platform
+Subject: [PATCH] ASoC: Intel: Skylake: Add D0i3 support for Icelake platform
 
 The driver needs two DSP callback, one to set D0i0 (active) and D0i3
 (low-power) states.
@@ -83,7 +82,7 @@ index a6b6e98..67c3da0 100644
  	if (ret < 0) {
  		dev_err(dev, "Load base fw failed: %d", ret);
 diff --git a/sound/soc/intel/skylake/skl-sst-dsp.h b/sound/soc/intel/skylake/skl-sst-dsp.h
-index abea7f6e..b61e852 100644
+index abea7f6..b61e852 100644
 --- a/sound/soc/intel/skylake/skl-sst-dsp.h
 +++ b/sound/soc/intel/skylake/skl-sst-dsp.h
 @@ -294,4 +294,10 @@ int skl_prepare_lib_load(struct skl_sst *skl, struct skl_lib_info *linfo,
@@ -98,5 +97,5 @@ index abea7f6e..b61e852 100644
 +void bxt_set_dsp_D0i3(struct work_struct *work);
  #endif /*__SKL_SST_DSP_H__*/
 -- 
-2.7.4
+https://clearlinux.org
 

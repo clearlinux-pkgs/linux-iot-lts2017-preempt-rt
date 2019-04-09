@@ -1,8 +1,7 @@
-From 8744e50c0778b5ac83e7dbf8884d16fdababd94a Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Mika Kuoppala <mika.kuoppala@linux.intel.com>
 Date: Fri, 22 Sep 2017 15:43:07 +0300
-Subject: [PATCH 1061/2278] UPSTREAM: drm/i915: Make execlist port count
- variable
+Subject: [PATCH] UPSTREAM: drm/i915: Make execlist port count variable
 
 As we emulate execlists on top of the GuC workqueue, it is not
 restricted to just 2 ports and we can increase that number arbitrarily
@@ -268,5 +267,5 @@ index 42999c7..84f8df1 100644
  
  static inline unsigned int
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,7 +1,7 @@
-From 32c75a7d10ce7f6d465a0b19fc30585d1cb61c22 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Tue, 31 Jul 2018 16:16:03 -0500
-Subject: [PATCH 1987/2278] ASoC: SOF: pci: add GeminiLake PCI ID
+Subject: [PATCH] ASoC: SOF: pci: add GeminiLake PCI ID
 
 No difference with ApolloLake except for PCI ID
 
@@ -27,5 +27,5 @@ index 5445d80..7cf55ee 100644
  	{ PCI_DEVICE(0x8086, 0x119a),
  		.driver_data = (unsigned long)&byt_desc},
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,7 +1,7 @@
-From 134aa4e1add499239af5d6c55bdebadfdbbf07fb Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tom Zanussi <tom.zanussi@linux.intel.com>
 Date: Mon, 15 Jan 2018 20:51:59 -0600
-Subject: [PATCH 0102/2278] tracing: Add support for 'field variables'
+Subject: [PATCH] tracing: Add support for 'field variables'
 
 Users should be able to directly specify event fields in hist trigger
 'actions' rather than being forced to explicitly create a variable for
@@ -45,7 +45,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
 (cherry picked from commit 5fcd8c6efab39371cb3ce51b8b391a43e83a94de)
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- kernel/trace/trace_events_hist.c | 531 ++++++++++++++++++++++++++++++++++++++-
+ kernel/trace/trace_events_hist.c | 531 ++++++++++++++++++++++++++++++-
  1 file changed, 530 insertions(+), 1 deletion(-)
 
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
@@ -668,5 +668,5 @@ index ababc28..0cf7cc3 100644
  	}
  }
 -- 
-2.7.4
+https://clearlinux.org
 

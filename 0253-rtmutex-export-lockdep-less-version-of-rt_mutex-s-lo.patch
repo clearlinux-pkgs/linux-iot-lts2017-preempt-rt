@@ -1,15 +1,15 @@
-From d0711108e214cd5875371d95f376aa7102361682 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Thomas Gleixner <tglx@linutronix.de>
 Date: Thu, 12 Oct 2017 16:36:39 +0200
-Subject: [PATCH 0253/2278] rtmutex: export lockdep-less version of rt_mutex's
- lock, trylock and unlock
+Subject: [PATCH] rtmutex: export lockdep-less version of rt_mutex's lock,
+ trylock and unlock
 
 Required for lock implementation ontop of rtmutex.
 
 Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- kernel/locking/rtmutex.c        | 65 ++++++++++++++++++++++++-----------------
+ kernel/locking/rtmutex.c        | 65 ++++++++++++++++++++-------------
  kernel/locking/rtmutex_common.h |  3 ++
  2 files changed, 42 insertions(+), 26 deletions(-)
 
@@ -160,5 +160,5 @@ index 3b10fde..ff17912 100644
  				     struct hrtimer_sleeper *timeout,
  				     enum rtmutex_chainwalk chwalk,
 -- 
-2.7.4
+https://clearlinux.org
 

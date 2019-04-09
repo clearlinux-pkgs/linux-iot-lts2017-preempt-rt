@@ -1,7 +1,7 @@
-From a6ba090574809a9b3ceec385c2ee19eb36f856b1 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ricardo Neri <ricardo.neri-calderon@linux.intel.com>
 Date: Tue, 11 Jul 2017 13:25:34 -0700
-Subject: [PATCH 0524/2278] x86: Enable User-Mode Instruction Prevention
+Subject: [PATCH] x86: Enable User-Mode Instruction Prevention
 
 User-Mode Instruction Prevention (UMIP) is enabled by setting/clearing a
 bit in %cr4.
@@ -43,7 +43,7 @@ Signed-off-by: Ricardo Neri <ricardo.neri-calderon@linux.intel.com>
  2 files changed, 34 insertions(+), 1 deletion(-)
 
 diff --git a/arch/x86/Kconfig b/arch/x86/Kconfig
-index d34820f..616ed8a2 100644
+index d34820f..616ed8a 100644
 --- a/arch/x86/Kconfig
 +++ b/arch/x86/Kconfig
 @@ -1813,6 +1813,16 @@ config X86_SMAP
@@ -109,5 +109,5 @@ index 51e49f6..38511a6 100644
  	/*
  	 * The vendor-specific functions might have changed features.
 -- 
-2.7.4
+https://clearlinux.org
 

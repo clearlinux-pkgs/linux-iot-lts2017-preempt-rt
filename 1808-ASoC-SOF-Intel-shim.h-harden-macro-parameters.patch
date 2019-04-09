@@ -1,7 +1,7 @@
-From f55f886c124800b4a192c22c111c588eae8ddf84 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Mon, 23 Jul 2018 14:51:37 -0500
-Subject: [PATCH 1808/2278] ASoC: SOF: Intel: shim.h: harden macro parameters
+Subject: [PATCH] ASoC: SOF: Intel: shim.h: harden macro parameters
 
 make checkpatch happy
 
@@ -48,5 +48,5 @@ index 5124413..b6481fc 100644
  #define SHIM_HMDC_HDDA_E0_CH1	2
  #define SHIM_HMDC_HDDA_E0_CH2	4
 -- 
-2.7.4
+https://clearlinux.org
 

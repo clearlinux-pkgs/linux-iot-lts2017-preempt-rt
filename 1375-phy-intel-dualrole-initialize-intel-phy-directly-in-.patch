@@ -1,8 +1,7 @@
-From 8a2cd8df8216464da1155db83ac5d06c973c8c4b Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Dominik Bozek <dominikx.bozek@intel.com>
 Date: Wed, 18 Apr 2018 16:43:21 +0200
-Subject: [PATCH 1375/2278] phy-intel-dualrole: initialize intel phy directly
- in driver
+Subject: [PATCH] phy-intel-dualrole: initialize intel phy directly in driver
 
 Intel's PHY dualrole driver need to be initialized before
 xhci and dwc3. Initializing it in the dwc3 (first aproach)
@@ -19,10 +18,10 @@ try backporting it to this kernel to solve this issue.
 Signed-off-by: Dominik Bozek <dominikx.bozek@intel.com>
 Signed-off-by: Kuppuswamy Sathyanarayanan <sathyanarayanan.kuppuswamy@linux.intel.com>
 ---
- drivers/usb/dwc3/dwc3-pci.c          | 29 +++--------------------------
- drivers/usb/host/xhci-pci.c          | 31 -------------------------------
+ drivers/usb/dwc3/dwc3-pci.c          | 29 +++-----------------------
+ drivers/usb/host/xhci-pci.c          | 31 ----------------------------
  drivers/usb/host/xhci.h              |  1 -
- drivers/usb/phy/phy-intel-dualrole.c | 17 +++++++++++++++--
+ drivers/usb/phy/phy-intel-dualrole.c | 17 +++++++++++++--
  4 files changed, 18 insertions(+), 60 deletions(-)
 
 diff --git a/drivers/usb/dwc3/dwc3-pci.c b/drivers/usb/dwc3/dwc3-pci.c
@@ -175,5 +174,5 @@ index 0eaaf8e..eae21d7 100644
  }
  module_exit(intel_dr_phy_exit);
 -- 
-2.7.4
+https://clearlinux.org
 

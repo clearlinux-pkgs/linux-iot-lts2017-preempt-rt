@@ -1,8 +1,7 @@
-From 7d461e5d69a70ff62aac2022bc001e830834fe9e Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Paul, Subhankar" <subhankar.paul@intel.com>
 Date: Tue, 8 Aug 2017 22:46:45 +0530
-Subject: [PATCH 0766/2278] ASoC: Intel: Skylake: Add support for module
- notifications
+Subject: [PATCH] ASoC: Intel: Skylake: Add support for module notifications
 
 Firmware modules can send asynchronous notification to driver
 with event data as payload. Add support for notifying user of such
@@ -21,15 +20,15 @@ Tested-by: Avati, Santosh Kumar <santosh.kumar.avati@intel.com>
 ---
  sound/soc/intel/skylake/skl-messages.c |   2 +
  sound/soc/intel/skylake/skl-sst-dsp.h  |   1 +
- sound/soc/intel/skylake/skl-sst-ipc.c  |  58 ++++++++++++++++-
- sound/soc/intel/skylake/skl-sst-ipc.h  |   9 +++
- sound/soc/intel/skylake/skl-topology.c | 111 +++++++++++++++++++++++++++++++++
- sound/soc/intel/skylake/skl-topology.h |   8 +++
+ sound/soc/intel/skylake/skl-sst-ipc.c  |  58 ++++++++++++-
+ sound/soc/intel/skylake/skl-sst-ipc.h  |   9 ++
+ sound/soc/intel/skylake/skl-topology.c | 111 +++++++++++++++++++++++++
+ sound/soc/intel/skylake/skl-topology.h |   8 ++
  sound/soc/intel/skylake/skl.c          |   2 +
  7 files changed, 190 insertions(+), 1 deletion(-)
 
 diff --git a/sound/soc/intel/skylake/skl-messages.c b/sound/soc/intel/skylake/skl-messages.c
-index 2123a40..3a87a813 100644
+index 2123a40..3a87a81 100644
 --- a/sound/soc/intel/skylake/skl-messages.c
 +++ b/sound/soc/intel/skylake/skl-messages.c
 @@ -1223,6 +1223,8 @@ int skl_init_dsp(struct skl *skl)
@@ -181,10 +180,11 @@ diff --git a/sound/soc/intel/skylake/skl-topology.c b/sound/soc/intel/skylake/sk
 index a17493b..8253a6d 100644
 --- a/sound/soc/intel/skylake/skl-topology.c
 +++ b/sound/soc/intel/skylake/skl-topology.c
-@@ -2558,6 +2558,96 @@ int skl_tplg_be_update_params(struct snd_soc_dai *dai,
+@@ -2557,6 +2557,96 @@ int skl_tplg_be_update_params(struct snd_soc_dai *dai,
+ 	return 0;
  }
  
- /*
++/*
 + * This function searches notification kcontrol list present in skl_sst
 + * context against unique notify_id and returns kcontrol pointer if match
 + * found.
@@ -274,10 +274,9 @@ index a17493b..8253a6d 100644
 +
 +
 +
-+/*
+ /*
   * Get the events along with data stored in notify_data and pass
   * to kcontrol private data.
-  */
 @@ -2568,6 +2658,9 @@ int skl_dsp_cb_event(struct skl_sst *ctx, unsigned int event,
  	struct soc_bytes_ext *sb;
  	struct skl *skl = get_skl_ctx(ctx->dev);
@@ -351,5 +350,5 @@ index a2f51bd..512f729 100644
  
  	pm_runtime_get_noresume(&pci->dev);
 -- 
-2.7.4
+https://clearlinux.org
 

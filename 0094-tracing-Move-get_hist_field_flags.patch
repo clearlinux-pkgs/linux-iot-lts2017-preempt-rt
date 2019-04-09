@@ -1,7 +1,7 @@
-From e509879c77e72ab4a7acc4af33c81a26e25c952d Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tom Zanussi <tom.zanussi@linux.intel.com>
 Date: Mon, 15 Jan 2018 20:51:51 -0600
-Subject: [PATCH 0094/2278] tracing: Move get_hist_field_flags()
+Subject: [PATCH] tracing: Move get_hist_field_flags()
 
 Move get_hist_field_flags() to make it more easily accessible for new
 code (and keep the move separate from new functionality).
@@ -13,7 +13,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
 (cherry picked from commit fde3bce553d359c01beb9a6fce4013b65076aff3)
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- kernel/trace/trace_events_hist.c | 44 ++++++++++++++++++++--------------------
+ kernel/trace/trace_events_hist.c | 44 ++++++++++++++++----------------
  1 file changed, 22 insertions(+), 22 deletions(-)
 
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
@@ -79,5 +79,5 @@ index 68ff249..c6c24d6 100644
  {
  	const char *field_name = hist_field_name(hist_field, 0);
 -- 
-2.7.4
+https://clearlinux.org
 

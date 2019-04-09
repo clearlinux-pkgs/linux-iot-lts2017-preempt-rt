@@ -1,8 +1,7 @@
-From b3579dc6adfa1faed667b12b9d295b7aa7963f2a Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ding Yunliang <yunliang.ding@intel.com>
 Date: Fri, 25 May 2018 10:46:59 +0800
-Subject: [PATCH 1534/2278] media: intel-ipu4: imx274: update min exposure
- value
+Subject: [PATCH] media: intel-ipu4: imx274: update min exposure value
 
 Message for Open Source:
 This value was reported to CCA by hal as the exposure value,
@@ -32,5 +31,5 @@ index 3743d63..558faea 100644
  		.data.std_data.step = 1,
  		.data.std_data.def = 0x400,
 -- 
-2.7.4
+https://clearlinux.org
 

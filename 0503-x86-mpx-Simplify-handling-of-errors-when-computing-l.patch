@@ -1,8 +1,8 @@
-From a495a4e46a1801323c8f41ec49b864b3935e1b2d Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ricardo Neri <ricardo.neri-calderon@linux.intel.com>
 Date: Tue, 5 Sep 2017 14:56:39 -0700
-Subject: [PATCH 0503/2278] x86/mpx: Simplify handling of errors when computing
- linear addresses
+Subject: [PATCH] x86/mpx: Simplify handling of errors when computing linear
+ addresses
 
 When errors occur in the computation of the linear address, -1L is
 returned. Rather than having a separate return path for errors, the
@@ -84,5 +84,5 @@ index 7eb0670..f0d6877 100644
  
  static int mpx_insn_decode(struct insn *insn,
 -- 
-2.7.4
+https://clearlinux.org
 

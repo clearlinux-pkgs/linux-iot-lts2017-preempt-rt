@@ -1,7 +1,7 @@
-From b1b0aed861325d628964aef13d4578e8918817db Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ranjani Sridharan <ranjani.sridharan@linux.intel.com>
 Date: Sat, 26 May 2018 23:29:11 -0700
-Subject: [PATCH 1634/2278] ASoC: SOF: support DMIC DAI type during link fixup
+Subject: [PATCH] ASoC: SOF: support DMIC DAI type during link fixup
 
 Handle DMIC configuration errors during link fixup.
 
@@ -32,5 +32,5 @@ index 32d114e..50a95fd 100644
  		/* fallthrough */
  	default:
 -- 
-2.7.4
+https://clearlinux.org
 

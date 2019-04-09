@@ -1,8 +1,7 @@
-From e713f1d6cf53741915325f86bd5fdf002722dec4 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 Date: Fri, 5 Feb 2016 12:17:14 +0100
-Subject: [PATCH 0185/2278] mm: backing-dev: don't disable IRQs in
- wb_congested_put()
+Subject: [PATCH] mm: backing-dev: don't disable IRQs in wb_congested_put()
 
 it triggers:
 |BUG: sleeping function called from invalid context at kernel/locking/rtmutex.c:930
@@ -44,5 +43,5 @@ index 9386c98..5e9d804 100644
  	}
  
 -- 
-2.7.4
+https://clearlinux.org
 

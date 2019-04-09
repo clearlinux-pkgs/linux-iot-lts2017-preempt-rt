@@ -1,8 +1,7 @@
-From e9553b8d9ed8b870d25b90755f881db4484c18fa Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Diwakar, Praveen" <praveen.diwakar@intel.com>
 Date: Tue, 6 Jun 2017 21:04:21 +0530
-Subject: [PATCH 0736/2278] ASoC: Intel: Skylake: Create SSP BE dais
- dynamically
+Subject: [PATCH] ASoC: Intel: Skylake: Create SSP BE dais dynamically
 
 This patch creates BE SSP dai dynamically, by getting SSP
 link information from NHLT.
@@ -12,8 +11,8 @@ Signed-off-by: Diwakar, Praveen <praveen.diwakar@intel.com>
 Reviewed-by: Kale, Sanyog R <sanyog.r.kale@intel.com>
 Tested-by: Sm, Bhadur A <bhadur.a.sm@intel.com>
 ---
- sound/soc/intel/skylake/skl-nhlt.c |  36 ++++++++
- sound/soc/intel/skylake/skl-pcm.c  | 177 ++++++++++++-------------------------
+ sound/soc/intel/skylake/skl-nhlt.c |  36 ++++++
+ sound/soc/intel/skylake/skl-pcm.c  | 177 ++++++++++-------------------
  sound/soc/intel/skylake/skl.h      |   7 ++
  3 files changed, 100 insertions(+), 120 deletions(-)
 
@@ -65,10 +64,11 @@ diff --git a/sound/soc/intel/skylake/skl-pcm.c b/sound/soc/intel/skylake/skl-pcm
 index 6fa2ad8..dfd80fc 100644
 --- a/sound/soc/intel/skylake/skl-pcm.c
 +++ b/sound/soc/intel/skylake/skl-pcm.c
-@@ -1093,126 +1093,6 @@ static struct snd_soc_dai_driver skl_fe_dai[] = {
+@@ -1092,126 +1092,6 @@ static struct snd_soc_dai_driver skl_fe_dai[] = {
+ 
  /* BE cpu dais and compress dais*/
  static struct snd_soc_dai_driver skl_platform_dai[] = {
- {
+-{
 -	.name = "SSP0 Pin",
 -	.ops = &skl_be_ssp_dai_ops,
 -	.playback = {
@@ -188,10 +188,9 @@ index 6fa2ad8..dfd80fc 100644
 -			SNDRV_PCM_FMTBIT_S32_LE,
 -	},
 -},
--{
+ {
  	.name = "iDisp1 Pin",
  	.ops = &skl_link_dai_ops,
- 	.playback = {
 @@ -1939,6 +1819,24 @@ static const struct snd_soc_component_driver skl_component = {
  	.num_controls	= ARRAY_SIZE(skl_controls),
  };
@@ -314,5 +313,5 @@ index b6cb5c5..a6bf053 100644
  void skl_nhlt_free(struct nhlt_acpi_table *addr);
  struct nhlt_specific_cfg *skl_get_ep_blob(struct skl *skl, u32 instance,
 -- 
-2.7.4
+https://clearlinux.org
 

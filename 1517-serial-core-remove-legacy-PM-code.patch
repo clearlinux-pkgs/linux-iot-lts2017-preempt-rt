@@ -1,15 +1,15 @@
-From 9512cd1f483787a3a4f35e03c07de837009c1384 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
 Date: Tue, 13 Sep 2016 00:21:01 +0300
-Subject: [PATCH 1517/2278] serial: core: remove legacy PM code
+Subject: [PATCH] serial: core: remove legacy PM code
 
 The drivers in serial subsystem has been switched to support runtime PM, remove
 legacy PM code from serial_core.c.
 
 Signed-off-by: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
 ---
- drivers/tty/serial/serial_core.c | 55 ----------------------------------------
- include/linux/serial_core.h      | 15 -----------
+ drivers/tty/serial/serial_core.c | 55 --------------------------------
+ include/linux/serial_core.h      | 15 ---------
  2 files changed, 70 deletions(-)
 
 diff --git a/drivers/tty/serial/serial_core.c b/drivers/tty/serial/serial_core.c
@@ -25,18 +25,18 @@ index 2c05237..d32b28f 100644
  
  static void uart_port_shutdown(struct tty_port *port);
  
-@@ -223,11 +221,6 @@ static int uart_port_startup(struct tty_struct *tty, struct uart_state *state,
+@@ -222,11 +220,6 @@ static int uart_port_startup(struct tty_struct *tty, struct uart_state *state,
+ 	if (uport->type == PORT_UNKNOWN)
  		return 1;
  
- 	/*
+-	/*
 -	 * Make sure the device is in D0 state.
 -	 */
 -	uart_change_pm(state, UART_PM_STATE_ON);
 -
--	/*
+ 	/*
  	 * Initialise and allocate the transmit and temporary
  	 * buffer.
- 	 */
 @@ -1611,9 +1604,6 @@ static void uart_tty_port_shutdown(struct tty_port *port)
  	 * we don't try to resume a port that has been shutdown.
  	 */
@@ -208,5 +208,5 @@ index 868b60a..60fc3ca 100644
  
  	atomic_t		refcount;
 -- 
-2.7.4
+https://clearlinux.org
 

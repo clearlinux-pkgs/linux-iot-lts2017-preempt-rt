@@ -1,8 +1,7 @@
-From c36ecb080b4ea9bb407b6c3d9697908a0d08eef0 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Mon, 2 Jul 2018 15:30:59 +0100
-Subject: [PATCH 1754/2278] ASoC: sof: ipc: cleanup - add comments and reorder
- funcs
+Subject: [PATCH] ASoC: sof: ipc: cleanup - add comments and reorder funcs
 
 Add comments describing funcs/code blocks and reorder funcs so features
 are grouped.
@@ -10,7 +9,7 @@ are grouped.
 Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 (cherry picked from commit dc9bfad004772168c81a8cdb1b178c813d6a8119)
 ---
- sound/soc/sof/ipc.c | 364 +++++++++++++++++++++++++++++-----------------------
+ sound/soc/sof/ipc.c | 364 +++++++++++++++++++++++++-------------------
  1 file changed, 206 insertions(+), 158 deletions(-)
 
 diff --git a/sound/soc/sof/ipc.c b/sound/soc/sof/ipc.c
@@ -540,5 +539,5 @@ index bd646c2..f0c90a7 100644
 +}
 +EXPORT_SYMBOL(snd_sof_ipc_free);
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,7 @@
-From 11f909389397156067898e519228c863c3298d56 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Arvind Yadav <arvind.yadav.cs@gmail.com>
 Date: Mon, 25 Sep 2017 15:43:49 +0530
-Subject: [PATCH 0811/2278] cpufreq: SPEAr: pr_err() strings should end with
- newlines
+Subject: [PATCH] cpufreq: SPEAr: pr_err() strings should end with newlines
 
 pr_err() messages should terminated with a new-line to avoid
 other messages being concatenated onto the end.
@@ -37,5 +36,5 @@ index 4894924..195f27f 100644
  		goto out_put_node;
  	}
 -- 
-2.7.4
+https://clearlinux.org
 

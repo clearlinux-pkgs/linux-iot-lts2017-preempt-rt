@@ -1,7 +1,7 @@
-From 0b3fb7b75f3dc3dde19f7035769bf932014e7a22 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Mon, 2 Jul 2018 18:33:39 -0500
-Subject: [PATCH 1742/2278] ASoC: SOF: intel: bdw: make variables static
+Subject: [PATCH] ASoC: SOF: intel: bdw: make variables static
 
 Detected with Sparse, variables need to be static if not declared
 
@@ -24,5 +24,5 @@ index 47d3896..dc21d1f 100644
  	.num_drv = ARRAY_SIZE(bdw_dai)
  };
 -- 
-2.7.4
+https://clearlinux.org
 

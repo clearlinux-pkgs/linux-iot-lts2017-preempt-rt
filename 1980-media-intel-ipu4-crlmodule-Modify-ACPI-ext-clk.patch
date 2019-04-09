@@ -1,7 +1,7 @@
-From 5185885084733abd993058eea0f4dc1cfd726714 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Ng, Khai Wen" <khai.wen.ng@intel.com>
 Date: Fri, 3 Aug 2018 11:48:47 +0800
-Subject: [PATCH 1980/2278] media: intel-ipu4: crlmodule: Modify ACPI ext clk
+Subject: [PATCH] media: intel-ipu4: crlmodule: Modify ACPI ext clk
 
 ACPI ext clk does not match with crlmodule pll input clock.
 
@@ -10,19 +10,20 @@ Signed-off-by: Ng, Khai Wen <khai.wen.ng@intel.com>
 Change-Id: Iafac88cc7de6eeeed0cc57868d9b12bb2c9ed53b
 Signed-off-by: Ng, Khai Wen <khai.wen.ng@intel.com>
 ---
- .../i2c/crlmodule-lite/crl_adv7481_cvbs_configuration.h     | 11 +++++++++++
- .../media/i2c/crlmodule/crl_adv7481_hdmi_configuration.h    |  2 +-
- drivers/media/platform/intel/ipu4-acpi.c                    | 13 ++++++-------
+ .../crlmodule-lite/crl_adv7481_cvbs_configuration.h | 11 +++++++++++
+ .../i2c/crlmodule/crl_adv7481_hdmi_configuration.h  |  2 +-
+ drivers/media/platform/intel/ipu4-acpi.c            | 13 ++++++-------
  3 files changed, 18 insertions(+), 8 deletions(-)
 
 diff --git a/drivers/media/i2c/crlmodule-lite/crl_adv7481_cvbs_configuration.h b/drivers/media/i2c/crlmodule-lite/crl_adv7481_cvbs_configuration.h
 index 841bba3..7e00727 100644
 --- a/drivers/media/i2c/crlmodule-lite/crl_adv7481_cvbs_configuration.h
 +++ b/drivers/media/i2c/crlmodule-lite/crl_adv7481_cvbs_configuration.h
-@@ -61,6 +61,17 @@ static const s64 adv7481_cvbs_op_sys_clock[] =  {130000000};
+@@ -60,6 +60,17 @@ static struct crl_register_write_rep adv7481_cvbs_streamoff_regs[] = {
+ static const s64 adv7481_cvbs_op_sys_clock[] =  {130000000};
  
  static struct crl_pll_configuration adv7481_cvbs_pll_configurations[] = {
- 	{
++	{
 +		.input_clk = 286363636,
 +		.op_sys_clk = 216000000,
 +		.bitsperpixel = 16,
@@ -33,10 +34,9 @@ index 841bba3..7e00727 100644
 +		.pll_regs_items = 0,
 +		.pll_regs = NULL,
 +	},
-+	{
+ 	{
  		.input_clk = 24000000,
  		.op_sys_clk = 130000000,
- 		.bitsperpixel = 16,
 diff --git a/drivers/media/i2c/crlmodule/crl_adv7481_hdmi_configuration.h b/drivers/media/i2c/crlmodule/crl_adv7481_hdmi_configuration.h
 index 9a7eca4..aa13b0e 100644
 --- a/drivers/media/i2c/crlmodule/crl_adv7481_hdmi_configuration.h
@@ -97,5 +97,5 @@ index 8c880d3..ec027b0 100644
  static int get_smiapp_pdata(struct i2c_client *client,
  			    struct ipu4_camera_module_data *data,
 -- 
-2.7.4
+https://clearlinux.org
 

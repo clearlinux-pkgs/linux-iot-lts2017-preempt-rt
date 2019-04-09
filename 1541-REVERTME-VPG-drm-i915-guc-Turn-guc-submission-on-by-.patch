@@ -1,8 +1,8 @@
-From deffe8e126f0bde075a9e8a4a7177c9af2d42bf6 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Michel Thierry <michel.thierry@intel.com>
 Date: Wed, 26 Apr 2017 12:37:25 -0700
-Subject: [PATCH 1541/2278] REVERTME [VPG]: drm/i915/guc: Turn guc submission
- on by default
+Subject: [PATCH] REVERTME [VPG]: drm/i915/guc: Turn guc submission on by
+ default
 
 The powers that be decided that GuC submission is the _future_.
 
@@ -45,5 +45,5 @@ index 12f995e..4180a34 100644
  i915_param_named(guc_log_level, int, 0400,
  	"GuC firmware logging level (-1:disabled (default), 0-3:enabled)");
 -- 
-2.7.4
+https://clearlinux.org
 

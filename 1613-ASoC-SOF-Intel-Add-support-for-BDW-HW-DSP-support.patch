@@ -1,20 +1,19 @@
-From b7dd67b208e71b1286281002f9d6bcddbfcb46d4 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Mon, 8 Jan 2018 20:38:14 +0000
-Subject: [PATCH 1613/2278] ASoC: SOF: Intel: Add support for BDW HW DSP
- support
+Subject: [PATCH] ASoC: SOF: Intel: Add support for BDW HW DSP support
 
 Add SOF support for Intel Broadwell based devices.
 
 Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 ---
- sound/soc/sof/intel/bdw.c | 753 ++++++++++++++++++++++++++++++++++++++++++++++
+ sound/soc/sof/intel/bdw.c | 753 ++++++++++++++++++++++++++++++++++++++
  1 file changed, 753 insertions(+)
  create mode 100644 sound/soc/sof/intel/bdw.c
 
 diff --git a/sound/soc/sof/intel/bdw.c b/sound/soc/sof/intel/bdw.c
 new file mode 100644
-index 0000000..d1dbef55
+index 0000000..d1dbef5
 --- /dev/null
 +++ b/sound/soc/sof/intel/bdw.c
 @@ -0,0 +1,753 @@
@@ -772,5 +771,5 @@ index 0000000..d1dbef55
 +
 +MODULE_LICENSE("Dual BSD/GPL");
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,7 @@
-From 6e3519e05f40dd4cd1a41fa7a5789d10420deda7 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Mon, 8 Jan 2018 16:54:19 +0000
-Subject: [PATCH 1274/2278] ASoC: topology: Give more data to clients via
- callbacks
+Subject: [PATCH] ASoC: topology: Give more data to clients via callbacks
 
 Give topology clients more access to the topology data by passing index,
 pcm, link_config and dai_driver to clients. This allows clients to fully
@@ -13,11 +12,11 @@ component topology driver and FW objects.
 
 Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 ---
- include/sound/soc-topology.h           | 23 ++++++++++++++---------
- sound/soc/intel/skylake/skl-pcm.c      |  9 +++++----
+ include/sound/soc-topology.h           | 23 +++++++++++--------
+ sound/soc/intel/skylake/skl-pcm.c      |  9 ++++----
  sound/soc/intel/skylake/skl-topology.c |  5 +++--
  sound/soc/intel/skylake/skl-topology.h |  5 +++--
- sound/soc/soc-topology.c               | 31 ++++++++++++++++++-------------
+ sound/soc/soc-topology.c               | 31 +++++++++++++++-----------
  5 files changed, 43 insertions(+), 30 deletions(-)
 
 diff --git a/include/sound/soc-topology.h b/include/sound/soc-topology.h
@@ -271,5 +270,5 @@ index c161986..21384fc 100644
  	if (!abi_match)	/* free the duplicated one */
  		kfree(_manifest);
 -- 
-2.7.4
+https://clearlinux.org
 

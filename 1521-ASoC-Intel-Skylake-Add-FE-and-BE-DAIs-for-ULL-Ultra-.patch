@@ -1,8 +1,8 @@
-From 7fd1074a16ee4192d4be680f9fde356a0c52bfa4 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Giribabu Gogineni <giribabux.gogineni@intel.com>
 Date: Wed, 22 Nov 2017 03:32:02 +0530
-Subject: [PATCH 1521/2278] ASoC: Intel: Skylake: Add FE and BE DAIs for
- ULL(Ultra low latency)
+Subject: [PATCH] ASoC: Intel: Skylake: Add FE and BE DAIs for ULL(Ultra low
+ latency)
 
 ULL topology DAIs are different because ULL has specific topology
 where DAIs with different audio formats are required.
@@ -10,7 +10,7 @@ where DAIs with different audio formats are required.
 Change-Id: I5f59a6901da259ecefd2f5b17d29fb042354b870
 Signed-off-by: Giribabu Gogineni <giribabux.gogineni@intel.com>
 ---
- sound/soc/intel/skylake/skl-pcm.c | 152 ++++++++++++++++++++++++++++++++++++++
+ sound/soc/intel/skylake/skl-pcm.c | 152 ++++++++++++++++++++++++++++++
  1 file changed, 152 insertions(+)
 
 diff --git a/sound/soc/intel/skylake/skl-pcm.c b/sound/soc/intel/skylake/skl-pcm.c
@@ -108,10 +108,11 @@ index 131f5b7..f340992 100644
  };
  
  /* BE cpu dais and compress dais*/
-@@ -1309,6 +1393,34 @@ static struct snd_soc_dai_driver skl_platform_dai[] = {
+@@ -1308,6 +1392,34 @@ static struct snd_soc_dai_driver skl_platform_dai[] = {
+ 			SNDRV_PCM_FMTBIT_S32_LE,
  	},
  },
- {
++{
 +	.name = "SSP0-B Pin",
 +	.ops = &skl_be_ssp_dai_ops,
 +	.playback = {
@@ -139,14 +140,14 @@ index 131f5b7..f340992 100644
 +			SNDRV_PCM_FMTBIT_S24_LE | SNDRV_PCM_FMTBIT_S32_LE,
 +	},
 +},
-+{
+ {
  	.name = "SSP1 Pin",
  	.ops = &skl_be_ssp_dai_ops,
- 	.playback = {
-@@ -1329,6 +1441,26 @@ static struct snd_soc_dai_driver skl_platform_dai[] = {
+@@ -1328,6 +1440,26 @@ static struct snd_soc_dai_driver skl_platform_dai[] = {
+ 			SNDRV_PCM_FMTBIT_S32_LE,
  	},
  },
- {
++{
 +	.name = "SSP1-B Pin",
 +	.ops = &skl_be_ssp_dai_ops,
 +	.playback = {
@@ -166,14 +167,14 @@ index 131f5b7..f340992 100644
 +			SNDRV_PCM_FMTBIT_S24_LE | SNDRV_PCM_FMTBIT_S32_LE,
 +	},
 +},
-+{
+ {
  	.name = "SSP2 Pin",
  	.ops = &skl_be_ssp_dai_ops,
- 	.playback = {
-@@ -1349,6 +1481,26 @@ static struct snd_soc_dai_driver skl_platform_dai[] = {
+@@ -1348,6 +1480,26 @@ static struct snd_soc_dai_driver skl_platform_dai[] = {
+ 			SNDRV_PCM_FMTBIT_S32_LE,
  	},
  },
- {
++{
 +	.name = "SSP2-B Pin",
 +	.ops = &skl_be_ssp_dai_ops,
 +	.playback = {
@@ -193,10 +194,9 @@ index 131f5b7..f340992 100644
 +			SNDRV_PCM_FMTBIT_S24_LE | SNDRV_PCM_FMTBIT_S32_LE,
 +	},
 +},
-+{
+ {
  	.name = "SSP3 Pin",
  	.ops = &skl_be_ssp_dai_ops,
- 	.playback = {
 -- 
-2.7.4
+https://clearlinux.org
 

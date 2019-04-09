@@ -1,8 +1,7 @@
-From 0dbee2ef0ee5e9ecbf79622e80713c882945647b Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: icg_intg <icg_intg@intel.com>
 Date: Wed, 2 May 2018 10:13:21 +0800
-Subject: [PATCH 1876/2278] isys & psys ipu4p package lib2600b0 for commit-id
- 1593412
+Subject: [PATCH] isys & psys ipu4p package lib2600b0 for commit-id 1593412
 
 FW_Manifest_ID: 3b35f83db390434aa7cdb34e7bd3220cdabac0de
 
@@ -23,17 +22,17 @@ Depends-on: I427afb682cd957c60b798db4c5b398a7c906e071
 Signed-off-by: icg_intg <icg_intg@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- .../intel/ipu4/ipu4p-css/ia_css_fw_pkg_release.h   |   2 +-
- .../lib2600/cpd_binary/ia_css_fw_pkg_release.h     |   2 +-
- .../interface/ia_css_isys_fw_bridged_types.h       |   1 +
- .../interface/ia_css_isysapi_proxy_region_defs.h   |   8 --
- .../isysapi/interface/ia_css_isysapi_types.h       |   1 +
- .../lib2600/reg_dump/src/reg_dump_generic_bridge.c |   7 --
- .../lib/CNL_program_group/ia_css_fw_pkg_release.h  |   2 +-
- .../lib/ICL_program_group/ia_css_fw_pkg_release.h  |   2 +-
- .../interface/ipu_device_gp_properties_types.h     | 103 ---------------------
- .../lib/reg_dump/src/reg_dump_generic_bridge.c     |   7 --
- .../lib/vied_parameters/vied_parameters.mk         |   1 -
+ .../ipu4/ipu4p-css/ia_css_fw_pkg_release.h    |   2 +-
+ .../cpd_binary/ia_css_fw_pkg_release.h        |   2 +-
+ .../interface/ia_css_isys_fw_bridged_types.h  |   1 +
+ .../ia_css_isysapi_proxy_region_defs.h        |   8 --
+ .../isysapi/interface/ia_css_isysapi_types.h  |   1 +
+ .../reg_dump/src/reg_dump_generic_bridge.c    |   7 --
+ .../CNL_program_group/ia_css_fw_pkg_release.h |   2 +-
+ .../ICL_program_group/ia_css_fw_pkg_release.h |   2 +-
+ .../ipu_device_gp_properties_types.h          | 103 ------------------
+ .../reg_dump/src/reg_dump_generic_bridge.c    |   7 --
+ .../lib/vied_parameters/vied_parameters.mk    |   1 -
  11 files changed, 6 insertions(+), 130 deletions(-)
 
 diff --git a/drivers/media/pci/intel/ipu4/ipu4p-css/ia_css_fw_pkg_release.h b/drivers/media/pci/intel/ipu4/ipu4p-css/ia_css_fw_pkg_release.h
@@ -291,5 +290,5 @@ index 5e89033..834a1a4 100644
  
  VIED_PARAMETERS_FW_CPPFLAGS   += $(FW_ABI_COMMON_TYPES_FW_CPPFLAGS)
 -- 
-2.7.4
+https://clearlinux.org
 

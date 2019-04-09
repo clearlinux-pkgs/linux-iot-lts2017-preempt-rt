@@ -1,8 +1,7 @@
-From 751cd93d6e36b34c97d71effb67ca81d985db9de Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: liyong4x <yongx.a.li@intel.com>
 Date: Tue, 12 Jun 2018 04:09:43 -0400
-Subject: [PATCH 1955/2278] media: intel-ipu4: pdata: add ar0231at
- configurations
+Subject: [PATCH] media: intel-ipu4: pdata: add ar0231at configurations
 
 Message for Open Source:
 Ar0231at need to be supported as a subdevice of max9286.
@@ -20,7 +19,7 @@ Change-Id: If1c20cbf2d2b37c35ad735c3674ec96cfad26b1a
 Signed-off-by: liyong4x <yongx.a.li@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- drivers/media/platform/intel/ipu4-bxt-p-pdata.c | 87 +++++++++++++++++++++++++
+ .../media/platform/intel/ipu4-bxt-p-pdata.c   | 87 +++++++++++++++++++
  1 file changed, 87 insertions(+)
 
 diff --git a/drivers/media/platform/intel/ipu4-bxt-p-pdata.c b/drivers/media/platform/intel/ipu4-bxt-p-pdata.c
@@ -132,16 +131,16 @@ index 52cab10..334b105 100755
  	{ CLKDEV_INIT(NULL, NULL, NULL), NULL }
  };
  
-@@ -1029,6 +1113,9 @@ static struct ipu_isys_subdev_pdata pdata = {
+@@ -1028,6 +1112,9 @@ static struct ipu_isys_subdev_pdata pdata = {
+ #endif
  #ifdef CONFIG_INTEL_IPU4_OV2775
  		&ov2775_crl_sd,
- #endif
++#endif
 +#if IS_ENABLED(CONFIG_VIDEO_MAX9286)
 +		&max9286_sd,
-+#endif
+ #endif
  		NULL,
  	},
- 	.clk_map = clk_mapping,
 -- 
-2.7.4
+https://clearlinux.org
 

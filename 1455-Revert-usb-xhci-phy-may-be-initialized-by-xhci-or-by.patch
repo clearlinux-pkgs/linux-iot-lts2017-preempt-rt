@@ -1,8 +1,7 @@
-From ede0e09e3f2d697043d7efc12899530b602d3fa2 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Kuppuswamy Sathyanarayanan <sathyanarayanan.kuppuswamy@linux.intel.com>
 Date: Mon, 21 May 2018 14:50:18 -0700
-Subject: [PATCH 1455/2278] Revert "usb: xhci: phy may be initialized by xhci
- or by dwc3"
+Subject: [PATCH] Revert "usb: xhci: phy may be initialized by xhci or by dwc3"
 
 This reverts commit f2f18fd05ccdae5b55d7f69d54474a153a5f0f53.
 
@@ -133,5 +132,5 @@ index e2537ae..cbc9153 100644
  #define COMP_MODE_RCVRY_MSECS 2000
  
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,8 @@
-From 5675a0b1489e41e2f87dacfc6451910b36d406e1 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 Date: Tue, 11 Dec 2018 21:53:43 +0100
-Subject: [PATCH 0447/2278] x86/mm/pat: disable preemption __split_large_page()
- after spin_lock()
+Subject: [PATCH] x86/mm/pat: disable preemption __split_large_page() after
+ spin_lock()
 
 [ Upstream commit 45c6ff4811878e5c1c2ae31303cd95cdc6ae2ab4 ]
 
@@ -24,15 +24,16 @@ diff --git a/arch/x86/mm/pageattr.c b/arch/x86/mm/pageattr.c
 index 835620a..57a04ef 100644
 --- a/arch/x86/mm/pageattr.c
 +++ b/arch/x86/mm/pageattr.c
-@@ -662,11 +662,17 @@ __split_large_page(struct cpa_data *cpa, pte_t *kpte, unsigned long address,
+@@ -661,12 +661,18 @@ __split_large_page(struct cpa_data *cpa, pte_t *kpte, unsigned long address,
+ 	pgprot_t ref_prot;
  
  	spin_lock(&pgd_lock);
- 	/*
++	/*
 +	 * Keep preemption disabled after __flush_tlb_all() which expects not be
 +	 * preempted during the flush of the local TLB.
 +	 */
 +	preempt_disable();
-+	/*
+ 	/*
  	 * Check for races, another CPU might have split this page
  	 * up for us already:
  	 */
@@ -59,5 +60,5 @@ index 835620a..57a04ef 100644
  
  	return 0;
 -- 
-2.7.4
+https://clearlinux.org
 

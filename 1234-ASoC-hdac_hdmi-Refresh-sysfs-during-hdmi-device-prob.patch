@@ -1,8 +1,7 @@
-From 0a58e2b357bbc9831650031279c3a77b551b9a0e Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Puneeth Prabhu <puneethx.prabhu@intel.com>
 Date: Wed, 6 Dec 2017 16:34:05 +0530
-Subject: [PATCH 1234/2278] ASoC: hdac_hdmi: Refresh sysfs during hdmi device
- probe
+Subject: [PATCH] ASoC: hdac_hdmi: Refresh sysfs during hdmi device probe
 
 All nodes of hdmi codec widgets are not updated in sysfs interface
 (/sys/bus/hdaudio/devices/<dev>/widgets/) as the vendor widget is not
@@ -21,7 +20,7 @@ Signed-off-by: Mark Brown <broonie@kernel.org>
  1 file changed, 1 insertion(+)
 
 diff --git a/sound/soc/codecs/hdac_hdmi.c b/sound/soc/codecs/hdac_hdmi.c
-index 18bf959..ab1889f5 100644
+index 18bf959..ab1889f 100644
 --- a/sound/soc/codecs/hdac_hdmi.c
 +++ b/sound/soc/codecs/hdac_hdmi.c
 @@ -2042,6 +2042,7 @@ static int hdac_hdmi_dev_probe(struct hdac_ext_device *edev)
@@ -33,5 +32,5 @@ index 18bf959..ab1889f5 100644
  	/* ASoC specific initialization */
  	ret = snd_soc_register_codec(&hdev->dev, &hdmi_hda_codec,
 -- 
-2.7.4
+https://clearlinux.org
 

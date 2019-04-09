@@ -1,7 +1,7 @@
-From f51ff213b6338b8fe97ebced2fe7f0efad4678db Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ding Yunliang <yunliang.ding@intel.com>
 Date: Tue, 22 May 2018 11:07:44 +0800
-Subject: [PATCH 1918/2278] media: intel-ipu4: fix i386 build warnings
+Subject: [PATCH] media: intel-ipu4: fix i386 build warnings
 
 Message for Open Source:
 Fixed warnings when build with i386 support:
@@ -26,18 +26,18 @@ Change-Id: I16bad5dae05fe78c5630565f5f4cb682467c34bc
 Signed-off-by: Ding Yunliang <yunliang.ding@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- drivers/media/pci/intel/ipu-buttress.c             |  12 +-
- drivers/media/pci/intel/ipu-dma.c                  |   3 +-
- drivers/media/pci/intel/ipu-fw-com.c               |  11 +-
- drivers/media/pci/intel/ipu-fw-isys.c              | 333 +++++++++++++++++++++
- drivers/media/pci/intel/ipu-isys-queue.c           |   6 +-
- drivers/media/pci/intel/ipu-isys-video.c           |   4 +-
- drivers/media/pci/intel/ipu-isys.c                 |   2 +-
- drivers/media/pci/intel/ipu-wrapper.c              |  48 +--
- .../media/pci/intel/ipu4/ipu4-css/libintel-ipu4.c  |   6 +-
- drivers/media/pci/intel/ipu4/ipu4-isys-csi2.c      |  10 +-
- drivers/media/pci/intel/ipu4/ipu4-psys.c           |   6 +-
- drivers/media/pci/intel/ipu4/ipu4p-isys-csi2.c     |  10 +-
+ drivers/media/pci/intel/ipu-buttress.c        |  12 +-
+ drivers/media/pci/intel/ipu-dma.c             |   3 +-
+ drivers/media/pci/intel/ipu-fw-com.c          |  11 +-
+ drivers/media/pci/intel/ipu-fw-isys.c         | 333 ++++++++++++++++++
+ drivers/media/pci/intel/ipu-isys-queue.c      |   6 +-
+ drivers/media/pci/intel/ipu-isys-video.c      |   4 +-
+ drivers/media/pci/intel/ipu-isys.c            |   2 +-
+ drivers/media/pci/intel/ipu-wrapper.c         |  48 +--
+ .../pci/intel/ipu4/ipu4-css/libintel-ipu4.c   |   6 +-
+ drivers/media/pci/intel/ipu4/ipu4-isys-csi2.c |  10 +-
+ drivers/media/pci/intel/ipu4/ipu4-psys.c      |   6 +-
+ .../media/pci/intel/ipu4/ipu4p-isys-csi2.c    |  10 +-
  12 files changed, 400 insertions(+), 51 deletions(-)
 
 diff --git a/drivers/media/pci/intel/ipu-buttress.c b/drivers/media/pci/intel/ipu-buttress.c
@@ -826,5 +826,5 @@ index 51592ed..934db9e 100644
  
  /* Extract the timestamp from trace message.
 -- 
-2.7.4
+https://clearlinux.org
 

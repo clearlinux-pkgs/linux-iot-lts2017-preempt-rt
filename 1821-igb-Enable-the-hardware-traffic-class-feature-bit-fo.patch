@@ -1,8 +1,8 @@
-From 9a47b57835842b9d53a006840e2c90f6ae1f9233 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Vinicius Costa Gomes <vinicius.gomes@intel.com>
 Date: Tue, 10 Apr 2018 10:49:52 -0700
-Subject: [PATCH 1821/2278] igb: Enable the hardware traffic class feature bit
- for igb models
+Subject: [PATCH] igb: Enable the hardware traffic class feature bit for igb
+ models
 
 This will allow functionality depending on the hardware being traffic
 class aware to work. In particular the tc-flower offloading checks
@@ -30,5 +30,5 @@ index 20fd3a2..bb4369a 100644
  				  NETIF_F_GSO_GRE_CSUM | \
  				  NETIF_F_GSO_IPXIP4 | \
 -- 
-2.7.4
+https://clearlinux.org
 

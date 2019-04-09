@@ -1,7 +1,7 @@
-From 234c630e52d3063a052eacee2ca3ad9dcf1d72db Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Mon, 2 Jul 2018 18:37:57 -0500
-Subject: [PATCH 1745/2278] ASoC: SOF: intel: hsw: make variables static
+Subject: [PATCH] ASoC: SOF: intel: hsw: make variables static
 
 Detected with Sparse, variables need to be static if not declared
 
@@ -24,5 +24,5 @@ index 5e2c50b..1a8cbd3 100644
  	.num_drv = ARRAY_SIZE(hsw_dai)
  };
 -- 
-2.7.4
+https://clearlinux.org
 

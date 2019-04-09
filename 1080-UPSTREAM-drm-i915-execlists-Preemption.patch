@@ -1,7 +1,7 @@
-From 75f69402459b6218a4a27fde2334f5b51ec38e10 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Chris Wilson <chris@chris-wilson.co.uk>
 Date: Tue, 3 Oct 2017 21:34:52 +0100
-Subject: [PATCH 1080/2278] UPSTREAM: drm/i915/execlists: Preemption!
+Subject: [PATCH] UPSTREAM: drm/i915/execlists: Preemption!
 
 When we write to ELSP, it triggers a context preemption at the earliest
 arbitration point (3DPRIMITIVE, some PIPECONTROLs, a few other
@@ -71,7 +71,7 @@ Signed-off-by: Asif Haswarey <asif.haswarey@intel.com>
  drivers/gpu/drm/i915/i915_drv.c         |   9 +-
  drivers/gpu/drm/i915/i915_irq.c         |   6 +-
  drivers/gpu/drm/i915/i915_pci.c         |   2 +
- drivers/gpu/drm/i915/intel_lrc.c        | 157 +++++++++++++++++++++++++-------
+ drivers/gpu/drm/i915/intel_lrc.c        | 157 +++++++++++++++++++-----
  drivers/gpu/drm/i915/intel_ringbuffer.h |   5 +
  5 files changed, 143 insertions(+), 36 deletions(-)
 
@@ -447,18 +447,18 @@ diff --git a/drivers/gpu/drm/i915/intel_ringbuffer.h b/drivers/gpu/drm/i915/inte
 index 84f8df1..7a76e37 100644
 --- a/drivers/gpu/drm/i915/intel_ringbuffer.h
 +++ b/drivers/gpu/drm/i915/intel_ringbuffer.h
-@@ -240,6 +240,11 @@ struct intel_engine_execlists {
+@@ -239,6 +239,11 @@ struct intel_engine_execlists {
+ #define EXECLIST_MAX_PORTS 2
  	} port[EXECLIST_MAX_PORTS];
  
- 	/**
++	/**
 +	 * @preempt: are we currently handling a preempting context switch?
 +	 */
 +	bool preempt;
 +
-+	/**
+ 	/**
  	 * @port_mask: number of execlist ports - 1
  	 */
- 	unsigned int port_mask;
 -- 
-2.7.4
+https://clearlinux.org
 

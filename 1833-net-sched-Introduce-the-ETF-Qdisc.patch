@@ -1,7 +1,7 @@
-From 782e02f43436dc8b41e9e44d98b11a604bb35265 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Vinicius Costa Gomes <vinicius.gomes@intel.com>
 Date: Tue, 3 Jul 2018 15:42:53 -0700
-Subject: [PATCH 1833/2278] net/sched: Introduce the ETF Qdisc
+Subject: [PATCH] net/sched: Introduce the ETF Qdisc
 
 The ETF (Earliest TxTime First) qdisc uses the information added
 earlier in this series (the socket option SO_TXTIME and the new
@@ -47,9 +47,9 @@ Signed-off-by: David S. Miller <davem@davemloft.net>
 ---
  include/linux/netdevice.h      |   1 +
  include/uapi/linux/pkt_sched.h |  17 ++
- net/sched/Kconfig              |  11 ++
+ net/sched/Kconfig              |  11 +
  net/sched/Makefile             |   1 +
- net/sched/sch_etf.c            | 384 +++++++++++++++++++++++++++++++++++++++++
+ net/sched/sch_etf.c            | 384 +++++++++++++++++++++++++++++++++
  5 files changed, 414 insertions(+)
  create mode 100644 net/sched/sch_etf.c
 
@@ -127,7 +127,7 @@ index 5b63544..92552dc 100644
  obj-$(CONFIG_NET_CLS_ROUTE4)	+= cls_route.o
 diff --git a/net/sched/sch_etf.c b/net/sched/sch_etf.c
 new file mode 100644
-index 0000000..4b7f4903
+index 0000000..4b7f490
 --- /dev/null
 +++ b/net/sched/sch_etf.c
 @@ -0,0 +1,384 @@
@@ -516,5 +516,5 @@ index 0000000..4b7f4903
 +module_exit(etf_module_exit)
 +MODULE_LICENSE("GPL");
 -- 
-2.7.4
+https://clearlinux.org
 

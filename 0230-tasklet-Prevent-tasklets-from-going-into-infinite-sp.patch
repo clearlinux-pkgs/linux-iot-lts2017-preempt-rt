@@ -1,8 +1,7 @@
-From c4191a983b205009139938830445b7c49bdc08c4 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ingo Molnar <mingo@elte.hu>
 Date: Tue, 29 Nov 2011 20:18:22 -0500
-Subject: [PATCH 0230/2278] tasklet: Prevent tasklets from going into infinite
- spin in RT
+Subject: [PATCH] tasklet: Prevent tasklets from going into infinite spin in RT
 
 When CONFIG_PREEMPT_RT_FULL is enabled, tasklets run as threads,
 and spinlocks turn are mutexes. But this can cause issues with
@@ -38,8 +37,8 @@ Signed-off-by: Ingo Molnar <mingo@elte.hu>
 Signed-off-by: Steven Rostedt <rostedt@goodmis.org>
 Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
 ---
- include/linux/interrupt.h |  33 ++++----
- kernel/softirq.c          | 193 +++++++++++++++++++++++++++++++++-------------
+ include/linux/interrupt.h |  33 ++++---
+ kernel/softirq.c          | 193 +++++++++++++++++++++++++++-----------
  2 files changed, 157 insertions(+), 69 deletions(-)
 
 diff --git a/include/linux/interrupt.h b/include/linux/interrupt.h
@@ -378,5 +377,5 @@ index 3609293..7f8629d 100644
  {
  	return local_softirq_pending();
 -- 
-2.7.4
+https://clearlinux.org
 

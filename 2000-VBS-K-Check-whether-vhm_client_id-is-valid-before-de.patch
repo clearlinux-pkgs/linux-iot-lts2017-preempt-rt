@@ -1,8 +1,7 @@
-From 7c5684f80acac7a80254a5473c74f8ae917ed65e Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Jian Jun Chen <jian.jun.chen@intel.com>
 Date: Thu, 9 Aug 2018 11:58:25 +0800
-Subject: [PATCH 2000/2278] VBS-K: Check whether vhm_client_id is valid before
- deregister
+Subject: [PATCH] VBS-K: Check whether vhm_client_id is valid before deregister
 
 Need to check whether vhm_client_id is valid before trying to
 deregister from VHM. It is possbile that virtio_dev_deregister
@@ -45,5 +44,5 @@ index 549a2c5..65b8a0b 100644
  }
  EXPORT_SYMBOL_GPL(virtio_dev_init);
 -- 
-2.7.4
+https://clearlinux.org
 

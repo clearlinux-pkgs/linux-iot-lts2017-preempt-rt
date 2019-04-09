@@ -1,8 +1,7 @@
-From 5481c6f14eba90397a6405c3d392df6fd42ba258 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Thu, 4 Jan 2018 16:35:56 -0600
-Subject: [PATCH 1247/2278] ASoC: Intel: Fix nested/unnecessary Kconfig
- dependencies
+Subject: [PATCH] ASoC: Intel: Fix nested/unnecessary Kconfig dependencies
 
 This patch fixes a number of issues:
 1. IOSF_MBI is only needed for byt-cr detection, which is only supported
@@ -77,5 +76,5 @@ index 9f38c9d..aae425e 100644
  	  If you have a Intel Baytrail or Cherrytrail platform with an I2S
  	  codec, then enable this option by saying Y or m. This is a
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,7 @@
-From f50c7653a91819a50d48b86f6a838d47bac9d1c6 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Wed, 18 Jul 2018 20:38:18 +0100
-Subject: [PATCH 1787/2278] ASoC: SOF: debug: Add comments and cleanup for
- upstream
+Subject: [PATCH] ASoC: SOF: debug: Add comments and cleanup for upstream
 
 Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 ---
@@ -10,7 +9,7 @@ Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
  1 file changed, 11 insertions(+), 2 deletions(-)
 
 diff --git a/sound/soc/sof/debug.c b/sound/soc/sof/debug.c
-index ec966d2..c604decd 100644
+index ec966d2..c604dec 100644
 --- a/sound/soc/sof/debug.c
 +++ b/sound/soc/sof/debug.c
 @@ -7,6 +7,9 @@
@@ -76,5 +75,5 @@ index ec966d2..c604decd 100644
  						  map->name);
  		if (err < 0)
 -- 
-2.7.4
+https://clearlinux.org
 

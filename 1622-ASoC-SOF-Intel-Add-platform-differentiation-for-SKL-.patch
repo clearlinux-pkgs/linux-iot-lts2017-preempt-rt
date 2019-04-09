@@ -1,17 +1,17 @@
-From 8b6a87fe89f9fba1ac9304d194fe8d8525db0d36 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Wed, 9 May 2018 17:14:18 +0100
-Subject: [PATCH 1622/2278] ASoC: SOF: Intel: Add platform differentiation for
- SKL, APL and CNL
+Subject: [PATCH] ASoC: SOF: Intel: Add platform differentiation for SKL, APL
+ and CNL
 
 Add platform differentiation operations for different Intel HDA DSP
 platforms.
 
 Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 ---
- sound/soc/sof/intel/apl.c |  96 ++++++++++++++++++++
- sound/soc/sof/intel/cnl.c | 224 ++++++++++++++++++++++++++++++++++++++++++++++
- sound/soc/sof/intel/skl.c | 101 +++++++++++++++++++++
+ sound/soc/sof/intel/apl.c |  96 ++++++++++++++++
+ sound/soc/sof/intel/cnl.c | 224 ++++++++++++++++++++++++++++++++++++++
+ sound/soc/sof/intel/skl.c | 101 +++++++++++++++++
  3 files changed, 421 insertions(+)
  create mode 100644 sound/soc/sof/intel/apl.c
  create mode 100644 sound/soc/sof/intel/cnl.c
@@ -457,5 +457,5 @@ index 0000000..d4b6de6
 +};
 +EXPORT_SYMBOL(sof_skl_ops);
 -- 
-2.7.4
+https://clearlinux.org
 

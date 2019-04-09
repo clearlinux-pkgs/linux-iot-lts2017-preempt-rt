@@ -1,8 +1,8 @@
-From f22a79ea162442b98465c5ebdf1e7d6d547e9e3d Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Steven Rostedt <rostedt@goodmis.org>
 Date: Mon, 18 Mar 2013 15:12:49 -0400
-Subject: [PATCH 0221/2278] sched/workqueue: Only wake up idle workers if not
- blocked on sleeping spin lock
+Subject: [PATCH] sched/workqueue: Only wake up idle workers if not blocked on
+ sleeping spin lock
 
 In -rt, most spin_locks() turn into mutexes. One of these spin_lock
 conversions is performed on the workqueue gcwq->lock. When the idle
@@ -15,7 +15,6 @@ of mainline, as new workers should only be woken when a worker thread is
 truly going to sleep, and not just blocked on a spin_lock().
 
 Check the saved_state too before waking up new workers.
-
 
 Signed-off-by: Steven Rostedt <rostedt@goodmis.org>
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
@@ -40,5 +39,5 @@ index 75c7bd3..82da2b9 100644
  
  				to_wakeup = wq_worker_sleeping(prev);
 -- 
-2.7.4
+https://clearlinux.org
 

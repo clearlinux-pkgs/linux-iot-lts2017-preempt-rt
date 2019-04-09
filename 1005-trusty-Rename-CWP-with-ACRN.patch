@@ -1,7 +1,7 @@
-From 2425638934bc58766120c4f6e129964eeb74cdac Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Qi, Yadong" <yadong.qi@intel.com>
 Date: Mon, 26 Feb 2018 09:48:06 +0800
-Subject: [PATCH 1005/2278] trusty: Rename CWP with ACRN
+Subject: [PATCH] trusty: Rename CWP with ACRN
 
 The CWP hypervisor has been renamed to ACRN.
 
@@ -69,5 +69,5 @@ index 48e1ea7..546e6db 100644
  
  /* Detect VMM and return vmm_id */
 -- 
-2.7.4
+https://clearlinux.org
 

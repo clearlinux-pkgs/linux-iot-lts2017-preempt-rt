@@ -1,8 +1,7 @@
-From bfa697c565424f3545c59d7a1851c4b5baac5643 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ranjani Sridharan <ranjani.sridharan@linux.intel.com>
 Date: Fri, 13 Jul 2018 00:32:47 -0700
-Subject: [PATCH 2042/2278] ASoC: SOF: suspend/resume and runtime PM
- implementation
+Subject: [PATCH] ASoC: SOF: suspend/resume and runtime PM implementation
 
 This is the initial implementation for PM and runtime PM callbacks
 in the SOF driver.
@@ -21,7 +20,7 @@ explicitly so they can be restored during PAUSE_RELEASE.
 
 Signed-off-by: Ranjani Sridharan <ranjani.sridharan@linux.intel.com>
 ---
- sound/soc/sof/pm.c | 293 ++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ sound/soc/sof/pm.c | 293 ++++++++++++++++++++++++++++++++++++++++++++-
  1 file changed, 290 insertions(+), 3 deletions(-)
 
 diff --git a/sound/soc/sof/pm.c b/sound/soc/sof/pm.c
@@ -355,5 +354,5 @@ index 56c6042..063d2c9 100644
  }
  EXPORT_SYMBOL(snd_sof_suspend);
 -- 
-2.7.4
+https://clearlinux.org
 

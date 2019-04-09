@@ -1,7 +1,7 @@
-From da4db1363c53152aa432ce18fe4c910de7520dab Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Zhipeng Gong <zhipeng.gong@intel.com>
 Date: Thu, 26 Jul 2018 09:51:11 +0800
-Subject: [PATCH 2063/2278] drm/i915/gvt: handle global gtt update from g2v
+Subject: [PATCH] drm/i915/gvt: handle global gtt update from g2v
 
 This patch handles ggtt update from g2v notification.
 It maps the physical pages behind virtual page table to guest,
@@ -27,8 +27,8 @@ v3:
 Signed-off-by: Zhipeng Gong <zhipeng.gong@intel.com>
 Reviewed-by: He, Min <min.he@intel.com>
 ---
- drivers/gpu/drm/i915/gvt/cfg_space.c |  36 ++++++
- drivers/gpu/drm/i915/gvt/gtt.c       | 241 ++++++++++++++++++++++++++++++++++-
+ drivers/gpu/drm/i915/gvt/cfg_space.c |  36 ++++
+ drivers/gpu/drm/i915/gvt/gtt.c       | 241 ++++++++++++++++++++++++++-
  drivers/gpu/drm/i915/gvt/gtt.h       |   5 +
  drivers/gpu/drm/i915/gvt/gvt.h       |   3 +
  drivers/gpu/drm/i915/gvt/handlers.c  |  19 ++-
@@ -387,7 +387,7 @@ index e76e081..ebc5194 100644
  int intel_gvt_init_opregion(struct intel_gvt *gvt);
  
 diff --git a/drivers/gpu/drm/i915/gvt/handlers.c b/drivers/gpu/drm/i915/gvt/handlers.c
-index 53ae0c6c..e122d4c 100644
+index 53ae0c6..e122d4c 100644
 --- a/drivers/gpu/drm/i915/gvt/handlers.c
 +++ b/drivers/gpu/drm/i915/gvt/handlers.c
 @@ -1341,6 +1341,12 @@ static int handle_g2v_notification(struct intel_vgpu *vgpu, int notification)
@@ -424,5 +424,5 @@ index 53ae0c6c..e122d4c 100644
  			vgpu_vreg(vgpu, offset) = 0;
  		}
 -- 
-2.7.4
+https://clearlinux.org
 

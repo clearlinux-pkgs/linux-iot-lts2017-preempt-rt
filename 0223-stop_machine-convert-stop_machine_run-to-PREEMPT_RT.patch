@@ -1,8 +1,7 @@
-From c553edfdaa4597e91228301e96734390d863ef72 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ingo Molnar <mingo@elte.hu>
 Date: Fri, 3 Jul 2009 08:30:27 -0500
-Subject: [PATCH 0223/2278] stop_machine: convert stop_machine_run() to
- PREEMPT_RT
+Subject: [PATCH] stop_machine: convert stop_machine_run() to PREEMPT_RT
 
 Instead of playing with non-preemption, introduce explicit
 startup serialization. This is more robust and cleaner as
@@ -37,5 +36,5 @@ index 067cb83..f8d1ae9 100644
  		preempt_count_inc();
  		ret = fn(arg);
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,7 +1,7 @@
-From 6682c0b8e23cf240829b8bdafa83f73f6dc301f7 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>
 Date: Mon, 4 Dec 2017 06:22:12 -0800
-Subject: [PATCH 1545/2278] hid: intel-ish-hid: add ISH UART client support
+Subject: [PATCH] hid: intel-ish-hid: add ISH UART client support
 
 Intel ISHFW supports a UART client. When present ISHTP bus driver will
 create a device with unique uuid. Basically this driver implements a
@@ -23,7 +23,7 @@ Signed-off-by: Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>
 ---
  drivers/hid/intel-ish-hid/Kconfig            |  12 +
  drivers/hid/intel-ish-hid/Makefile           |   2 +
- drivers/hid/intel-ish-hid/ishtp-tty-client.c | 890 +++++++++++++++++++++++++++
+ drivers/hid/intel-ish-hid/ishtp-tty-client.c | 890 +++++++++++++++++++
  3 files changed, 904 insertions(+)
  create mode 100644 drivers/hid/intel-ish-hid/ishtp-tty-client.c
 
@@ -956,5 +956,5 @@ index 0000000..f483d37
 +MODULE_LICENSE("GPL v2");
 +MODULE_ALIAS("ishtp:*");
 -- 
-2.7.4
+https://clearlinux.org
 

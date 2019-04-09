@@ -1,7 +1,7 @@
-From d0e98ef5d584c05050b44a71d507f71de0927e17 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Thomas Gleixner <tglx@linutronix.de>
 Date: Fri, 11 Jan 2013 11:23:51 +0100
-Subject: [PATCH 0195/2278] completion: Use simple wait queues
+Subject: [PATCH] completion: Use simple wait queues
 
 Completions have no long lasting callbacks and therefor do not need
 the complex waitqueue variant. Use simple waitqueues which reduces the
@@ -9,17 +9,17 @@ contention on the waitqueue lock.
 
 Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
 ---
- .../net/wireless/intersil/orinoco/orinoco_usb.c    |  2 +-
- drivers/usb/gadget/function/f_fs.c                 |  2 +-
- drivers/usb/gadget/legacy/inode.c                  |  4 +--
- include/linux/completion.h                         | 10 +++----
- include/linux/suspend.h                            |  6 ++++
- include/linux/swait.h                              |  1 +
- kernel/power/hibernate.c                           |  7 +++++
- kernel/power/suspend.c                             |  4 +++
- kernel/sched/completion.c                          | 34 +++++++++++-----------
- kernel/sched/core.c                                | 10 +++++--
- kernel/sched/swait.c                               | 20 +++++++++++++
+ .../wireless/intersil/orinoco/orinoco_usb.c   |  2 +-
+ drivers/usb/gadget/function/f_fs.c            |  2 +-
+ drivers/usb/gadget/legacy/inode.c             |  4 +--
+ include/linux/completion.h                    | 10 +++---
+ include/linux/suspend.h                       |  6 ++++
+ include/linux/swait.h                         |  1 +
+ kernel/power/hibernate.c                      |  7 ++++
+ kernel/power/suspend.c                        |  4 +++
+ kernel/sched/completion.c                     | 34 +++++++++----------
+ kernel/sched/core.c                           | 10 ++++--
+ kernel/sched/swait.c                          | 20 +++++++++++
  11 files changed, 72 insertions(+), 28 deletions(-)
 
 diff --git a/drivers/net/wireless/intersil/orinoco/orinoco_usb.c b/drivers/net/wireless/intersil/orinoco/orinoco_usb.c
@@ -374,5 +374,5 @@ index 9ff1555..7006375 100644
  {
  	unsigned long flags;
 -- 
-2.7.4
+https://clearlinux.org
 

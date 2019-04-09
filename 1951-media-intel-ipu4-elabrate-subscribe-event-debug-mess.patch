@@ -1,8 +1,7 @@
-From 70c098a6ec773abb6c2a58af1fc0235d83c97531 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ding Yunliang <yunliang.ding@intel.com>
 Date: Fri, 8 Jun 2018 14:40:28 +0800
-Subject: [PATCH 1951/2278] media: intel-ipu4: elabrate subscribe event debug
- message
+Subject: [PATCH] media: intel-ipu4: elabrate subscribe event debug message
 
 Message for Open Source:
 The previous log was not complete and confusing for debug,
@@ -34,5 +33,5 @@ index 9da8a51..c10ea32 100644
  	switch (sub->type) {
  	case V4L2_EVENT_FRAME_SYNC:
 -- 
-2.7.4
+https://clearlinux.org
 

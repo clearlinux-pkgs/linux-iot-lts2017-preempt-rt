@@ -1,8 +1,8 @@
-From 8cbf0bb1f1fb16580fc818196104a88186a8ae38 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Steven Rostedt (VMware)" <rostedt@goodmis.org>
 Date: Thu, 18 Jan 2018 15:42:09 -0500
-Subject: [PATCH 0113/2278] ring-buffer: Fix duplicate results in mapping
- context to bits in recursive lock
+Subject: [PATCH] ring-buffer: Fix duplicate results in mapping context to bits
+ in recursive lock
 
 In bringing back the context checks, the code checks first if its normal
 (non-interrupt) context, and then for NMI then IRQ then softirq. The final
@@ -38,5 +38,5 @@ index b7cda47..be296c3 100644
  	if (unlikely(val & (1 << bit)))
  		return 1;
 -- 
-2.7.4
+https://clearlinux.org
 

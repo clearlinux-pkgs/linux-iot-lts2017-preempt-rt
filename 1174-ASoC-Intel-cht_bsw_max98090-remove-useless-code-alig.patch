@@ -1,8 +1,8 @@
-From ad15fcf0b9c27b9911a4f8d7b10bdddfc709d5e9 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Wed, 4 Oct 2017 23:04:27 -0500
-Subject: [PATCH 1174/2278] ASoC: Intel: cht_bsw_max98090: remove useless code,
- align with ChromeOS driver
+Subject: [PATCH] ASoC: Intel: cht_bsw_max98090: remove useless code, align
+ with ChromeOS driver
 
 Remove dead code which was missed in previous changes. This is not
 visible with git diff but there is a test+return on the same condition
@@ -47,5 +47,5 @@ index 74c047a..119da55 100644
  
  static const struct snd_soc_ops cht_aif1_ops = {
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,14 +1,13 @@
-From f446177981495ebbb75ecfcf9c9fca5138750538 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Wed, 9 May 2018 17:14:14 +0100
-Subject: [PATCH 1618/2278] ASoC: SOF: Intel: Add Intel specific HDA firmware
- loader
+Subject: [PATCH] ASoC: SOF: Intel: Add Intel specific HDA firmware loader
 
 Add support for loading DSP firmware on Intel HDA based platforms.
 
 Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 ---
- sound/soc/sof/intel/hda-loader.c | 367 +++++++++++++++++++++++++++++++++++++++
+ sound/soc/sof/intel/hda-loader.c | 367 +++++++++++++++++++++++++++++++
  1 file changed, 367 insertions(+)
  create mode 100644 sound/soc/sof/intel/hda-loader.c
 
@@ -386,5 +385,5 @@ index 0000000..372ccfa
 +	return ret;
 +}
 -- 
-2.7.4
+https://clearlinux.org
 

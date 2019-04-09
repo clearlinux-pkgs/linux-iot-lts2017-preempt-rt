@@ -1,8 +1,7 @@
-From e5a2d8c6a8f3c47a766a3deb773fa7d577bcb0cf Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Patrick Tjin <pattjin@google.com>
 Date: Fri, 21 Apr 2017 23:34:25 +0000
-Subject: [PATCH 0561/2278] net: wireless: bcmdhd: check packet length for
- event messages
+Subject: [PATCH] net: wireless: bcmdhd: check packet length for event messages
 
 Check the datalen field is less than the size of
 packet received from the network.
@@ -21,7 +20,7 @@ Change-Id: I5f674d21a48ae9610db343e724c4c59c49f01457
  3 files changed, 17 insertions(+), 6 deletions(-)
 
 diff --git a/drivers/net/wireless/bcmdhd/dhd.h b/drivers/net/wireless/bcmdhd/dhd.h
-index d0dd1ac0..fbc6269 100644
+index d0dd1ac..fbc6269 100644
 --- a/drivers/net/wireless/bcmdhd/dhd.h
 +++ b/drivers/net/wireless/bcmdhd/dhd.h
 @@ -1066,7 +1066,7 @@ extern int net_os_send_hang_message(struct net_device *dev);
@@ -113,5 +112,5 @@ index 0f04a2e..378e11a 100644
  
  	if (bcmerror != BCME_OK)
 -- 
-2.7.4
+https://clearlinux.org
 

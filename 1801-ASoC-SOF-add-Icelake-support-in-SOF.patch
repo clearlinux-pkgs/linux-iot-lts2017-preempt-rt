@@ -1,7 +1,7 @@
-From 344c2a13a7ac15114f32b6474579916c02c274f4 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Rander Wang <rander.wang@linux.intel.com>
 Date: Thu, 12 Jul 2018 15:58:46 +0800
-Subject: [PATCH 1801/2278] ASoC: SOF: add Icelake support in SOF
+Subject: [PATCH] ASoC: SOF: add Icelake support in SOF
 
 Icelake shares the setting of cannonlake because no difference
 between them in host
@@ -93,17 +93,17 @@ index 152a3d3..5445d80 100644
  };
  
  static struct snd_sof_dsp_ops *sof_pci_get_ops(const struct sof_dev_desc *d)
-@@ -337,6 +353,10 @@ static const struct pci_device_id sof_pci_ids[] = {
+@@ -336,6 +352,10 @@ static const struct pci_device_id sof_pci_ids[] = {
+ #if IS_ENABLED(CONFIG_SND_SOC_SOF_SKYLAKE)
  	{ PCI_DEVICE(0x8086, 0x9d70),
  		.driver_data = (unsigned long)&skl_desc},
- #endif
++#endif
 +#if IS_ENABLED(CONFIG_SND_SOC_SOF_ICELAKE)
 +	{ PCI_DEVICE(0x8086, 0x34C8),
 +		.driver_data = (unsigned long)&icl_desc},
-+#endif
+ #endif
  	{ 0, }
  };
- MODULE_DEVICE_TABLE(pci, sof_pci_ids);
 -- 
-2.7.4
+https://clearlinux.org
 

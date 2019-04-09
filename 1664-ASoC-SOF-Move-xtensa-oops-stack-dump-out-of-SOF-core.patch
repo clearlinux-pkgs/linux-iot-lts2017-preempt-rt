@@ -1,8 +1,7 @@
-From dee53e374292eb44934f75d8aeb9b2f6c8d010b4 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Thu, 14 Jun 2018 21:38:15 +0100
-Subject: [PATCH 1664/2278] ASoC: SOF: Move xtensa oops/stack dump out of SOF
- core
+Subject: [PATCH] ASoC: SOF: Move xtensa oops/stack dump out of SOF core
 
 Move it to sof/xtensa/core.c
 
@@ -10,16 +9,16 @@ Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 ---
  sound/soc/sof/Kconfig         |   1 +
  sound/soc/sof/Makefile        |   1 +
- sound/soc/sof/core.c          | 134 +----------------------------------
+ sound/soc/sof/core.c          | 134 +---------------------------
  sound/soc/sof/intel/Kconfig   |   1 +
  sound/soc/sof/intel/bdw.c     |   3 +
  sound/soc/sof/intel/byt.c     |   3 +
  sound/soc/sof/intel/hda.c     |   3 +
  sound/soc/sof/intel/hsw.c     |   3 +
- sound/soc/sof/sof-priv.h      |  24 +++++++
+ sound/soc/sof/sof-priv.h      |  24 +++++
  sound/soc/sof/xtensa/Kconfig  |   3 +
  sound/soc/sof/xtensa/Makefile |   7 ++
- sound/soc/sof/xtensa/core.c   | 159 ++++++++++++++++++++++++++++++++++++++++++
+ sound/soc/sof/xtensa/core.c   | 159 ++++++++++++++++++++++++++++++++++
  12 files changed, 210 insertions(+), 132 deletions(-)
  create mode 100644 sound/soc/sof/xtensa/Kconfig
  create mode 100644 sound/soc/sof/xtensa/Makefile
@@ -208,7 +207,7 @@ index 2780750..d9b4b6a 100644
            This adds support for Sound Open Firmware for Intel(R) platforms.
            Say Y if you have such a device.
 diff --git a/sound/soc/sof/intel/bdw.c b/sound/soc/sof/intel/bdw.c
-index d1dbef55..eb8ee7d 100644
+index d1dbef5..eb8ee7d 100644
 --- a/sound/soc/sof/intel/bdw.c
 +++ b/sound/soc/sof/intel/bdw.c
 @@ -600,6 +600,9 @@ static int bdw_probe(struct snd_sof_dev *sdev)
@@ -498,5 +497,5 @@ index 0000000..5ca9185
 +MODULE_DESCRIPTION("SOF Xtensa DSP support");
 +MODULE_LICENSE("Dual BSD/GPL");
 -- 
-2.7.4
+https://clearlinux.org
 

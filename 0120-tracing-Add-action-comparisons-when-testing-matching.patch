@@ -1,8 +1,8 @@
-From a10caaec1abbd4d5135869c55850f8219d6e3c4d Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tom Zanussi <tom.zanussi@linux.intel.com>
 Date: Wed, 28 Mar 2018 15:10:55 -0500
-Subject: [PATCH 0120/2278] tracing: Add action comparisons when testing
- matching hist triggers
+Subject: [PATCH] tracing: Add action comparisons when testing matching hist
+ triggers
 
 Actions also need to be considered when checking for matching triggers
 - triggers differing only by action should be allowed, but currently
@@ -14,7 +14,7 @@ Add and call an actions_match() function to address that.
 Signed-off-by: Tom Zanussi <tom.zanussi@linux.intel.com>
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- kernel/trace/trace_events_hist.c | 50 ++++++++++++++++++++++++++++++++++++++++
+ kernel/trace/trace_events_hist.c | 50 ++++++++++++++++++++++++++++++++
  1 file changed, 50 insertions(+)
 
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
@@ -86,5 +86,5 @@ index 9def33a..514ec0b 100644
  }
  
 -- 
-2.7.4
+https://clearlinux.org
 

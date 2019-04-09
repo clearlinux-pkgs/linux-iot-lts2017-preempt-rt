@@ -1,7 +1,7 @@
-From 2f71669519570b671d35bc0c121eb26c7d67c7ad Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Jason Chen CJ <jason.cj.chen@intel.com>
 Date: Tue, 23 Jan 2018 22:28:05 +0800
-Subject: [PATCH 0958/2278] VHM: sync public header file cwp_common.h
+Subject: [PATCH] VHM: sync public header file cwp_common.h
 
 Change-Id: I1e0ac4d26b22cda4d1db81a83dca8d8806405a8c
 Signed-off-by: Jason Chen CJ <jason.cj.chen@intel.com>
@@ -37,5 +37,5 @@ index e1bdbd9..f400e06 100644
 +
  #endif /* CWP_COMMON_H */
 -- 
-2.7.4
+https://clearlinux.org
 

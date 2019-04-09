@@ -1,8 +1,7 @@
-From e2905a739aa9d9ce8880c8b78e00824de7e2b262 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: liyong4x <yongx.a.li@intel.com>
 Date: Tue, 12 Jun 2018 20:34:27 -0400
-Subject: [PATCH 1960/2278] media: intel-ipu4: ar0231at: Correct input clk and
- pclk
+Subject: [PATCH] media: intel-ipu4: ar0231at: Correct input clk and pclk
 
 Message for Open Source:
 The previous input clk and pclk value can work normally,
@@ -44,5 +43,5 @@ index 9ec2981..42b834f 100644
  		.pixel_rate_csi = 176000000,
  		.pixel_rate_pa = 176000000, /* pixel_rate = op_sys_clk*2 *csi_lanes/bitsperpixel */
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,14 +1,14 @@
-From a9ced1e1e5dff9b9d12554cf87535094382c00ca Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Mon, 8 Jan 2018 20:34:01 +0000
-Subject: [PATCH 1607/2278] ASoC: SOF: Add firmware loader support
+Subject: [PATCH] ASoC: SOF: Add firmware loader support
 
 The firmware loader exports APIs that can be called by core to load and
 process multiple different file formats.
 
 Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 ---
- sound/soc/sof/loader.c | 283 +++++++++++++++++++++++++++++++++++++++++++++++++
+ sound/soc/sof/loader.c | 283 +++++++++++++++++++++++++++++++++++++++++
  1 file changed, 283 insertions(+)
  create mode 100644 sound/soc/sof/loader.c
 
@@ -302,5 +302,5 @@ index 0000000..82d6c6c
 +}
 +EXPORT_SYMBOL(snd_sof_fw_unload);
 -- 
-2.7.4
+https://clearlinux.org
 

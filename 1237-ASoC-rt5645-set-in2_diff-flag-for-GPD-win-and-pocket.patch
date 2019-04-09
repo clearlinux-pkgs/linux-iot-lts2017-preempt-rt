@@ -1,8 +1,8 @@
-From 7ea855004eb0b09f661f954fd55894d13fe023e4 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Hans de Goede <hdegoede@redhat.com>
 Date: Tue, 2 Jan 2018 19:53:11 +0100
-Subject: [PATCH 1237/2278] ASoC: rt5645: set in2_diff flag for GPD win and
- pocket devices
+Subject: [PATCH] ASoC: rt5645: set in2_diff flag for GPD win and pocket
+ devices
 
 The GPD pocket has a differential signal microphone and needs in2_diff
 to be set to avoid getting a very noisy signal.
@@ -20,7 +20,7 @@ Signed-off-by: Mark Brown <broonie@kernel.org>
  1 file changed, 2 insertions(+)
 
 diff --git a/sound/soc/codecs/rt5645.c b/sound/soc/codecs/rt5645.c
-index b836948f..e492745 100644
+index b836948..e492745 100644
 --- a/sound/soc/codecs/rt5645.c
 +++ b/sound/soc/codecs/rt5645.c
 @@ -3628,6 +3628,8 @@ static const struct rt5645_platform_data gpd_win_platform_data = {
@@ -33,5 +33,5 @@ index b836948f..e492745 100644
  
  static const struct dmi_system_id dmi_platform_gpd_win[] = {
 -- 
-2.7.4
+https://clearlinux.org
 

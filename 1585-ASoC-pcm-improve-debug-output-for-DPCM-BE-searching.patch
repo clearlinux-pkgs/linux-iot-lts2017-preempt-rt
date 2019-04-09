@@ -1,8 +1,7 @@
-From f7d67b863d6d4bea8904e6a6341c8806f185d877 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Wed, 14 Mar 2018 20:43:51 +0000
-Subject: [PATCH 1585/2278] ASoC: pcm: improve debug output for DPCM BE
- searching.
+Subject: [PATCH] ASoC: pcm: improve debug output for DPCM BE searching.
 
 Improve the DPCM BE search debug output to make it easier to debug
 issues in topologies.
@@ -57,5 +56,5 @@ index da588b3..e6a167f 100644
  		stream ? "capture" : "playback", widget->name);
  	return NULL;
 -- 
-2.7.4
+https://clearlinux.org
 

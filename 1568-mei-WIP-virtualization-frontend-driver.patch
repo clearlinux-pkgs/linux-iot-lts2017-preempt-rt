@@ -1,7 +1,7 @@
-From 9c0d346f7135feace525d16c1c5cc95fe0808c6a Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liu Shuo <shuo.a.liu@intel.com>
 Date: Wed, 23 May 2018 10:54:37 +0800
-Subject: [PATCH 1568/2278] mei: WIP virtualization frontend driver
+Subject: [PATCH] mei: WIP virtualization frontend driver
 
 This frontend driver implements MEI hw interface based on virtio
 framework to let MEI driver work without changes under virtualization.
@@ -39,7 +39,7 @@ Signed-off-by: Tomas Winkler <tomas.winkler@intel.com>
 ---
  drivers/misc/mei/Kconfig     |  10 +
  drivers/misc/mei/Makefile    |   3 +
- drivers/misc/mei/hw-virtio.c | 802 +++++++++++++++++++++++++++++++++++++++++++
+ drivers/misc/mei/hw-virtio.c | 802 +++++++++++++++++++++++++++++++++++
  drivers/misc/mei/mei_dev.h   |  15 +-
  4 files changed, 829 insertions(+), 1 deletion(-)
  create mode 100644 drivers/misc/mei/hw-virtio.c
@@ -920,5 +920,5 @@ index 2fa5659..2bba521 100644
   * mei init function prototypes
   */
 -- 
-2.7.4
+https://clearlinux.org
 

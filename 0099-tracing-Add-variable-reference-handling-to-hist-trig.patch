@@ -1,8 +1,7 @@
-From 289a4eb78773e114ed0a63020c65436d34b97a71 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tom Zanussi <tom.zanussi@linux.intel.com>
 Date: Mon, 15 Jan 2018 20:51:56 -0600
-Subject: [PATCH 0099/2278] tracing: Add variable reference handling to hist
- triggers
+Subject: [PATCH] tracing: Add variable reference handling to hist triggers
 
 Add the necessary infrastructure to allow the variables defined on one
 event to be referenced in another.  This allows variables set by a
@@ -31,7 +30,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
  kernel/trace/trace.c                |   2 +
  kernel/trace/trace.h                |   3 +
- kernel/trace/trace_events_hist.c    | 661 +++++++++++++++++++++++++++++++++++-
+ kernel/trace/trace_events_hist.c    | 661 +++++++++++++++++++++++++++-
  kernel/trace/trace_events_trigger.c |   6 +
  4 files changed, 656 insertions(+), 16 deletions(-)
 
@@ -77,7 +76,7 @@ index 92936a6..5975d5f 100644
  extern int unregister_event_command(struct event_command *cmd);
  extern int register_trigger_hist_enable_disable_cmds(void);
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
-index 6e60cb79..2bc1f76 100644
+index 6e60cb7..2bc1f76 100644
 --- a/kernel/trace/trace_events_hist.c
 +++ b/kernel/trace/trace_events_hist.c
 @@ -59,7 +59,12 @@ struct hist_field {
@@ -963,5 +962,5 @@ index fd26c06..bfe56ed 100644
  traceon_trigger(struct event_trigger_data *data, void *rec,
  		struct ring_buffer_event *event)
 -- 
-2.7.4
+https://clearlinux.org
 

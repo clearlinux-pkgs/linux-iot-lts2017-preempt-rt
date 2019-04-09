@@ -1,8 +1,7 @@
-From 4e7507eb004c2f66d2a1b9999fc5aec8bf2c56ce Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Pawse, GuruprasadX" <guruprasadx.pawse@intel.com>
 Date: Tue, 2 Aug 2016 17:00:12 +0530
-Subject: [PATCH 0748/2278] ASoC: Intel: Skylake: Probe DMA release for
- extractor
+Subject: [PATCH] ASoC: Intel: Skylake: Probe DMA release for extractor
 
 1. Extractor DMA is to be assigned when the first probe stream (irrespective
 of whether it is injector or extractor) is opened. But if the first probe
@@ -37,7 +36,7 @@ Reviewed-by: audio_build <audio_build@intel.com>
 Reviewed-by: Babu, Ramesh <ramesh.babu@intel.com>
 Tested-by: Avati, Santosh Kumar <santosh.kumar.avati@intel.com>
 ---
- sound/soc/intel/skylake/skl-probe.c | 48 ++++++++++++++++++++++++++++++-------
+ sound/soc/intel/skylake/skl-probe.c | 48 ++++++++++++++++++++++++-----
  1 file changed, 40 insertions(+), 8 deletions(-)
 
 diff --git a/sound/soc/intel/skylake/skl-probe.c b/sound/soc/intel/skylake/skl-probe.c
@@ -137,5 +136,5 @@ index 9ccd19d..b563dc3 100644
  
  	return 0;
 -- 
-2.7.4
+https://clearlinux.org
 

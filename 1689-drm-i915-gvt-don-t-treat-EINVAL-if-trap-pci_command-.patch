@@ -1,8 +1,8 @@
-From ba317be0a9eeea9bc632435cd5f15589166cefe9 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Fei Jiang <fei.jiang@intel.com>
 Date: Tue, 10 Jul 2018 09:55:30 +0800
-Subject: [PATCH 1689/2278] drm/i915/gvt: don't treat EINVAL if trap
- pci_command and pci_status together
+Subject: [PATCH] drm/i915/gvt: don't treat EINVAL if trap pci_command and
+ pci_status together
 
 Previously we only support single pci_command writing trap. While when
 system suspends, pci_command and pci_status are written together in 32
@@ -43,5 +43,5 @@ index 78219f1..106b11a 100644
  
  	switch (rounddown(offset, 4)) {
 -- 
-2.7.4
+https://clearlinux.org
 

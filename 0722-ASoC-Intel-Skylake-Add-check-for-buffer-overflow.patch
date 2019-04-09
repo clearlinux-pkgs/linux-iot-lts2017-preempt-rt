@@ -1,7 +1,7 @@
-From 833aee5f869285db270bab28041c8e7bf30ae633 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Senthilnathan Veppur <senthilnathanx.veppur@intel.com>
 Date: Wed, 23 Mar 2016 16:46:08 +0530
-Subject: [PATCH 0722/2278] ASoC: Intel: Skylake: Add check for buffer overflow
+Subject: [PATCH] ASoC: Intel: Skylake: Add check for buffer overflow
 
 Return error if source buffer would overflow in strncpy.
 
@@ -17,7 +17,7 @@ Tested-by: Avati, Santosh Kumar <santosh.kumar.avati@intel.com>
  1 file changed, 4 insertions(+)
 
 diff --git a/sound/soc/intel/skylake/skl-debug.c b/sound/soc/intel/skylake/skl-debug.c
-index dbdfcbba..a5a159d 100644
+index dbdfcbb..a5a159d 100644
 --- a/sound/soc/intel/skylake/skl-debug.c
 +++ b/sound/soc/intel/skylake/skl-debug.c
 @@ -603,6 +603,10 @@ static ssize_t adsp_control_write(struct file *file,
@@ -32,5 +32,5 @@ index dbdfcbba..a5a159d 100644
  			buf[j] = '\0';
  			tx_param = 1;
 -- 
-2.7.4
+https://clearlinux.org
 

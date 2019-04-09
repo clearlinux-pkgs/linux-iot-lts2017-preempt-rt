@@ -1,8 +1,8 @@
-From e0c2545167c4bd227e742609810540b0156459ae Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Mousumi Jana <mousumix.jana@intel.com>
 Date: Sat, 3 Sep 2016 02:56:03 +0530
-Subject: [PATCH 0738/2278] ASoC: Intel: Skylake: Update FW Trace logs feature
- to new interface
+Subject: [PATCH] ASoC: Intel: Skylake: Update FW Trace logs feature to new
+ interface
 
 FW trace logs feature has been changed according to a new
 implementation from the firmware.
@@ -78,5 +78,5 @@ index b3591c8..1c53ba3 100644
  }
  
 -- 
-2.7.4
+https://clearlinux.org
 

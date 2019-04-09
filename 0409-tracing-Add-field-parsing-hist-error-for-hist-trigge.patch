@@ -1,8 +1,7 @@
-From 02e86670ad389d1f7ac68f2979b013a12363e29e Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tom Zanussi <tom.zanussi@linux.intel.com>
 Date: Thu, 26 Apr 2018 20:04:48 -0500
-Subject: [PATCH 0409/2278] tracing: Add field parsing hist error for hist
- triggers
+Subject: [PATCH] tracing: Add field parsing hist error for hist triggers
 
 [ commit 5ec432d7bf9dd3b4a2b84f8974e3adb71f45fb1d ]
 
@@ -49,5 +48,5 @@ index b8fee11..9dac8ba 100644
  			goto out;
  		}
 -- 
-2.7.4
+https://clearlinux.org
 

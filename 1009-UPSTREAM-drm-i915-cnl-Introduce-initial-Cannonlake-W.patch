@@ -1,8 +1,8 @@
-From 92aed52e06cd6a3d5c9c7a3508b1cc42d3b33f99 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Rodrigo Vivi <rodrigo.vivi@intel.com>
 Date: Tue, 15 Aug 2017 16:16:48 -0700
-Subject: [PATCH 1009/2278] UPSTREAM: drm/i915/cnl: Introduce initial
- Cannonlake Workarounds.
+Subject: [PATCH] UPSTREAM: drm/i915/cnl: Introduce initial Cannonlake
+ Workarounds.
 
 Let's inherit workarounds from previous platforms that
 according to wa_database and BSpec are still valid for
@@ -58,19 +58,19 @@ diff --git a/drivers/gpu/drm/i915/i915_reg.h b/drivers/gpu/drm/i915/i915_reg.h
 index c272be0..27406f8 100644
 --- a/drivers/gpu/drm/i915/i915_reg.h
 +++ b/drivers/gpu/drm/i915/i915_reg.h
-@@ -3813,6 +3813,12 @@ enum {
+@@ -3812,6 +3812,12 @@ enum {
+ #define   PWM2_GATING_DIS		(1 << 14)
  #define   PWM1_GATING_DIS		(1 << 13)
  
- /*
++/*
 + * GEN10 clock gating regs
 + */
 +#define SLICE_UNIT_LEVEL_CLKGATE	_MMIO(0x94d4)
 +#define  SARBUNIT_CLKGATE_DIS		(1 << 5)
 +
-+/*
+ /*
   * Display engine regs
   */
- 
 diff --git a/drivers/gpu/drm/i915/intel_engine_cs.c b/drivers/gpu/drm/i915/intel_engine_cs.c
 index c0e3e2f..6e91d10 100644
 --- a/drivers/gpu/drm/i915/intel_engine_cs.c
@@ -161,5 +161,5 @@ index 84710a8..fda1312 100644
  	else if (IS_KABYLAKE(dev_priv) || IS_COFFEELAKE(dev_priv))
  		dev_priv->display.init_clock_gating = kabylake_init_clock_gating;
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,12 +1,12 @@
-From 19362c883486987a42de3dfe127b28f23866d96d Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Sun, 17 Jun 2018 22:07:53 +0100
-Subject: [PATCH 1676/2278] ASoC: SOF: Intel BYT platform DAIs
+Subject: [PATCH] ASoC: SOF: Intel BYT platform DAIs
 
 Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Signed-off-by: Keyon Jie <yang.jie@linux.intel.com>
 ---
- sound/soc/sof/intel/byt.c | 66 +++++++++++++++++++++++++++++++++++++++++++++++
+ sound/soc/sof/intel/byt.c | 66 +++++++++++++++++++++++++++++++++++++++
  1 file changed, 66 insertions(+)
 
 diff --git a/sound/soc/sof/intel/byt.c b/sound/soc/sof/intel/byt.c
@@ -101,5 +101,5 @@ index fa76478..77a2c7a 100644
  EXPORT_SYMBOL(sof_cht_ops);
  
 -- 
-2.7.4
+https://clearlinux.org
 

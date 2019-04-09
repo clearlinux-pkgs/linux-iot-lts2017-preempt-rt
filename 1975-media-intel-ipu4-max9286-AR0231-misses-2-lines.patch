@@ -1,7 +1,7 @@
-From 028a3754764272c79b7f39ae195f1bb5b8cde23f Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: yzha108 <yanli.l.zhang@intel.com>
 Date: Tue, 26 Jun 2018 19:55:38 +0800
-Subject: [PATCH 1975/2278] media: intel-ipu4: max9286: AR0231 misses 2 lines
+Subject: [PATCH] media: intel-ipu4: max9286: AR0231 misses 2 lines
 
 Message for Open Source:
 Set max96705 VSYNC Regs
@@ -19,7 +19,7 @@ Signed-off-by: yzha108 <yanli.l.zhang@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
  drivers/media/i2c/max9286-reg-settings.h |  6 ++++++
- drivers/media/i2c/max9286.c              | 25 +++++++++++++++++++++++++
+ drivers/media/i2c/max9286.c              | 25 ++++++++++++++++++++++++
  2 files changed, 31 insertions(+)
 
 diff --git a/drivers/media/i2c/max9286-reg-settings.h b/drivers/media/i2c/max9286-reg-settings.h
@@ -76,5 +76,5 @@ index bf05072..06bbba3 100644
  	rval = regmap_write(max->regmap8, DS_ENEQ, 0x0F);
  	if (rval) {
 -- 
-2.7.4
+https://clearlinux.org
 

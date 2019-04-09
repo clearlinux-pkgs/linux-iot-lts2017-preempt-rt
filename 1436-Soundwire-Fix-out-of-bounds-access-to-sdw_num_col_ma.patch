@@ -1,8 +1,7 @@
-From 2c0a0fcb58d69463d9ca8f0b12407c08fee49a29 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pankaj Bharadiya <pankaj.laxminarayan.bharadiya@intel.com>
 Date: Thu, 14 Dec 2017 13:12:55 +0530
-Subject: [PATCH 1436/2278] Soundwire: Fix out of bounds access to
- sdw_num_col_mapping
+Subject: [PATCH] Soundwire: Fix out of bounds access to sdw_num_col_mapping
 
 In sdw_get_col_to_num() the sdw_num_col_mapping can be accessed at
 MAX_NUM_COLS index and will lead to out of bound access.
@@ -30,5 +29,5 @@ index 90ae861..57dc85d 100644
  			return sdw_num_col_mapping[i].num;
  	}
 -- 
-2.7.4
+https://clearlinux.org
 

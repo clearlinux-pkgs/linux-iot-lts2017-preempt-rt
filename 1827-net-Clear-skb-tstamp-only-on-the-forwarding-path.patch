@@ -1,7 +1,7 @@
-From afcb58d1b13b912ddec7802ba7d090aca74ea044 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Jesus Sanchez-Palencia <jesus.sanchez-palencia@intel.com>
 Date: Tue, 3 Jul 2018 15:42:47 -0700
-Subject: [PATCH 1827/2278] net: Clear skb->tstamp only on the forwarding path
+Subject: [PATCH] net: Clear skb->tstamp only on the forwarding path
 
 This is done in preparation for the upcoming time based transmission
 patchset. Now that skb->tstamp will be used to hold packet's txtime,
@@ -36,5 +36,5 @@ index 8ec3669..bffc05c 100644
  EXPORT_SYMBOL_GPL(skb_scrub_packet);
  
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,8 @@
-From b423dd5a9c256263747467379ff5a797d59b8e1f Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Naveen M <naveen.m@intel.com>
 Date: Fri, 15 Sep 2017 13:43:21 +0530
-Subject: [PATCH 1156/2278] ASoC: Intel: Headset button support in kabylake
- machine driver
+Subject: [PATCH] ASoC: Intel: Headset button support in kabylake machine
+ driver
 
 Patch adds headset button support for kabylake machine driver
 (kbl_rt5663_max98927).
@@ -50,5 +50,5 @@ index 7f76074..e45b6fe 100644
  	return ret;
  }
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,7 +1,7 @@
-From 4ca2aa468eecdfc06644c20d2858bc5bdab33a0e Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Thomas Gleixner <tglx@linutronix.de>
 Date: Tue, 14 Jun 2011 17:05:09 +0200
-Subject: [PATCH 0277/2278] block: Turn off warning which is bogus on RT
+Subject: [PATCH] block: Turn off warning which is bogus on RT
 
 On -RT the context is always with IRQs enabled. Ignore this warning on -RT.
 
@@ -24,5 +24,5 @@ index 9e3521c..b3edf24 100644
  
  	queue_flag_clear(QUEUE_FLAG_STOPPED, q);
 -- 
-2.7.4
+https://clearlinux.org
 

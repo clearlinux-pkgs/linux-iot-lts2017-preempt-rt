@@ -1,7 +1,7 @@
-From 8a8c31ccf447913b21156697c8b69b29e220d7ce Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ding Yunliang <yunliang.ding@intel.com>
 Date: Wed, 13 Jun 2018 09:50:52 +0800
-Subject: [PATCH 1956/2278] media: intel-ipu4: clean up some compile warnings
+Subject: [PATCH] media: intel-ipu4: clean up some compile warnings
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -30,14 +30,14 @@ Change-Id: Idf46b6cea1508297c29c45e682329d9a1627391b
 Signed-off-by: Ding Yunliang <yunliang.ding@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- drivers/media/pci/intel/ipu-cpd.c                  |  5 +-
- drivers/media/pci/intel/ipu-fw-isys.c              |  2 +-
- drivers/media/pci/intel/ipu-isys-subdev.c          | 13 -----
- drivers/media/pci/intel/ipu-psys-compat32.c        |  2 +
- drivers/media/pci/intel/ipu-wrapper.c              | 67 ++++++++++++----------
- .../ipu4/ipu4-css/lib2600psys/libcsspsys2600.c     | 39 -------------
- drivers/media/pci/intel/ipu4/ipu4-isys-isa.c       |  4 +-
- .../ipu4/ipu4p-css/lib2600psys/libcsspsys2600.c    | 39 -------------
+ drivers/media/pci/intel/ipu-cpd.c             |  5 +-
+ drivers/media/pci/intel/ipu-fw-isys.c         |  2 +-
+ drivers/media/pci/intel/ipu-isys-subdev.c     | 13 ----
+ drivers/media/pci/intel/ipu-psys-compat32.c   |  2 +
+ drivers/media/pci/intel/ipu-wrapper.c         | 67 ++++++++++---------
+ .../ipu4-css/lib2600psys/libcsspsys2600.c     | 39 -----------
+ drivers/media/pci/intel/ipu4/ipu4-isys-isa.c  |  4 +-
+ .../ipu4p-css/lib2600psys/libcsspsys2600.c    | 39 -----------
  8 files changed, 42 insertions(+), 129 deletions(-)
 
 diff --git a/drivers/media/pci/intel/ipu-cpd.c b/drivers/media/pci/intel/ipu-cpd.c
@@ -418,7 +418,7 @@ index 92ac830..20f0dd4 100644
  	.cells = vied_nci_cell_type,
  	.num_cells = VIED_NCI_N_CELL_ID,
 diff --git a/drivers/media/pci/intel/ipu4/ipu4-isys-isa.c b/drivers/media/pci/intel/ipu4/ipu4-isys-isa.c
-index 2270ee04..ff17d59 100644
+index 2270ee0..ff17d59 100644
 --- a/drivers/media/pci/intel/ipu4/ipu4-isys-isa.c
 +++ b/drivers/media/pci/intel/ipu4/ipu4-isys-isa.c
 @@ -99,7 +99,7 @@ static int isa_config_vidioc_g_fmt_vid_out_mplane(struct file *file, void *fh,
@@ -497,5 +497,5 @@ index 6572b62..c79b27d 100644
  	.cells = vied_nci_cell_type,
  	.num_cells = VIED_NCI_N_CELL_ID,
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,8 @@
-From 4eb1d2c92299271f984b745d1ca779194daaeb32 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pan Xiuli <xiuli.pan@linux.intel.com>
 Date: Mon, 23 Jul 2018 16:40:09 +0800
-Subject: [PATCH 1812/2278] ASoC: SOF: topology : align dai type and index in
- topology parse
+Subject: [PATCH] ASoC: SOF: topology : align dai type and index in topology
+ parse
 
 DAI type and index will be used to dai_get function in FW, make both
 sof_ipc_dai_config and sof_ipc_comp_dai use the same index and type.
@@ -105,5 +105,5 @@ index 288eba6..d0c4bd9 100644
  
  	/* now load DAI specific data and send IPC - type comes from token */
 -- 
-2.7.4
+https://clearlinux.org
 

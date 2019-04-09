@@ -1,7 +1,7 @@
-From 2820286f90997f5303246bf8241062da22ad89c6 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Thu, 17 May 2018 20:43:51 -0500
-Subject: [PATCH 1647/2278] ASoC: Intel: make cnl_rt274 work with SOF
+Subject: [PATCH] ASoC: Intel: make cnl_rt274 work with SOF
 
 (0)fix alignment issues for upstream
 (1)refine machine driver to make it work with sof
@@ -11,7 +11,7 @@ Signed-off-by: Rander Wang <rander.wang@linux.intel.com>
 Signed-off-by: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Signed-off-by: Keyon Jie <yang.jie@linux.intel.com>
 ---
- sound/soc/intel/boards/cnl_rt274.c | 52 +++++++++++++++++++++-----------------
+ sound/soc/intel/boards/cnl_rt274.c | 52 +++++++++++++++++-------------
  1 file changed, 29 insertions(+), 23 deletions(-)
 
 diff --git a/sound/soc/intel/boards/cnl_rt274.c b/sound/soc/intel/boards/cnl_rt274.c
@@ -159,5 +159,5 @@ index 9309e5b..38f4d78 100644
  
  static int snd_cnl_rt274_mc_probe(struct platform_device *pdev)
 -- 
-2.7.4
+https://clearlinux.org
 

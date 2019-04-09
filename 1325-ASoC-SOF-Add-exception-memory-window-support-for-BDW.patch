@@ -1,8 +1,7 @@
-From e9ea044976c94fe4600e72aecfff8751bc39a4b8 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pan Xiuli <xiuli.pan@linux.intel.com>
 Date: Wed, 21 Mar 2018 16:38:58 +0800
-Subject: [PATCH 1325/2278] ASoC: SOF: Add exception memory window support for
- BDW
+Subject: [PATCH] ASoC: SOF: Add exception memory window support for BDW
 
 Use memory window to handle DSP panic.
 
@@ -61,5 +60,5 @@ index c50e4ca..d2de722 100644
  			dev_err(sdev->dev, "error: get illegal window info\n");
  			return;
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,7 @@
-From da198288f68d21e940223f052f1a80d8fcb13fcc Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Mon, 8 Jan 2018 20:40:02 +0000
-Subject: [PATCH 1302/2278] ASoC: SOF: Add Build support for SOF core and
- drivers
+Subject: [PATCH] ASoC: SOF: Add Build support for SOF core and drivers
 
 Build SOF core and drivers.
 
@@ -10,14 +9,14 @@ Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 ---
  sound/soc/Kconfig      |   1 +
  sound/soc/Makefile     |   1 +
- sound/soc/sof/Kconfig  | 110 +++++++++++++++++++++++++++++++++++++++++++++++++
- sound/soc/sof/Makefile |  26 ++++++++++++
+ sound/soc/sof/Kconfig  | 110 +++++++++++++++++++++++++++++++++++++++++
+ sound/soc/sof/Makefile |  26 ++++++++++
  4 files changed, 138 insertions(+)
  create mode 100644 sound/soc/sof/Kconfig
  create mode 100644 sound/soc/sof/Makefile
 
 diff --git a/sound/soc/Kconfig b/sound/soc/Kconfig
-index d227581..e8f3acae 100644
+index d227581..e8f3aca 100644
 --- a/sound/soc/Kconfig
 +++ b/sound/soc/Kconfig
 @@ -65,6 +65,7 @@ source "sound/soc/rockchip/Kconfig"
@@ -189,5 +188,5 @@ index 0000000..b594c4e
 +obj-$(CONFIG_SND_SOC_SOF_HDA_COMMON) += snd-sof-intel-hda-common.o
 +obj-$(CONFIG_SND_SOC_SOF_SPIDSP) += snd-sof-spi.o
 -- 
-2.7.4
+https://clearlinux.org
 

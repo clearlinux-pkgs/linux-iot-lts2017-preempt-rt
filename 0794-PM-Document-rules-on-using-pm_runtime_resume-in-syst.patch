@@ -1,8 +1,8 @@
-From a204cf198b9bfe746e0b7dc8f60bee821941b466 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Rafael J. Wysocki" <rafael.j.wysocki@intel.com>
 Date: Wed, 20 Sep 2017 02:26:00 +0200
-Subject: [PATCH 0794/2278] PM: Document rules on using pm_runtime_resume() in
- system suspend callbacks
+Subject: [PATCH] PM: Document rules on using pm_runtime_resume() in system
+ suspend callbacks
 
 It quite often is necessary to resume devices from runtime suspend
 during system suspend for various reasons (for example, if their
@@ -84,5 +84,5 @@ index a0dc287..4a18ef9 100644
  the full-power state, as explained in :file:`Documentation/power/runtime_pm.txt`.
  Refer to that document for more information regarding this particular issue as
 -- 
-2.7.4
+https://clearlinux.org
 

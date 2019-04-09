@@ -1,14 +1,14 @@
-From 7198dedbf8ae23fdcb52ed9bd876e52fa227e2ad Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Bandi, Kushal" <kushal.bandi@intel.com>
 Date: Mon, 18 Jun 2018 00:06:16 -0700
-Subject: [PATCH 1539/2278] media: platform: enable ipu for GP MRB
+Subject: [PATCH] media: platform: enable ipu for GP MRB
 
 Change-Id: Ic099e5b008ebada0c17c6858439962b6d99bdaaa
 Signed-off-by: Bandi, Kushal <kushal.bandi@intel.com>
 ---
- drivers/media/platform/intel/Kconfig             |   6 ++
- drivers/media/platform/intel/Makefile            |   1 +
- drivers/media/platform/intel/ipu4-bxt-gp-pdata.c | 121 +++++++++++++++++++++++
+ drivers/media/platform/intel/Kconfig          |   6 +
+ drivers/media/platform/intel/Makefile         |   1 +
+ .../media/platform/intel/ipu4-bxt-gp-pdata.c  | 121 ++++++++++++++++++
  3 files changed, 128 insertions(+)
  create mode 100644 drivers/media/platform/intel/ipu4-bxt-gp-pdata.c
 
@@ -167,5 +167,5 @@ index 0000000..c49ab8d
 +DECLARE_PCI_FIXUP_EARLY(PCI_VENDOR_ID_INTEL, IPU_PCI_ID,
 +			ipu4_quirk);
 -- 
-2.7.4
+https://clearlinux.org
 

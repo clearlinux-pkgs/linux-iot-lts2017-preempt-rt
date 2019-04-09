@@ -1,8 +1,7 @@
-From 47992c6cfa86ea6160fefbffae0b152c3c2148ca Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Gopal, Puunithaaraj" <puunithaaraj.gopal@intel.com>
 Date: Mon, 28 May 2018 15:44:25 +0800
-Subject: [PATCH 1529/2278] ici: Check null pointer to avoid null pointer
- dereferencing
+Subject: [PATCH] ici: Check null pointer to avoid null pointer dereferencing
 
 Change-Id: Ib4e8e8d584034d2b53d91804fb779aa138c134de
 Signed-off-by: Gopal, Puunithaaraj <puunithaaraj.gopal@intel.com>
@@ -129,5 +128,5 @@ index 87a25cb..250ed01 100644
  
  static int ici_tpg_pipeline_validate(
 -- 
-2.7.4
+https://clearlinux.org
 

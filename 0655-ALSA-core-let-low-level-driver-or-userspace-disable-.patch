@@ -1,8 +1,7 @@
-From 787d122bb67d9161a33c5f4771989de78bf921d0 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Tue, 17 May 2016 14:00:15 +0530
-Subject: [PATCH 0655/2278] ALSA: core: let low-level driver or userspace
- disable rewinds
+Subject: [PATCH] ALSA: core: let low-level driver or userspace disable rewinds
 
 Add new hw_params flag to explicitly tell driver that rewinds will never
 be used. This can be used by low-level driver to optimize DMA operations
@@ -47,7 +46,7 @@ index c227ccb..ea3a448 100644
  struct snd_interval {
  	unsigned int min, max;
 diff --git a/sound/core/pcm_native.c b/sound/core/pcm_native.c
-index 25c67e8..05eb574e 100644
+index 25c67e8..05eb574 100644
 --- a/sound/core/pcm_native.c
 +++ b/sound/core/pcm_native.c
 @@ -695,6 +695,8 @@ static int snd_pcm_hw_params(struct snd_pcm_substream *substream,
@@ -80,5 +79,5 @@ index 25c67e8..05eb574e 100644
  	ret = do_pcm_hwsync(substream);
  	if (!ret)
 -- 
-2.7.4
+https://clearlinux.org
 

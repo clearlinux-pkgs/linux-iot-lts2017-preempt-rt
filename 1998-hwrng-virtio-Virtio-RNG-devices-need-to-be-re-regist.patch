@@ -1,8 +1,8 @@
-From c1978d09f94d00611cba5b3c25cd7860bfb67405 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Jim Quigley <Jim.Quigley@oracle.com>
 Date: Fri, 3 Nov 2017 09:57:21 +0000
-Subject: [PATCH 1998/2278] hwrng: virtio - Virtio RNG devices need to be
- re-registered after suspend/resume
+Subject: [PATCH] hwrng: virtio - Virtio RNG devices need to be re-registered
+ after suspend/resume
 
 The patch for
 
@@ -57,5 +57,5 @@ index 3fa2f8a..b89df66 100644
  #endif
  
 -- 
-2.7.4
+https://clearlinux.org
 

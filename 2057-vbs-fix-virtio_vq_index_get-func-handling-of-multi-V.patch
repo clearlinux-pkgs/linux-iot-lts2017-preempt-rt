@@ -1,8 +1,8 @@
-From 32577a9b3d8c26bb6a34664ef0033e1d15aadd90 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ong Hock Yu <ong.hock.yu@intel.com>
 Date: Sun, 19 Aug 2018 17:32:55 +0000
-Subject: [PATCH 2057/2278] vbs: fix virtio_vq_index_get func handling of multi
- VQ concurrent request.
+Subject: [PATCH] vbs: fix virtio_vq_index_get func handling of multi VQ
+ concurrent request.
 
 Under multiple VQ use case, it is possible to have concurrent requests.
 Added support to return multiple vq index from all vcpu.
@@ -114,5 +114,5 @@ index 30df8eb..d9d932c 100644
  /**
   * virtio_dev_reset - reset a VBS-K device
 -- 
-2.7.4
+https://clearlinux.org
 

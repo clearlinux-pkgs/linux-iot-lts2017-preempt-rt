@@ -1,7 +1,7 @@
-From a8888870e71273b486176d69a270b0eecf8a8b37 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Yong Zhi <yong.zhi@intel.com>
 Date: Tue, 10 Apr 2018 10:58:37 -0500
-Subject: [PATCH 1928/2278] media: intel-ipu4: isys: Add (un)subscribe_event
+Subject: [PATCH] media: intel-ipu4: isys: Add (un)subscribe_event
  tpg_sd_core_ops
 
 Message for Open Source:
@@ -22,7 +22,7 @@ Change-Id: I6016e75abcd4d9c773bd5e31dae5dbf256adbbd1
 Signed-off-by: Yong Zhi <yong.zhi@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- drivers/media/pci/intel/ipu-isys-tpg.c | 29 +++++++++++++++++++++++------
+ drivers/media/pci/intel/ipu-isys-tpg.c | 29 ++++++++++++++++++++------
  1 file changed, 23 insertions(+), 6 deletions(-)
 
 diff --git a/drivers/media/pci/intel/ipu-isys-tpg.c b/drivers/media/pci/intel/ipu-isys-tpg.c
@@ -71,16 +71,16 @@ index de619cb..c61849d 100644
  	if (rval)
  		return rval;
  
-@@ -291,9 +311,6 @@ int ipu_isys_tpg_init(struct ipu_isys_tpg *tpg,
+@@ -290,9 +310,6 @@ int ipu_isys_tpg_init(struct ipu_isys_tpg *tpg,
+ 	tpg->asd.sd.entity.type = MEDIA_ENT_T_V4L2_SUBDEV_SENSOR;
  #else
  	tpg->asd.sd.entity.function = MEDIA_ENT_F_CAM_SENSOR;
- #endif
+-#endif
 -#ifdef IPU_TPG_SOF
 -	tpg->asd.sd.flags |= V4L2_SUBDEV_FL_HAS_EVENTS;
--#endif
+ #endif
  	tpg->asd.pad[TPG_PAD_SOURCE].flags = MEDIA_PAD_FL_SOURCE;
  
- 	tpg->asd.source = IPU_FW_ISYS_STREAM_SRC_MIPIGEN_PORT0 + index;
 -- 
-2.7.4
+https://clearlinux.org
 

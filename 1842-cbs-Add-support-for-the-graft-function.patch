@@ -1,7 +1,7 @@
-From 52505f04fb828dfa59138de31f901d41a598d9ec Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Vinicius Costa Gomes <vinicius.gomes@intel.com>
 Date: Mon, 23 Jul 2018 17:08:00 -0700
-Subject: [PATCH 1842/2278] cbs: Add support for the graft function
+Subject: [PATCH] cbs: Add support for the graft function
 
 This will allow to install a child qdisc under cbs. The main use case
 is to install ETF (Earliest TxTime First) qdisc under cbs, so there's
@@ -10,7 +10,7 @@ another level of control for time-sensitive traffic.
 Signed-off-by: Vinicius Costa Gomes <vinicius.gomes@intel.com>
 Signed-off-by: David S. Miller <davem@davemloft.net>
 ---
- net/sched/sch_cbs.c | 134 ++++++++++++++++++++++++++++++++++++++++++++++++----
+ net/sched/sch_cbs.c | 134 +++++++++++++++++++++++++++++++++++++++++---
  1 file changed, 125 insertions(+), 9 deletions(-)
 
 diff --git a/net/sched/sch_cbs.c b/net/sched/sch_cbs.c
@@ -228,5 +228,5 @@ index bdb533b..771c575 100644
  	.enqueue	=	cbs_enqueue,
  	.dequeue	=	cbs_dequeue,
 -- 
-2.7.4
+https://clearlinux.org
 

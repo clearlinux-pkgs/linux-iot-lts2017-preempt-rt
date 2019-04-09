@@ -1,7 +1,7 @@
-From 7489083fdca059121ac1a34d0748f6ef23fe3ea7 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ding Yunliang <yunliang.ding@intel.com>
 Date: Fri, 15 Jun 2018 14:57:27 +0800
-Subject: [PATCH 1969/2278] media: intel-ipu4: depracated abi sanity check
+Subject: [PATCH] media: intel-ipu4: depracated abi sanity check
 
 Message for Open Source:
 The abi check is now having heavy maintain burden, and issue was not
@@ -18,15 +18,15 @@ Change-Id: I471304d10a6dd92636448ea8f82f553044d27894
 Signed-off-by: Ding Yunliang <yunliang.ding@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- drivers/media/pci/intel/ici/libintel-ipu4_ici.c    |  14 --
- .../media/pci/intel/ipu4/ipu4-css/Makefile.isyslib |   1 -
- .../ipu4/ipu4-css/lib2600psys/libcsspsys2600.c     | 150 ++-----------------
- .../media/pci/intel/ipu4/ipu4-css/libintel-ipu4.c  |  14 --
- .../pci/intel/ipu4/ipu4p-css/Makefile.isyslib      |   1 -
- .../ipu4/ipu4p-css/lib2600psys/libcsspsys2600.c    | 150 ++-----------------
- .../pci/intel/ipu4/ipu4p-css/libintel-ipu4p.c      |  14 --
- drivers/media/pci/intel/libintel-checker.c         | 165 ---------------------
- drivers/media/pci/intel/libintel-checker.h         |   9 --
+ .../media/pci/intel/ici/libintel-ipu4_ici.c   |  14 --
+ .../pci/intel/ipu4/ipu4-css/Makefile.isyslib  |   1 -
+ .../ipu4-css/lib2600psys/libcsspsys2600.c     | 150 ++--------------
+ .../pci/intel/ipu4/ipu4-css/libintel-ipu4.c   |  14 --
+ .../pci/intel/ipu4/ipu4p-css/Makefile.isyslib |   1 -
+ .../ipu4p-css/lib2600psys/libcsspsys2600.c    | 150 ++--------------
+ .../pci/intel/ipu4/ipu4p-css/libintel-ipu4p.c |  14 --
+ drivers/media/pci/intel/libintel-checker.c    | 165 ------------------
+ drivers/media/pci/intel/libintel-checker.h    |   9 -
  9 files changed, 32 insertions(+), 486 deletions(-)
  delete mode 100644 drivers/media/pci/intel/libintel-checker.c
  delete mode 100644 drivers/media/pci/intel/libintel-checker.h
@@ -716,5 +716,5 @@ index 83a068a..0000000
 -
 -#endif
 -- 
-2.7.4
+https://clearlinux.org
 

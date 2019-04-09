@@ -1,8 +1,7 @@
-From 8a743a736f65b253bbec75361ab563b83c4198f6 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Zheng, Gen" <gen.zheng@intel.com>
 Date: Mon, 4 Jun 2018 11:59:34 +0800
-Subject: [PATCH 1484/2278] VHM: bug fix on operating multi-thread
- synchronization
+Subject: [PATCH] VHM: bug fix on operating multi-thread synchronization
 
 With current code, the ioreq client based on VHM kthread may access
 client->wq after the client got freed.
@@ -85,5 +84,5 @@ index 08826c5..b570b82 100644
  
  	return 0;
 -- 
-2.7.4
+https://clearlinux.org
 

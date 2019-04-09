@@ -1,7 +1,7 @@
-From af2920e4f4945240d9d12104333041d9dcf564e2 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Mike Galbraith <efault@gmx.de>
 Date: Sun, 8 Jan 2017 09:32:25 +0100
-Subject: [PATCH 0401/2278] cpuset: Convert callback_lock to raw_spinlock_t
+Subject: [PATCH] cpuset: Convert callback_lock to raw_spinlock_t
 
 The two commits below add up to a cpuset might_sleep() splat for RT:
 
@@ -46,7 +46,7 @@ Cc: stable-rt@vger.kernel.org
 Signed-off-by: Mike Galbraith <efault@gmx.de>
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- kernel/cgroup/cpuset.c | 66 +++++++++++++++++++++++++-------------------------
+ kernel/cgroup/cpuset.c | 66 +++++++++++++++++++++---------------------
  1 file changed, 33 insertions(+), 33 deletions(-)
 
 diff --git a/kernel/cgroup/cpuset.c b/kernel/cgroup/cpuset.c
@@ -288,5 +288,5 @@ index 7bb7384..bda2af7 100644
  }
  
 -- 
-2.7.4
+https://clearlinux.org
 

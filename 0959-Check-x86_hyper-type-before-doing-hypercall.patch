@@ -1,7 +1,7 @@
-From 3449af23962d707f05c88d1c843b8fb1460f79b1 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Jason Chen CJ <jason.cj.chen@intel.com>
 Date: Tue, 23 Jan 2018 23:03:19 +0800
-Subject: [PATCH 0959/2278] Check x86_hyper type before doing hypercall
+Subject: [PATCH] Check x86_hyper type before doing hypercall
 
 this is to fix native boot failure issue with CONFIG_CWP
 
@@ -63,5 +63,5 @@ index 0f9e7f3..8f0fd8e 100644
  	pr_info("%s, cpu_num %d\n", __func__, nr_cpus);
  	if (nr_cpus > MAX_NR_CPUS) {
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,7 +1,7 @@
-From 9b1462b1ebd29d76db1e8025e3e529a5fcc393cf Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tomas Winkler <tomas.winkler@intel.com>
 Date: Wed, 4 Jan 2017 14:14:21 +0200
-Subject: [PATCH 0550/2278] scsi: ufs: revamp string descriptor reading
+Subject: [PATCH] scsi: ufs: revamp string descriptor reading
 
 Define new a type: uc_string_id for easier string
 handling and less casting and reduce number or string
@@ -13,7 +13,7 @@ Change-Id: Ieda6a4b68e60b8a2d8a2d93a371ff5396dec989b
 Signed-off-by: Tomas Winkler <tomas.winkler@intel.com>
 ---
  drivers/scsi/ufs/ufs.h    |   2 +-
- drivers/scsi/ufs/ufshcd.c | 171 +++++++++++++++++++++++++++-------------------
+ drivers/scsi/ufs/ufshcd.c | 171 ++++++++++++++++++++++----------------
  2 files changed, 101 insertions(+), 72 deletions(-)
 
 diff --git a/drivers/scsi/ufs/ufs.h b/drivers/scsi/ufs/ufs.h
@@ -68,10 +68,11 @@ index 64efa84..5ab0384 100644
  				   u32 size)
  {
  	return ufshcd_read_desc_param(hba, desc_id, desc_index, 0, buf, size);
-@@ -3109,49 +3099,79 @@ static int ufshcd_read_device_desc(struct ufs_hba *hba, u8 *buf, u32 size)
+@@ -3108,6 +3098,25 @@ static int ufshcd_read_device_desc(struct ufs_hba *hba, u8 *buf, u32 size)
+ 	return ufshcd_read_desc(hba, QUERY_DESC_IDN_DEVICE, 0, buf, size);
  }
  
- /**
++/**
 + * uc_string_id - unicode string
 + *
 + * @len: size of this descriptor inclusive
@@ -90,10 +91,10 @@ index 64efa84..5ab0384 100644
 +	return (ch >= 0x20 || ch <= 0x7e) ? ch : ' ';
 +}
 +
-+/**
+ /**
   * ufshcd_read_string_desc - read string descriptor
   * @hba: pointer to adapter instance
-  * @desc_index: descriptor index
+@@ -3115,43 +3124,54 @@ static int ufshcd_read_device_desc(struct ufs_hba *hba, u8 *buf, u32 size)
   * @buf: pointer to buffer where descriptor would be read
   * @size: size of buf
   * @ascii: if true convert from unicode to ascii characters
@@ -297,5 +298,5 @@ index 64efa84..5ab0384 100644
  
  	ret = ufshcd_set_vccq_rail_unused(hba,
 -- 
-2.7.4
+https://clearlinux.org
 

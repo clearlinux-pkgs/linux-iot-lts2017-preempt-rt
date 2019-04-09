@@ -1,8 +1,8 @@
-From 8e34e496f62b2f02e0a26fb1fdeb174ea9ff1e27 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Fei Jiang <fei.jiang@intel.com>
 Date: Mon, 23 Jul 2018 10:50:28 +0800
-Subject: [PATCH 1853/2278] drm/i915/gvt: handling pvmmio update of plane
- registers in GVT-g
+Subject: [PATCH] drm/i915/gvt: handling pvmmio update of plane registers in
+ GVT-g
 
 When pvmmio level PVMMIO_PLANE_UPDATE is enabled, need handle multiple
 plane related registers updating together when PLANE_SURF is traped.
@@ -15,7 +15,7 @@ Signed-off-by: Fei Jiang <fei.jiang@intel.com>
 Reviewed-by: Min He <min.he@intel.com>
 Reviewed-by: Zhao Yakui <yakui.zhao@intel.com>
 ---
- drivers/gpu/drm/i915/gvt/handlers.c | 58 +++++++++++++++++++++++++++++++++++++
+ drivers/gpu/drm/i915/gvt/handlers.c | 58 +++++++++++++++++++++++++++++
  1 file changed, 58 insertions(+)
 
 diff --git a/drivers/gpu/drm/i915/gvt/handlers.c b/drivers/gpu/drm/i915/gvt/handlers.c
@@ -95,5 +95,5 @@ index 7b54550..eb6d63d 100644
  	vgpu_vreg(vgpu, reg_1ac) = vgpu_vreg(vgpu, offset);
  
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,7 +1,7 @@
-From b3038ed152a5e3a36cd35d079ece1756f33e7060 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: icg_intg <icg_intg@intel.com>
 Date: Thu, 10 May 2018 10:05:57 +0800
-Subject: [PATCH 1879/2278] media: intel-ipu4: css: fw release against
+Subject: [PATCH] media: intel-ipu4: css: fw release against
  scci_IPU4_master_20180509_0030
 
 Message for Open Source:
@@ -27,12 +27,12 @@ Reviewed-by: Coding Style
 Approver: CaiyingX Geng <caiyingx.geng@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- drivers/media/pci/intel/ipu4/ipu4-css/ia_css_fw_pkg_release.h       | 2 +-
- .../lib2600/isysapi/interface/ia_css_isys_fw_bridged_types.h        | 2 ++
- .../ipu4/ipu4-css/lib2600/isysapi/interface/ia_css_isysapi_types.h  | 2 ++
- .../intel/ipu4/ipu4-css/lib2600/isysapi/src/ia_css_isys_private.c   | 4 ++++
- .../lib2600psys/lib/DSS_V2_program_group/ia_css_fw_pkg_release.h    | 2 +-
- .../psysapi/dynamic/interface/ia_css_psys_process_group_cmd_impl.h  | 6 ++++--
+ .../media/pci/intel/ipu4/ipu4-css/ia_css_fw_pkg_release.h   | 2 +-
+ .../isysapi/interface/ia_css_isys_fw_bridged_types.h        | 2 ++
+ .../lib2600/isysapi/interface/ia_css_isysapi_types.h        | 2 ++
+ .../ipu4/ipu4-css/lib2600/isysapi/src/ia_css_isys_private.c | 4 ++++
+ .../lib/DSS_V2_program_group/ia_css_fw_pkg_release.h        | 2 +-
+ .../dynamic/interface/ia_css_psys_process_group_cmd_impl.h  | 6 ++++--
  6 files changed, 14 insertions(+), 4 deletions(-)
 
 diff --git a/drivers/media/pci/intel/ipu4/ipu4-css/ia_css_fw_pkg_release.h b/drivers/media/pci/intel/ipu4/ipu4-css/ia_css_fw_pkg_release.h
@@ -121,5 +121,5 @@ index f4b191e..530f93e 100644
  	uint8_t padding[N_PADDING_UINT8_IN_PROCESS_GROUP_STRUCT];
  };
 -- 
-2.7.4
+https://clearlinux.org
 

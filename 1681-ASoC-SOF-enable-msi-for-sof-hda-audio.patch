@@ -1,7 +1,7 @@
-From 5ab159b22262d48d26c294a1601319f26a150999 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Libin Yang <libin.yang@intel.com>
 Date: Thu, 7 Jun 2018 09:09:33 +0800
-Subject: [PATCH 1681/2278] ASoC: SOF: enable msi for sof hda audio
+Subject: [PATCH] ASoC: SOF: enable msi for sof hda audio
 
 This patch tries to enable msi for sof hda audio driver.
 If it fails (not supported by HW/BIOS), it will use the
@@ -87,5 +87,5 @@ index 7949d6d..81e1a34 100644
  	hda_dsp_stream_free(sdev);
  	return 0;
 -- 
-2.7.4
+https://clearlinux.org
 

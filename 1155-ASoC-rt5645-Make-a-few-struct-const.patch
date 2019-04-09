@@ -1,7 +1,7 @@
-From 4e68086b683c5e7f87af7bf1b4a29672a58260db Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Jean Delvare <jdelvare@suse.de>
 Date: Fri, 15 Sep 2017 10:27:10 +0200
-Subject: [PATCH 1155/2278] ASoC: rt5645: Make a few struct const
+Subject: [PATCH] ASoC: rt5645: Make a few struct const
 
 These dmi_system_id structures and associated platform data are
 never modified so they can be marked const.
@@ -58,5 +58,5 @@ index a98647a..4b2dbf0 100644
  		.ident = "MINIX Z83-4",
  		.matches = {
 -- 
-2.7.4
+https://clearlinux.org
 

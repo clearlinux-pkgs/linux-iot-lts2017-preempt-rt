@@ -1,7 +1,7 @@
-From 7816f08583a86c6031b0c6bece705d4a00757915 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ding Yunliang <yunliang.ding@intel.com>
 Date: Fri, 11 May 2018 10:17:45 +0800
-Subject: [PATCH 1979/2278] media: intel-ipu4: update SPDX license
+Subject: [PATCH] media: intel-ipu4: update SPDX license
 
 Message for Open Source:
 The SPDX license format which were used before was not correct,
@@ -178,7 +178,7 @@ index 890983e..9150f77 100644
  
  #include <linux/acpi.h>
 diff --git a/drivers/media/i2c/as3638.c b/drivers/media/i2c/as3638.c
-index d873c02..7ccdab91 100644
+index d873c02..7ccdab9 100644
 --- a/drivers/media/i2c/as3638.c
 +++ b/drivers/media/i2c/as3638.c
 @@ -1,4 +1,4 @@
@@ -498,7 +498,7 @@ index 978ec02..013469b 100644
  
  #ifndef __CRLMODULE_MSRLIST_H__
 diff --git a/drivers/media/i2c/crlmodule/crlmodule-nvm.c b/drivers/media/i2c/crlmodule/crlmodule-nvm.c
-index ef85b0c..691027b6 100755
+index ef85b0c..691027b 100755
 --- a/drivers/media/i2c/crlmodule/crlmodule-nvm.c
 +++ b/drivers/media/i2c/crlmodule/crlmodule-nvm.c
 @@ -1,4 +1,4 @@
@@ -598,7 +598,7 @@ index fd5d545..4bb4b26 100644
   * Copyright (C) ON Semiconductor
   *
 diff --git a/drivers/media/i2c/lc898122/lc898122-oisfil.h b/drivers/media/i2c/lc898122/lc898122-oisfil.h
-index db6374d..5e73e507 100644
+index db6374d..5e73e50 100644
 --- a/drivers/media/i2c/lc898122/lc898122-oisfil.h
 +++ b/drivers/media/i2c/lc898122/lc898122-oisfil.h
 @@ -1,4 +1,4 @@
@@ -628,7 +628,7 @@ index 1c79040..d619fe0 100644
   * Copyright (C) ON Semiconductor
   *
 diff --git a/drivers/media/i2c/lc898122/lc898122-regs.h b/drivers/media/i2c/lc898122/lc898122-regs.h
-index a6eea9e..74caa384 100644
+index a6eea9e..74caa38 100644
 --- a/drivers/media/i2c/lc898122/lc898122-regs.h
 +++ b/drivers/media/i2c/lc898122/lc898122-regs.h
 @@ -1,4 +1,4 @@
@@ -668,7 +668,7 @@ index a7c44e6..695a238 100644
   *
   * Lm3560 and other TI drivers used for this, written by
 diff --git a/drivers/media/i2c/ov8856.c b/drivers/media/i2c/ov8856.c
-index 16d253f..9c8fabd0 100644
+index 16d253f..9c8fabd 100644
 --- a/drivers/media/i2c/ov8856.c
 +++ b/drivers/media/i2c/ov8856.c
 @@ -1,4 +1,4 @@
@@ -778,7 +778,7 @@ index 47877f1..c91ae33 100644
  
  #ifndef IPU_CPD_H
 diff --git a/drivers/media/pci/intel/ipu-dma.c b/drivers/media/pci/intel/ipu-dma.c
-index 2d27780..0770d8db 100644
+index 2d27780..0770d8d 100644
 --- a/drivers/media/pci/intel/ipu-dma.c
 +++ b/drivers/media/pci/intel/ipu-dma.c
 @@ -1,4 +1,4 @@
@@ -1208,7 +1208,7 @@ index d8af4ba..924cb2e 100644
  
  #ifndef IPU_PLATFORM_H
 diff --git a/drivers/media/pci/intel/ipu4/ipu4-css/libintel-ipu4.c b/drivers/media/pci/intel/ipu4/ipu4-css/libintel-ipu4.c
-index 89234c0..a7128898 100644
+index 89234c0..a712889 100644
 --- a/drivers/media/pci/intel/ipu4/ipu4-css/libintel-ipu4.c
 +++ b/drivers/media/pci/intel/ipu4/ipu4-css/libintel-ipu4.c
 @@ -1,4 +1,4 @@
@@ -1428,7 +1428,7 @@ index 0385abc..f0914bc 100644
  
  #ifndef IPU_ISYS_ISA_FW_H
 diff --git a/include/uapi/linux/ipu-isys.h b/include/uapi/linux/ipu-isys.h
-index b00e8a7..850767b6 100644
+index b00e8a7..850767b 100644
 --- a/include/uapi/linux/ipu-isys.h
 +++ b/include/uapi/linux/ipu-isys.h
 @@ -1,4 +1,4 @@
@@ -1448,5 +1448,5 @@ index f23bc85..0f26dbf 100644
  
  #ifndef _UAPI_IPU_PSYS_H
 -- 
-2.7.4
+https://clearlinux.org
 

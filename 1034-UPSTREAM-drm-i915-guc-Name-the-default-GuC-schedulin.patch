@@ -1,8 +1,8 @@
-From d00c989a488d54b8beb841751f214d9e57053189 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Oscar Mateo <oscar.mateo@intel.com>
 Date: Tue, 12 Sep 2017 14:36:35 -0700
-Subject: [PATCH 1034/2278] UPSTREAM: drm/i915/guc: Name the default GuC
- scheduling policy
+Subject: [PATCH] UPSTREAM: drm/i915/guc: Name the default GuC scheduling
+ policy
 
 The default values for the default scheduling policy come from the
 GuC firmware itself. Transform the magic numbers into defines.
@@ -74,5 +74,5 @@ index 5fa2860..83bd401 100644
  struct guc_policy {
  	/* Time for one workload to execute. (in micro seconds) */
 -- 
-2.7.4
+https://clearlinux.org
 

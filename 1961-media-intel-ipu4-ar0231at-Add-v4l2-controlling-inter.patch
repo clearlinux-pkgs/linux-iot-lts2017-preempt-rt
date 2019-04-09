@@ -1,8 +1,7 @@
-From 3ca650e72db5a06ed523e49343d2b7732e62b539 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: liyong4x <yongx.a.li@intel.com>
 Date: Tue, 12 Jun 2018 21:03:30 -0400
-Subject: [PATCH 1961/2278] media: intel-ipu4: ar0231at: Add v4l2 controlling
- interfaces
+Subject: [PATCH] media: intel-ipu4: ar0231at: Add v4l2 controlling interfaces
 
 Message for Open Source:
 Ar0231at has some special features, driver should provide these v4l2
@@ -27,8 +26,8 @@ Change-Id: I59e2688e13d4009c53f7008a8a2438a774f37ad1
 Signed-off-by: liyong4x <yongx.a.li@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- .../i2c/crlmodule/crl_ar0231at_configuration.h     | 328 ++++++++++++++++++++-
- include/uapi/linux/crlmodule.h                     |   6 +
+ .../crlmodule/crl_ar0231at_configuration.h    | 328 +++++++++++++++++-
+ include/uapi/linux/crlmodule.h                |   6 +
  2 files changed, 333 insertions(+), 1 deletion(-)
 
 diff --git a/drivers/media/i2c/crlmodule/crl_ar0231at_configuration.h b/drivers/media/i2c/crlmodule/crl_ar0231at_configuration.h
@@ -394,5 +393,5 @@ index 73dd651..f0a48f4 100644
 +
  #endif /* UAPI_LINUX_CRLMODULE_H */
 -- 
-2.7.4
+https://clearlinux.org
 

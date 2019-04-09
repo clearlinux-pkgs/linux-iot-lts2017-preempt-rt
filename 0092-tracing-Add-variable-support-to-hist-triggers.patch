@@ -1,7 +1,7 @@
-From 5a784ef3dc28332e592457a309809693ac70892c Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tom Zanussi <tom.zanussi@linux.intel.com>
 Date: Mon, 15 Jan 2018 20:51:49 -0600
-Subject: [PATCH 0092/2278] tracing: Add variable support to hist triggers
+Subject: [PATCH] tracing: Add variable support to hist triggers
 
 Add support for saving the value of a current event's event field by
 assigning it to a variable that can be read by a subsequent event.
@@ -41,7 +41,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
 (cherry picked from commit b073711690e3af61965e53f197a56638b3c65a81)
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- kernel/trace/trace_events_hist.c | 370 ++++++++++++++++++++++++++++++++++-----
+ kernel/trace/trace_events_hist.c | 370 +++++++++++++++++++++++++++----
  1 file changed, 331 insertions(+), 39 deletions(-)
 
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
@@ -784,5 +784,5 @@ index 6d268e2..b430154 100644
  		ret = 0;
  		goto out_free;
 -- 
-2.7.4
+https://clearlinux.org
 

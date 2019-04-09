@@ -1,7 +1,7 @@
-From d23460bc045e8820df917e1c8861104c0a51c23e Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tomas Winkler <tomas.winkler@intel.com>
 Date: Sun, 7 Aug 2016 11:27:08 +0300
-Subject: [PATCH 1708/2278] rpmb: enable emmc specific read data fixup
+Subject: [PATCH] rpmb: enable emmc specific read data fixup
 
 For eMMC the block count of the RPMB read operation is not indicated in
 the original RPMB Data Read Request packet.
@@ -26,10 +26,11 @@ diff --git a/drivers/char/rpmb/core.c b/drivers/char/rpmb/core.c
 index 69a5901..3bf3f0d 100644
 --- a/drivers/char/rpmb/core.c
 +++ b/drivers/char/rpmb/core.c
-@@ -37,6 +37,38 @@ void rpmb_dev_put(struct rpmb_dev *rdev)
+@@ -36,6 +36,38 @@ void rpmb_dev_put(struct rpmb_dev *rdev)
+ }
  EXPORT_SYMBOL_GPL(rpmb_dev_put);
  
- /**
++/**
 + * rpmb_cmd_fixup - fixup rpmb command
 + *
 + * @rdev: rpmb device
@@ -61,10 +62,9 @@ index 69a5901..3bf3f0d 100644
 +	}
 +}
 +
-+/**
+ /**
   * rpmb_cmd_seq - send RPMB command sequence
   *
-  * @rdev: rpmb device
 @@ -58,6 +90,7 @@ int rpmb_cmd_seq(struct rpmb_dev *rdev, struct rpmb_cmd *cmds, u32 ncmds)
  	mutex_lock(&rdev->lock);
  	err = -EOPNOTSUPP;
@@ -74,5 +74,5 @@ index 69a5901..3bf3f0d 100644
  					 cmds, ncmds);
  	}
 -- 
-2.7.4
+https://clearlinux.org
 

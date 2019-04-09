@@ -1,8 +1,7 @@
-From 463f801105765ed7facce7ab3d5fc4d85bf568b7 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Shreyas NC <shreyas.nc@intel.com>
 Date: Wed, 8 Mar 2017 03:09:33 +0530
-Subject: [PATCH 0703/2278] ASoC: Intel: Skylake: Parse tokens to support
- aggregation
+Subject: [PATCH] ASoC: Intel: Skylake: Parse tokens to support aggregation
 
 To support aggregation, we need to parse the aggregation
 related tokens like channel mask, number of masters participating
@@ -63,5 +62,5 @@ index 41ab911..74907a5 100644
  		mconfig->dma_buffer_size = tkn_elem->value;
  		break;
 -- 
-2.7.4
+https://clearlinux.org
 

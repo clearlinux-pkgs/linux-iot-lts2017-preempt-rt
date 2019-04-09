@@ -1,7 +1,7 @@
-From 35f5f81f1557364a936a8e76ebdb9c5924801e15 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Daniel Wagner <daniel.wagner@bmw-carit.de>
 Date: Fri, 11 Jul 2014 15:26:11 +0200
-Subject: [PATCH 0194/2278] work-simple: Simple work queue implemenation
+Subject: [PATCH] work-simple: Simple work queue implemenation
 
 Provides a framework for enqueuing callbacks from irq context
 PREEMPT_RT_FULL safe. The callbacks are executed in kthread context.
@@ -11,9 +11,9 @@ Bases on wait-simple.
 Cc: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 Signed-off-by: Daniel Wagner <daniel.wagner@bmw-carit.de>
 ---
- include/linux/swork.h |  24 +++++++
+ include/linux/swork.h |  24 ++++++
  kernel/sched/Makefile |   2 +-
- kernel/sched/swork.c  | 173 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ kernel/sched/swork.c  | 173 ++++++++++++++++++++++++++++++++++++++++++
  3 files changed, 198 insertions(+), 1 deletion(-)
  create mode 100644 include/linux/swork.h
  create mode 100644 kernel/sched/swork.c
@@ -241,5 +241,5 @@ index 0000000..1950f40
 +}
 +EXPORT_SYMBOL_GPL(swork_put);
 -- 
-2.7.4
+https://clearlinux.org
 

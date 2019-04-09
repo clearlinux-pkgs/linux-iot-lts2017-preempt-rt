@@ -1,8 +1,8 @@
-From e382e6f3f52e7012b525b1b4a79fd80291e48dab Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Naveen Manohar <naveen.m@intel.com>
 Date: Mon, 26 Feb 2018 22:12:27 +0530
-Subject: [PATCH 1772/2278] FROMLIST: ASoC: Intel: Add Geminilake Dialog Maxim
- machine driver support
+Subject: [PATCH] FROMLIST: ASoC: Intel: Add Geminilake Dialog Maxim machine
+ driver support
 
 Patch adds required changes in bxt machine to use MAX98357A codec
 as speaker on SSP1 & DA7219 codec as headset on SSP2 on GLK board.
@@ -21,7 +21,7 @@ Reviewed-by: Sathyanarayana Nujella <sathyanarayana.nujella@intel.com>
 Reviewed-by: Furquan Shaikh <furquan@chromium.org>
 Reviewed-by: Justin TerAvest <teravest@chromium.org>
 ---
- sound/soc/intel/boards/bxt_da7219_max98357a.c | 283 ++++++++++++++++++++++++--
+ sound/soc/intel/boards/bxt_da7219_max98357a.c | 283 +++++++++++++++++-
  1 file changed, 267 insertions(+), 16 deletions(-)
 
 diff --git a/sound/soc/intel/boards/bxt_da7219_max98357a.c b/sound/soc/intel/boards/bxt_da7219_max98357a.c
@@ -397,5 +397,5 @@ index 6d14b48..9a2f7f3 100644
  MODULE_ALIAS("platform:bxt_da7219_max98357a");
 +MODULE_ALIAS("platform:glk_da7219_max98357a");
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,8 @@
-From cf95cfb60e2fe44d90f4dfc239331ae696ae295e Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: icg_intg <icg_intg@intel.com>
 Date: Tue, 8 May 2018 13:30:07 +0800
-Subject: [PATCH 1877/2278] =?UTF-8?q?media:=20intel-ipu4p:=20css:=20scci?=
- =?UTF-8?q?=5FIPU4=5Fmaster=5F20180506=5F1519=C2=A0fw=20release?=
+Subject: [PATCH] =?UTF-8?q?media:=20intel-ipu4p:=20css:=20scci=5FIPU4=5Fma?=
+ =?UTF-8?q?ster=5F20180506=5F1519=C2=A0fw=20release?=
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -28,11 +28,11 @@ Depends-on: I6a148b95e44ad9d2039634604d4ebe1c623ad703
 Signed-off-by: icg_intg <icg_intg@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- .../media/pci/intel/ipu4/ipu4p-css/ia_css_fw_pkg_release.h |  2 +-
- .../ipu4p-css/lib2600/cpd_binary/ia_css_fw_pkg_release.h   |  2 +-
- .../lib/CNL_program_group/ia_css_fw_pkg_release.h          |  2 +-
- .../lib/ICL_program_group/ia_css_fw_pkg_release.h          |  2 +-
- .../lib/psysapi/static/src/ia_css_psys_program_manifest.c  | 14 ++++++++++++++
+ .../intel/ipu4/ipu4p-css/ia_css_fw_pkg_release.h   |  2 +-
+ .../lib2600/cpd_binary/ia_css_fw_pkg_release.h     |  2 +-
+ .../lib/CNL_program_group/ia_css_fw_pkg_release.h  |  2 +-
+ .../lib/ICL_program_group/ia_css_fw_pkg_release.h  |  2 +-
+ .../static/src/ia_css_psys_program_manifest.c      | 14 ++++++++++++++
  5 files changed, 18 insertions(+), 4 deletions(-)
 
 diff --git a/drivers/media/pci/intel/ipu4/ipu4p-css/ia_css_fw_pkg_release.h b/drivers/media/pci/intel/ipu4/ipu4p-css/ia_css_fw_pkg_release.h
@@ -107,5 +107,5 @@ index 9514813..3fb92a0 100644
  #endif
  
 -- 
-2.7.4
+https://clearlinux.org
 

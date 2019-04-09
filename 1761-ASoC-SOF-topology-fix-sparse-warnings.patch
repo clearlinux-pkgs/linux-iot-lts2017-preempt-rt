@@ -1,12 +1,12 @@
-From 738e2aa02ee09868bdd1af6a3f6647ae1d019c01 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Thu, 5 Jul 2018 14:35:50 +0100
-Subject: [PATCH 1761/2278] ASoC: SOF: topology: fix sparse warnings.
+Subject: [PATCH] ASoC: SOF: topology: fix sparse warnings.
 
 Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 (cherry picked from commit 3fbc96aaceceffd226200b3c4ba85ca89a6e7e06)
 ---
- sound/soc/sof/topology.c | 120 +++++++++++++++++++++++------------------------
+ sound/soc/sof/topology.c | 120 +++++++++++++++++++--------------------
  1 file changed, 59 insertions(+), 61 deletions(-)
 
 diff --git a/sound/soc/sof/topology.c b/sound/soc/sof/topology.c
@@ -414,5 +414,5 @@ index f934738..143a191 100644
  	/* now load DAI specific data and send IPC - type comes from token */
  	switch (config.type) {
 -- 
-2.7.4
+https://clearlinux.org
 

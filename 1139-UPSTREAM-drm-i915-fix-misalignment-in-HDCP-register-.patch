@@ -1,8 +1,7 @@
-From 9bd50316ae403b0c4cf80f5e0c4e4802a0cce541 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ramalingam C <ramalingam.c@intel.com>
 Date: Sat, 3 Feb 2018 03:39:10 +0530
-Subject: [PATCH 1139/2278] UPSTREAM: drm/i915: fix misalignment in HDCP
- register def
+Subject: [PATCH] UPSTREAM: drm/i915: fix misalignment in HDCP register def
 
 This patch aligns all definitions of hdcp registers and their bits.
 
@@ -17,7 +16,7 @@ Reviewed-by: Sean Paul <seanpaul@chromium.org>
 Signed-off-by: Sean Paul <seanpaul@chromium.org>
 Link: https://patchwork.freedesktop.org/patch/msgid/1517609350-10698-9-git-send-email-ramalingam.c@intel.com
 ---
- drivers/gpu/drm/i915/i915_reg.h | 58 ++++++++++++++++++++---------------------
+ drivers/gpu/drm/i915/i915_reg.h | 58 ++++++++++++++++-----------------
  1 file changed, 29 insertions(+), 29 deletions(-)
 
 diff --git a/drivers/gpu/drm/i915/i915_reg.h b/drivers/gpu/drm/i915/i915_reg.h
@@ -123,5 +122,5 @@ index 20f9e8a..f8361be 100644
  #define  HDCP_STATUS_FRAME_CNT(x)	((x >> 8) & 0xff)
  
 -- 
-2.7.4
+https://clearlinux.org
 

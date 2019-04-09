@@ -1,7 +1,7 @@
-From b2d7375e2fb2f36313bc208df0de44c4a468577b Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ingo Molnar <mingo@elte.hu>
 Date: Fri, 22 Jul 2011 17:58:40 +0200
-Subject: [PATCH 0140/2278] printk: Add a printk kill switch
+Subject: [PATCH] printk: Add a printk kill switch
 
 Add a prinkt-kill-switch. This is used from (NMI) watchdog to ensure that
 it does not dead-lock with the early printk code.
@@ -9,9 +9,9 @@ it does not dead-lock with the early printk code.
 Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
 ---
  include/linux/printk.h      |  2 ++
- kernel/printk/printk.c      | 20 ---------------
- kernel/printk/printk_safe.c | 60 +++++++++++++++++++++++++++++++++++++++++++++
- kernel/watchdog_hld.c       | 10 ++++++++
+ kernel/printk/printk.c      | 20 -------------
+ kernel/printk/printk_safe.c | 60 +++++++++++++++++++++++++++++++++++++
+ kernel/watchdog_hld.c       | 10 +++++++
  4 files changed, 72 insertions(+), 20 deletions(-)
 
 diff --git a/include/linux/printk.h b/include/linux/printk.h
@@ -62,7 +62,7 @@ index 2e2c86d..624d503 100644
  				   char *brl_options)
  {
 diff --git a/kernel/printk/printk_safe.c b/kernel/printk/printk_safe.c
-index 64f8046..f0855cec 100644
+index 64f8046..f0855ce 100644
 --- a/kernel/printk/printk_safe.c
 +++ b/kernel/printk/printk_safe.c
 @@ -22,6 +22,7 @@
@@ -73,7 +73,7 @@ index 64f8046..f0855cec 100644
  
  #include "internal.h"
  
-@@ -373,9 +374,68 @@ void __printk_safe_exit(void)
+@@ -373,8 +374,67 @@ void __printk_safe_exit(void)
  	this_cpu_dec(printk_context);
  }
  
@@ -131,17 +131,16 @@ index 64f8046..f0855cec 100644
 +
  __printf(1, 0) int vprintk_func(const char *fmt, va_list args)
  {
- 	/*
++	/*
 +	 * Fall back to early_printk if a debugging subsystem has
 +	 * killed printk output
 +	 */
 +	if (unlikely(forced_early_printk(fmt, args)))
 +		return 1;
 +
-+	/*
+ 	/*
  	 * Try to use the main logbuf even in NMI. But avoid calling console
  	 * drivers that might have their own locks.
- 	 */
 diff --git a/kernel/watchdog_hld.c b/kernel/watchdog_hld.c
 index 4ece602..210dccc 100644
 --- a/kernel/watchdog_hld.c
@@ -178,5 +177,5 @@ index 4ece602..210dccc 100644
  			nmi_panic(regs, "Hard LOCKUP");
  
 -- 
-2.7.4
+https://clearlinux.org
 

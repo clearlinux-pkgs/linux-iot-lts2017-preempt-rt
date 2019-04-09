@@ -1,8 +1,7 @@
-From 0bb0bdf589ad8f29126703da00b624bbb8eb716b Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pradeep Tewani <pradeep.d.tewani@intel.com>
 Date: Wed, 20 Dec 2017 20:15:42 +0530
-Subject: [PATCH 1150/2278] ASoC: Intel: Skylake: Unify the fw ops for SKL and
- KBL
+Subject: [PATCH] ASoC: Intel: Skylake: Unify the fw ops for SKL and KBL
 
 SKL and KBL driver used separate set of fw ops for library loading.
 However, with the unification of fw binary, use the common set of fw
@@ -17,7 +16,7 @@ Reviewed-by: Prusty, Subhransu S <subhransu.s.prusty@intel.com>
 Tested-by: Sm, Bhadur A <bhadur.a.sm@intel.com>
 ---
  sound/soc/intel/skylake/skl-messages.c |  2 +-
- sound/soc/intel/skylake/skl-sst.c      | 34 ++--------------------------------
+ sound/soc/intel/skylake/skl-sst.c      | 34 ++------------------------
  2 files changed, 3 insertions(+), 33 deletions(-)
 
 diff --git a/sound/soc/intel/skylake/skl-messages.c b/sound/soc/intel/skylake/skl-messages.c
@@ -93,5 +92,5 @@ index a49305a..32ba143 100644
  {
  	int ret;
 -- 
-2.7.4
+https://clearlinux.org
 

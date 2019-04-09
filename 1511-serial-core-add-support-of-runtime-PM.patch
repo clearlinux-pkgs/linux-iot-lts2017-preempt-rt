@@ -1,7 +1,7 @@
-From 21def0e8d0b26d5d008555d25ffdad686fc7f6c6 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
 Date: Wed, 16 Nov 2016 19:38:22 +0200
-Subject: [PATCH 1511/2278] serial: core: add support of runtime PM
+Subject: [PATCH] serial: core: add support of runtime PM
 
 8250 driver has wrong implementation of runtime PM, e.g. it uses an irq_safe
 flag. This patch adds runtime PM calls to serial core once for all UART
@@ -13,7 +13,7 @@ now.
 
 Signed-off-by: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
 ---
- drivers/tty/serial/serial_core.c | 148 +++++++++++++++++++++++++++++++++++----
+ drivers/tty/serial/serial_core.c | 148 +++++++++++++++++++++++++++----
  1 file changed, 133 insertions(+), 15 deletions(-)
 
 diff --git a/drivers/tty/serial/serial_core.c b/drivers/tty/serial/serial_core.c
@@ -430,5 +430,5 @@ index 6db8844..2c05237 100644
  	}
  }
 -- 
-2.7.4
+https://clearlinux.org
 

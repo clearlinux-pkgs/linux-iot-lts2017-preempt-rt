@@ -1,7 +1,7 @@
-From 7c243acbdd93182f157ef0cb5661be3d7c6a2cfc Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Guneshwor Singh <guneshwor.o.singh@intel.com>
 Date: Thu, 7 Sep 2017 09:56:44 +0530
-Subject: [PATCH 0768/2278] ASoC: rt700: Remove unused variable
+Subject: [PATCH] ASoC: rt700: Remove unused variable
 
 Compiler throws warning for unused variable, so remove it.
 
@@ -23,5 +23,5 @@ index 6fd51ab..9c8bd21 100644
  	if (rt700->sdw) {
  		ret = sdw_wait_for_slave_enumeration(rt700->sdw->mstr,
 -- 
-2.7.4
+https://clearlinux.org
 

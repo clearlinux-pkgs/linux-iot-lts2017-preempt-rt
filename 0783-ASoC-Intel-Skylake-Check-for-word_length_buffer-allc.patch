@@ -1,8 +1,8 @@
-From 2a484b00a71dbc7871325a090dd6257abc7af3f0 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pankaj Bharadiya <pankaj.laxminarayan.bharadiya@intel.com>
 Date: Wed, 6 Sep 2017 14:04:56 +0530
-Subject: [PATCH 0783/2278] ASoC: Intel: Skylake: Check for word_length_buffer
- allcation failure
+Subject: [PATCH] ASoC: Intel: Skylake: Check for word_length_buffer allcation
+ failure
 
 word_length_buffer buffer allocation can fail.
 Make sure to return -ENOMEM on word_length_buffer allocation failure
@@ -31,5 +31,5 @@ index c6e5cf3..f682a9a 100644
  				dpn_cap->word_length_buffer[k] = wl = wl + 8;
  			wl = 0;
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,7 +1,7 @@
-From eeed9431397eb8ba5a18bb754967afed90fde3b7 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tom Zanussi <tom.zanussi@linux.intel.com>
 Date: Mon, 15 Jan 2018 20:51:53 -0600
-Subject: [PATCH 0096/2278] tracing: Generalize per-element hist trigger data
+Subject: [PATCH] tracing: Generalize per-element hist trigger data
 
 Up until now, hist triggers only needed per-element support for saving
 'comm' data, which was saved directly as a private data pointer.
@@ -17,7 +17,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
 (cherry picked from commit 8102d0cb859d223564b17afb01e33701f57191d1)
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- kernel/trace/trace_events_hist.c | 76 +++++++++++++++++++++++-----------------
+ kernel/trace/trace_events_hist.c | 76 ++++++++++++++++++--------------
  1 file changed, 43 insertions(+), 33 deletions(-)
 
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
@@ -160,5 +160,5 @@ index d2f01f3..893f65c 100644
  			uval = *(u64 *)(key + key_field->offset);
  			seq_printf(m, "%s: %-16s[%10llu]", field_name,
 -- 
-2.7.4
+https://clearlinux.org
 

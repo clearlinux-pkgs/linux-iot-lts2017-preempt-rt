@@ -1,8 +1,8 @@
-From 08b20b88a9c657b6a7a8748fb6ee43749c0a12ec Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Arvind Yadav <arvind.yadav.cs@gmail.com>
 Date: Mon, 25 Sep 2017 15:10:11 +0530
-Subject: [PATCH 0810/2278] cpufreq: powernow-k8: pr_err() strings should end
- with newlines
+Subject: [PATCH] cpufreq: powernow-k8: pr_err() strings should end with
+ newlines
 
 pr_err() messages should terminated with a new-line to avoid
 other messages being concatenated onto the end.
@@ -28,5 +28,5 @@ index 062d714..b01e31d 100644
  	}
  
 -- 
-2.7.4
+https://clearlinux.org
 

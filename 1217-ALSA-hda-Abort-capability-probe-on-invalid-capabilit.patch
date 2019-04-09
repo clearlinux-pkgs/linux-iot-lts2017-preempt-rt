@@ -1,8 +1,7 @@
-From a77f18ff5c357d69f5fbbd369a01e43fd14987ad Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Rakesh Ughreja <rakesh.a.ughreja@intel.com>
 Date: Tue, 24 Oct 2017 18:26:47 +0530
-Subject: [PATCH 1217/2278] ALSA: hda: Abort capability probe on invalid
- capability
+Subject: [PATCH] ALSA: hda: Abort capability probe on invalid capability
 
 On reading wrong capability pointer values driver may crash, so whenever
 driver discovers unknown HDA capability, log it as error and stop traversing
@@ -31,5 +30,5 @@ index b9e86fb..ff841cd 100644
  		}
  
 -- 
-2.7.4
+https://clearlinux.org
 

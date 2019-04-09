@@ -1,8 +1,8 @@
-From a2eb7b50992b97c6444db96cc2a99e901fe5b0f2 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Wang Zaikuo <zaikuo.wang@intel.com>
 Date: Fri, 22 Jun 2018 16:24:53 +0800
-Subject: [PATCH 1976/2278] media: intel-ipu4: psys: move resource allocation
- to pg structure
+Subject: [PATCH] media: intel-ipu4: psys: move resource allocation to pg
+ structure
 
 Message for Open Source:
 The allocated resources are associated with process group,
@@ -15,10 +15,10 @@ Change-Id: Ifda582fdb5d136a82a29d6d9d74dcfcd741a3f04
 Signed-off-by: Wang Zaikuo <zaikuo.wang@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- drivers/media/pci/intel/ipu-psys.h                    |  3 +--
- drivers/media/pci/intel/ipu4/ipu-platform-resources.h |  1 -
- drivers/media/pci/intel/ipu4/ipu4-psys.c              | 12 +++++-------
- drivers/media/pci/intel/ipu4/ipu4-resources.c         |  7 -------
+ drivers/media/pci/intel/ipu-psys.h                   |  3 +--
+ .../media/pci/intel/ipu4/ipu-platform-resources.h    |  1 -
+ drivers/media/pci/intel/ipu4/ipu4-psys.c             | 12 +++++-------
+ drivers/media/pci/intel/ipu4/ipu4-resources.c        |  7 -------
  4 files changed, 6 insertions(+), 17 deletions(-)
 
 diff --git a/drivers/media/pci/intel/ipu-psys.h b/drivers/media/pci/intel/ipu-psys.h
@@ -131,5 +131,5 @@ index ce12cc4..6510450 100644
  				struct ipu_fw_psys_process *process,
  				struct ipu_resource *resource,
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,7 +1,7 @@
-From 06e00b66db10cdfe689d9ce0f6894b7c4ae57f6c Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Vedang Patel <vedang.patel@intel.com>
 Date: Mon, 15 Jan 2018 20:51:38 -0600
-Subject: [PATCH 0081/2278] tracing: Remove code which merges duplicates
+Subject: [PATCH] tracing: Remove code which merges duplicates
 
 We now have the logic to detect and remove duplicates in the
 tracing_map hash table. The code which merges duplicates in the
@@ -18,9 +18,9 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
 (cherry picked from commit 3f7f4cc21fc62ff7da7d34b5ca95a69d73a1f764)
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- kernel/trace/trace_events_hist.c | 11 ------
- kernel/trace/tracing_map.c       | 83 +++-------------------------------------
- kernel/trace/tracing_map.h       |  7 ----
+ kernel/trace/trace_events_hist.c | 11 -----
+ kernel/trace/tracing_map.c       | 83 +++-----------------------------
+ kernel/trace/tracing_map.h       |  7 ---
  3 files changed, 6 insertions(+), 95 deletions(-)
 
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
@@ -198,5 +198,5 @@ index 5b5bbf8..de57887 100644
  	void			(*elt_clear)(struct tracing_map_elt *elt);
  	void			(*elt_init)(struct tracing_map_elt *elt);
 -- 
-2.7.4
+https://clearlinux.org
 

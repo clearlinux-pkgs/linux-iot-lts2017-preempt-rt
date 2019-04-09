@@ -1,7 +1,7 @@
-From 1262d9651a130a25896ea309c1925d0429ecb285 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pei Zhang <pei.zhang@intel.com>
 Date: Sat, 10 Jun 2017 01:09:32 +0800
-Subject: [PATCH 0919/2278] drm/i915/gvt: implement pvmmio in GVTg
+Subject: [PATCH] drm/i915/gvt: implement pvmmio in GVTg
 
 If pvmmio is enabled in i915 host driver, guest i915 will read most MMIO
 register directly, which won't be trapped to host GVT. A small range
@@ -19,9 +19,9 @@ Reviewed-by: Jiang, Fei <fei.jiang@intel.com>
 Reviewed-by: Dong, Eddie <eddie.dong@intel.com>
 Tested-by: Dong, Eddie <eddie.dong@intel.com>
 ---
- drivers/gpu/drm/i915/gvt/handlers.c  | 73 ++++++++++++++++++++++++++++++++----
+ drivers/gpu/drm/i915/gvt/handlers.c  | 73 +++++++++++++++++++++++++---
  drivers/gpu/drm/i915/gvt/hypercall.h |  2 +
- drivers/gpu/drm/i915/gvt/mpt.h       | 21 +++++++++++
+ drivers/gpu/drm/i915/gvt/mpt.h       | 21 ++++++++
  drivers/gpu/drm/i915/gvt/vgpu.c      |  6 +++
  4 files changed, 94 insertions(+), 8 deletions(-)
 
@@ -200,7 +200,7 @@ index b775d90..2068ab8 100644
  {
  	if (!intel_gvt_host.mpt || !intel_gvt_host.mpt->pause_domain)
 diff --git a/drivers/gpu/drm/i915/gvt/vgpu.c b/drivers/gpu/drm/i915/gvt/vgpu.c
-index 69f3f892..6e74c94 100644
+index 69f3f89..6e74c94 100644
 --- a/drivers/gpu/drm/i915/gvt/vgpu.c
 +++ b/drivers/gpu/drm/i915/gvt/vgpu.c
 @@ -55,6 +55,8 @@ void populate_pvinfo_page(struct intel_vgpu *vgpu)
@@ -238,5 +238,5 @@ index 69f3f892..6e74c94 100644
  
  		if (dmlr) {
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,8 @@
-From 7f5b0723126d47a705d4296e155aae99d6c30ce5 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tom Zanussi <tom.zanussi@linux.intel.com>
 Date: Mon, 15 Jan 2018 20:52:04 -0600
-Subject: [PATCH 0107/2278] tracing: Add hist trigger support for variable
- reference aliases
+Subject: [PATCH] tracing: Add hist trigger support for variable reference
+ aliases
 
 Add support for alias=$somevar where alias can be used as
 onmatch.xxx($alias).
@@ -28,7 +28,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
 (cherry picked from commit 53c5a4f99f1a5f6ba304453716da571f3e51bc79)
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- kernel/trace/trace_events_hist.c | 74 ++++++++++++++++++++++++++++++++++++----
+ kernel/trace/trace_events_hist.c | 74 +++++++++++++++++++++++++++++---
  1 file changed, 67 insertions(+), 7 deletions(-)
 
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
@@ -166,5 +166,5 @@ index 34a2e8d..c8cfc56 100644
  		seq_printf(m, "%s", field_name);
  	}
 -- 
-2.7.4
+https://clearlinux.org
 

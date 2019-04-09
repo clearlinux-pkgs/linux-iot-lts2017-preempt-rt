@@ -1,7 +1,7 @@
-From 2f55751e05a696a63359fed47ab9706240dc2702 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: wu xia <xia.wu@intel.com>
 Date: Tue, 21 Apr 2015 14:58:46 +0200
-Subject: [PATCH 1407/2278] videodev2.h: Add request field to v4l2_buffer
+Subject: [PATCH] videodev2.h: Add request field to v4l2_buffer
 
 When queuing buffers allow for passing the request ID that
 should be associated with this buffer. Split the u32 reserved2 field
@@ -33,7 +33,7 @@ index a1c59f1..2094f99 100644
  	memset(&buf->timecode, 0, sizeof(buf->timecode));
  
 diff --git a/drivers/media/v4l2-core/v4l2-compat-ioctl32.c b/drivers/media/v4l2-core/v4l2-compat-ioctl32.c
-index e159dfc..cb15cbfe 100644
+index e159dfc..cb15cbf 100644
 --- a/drivers/media/v4l2-core/v4l2-compat-ioctl32.c
 +++ b/drivers/media/v4l2-core/v4l2-compat-ioctl32.c
 @@ -388,7 +388,7 @@ struct v4l2_buffer32 {
@@ -137,7 +137,7 @@ index 0c06699..bde7b8a 100644
  	if (V4L2_TYPE_IS_MULTIPLANAR(b->type)) {
  		if (b->memory == VB2_MEMORY_USERPTR) {
 diff --git a/include/media/videobuf2-v4l2.h b/include/media/videobuf2-v4l2.h
-index 036127c..06f38523 100644
+index 036127c..06f3852 100644
 --- a/include/media/videobuf2-v4l2.h
 +++ b/include/media/videobuf2-v4l2.h
 @@ -42,6 +42,7 @@ struct vb2_v4l2_buffer {
@@ -170,5 +170,5 @@ index 28882ad..943123f 100644
  };
  
 -- 
-2.7.4
+https://clearlinux.org
 

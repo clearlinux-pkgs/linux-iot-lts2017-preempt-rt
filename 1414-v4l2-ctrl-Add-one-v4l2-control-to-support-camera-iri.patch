@@ -1,8 +1,7 @@
-From 8e7cb1e03ab08d48f8bea0e6dadfc3b7b6adfb0f Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: wu xia <xia.wu@intel.com>
 Date: Sat, 9 Sep 2017 02:00:07 +0800
-Subject: [PATCH 1414/2278] v4l2-ctrl: Add one v4l2 control to support camera
- iris
+Subject: [PATCH] v4l2-ctrl: Add one v4l2 control to support camera iris
 
 Original-Tracked_On:
 Signed-off-by: Gong Shuguang <shuguang.gong@intel.com>
@@ -24,5 +23,5 @@ index 1e1c7f1..0819484 100644
  /* Image processing controls */
  
 -- 
-2.7.4
+https://clearlinux.org
 

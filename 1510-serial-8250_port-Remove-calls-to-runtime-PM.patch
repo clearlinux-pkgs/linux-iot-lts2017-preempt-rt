@@ -1,7 +1,7 @@
-From 7fa40ae23c38abdeb966253259767fc6beae88e4 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
 Date: Wed, 16 Nov 2016 18:44:07 +0200
-Subject: [PATCH 1510/2278] serial: 8250_port: Remove calls to runtime PM
+Subject: [PATCH] serial: 8250_port: Remove calls to runtime PM
 
 Since we are going to have runtime PM calls in serial_core.c the individual
 drivers do not need them anymore.
@@ -15,7 +15,7 @@ TODO: Prepare OMAP (8250_omap) driver.
 
 Signed-off-by: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
 ---
- drivers/tty/serial/8250/8250_port.c | 60 ++++++++-----------------------------
+ drivers/tty/serial/8250/8250_port.c | 60 +++++++----------------------
  1 file changed, 13 insertions(+), 47 deletions(-)
 
 diff --git a/drivers/tty/serial/8250/8250_port.c b/drivers/tty/serial/8250/8250_port.c
@@ -253,5 +253,5 @@ index 8e58051..e52a842 100644
  	/* Don't rewrite B0 */
  	if (tty_termios_baud_rate(termios))
 -- 
-2.7.4
+https://clearlinux.org
 

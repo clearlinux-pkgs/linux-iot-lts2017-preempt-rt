@@ -1,8 +1,8 @@
-From 0df22eea32c94a82800056de43fd0d647854557a Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Arve=20Hj=C3=B8nnev=C3=A5g?= <arve@android.com>
 Date: Thu, 11 Jun 2015 19:51:54 -0700
-Subject: [PATCH 0470/2278] trusty: Handle fiqs without calling notifier and
- enabling interrupts
+Subject: [PATCH] trusty: Handle fiqs without calling notifier and enabling
+ interrupts
 
 Change-Id: I9c147376bd1596f4ecd1e932b30140c87410c860
 ---
@@ -69,5 +69,5 @@ index cdb4ecc..7d8950a 100644
  
  /* TRUSTED_OS entity calls */
 -- 
-2.7.4
+https://clearlinux.org
 

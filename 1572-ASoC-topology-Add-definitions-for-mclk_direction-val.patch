@@ -1,8 +1,7 @@
-From 229ae4e50ba256b769ac7677965ef3e8bafd8ec4 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Kirill Marinushkin <k.marinushkin@gmail.com>
 Date: Wed, 4 Apr 2018 06:19:39 +0200
-Subject: [PATCH 1572/2278] ASoC: topology: Add definitions for mclk_direction
- values
+Subject: [PATCH] ASoC: topology: Add definitions for mclk_direction values
 
 Current comment makes not clear the direction of mclk. Previously, similar
 description caused a misunderstanding for bclk_master and fsync_master.
@@ -50,5 +49,5 @@ index f3c4b46..b901cdb 100644
  	__le32 mclk_rate;	/* MCLK or SYSCLK freqency in Hz */
  	__le32 bclk_rate;	/* BCLK freqency in Hz */
 -- 
-2.7.4
+https://clearlinux.org
 

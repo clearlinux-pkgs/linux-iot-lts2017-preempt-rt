@@ -1,7 +1,7 @@
-From 4cb6b43f730956833031e4910df47d95b8022574 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tomas Winkler <tomas.winkler@intel.com>
 Date: Thu, 5 Nov 2015 10:22:44 +0200
-Subject: [PATCH 1715/2278] scsi: ufs: connect to RPMB subsystem
+Subject: [PATCH] scsi: ufs: connect to RPMB subsystem
 
 Register UFS RPMB LUN with the RPMB subsystem and provide
 implementation for the RPMB access operations. RPMB partition is
@@ -26,12 +26,12 @@ Signed-off-by: Tomas Winkler <tomas.winkler@intel.com>
 Tested-by: Avri Altman <avri.altman@sandisk.com>
 ---
  drivers/scsi/ufs/Kconfig  |   1 +
- drivers/scsi/ufs/ufshcd.c | 229 +++++++++++++++++++++++++++++++++++++++++++++-
+ drivers/scsi/ufs/ufshcd.c | 229 +++++++++++++++++++++++++++++++++++++-
  drivers/scsi/ufs/ufshcd.h |   2 +
  3 files changed, 231 insertions(+), 1 deletion(-)
 
 diff --git a/drivers/scsi/ufs/Kconfig b/drivers/scsi/ufs/Kconfig
-index e27b4d4e..8b545a9 100644
+index e27b4d4..8b545a9 100644
 --- a/drivers/scsi/ufs/Kconfig
 +++ b/drivers/scsi/ufs/Kconfig
 @@ -38,6 +38,7 @@ config SCSI_UFSHCD
@@ -358,5 +358,5 @@ index 4da502b..f414297 100644
  	enum ufs_dev_pwr_mode curr_dev_pwr_mode;
  	enum uic_link_state uic_link_state;
 -- 
-2.7.4
+https://clearlinux.org
 

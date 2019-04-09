@@ -1,7 +1,7 @@
-From 5aaaf827fea0b2ba787bad385ce31a54b244c1bc Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tianshu Qiu <tian.shu.qiu@intel.com>
 Date: Tue, 15 May 2018 14:35:01 +0800
-Subject: [PATCH 1893/2278] media: intel-ipu4: imx355: Enable ACPI registration
+Subject: [PATCH] media: intel-ipu4: imx355: Enable ACPI registration
 
 Message for Open Source:
 Enable ACPI registration
@@ -45,5 +45,5 @@ index 5e4b149..fb52416 100644
  	.probe = imx355_probe,
  	.remove = imx355_remove,
 -- 
-2.7.4
+https://clearlinux.org
 

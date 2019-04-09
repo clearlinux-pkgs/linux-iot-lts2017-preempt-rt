@@ -1,8 +1,8 @@
-From be0f5787cab0c7eb7be4f7e4ddeab10025def738 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Kareem Shaik <kareem.m.shaik@intel.com>
 Date: Tue, 31 Oct 2017 15:44:52 +0530
-Subject: [PATCH 0791/2278] ASoC: Intel: Skylake: Return default sampling rate
- for Probe compress devices.
+Subject: [PATCH] ASoC: Intel: Skylake: Return default sampling rate for Probe
+ compress devices.
 
 Defining sampling rate for getting Probe data from probe compress
 devices. As user space expects a valid sample rate but existing API
@@ -61,5 +61,5 @@ index 0716bf6..4a22c75 100644
  
  }
 -- 
-2.7.4
+https://clearlinux.org
 

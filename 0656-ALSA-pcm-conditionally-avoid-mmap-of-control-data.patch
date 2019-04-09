@@ -1,8 +1,7 @@
-From 5008b4da20c88afff5624a2aab969beaa82ae65c Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Thu, 16 Jun 2016 16:01:00 +0530
-Subject: [PATCH 0656/2278] ALSA: pcm: conditionally avoid mmap of control
- data.
+Subject: [PATCH] ALSA: pcm: conditionally avoid mmap of control data.
 
 In case of mmap, by default alsa-lib mmaps both control and status data.
 
@@ -42,7 +41,7 @@ index ea3a448..f4a3cf2 100644
  #define SNDRV_PCM_INFO_DRAIN_TRIGGER	0x40000000		/* internal kernel flag - trigger in drain */
  #define SNDRV_PCM_INFO_FIFO_IN_FRAMES	0x80000000	/* internal kernel flag - FIFO size is in frames */
 diff --git a/sound/core/pcm_native.c b/sound/core/pcm_native.c
-index 05eb574e..65a134b 100644
+index 05eb574..65a134b 100644
 --- a/sound/core/pcm_native.c
 +++ b/sound/core/pcm_native.c
 @@ -3518,21 +3518,38 @@ static int snd_pcm_mmap(struct file *file, struct vm_area_struct *area)
@@ -85,5 +84,5 @@ index 05eb574e..65a134b 100644
  	default:
  		return snd_pcm_mmap_data(substream, file, area);
 -- 
-2.7.4
+https://clearlinux.org
 

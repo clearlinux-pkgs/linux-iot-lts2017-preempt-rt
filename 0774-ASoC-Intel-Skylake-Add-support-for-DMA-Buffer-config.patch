@@ -1,7 +1,7 @@
-From a4c12f423c10df9dd1db46ac475c6f96932a0aee Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pardha Saradhi K <pardha.saradhi.kesapragada@intel.com>
 Date: Tue, 5 Sep 2017 19:57:00 +0530
-Subject: [PATCH 0774/2278] ASoC: Intel: Skylake: Add support for DMA Buffer
+Subject: [PATCH] ASoC: Intel: Skylake: Add support for DMA Buffer
  configuration
 
 DMA buffer configuration is to manage the HW Buffers
@@ -32,7 +32,7 @@ Tested-by: Sm, Bhadur A <bhadur.a.sm@intel.com>
  8 files changed, 91 insertions(+), 5 deletions(-)
 
 diff --git a/include/uapi/sound/snd_sst_tokens.h b/include/uapi/sound/snd_sst_tokens.h
-index 9e3fe1864..7831330 100644
+index 9e3fe18..7831330 100644
 --- a/include/uapi/sound/snd_sst_tokens.h
 +++ b/include/uapi/sound/snd_sst_tokens.h
 @@ -239,6 +239,19 @@
@@ -250,5 +250,5 @@ index c839124..1eafa09 100644
  } __packed;
  
 -- 
-2.7.4
+https://clearlinux.org
 

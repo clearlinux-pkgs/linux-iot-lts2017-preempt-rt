@@ -1,8 +1,7 @@
-From 6911d189e767b52be6388af1ddb1c597c879f2af Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tom Zanussi <tom.zanussi@linux.intel.com>
 Date: Mon, 15 Jan 2018 20:51:52 -0600
-Subject: [PATCH 0095/2278] tracing: Add simple expression support to hist
- triggers
+Subject: [PATCH] tracing: Add simple expression support to hist triggers
 
 Add support for simple addition, subtraction, and unary expressions
 (-(expr) and expr, where expr = b-a, a+b, a+b+c) to hist triggers, in
@@ -24,7 +23,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
 (cherry picked from commit 26c5cb5e4790fec96e3eba02c347e78fa72273a8)
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- kernel/trace/trace_events_hist.c | 487 +++++++++++++++++++++++++++++++++------
+ kernel/trace/trace_events_hist.c | 487 ++++++++++++++++++++++++++-----
  1 file changed, 413 insertions(+), 74 deletions(-)
 
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
@@ -630,5 +629,5 @@ index c6c24d6..d2f01f3 100644
  
  		if (hist_data->fields[i]->flags & HIST_FIELD_FL_HEX) {
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,8 @@
-From d4ddfa57f358b34533017967f14964ad510cfec8 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ingo Molnar <mingo@elte.hu>
 Date: Fri, 3 Jul 2009 08:29:27 -0500
-Subject: [PATCH 0138/2278] x86/ioapic: Do not unmask io_apic when interrupt is
- in progress
+Subject: [PATCH] x86/ioapic: Do not unmask io_apic when interrupt is in
+ progress
 
 With threaded interrupts we might see an interrupt in progress on
 migration. Do not unmask it when this is the case.
@@ -28,5 +28,5 @@ index 96a8a68..5832a9d 100644
  		return true;
  	}
 -- 
-2.7.4
+https://clearlinux.org
 

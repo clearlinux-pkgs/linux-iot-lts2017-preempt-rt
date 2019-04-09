@@ -1,8 +1,7 @@
-From 946b4751a14328f8118069c51c6dd71b53cdc255 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Sean Paul <seanpaul@chromium.org>
 Date: Mon, 8 Jan 2018 14:55:41 -0500
-Subject: [PATCH 0980/2278] UPSTREAM: drm/i915: Add function to output Aksv
- over GMBUS
+Subject: [PATCH] UPSTREAM: drm/i915: Add function to output Aksv over GMBUS
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -38,7 +37,7 @@ Change-Id: Ib201cf8c56a0f0df3e3f2171e37f136a8cc28406
 ---
  drivers/gpu/drm/i915/i915_drv.h  |  1 +
  drivers/gpu/drm/i915/i915_reg.h  |  1 +
- drivers/gpu/drm/i915/intel_i2c.c | 47 +++++++++++++++++++++++++++++++++++++---
+ drivers/gpu/drm/i915/intel_i2c.c | 47 ++++++++++++++++++++++++++++++--
  3 files changed, 46 insertions(+), 3 deletions(-)
 
 diff --git a/drivers/gpu/drm/i915/i915_drv.h b/drivers/gpu/drm/i915/i915_drv.h
@@ -152,5 +151,5 @@ index e7854c2..3466c50 100644
  {
  	return i2c_bit_algo.functionality(adapter) &
 -- 
-2.7.4
+https://clearlinux.org
 

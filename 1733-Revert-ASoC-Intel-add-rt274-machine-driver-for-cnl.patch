@@ -1,13 +1,12 @@
-From 24bf27f4b5846e88323d9e99fcfd4a67297dfeef Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Mon, 2 Jul 2018 19:58:53 -0500
-Subject: [PATCH 1733/2278] Revert "ASoC: Intel: add rt274 machine driver for
- cnl"
+Subject: [PATCH] Revert "ASoC: Intel: add rt274 machine driver for cnl"
 
 This reverts commit 854eb1055f87ec94fe10ced5e4f17389a641c4e9.
 ---
  sound/soc/intel/boards/Kconfig     |  12 --
- sound/soc/intel/boards/cnl_rt274.c | 334 -------------------------------------
+ sound/soc/intel/boards/cnl_rt274.c | 334 -----------------------------
  2 files changed, 346 deletions(-)
  delete mode 100644 sound/soc/intel/boards/cnl_rt274.c
 
@@ -373,5 +372,5 @@ index 3165952..0000000
 -MODULE_ALIAS("platform:cnl_rt274");
 -MODULE_ALIAS("platform:icl_rt274");
 -- 
-2.7.4
+https://clearlinux.org
 

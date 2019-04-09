@@ -1,7 +1,7 @@
-From fcbd6d2339838af76f0981625e03635e36693095 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 Date: Thu, 26 Jul 2018 15:06:10 +0200
-Subject: [PATCH 0427/2278] efi: Allow efi=runtime
+Subject: [PATCH] efi: Allow efi=runtime
 
 [ Upstream commit 71bef7da4112ed2677d4f10a58202a5a4638fb90 ]
 
@@ -29,5 +29,5 @@ index c3eefa1..9bd7493 100644
  }
  early_param("efi", parse_efi_cmdline);
 -- 
-2.7.4
+https://clearlinux.org
 

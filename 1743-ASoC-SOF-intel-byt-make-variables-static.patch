@@ -1,7 +1,7 @@
-From 16eb892291a0720f4f95bcdeb729b71085b064da Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Mon, 2 Jul 2018 18:35:45 -0500
-Subject: [PATCH 1743/2278] ASoC: SOF: intel: byt: make variables static
+Subject: [PATCH] ASoC: SOF: intel: byt: make variables static
 
 Detected with Sparse, variables need to be static if not declared
 
@@ -30,5 +30,5 @@ index 77a2c7a..49ec019 100644
  	/* all 6 SSPs may be available for cherrytrail */
  	.num_drv = ARRAY_SIZE(byt_dai),
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,7 @@
-From 8b7809c919e26e254de661aa8ef09e9c880d3676 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: liyong4x <yongx.a.li@intel.com>
 Date: Mon, 25 Jun 2018 21:24:57 -0400
-Subject: [PATCH 1973/2278] media: intel-ipu4: ar0231at: Change resolution to
- 1920x1088
+Subject: [PATCH] media: intel-ipu4: ar0231at: Change resolution to 1920x1088
 
 Message for Open Source:
 Change the resolution from 1920x1080 to 1920x1088.
@@ -18,7 +17,7 @@ Change-Id: I546405b14cbea7b9dbafee8a6e4177b25bbc9245
 Signed-off-by: liyong4x <yongx.a.li@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- .../i2c/crlmodule/crl_ar0231at_configuration.h     | 78 +++++++++++-----------
+ .../crlmodule/crl_ar0231at_configuration.h    | 78 +++++++++----------
  1 file changed, 39 insertions(+), 39 deletions(-)
 
 diff --git a/drivers/media/i2c/crlmodule/crl_ar0231at_configuration.h b/drivers/media/i2c/crlmodule/crl_ar0231at_configuration.h
@@ -243,5 +242,5 @@ index bd17255..697e35e 100644
  	.max_frame_length_lines = 65535,
  	.min_line_length_pixels = 320,
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,7 +1,7 @@
-From 25763519b0ecd76776e010c2d99af8de63fb4f9d Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tomas Winkler <tomas.winkler@intel.com>
 Date: Thu, 14 Apr 2016 21:38:43 -0400
-Subject: [PATCH 0528/2278] mei: me: add denverton device ids
+Subject: [PATCH] mei: me: add denverton device ids
 
 Denverton is a 14nm SoC containing up to 16 Goldmont Atom cores.
 
@@ -38,5 +38,5 @@ index a99edf8..e1ae3a1 100644
  	{MEI_PCI_DEVICE(MEI_DEV_ID_GLK, MEI_ME_PCH8_CFG)},
  
 -- 
-2.7.4
+https://clearlinux.org
 

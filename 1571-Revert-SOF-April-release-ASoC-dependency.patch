@@ -1,22 +1,22 @@
-From e6a56c1a972d1051a7cf205a39188ed64e1b3b99 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Keyon Jie <yang.jie@linux.intel.com>
 Date: Tue, 26 Jun 2018 19:13:59 +0800
-Subject: [PATCH 1571/2278] Revert SOF April release -- ASoC dependency
+Subject: [PATCH] Revert SOF April release -- ASoC dependency
 
 Signed-off-by: Keyon Jie <yang.jie@linux.intel.com>
 ---
- include/sound/pcm.h                     |  6 ---
- include/sound/soc-topology.h            | 30 ++++--------
- include/sound/soc.h                     | 12 -----
- sound/core/pcm_lib.c                    | 15 ++----
- sound/soc/intel/boards/cht_bsw_rt5672.c | 30 ++++--------
- sound/soc/intel/skylake/skl-pcm.c       |  9 ++--
+ include/sound/pcm.h                     |  6 --
+ include/sound/soc-topology.h            | 30 +++------
+ include/sound/soc.h                     | 12 ----
+ sound/core/pcm_lib.c                    | 15 ++---
+ sound/soc/intel/boards/cht_bsw_rt5672.c | 30 +++------
+ sound/soc/intel/skylake/skl-pcm.c       |  9 ++-
  sound/soc/intel/skylake/skl-topology.c  |  5 +-
  sound/soc/intel/skylake/skl-topology.h  |  5 +-
- sound/soc/soc-core.c                    | 87 ++-------------------------------
- sound/soc/soc-dapm.c                    |  3 --
- sound/soc/soc-pcm.c                     | 23 ---------
- sound/soc/soc-topology.c                | 76 ++++++++--------------------
+ sound/soc/soc-core.c                    | 87 +------------------------
+ sound/soc/soc-dapm.c                    |  3 -
+ sound/soc/soc-pcm.c                     | 23 -------
+ sound/soc/soc-topology.c                | 76 ++++++---------------
  12 files changed, 55 insertions(+), 246 deletions(-)
 
 diff --git a/include/sound/pcm.h b/include/sound/pcm.h
@@ -775,5 +775,5 @@ index 1abd2f6..04f834e 100644
  
  			switch (dobj->type) {
 -- 
-2.7.4
+https://clearlinux.org
 

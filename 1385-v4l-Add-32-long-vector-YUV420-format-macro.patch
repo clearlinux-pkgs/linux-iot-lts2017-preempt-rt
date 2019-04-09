@@ -1,7 +1,7 @@
-From 6b32ca57ed010ff3e9aa6ca02036a6928158b616 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: wu xia <xia.wu@intel.com>
 Date: Wed, 11 Nov 2015 14:03:52 +0200
-Subject: [PATCH 1385/2278] v4l: Add 32-long vector YUV420 format macro
+Subject: [PATCH] v4l: Add 32-long vector YUV420 format macro
 
 Signed-off-by: Sakari Ailus <sakari.ailus@linux.intel.com>
 Signed-off-by: wu xia <xia.wu@intel.com>
@@ -22,5 +22,5 @@ index ae4b2cc..4227c57 100644
  /* HSV formats */
  #define V4L2_PIX_FMT_HSV24 v4l2_fourcc('H', 'S', 'V', '3')
 -- 
-2.7.4
+https://clearlinux.org
 

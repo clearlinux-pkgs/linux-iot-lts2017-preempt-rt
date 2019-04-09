@@ -1,17 +1,17 @@
-From 69965a7e9aa586d81df1ec8b6bc3bc5190009b5b Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Sanyog Kale <sanyog.r.kale@intel.com>
 Date: Sun, 2 Jul 2017 11:30:20 +0530
-Subject: [PATCH 0673/2278] ASoC: Intel: CNL: Update dsp ops API to take
- direction as input parameter
+Subject: [PATCH] ASoC: Intel: CNL: Update dsp ops API to take direction as
+ input parameter
 
 This patch removes hardcoding of audio stream direction inside dsp ops.
 Instead it is passed as input parameter of dsp ops.
 
 Signed-off-by: Sanyog Kale <sanyog.r.kale@intel.com>
 ---
- sound/soc/intel/skylake/bxt-sst.c      | 28 +++++++++++++++++++---------
- sound/soc/intel/skylake/cnl-sst.c      | 15 ++++++++++-----
- sound/soc/intel/skylake/skl-messages.c | 20 +++++++++++---------
+ sound/soc/intel/skylake/bxt-sst.c      | 28 +++++++++++++++++---------
+ sound/soc/intel/skylake/cnl-sst.c      | 15 +++++++++-----
+ sound/soc/intel/skylake/skl-messages.c | 20 +++++++++---------
  sound/soc/intel/skylake/skl-sst-dsp.h  |  9 ++++-----
  4 files changed, 44 insertions(+), 28 deletions(-)
 
@@ -201,7 +201,7 @@ index 64e2567..130a33c 100644
  		return -EINVAL;
  
 diff --git a/sound/soc/intel/skylake/skl-sst-dsp.h b/sound/soc/intel/skylake/skl-sst-dsp.h
-index be6d665..e183d373 100644
+index be6d665..e183d37 100644
 --- a/sound/soc/intel/skylake/skl-sst-dsp.h
 +++ b/sound/soc/intel/skylake/skl-sst-dsp.h
 @@ -157,7 +157,6 @@ struct skl_dsp_fw_ops {
@@ -229,5 +229,5 @@ index be6d665..e183d373 100644
  
  #define MAX_INSTANCE_BUFF 2
 -- 
-2.7.4
+https://clearlinux.org
 

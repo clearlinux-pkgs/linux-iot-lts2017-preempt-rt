@@ -1,8 +1,7 @@
-From b61f112e401127e5e8147be185945b6a15a79a35 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Yong Zhi <yong.zhi@intel.com>
 Date: Tue, 10 Apr 2018 17:16:10 -0500
-Subject: [PATCH 1904/2278] media: intel-ipu4: imx355: Fix v4l2-compliance
- DQEVENT fails
+Subject: [PATCH] media: intel-ipu4: imx355: Fix v4l2-compliance DQEVENT fails
 
 Message for Open Source:
 Fix v4l2-compliance fails on imx355 camera sensor subdev
@@ -86,5 +85,5 @@ index 703ecb5..c2c10e0 100644
  	imx355->sd.entity.function = MEDIA_ENT_F_CAM_SENSOR;
  
 -- 
-2.7.4
+https://clearlinux.org
 

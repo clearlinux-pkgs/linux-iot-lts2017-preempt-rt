@@ -1,7 +1,7 @@
-From 54643be0eebd7acd9ca6b01322a2da5585f5ff84 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tom Zanussi <tom.zanussi@linux.intel.com>
 Date: Mon, 15 Jan 2018 20:51:44 -0600
-Subject: [PATCH 0087/2278] tracing: Break out hist trigger assignment parsing
+Subject: [PATCH] tracing: Break out hist trigger assignment parsing
 
 This will make it easier to add variables, and makes the parsing code
 cleaner regardless.
@@ -14,7 +14,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
 (cherry picked from commit 3c1e23def1291b21a2057f883ccc0456418dc5ad)
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- kernel/trace/trace_events_hist.c | 72 ++++++++++++++++++++++++++++------------
+ kernel/trace/trace_events_hist.c | 72 ++++++++++++++++++++++----------
  1 file changed, 51 insertions(+), 21 deletions(-)
 
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
@@ -114,5 +114,5 @@ index 9126be5..4935290 100644
  			goto free;
  		}
 -- 
-2.7.4
+https://clearlinux.org
 

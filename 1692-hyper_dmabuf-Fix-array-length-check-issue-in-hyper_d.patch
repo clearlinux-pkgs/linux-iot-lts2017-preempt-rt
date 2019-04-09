@@ -1,7 +1,7 @@
-From 4c1833f76edaaa3a1c2a26a1085aab7dcea6f5b5 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Wei Liu <weix.w.liu@intel.com>
 Date: Thu, 26 Jul 2018 11:24:55 +0800
-Subject: [PATCH 1692/2278] hyper_dmabuf: Fix array length check issue in
+Subject: [PATCH] hyper_dmabuf: Fix array length check issue in
  hyper_dmabuf_ioctl()
 
 Current boundry check for hyper_dmabuf_ioctls array only verifies whether
@@ -31,5 +31,5 @@ index 20274e1..e9f1d64 100644
  		return -EINVAL;
  	}
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,7 @@
-From 87ea086b21855448724eb4ab41d17b7a1ab64a33 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Rodrigo Vivi <rodrigo.vivi@intel.com>
 Date: Tue, 29 Aug 2017 16:07:23 -0700
-Subject: [PATCH 1016/2278] UPSTREAM: drm/i915/cnl: WA
- FtrEnableFastAnisoL1BankingFix
+Subject: [PATCH] UPSTREAM: drm/i915/cnl: WA FtrEnableFastAnisoL1BankingFix
 
 WA to enable HW L1 Banking fix that allows aniso to operate
 at full sample rate.
@@ -50,5 +49,5 @@ index f5beb51..d69c9a1 100644
  	ret= wa_ring_whitelist_reg(engine, GEN8_CS_CHICKEN1);
  	if (ret)
 -- 
-2.7.4
+https://clearlinux.org
 

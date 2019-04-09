@@ -1,8 +1,8 @@
-From e2fc40bdba8df295c8b87584f8ee7d2476a1cea9 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Oscar Mateo <oscar.mateo@intel.com>
 Date: Thu, 28 Sep 2017 15:40:39 -0700
-Subject: [PATCH 1069/2278] UPSTREAM: drm/i915: Transform whitelisting WAs into
- a simple reg write
+Subject: [PATCH] UPSTREAM: drm/i915: Transform whitelisting WAs into a simple
+ reg write
 
 RING_FORCE_TO_NONPRIV registers do not live in the logical context. They are simply
 global privileged MMIO registers that happen to be powercontext saved and restored
@@ -39,5 +39,5 @@ index 738a316..9e05b1b 100644
  
  	return 0;
 -- 
-2.7.4
+https://clearlinux.org
 

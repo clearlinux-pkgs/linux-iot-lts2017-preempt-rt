@@ -1,8 +1,7 @@
-From b1a4b4a9487ed73a73ee6f9c64e52d7d04e8bd24 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Julia Cartwright <julia@ni.com>
 Date: Mon, 7 May 2018 08:58:57 -0500
-Subject: [PATCH 0415/2278] squashfs: make use of local lock in multi_cpu
- decompressor
+Subject: [PATCH] squashfs: make use of local lock in multi_cpu decompressor
 
 [ Upstream commit c160736542d7b3d67da32848d2f028b8e35730e5 ]
 
@@ -70,5 +69,5 @@ index 23a9c28..6a73c4f 100644
  	if (res < 0)
  		ERROR("%s decompression failed, data probably corrupt\n",
 -- 
-2.7.4
+https://clearlinux.org
 

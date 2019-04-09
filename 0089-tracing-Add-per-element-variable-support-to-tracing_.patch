@@ -1,8 +1,7 @@
-From c6a1f18e9e7cb4588cd988d0104b519fbf349637 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tom Zanussi <tom.zanussi@linux.intel.com>
 Date: Mon, 15 Jan 2018 20:51:46 -0600
-Subject: [PATCH 0089/2278] tracing: Add per-element variable support to
- tracing_map
+Subject: [PATCH] tracing: Add per-element variable support to tracing_map
 
 In order to allow information to be passed between trace events, add
 support for per-element variables to tracing_map.  This provides a
@@ -25,8 +24,8 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
 (cherry picked from commit 42a38132f9e154e1fa2dd2182dff17f9c0e7ee7e)
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- kernel/trace/tracing_map.c | 108 +++++++++++++++++++++++++++++++++++++++++++++
- kernel/trace/tracing_map.h |  11 +++++
+ kernel/trace/tracing_map.c | 108 +++++++++++++++++++++++++++++++++++++
+ kernel/trace/tracing_map.h |  11 ++++
  2 files changed, 119 insertions(+)
 
 diff --git a/kernel/trace/tracing_map.c b/kernel/trace/tracing_map.c
@@ -107,10 +106,11 @@ index f47a4d5..5cadb1b 100644
  int tracing_map_cmp_string(void *val_a, void *val_b)
  {
  	char *a = val_a;
-@@ -171,6 +238,28 @@ int tracing_map_add_sum_field(struct tracing_map *map)
+@@ -170,6 +237,28 @@ int tracing_map_add_sum_field(struct tracing_map *map)
+ 	return tracing_map_add_field(map, tracing_map_cmp_atomic64);
  }
  
- /**
++/**
 + * tracing_map_add_var - Add a field describing a tracing_map var
 + * @map: The tracing_map
 + *
@@ -132,10 +132,9 @@ index f47a4d5..5cadb1b 100644
 +	return ret;
 +}
 +
-+/**
+ /**
   * tracing_map_add_key_field - Add a field describing a tracing_map key
   * @map: The tracing_map
-  * @offset: The offset within the key
 @@ -280,6 +369,11 @@ static void tracing_map_elt_clear(struct tracing_map_elt *elt)
  		if (elt->fields[i].cmp_fn == tracing_map_cmp_atomic64)
  			atomic64_set(&elt->fields[i].sum, 0);
@@ -228,5 +227,5 @@ index de57887..053eb92 100644
  					unsigned int i,
  					unsigned int key_offset,
 -- 
-2.7.4
+https://clearlinux.org
 

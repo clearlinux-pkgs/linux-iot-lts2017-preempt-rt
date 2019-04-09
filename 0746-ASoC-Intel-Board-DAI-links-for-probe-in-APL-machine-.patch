@@ -1,8 +1,7 @@
-From ba8cb0205806d77a4cb57fc9e026e028b26f287b Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pramod Kumar Yadav <pramodx.k.yadav@intel.com>
 Date: Tue, 26 Apr 2016 15:49:45 +0530
-Subject: [PATCH 0746/2278] ASoC: Intel: Board: DAI links for probe in APL
- machine driver
+Subject: [PATCH] ASoC: Intel: Board: DAI links for probe in APL machine driver
 
 Added two DAI link, one for each playback & capture, for probe
 
@@ -48,5 +47,5 @@ index ab54916..f114457 100644
  	{
  		.name = "Bxt Trace Buffer0",
 -- 
-2.7.4
+https://clearlinux.org
 

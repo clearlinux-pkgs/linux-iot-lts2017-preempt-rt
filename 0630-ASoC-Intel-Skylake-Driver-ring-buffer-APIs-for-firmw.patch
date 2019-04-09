@@ -1,8 +1,8 @@
-From 3db43335772c2e795939f7ea9c09d1abd02246ee Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Panwar, Ashish" <ashish.panwar@intel.com>
 Date: Wed, 20 Jan 2016 19:09:05 +0530
-Subject: [PATCH 0630/2278] ASoC: Intel: Skylake: Driver ring buffer APIs for
- firmware logging.
+Subject: [PATCH] ASoC: Intel: Skylake: Driver ring buffer APIs for firmware
+ logging.
 
 Data from trace window will be copied in this buffer and passed to
 user space through compress stream APIs. Assuming a single reader
@@ -16,10 +16,10 @@ Reviewed-by: Babu, Ramesh <ramesh.babu@intel.com>
 Tested-by: Babu, Ramesh <ramesh.babu@intel.com>
 Signed-off-by: Guneshwor Singh <guneshwor.o.singh@intel.com>
 ---
- sound/soc/intel/common/sst-dsp-priv.h |  39 +++++++-
+ sound/soc/intel/common/sst-dsp-priv.h |  39 +++++-
  sound/soc/intel/skylake/Makefile      |   2 +-
- sound/soc/intel/skylake/skl-fwlog.c   | 168 ++++++++++++++++++++++++++++++++++
- sound/soc/intel/skylake/skl-fwlog.h   |  20 ++++
+ sound/soc/intel/skylake/skl-fwlog.c   | 168 ++++++++++++++++++++++++++
+ sound/soc/intel/skylake/skl-fwlog.h   |  20 +++
  4 files changed, 227 insertions(+), 2 deletions(-)
  create mode 100644 sound/soc/intel/skylake/skl-fwlog.c
  create mode 100644 sound/soc/intel/skylake/skl-fwlog.h
@@ -39,10 +39,11 @@ index ce2f864..ae55094 100644
  #include "../skylake/skl-sst-dsp.h"
  
  struct sst_mem_block;
-@@ -98,6 +100,37 @@ struct sst_mailbox {
+@@ -97,6 +99,37 @@ struct sst_mailbox {
+ 	size_t out_size;
  };
  
- /*
++/*
 + * Audio DSP Trace Buffer Configuration.
 +*/
 +struct sst_dbg_rbuffer {
@@ -73,10 +74,9 @@ index ce2f864..ae55094 100644
 +	u32		flags;
 +};
 +
-+/*
+ /*
   * Audio DSP memory block types.
   */
- enum sst_mem_type {
 @@ -288,6 +321,9 @@ struct sst_dsp {
  	/* mailbox */
  	struct sst_mailbox mailbox;
@@ -306,5 +306,5 @@ index 0000000..06304de
 +void skl_dsp_done_log_buffer(struct sst_dsp *sst, int core);
 +#endif /* __SKL_FWLOG_H__ */
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,7 +1,7 @@
-From 290df01c541ecec8f51b503a7b1ea6ac00fd8f28 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Joe Perches <joe@perches.com>
 Date: Wed, 27 Sep 2017 22:01:34 -0700
-Subject: [PATCH 0813/2278] PM: Use a more common logging style
+Subject: [PATCH] PM: Use a more common logging style
 
 Convert printks to pr_<level>.
 
@@ -17,8 +17,8 @@ Acked-by: Pavel Machek <pavel@ucw.cz>
 Signed-off-by: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
 ---
  kernel/power/qos.c      |   4 +-
- kernel/power/snapshot.c |  35 ++++++-------
- kernel/power/swap.c     | 128 +++++++++++++++++++++---------------------------
+ kernel/power/snapshot.c |  35 +++++------
+ kernel/power/swap.c     | 128 ++++++++++++++++++----------------------
  3 files changed, 77 insertions(+), 90 deletions(-)
 
 diff --git a/kernel/power/qos.c b/kernel/power/qos.c
@@ -600,5 +600,5 @@ index d7cdc42..293ead5 100644
  	}
  
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,7 @@
-From ded2f92b021f652a08c28e4f8bf0488ec33f1001 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Thomas Gleixner <tglx@linutronix.de>
 Date: Fri, 3 Jul 2009 08:44:56 -0500
-Subject: [PATCH 0129/2278] signals: Allow rt tasks to cache one sigqueue
- struct
+Subject: [PATCH] signals: Allow rt tasks to cache one sigqueue struct
 
 To avoid allocation allow rt tasks to cache one sigqueue struct in
 task struct.
@@ -13,7 +12,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  include/linux/signal.h |  1 +
  kernel/exit.c          |  2 +-
  kernel/fork.c          |  1 +
- kernel/signal.c        | 69 +++++++++++++++++++++++++++++++++++++++++++++++---
+ kernel/signal.c        | 69 +++++++++++++++++++++++++++++++++++++++---
  5 files changed, 70 insertions(+), 5 deletions(-)
 
 diff --git a/include/linux/sched.h b/include/linux/sched.h
@@ -158,10 +157,11 @@ index 8ffd4fb..ca7de0d 100644
  void flush_sigqueue(struct sigpending *queue)
  {
  	struct sigqueue *q;
-@@ -422,6 +465,21 @@ void flush_sigqueue(struct sigpending *queue)
+@@ -421,6 +464,21 @@ void flush_sigqueue(struct sigpending *queue)
+ 	}
  }
  
- /*
++/*
 + * Called from __exit_signal. Flush tsk->pending and
 + * tsk->sigqueue_cache
 + */
@@ -176,10 +176,9 @@ index 8ffd4fb..ca7de0d 100644
 +		kmem_cache_free(sigqueue_cachep, q);
 +}
 +
-+/*
+ /*
   * Flush all pending signals for this kthread.
   */
- void flush_signals(struct task_struct *t)
 @@ -542,7 +600,7 @@ static void collect_signal(int sig, struct sigpending *list, siginfo_t *info,
  			(info->si_code == SI_TIMER) &&
  			(info->si_sys_private);
@@ -209,5 +208,5 @@ index 8ffd4fb..ca7de0d 100644
  	if (q)
  		q->flags |= SIGQUEUE_PREALLOC;
 -- 
-2.7.4
+https://clearlinux.org
 

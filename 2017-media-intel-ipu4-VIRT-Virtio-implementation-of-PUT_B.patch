@@ -1,8 +1,8 @@
-From 961a3021ec9a59f224e1abcd7b430fe97afc3ba3 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Bandi,Kushal" <kushal.bandi@intel.com>
 Date: Fri, 1 Jun 2018 11:41:40 -0700
-Subject: [PATCH 2017/2278] media: intel-ipu4: [VIRT] Virtio implementation of
- PUT_BUF & modify get buf list
+Subject: [PATCH] media: intel-ipu4: [VIRT] Virtio implementation of PUT_BUF &
+ modify get buf list
 
 Enabling UOS to SOS calls for put_buffer Creating local get buf list for UOS
 Added support for get buf operation to native and virtio bbackend driver
@@ -12,16 +12,16 @@ Change-Id: I9cc10e6ae2c45114e9cfc7d6a6d00020ec21c0a3
 Signed-off-by: Yu, Ong Hock <ong.hock.yu@intel.com>
 Signed-off-by: Bandi, Kushal <kushal.bandi@intel.com>
 ---
- drivers/media/pci/intel/ici/ici-isys-frame-buf.c   | 138 +++++++++++++++++
- drivers/media/pci/intel/ici/ici-isys-frame-buf.h   |   6 +
- .../media/pci/intel/ici/ici-isys-stream-device.h   |   2 +
- drivers/media/pci/intel/ici/ici-isys-stream.c      |  23 +++
- .../pci/intel/virtio/intel-ipu4-para-virt-drv.c    | 163 +++++++--------------
- .../pci/intel/virtio/intel-ipu4-virtio-be-bridge.c |  64 ++------
- .../pci/intel/virtio/intel-ipu4-virtio-be-stream.c | 124 +++++++++++++++-
- .../pci/intel/virtio/intel-ipu4-virtio-be-stream.h |   2 +
- .../intel/virtio/intel-ipu4-virtio-fe-payload.c    |   5 +-
- .../intel/virtio/intel-ipu4-virtio-fe-pipeline.c   |   2 +-
+ .../media/pci/intel/ici/ici-isys-frame-buf.c  | 138 +++++++++++++++
+ .../media/pci/intel/ici/ici-isys-frame-buf.h  |   6 +
+ .../pci/intel/ici/ici-isys-stream-device.h    |   2 +
+ drivers/media/pci/intel/ici/ici-isys-stream.c |  23 +++
+ .../intel/virtio/intel-ipu4-para-virt-drv.c   | 163 ++++++------------
+ .../virtio/intel-ipu4-virtio-be-bridge.c      |  64 ++-----
+ .../virtio/intel-ipu4-virtio-be-stream.c      | 124 ++++++++++++-
+ .../virtio/intel-ipu4-virtio-be-stream.h      |   2 +
+ .../virtio/intel-ipu4-virtio-fe-payload.c     |   5 +-
+ .../virtio/intel-ipu4-virtio-fe-pipeline.c    |   2 +-
  10 files changed, 362 insertions(+), 167 deletions(-)
 
 diff --git a/drivers/media/pci/intel/ici/ici-isys-frame-buf.c b/drivers/media/pci/intel/ici/ici-isys-frame-buf.c
@@ -218,7 +218,7 @@ index 2b44fa4..5aec894 100644
  		struct ici_frame_info *fram);
  };
 diff --git a/drivers/media/pci/intel/ici/ici-isys-stream.c b/drivers/media/pci/intel/ici/ici-isys-stream.c
-index c2af34d8..1d45a76 100644
+index c2af34d..1d45a76 100644
 --- a/drivers/media/pci/intel/ici/ici-isys-stream.c
 +++ b/drivers/media/pci/intel/ici/ici-isys-stream.c
 @@ -1343,6 +1343,28 @@ static int ici_isys_getbuf(struct file *file, void *fh,
@@ -590,7 +590,7 @@ index b01a9e8..0b0cf86 100644
  	req = kcalloc(1, sizeof(*req), GFP_KERNEL);
  	if (!req)
 diff --git a/drivers/media/pci/intel/virtio/intel-ipu4-virtio-be-bridge.c b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-be-bridge.c
-index 21a5b50..8540d66616 100644
+index 21a5b50..8540d66 100644
 --- a/drivers/media/pci/intel/virtio/intel-ipu4-virtio-be-bridge.c
 +++ b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-be-bridge.c
 @@ -10,7 +10,6 @@
@@ -887,5 +887,5 @@ index 0706c18..740808d 100644
  		return rval;
  	}
 -- 
-2.7.4
+https://clearlinux.org
 

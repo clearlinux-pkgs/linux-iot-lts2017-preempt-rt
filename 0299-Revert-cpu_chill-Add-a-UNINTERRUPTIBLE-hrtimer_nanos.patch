@@ -1,8 +1,7 @@
-From b79299ea9490a8eae60f1e639f1604a28172e4f7 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 Date: Fri, 16 Mar 2018 15:04:49 +0100
-Subject: [PATCH 0299/2278] Revert "cpu_chill: Add a UNINTERRUPTIBLE
- hrtimer_nanosleep"
+Subject: [PATCH] Revert "cpu_chill: Add a UNINTERRUPTIBLE hrtimer_nanosleep"
 
 This reverts commit "cpu_chill: Add a UNINTERRUPTIBLE
 hrtimer_nanosleep". Since cpu_chill() is now using schedule_hrtimeout()
@@ -76,5 +75,5 @@ index c0efc22..ce2c2d0 100644
  		struct timespec __user *, rmtp)
  {
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,8 @@
-From a16f8a8ec641a0fbd5e9edc8d6ae4a9a15af2975 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: icg_intg <icg_intg@intel.com>
 Date: Tue, 8 May 2018 13:26:41 +0800
-Subject: [PATCH 1878/2278] media: intel-ipu4: css:
- scci_IPU4_master_20180506_1519 fw release
+Subject: [PATCH] media: intel-ipu4: css: scci_IPU4_master_20180506_1519 fw
+ release
 
 Message for Open Source:
 New firmware css release.
@@ -25,9 +25,9 @@ Depends-on: I38b9aada9c340d3f86e5b0783d0bbbf6e080a50f
 Signed-off-by: icg_intg <icg_intg@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- .../media/pci/intel/ipu4/ipu4-css/ia_css_fw_pkg_release.h  |  2 +-
- .../lib/DSS_V2_program_group/ia_css_fw_pkg_release.h       |  2 +-
- .../lib/psysapi/static/src/ia_css_psys_program_manifest.c  | 14 ++++++++++++++
+ .../intel/ipu4/ipu4-css/ia_css_fw_pkg_release.h    |  2 +-
+ .../DSS_V2_program_group/ia_css_fw_pkg_release.h   |  2 +-
+ .../static/src/ia_css_psys_program_manifest.c      | 14 ++++++++++++++
  3 files changed, 16 insertions(+), 2 deletions(-)
 
 diff --git a/drivers/media/pci/intel/ipu4/ipu4-css/ia_css_fw_pkg_release.h b/drivers/media/pci/intel/ipu4/ipu4-css/ia_css_fw_pkg_release.h
@@ -82,5 +82,5 @@ index 9514813..3fb92a0 100644
  #endif
  
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,7 +1,7 @@
-From 6a1b023d7f007e767c5424e134e7624560bec278 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Jason Chen CJ <jason.cj.chen@intel.com>
 Date: Tue, 23 Jan 2018 22:27:08 +0800
-Subject: [PATCH 0961/2278] VHM: replace function name update_mmio_map with
+Subject: [PATCH] VHM: replace function name update_mmio_map with
  update_memmap_attr
 
 Change-Id: Ia4e4c621d4a8bc6738042cede93b9b145af291f9
@@ -105,5 +105,5 @@ index 391aa56..3c3ee6e 100644
  
  int vhm_dev_mmap(struct file *file, struct vm_area_struct *vma);
 -- 
-2.7.4
+https://clearlinux.org
 

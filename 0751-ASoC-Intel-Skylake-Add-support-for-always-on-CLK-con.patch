@@ -1,7 +1,7 @@
-From 5da39a81462d61ae2709dd6eb617c1ef9b015a2c Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Kareem,Shaik" <kareem.m.shaik@intel.com>
 Date: Thu, 15 Jun 2017 13:40:04 +0530
-Subject: [PATCH 0751/2278] ASoC: Intel: Skylake: Add support for always on CLK
+Subject: [PATCH] ASoC: Intel: Skylake: Add support for always on CLK
  configuration
 
 For some platforms it is required that ADSP generate BCLK, Frame_sync
@@ -21,10 +21,10 @@ completed and ADSP enters D0 state.
 Change-Id: I65b090931c5ccaf1189c700975a1da6a772a44d8
 Signed-off-by: Kareem,Shaik <kareem.m.shaik@intel.com>
 ---
- sound/soc/intel/skylake/skl-messages.c | 117 ++++++++++++++++++++++++++++++---
- sound/soc/intel/skylake/skl-nhlt.c     |  20 ++++++
- sound/soc/intel/skylake/skl-pcm.c      |   4 ++
- sound/soc/intel/skylake/skl-topology.c |  11 +---
+ sound/soc/intel/skylake/skl-messages.c | 117 ++++++++++++++++++++++---
+ sound/soc/intel/skylake/skl-nhlt.c     |  20 +++++
+ sound/soc/intel/skylake/skl-pcm.c      |   4 +
+ sound/soc/intel/skylake/skl-topology.c |  11 +--
  sound/soc/intel/skylake/skl-topology.h |   5 +-
  sound/soc/intel/skylake/skl.h          |   3 +
  6 files changed, 140 insertions(+), 20 deletions(-)
@@ -243,7 +243,7 @@ index 394fda1..bab28dc 100644
  		skl->skl_sst->update_d0i3c = skl_update_d0i3c;
  		skl_dsp_enable_notification(skl->skl_sst, false);
 diff --git a/sound/soc/intel/skylake/skl-topology.c b/sound/soc/intel/skylake/skl-topology.c
-index 9b6dbfb7..6822042 100644
+index 9b6dbfb..6822042 100644
 --- a/sound/soc/intel/skylake/skl-topology.c
 +++ b/sound/soc/intel/skylake/skl-topology.c
 @@ -2463,18 +2463,13 @@ static int skl_tplg_be_fill_pipe_params(struct snd_soc_dai *dai,
@@ -299,5 +299,5 @@ index 85f24c8..c839124 100644
  int skl_get_dmic_geo(struct skl *skl);
  int skl_nhlt_update_topology_bin(struct skl *skl);
 -- 
-2.7.4
+https://clearlinux.org
 

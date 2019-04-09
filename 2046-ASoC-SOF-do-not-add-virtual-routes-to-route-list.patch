@@ -1,7 +1,7 @@
-From e226f29e011588a66a97ecde34137c8a9a99628d Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ranjani Sridharan <ranjani.sridharan@linux.intel.com>
 Date: Wed, 8 Aug 2018 11:12:28 -0700
-Subject: [PATCH 2046/2278] ASoC: SOF: do not add virtual routes to route list
+Subject: [PATCH] ASoC: SOF: do not add virtual routes to route list
 
 Skip adding virtual routes to the route list. This will prevent
 sending the routes to the FW during system resume.
@@ -44,5 +44,5 @@ index 4f2e9cf..702d8a2 100644
  	return ret;
  
 -- 
-2.7.4
+https://clearlinux.org
 

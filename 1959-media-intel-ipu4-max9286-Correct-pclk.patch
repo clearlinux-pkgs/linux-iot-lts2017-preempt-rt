@@ -1,7 +1,7 @@
-From c15060e98ab751c6a9d3474af59f8dfb75bf205c Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: liyong4x <yongx.a.li@intel.com>
 Date: Tue, 12 Jun 2018 04:34:38 -0400
-Subject: [PATCH 1959/2278] media: intel-ipu4: max9286: Correct pclk
+Subject: [PATCH] media: intel-ipu4: max9286: Correct pclk
 
 Message for Open Source:
 The previous pclk value can work normally, but not recommended.
@@ -37,5 +37,5 @@ index 71aff37..6a472f3 100644
  	{
  		.ops = &max9286_ctrl_ops,
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,7 @@
-From af5a84274e178c55359845c3738927f319948e6a Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Anil Bhawangirkar <anil.k.bhawangirkar@intel.com>
 Date: Wed, 17 Aug 2016 12:19:51 +0530
-Subject: [PATCH 0659/2278] ASoC: Intel: CNL: Fetch ACPI data for SoundWire
- Master
+Subject: [PATCH] ASoC: Intel: CNL: Fetch ACPI data for SoundWire Master
 
 The DSDT table contains information about the SoundWire capabalities
 for Master controller and device. This patch add API's which fetch
@@ -14,7 +13,7 @@ Signed-off-by: Guneshwor Singh <guneshwor.o.singh@intel.com>
 ---
  include/linux/sdw/sdw_cnl.h        |   8 +-
  sound/soc/intel/skylake/Makefile   |   4 +
- sound/soc/intel/skylake/cnl-acpi.c | 160 +++++++++++++++++++++++++++++++++++++
+ sound/soc/intel/skylake/cnl-acpi.c | 160 +++++++++++++++++++++++++++++
  3 files changed, 169 insertions(+), 3 deletions(-)
  create mode 100644 sound/soc/intel/skylake/cnl-acpi.c
 
@@ -223,5 +222,5 @@ index 0000000..0f7ef3b
 +}
 +EXPORT_SYMBOL_GPL(cnl_sdw_get_master_dev_caps);
 -- 
-2.7.4
+https://clearlinux.org
 

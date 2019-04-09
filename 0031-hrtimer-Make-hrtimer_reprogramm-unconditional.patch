@@ -1,7 +1,7 @@
-From 69ab91500b91ea17ab7d767e6f50fa5077251c7a Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Anna-Maria Gleixner <anna-maria@linutronix.de>
 Date: Wed, 20 Dec 2017 17:13:06 +0100
-Subject: [PATCH 0031/2278] hrtimer: Make hrtimer_reprogramm() unconditional
+Subject: [PATCH] hrtimer: Make hrtimer_reprogramm() unconditional
 
 hrtimer_reprogram() needs to be available unconditionally for softirq based
 hrtimers. Move the function and all required struct members out of the
@@ -15,8 +15,8 @@ replication of that code for the upcoming softirq based hrtimers support.
 Signed-off-by: Anna-Maria Gleixner <anna-maria@linutronix.de>
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- include/linux/hrtimer.h |   6 +--
- kernel/time/hrtimer.c   | 129 +++++++++++++++++++++++-------------------------
+ include/linux/hrtimer.h |   6 +-
+ kernel/time/hrtimer.c   | 129 +++++++++++++++++++---------------------
  2 files changed, 65 insertions(+), 70 deletions(-)
 
 diff --git a/include/linux/hrtimer.h b/include/linux/hrtimer.h
@@ -41,10 +41,11 @@ diff --git a/kernel/time/hrtimer.c b/kernel/time/hrtimer.c
 index e01c2e7..37085a1 100644
 --- a/kernel/time/hrtimer.c
 +++ b/kernel/time/hrtimer.c
-@@ -582,68 +582,6 @@ hrtimer_force_reprogram(struct hrtimer_cpu_base *cpu_base, int skip_equal)
+@@ -581,68 +581,6 @@ hrtimer_force_reprogram(struct hrtimer_cpu_base *cpu_base, int skip_equal)
+ 	tick_program_event(cpu_base->expires_next, 1);
  }
  
- /*
+-/*
 - * When a timer is enqueued and expires earlier than the already enqueued
 - * timers, we have to check, whether it expires earlier than the timer for
 - * which the clock event device was armed.
@@ -106,11 +107,10 @@ index e01c2e7..37085a1 100644
 -	tick_program_event(expires, 1);
 -}
 -
--/*
+ /*
   * Retrigger next event is called after clock was set
   *
-  * Called with interrupts disabled via on_each_cpu()
-@@ -703,16 +641,73 @@ static inline int hrtimer_is_hres_enabled(void) { return 0; }
+@@ -703,15 +641,72 @@ static inline int hrtimer_is_hres_enabled(void) { return 0; }
  static inline void hrtimer_switch_to_hres(void) { }
  static inline void
  hrtimer_force_reprogram(struct hrtimer_cpu_base *base, int skip_equal) { }
@@ -123,7 +123,7 @@ index e01c2e7..37085a1 100644
  
  #endif /* CONFIG_HIGH_RES_TIMERS */
  
- /*
++/*
 + * When a timer is enqueued and expires earlier than the already enqueued
 + * timers, we have to check, whether it expires earlier than the timer for
 + * which the clock event device was armed.
@@ -185,10 +185,9 @@ index e01c2e7..37085a1 100644
 +	tick_program_event(expires, 1);
 +}
 +
-+/*
+ /*
   * Clock realtime was set
   *
-  * Change the offset of the realtime clock vs. the monotonic
 -- 
-2.7.4
+https://clearlinux.org
 

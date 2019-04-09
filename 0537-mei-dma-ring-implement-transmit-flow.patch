@@ -1,7 +1,7 @@
-From e82694bf44b4d9cf22cc7b69e35191407868a2ba Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tomas Winkler <tomas.winkler@intel.com>
 Date: Wed, 2 Nov 2016 18:18:36 -0400
-Subject: [PATCH 0537/2278] mei: dma ring: implement transmit flow
+Subject: [PATCH] mei: dma ring: implement transmit flow
 
 Implement a circular buffer on allocated system memory. Read and write
 indices are stored on the control block which is also shared between the
@@ -16,8 +16,8 @@ Signed-off-by: Tomas Winkler <tomas.winkler@intel.com>
 Signed-off-by: Alexander Usyskin <alexander.usyskin@intel.com>
 Signed-off-by: Tomas Winkler <tomas.winkler@intel.com>
 ---
- drivers/misc/mei/client.c   | 137 +++++++++++++++++++++++++++++---------------
- drivers/misc/mei/dma-ring.c |  82 ++++++++++++++++++++++++++
+ drivers/misc/mei/client.c   | 137 +++++++++++++++++++++++-------------
+ drivers/misc/mei/dma-ring.c |  82 +++++++++++++++++++++
  drivers/misc/mei/mei_dev.h  |   2 +
  3 files changed, 174 insertions(+), 47 deletions(-)
 
@@ -377,5 +377,5 @@ index 1b5dd9c..2fa5659 100644
  /*
   *  MEI interrupt functions prototype
 -- 
-2.7.4
+https://clearlinux.org
 

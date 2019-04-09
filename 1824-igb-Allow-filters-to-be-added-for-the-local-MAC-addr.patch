@@ -1,8 +1,7 @@
-From 3c43f3bdd8a94969cd01cd07b352768646cf5e99 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Vinicius Costa Gomes <vinicius.gomes@intel.com>
 Date: Tue, 10 Apr 2018 10:49:55 -0700
-Subject: [PATCH 1824/2278] igb: Allow filters to be added for the local MAC
- address
+Subject: [PATCH] igb: Allow filters to be added for the local MAC address
 
 Users expect that when adding a steering filter for the local MAC
 address, that all the traffic directed to that address will go to some
@@ -22,7 +21,7 @@ Signed-off-by: Vinicius Costa Gomes <vinicius.gomes@intel.com>
 Tested-by: Aaron Brown <aaron.f.brown@intel.com>
 Signed-off-by: Jeff Kirsher <jeffrey.t.kirsher@intel.com>
 ---
- drivers/net/ethernet/intel/igb/igb_main.c | 40 +++++++++++++++++++++++++++----
+ drivers/net/ethernet/intel/igb/igb_main.c | 40 ++++++++++++++++++++---
  1 file changed, 36 insertions(+), 4 deletions(-)
 
 diff --git a/drivers/net/ethernet/intel/igb/igb_main.c b/drivers/net/ethernet/intel/igb/igb_main.c
@@ -91,5 +90,5 @@ index 21de454..fe0b77c 100644
  		igb_rar_set_index(adapter, i);
  		return 0;
 -- 
-2.7.4
+https://clearlinux.org
 

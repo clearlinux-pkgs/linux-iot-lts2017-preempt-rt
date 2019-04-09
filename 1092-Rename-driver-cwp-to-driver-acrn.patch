@@ -1,20 +1,20 @@
-From c67625cf176eedb746fce6a9559f3fd91323be17 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Li, Fei1" <fei1.li@intel.com>
 Date: Sat, 24 Feb 2018 19:40:56 +0800
-Subject: [PATCH 1092/2278] Rename driver/cwp to driver/acrn
+Subject: [PATCH] Rename driver/cwp to driver/acrn
 
 Change-Id: Ia8e4c4abd489a2eb70bdeb9b60cfda7da58bb6cf
 Signed-off-by: Li, Fei1 <fei1.li@intel.com>
 ---
  drivers/Kconfig                           |   2 +-
  drivers/Makefile                          |   2 +-
- drivers/acrn/Kconfig                      |  20 ++++
+ drivers/acrn/Kconfig                      |  20 +++
  drivers/acrn/Makefile                     |   3 +
- drivers/{cwp/cwp_hvlog.c => acrn/hvlog.c} | 160 +++++++++++++++---------------
+ drivers/{cwp/cwp_hvlog.c => acrn/hvlog.c} | 160 +++++++++++-----------
  drivers/{cwp => acrn}/sbuf.c              |   0
  drivers/{cwp => acrn}/sbuf.h              |   6 +-
- drivers/{cwp/cwp_trace.c => acrn/trace.c} |  87 ++++++++--------
- drivers/cwp/Kconfig                       |  20 ----
+ drivers/{cwp/cwp_trace.c => acrn/trace.c} |  87 ++++++------
+ drivers/cwp/Kconfig                       |  20 ---
  drivers/cwp/Makefile                      |   3 -
  10 files changed, 149 insertions(+), 154 deletions(-)
  create mode 100644 drivers/acrn/Kconfig
@@ -725,7 +725,7 @@ index 091b3a1..0000000
 -		You can say y to build it into the kernel.
 diff --git a/drivers/cwp/Makefile b/drivers/cwp/Makefile
 deleted file mode 100644
-index 2e5fe43c..0000000
+index 2e5fe43..0000000
 --- a/drivers/cwp/Makefile
 +++ /dev/null
 @@ -1,3 +0,0 @@
@@ -733,5 +733,5 @@ index 2e5fe43c..0000000
 -obj-$(CONFIG_CWP_TRACE) += cwp_trace.o
 -obj-$(CONFIG_CWP_HVLOG) += cwp_hvlog.o
 -- 
-2.7.4
+https://clearlinux.org
 

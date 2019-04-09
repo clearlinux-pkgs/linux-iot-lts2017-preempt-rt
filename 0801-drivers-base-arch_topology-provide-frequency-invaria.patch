@@ -1,8 +1,8 @@
-From 11d1598d7c197655820958ed84cc8b0b0f0b92e6 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Dietmar Eggemann <dietmar.eggemann@arm.com>
 Date: Tue, 26 Sep 2017 17:41:10 +0100
-Subject: [PATCH 0801/2278] drivers base/arch_topology: provide
- frequency-invariant accounting support
+Subject: [PATCH] drivers base/arch_topology: provide frequency-invariant
+ accounting support
 
 Implements the arch-specific (arm and arm64) frequency-invariance setter
 function arch_set_freq_scale() which provides the following frequency
@@ -77,5 +77,5 @@ index d4fcb0e..f53438c 100644
 +
  #endif /* _LINUX_ARCH_TOPOLOGY_H_ */
 -- 
-2.7.4
+https://clearlinux.org
 

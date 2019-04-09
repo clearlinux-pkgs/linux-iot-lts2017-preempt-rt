@@ -1,8 +1,7 @@
-From b30b61b4b0ac2fcc1a6ea785c07bb9a50db9e43f Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Guneshwor Singh <guneshwor.o.singh@intel.com>
 Date: Tue, 20 Jun 2017 18:04:34 +0530
-Subject: [PATCH 0756/2278] ASoC: hdac_hdmi: Add vendor id for Cannonlake HDMI
- codec
+Subject: [PATCH] ASoC: hdac_hdmi: Add vendor id for Cannonlake HDMI codec
 
 Cannonlake HDMI codec has the same nid as Geminilake. This adds the
 vendor id and the nid as the part of driver data and uses it.
@@ -27,5 +26,5 @@ index e824d47..cc464da 100644
  						   &intel_glk_drv_data),
  	{}
 -- 
-2.7.4
+https://clearlinux.org
 

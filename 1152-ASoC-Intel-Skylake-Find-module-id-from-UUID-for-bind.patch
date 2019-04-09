@@ -1,8 +1,8 @@
-From 7ff0e8a389d8c242752e8cb44069da3d15aa29c7 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Sriram Periyasamy <sriramx.periyasamy@intel.com>
 Date: Wed, 29 Nov 2017 15:05:56 +0530
-Subject: [PATCH 1152/2278] ASoC: Intel: Skylake: Find module id from UUID for
- bind params
+Subject: [PATCH] ASoC: Intel: Skylake: Find module id from UUID for bind
+ params
 
 Module id is a property of firmware manifest and can vary across
 platforms. So use the uuid to find module id dynamically for bind
@@ -14,8 +14,8 @@ Reviewed-by: Kale, Sanyog R <sanyog.r.kale@intel.com>
 Tested-by: Sm, Bhadur A <bhadur.a.sm@intel.com>
 ---
  sound/soc/intel/skylake/skl-pcm.c      |  2 +
- sound/soc/intel/skylake/skl-topology.c | 71 +++++++++++++++++++++++++++++++++-
- sound/soc/intel/skylake/skl-topology.h | 13 ++++++-
+ sound/soc/intel/skylake/skl-topology.c | 71 +++++++++++++++++++++++++-
+ sound/soc/intel/skylake/skl-topology.h | 13 ++++-
  3 files changed, 84 insertions(+), 2 deletions(-)
 
 diff --git a/sound/soc/intel/skylake/skl-pcm.c b/sound/soc/intel/skylake/skl-pcm.c
@@ -152,5 +152,5 @@ index f530e8d..9a13fdb 100644
 +				struct snd_soc_dapm_widget *w);
  #endif
 -- 
-2.7.4
+https://clearlinux.org
 

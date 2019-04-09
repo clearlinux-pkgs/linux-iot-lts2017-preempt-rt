@@ -1,8 +1,8 @@
-From 649984656c99716bbc7561b27cab68b2b9cfd9a6 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Panwar, Ashish" <ashish.panwar@intel.com>
 Date: Wed, 20 Jan 2016 19:19:21 +0530
-Subject: [PATCH 0631/2278] ASoC: Intel: Skylake: Handler for firmware log
- buffer status notification
+Subject: [PATCH] ASoC: Intel: Skylake: Handler for firmware log buffer status
+ notification
 
 We copy half of the firmware log buffer on this notification. We
 figure which half of trace buffer to copy based on the write pointer.
@@ -12,7 +12,7 @@ Signed-off-by: Panwar, Ashish <ashish.panwar@intel.com>
 Reviewed-by: Babu, Ramesh <ramesh.babu@intel.com>
 Tested-by: Babu, Ramesh <ramesh.babu@intel.com>
 ---
- sound/soc/intel/skylake/skl-sst-ipc.c | 35 ++++++++++++++++++++++++++++++++++-
+ sound/soc/intel/skylake/skl-sst-ipc.c | 35 ++++++++++++++++++++++++++-
  1 file changed, 34 insertions(+), 1 deletion(-)
 
 diff --git a/sound/soc/intel/skylake/skl-sst-ipc.c b/sound/soc/intel/skylake/skl-sst-ipc.c
@@ -85,5 +85,5 @@ index 5234faf..9864801 100644
  			dev_dbg(ipc->dev, "***** Phrase Detected **********\n");
  
 -- 
-2.7.4
+https://clearlinux.org
 

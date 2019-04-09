@@ -1,8 +1,7 @@
-From bff85df0797e9fd922f0dc637c27702623eb0606 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Puneeth Prabhu <puneethx.prabhu@intel.com>
 Date: Mon, 7 May 2018 17:22:32 +0530
-Subject: [PATCH 1523/2278] ASoC: Intel: Boards: Add machine driver for HU
- topology
+Subject: [PATCH] ASoC: Intel: Boards: Add machine driver for HU topology
 
 This patch adds I2S machine driver for IVI HU topology
 which uses dummy codec.
@@ -14,9 +13,9 @@ Reviewed-by: Kesapragada, Pardha Saradhi <pardha.saradhi.kesapragada@intel.com>
 Reviewed-by: Kale, Sanyog R <sanyog.r.kale@intel.com>
 Tested-by: Madiwalar, MadiwalappaX <madiwalappax.madiwalar@intel.com>
 ---
- sound/soc/intel/boards/Kconfig             |   9 ++
+ sound/soc/intel/boards/Kconfig             |   9 +
  sound/soc/intel/boards/Makefile            |   2 +
- sound/soc/intel/boards/bxtp_ivi_hu_rt298.c | 250 +++++++++++++++++++++++++++++
+ sound/soc/intel/boards/bxtp_ivi_hu_rt298.c | 250 +++++++++++++++++++++
  3 files changed, 261 insertions(+)
  create mode 100644 sound/soc/intel/boards/bxtp_ivi_hu_rt298.c
 
@@ -314,5 +313,5 @@ index 0000000..ce46772
 +MODULE_LICENSE("GPL v2");
 +MODULE_ALIAS("platform:bxt_ivi_hu_i2s");
 -- 
-2.7.4
+https://clearlinux.org
 

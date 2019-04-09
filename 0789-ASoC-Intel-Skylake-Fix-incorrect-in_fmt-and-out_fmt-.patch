@@ -1,8 +1,8 @@
-From e5181478ac1a5e2c6749fa0b5f7769070d2ecfee Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Pawse, GuruprasadX" <guruprasadx.pawse@intel.com>
 Date: Wed, 11 Oct 2017 10:41:43 +0530
-Subject: [PATCH 0789/2278] ASoC: Intel: Skylake: Fix incorrect in_fmt and
- out_fmt pointers in BRA playback pipeline
+Subject: [PATCH] ASoC: Intel: Skylake: Fix incorrect in_fmt and out_fmt
+ pointers in BRA playback pipeline
 
 Fix the in_fmt/out_fmt pointers for host copier of playback pipeline.
 
@@ -35,5 +35,5 @@ index 83230af..e053281 100644
  	/* Playback pipeline */
  	host_cpr_pipe = kzalloc(sizeof(struct skl_pipe), GFP_KERNEL);
 -- 
-2.7.4
+https://clearlinux.org
 

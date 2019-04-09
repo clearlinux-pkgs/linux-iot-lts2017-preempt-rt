@@ -1,14 +1,14 @@
-From f35649f34ae7060f84ceaef05c06a47cb18f1063 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Sanyog Kale <sanyog.r.kale@intel.com>
 Date: Sun, 2 Jul 2017 11:48:07 +0530
-Subject: [PATCH 0674/2278] ASoC: Intel: CNL: Platform driver implementation
- for SoundWire BRA feature
+Subject: [PATCH] ASoC: Intel: CNL: Platform driver implementation for
+ SoundWire BRA feature
 
 This patch adds APIs requied for Soundwire BRA feature.
 
 Signed-off-by: Sanyog Kale <sanyog.r.kale@intel.com>
 ---
- sound/soc/intel/skylake/skl-messages.c | 747 ++++++++++++++++++++++++++++++++-
+ sound/soc/intel/skylake/skl-messages.c | 747 ++++++++++++++++++++++++-
  sound/soc/intel/skylake/skl-sst-ipc.h  |  14 +
  2 files changed, 759 insertions(+), 2 deletions(-)
 
@@ -834,5 +834,5 @@ index a5470c7..645336e 100644
  
  struct skl_ipc_init_instance_msg {
 -- 
-2.7.4
+https://clearlinux.org
 

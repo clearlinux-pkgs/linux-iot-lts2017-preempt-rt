@@ -1,8 +1,8 @@
-From 93b5bb5ac2757b437b82a9675b5d2f48847f8c03 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Chris Wilson <chris@chris-wilson.co.uk>
 Date: Sat, 26 Aug 2017 14:56:20 +0100
-Subject: [PATCH 1015/2278] UPSTREAM: drm/i915: Don't use GPU relocations prior
- to cmdparser stalls
+Subject: [PATCH] UPSTREAM: drm/i915: Don't use GPU relocations prior to
+ cmdparser stalls
 
 If we are using the cmdparser, we will have to copy the batch and so
 stall for the relocations. Rather than prolong that stall by adding more
@@ -55,5 +55,5 @@ index 4cc9ce4..d3b005b 100644
  
  		vma = eb_parse(&eb, drm_is_current_master(file));
 -- 
-2.7.4
+https://clearlinux.org
 

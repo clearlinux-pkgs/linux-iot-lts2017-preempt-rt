@@ -1,14 +1,14 @@
-From a7f820e9828510e906f9009de76f280a6f875068 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Wed, 9 May 2018 17:14:11 +0100
-Subject: [PATCH 1615/2278] ASoC: SOF: Intel: Add HDA controller for Intel DSP
+Subject: [PATCH] ASoC: SOF: Intel: Add HDA controller for Intel DSP
 
 Support HDA controller operations for DSP and provide space for future
 DSP HDA FW integration.
 
 Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 ---
- sound/soc/sof/intel/hda-ctrl.c | 133 +++++++++++++++++++++++++++++++++++++++++
+ sound/soc/sof/intel/hda-ctrl.c | 133 +++++++++++++++++++++++++++++++++
  1 file changed, 133 insertions(+)
  create mode 100644 sound/soc/sof/intel/hda-ctrl.c
 
@@ -152,5 +152,5 @@ index 0000000..57b877b
 +}
 +
 -- 
-2.7.4
+https://clearlinux.org
 

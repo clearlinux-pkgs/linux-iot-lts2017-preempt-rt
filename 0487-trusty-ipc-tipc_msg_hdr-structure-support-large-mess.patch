@@ -1,8 +1,8 @@
-From 5d60ff7c44e36d944607458dff3fb90a3181c1b9 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Yan, Xiangyang" <xiangyangx.yan@intel.com>
 Date: Tue, 21 Mar 2017 13:31:33 +0800
-Subject: [PATCH 0487/2278] trusty-ipc:tipc_msg_hdr structure: support large
- message transfer
+Subject: [PATCH] trusty-ipc:tipc_msg_hdr structure: support large message
+ transfer
 
 len field type of tipc_msg_hdr structure is u16 which will only
  handle message length of less than 64K. Change it to u32 to support
@@ -31,5 +31,5 @@ index 363b023..44843eb 100644
  } __packed;
  
 -- 
-2.7.4
+https://clearlinux.org
 

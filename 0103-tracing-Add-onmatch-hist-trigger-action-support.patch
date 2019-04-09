@@ -1,7 +1,7 @@
-From 26ca584f8b82f5139dfc100bb36eeae23e23e4aa Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tom Zanussi <tom.zanussi@linux.intel.com>
 Date: Mon, 15 Jan 2018 20:52:00 -0600
-Subject: [PATCH 0103/2278] tracing: Add 'onmatch' hist trigger action support
+Subject: [PATCH] tracing: Add 'onmatch' hist trigger action support
 
 Add an 'onmatch(matching.event).<synthetic_event_name>(param list)'
 hist trigger action which is invoked with the set of variables or
@@ -47,7 +47,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
 (cherry picked from commit ea82307e63ec125d8612d8cedd2618669f674226)
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- kernel/trace/trace_events_hist.c | 488 +++++++++++++++++++++++++++++++++++++--
+ kernel/trace/trace_events_hist.c | 488 ++++++++++++++++++++++++++++++-
  1 file changed, 475 insertions(+), 13 deletions(-)
 
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
@@ -689,5 +689,5 @@ index 0cf7cc3..34be7af 100644
  		seq_printf(m, " if %s", data->filter_str);
  
 -- 
-2.7.4
+https://clearlinux.org
 

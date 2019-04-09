@@ -1,7 +1,7 @@
-From 52e6094ed1ed8eac538c8e33a89b2e13d983c41f Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: kgopala2 <karthik.l.gopalakrishnan@intel.com>
 Date: Mon, 28 May 2018 15:22:55 +0800
-Subject: [PATCH 1530/2278] media: ici: fix for mem-leak pointed out by KW
+Subject: [PATCH] media: ici: fix for mem-leak pointed out by KW
 
 Change-Id: I715e14aeb73be438a8c646ea614161e66630126c
 Signed-off-by: kgopala2 <karthik.l.gopalakrishnan@intel.com>
@@ -54,7 +54,7 @@ index 48bbf72..3e83707 100644
  
  int ici_isys_put_buf(struct ici_isys_stream *as,
 diff --git a/drivers/media/pci/intel/ici/ici-isys-stream.c b/drivers/media/pci/intel/ici/ici-isys-stream.c
-index 4fce584..c2af34d8 100644
+index 4fce584..c2af34d 100644
 --- a/drivers/media/pci/intel/ici/ici-isys-stream.c
 +++ b/drivers/media/pci/intel/ici/ici-isys-stream.c
 @@ -1410,9 +1410,7 @@ int ici_isys_stream_init(
@@ -69,5 +69,5 @@ index 4fce584..c2af34d8 100644
  	as->pad.flags = pad_flags | ICI_PAD_FLAGS_MUST_CONNECT;
  	snprintf(name, sizeof(name),
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,17 +1,17 @@
-From 267f2dfd842d23fb1ba6effd50ede64f116306d8 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Zhang, Qi" <qi1.zhang@intel.com>
 Date: Wed, 28 Jun 2017 06:26:15 +0000
-Subject: [PATCH 0493/2278] check vmm signature for vmm dump
+Subject: [PATCH] check vmm signature for vmm dump
 
 Change-Id: Ibc0e1ebf561b0b4278bb5f2d92d173685810aa22
 Signed-off-by: Zhang, Qi <qi1.zhang@intel.com>
 ---
  drivers/trusty/trusty-ipc.c    |  2 +-
  drivers/trusty/trusty-irq.c    |  2 +-
- drivers/trusty/trusty-log.c    | 55 ++++++++++++++++++++++--------------------
+ drivers/trusty/trusty-log.c    | 55 ++++++++++++++++++----------------
  drivers/trusty/trusty-virtio.c |  2 +-
  drivers/trusty/trusty.c        |  2 +-
- include/linux/trusty/trusty.h  | 14 +++++++----
+ include/linux/trusty/trusty.h  | 14 +++++----
  6 files changed, 42 insertions(+), 35 deletions(-)
 
 diff --git a/drivers/trusty/trusty-ipc.c b/drivers/trusty/trusty-ipc.c
@@ -28,7 +28,7 @@ index 68f677f..93003b4 100644
  		dev_err(&vdev->dev, "CPUID Error: Cannot find eVmm in trusty driver initialization!");
  		return -EINVAL;
 diff --git a/drivers/trusty/trusty-irq.c b/drivers/trusty/trusty-irq.c
-index afdea66c2..d17162c 100644
+index afdea66..d17162c 100644
 --- a/drivers/trusty/trusty-irq.c
 +++ b/drivers/trusty/trusty-irq.c
 @@ -587,7 +587,7 @@ static int trusty_irq_probe(struct platform_device *pdev)
@@ -178,5 +178,5 @@ index f7b0a14..aba204b 100644
  }
  
 -- 
-2.7.4
+https://clearlinux.org
 

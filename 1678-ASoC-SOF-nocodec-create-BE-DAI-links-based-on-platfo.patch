@@ -1,20 +1,20 @@
-From 7bd95c7648e4b8951734987059d8a44dc8ae1788 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Keyon Jie <yang.jie@linux.intel.com>
 Date: Fri, 22 Jun 2018 21:24:05 +0800
-Subject: [PATCH 1678/2278] ASoC: SOF: nocodec: create BE DAI links based on
- platform dai drivers
+Subject: [PATCH] ASoC: SOF: nocodec: create BE DAI links based on platform dai
+ drivers
 
 This patch create nocodec BE DAI links based on platform dai drivers,
 with it, we can support multiple SSP/BEs for nocodec mode.
 
 Signed-off-by: Keyon Jie <yang.jie@linux.intel.com>
 ---
- include/sound/sof.h          |  7 ++++-
+ include/sound/sof.h          |  7 +++-
  sound/soc/sof/Makefile       |  2 +-
- sound/soc/sof/nocodec.c      | 67 +++++++++++++++-----------------------------
+ sound/soc/sof/nocodec.c      | 67 ++++++++++++------------------------
  sound/soc/sof/sof-acpi-dev.c |  4 +--
  sound/soc/sof/sof-pci-dev.c  |  4 +--
- sound/soc/sof/utils.c        | 55 ++++++++++++++++++++++++++++++++++++
+ sound/soc/sof/utils.c        | 55 +++++++++++++++++++++++++++++
  6 files changed, 88 insertions(+), 51 deletions(-)
  create mode 100644 sound/soc/sof/utils.c
 
@@ -255,5 +255,5 @@ index 0000000..8f2116a
 +EXPORT_SYMBOL(sof_bes_setup);
 +
 -- 
-2.7.4
+https://clearlinux.org
 

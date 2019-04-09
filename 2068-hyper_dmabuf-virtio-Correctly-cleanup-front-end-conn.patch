@@ -1,8 +1,7 @@
-From f17d3ff26e201c2a2703b02d26dc86c01a60b4c3 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Mateusz Polrola <mateuszx.potrola@intel.com>
 Date: Tue, 21 Aug 2018 11:19:52 +0200
-Subject: [PATCH 2068/2278] hyper_dmabuf/virtio: Correctly cleanup front end
- connections
+Subject: [PATCH] hyper_dmabuf/virtio: Correctly cleanup front end connections
 
 Virtio frontends were not fully cleanup on release of VBS-K handle, this
 change adds helper function that allows to find virtio frontend that was
@@ -10,9 +9,9 @@ using particular VBS-K handle and clean it up.
 
 Signed-off-by: Mateusz Polrola <mateuszx.potrola@intel.com>
 ---
- .../virtio/hyper_dmabuf_virtio_be_drv.c            | 22 ++++++++++++++++++++++
- .../virtio/hyper_dmabuf_virtio_fe_list.c           | 14 ++++++++++++++
- .../virtio/hyper_dmabuf_virtio_fe_list.h           |  5 ++++-
+ .../virtio/hyper_dmabuf_virtio_be_drv.c       | 22 +++++++++++++++++++
+ .../virtio/hyper_dmabuf_virtio_fe_list.c      | 14 ++++++++++++
+ .../virtio/hyper_dmabuf_virtio_fe_list.h      |  5 ++++-
  3 files changed, 40 insertions(+), 1 deletion(-)
 
 diff --git a/drivers/dma-buf/hyper_dmabuf/virtio/hyper_dmabuf_virtio_be_drv.c b/drivers/dma-buf/hyper_dmabuf/virtio/hyper_dmabuf_virtio_be_drv.c
@@ -97,5 +96,5 @@ index bc7ef84..c353c1e 100644
 +
  #endif /* __HYPER_DMABUF_VIRTIO_FE_LIST_H__*/
 -- 
-2.7.4
+https://clearlinux.org
 

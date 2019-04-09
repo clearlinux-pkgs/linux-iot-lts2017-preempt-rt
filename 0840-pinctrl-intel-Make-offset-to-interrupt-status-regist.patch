@@ -1,8 +1,8 @@
-From 688edc6d16a02393b139f5063ecd736e3caf6b00 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Mika Westerberg <mika.westerberg@linux.intel.com>
 Date: Fri, 11 Aug 2017 16:52:24 +0300
-Subject: [PATCH 0840/2278] pinctrl: intel: Make offset to interrupt status
- register configurable
+Subject: [PATCH] pinctrl: intel: Make offset to interrupt status register
+ configurable
 
 Some GPIO blocks have the interrupt status (GPI_IS) offset different
 than it normally is, so make it configurable. If no offset is specified
@@ -123,5 +123,5 @@ index 7fdb077..13b0bd6 100644
  	unsigned pin_base;
  	unsigned gpp_size;
 -- 
-2.7.4
+https://clearlinux.org
 

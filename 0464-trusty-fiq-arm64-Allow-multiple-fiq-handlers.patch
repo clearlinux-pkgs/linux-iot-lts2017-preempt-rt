@@ -1,7 +1,7 @@
-From df7203e9ea5ea53edb74441611106f19100f6236 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Arve=20Hj=C3=B8nnev=C3=A5g?= <arve@android.com>
 Date: Fri, 2 May 2014 19:15:44 -0700
-Subject: [PATCH 0464/2278] trusty: fiq-arm64: Allow multiple fiq handlers.
+Subject: [PATCH] trusty: fiq-arm64: Allow multiple fiq handlers.
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -12,7 +12,7 @@ currently no api to remove handlers.
 Change-Id: I1d4bd936081d690ea6f1ec0c041f43a5f7717733
 Signed-off-by: Arve Hjønnevåg <arve@android.com>
 ---
- drivers/trusty/trusty-fiq-arm64.c | 76 +++++++++++++++++++++++++++------------
+ drivers/trusty/trusty-fiq-arm64.c | 76 ++++++++++++++++++++++---------
  1 file changed, 54 insertions(+), 22 deletions(-)
 
 diff --git a/drivers/trusty/trusty-fiq-arm64.c b/drivers/trusty/trusty-fiq-arm64.c
@@ -134,5 +134,5 @@ index df05a98..8b9a408 100644
  }
  
 -- 
-2.7.4
+https://clearlinux.org
 

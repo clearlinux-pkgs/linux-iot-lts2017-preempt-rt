@@ -1,7 +1,7 @@
-From 29d8caed4a8efd88833f48d4598ccd7bee0f811f Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ding Yunliang <yunliang.ding@intel.com>
 Date: Fri, 1 Jun 2018 17:05:01 +0800
-Subject: [PATCH 1942/2278] media: intel-ipu4: isys: make attribute packed work
+Subject: [PATCH] media: intel-ipu4: isys: make attribute packed work
 
 Message for Open Source:
 Fix clang build warning(like below):
@@ -54,5 +54,5 @@ index 34c202f..10836c3 100644
  #define to_ipu_isys_csi2(sd) container_of(to_ipu_isys_subdev(sd), \
  					struct ipu_isys_csi2, asd)
 -- 
-2.7.4
+https://clearlinux.org
 

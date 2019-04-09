@@ -1,8 +1,7 @@
-From 98a5fa632ad2096710e94399694f1272a2546605 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Anna-Maria Gleixner <anna-maria@linutronix.de>
 Date: Wed, 20 Dec 2017 17:13:04 +0100
-Subject: [PATCH 0029/2278] hrtimer: Make the remote enqueue check
- unconditional
+Subject: [PATCH] hrtimer: Make the remote enqueue check unconditional
 
 hrtimer_cpu_base.expires_next is used to cache the next event armed in the
 timer hardware. The value is used to check whether an hrtimer can be
@@ -100,10 +99,11 @@ index 85882d5..b1016aa 100644
  }
  
  static inline
-@@ -657,16 +652,6 @@ static void hrtimer_reprogram(struct hrtimer *timer,
+@@ -656,16 +651,6 @@ static void hrtimer_reprogram(struct hrtimer *timer,
+ 	tick_program_event(expires, 1);
  }
  
- /*
+-/*
 - * Initialize the high resolution related parts of cpu_base
 - */
 -static inline void hrtimer_init_hres(struct hrtimer_cpu_base *base)
@@ -113,10 +113,9 @@ index 85882d5..b1016aa 100644
 -	base->next_timer = NULL;
 -}
 -
--/*
+ /*
   * Retrigger next event is called after clock was set
   *
-  * Called with interrupts disabled via on_each_cpu()
 @@ -731,7 +716,6 @@ static inline int hrtimer_reprogram(struct hrtimer *timer,
  {
  	return 0;
@@ -141,5 +140,5 @@ index 85882d5..b1016aa 100644
  }
  
 -- 
-2.7.4
+https://clearlinux.org
 

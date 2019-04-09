@@ -1,8 +1,7 @@
-From 4dc15991aa00e2ca99bc5a44d58dca4637928430 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Oscar Mateo <oscar.mateo@intel.com>
 Date: Wed, 23 Aug 2017 12:56:31 -0700
-Subject: [PATCH 1013/2278] UPSTREAM: drm/i915/cnl:
- WaPushConstantDereferenceHoldDisable
+Subject: [PATCH] UPSTREAM: drm/i915/cnl: WaPushConstantDereferenceHoldDisable
 
 CS sometimes hangs on 3D Push Constant dispatches with the new
 deref enhancement logic in CNL.
@@ -48,5 +47,5 @@ index 01f38bd..a0a8d35 100644
  	ret= wa_ring_whitelist_reg(engine, GEN8_CS_CHICKEN1);
  	if (ret)
 -- 
-2.7.4
+https://clearlinux.org
 

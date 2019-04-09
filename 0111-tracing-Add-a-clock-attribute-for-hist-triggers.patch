@@ -1,7 +1,7 @@
-From ef4046a97480f7019d83347c40aa3ea2e6994f6e Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tom Zanussi <tom.zanussi@linux.intel.com>
 Date: Mon, 15 Jan 2018 20:52:08 -0600
-Subject: [PATCH 0111/2278] tracing: Add a clock attribute for hist triggers
+Subject: [PATCH] tracing: Add a clock attribute for hist triggers
 
 The default clock if timestamps are used in a histogram is "global".
 If timestamps aren't used, the clock is irrelevant.
@@ -17,8 +17,8 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
 (cherry picked from commit 77e7689e0b182465cfcd7c328061b70eecdcde31)
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- Documentation/trace/histogram.txt | 11 +++++++++-
- kernel/trace/trace_events_hist.c  | 42 ++++++++++++++++++++++++++++++++++++---
+ Documentation/trace/histogram.txt | 11 +++++++-
+ kernel/trace/trace_events_hist.c  | 42 ++++++++++++++++++++++++++++---
  2 files changed, 49 insertions(+), 4 deletions(-)
 
 diff --git a/Documentation/trace/histogram.txt b/Documentation/trace/histogram.txt
@@ -141,5 +141,5 @@ index 3856f17..e47b566 100644
  	return ret;
  }
 -- 
-2.7.4
+https://clearlinux.org
 

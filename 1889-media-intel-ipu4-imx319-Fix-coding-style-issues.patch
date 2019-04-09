@@ -1,7 +1,7 @@
-From 7b91c568035c61b8c633f258fac500772dd474ac Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tianshu Qiu <tian.shu.qiu@intel.com>
 Date: Mon, 14 May 2018 14:12:18 +0800
-Subject: [PATCH 1889/2278] media: intel-ipu4: imx319: Fix coding style issues
+Subject: [PATCH] media: intel-ipu4: imx319: Fix coding style issues
 
 Message for Open Source:
 Fix coding style issues.
@@ -14,7 +14,7 @@ Change-Id: I35f4c1225b91d12e5fead742f5a20916ca0717f2
 Signed-off-by: Tianshu Qiu <tian.shu.qiu@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- drivers/media/i2c/imx319.c | 2953 ++++++++++++++++++++++----------------------
+ drivers/media/i2c/imx319.c | 2953 ++++++++++++++++++------------------
  1 file changed, 1475 insertions(+), 1478 deletions(-)
 
 diff --git a/drivers/media/i2c/imx319.c b/drivers/media/i2c/imx319.c
@@ -3034,5 +3034,5 @@ index 9f57c4f..75a717b 100644
  
  MODULE_AUTHOR("Qiu, Tianshu <tian.shu.qiu@intel.com>");
 -- 
-2.7.4
+https://clearlinux.org
 

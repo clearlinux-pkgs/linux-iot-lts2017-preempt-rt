@@ -1,8 +1,8 @@
-From dd3d0b30dff169dc057a14550538d870aeaa29bf Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pankaj Bharadiya <pankaj.laxminarayan.bharadiya@intel.com>
 Date: Thu, 30 Nov 2017 20:18:11 +0530
-Subject: [PATCH 1339/2278] ASoC: Intel: Skylake: Ensure dai and dailink
- registration happens in sequence.
+Subject: [PATCH] ASoC: Intel: Skylake: Ensure dai and dailink registration
+ happens in sequence.
 
 Platform registration happens in probe work handler whereas machine
 device is registered during skl_probe. This sometimes results in cpu
@@ -73,5 +73,5 @@ index db94ae1..245b213 100644
  };
  
 -- 
-2.7.4
+https://clearlinux.org
 

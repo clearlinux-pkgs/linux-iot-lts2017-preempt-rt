@@ -1,8 +1,7 @@
-From d7cfd738046c706c247e00e7e8d63522f914d682 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Guneshwor Singh <guneshwor.o.singh@intel.com>
 Date: Wed, 23 Nov 2016 19:05:46 +0530
-Subject: [PATCH 1734/2278] ASoC: Intel: Boards: Add CNL RT274 I2S machine
- driver
+Subject: [PATCH] ASoC: Intel: Boards: Add CNL RT274 I2S machine driver
 
 Add the CNL I2S machine driver using Realtek ALC274 codec
 in I2S mode.
@@ -14,7 +13,7 @@ Reviewed-by: Kp, Jeeja <jeeja.kp@intel.com>
 Tested-by: Avati, Santosh Kumar <santosh.kumar.avati@intel.com>
 ---
  sound/soc/intel/boards/Kconfig     |  16 ++
- sound/soc/intel/boards/cnl_rt274.c | 385 +++++++++++++++++++++++++++++++++++++
+ sound/soc/intel/boards/cnl_rt274.c | 385 +++++++++++++++++++++++++++++
  2 files changed, 401 insertions(+)
  create mode 100644 sound/soc/intel/boards/cnl_rt274.c
 
@@ -435,5 +434,5 @@ index 0000000..1b788f8
 +MODULE_LICENSE("GPL v2");
 +MODULE_ALIAS("platform:cnl_rt274");
 -- 
-2.7.4
+https://clearlinux.org
 

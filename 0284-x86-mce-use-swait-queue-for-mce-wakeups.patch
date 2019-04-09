@@ -1,7 +1,7 @@
-From 16389993fb3e19f05284dbcabc687b0cf15d3ef4 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Steven Rostedt <rostedt@goodmis.org>
 Date: Fri, 27 Feb 2015 15:20:37 +0100
-Subject: [PATCH 0284/2278] x86/mce: use swait queue for mce wakeups
+Subject: [PATCH] x86/mce: use swait queue for mce wakeups
 
 We had a customer report a lockup on a 3.0-rt kernel that had the
 following backtrace:
@@ -56,7 +56,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 [wagi: use work-simple framework to defer work to a kthread]
 Signed-off-by: Daniel Wagner <daniel.wagner@bmw-carit.de>
 ---
- arch/x86/kernel/cpu/mcheck/dev-mcelog.c | 37 ++++++++++++++++++++++++++++++---
+ arch/x86/kernel/cpu/mcheck/dev-mcelog.c | 37 +++++++++++++++++++++++--
  1 file changed, 34 insertions(+), 3 deletions(-)
 
 diff --git a/arch/x86/kernel/cpu/mcheck/dev-mcelog.c b/arch/x86/kernel/cpu/mcheck/dev-mcelog.c
@@ -127,5 +127,5 @@ index 7f85b76..9e74b80 100644
  	return 0;
  }
 -- 
-2.7.4
+https://clearlinux.org
 

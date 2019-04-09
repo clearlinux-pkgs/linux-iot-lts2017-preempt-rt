@@ -1,8 +1,7 @@
-From dd312c1f5b02fc2300a79cdcf2eb6d85bd102efc Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Dietmar Eggemann <dietmar.eggemann@arm.com>
 Date: Tue, 26 Sep 2017 17:41:07 +0100
-Subject: [PATCH 0798/2278] cpufreq: provide default frequency-invariance
- setter function
+Subject: [PATCH] cpufreq: provide default frequency-invariance setter function
 
 Frequency-invariant accounting support based on the ratio of current
 frequency and maximum supported frequency is an optional feature an arch
@@ -59,5 +58,5 @@ index cbf85c4..065f3a8 100644
  extern struct freq_attr cpufreq_freq_attr_scaling_available_freqs;
  extern struct freq_attr cpufreq_freq_attr_scaling_boost_freqs;
 -- 
-2.7.4
+https://clearlinux.org
 

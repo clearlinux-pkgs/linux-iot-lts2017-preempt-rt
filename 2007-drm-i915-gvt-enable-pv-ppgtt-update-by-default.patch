@@ -1,7 +1,7 @@
-From 6b43b806dafd68739b3af5674431769b063ec163 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Zhipeng Gong <zhipeng.gong@intel.com>
 Date: Tue, 10 Jul 2018 15:29:22 +0800
-Subject: [PATCH 2007/2278] drm/i915/gvt: enable pv ppgtt update by default
+Subject: [PATCH] drm/i915/gvt: enable pv ppgtt update by default
 
 This patch enables pv ppgtt update by default.
 
@@ -28,5 +28,5 @@ index f94ff99..4a90963 100644
  	.enable_conformance_check = true,
  	.disable_gvt_fw_loading = true,
 -- 
-2.7.4
+https://clearlinux.org
 

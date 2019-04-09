@@ -1,8 +1,8 @@
-From 366b55f9daba08735abd4da7c280bf0eae58ddef Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Mousumi Jana <mousumix.jana@intel.com>
 Date: Tue, 12 Sep 2017 17:18:44 +0530
-Subject: [PATCH 0776/2278] ASoC: Intel: Set all I2S ports to slave mode after
- DSP power up in BXTP
+Subject: [PATCH] ASoC: Intel: Set all I2S ports to slave mode after DSP power
+ up in BXTP
 
 During DSP power up sequences, the I2S ports default to Master mode.
 This drives frame sync and bit clock high and may cause distortion
@@ -21,7 +21,7 @@ Reviewed-by: Koul, Vinod <vinod.koul@intel.com>
 Reviewed-by: audio_build <audio_build@intel.com>
 Tested-by: Sm, Bhadur A <bhadur.a.sm@intel.com>
 ---
- sound/soc/intel/skylake/bxt-sst.c | 45 +++++++++++++++++++++++++++++++++++++++
+ sound/soc/intel/skylake/bxt-sst.c | 45 +++++++++++++++++++++++++++++++
  1 file changed, 45 insertions(+)
 
 diff --git a/sound/soc/intel/skylake/bxt-sst.c b/sound/soc/intel/skylake/bxt-sst.c
@@ -102,5 +102,5 @@ index 355c645..d93cb5a 100644
  		 * Enable interrupt after SPA is set and before
  		 * DSP is unstalled
 -- 
-2.7.4
+https://clearlinux.org
 

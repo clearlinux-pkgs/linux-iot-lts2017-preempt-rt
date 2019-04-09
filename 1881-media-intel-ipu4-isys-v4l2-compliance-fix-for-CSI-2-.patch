@@ -1,8 +1,7 @@
-From 11ee3405fdafa56cfbb1273243be4866b376659c Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Yong Zhi <yong.zhi@intel.com>
 Date: Mon, 26 Feb 2018 15:34:06 -0600
-Subject: [PATCH 1881/2278] media: intel-ipu4: isys: v4l2-compliance fix for
- CSI-2 node
+Subject: [PATCH] media: intel-ipu4: isys: v4l2-compliance fix for CSI-2 node
 
 Message for Open Source:
 With this fix we pass v4l2-compliance on "Intel IPU4
@@ -67,5 +66,5 @@ index 0debbe3..c709e4a 100644
  	return pfmt;
  }
 -- 
-2.7.4
+https://clearlinux.org
 

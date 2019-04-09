@@ -1,7 +1,7 @@
-From df605f9d9a15cd5fa9c768498357b23cc7468d89 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Yin Fengwei <fengwei.yin@intel.com>
 Date: Fri, 29 Dec 2017 11:18:32 +0800
-Subject: [PATCH 0877/2278] vcpu: export vcpu create interface to DM
+Subject: [PATCH] vcpu: export vcpu create interface to DM
 
 Change-Id: I64a179c2452f67285f347bbaa60c702dec5f55de
 Signed-off-by: Yin Fengwei <fengwei.yin@intel.com>
@@ -84,5 +84,5 @@ index 087873d..670403b 100644
  /* IRQ and Interrupts */
  #define IC_ID_IRQ_BASE                 0x100UL
 -- 
-2.7.4
+https://clearlinux.org
 

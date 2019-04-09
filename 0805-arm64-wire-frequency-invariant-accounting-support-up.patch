@@ -1,8 +1,8 @@
-From dab6a782274199a94b348409408a5984eb8116df Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Dietmar Eggemann <dietmar.eggemann@arm.com>
 Date: Tue, 26 Sep 2017 17:41:14 +0100
-Subject: [PATCH 0805/2278] arm64: wire frequency-invariant accounting support
- up to the task scheduler
+Subject: [PATCH] arm64: wire frequency-invariant accounting support up to the
+ task scheduler
 
 Commit dfbca41f3479 ("sched: Optimize freq invariant accounting")
 changed the wiring which now has to be done by associating
@@ -41,5 +41,5 @@ index b320228..3f45f75 100644
  
  #endif /* _ASM_ARM_TOPOLOGY_H */
 -- 
-2.7.4
+https://clearlinux.org
 

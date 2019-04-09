@@ -1,8 +1,8 @@
-From 22f052cfaaedc92d74700b85069e68610278a64e Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Anna-Maria Gleixner <anna-maria@linutronix.de>
 Date: Wed, 20 Dec 2017 17:13:07 +0100
-Subject: [PATCH 0032/2278] hrtimer: Make hrtimer_force_reprogramm()
- unconditionally available
+Subject: [PATCH] hrtimer: Make hrtimer_force_reprogramm() unconditionally
+ available
 
 hrtimer_force_reprogram() needs to be available unconditionally for softirq
 based hrtimers. Move the function and all required struct members out of
@@ -20,7 +20,7 @@ eliminated in the CONFIG_HIGH_RES_TIMERS=n case by the compiler.
 Signed-off-by: Anna-Maria Gleixner <anna-maria@linutronix.de>
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- kernel/time/hrtimer.c | 58 +++++++++++++++++++++++++--------------------------
+ kernel/time/hrtimer.c | 58 +++++++++++++++++++++----------------------
  1 file changed, 28 insertions(+), 30 deletions(-)
 
 diff --git a/kernel/time/hrtimer.c b/kernel/time/hrtimer.c
@@ -107,5 +107,5 @@ index 37085a1..5fd669d 100644
  
  #endif /* CONFIG_HIGH_RES_TIMERS */
 -- 
-2.7.4
+https://clearlinux.org
 

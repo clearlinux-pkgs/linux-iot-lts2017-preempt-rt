@@ -1,7 +1,7 @@
-From 9a5ad6438cafd7a1b980ec0fc65c60ef67bcafd3 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Thomas Gleixner <tglx@linutronix.de>
 Date: Thu, 23 Nov 2017 16:39:17 +0100
-Subject: [PATCH 0050/2278] net/mvpp2: Replace tasklet with softirq hrtimer
+Subject: [PATCH] net/mvpp2: Replace tasklet with softirq hrtimer
 
 The tx_done_tasklet tasklet is used in invoke the hrtimer
 (mvpp2_hr_timer_cb) in softirq context. This can be also achieved without
@@ -14,7 +14,7 @@ Cc: netdev@vger.kernel.org
 Cc: "David S. Miller" <davem@davemloft.net>
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- drivers/net/ethernet/marvell/mvpp2.c | 62 +++++++++++++++---------------------
+ drivers/net/ethernet/marvell/mvpp2.c | 62 +++++++++++-----------------
  1 file changed, 25 insertions(+), 37 deletions(-)
 
 diff --git a/drivers/net/ethernet/marvell/mvpp2.c b/drivers/net/ethernet/marvell/mvpp2.c
@@ -134,5 +134,5 @@ index 00e6f1d..9c69ab2 100644
  	}
  
 -- 
-2.7.4
+https://clearlinux.org
 

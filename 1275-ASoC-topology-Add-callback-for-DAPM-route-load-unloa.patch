@@ -1,8 +1,7 @@
-From 413474523130c4f52ea2fe135197269b228081d7 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Mon, 8 Jan 2018 17:00:44 +0000
-Subject: [PATCH 1275/2278] ASoC: topology: Add callback for DAPM route
- load/unload
+Subject: [PATCH] ASoC: topology: Add callback for DAPM route load/unload
 
 Add a callback fro clients for notification about DAPM route loading and
 unloading.
@@ -70,5 +69,5 @@ index 21384fc..0a3bcb2 100644
  		snd_soc_dapm_add_routes(dapm, &route, 1);
  	}
 -- 
-2.7.4
+https://clearlinux.org
 

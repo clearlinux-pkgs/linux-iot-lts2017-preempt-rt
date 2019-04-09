@@ -1,8 +1,7 @@
-From 9f4faf014409f4e73218980ab18d2a9a783a4f67 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Jack Ren <jack.ren@intel.com>
 Date: Sun, 4 Mar 2018 21:11:34 +0800
-Subject: [PATCH 1143/2278] skip sbuf and vhm initialization when booting
- natively
+Subject: [PATCH] skip sbuf and vhm initialization when booting natively
 
 Change-Id: Ib5cd72c208f6e7cc905418671cd655054132806f
 Signed-off-by: Jack Ren <jack.ren@intel.com>
@@ -48,5 +47,5 @@ index 10550b0..c00f27e 100644
  
  	if (hcall_get_api_version(virt_to_phys(&api_version)) < 0) {
 -- 
-2.7.4
+https://clearlinux.org
 

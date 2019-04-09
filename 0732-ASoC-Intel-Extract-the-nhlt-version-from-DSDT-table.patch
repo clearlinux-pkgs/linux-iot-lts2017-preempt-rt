@@ -1,8 +1,7 @@
-From dc896bf2c716aa0fba31811e65ee6357d6c89862 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Leoni Prodduvaka <leoni.prodduvaka@intel.com>
 Date: Thu, 18 May 2017 21:56:06 +0530
-Subject: [PATCH 0732/2278] ASoC: Intel: Extract the "nhlt-version" from DSDT
- table
+Subject: [PATCH] ASoC: Intel: Extract the "nhlt-version" from DSDT table
 
 This patch extracts the "nhlt-version" from the DSDT table present at
 /sys/firmware/acpi/tables/DSDT.
@@ -51,7 +50,7 @@ index 55859c5..48eb5e2 100644
  {
  	acpi_handle handle;
 diff --git a/sound/soc/intel/skylake/skl-nhlt.h b/sound/soc/intel/skylake/skl-nhlt.h
-index fc17da50..62550a7 100644
+index fc17da5..62550a7 100644
 --- a/sound/soc/intel/skylake/skl-nhlt.h
 +++ b/sound/soc/intel/skylake/skl-nhlt.h
 @@ -59,6 +59,12 @@ enum nhlt_device_type {
@@ -100,5 +99,5 @@ index 235952c..b6cb5c5 100644
  void skl_nhlt_free(struct nhlt_acpi_table *addr);
  struct nhlt_specific_cfg *skl_get_ep_blob(struct skl *skl, u32 instance,
 -- 
-2.7.4
+https://clearlinux.org
 

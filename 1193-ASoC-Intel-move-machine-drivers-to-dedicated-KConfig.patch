@@ -1,8 +1,7 @@
-From 2cdf98004ba6d3bf85495ae6b31495362cb697a2 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Thu, 12 Oct 2017 18:49:43 -0500
-Subject: [PATCH 1193/2278] ASoC: Intel: move machine drivers to dedicated
- KConfig
+Subject: [PATCH] ASoC: Intel: move machine drivers to dedicated KConfig
 
 split Kconfig to prepare for reuse of machine drivers for
 SOF support
@@ -13,8 +12,8 @@ Acked-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Signed-off-by: Mark Brown <broonie@kernel.org>
 (cherry picked from commit ea2851bd82f8a319741a90a847b615c66fd6693b)
 ---
- sound/soc/intel/Kconfig        | 343 +----------------------------------------
- sound/soc/intel/boards/Kconfig | 341 ++++++++++++++++++++++++++++++++++++++++
+ sound/soc/intel/Kconfig        | 343 +--------------------------------
+ sound/soc/intel/boards/Kconfig | 341 ++++++++++++++++++++++++++++++++
  2 files changed, 343 insertions(+), 341 deletions(-)
  create mode 100644 sound/soc/intel/boards/Kconfig
 
@@ -728,5 +727,5 @@ index 0000000..d341cb9
 +	  Say Y to enable SoundWire aggregation on Master1 and Master2.
 +
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,7 +1,7 @@
-From 6e93b854a7946e3d17848315e6ea127fa84b1202 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tomas Winkler <tomas.winkler@intel.com>
 Date: Sun, 28 Feb 2016 10:36:13 +0200
-Subject: [PATCH 0546/2278] char: rpmb: add RPMB simulation device
+Subject: [PATCH] char: rpmb: add RPMB simulation device
 
 The RPMB partition simulation device is a virtual device that
 provides simulation of the RPMB protocol and use kernel memory
@@ -48,7 +48,7 @@ Signed-off-by: Alexander Usyskin <alexander.usyskin@intel.com>
 ---
  drivers/char/rpmb/Kconfig    |  16 +
  drivers/char/rpmb/Makefile   |   1 +
- drivers/char/rpmb/rpmb_sim.c | 753 +++++++++++++++++++++++++++++++++++++++++++
+ drivers/char/rpmb/rpmb_sim.c | 753 +++++++++++++++++++++++++++++++++++
  3 files changed, 770 insertions(+)
  create mode 100644 drivers/char/rpmb/rpmb_sim.c
 
@@ -847,5 +847,5 @@ index 0000000..bf0681d
 +MODULE_LICENSE("Dual BSD/GPL");
 +MODULE_ALIAS("rpmb_sim:rpmb_sim");
 -- 
-2.7.4
+https://clearlinux.org
 

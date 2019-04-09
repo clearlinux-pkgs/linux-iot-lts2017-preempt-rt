@@ -1,8 +1,7 @@
-From 99e09f455001c514ada1c66fa21ebb256061cb9f Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Bob Paauwe <bob.j.paauwe@intel.com>
 Date: Fri, 22 Apr 2016 16:43:18 -0700
-Subject: [PATCH 1349/2278] INTERNAL [IOTG] drm/i915: Introduce initial mode
- setting
+Subject: [PATCH] INTERNAL [IOTG] drm/i915: Introduce initial mode setting
 
 For very specific use cases it may be desirable to have the kernel
 driver do an initial mode set and/or splash screen type display without
@@ -33,7 +32,7 @@ Change-Id: I261902f14be9aabd060ae164f055e881fecf17ff
  drivers/gpu/drm/i915/i915_params.c           |   5 +
  drivers/gpu/drm/i915/i915_params.h           |   3 +-
  drivers/gpu/drm/i915/intel_drv.h             |   4 +
- drivers/gpu/drm/i915/intel_initial_modeset.c | 487 +++++++++++++++++++++++++++
+ drivers/gpu/drm/i915/intel_initial_modeset.c | 487 +++++++++++++++++++
  7 files changed, 519 insertions(+), 6 deletions(-)
  create mode 100644 drivers/gpu/drm/i915/intel_initial_modeset.c
 
@@ -660,5 +659,5 @@ index 0000000..4883ba2
 +	initial_mode_destroy(dev);
 +}
 -- 
-2.7.4
+https://clearlinux.org
 

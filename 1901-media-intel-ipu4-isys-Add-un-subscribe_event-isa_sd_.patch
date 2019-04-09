@@ -1,7 +1,7 @@
-From 6b43856ce42d16cb46f0f039e38d61f3e739044d Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Yong Zhi <yong.zhi@intel.com>
 Date: Mon, 9 Apr 2018 15:46:25 -0500
-Subject: [PATCH 1901/2278] media: intel-ipu4: isys: Add (un)subscribe_event
+Subject: [PATCH] media: intel-ipu4: isys: Add (un)subscribe_event
  isa_sd_core_ops
 
 Message for Open Source:
@@ -30,7 +30,7 @@ Signed-off-by: Meng Wei <wei.meng@intel.com>
  1 file changed, 5 insertions(+), 1 deletion(-)
 
 diff --git a/drivers/media/pci/intel/ipu4/ipu4-isys-isa.c b/drivers/media/pci/intel/ipu4/ipu4-isys-isa.c
-index a873996d..2270ee04 100644
+index a873996..2270ee0 100644
 --- a/drivers/media/pci/intel/ipu4/ipu4-isys-isa.c
 +++ b/drivers/media/pci/intel/ipu4/ipu4-isys-isa.c
 @@ -8,6 +8,7 @@
@@ -61,5 +61,5 @@ index a873996d..2270ee04 100644
  		goto fail;
  
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,8 @@
-From 305359b89556b7b6eb194b426dad127c9614e3e2 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tom Zanussi <tom.zanussi@linux.intel.com>
 Date: Mon, 15 Jan 2018 20:51:54 -0600
-Subject: [PATCH 0097/2278] tracing: Pass tracing_map_elt to hist_field
- accessor functions
+Subject: [PATCH] tracing: Pass tracing_map_elt to hist_field accessor
+ functions
 
 Some accessor functions, such as for variable references, require
 access to a corrsponding tracing_map_elt.
@@ -17,7 +17,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
 (cherry picked from commit 8405bbbbc9dc0d88ffc92848cb8f0bda2c7a1b30)
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- kernel/trace/trace_events_hist.c | 91 +++++++++++++++++++++++++---------------
+ kernel/trace/trace_events_hist.c | 91 ++++++++++++++++++++------------
  1 file changed, 57 insertions(+), 34 deletions(-)
 
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
@@ -227,5 +227,5 @@ index 893f65c..becf37b 100644
  				key = (void *)(unsigned long)field_contents;
  				use_compound_key = true;
 -- 
-2.7.4
+https://clearlinux.org
 

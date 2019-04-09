@@ -1,8 +1,7 @@
-From a35ea09b59648ffd49eb8a80e528328d55890e06 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Yong Zhi <yong.zhi@intel.com>
 Date: Fri, 13 Apr 2018 15:27:18 -0500
-Subject: [PATCH 1885/2278] media: intel-ipu4: bus: Use updated
- init_iova_domain() API
+Subject: [PATCH] media: intel-ipu4: bus: Use updated init_iova_domain() API
 
 Message for Open Source:
 init_iova_domain() function parameters has changed in kernel 4.15, so
@@ -42,5 +41,5 @@ index 336f3a3..53908e3 100644
  	kref_init(&dmap->ref);
  
 -- 
-2.7.4
+https://clearlinux.org
 

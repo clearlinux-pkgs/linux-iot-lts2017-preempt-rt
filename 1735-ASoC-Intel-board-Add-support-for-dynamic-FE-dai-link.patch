@@ -1,8 +1,8 @@
-From a2bc212a498b324719c5ec4ef7ee483f03f37465 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Guneshwor Singh <guneshwor.o.singh@intel.com>
 Date: Mon, 27 Feb 2017 09:09:37 +0530
-Subject: [PATCH 1735/2278] ASoC: Intel: board: Add support for dynamic FE dai
- link in cnl_rt274 machine
+Subject: [PATCH] ASoC: Intel: board: Add support for dynamic FE dai link in
+ cnl_rt274 machine
 
 FE dai links now come from topology, so remove them from machine driver.
 Additionally register ops to initialize dai link. Rate constraint is
@@ -18,7 +18,7 @@ Reviewed-by: Nc, Shreyas <shreyas.nc@intel.com>
 Reviewed-by: Diwakar, Praveen <praveen.diwakar@intel.com>
 Tested-by: Sm, Bhadur A <bhadur.a.sm@intel.com>
 ---
- sound/soc/intel/boards/cnl_rt274.c | 73 ++++++--------------------------------
+ sound/soc/intel/boards/cnl_rt274.c | 73 ++++--------------------------
  1 file changed, 10 insertions(+), 63 deletions(-)
 
 diff --git a/sound/soc/intel/boards/cnl_rt274.c b/sound/soc/intel/boards/cnl_rt274.c
@@ -127,5 +127,5 @@ index 1b788f8..436a11d 100644
  
  static int snd_cnl_rt274_mc_probe(struct platform_device *pdev)
 -- 
-2.7.4
+https://clearlinux.org
 

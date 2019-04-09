@@ -1,8 +1,7 @@
-From b0e7df7f4541b2aef3d07f5dc12929f93717ba5a Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Rander Wang <rander.wang@linux.intel.com>
 Date: Tue, 3 Jul 2018 13:53:50 +0800
-Subject: [PATCH 1778/2278] ASoC: SOF: process SOF_IPC_DSP_REPLY case in
- cmd_done on CNL
+Subject: [PATCH] ASoC: SOF: process SOF_IPC_DSP_REPLY case in cmd_done on CNL
 
 Set DONE bit in cmd_done function if direction is DSP_REPLY
 rather than doing it in IRQ function. But if a msg is not
@@ -10,7 +9,7 @@ in the rx list, it can only be done at IRQ function
 
 Signed-off-by: Rander Wang <rander.wang@linux.intel.com>
 ---
- sound/soc/sof/intel/cnl.c | 51 +++++++++++++++++++++++++++++++----------------
+ sound/soc/sof/intel/cnl.c | 51 ++++++++++++++++++++++++++-------------
  1 file changed, 34 insertions(+), 17 deletions(-)
 
 diff --git a/sound/soc/sof/intel/cnl.c b/sound/soc/sof/intel/cnl.c
@@ -101,5 +100,5 @@ index b7b7de9..f2c6169 100644
  
  	return 0;
 -- 
-2.7.4
+https://clearlinux.org
 

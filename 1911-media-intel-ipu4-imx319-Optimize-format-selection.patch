@@ -1,8 +1,7 @@
-From 884112cd68562f060df5122979680068623b7b12 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tianshu Qiu <tian.shu.qiu@intel.com>
 Date: Wed, 16 May 2018 11:16:35 +0800
-Subject: [PATCH 1911/2278] media: intel-ipu4: imx319: Optimize format
- selection
+Subject: [PATCH] media: intel-ipu4: imx319: Optimize format selection
 
 Message for Open Source:
 Optimize format selection.
@@ -18,7 +17,7 @@ Change-Id: I1094856b9d304257e35bec99989d780f8d78f2af
 Signed-off-by: Tianshu Qiu <tian.shu.qiu@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- drivers/media/i2c/imx319.c | 47 +++++++---------------------------------------
+ drivers/media/i2c/imx319.c | 47 ++++++--------------------------------
  1 file changed, 7 insertions(+), 40 deletions(-)
 
 diff --git a/drivers/media/i2c/imx319.c b/drivers/media/i2c/imx319.c
@@ -96,5 +95,5 @@ index 05740d4..2d15e19 100644
  	if (fmt->which == V4L2_SUBDEV_FORMAT_TRY) {
  		framefmt = v4l2_subdev_get_try_format(sd, cfg, fmt->pad);
 -- 
-2.7.4
+https://clearlinux.org
 

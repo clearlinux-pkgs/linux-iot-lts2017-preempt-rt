@@ -1,8 +1,7 @@
-From 701dcf39dfb59fe457b9d356debcfca36b1bf71d Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Mateusz Polrola <mateuszx.potrola@intel.com>
 Date: Fri, 22 Jun 2018 15:23:50 +0200
-Subject: [PATCH 1556/2278] intel-ipu4: Fixed compilation error without
- DEBUG_FS
+Subject: [PATCH] intel-ipu4: Fixed compilation error without DEBUG_FS
 
 ipu_buttress_tsc_ticks_to_ns is currently guarded with ifdef for
 CONFIG_DEBUG_FS, but it has not dependencies to it and is used also by
@@ -59,5 +58,5 @@ index 0f128f3..19c64f1 100644
  static int ipu_buttress_tsc_get(void *data, u64 *val)
  {
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,8 @@
-From 77c98fe84d1374294855c03d43ed530f25a6f89f Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Shuo Liu <shuo.a.liu@intel.com>
 Date: Thu, 12 Jul 2018 10:48:57 +0800
-Subject: [PATCH 1860/2278] vhm: mark pending ioreqs in bitmap then dispatch it
- to vhm client
+Subject: [PATCH] vhm: mark pending ioreqs in bitmap then dispatch it to vhm
+ client
 
 Currently, we are passing the req_count to vhm client which is useless.
 Clients need get the ioreq shared buffer and the vcpu number of this VM,
@@ -15,12 +15,12 @@ Signed-off-by: Shuo Liu <shuo.a.liu@intel.com>
 Reviewed-by: Zhao Yakui <yakui.zhao@intel.com>
 Reviewed-by: Jason Chen CJ <jason.cj.chen@intel.com>
 ---
- .../hyper_dmabuf/virtio/hyper_dmabuf_virtio_be_drv.c     | 16 ++++++++--------
- drivers/vbs/vbs.c                                        | 16 ++++++++--------
- drivers/vbs/vbs_rng.c                                    |  8 ++++----
- drivers/vhm/vhm_ioreq.c                                  | 10 +++++-----
- include/linux/vbs/vbs.h                                  |  6 +++---
- include/linux/vhm/acrn_vhm_ioreq.h                       |  2 +-
+ .../virtio/hyper_dmabuf_virtio_be_drv.c          | 16 ++++++++--------
+ drivers/vbs/vbs.c                                | 16 ++++++++--------
+ drivers/vbs/vbs_rng.c                            |  8 ++++----
+ drivers/vhm/vhm_ioreq.c                          | 10 +++++-----
+ include/linux/vbs/vbs.h                          |  6 +++---
+ include/linux/vhm/acrn_vhm_ioreq.h               |  2 +-
  6 files changed, 29 insertions(+), 29 deletions(-)
 
 diff --git a/drivers/dma-buf/hyper_dmabuf/virtio/hyper_dmabuf_virtio_be_drv.c b/drivers/dma-buf/hyper_dmabuf/virtio/hyper_dmabuf_virtio_be_drv.c
@@ -237,5 +237,5 @@ index fbf69b3..52b3ac8 100644
  /**
   * acrn_ioreq_create_client - create ioreq client
 -- 
-2.7.4
+https://clearlinux.org
 

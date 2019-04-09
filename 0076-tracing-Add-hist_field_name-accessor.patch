@@ -1,7 +1,7 @@
-From 649e9e65dd4e69b61e6923d1f62ffe0bedf6324b Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tom Zanussi <tom.zanussi@linux.intel.com>
 Date: Fri, 22 Sep 2017 14:58:22 -0500
-Subject: [PATCH 0076/2278] tracing: Add hist_field_name() accessor
+Subject: [PATCH] tracing: Add hist_field_name() accessor
 
 In preparation for hist_fields that won't be strictly based on
 trace_event_fields, add a new hist_field_name() accessor to allow that
@@ -14,7 +14,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
 (cherry picked from commit 85013256cf01629f72a327674c5d007b4a4b40da)
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- kernel/trace/trace_events_hist.c | 67 +++++++++++++++++++++++++++-------------
+ kernel/trace/trace_events_hist.c | 67 +++++++++++++++++++++-----------
  1 file changed, 45 insertions(+), 22 deletions(-)
 
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
@@ -180,5 +180,5 @@ index 4f6b640..4dc39e3 100644
  		const char *flags_str = get_hist_field_flags(hist_field);
  
 -- 
-2.7.4
+https://clearlinux.org
 

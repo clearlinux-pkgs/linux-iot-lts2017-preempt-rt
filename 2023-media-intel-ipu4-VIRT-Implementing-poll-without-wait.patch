@@ -1,8 +1,8 @@
-From d82f04df503a1244062f87d762f3ef6effb38291 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ong Hock Yu <ong.hock.yu@intel.com>
 Date: Sat, 4 Aug 2018 12:35:58 +0800
-Subject: [PATCH 2023/2278] media: intel-ipu4: [VIRT] Implementing poll without
- wait at BE.
+Subject: [PATCH] media: intel-ipu4: [VIRT] Implementing poll without wait at
+ BE.
 
 No wait at BE for frame data to be ready. The FE to BE
 transaction remain open until frame data is ready.
@@ -10,12 +10,12 @@ transaction remain open until frame data is ready.
 Change-Id: Ic128053f723102394a7ccf5c2ea724192721af7f
 Signed-off-by: Ong Hock Yu <ong.hock.yu@intel.com>
 ---
- drivers/media/pci/intel/ici/ici-isys-frame-buf.c   |   4 +
- drivers/media/pci/intel/ici/ici-isys-stream.h      |   1 +
- .../pci/intel/virtio/intel-ipu4-virtio-be-bridge.c |  16 +--
- .../pci/intel/virtio/intel-ipu4-virtio-be-stream.c | 123 ++++++++-------------
- .../media/pci/intel/virtio/intel-ipu4-virtio-be.c  |  22 +++-
- .../media/pci/intel/virtio/intel-ipu4-virtio-be.h  |  11 ++
+ .../media/pci/intel/ici/ici-isys-frame-buf.c  |   4 +
+ drivers/media/pci/intel/ici/ici-isys-stream.h |   1 +
+ .../virtio/intel-ipu4-virtio-be-bridge.c      |  16 +--
+ .../virtio/intel-ipu4-virtio-be-stream.c      | 123 +++++++-----------
+ .../pci/intel/virtio/intel-ipu4-virtio-be.c   |  22 +++-
+ .../pci/intel/virtio/intel-ipu4-virtio-be.h   |  11 ++
  6 files changed, 87 insertions(+), 90 deletions(-)
  create mode 100644 drivers/media/pci/intel/virtio/intel-ipu4-virtio-be.h
 
@@ -54,7 +54,7 @@ index 457b123..77d89ed 100644
  
  #define to_intel_ipu4_isys_ici_stream(__buf_list) \
 diff --git a/drivers/media/pci/intel/virtio/intel-ipu4-virtio-be-bridge.c b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-be-bridge.c
-index 8540d66616..f51473a 100644
+index 8540d66..f51473a 100644
 --- a/drivers/media/pci/intel/virtio/intel-ipu4-virtio-be-bridge.c
 +++ b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-be-bridge.c
 @@ -35,12 +35,8 @@ int intel_ipu4_virtio_msg_parse(int domid, struct ipu4_virtio_req *req)
@@ -464,5 +464,5 @@ index 0000000..3fb8710
 +#endif
 \ No newline at end of file
 -- 
-2.7.4
+https://clearlinux.org
 

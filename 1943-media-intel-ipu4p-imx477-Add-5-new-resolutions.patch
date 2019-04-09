@@ -1,7 +1,7 @@
-From dc90a4a444452f93d13cc09ef09104f96a42ffe4 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Leo Zhao <leo.zhao@intel.com>
 Date: Thu, 31 May 2018 16:09:35 +0800
-Subject: [PATCH 1943/2278] media: intel-ipu4p: imx477: Add 5 new resolutions
+Subject: [PATCH] media: intel-ipu4p: imx477: Add 5 new resolutions
 
 Message for Open Source:
 Add 5 new resolutions in supported modes.
@@ -14,12 +14,12 @@ Change-Id: Iab3b5a7bfe8b60946964a74fdb2ba7a6e82e0110
 Signed-off-by: Leo Zhao <leo.zhao@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- .../media/i2c/crlmodule/crl_imx477_common_regs.h   | 127 +++++-
- .../crlmodule/crl_imx477_master_configuration.h    | 481 +++++++++++++++++++++
+ .../i2c/crlmodule/crl_imx477_common_regs.h    | 127 ++++-
+ .../crl_imx477_master_configuration.h         | 481 ++++++++++++++++++
  2 files changed, 607 insertions(+), 1 deletion(-)
 
 diff --git a/drivers/media/i2c/crlmodule/crl_imx477_common_regs.h b/drivers/media/i2c/crlmodule/crl_imx477_common_regs.h
-index a17a623..d83873a2 100644
+index a17a623..d83873a 100644
 --- a/drivers/media/i2c/crlmodule/crl_imx477_common_regs.h
 +++ b/drivers/media/i2c/crlmodule/crl_imx477_common_regs.h
 @@ -10,7 +10,7 @@
@@ -663,5 +663,5 @@ index 742819a..16efa95 100644
  
  static struct crl_flip_data imx477_flip_configurations_master[] = {
 -- 
-2.7.4
+https://clearlinux.org
 

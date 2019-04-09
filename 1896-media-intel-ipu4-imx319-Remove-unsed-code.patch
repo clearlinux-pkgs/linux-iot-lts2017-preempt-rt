@@ -1,7 +1,7 @@
-From 9da80a54ec1ae95c1234281ff01bdc84ddb4a260 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tianshu Qiu <tian.shu.qiu@intel.com>
 Date: Tue, 15 May 2018 14:44:02 +0800
-Subject: [PATCH 1896/2278] media: intel-ipu4: imx319: Remove unsed code
+Subject: [PATCH] media: intel-ipu4: imx319: Remove unsed code
 
 Message for Open Source:
 Remove unused code
@@ -14,7 +14,7 @@ Change-Id: Ie9e0b59a097df72480cf9bb77ff1b49a3d105ade
 Signed-off-by: Tianshu Qiu <tian.shu.qiu@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- drivers/media/i2c/imx319.c | 68 ++++++++++------------------------------------
+ drivers/media/i2c/imx319.c | 68 ++++++++------------------------------
  1 file changed, 14 insertions(+), 54 deletions(-)
 
 diff --git a/drivers/media/i2c/imx319.c b/drivers/media/i2c/imx319.c
@@ -199,5 +199,5 @@ index 2a35325..4cb81de 100644
  	.probe = imx319_probe,
  	.remove = imx319_remove,
 -- 
-2.7.4
+https://clearlinux.org
 

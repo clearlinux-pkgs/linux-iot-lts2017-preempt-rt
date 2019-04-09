@@ -1,7 +1,7 @@
-From 562ca6c08c78a183eac42ce8f75c81088ecb2aa4 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Alexander Usyskin <alexander.usyskin@intel.com>
 Date: Mon, 9 Feb 2015 17:13:20 +0200
-Subject: [PATCH 1724/2278] mei: spd: connect to the rpmb subsystem
+Subject: [PATCH] mei: spd: connect to the rpmb subsystem
 
 Connect SPD to RPMB subsystem and implement RPMB storage commands.
 
@@ -13,10 +13,10 @@ Signed-off-by: Tomas Winkler <tomas.winkler@intel.com>
 ---
  drivers/misc/mei/spd/Kconfig  |   2 +-
  drivers/misc/mei/spd/Makefile |   1 +
- drivers/misc/mei/spd/cmd.c    |  67 +++++++++++++-
+ drivers/misc/mei/spd/cmd.c    |  67 +++++++++++-
  drivers/misc/mei/spd/main.c   |   2 +
- drivers/misc/mei/spd/rpmb.c   | 199 ++++++++++++++++++++++++++++++++++++++++++
- drivers/misc/mei/spd/spd.h    |  11 +++
+ drivers/misc/mei/spd/rpmb.c   | 199 ++++++++++++++++++++++++++++++++++
+ drivers/misc/mei/spd/spd.h    |  11 ++
  6 files changed, 278 insertions(+), 4 deletions(-)
  create mode 100644 drivers/misc/mei/spd/rpmb.c
 
@@ -422,5 +422,5 @@ index cd30d0e..b919a5c 100644
  int mei_spd_dbgfs_register(struct mei_spd *spd, const char *name);
  void mei_spd_dbgfs_deregister(struct mei_spd *spd);
 -- 
-2.7.4
+https://clearlinux.org
 

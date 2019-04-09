@@ -1,8 +1,8 @@
-From f17809d1266ab3a569feba5997fa6e54ea2bcca9 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: RuiX Wang <ruix.wang@intel.com>
 Date: Thu, 24 May 2018 03:19:14 +0100
-Subject: [PATCH 1919/2278] Revert "media:intel-ipu4:isys:v4l2-compliance fix
- for ISA subdev"
+Subject: [PATCH] Revert "media:intel-ipu4:isys:v4l2-compliance fix for ISA
+ subdev"
 
 This reverts commit 78a2bc51c2b0248b9054efbda4e26ea0d804fab4.
 
@@ -28,5 +28,5 @@ index 11ed206..3bc6510 100644
  		return;
  	case ISA_PAD_SOURCE_SCALED: {
 -- 
-2.7.4
+https://clearlinux.org
 

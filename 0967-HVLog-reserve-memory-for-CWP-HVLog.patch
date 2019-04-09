@@ -1,14 +1,14 @@
-From d346fa3599c85f005c7f0d6fcb9722c95827ea55 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Li, Fei1" <fei1.li@intel.com>
 Date: Tue, 23 Jan 2018 00:47:29 +0800
-Subject: [PATCH 0967/2278] HVLog: reserve memory for CWP HVLog
+Subject: [PATCH] HVLog: reserve memory for CWP HVLog
 
 Change-Id: Ic87c83510d1405c791ce9c47872b960f801d45c2
 Signed-off-by: Li, Fei1 <fei1.li@intel.com>
 ---
- drivers/cwp/Kconfig     |  7 +++++
+ drivers/cwp/Kconfig     |  7 ++++
  drivers/cwp/Makefile    |  3 +-
- drivers/cwp/cwp_hvlog.c | 83 +++++++++++++++++++++++++++++++++++++++++++++++++
+ drivers/cwp/cwp_hvlog.c | 83 +++++++++++++++++++++++++++++++++++++++++
  3 files changed, 92 insertions(+), 1 deletion(-)
  create mode 100644 drivers/cwp/cwp_hvlog.c
 
@@ -28,7 +28,7 @@ index 938b264..091b3a1 100644
 +		This is the Trace driver for the Intel CWP hypervisor log.
 +		You can say y to build it into the kernel.
 diff --git a/drivers/cwp/Makefile b/drivers/cwp/Makefile
-index 34c9bf9..2e5fe43c 100644
+index 34c9bf9..2e5fe43 100644
 --- a/drivers/cwp/Makefile
 +++ b/drivers/cwp/Makefile
 @@ -1,2 +1,3 @@
@@ -127,5 +127,5 @@ index 0000000..e977a14
 +}
 +early_param("hvlog", early_hvlog);
 -- 
-2.7.4
+https://clearlinux.org
 

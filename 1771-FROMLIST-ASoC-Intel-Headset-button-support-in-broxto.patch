@@ -1,8 +1,8 @@
-From 5b2ab0139e4110fb47554f054b40c26570d21dfa Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Naveen Manohar <naveen.m@intel.com>
 Date: Tue, 3 Apr 2018 11:35:20 +0530
-Subject: [PATCH 1771/2278] FROMLIST: ASoC: Intel: Headset button support in
- broxton machine driver
+Subject: [PATCH] FROMLIST: ASoC: Intel: Headset button support in broxton
+ machine driver
 
 Patch adds headset button support for broxton machine driver
 (bxt_da7219_max98357a).
@@ -59,5 +59,5 @@ index 49fb1ca..6d14b48 100644
  	snd_soc_dapm_ignore_suspend(&rtd->card->dapm, "SoC DMIC");
  
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,8 @@
-From 795ed98063ab811adfd3bd12413178dd60455d8d Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: liyong4x <yongx.a.li@intel.com>
 Date: Tue, 12 Jun 2018 21:13:29 -0400
-Subject: [PATCH 1963/2278] media: intel-ipu4: ar0231at:HDR mode compatible
- with linear mode
+Subject: [PATCH] media: intel-ipu4: ar0231at:HDR mode compatible with linear
+ mode
 
 Message for Open Source:
 Ar0231at supports Linear exposure mode, 2-HDR mode, 3-HDR mode and
@@ -27,7 +27,7 @@ Change-Id: I1ebbbf0fa78923d96e95a442b7824e22ce17891d
 Signed-off-by: liyong4x <yongx.a.li@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- .../i2c/crlmodule/crl_ar0231at_configuration.h     | 1124 +++++++++++++++++++-
+ .../crlmodule/crl_ar0231at_configuration.h    | 1124 ++++++++++++++++-
  1 file changed, 1104 insertions(+), 20 deletions(-)
 
 diff --git a/drivers/media/i2c/crlmodule/crl_ar0231at_configuration.h b/drivers/media/i2c/crlmodule/crl_ar0231at_configuration.h
@@ -1206,5 +1206,5 @@ index 96626fc..3b35854 100644
  		.regs_items = ARRAY_SIZE(ar0231at_exposure_mode_regs),
  		.regs = ar0231at_exposure_mode_regs,
 -- 
-2.7.4
+https://clearlinux.org
 

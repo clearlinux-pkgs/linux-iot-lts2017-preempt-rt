@@ -1,7 +1,7 @@
-From ef7050abaec8c82e212d7cf49d10cc214cc890cc Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tomas Winkler <tomas.winkler@intel.com>
 Date: Thu, 16 Jul 2015 12:29:50 +0300
-Subject: [PATCH 0545/2278] char: rpmb: provide a user space interface
+Subject: [PATCH] char: rpmb: provide a user space interface
 
 The user space API is achieved via two synchronous IOCTLs.
 Simplified one, RPMB_IOC_REQ_CMD, were read result cycles is performed
@@ -31,11 +31,11 @@ Tested-by: Avri Altman <avri.altman@sandisk.com>
  MAINTAINERS                          |   1 +
  drivers/char/rpmb/Kconfig            |   7 +
  drivers/char/rpmb/Makefile           |   1 +
- drivers/char/rpmb/cdev.c             | 330 +++++++++++++++++++++++++++++++++++
+ drivers/char/rpmb/cdev.c             | 330 +++++++++++++++++++++++++++
  drivers/char/rpmb/core.c             |   9 +-
- drivers/char/rpmb/rpmb-cdev.h        |  25 +++
- include/linux/rpmb.h                 |  81 +--------
- include/uapi/linux/rpmb.h            | 153 ++++++++++++++++
+ drivers/char/rpmb/rpmb-cdev.h        |  25 ++
+ include/linux/rpmb.h                 |  81 +------
+ include/uapi/linux/rpmb.h            | 153 +++++++++++++
  9 files changed, 534 insertions(+), 74 deletions(-)
  create mode 100644 drivers/char/rpmb/cdev.c
  create mode 100644 drivers/char/rpmb/rpmb-cdev.h
@@ -477,7 +477,7 @@ index 7c0ceed..1667139 100644
  }
 diff --git a/drivers/char/rpmb/rpmb-cdev.h b/drivers/char/rpmb/rpmb-cdev.h
 new file mode 100644
-index 0000000..5fb41e586
+index 0000000..5fb41e5
 --- /dev/null
 +++ b/drivers/char/rpmb/rpmb-cdev.h
 @@ -0,0 +1,25 @@
@@ -510,7 +510,7 @@ diff --git a/include/linux/rpmb.h b/include/linux/rpmb.h
 index 8acc0c0..8f2c290 100644
 --- a/include/linux/rpmb.h
 +++ b/include/linux/rpmb.h
-@@ -15,79 +15,11 @@
+@@ -15,78 +15,10 @@
  
  #include <linux/types.h>
  #include <linux/device.h>
@@ -518,7 +518,7 @@ index 8acc0c0..8f2c290 100644
 +#include <uapi/linux/rpmb.h>
  #include <linux/kref.h>
  
- /**
+-/**
 - * struct rpmb_frame - rpmb frame as defined by specs
 - *
 - * @stuff        : stuff bytes
@@ -588,10 +588,9 @@ index 8acc0c0..8f2c290 100644
 -	RPMB_ERR_COUNTER_EXPIRED = 0x0080
 -};
 -
--/**
+ /**
   * enum rpmb_type - type of underlaying storage technology
   *
-  * @RPMB_TYPE_ANY   : any type used for search only
 @@ -106,9 +38,6 @@ enum rpmb_type {
  
  extern struct class rpmb_class;
@@ -781,5 +780,5 @@ index 0000000..6fbdbc9
 +
 +#endif /* _UAPI_LINUX_RPMB_H_ */
 -- 
-2.7.4
+https://clearlinux.org
 

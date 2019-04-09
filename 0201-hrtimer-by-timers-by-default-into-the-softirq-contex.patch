@@ -1,8 +1,7 @@
-From 1b5fe8f44fda3fa7270da57928ac4aea038a5126 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 Date: Fri, 3 Jul 2009 08:44:31 -0500
-Subject: [PATCH 0201/2278] hrtimer: by timers by default into the softirq
- context
+Subject: [PATCH] hrtimer: by timers by default into the softirq context
 
 We can't have hrtimers callbacks running in hardirq context on RT. Therefore
 the timers are deferred to the softirq context by default.
@@ -15,12 +14,12 @@ Those are:
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
  arch/x86/kvm/lapic.c                 |  2 +-
- include/linux/hrtimer.h              |  6 ++++++
+ include/linux/hrtimer.h              |  6 +++++
  kernel/events/core.c                 |  4 ++--
  kernel/sched/core.c                  |  2 +-
  kernel/sched/deadline.c              |  2 +-
  kernel/sched/rt.c                    |  4 ++--
- kernel/time/hrtimer.c                | 34 ++++++++++++++++++++++++++++++++--
+ kernel/time/hrtimer.c                | 34 ++++++++++++++++++++++++++--
  kernel/time/tick-broadcast-hrtimer.c |  2 +-
  kernel/time/tick-sched.c             |  2 +-
  kernel/watchdog.c                    |  2 +-
@@ -233,5 +232,5 @@ index 087994b..ea4c091 100644
  	hrtimer_start(hrtimer, ns_to_ktime(sample_period),
  		      HRTIMER_MODE_REL_PINNED);
 -- 
-2.7.4
+https://clearlinux.org
 

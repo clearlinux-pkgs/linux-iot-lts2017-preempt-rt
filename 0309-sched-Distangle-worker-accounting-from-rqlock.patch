@@ -1,7 +1,7 @@
-From 1dc7195bb3172f62cefb4256019263cf97034e57 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Thomas Gleixner <tglx@linutronix.de>
 Date: Wed, 22 Jun 2011 19:47:03 +0200
-Subject: [PATCH 0309/2278] sched: Distangle worker accounting from rqlock
+Subject: [PATCH] sched: Distangle worker accounting from rqlock
 
 The worker accounting for cpu bound workers is plugged into the core
 scheduler code and the wakeup code. This is not a hard requirement and
@@ -24,9 +24,9 @@ Cc: Linus Torvalds <torvalds@linux-foundation.org>
 Link: http://lkml.kernel.org/r/20110622174919.135236139@linutronix.de
 Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
 ---
- kernel/sched/core.c         | 84 ++++++++-------------------------------------
- kernel/workqueue.c          | 52 +++++++++++++---------------
- kernel/workqueue_internal.h |  5 +--
+ kernel/sched/core.c         | 84 +++++++------------------------------
+ kernel/workqueue.c          | 52 ++++++++++-------------
+ kernel/workqueue_internal.h |  5 ++-
  3 files changed, 41 insertions(+), 100 deletions(-)
 
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
@@ -44,10 +44,11 @@ index 44c22ff..c304127 100644
  }
  
  /*
-@@ -2177,56 +2173,6 @@ try_to_wake_up(struct task_struct *p, unsigned int state, int wake_flags)
+@@ -2176,56 +2172,6 @@ try_to_wake_up(struct task_struct *p, unsigned int state, int wake_flags)
+ 	return success;
  }
  
- /**
+-/**
 - * try_to_wake_up_local - try to wake up a local task with rq lock held
 - * @p: the thread to be awakened
 - * @rf: request-queue flags for pinning
@@ -97,10 +98,9 @@ index 44c22ff..c304127 100644
 -	raw_spin_unlock(&p->pi_lock);
 -}
 -
--/**
+ /**
   * wake_up_process - Wake up a specific process
   * @p: The process to be woken up.
-  *
 @@ -3427,21 +3373,6 @@ static void __sched notrace __schedule(bool preempt)
  				atomic_inc(&rq->nr_iowait);
  				delayacct_blkio_start();
@@ -277,5 +277,5 @@ index d390d1b..2dbcfe9 100644
  
  #endif /* _KERNEL_WORKQUEUE_INTERNAL_H */
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,8 @@
-From eb4ff7102acd77ee8b31c98abc9a8a33fada32d9 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Markus Elfring <elfring@users.sourceforge.net>
 Date: Thu, 23 Nov 2017 17:56:54 +0100
-Subject: [PATCH 1222/2278] ASoC: da7213: Delete an error message for a failed
- memory allocation in da7213_fw_to_pdata()
+Subject: [PATCH] ASoC: da7213: Delete an error message for a failed memory
+ allocation in da7213_fw_to_pdata()
 
 Omit an extra message for a memory allocation failure in this function.
 
@@ -33,5 +33,5 @@ index 41d9b1d..d1b77a0 100644
  	if (device_property_read_u32(dev, "dlg,micbias1-lvl", &fw_val32) >= 0)
  		pdata->micbias1_lvl = da7213_of_micbias_lvl(codec, fw_val32);
 -- 
-2.7.4
+https://clearlinux.org
 

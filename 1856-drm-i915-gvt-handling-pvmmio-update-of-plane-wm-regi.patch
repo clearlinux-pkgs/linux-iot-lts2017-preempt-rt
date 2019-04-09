@@ -1,8 +1,8 @@
-From 5623d7b00e2ce963b63b7320a13e3fda4f44c02a Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Fei Jiang <fei.jiang@intel.com>
 Date: Tue, 24 Jul 2018 13:11:17 +0800
-Subject: [PATCH 1856/2278] drm/i915/gvt: handling pvmmio update of plane wm
- registers in GVT-g
+Subject: [PATCH] drm/i915/gvt: handling pvmmio update of plane wm registers in
+ GVT-g
 
 When pvmmio level PVMMIO_PLANE_WM_UPDATE is enabled, need handle multiple
 plane wm related registers updating when PLANE_NV12_BUF_CFG writing is
@@ -69,5 +69,5 @@ index eb6d63d..8a25568 100644
  
  	MMIO_F(0x80000, 0x3000, 0, 0, 0, D_BXT, NULL, NULL);
 -- 
-2.7.4
+https://clearlinux.org
 

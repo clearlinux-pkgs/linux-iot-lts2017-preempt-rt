@@ -1,7 +1,7 @@
-From 8b9fbbaa05b13a3db2d06c4ebb1c1f4ad5686d4d Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tianshu Qiu <tian.shu.qiu@intel.com>
 Date: Wed, 30 May 2018 11:10:47 +0800
-Subject: [PATCH 1932/2278] media: intel-ipu4p: imx355: Correct link frequency
+Subject: [PATCH] media: intel-ipu4p: imx355: Correct link frequency
 
 Message for Open Source:
 The MIPI link frequency for all supported modes
@@ -32,5 +32,5 @@ index b0b5c82..9bdd65a 100644
  
  /* Mode configs */
 -- 
-2.7.4
+https://clearlinux.org
 

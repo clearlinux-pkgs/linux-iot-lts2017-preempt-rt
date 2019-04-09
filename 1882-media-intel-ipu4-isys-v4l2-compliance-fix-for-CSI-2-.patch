@@ -1,8 +1,7 @@
-From 9c14c42c6a7e8e661695756c212db1936eb23cbb Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Yong Zhi <yong.zhi@intel.com>
 Date: Tue, 27 Feb 2018 10:44:14 -0600
-Subject: [PATCH 1882/2278] media: intel-ipu4: isys: v4l2-compliance fix for
- CSI-2 node
+Subject: [PATCH] media: intel-ipu4: isys: v4l2-compliance fix for CSI-2 node
 
 Message for Open Source:
 Fix v4l2-compliance fails on "Intel IPU4 CSI-2 2 capture" node.
@@ -54,5 +53,5 @@ index c709e4a..a3af92c 100644
  
  static int vidioc_g_fmt_vid_cap(struct file *file, void *fh,
 -- 
-2.7.4
+https://clearlinux.org
 

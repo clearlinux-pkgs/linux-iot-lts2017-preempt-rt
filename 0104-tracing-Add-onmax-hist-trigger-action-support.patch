@@ -1,7 +1,7 @@
-From 1c1f48c56d2d5e7492935bebd05b47dd43f8984a Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tom Zanussi <tom.zanussi@linux.intel.com>
 Date: Mon, 15 Jan 2018 20:52:01 -0600
-Subject: [PATCH 0104/2278] tracing: Add 'onmax' hist trigger action support
+Subject: [PATCH] tracing: Add 'onmax' hist trigger action support
 
 Add an 'onmax(var).save(field,...)' hist trigger action which is
 invoked whenever an event exceeds the current maximum.
@@ -59,7 +59,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
 (cherry picked from commit 4e30c922f0a19496ff424edd5c473666e1690601)
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- kernel/trace/trace_events_hist.c | 331 ++++++++++++++++++++++++++++++++++-----
+ kernel/trace/trace_events_hist.c | 331 +++++++++++++++++++++++++++----
  1 file changed, 296 insertions(+), 35 deletions(-)
 
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
@@ -488,5 +488,5 @@ index 34be7af..0803b84 100644
  }
  
 -- 
-2.7.4
+https://clearlinux.org
 

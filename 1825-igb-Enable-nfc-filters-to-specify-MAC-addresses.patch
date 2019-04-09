@@ -1,7 +1,7 @@
-From 45106d663191d8d85ead1e6df1c4fac2cc68003c Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Vinicius Costa Gomes <vinicius.gomes@intel.com>
 Date: Tue, 10 Apr 2018 10:49:56 -0700
-Subject: [PATCH 1825/2278] igb: Enable nfc filters to specify MAC addresses
+Subject: [PATCH] igb: Enable nfc filters to specify MAC addresses
 
 This allows igb_add_filter()/igb_erase_filter() to work on filters
 that include MAC addresses (both source and destination).
@@ -14,8 +14,8 @@ Signed-off-by: Vinicius Costa Gomes <vinicius.gomes@intel.com>
 Tested-by: Aaron Brown <aaron.f.brown@intel.com>
 Signed-off-by: Jeff Kirsher <jeffrey.t.kirsher@intel.com>
 ---
- drivers/net/ethernet/intel/igb/igb.h         |  4 ++++
- drivers/net/ethernet/intel/igb/igb_ethtool.c | 28 ++++++++++++++++++++++++++++
+ drivers/net/ethernet/intel/igb/igb.h         |  4 +++
+ drivers/net/ethernet/intel/igb/igb_ethtool.c | 28 ++++++++++++++++++++
  2 files changed, 32 insertions(+)
 
 diff --git a/drivers/net/ethernet/intel/igb/igb.h b/drivers/net/ethernet/intel/igb/igb.h
@@ -87,5 +87,5 @@ index b818481..e1e3ccf 100644
  }
  
 -- 
-2.7.4
+https://clearlinux.org
 

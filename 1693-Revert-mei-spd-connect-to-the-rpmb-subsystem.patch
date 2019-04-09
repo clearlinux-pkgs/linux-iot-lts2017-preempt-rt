@@ -1,7 +1,7 @@
-From 9d836c10576434faca6a0c014ee76de1269e79cd Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tomas Winkler <tomas.winkler@intel.com>
 Date: Thu, 31 May 2018 22:55:53 +0300
-Subject: [PATCH 1693/2278] Revert "mei: spd: connect to the rpmb subsystem"
+Subject: [PATCH] Revert "mei: spd: connect to the rpmb subsystem"
 
 This reverts commit 131ea7c031fd8c361b7a2d9423286c18700232cb.
 
@@ -9,10 +9,10 @@ Change-Id: I160a0b025c6102014ae486b49d122184385e1685
 ---
  drivers/misc/mei/spd/Kconfig  |   2 +-
  drivers/misc/mei/spd/Makefile |   1 -
- drivers/misc/mei/spd/cmd.c    |  67 +---------------
+ drivers/misc/mei/spd/cmd.c    |  67 +------------
  drivers/misc/mei/spd/main.c   |   2 -
- drivers/misc/mei/spd/rpmb.c   | 183 ------------------------------------------
- drivers/misc/mei/spd/spd.h    |  11 ---
+ drivers/misc/mei/spd/rpmb.c   | 183 ----------------------------------
+ drivers/misc/mei/spd/spd.h    |  11 --
  6 files changed, 4 insertions(+), 262 deletions(-)
  delete mode 100644 drivers/misc/mei/spd/rpmb.c
 
@@ -402,5 +402,5 @@ index 85e8220..61c9ac5 100644
  int mei_spd_dbgfs_register(struct mei_spd *spd, const char *name);
  void mei_spd_dbgfs_deregister(struct mei_spd *spd);
 -- 
-2.7.4
+https://clearlinux.org
 

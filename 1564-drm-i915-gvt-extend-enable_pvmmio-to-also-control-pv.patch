@@ -1,8 +1,8 @@
-From 9de42091122f9c3b94e38075320fcbc9ab712c8b Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Fei Jiang <fei.jiang@intel.com>
 Date: Wed, 27 Jun 2018 16:23:40 +0800
-Subject: [PATCH 1564/2278] drm/i915/gvt: extend enable_pvmmio to also control
- pvmmio levels
+Subject: [PATCH] drm/i915/gvt: extend enable_pvmmio to also control pvmmio
+ levels
 
 To further optimize GVT-g performance, we need enable pvmmio in more
 places, and pvmmio need change code both in SOS and UOS, while these
@@ -20,7 +20,7 @@ Reviewed-by: Min He <min.he@intel.com>
  4 files changed, 16 insertions(+), 6 deletions(-)
 
 diff --git a/drivers/gpu/drm/i915/i915_params.c b/drivers/gpu/drm/i915/i915_params.c
-index 4180a34..040e32ae 100644
+index 4180a34..040e32a 100644
 --- a/drivers/gpu/drm/i915/i915_params.c
 +++ b/drivers/gpu/drm/i915/i915_params.c
 @@ -242,9 +242,9 @@ i915_param_named(enable_dpcd_backlight, bool, 0600,
@@ -67,7 +67,7 @@ index 7aa934c..28d22bf 100644
  	u64 magic;		/* VGT_MAGIC */
  	u16 version_major;
 diff --git a/drivers/gpu/drm/i915/intel_lrc.c b/drivers/gpu/drm/i915/intel_lrc.c
-index e10bc362..6db84a7 100644
+index e10bc36..6db84a7 100644
 --- a/drivers/gpu/drm/i915/intel_lrc.c
 +++ b/drivers/gpu/drm/i915/intel_lrc.c
 @@ -479,7 +479,8 @@ static void execlists_submit_ports(struct intel_engine_cs *engine)
@@ -101,5 +101,5 @@ index e10bc362..6db84a7 100644
  
  		spin_lock(&engine->i915->shared_page_lock);
 -- 
-2.7.4
+https://clearlinux.org
 

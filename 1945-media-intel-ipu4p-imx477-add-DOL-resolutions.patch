@@ -1,7 +1,7 @@
-From 134912cb36e9cec2997d9fae11d34858f32d103e Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Yu Xia <yu.y.xia@intel.com>
 Date: Thu, 31 May 2018 17:52:40 +0800
-Subject: [PATCH 1945/2278] media: intel-ipu4p: imx477: add DOL resolutions
+Subject: [PATCH] media: intel-ipu4p: imx477: add DOL resolutions
 
 Message for Open Source:
 Add 4056x2288 resolutions for DOL2/DOL3
@@ -15,12 +15,12 @@ Change-Id: I144c890a423afe362511b11272de2a5d110585da
 Signed-off-by: Yu Xia <yu.y.xia@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- .../media/i2c/crlmodule/crl_imx477_common_regs.h   |   2 +-
- .../crlmodule/crl_imx477_master_configuration.h    | 203 +++++++++++++++++++++
+ .../i2c/crlmodule/crl_imx477_common_regs.h    |   2 +-
+ .../crl_imx477_master_configuration.h         | 203 ++++++++++++++++++
  2 files changed, 204 insertions(+), 1 deletion(-)
 
 diff --git a/drivers/media/i2c/crlmodule/crl_imx477_common_regs.h b/drivers/media/i2c/crlmodule/crl_imx477_common_regs.h
-index d83873a2..ecf20b9 100644
+index d83873a..ecf20b9 100644
 --- a/drivers/media/i2c/crlmodule/crl_imx477_common_regs.h
 +++ b/drivers/media/i2c/crlmodule/crl_imx477_common_regs.h
 @@ -10,7 +10,7 @@
@@ -254,5 +254,5 @@ index 16efa95..f28343c 100644
  
  static struct crl_flip_data imx477_flip_configurations_master[] = {
 -- 
-2.7.4
+https://clearlinux.org
 

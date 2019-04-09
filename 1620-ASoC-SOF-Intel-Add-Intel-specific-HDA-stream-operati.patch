@@ -1,14 +1,13 @@
-From 6dd0cb4ca1be31b85fd07c71cb9b8c4096823a61 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Wed, 9 May 2018 17:14:16 +0100
-Subject: [PATCH 1620/2278] ASoC: SOF: Intel: Add Intel specific HDA stream
- operations
+Subject: [PATCH] ASoC: SOF: Intel: Add Intel specific HDA stream operations
 
 Add support or HDA DSP stream operations for Intel HDA DSPs.
 
 Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 ---
- sound/soc/sof/intel/hda-stream.c | 656 +++++++++++++++++++++++++++++++++++++++
+ sound/soc/sof/intel/hda-stream.c | 656 +++++++++++++++++++++++++++++++
  1 file changed, 656 insertions(+)
  create mode 100644 sound/soc/sof/intel/hda-stream.c
 
@@ -675,5 +674,5 @@ index 0000000..a9e81a5
 +}
 +
 -- 
-2.7.4
+https://clearlinux.org
 

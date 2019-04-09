@@ -1,7 +1,7 @@
-From d914cb398cdec403d037e16a388657179cf86e49 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tomas Winkler <tomas.winkler@intel.com>
 Date: Thu, 31 May 2018 23:24:59 +0300
-Subject: [PATCH 1703/2278] Revert "rpmb: enable emmc specific read data fixup"
+Subject: [PATCH] Revert "rpmb: enable emmc specific read data fixup"
 
 This reverts commit cfd0540bbd22d725183494b3ca27f9bd72fbcf25.
 
@@ -14,10 +14,11 @@ diff --git a/drivers/char/rpmb/core.c b/drivers/char/rpmb/core.c
 index 1bdb5e6..3603729 100644
 --- a/drivers/char/rpmb/core.c
 +++ b/drivers/char/rpmb/core.c
-@@ -117,35 +117,6 @@ static int rpmb_request_verify(struct rpmb_dev *rdev, struct rpmb_data *rpmbd)
+@@ -116,35 +116,6 @@ static int rpmb_request_verify(struct rpmb_dev *rdev, struct rpmb_data *rpmbd)
+ 	return 0;
  }
  
- /**
+-/**
 - * rpmb_cmd_fixup - fixup rpmb command
 - *
 - * @rdev: rpmb device
@@ -46,10 +47,9 @@ index 1bdb5e6..3603729 100644
 -		}
 -}
 -
--/**
+ /**
   * rpmb_cmd_seq - send RPMB command sequence
   *
-  * @rdev: rpmb device
 @@ -165,11 +136,10 @@ int rpmb_cmd_seq(struct rpmb_dev *rdev, struct rpmb_cmd *cmds, u32 ncmds)
  		return -EINVAL;
  
@@ -66,5 +66,5 @@ index 1bdb5e6..3603729 100644
  	return err;
  }
 -- 
-2.7.4
+https://clearlinux.org
 

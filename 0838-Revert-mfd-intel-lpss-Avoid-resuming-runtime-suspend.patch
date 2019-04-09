@@ -1,8 +1,8 @@
-From 47d57f95e0866414fee047659b26fc72ad7f6c0a Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Jarkko Nikula <jarkko.nikula@linux.intel.com>
 Date: Fri, 9 Jun 2017 14:45:43 +0300
-Subject: [PATCH 0838/2278] Revert "mfd: intel-lpss: Avoid resuming
- runtime-suspended lpss unnecessarily"
+Subject: [PATCH] Revert "mfd: intel-lpss: Avoid resuming runtime-suspended
+ lpss unnecessarily"
 
 This reverts commit d4688de00e18f1286122957e5f868c3091156bc3.
 
@@ -26,10 +26,11 @@ diff --git a/drivers/mfd/intel-lpss.c b/drivers/mfd/intel-lpss.c
 index 52e6962..40e8d9b 100644
 --- a/drivers/mfd/intel-lpss.c
 +++ b/drivers/mfd/intel-lpss.c
-@@ -485,15 +485,6 @@ static int resume_lpss_device(struct device *dev, void *data)
+@@ -484,15 +484,6 @@ static int resume_lpss_device(struct device *dev, void *data)
+ 
  int intel_lpss_prepare(struct device *dev)
  {
- 	/*
+-	/*
 -	 * This is safe because:
 -	 * 1. The runtime suspend and system suspend
 -	 * are of the same hook.
@@ -38,12 +39,11 @@ index 52e6962..40e8d9b 100644
 -	 */
 -	if (pm_runtime_status_suspended(dev))
 -		return DPM_DIRECT_COMPLETE;
--	/*
+ 	/*
  	 * Resume both child devices before entering system sleep. This
  	 * ensures that they are in proper state before they get suspended.
- 	 */
 diff --git a/include/linux/pm.h b/include/linux/pm.h
-index cdfc82af..a0ceecc 100644
+index cdfc82a..a0ceecc 100644
 --- a/include/linux/pm.h
 +++ b/include/linux/pm.h
 @@ -788,11 +788,4 @@ enum dpm_order {
@@ -59,5 +59,5 @@ index cdfc82af..a0ceecc 100644
 -
  #endif /* _LINUX_PM_H */
 -- 
-2.7.4
+https://clearlinux.org
 

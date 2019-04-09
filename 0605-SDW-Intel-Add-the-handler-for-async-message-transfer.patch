@@ -1,8 +1,7 @@
-From a2fa415e965e2afdcb10c72452bec052051052d4 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Hardik Shah <hardik.t.shah@intel.com>
 Date: Fri, 29 Apr 2016 16:30:53 +0530
-Subject: [PATCH 0605/2278] SDW: Intel: Add the handler for async message
- transfer.
+Subject: [PATCH] SDW: Intel: Add the handler for async message transfer.
 
 Async message transfer is used by the bus driver
 in case stream is split between two masters. Else
@@ -11,7 +10,7 @@ synchronous message transfer is always used.
 Change-Id: I7fda7fd954f41941ab054cdc0c41de1e9ceca24a
 Signed-off-by: Hardik Shah <hardik.t.shah@intel.com>
 ---
- drivers/sdw/sdw_cnl.c | 148 +++++++++++++++++++++++++++++++++++++-------------
+ drivers/sdw/sdw_cnl.c | 148 +++++++++++++++++++++++++++++++-----------
  1 file changed, 109 insertions(+), 39 deletions(-)
 
 diff --git a/drivers/sdw/sdw_cnl.c b/drivers/sdw/sdw_cnl.c
@@ -243,5 +242,5 @@ index 4ce9a7d..f249308 100644
  	.xfer_bulk = cnl_sdw_xfer_bulk,
  	.monitor_handover = cnl_sdw_mon_handover,
 -- 
-2.7.4
+https://clearlinux.org
 

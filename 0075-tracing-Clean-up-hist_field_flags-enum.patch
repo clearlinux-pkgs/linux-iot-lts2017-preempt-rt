@@ -1,7 +1,7 @@
-From 26c18f0a02b4a18c62e9ec2924873c9fd175b7ee Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tom Zanussi <tom.zanussi@linux.intel.com>
 Date: Fri, 22 Sep 2017 14:58:21 -0500
-Subject: [PATCH 0075/2278] tracing: Clean up hist_field_flags enum
+Subject: [PATCH] tracing: Clean up hist_field_flags enum
 
 As we add more flags, specifying explicit integers for the flag values
 becomes more unwieldy and error-prone - switch them over to left-shift
@@ -49,5 +49,5 @@ index 7eb975a..4f6b640 100644
  
  struct hist_trigger_attrs {
 -- 
-2.7.4
+https://clearlinux.org
 

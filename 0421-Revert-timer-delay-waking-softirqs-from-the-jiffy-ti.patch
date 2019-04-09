@@ -1,8 +1,7 @@
-From a4881c522c43752952006933e4a2ff93b0b272cb Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Anna-Maria Gleixner <anna-maria@linutronix.de>
 Date: Thu, 5 Jul 2018 12:43:18 +0200
-Subject: [PATCH 0421/2278] Revert "timer: delay waking softirqs from the jiffy
- tick"
+Subject: [PATCH] Revert "timer: delay waking softirqs from the jiffy tick"
 
 [ Upstream commit b5b16907c58280e015d5673dca4c6bd3fde0c348 ]
 
@@ -40,5 +39,5 @@ index ea742b4..5fadd75 100644
  		run_posix_cpu_timers(p);
  }
 -- 
-2.7.4
+https://clearlinux.org
 

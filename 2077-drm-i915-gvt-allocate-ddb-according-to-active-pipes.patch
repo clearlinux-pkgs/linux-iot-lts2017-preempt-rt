@@ -1,8 +1,7 @@
-From c6c000fe502b5e5e667098887404d715f849cfde Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Zhipeng Gong <zhipeng.gong@intel.com>
 Date: Thu, 6 Sep 2018 11:04:13 +0800
-Subject: [PATCH 2077/2278] drm/i915/gvt: allocate ddb according to active
- pipes
+Subject: [PATCH] drm/i915/gvt: allocate ddb according to active pipes
 
 This patch add back the ddb allocation for the PLANE_CURSOR
 and allocate ddb according to current active pipes.
@@ -130,5 +129,5 @@ index b380c5d..f0c7ed7 100644
  	}
  #endif
 -- 
-2.7.4
+https://clearlinux.org
 

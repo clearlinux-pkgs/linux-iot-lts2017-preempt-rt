@@ -1,12 +1,12 @@
-From 5c24a713938120b4d6df1d53256e5c90ba514e0c Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Keyon Jie <yang.jie@linux.intel.com>
 Date: Thu, 5 Jul 2018 16:28:53 +0800
-Subject: [PATCH 1768/2278] ASoC: SOF: cleanup for pci probing.
+Subject: [PATCH] ASoC: SOF: cleanup for pci probing.
 
 Signed-off-by: Keyon Jie <yang.jie@linux.intel.com>
 (cherry picked from commit 67675cb51a29de649934df0da7c735e7139ac11f)
 ---
- sound/soc/sof/sof-pci-dev.c | 47 ++++++++++++++++++++++++++++++++-------------
+ sound/soc/sof/sof-pci-dev.c | 47 +++++++++++++++++++++++++++----------
  1 file changed, 34 insertions(+), 13 deletions(-)
 
 diff --git a/sound/soc/sof/sof-pci-dev.c b/sound/soc/sof/sof-pci-dev.c
@@ -84,24 +84,23 @@ index 83c71ac..eaa04ad 100644
  	dev_dbg(dev, "created machine %s\n",
  		dev_name(&sof_pdata->pdev_mach->dev));
  
-@@ -274,9 +279,17 @@ static int sof_pci_probe(struct pci_dev *pci,
+@@ -274,8 +279,16 @@ static int sof_pci_probe(struct pci_dev *pci,
  		platform_device_unregister(sof_pdata->pdev_mach);
  		dev_err(dev, "error: failed to load firmware %s\n",
  			mach->sof_fw_filename);
 +		goto release_regions;
  	}
  
- 	return ret;
++	return ret;
 +
 +release_regions:
 +	pci_release_regions(pci);
 +disable_dev:
 +	pci_disable_device(pci);
 +
-+	return ret;
+ 	return ret;
  }
  
- static void sof_pci_shutdown(struct pci_dev *pci)
 @@ -289,11 +302,19 @@ static void sof_pci_remove(struct pci_dev *pci)
  	struct sof_pci_priv *priv = pci_get_drvdata(pci);
  	struct snd_sof_pdata *sof_pdata = priv->sof_pdata;
@@ -123,5 +122,5 @@ index 83c71ac..eaa04ad 100644
  
  /* PCI IDs */
 -- 
-2.7.4
+https://clearlinux.org
 

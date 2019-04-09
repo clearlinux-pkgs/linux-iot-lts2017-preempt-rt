@@ -1,7 +1,7 @@
-From 13887b27d036892a2e448480f367736c6084cfca Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tianshu Qiu <tian.shu.qiu@intel.com>
 Date: Wed, 13 Jun 2018 10:58:41 +0800
-Subject: [PATCH 1954/2278] media: intel-ipu4: Fix subdev entity function type
+Subject: [PATCH] media: intel-ipu4: Fix subdev entity function type
 
 Message for Open Source:
 The entity function for subdev is initialized as
@@ -36,5 +36,5 @@ index 8b34cb7..7d81ecc 100644
  	asd->sd.owner = THIS_MODULE;
  
 -- 
-2.7.4
+https://clearlinux.org
 

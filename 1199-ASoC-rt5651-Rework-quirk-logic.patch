@@ -1,7 +1,7 @@
-From 658ffa93f1afa01310f0c519659aff54b3bba248 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Carlo Caione <carlo@endlessm.com>
 Date: Fri, 20 Oct 2017 12:18:58 +0100
-Subject: [PATCH 1199/2278] ASoC: rt5651: Rework quirk logic
+Subject: [PATCH] ASoC: rt5651: Rework quirk logic
 
 Rework a bit the quirk logic in the codec driver to simplify the
 DMI-based quirk assignment for non-DT platforms.
@@ -14,7 +14,7 @@ Signed-off-by: Mark Brown <broonie@kernel.org>
  1 file changed, 35 insertions(+), 4 deletions(-)
 
 diff --git a/sound/soc/codecs/rt5651.c b/sound/soc/codecs/rt5651.c
-index 5edc37a0..03959dff 100644
+index 5edc37a..03959df 100644
 --- a/sound/soc/codecs/rt5651.c
 +++ b/sound/soc/codecs/rt5651.c
 @@ -19,6 +19,7 @@
@@ -98,5 +98,5 @@ index 5edc37a0..03959dff 100644
  	rt5651->regmap = devm_regmap_init_i2c(i2c, &rt5651_regmap);
  	if (IS_ERR(rt5651->regmap)) {
 -- 
-2.7.4
+https://clearlinux.org
 

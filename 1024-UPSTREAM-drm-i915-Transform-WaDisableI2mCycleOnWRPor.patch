@@ -1,8 +1,8 @@
-From 7c635fa732711fbf5b31ea3ae21ab49b54bb86f0 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Oscar Mateo <oscar.mateo@intel.com>
 Date: Thu, 7 Sep 2017 08:40:05 -0700
-Subject: [PATCH 1024/2278] UPSTREAM: drm/i915: Transform
- WaDisableI2mCycleOnWRPort into a simple reg write
+Subject: [PATCH] UPSTREAM: drm/i915: Transform WaDisableI2mCycleOnWRPort into
+ a simple reg write
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -42,5 +42,5 @@ index 52a142b..3fa36c5 100644
  	/* WaForceContextSaveRestoreNonCoherent:cnl */
  	WA_SET_BIT_MASKED(CNL_HDC_CHICKEN0,
 -- 
-2.7.4
+https://clearlinux.org
 

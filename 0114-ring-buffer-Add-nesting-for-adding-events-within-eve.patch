@@ -1,8 +1,7 @@
-From e1d8a1a99effcd785154de76be646964d76896c3 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Steven Rostedt (VMware)" <rostedt@goodmis.org>
 Date: Wed, 7 Feb 2018 17:26:32 -0500
-Subject: [PATCH 0114/2278] ring-buffer: Add nesting for adding events within
- events
+Subject: [PATCH] ring-buffer: Add nesting for adding events within events
 
 The ring-buffer code has recusion protection in case tracing ends up tracing
 itself, the ring-buffer will detect that it was called at the same context
@@ -20,8 +19,8 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
 (cherry picked from commit f932ff1d98c482716b4b71a5d76b2aa3d65f66f0)
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- include/linux/ring_buffer.h |  3 +++
- kernel/trace/ring_buffer.c  | 57 ++++++++++++++++++++++++++++++++++++++++++---
+ include/linux/ring_buffer.h |  3 ++
+ kernel/trace/ring_buffer.c  | 57 +++++++++++++++++++++++++++++++++++--
  2 files changed, 57 insertions(+), 3 deletions(-)
 
 diff --git a/include/linux/ring_buffer.h b/include/linux/ring_buffer.h
@@ -123,5 +122,5 @@ index be296c3..e8ca1e0 100644
  
  /**
 -- 
-2.7.4
+https://clearlinux.org
 

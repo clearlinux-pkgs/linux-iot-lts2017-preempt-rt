@@ -1,8 +1,8 @@
-From 99bd2647893a9d22ac4d77986732d68fdad861be Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 Date: Fri, 4 Aug 2017 17:40:42 +0200
-Subject: [PATCH 0265/2278] locking: don't check for __LINUX_SPINLOCK_TYPES_H
- on -RT archs
+Subject: [PATCH] locking: don't check for __LINUX_SPINLOCK_TYPES_H on -RT
+ archs
 
 Upstream uses arch_spinlock_t within spinlock_t and requests that
 spinlock_types.h header file is included first.
@@ -182,7 +182,7 @@ index 87adaf1..7305cb6 100644
  	volatile unsigned int slock;
  } arch_spinlock_t;
 diff --git a/arch/s390/include/asm/spinlock_types.h b/arch/s390/include/asm/spinlock_types.h
-index 1861a0c..74092eba 100644
+index 1861a0c..74092eb 100644
 --- a/arch/s390/include/asm/spinlock_types.h
 +++ b/arch/s390/include/asm/spinlock_types.h
 @@ -2,10 +2,6 @@
@@ -257,5 +257,5 @@ index c09b640..b0243ba 100644
   * include/linux/spinlock_types_up.h - spinlock type definitions for UP
   *
 -- 
-2.7.4
+https://clearlinux.org
 

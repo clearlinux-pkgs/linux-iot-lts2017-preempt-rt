@@ -1,14 +1,13 @@
-From eeac103aabd715785e4faf2115ac9c85a482fd5a Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Zhou Furong <furong.zhou@intel.com>
 Date: Wed, 15 Aug 2018 16:51:34 +0800
-Subject: [PATCH 1982/2278] Revert "rpmb: VRPMB-FE create virtio rpmb frontend
- driver"
+Subject: [PATCH] Revert "rpmb: VRPMB-FE create virtio rpmb frontend driver"
 
 This reverts commit 795c58261a1eed14745691195960f7db9dbf5107.
 ---
  drivers/char/rpmb/Kconfig       |  10 --
  drivers/char/rpmb/Makefile      |   1 -
- drivers/char/rpmb/virtio_rpmb.c | 254 ----------------------------------------
+ drivers/char/rpmb/virtio_rpmb.c | 254 --------------------------------
  3 files changed, 265 deletions(-)
  delete mode 100644 drivers/char/rpmb/virtio_rpmb.c
 
@@ -302,5 +301,5 @@ index e94d60c..0000000
 -MODULE_AUTHOR("Intel Corporation");
 -MODULE_LICENSE("Dual BSD/GPL");
 -- 
-2.7.4
+https://clearlinux.org
 

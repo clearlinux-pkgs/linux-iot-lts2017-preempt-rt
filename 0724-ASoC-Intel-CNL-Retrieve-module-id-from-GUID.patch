@@ -1,7 +1,7 @@
-From 102186889bfe9d55d79ec0147ed20cf5111ceef9 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Mallikarjun, chippalkatti" <mallikarjunx.chippalkatti@intel.com>
 Date: Mon, 24 Apr 2017 14:43:23 +0530
-Subject: [PATCH 0724/2278] ASoC: Intel: CNL: Retrieve module id from GUID
+Subject: [PATCH] ASoC: Intel: CNL: Retrieve module id from GUID
 
 This patch retrieves module id from GUID for copier module used
 for SoundWire BRA feature.
@@ -22,7 +22,7 @@ Tested-by: Avati, Santosh Kumar <santosh.kumar.avati@intel.com>
  3 files changed, 17 insertions(+), 10 deletions(-)
 
 diff --git a/sound/soc/intel/skylake/skl-messages.c b/sound/soc/intel/skylake/skl-messages.c
-index 54d45f00..ef8663a 100644
+index 54d45f0..ef8663a 100644
 --- a/sound/soc/intel/skylake/skl-messages.c
 +++ b/sound/soc/intel/skylake/skl-messages.c
 @@ -378,12 +378,9 @@ static int cnl_sdw_bra_pipe_cfg_pb(struct skl_sst *ctx,
@@ -91,5 +91,5 @@ index ff87eea..19fdd49 100644
  				int module_id, int instance_id)
  {
 -- 
-2.7.4
+https://clearlinux.org
 

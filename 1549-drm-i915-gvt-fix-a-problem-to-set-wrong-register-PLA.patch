@@ -1,8 +1,7 @@
-From 040a788c36293c965be5ceaa38d96fd4b670ec78 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Fei Jiang <fei.jiang@intel.com>
 Date: Tue, 12 Jun 2018 10:42:16 +0800
-Subject: [PATCH 1549/2278] drm/i915/gvt: fix a problem to set wrong register
- PLANE_WM
+Subject: [PATCH] drm/i915/gvt: fix a problem to set wrong register PLANE_WM
 
 Fixed problem in commit "drm/i915/gvt: local display support",
 need write register PLANE_WM_TRANS instead of PLANE_WM
@@ -28,5 +27,5 @@ index 16b2060..671561e 100644
  #endif
  
 -- 
-2.7.4
+https://clearlinux.org
 

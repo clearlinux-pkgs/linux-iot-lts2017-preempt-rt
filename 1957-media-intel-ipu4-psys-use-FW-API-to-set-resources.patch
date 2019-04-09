@@ -1,8 +1,7 @@
-From fc299e873fdc5adfed457335a0913d63bd572886 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Wang Zaikuo <zaikuo.wang@intel.com>
 Date: Wed, 6 Jun 2018 17:50:01 +0800
-Subject: [PATCH 1957/2278] media: intel-ipu4: psys: use FW API to set
- resources
+Subject: [PATCH] media: intel-ipu4: psys: use FW API to set resources
 
 Message for Open Source:
 It makes sense to use FW API in API specific file.
@@ -17,11 +16,11 @@ Change-Id: I887167cce177994ef16842cc198d27aa0175c061
 Signed-off-by: Wang Zaikuo <zaikuo.wang@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- drivers/media/pci/intel/ipu-fw-psys.h              | 15 +++---
- .../ipu4/ipu4-css/lib2600psys/libcsspsys2600.c     | 53 ++++++++--------------
- drivers/media/pci/intel/ipu4/ipu4-fw-resources.c   | 46 ++++++++++++++-----
- drivers/media/pci/intel/ipu4/ipu4-resources.c      | 28 ++++++++----
- .../ipu4/ipu4p-css/lib2600psys/libcsspsys2600.c    | 53 ++++++++--------------
+ drivers/media/pci/intel/ipu-fw-psys.h         | 15 +++---
+ .../ipu4-css/lib2600psys/libcsspsys2600.c     | 53 +++++++------------
+ .../media/pci/intel/ipu4/ipu4-fw-resources.c  | 46 ++++++++++++----
+ drivers/media/pci/intel/ipu4/ipu4-resources.c | 28 ++++++----
+ .../ipu4p-css/lib2600psys/libcsspsys2600.c    | 53 +++++++------------
  5 files changed, 97 insertions(+), 98 deletions(-)
 
 diff --git a/drivers/media/pci/intel/ipu-fw-psys.h b/drivers/media/pci/intel/ipu-fw-psys.h
@@ -363,5 +362,5 @@ index c79b27d..d9b4661 100644
  int ipu_fw_psys_get_program_manifest_by_process(
  	struct ipu_fw_generic_program_manifest *gen_pm,
 -- 
-2.7.4
+https://clearlinux.org
 

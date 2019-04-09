@@ -1,8 +1,7 @@
-From eb0dd14d0e636776b21f72753c147115a9ff06db Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
 Date: Sun, 27 Nov 2016 20:21:23 +0200
-Subject: [PATCH 1507/2278] serial: 8250_port: Disable DMA operations for
- kernel console
+Subject: [PATCH] serial: 8250_port: Disable DMA operations for kernel console
 
 It will be too tricky and error prone to allow DMA operations on kernel
 console.
@@ -15,7 +14,7 @@ Signed-off-by: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/drivers/tty/serial/8250/8250_port.c b/drivers/tty/serial/8250/8250_port.c
-index 53938a8a..b674c1a 100644
+index 53938a8..b674c1a 100644
 --- a/drivers/tty/serial/8250/8250_port.c
 +++ b/drivers/tty/serial/8250/8250_port.c
 @@ -2374,7 +2374,7 @@ int serial8250_do_startup(struct uart_port *port)
@@ -28,5 +27,5 @@ index 53938a8a..b674c1a 100644
  			pr_warn_ratelimited("ttyS%d - failed to request DMA\n",
  					    serial_index(port));
 -- 
-2.7.4
+https://clearlinux.org
 

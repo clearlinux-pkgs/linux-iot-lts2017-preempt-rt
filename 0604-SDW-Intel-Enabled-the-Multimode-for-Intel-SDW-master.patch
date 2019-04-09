@@ -1,8 +1,8 @@
-From ca00171a18742938984a30a2b471550ac124a706 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Hardik Shah <hardik.t.shah@intel.com>
 Date: Fri, 29 Apr 2016 16:26:15 +0530
-Subject: [PATCH 0604/2278] SDW:Intel: Enabled the Multimode for Intel SDW
- master controller.
+Subject: [PATCH] SDW:Intel: Enabled the Multimode for Intel SDW master
+ controller.
 
 Initialize the SDW controller for multimode.
 Set the Sync period to default
@@ -93,5 +93,5 @@ index 914f7ca..c994338 100644
  #define SDW_CNL_CTLSCAP				0x10
  #define SDW_CNL_CTLS0CM				0x12
 -- 
-2.7.4
+https://clearlinux.org
 

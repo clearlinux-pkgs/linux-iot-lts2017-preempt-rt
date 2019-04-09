@@ -1,8 +1,7 @@
-From dc6a3a4071c92184cdb9fe765205a7dd827a34d8 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Thomas Gleixner <tglx@linutronix.de>
 Date: Thu, 23 Nov 2017 16:39:11 +0100
-Subject: [PATCH 0044/2278] can/bcm: Replace hrtimer_tasklet with softirq based
- hrtimer
+Subject: [PATCH] can/bcm: Replace hrtimer_tasklet with softirq based hrtimer
 
 Switch the timer to HRTIMER_MODE_SOFT, which executed the timer
 callback in softirq context and remove the hrtimer_tasklet.
@@ -15,11 +14,11 @@ Cc: Marc Kleine-Budde <mkl@pengutronix.de>
 Cc: linux-can@vger.kernel.org
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- net/can/bcm.c | 156 ++++++++++++++++++++--------------------------------------
+ net/can/bcm.c | 156 +++++++++++++++++---------------------------------
  1 file changed, 52 insertions(+), 104 deletions(-)
 
 diff --git a/net/can/bcm.c b/net/can/bcm.c
-index 13690334..9cc67ac 100644
+index 1369033..9cc67ac 100644
 --- a/net/can/bcm.c
 +++ b/net/can/bcm.c
 @@ -102,7 +102,6 @@ struct bcm_op {
@@ -317,5 +316,5 @@ index 13690334..9cc67ac 100644
  
  	/* now we can register for can_ids, if we added a new bcm_op */
 -- 
-2.7.4
+https://clearlinux.org
 

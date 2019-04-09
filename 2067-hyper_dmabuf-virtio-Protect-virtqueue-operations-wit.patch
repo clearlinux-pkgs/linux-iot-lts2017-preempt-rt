@@ -1,8 +1,8 @@
-From 707c90a3d87828ad0b89cb726f7c078db47a0eae Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Mateusz Polrola <mateuszx.potrola@intel.com>
 Date: Wed, 22 Aug 2018 14:27:16 +0200
-Subject: [PATCH 2067/2278] hyper_dmabuf/virtio: Protect virtqueue operations
- with spinlock.
+Subject: [PATCH] hyper_dmabuf/virtio: Protect virtqueue operations with
+ spinlock.
 
 virtqueue_add_*/virtqueue_get_buf are not safe to run in parallel as
 they operate on the same structs, so code that uses them must ensure
@@ -16,7 +16,7 @@ This fixes: RTC252213
 
 Signed-off-by: Mateusz Polrola <mateuszx.potrola@intel.com>
 ---
- .../hyper_dmabuf/virtio/hyper_dmabuf_virtio_fe_drv.c        | 13 +++++++++++++
+ .../virtio/hyper_dmabuf_virtio_fe_drv.c             | 13 +++++++++++++
  1 file changed, 13 insertions(+)
 
 diff --git a/drivers/dma-buf/hyper_dmabuf/virtio/hyper_dmabuf_virtio_fe_drv.c b/drivers/dma-buf/hyper_dmabuf/virtio/hyper_dmabuf_virtio_fe_drv.c
@@ -93,5 +93,5 @@ index 9ae2904..5ef8801 100644
  	if (wait) {
  		while (timeout--) {
 -- 
-2.7.4
+https://clearlinux.org
 

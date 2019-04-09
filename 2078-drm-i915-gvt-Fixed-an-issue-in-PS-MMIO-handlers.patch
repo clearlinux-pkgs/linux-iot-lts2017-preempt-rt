@@ -1,7 +1,7 @@
-From 5ca03abee2c030aefc8746629d6652de38d11057 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Min He <min.he@intel.com>
 Date: Fri, 7 Sep 2018 06:04:45 +0000
-Subject: [PATCH 2078/2278] drm/i915/gvt: Fixed an issue in PS MMIO handlers
+Subject: [PATCH] drm/i915/gvt: Fixed an issue in PS MMIO handlers
 
 When GVT-g guest tries to disable a scaler, it will write 0 to
 PS_CTRL register. However, in such case, GVT-g PS MMIO handler will
@@ -36,5 +36,5 @@ index 676a2d7..d3fc690 100644
  
  		if (SKL_PS_REG_VALUE_TO_PLANE(*(u32 *)p_data) == 0) {
 -- 
-2.7.4
+https://clearlinux.org
 

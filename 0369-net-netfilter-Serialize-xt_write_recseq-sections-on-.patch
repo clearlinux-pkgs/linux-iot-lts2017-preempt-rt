@@ -1,8 +1,7 @@
-From 12f25d8b3c322a26c711545b33dd1ad01bbd72d1 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Thomas Gleixner <tglx@linutronix.de>
 Date: Sun, 28 Oct 2012 11:18:08 +0100
-Subject: [PATCH 0369/2278] net: netfilter: Serialize xt_write_recseq sections
- on RT
+Subject: [PATCH] net: netfilter: Serialize xt_write_recseq sections on RT
 
 The netfilter code relies only on the implicit semantics of
 local_bh_disable() for serializing wt_write_recseq sections. RT breaks
@@ -79,5 +78,5 @@ index 52cd290..c63e937 100644
  
  const struct nf_afinfo __rcu *nf_afinfo[NFPROTO_NUMPROTO] __read_mostly;
 -- 
-2.7.4
+https://clearlinux.org
 

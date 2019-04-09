@@ -1,8 +1,7 @@
-From e06ce63d0011b077ead6dbc18e841088bd8eb4f1 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Thomas Gleixner <tglx@linutronix.de>
 Date: Wed, 20 Dec 2017 17:12:50 +0100
-Subject: [PATCH 0017/2278] timers: Use static keys for
- migrate_enable/nohz_active
+Subject: [PATCH] timers: Use static keys for migrate_enable/nohz_active
 
 The members migrate_enable and nohz_active in the timer/hrtimer per CPU
 bases have been introduced to avoid accessing global variables for these
@@ -19,11 +18,11 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
 Signed-off-by: Anna-Maria Gleixner <anna-maria@linutronix.de>
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- include/linux/hrtimer.h     |  4 ---
- kernel/time/hrtimer.c       | 17 +++-------
- kernel/time/tick-internal.h | 19 +++++++----
+ include/linux/hrtimer.h     |  4 --
+ kernel/time/hrtimer.c       | 17 +++-----
+ kernel/time/tick-internal.h | 19 +++++----
  kernel/time/tick-sched.c    |  2 +-
- kernel/time/timer.c         | 83 +++++++++++++++++++++++----------------------
+ kernel/time/timer.c         | 83 +++++++++++++++++++------------------
  5 files changed, 61 insertions(+), 64 deletions(-)
 
 diff --git a/include/linux/hrtimer.h b/include/linux/hrtimer.h
@@ -283,5 +282,5 @@ index f17c76a..9b644e7 100644
  
  /*
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,7 +1,7 @@
-From 530a5f3121c40287aaeb46ee931e5e29b11fca85 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Divya Prakash <divya1.prakash@intel.com>
 Date: Sun, 10 Apr 2016 13:36:16 +0530
-Subject: [PATCH 0646/2278] ASoC: Intel: Add delete module IPC
+Subject: [PATCH] ASoC: Intel: Add delete module IPC
 
 This IPC is to explicitly delete a module instance.
 Till now, destroying a pipe was taking care of deleting
@@ -13,7 +13,7 @@ Signed-off-by: Divya Prakash <divya1.prakash@intel.com>
 Reviewed-by: Babu, Ramesh <ramesh.babu@intel.com>
 Tested-by: Babu, Ramesh <ramesh.babu@intel.com>
 ---
- sound/soc/intel/skylake/skl-sst-ipc.c | 30 +++++++++++++++++++++++++++++-
+ sound/soc/intel/skylake/skl-sst-ipc.c | 30 ++++++++++++++++++++++++++-
  sound/soc/intel/skylake/skl-sst-ipc.h |  3 +++
  2 files changed, 32 insertions(+), 1 deletion(-)
 
@@ -80,5 +80,5 @@ index 3d7c49b..1562ea2 100644
  		struct skl_ipc_bind_unbind_msg *msg);
  
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,7 +1,7 @@
-From f3eda2102e451828a4de0c80a2bf5ce0e4aed2d7 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 Date: Wed, 25 Jan 2017 16:34:27 +0100
-Subject: [PATCH 0187/2278] radix-tree: use local locks
+Subject: [PATCH] radix-tree: use local locks
 
 The preload functionality uses per-CPU variables and preempt-disable to
 ensure that it does not switch CPUs during its usage. This patch adds
@@ -171,5 +171,5 @@ index d172f03..c1da110 100644
  	if (!this_cpu_read(ida_bitmap)) {
  		struct ida_bitmap *bitmap = kmalloc(sizeof(*bitmap), gfp);
 -- 
-2.7.4
+https://clearlinux.org
 

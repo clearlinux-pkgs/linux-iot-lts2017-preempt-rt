@@ -1,7 +1,7 @@
-From 933c904ece906e5abd784f19cf2655902f48d37f Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Anna-Maria Gleixner <anna-maria@linutronix.de>
 Date: Wed, 20 Dec 2017 17:13:02 +0100
-Subject: [PATCH 0027/2278] hrtimer: Reduce conditional code (hres_active)
+Subject: [PATCH] hrtimer: Reduce conditional code (hres_active)
 
 The hrtimer_cpu_base struct has the CONFIG_HIGH_RES_TIMERS conditional
 struct member hres_active. All related functions to this member are
@@ -107,10 +107,11 @@ index bedfc28..7e04901 100644
  /* High resolution timer related functions */
  #ifdef CONFIG_HIGH_RES_TIMERS
  
-@@ -541,19 +555,6 @@ static inline int hrtimer_is_hres_enabled(void)
+@@ -540,19 +554,6 @@ static inline int hrtimer_is_hres_enabled(void)
+ 	return hrtimer_hres_enabled;
  }
  
- /*
+-/*
 - * Is the high resolution mode active ?
 - */
 -static inline int __hrtimer_hres_active(struct hrtimer_cpu_base *cpu_base)
@@ -123,10 +124,9 @@ index bedfc28..7e04901 100644
 -	return __hrtimer_hres_active(this_cpu_ptr(&hrtimer_bases));
 -}
 -
--/*
+ /*
   * Reprogram the event source with checking both queues for the
   * next event
-  * Called with interrupts disabled and base->lock held
 @@ -662,7 +663,6 @@ static inline void hrtimer_init_hres(struct hrtimer_cpu_base *base)
  {
  	base->expires_next = KTIME_MAX;
@@ -153,5 +153,5 @@ index bedfc28..7e04901 100644
  	return 0;
  }
 -- 
-2.7.4
+https://clearlinux.org
 

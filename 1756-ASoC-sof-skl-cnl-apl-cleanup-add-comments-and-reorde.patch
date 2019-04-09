@@ -1,8 +1,8 @@
-From 1aa27992ad17abf6eecf5bddfd9eb5b12338fa53 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Mon, 2 Jul 2018 15:31:29 +0100
-Subject: [PATCH 1756/2278] ASoC: sof: skl, cnl, apl: cleanup - add comments
- and reorder funcs
+Subject: [PATCH] ASoC: sof: skl, cnl, apl: cleanup - add comments and reorder
+ funcs
 
 Add comments describing funcs/code blocks and reorder funcs so features
 are grouped.
@@ -73,5 +73,5 @@ index 86097bb..2738202 100644
  	/* firmware loading */
  	.load_firmware = hda_dsp_cl_load_fw,
 -- 
-2.7.4
+https://clearlinux.org
 

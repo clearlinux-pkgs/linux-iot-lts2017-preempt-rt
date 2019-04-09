@@ -1,8 +1,7 @@
-From 63f6ff11a44787cdefed3225c73b07d4e9af1e35 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Yan Wang <yan.wang@linux.intel.com>
 Date: Mon, 26 Mar 2018 15:02:41 +0800
-Subject: [PATCH 1331/2278] ASoC: APL/CNL: Add error check for
- apl_trace_prepare().
+Subject: [PATCH] ASoC: APL/CNL: Add error check for apl_trace_prepare().
 
 If apl_hdac_prepare() fails in apl_trace_prepare(), output error
 log for debugging.
@@ -34,5 +33,5 @@ index 0e6c153..9584be6 100644
  
  static int apl_trace_init(struct snd_sof_dev *sdev, u32 *stream_tag)
 -- 
-2.7.4
+https://clearlinux.org
 

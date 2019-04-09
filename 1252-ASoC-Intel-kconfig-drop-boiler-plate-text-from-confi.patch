@@ -1,8 +1,8 @@
-From 63526ee522b06118d4117c0576f591009ee67490 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Vinod Koul <vinod.koul@intel.com>
 Date: Thu, 4 Jan 2018 16:36:01 -0600
-Subject: [PATCH 1252/2278] ASoC: Intel: kconfig: drop boiler plate text from
- config items
+Subject: [PATCH] ASoC: Intel: kconfig: drop boiler plate text from config
+ items
 
 Drop "Intel ASoC SST driver for " platforms and "SOC Machine Audio driver
 for Intel" for machines..
@@ -13,8 +13,8 @@ Reviewed-by: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
 Signed-off-by: Mark Brown <broonie@kernel.org>
 (cherry picked from commit 8fca15839ce5c473c57356abe36e166367e6c6ef)
 ---
- sound/soc/intel/Kconfig        | 10 +++++-----
- sound/soc/intel/boards/Kconfig | 42 +++++++++++++++++++++---------------------
+ sound/soc/intel/Kconfig        | 10 ++++----
+ sound/soc/intel/boards/Kconfig | 42 +++++++++++++++++-----------------
  2 files changed, 26 insertions(+), 26 deletions(-)
 
 diff --git a/sound/soc/intel/Kconfig b/sound/soc/intel/Kconfig
@@ -260,5 +260,5 @@ index 5759a4f..1ccdbde 100644
          depends on SPI
          select SND_SOC_RT5663
 -- 
-2.7.4
+https://clearlinux.org
 

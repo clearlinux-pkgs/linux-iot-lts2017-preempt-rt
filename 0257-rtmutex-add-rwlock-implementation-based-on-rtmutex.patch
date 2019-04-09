@@ -1,16 +1,16 @@
-From b73c8ed3d2e2cb6da926e20b185a5f4f97eceb67 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Thomas Gleixner <tglx@linutronix.de>
 Date: Thu, 12 Oct 2017 17:18:06 +0200
-Subject: [PATCH 0257/2278] rtmutex: add rwlock implementation based on rtmutex
+Subject: [PATCH] rtmutex: add rwlock implementation based on rtmutex
 
 The implementation is bias-based, similar to the rwsem implementation.
 
 Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- include/linux/rwlock_rt.h       | 119 +++++++++++++
- include/linux/rwlock_types_rt.h |  55 ++++++
- kernel/locking/rwlock-rt.c      | 368 ++++++++++++++++++++++++++++++++++++++++
+ include/linux/rwlock_rt.h       | 119 +++++++++++
+ include/linux/rwlock_types_rt.h |  55 +++++
+ kernel/locking/rwlock-rt.c      | 368 ++++++++++++++++++++++++++++++++
  3 files changed, 542 insertions(+)
  create mode 100644 include/linux/rwlock_rt.h
  create mode 100644 include/linux/rwlock_types_rt.h
@@ -577,5 +577,5 @@ index 0000000..aebb7ce
 +}
 +EXPORT_SYMBOL(__rt_rwlock_init);
 -- 
-2.7.4
+https://clearlinux.org
 

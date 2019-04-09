@@ -1,8 +1,7 @@
-From 402ee4937748ac6e325c4b967a7d8912a203fb31 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Vaibhav Agarwal <vaibhav.agarwal@intel.com>
 Date: Mon, 25 Jun 2018 15:35:05 +0530
-Subject: [PATCH 1543/2278] Revert "hid: intel-ish-hid: add ISH UART client
- support"
+Subject: [PATCH] Revert "hid: intel-ish-hid: add ISH UART client support"
 
 This reverts commit a8cc571ad4004b1c6878c3f86106dd03976088d8.
 Since, another patch is now available from ISH maintainer, we can safely
@@ -10,7 +9,7 @@ revert this patch and apply the latest one from intel-next tree.
 ---
  drivers/hid/intel-ish-hid/Kconfig            |  13 -
  drivers/hid/intel-ish-hid/Makefile           |   2 -
- drivers/hid/intel-ish-hid/ishtp-tty-client.c | 566 ---------------------------
+ drivers/hid/intel-ish-hid/ishtp-tty-client.c | 566 -------------------
  3 files changed, 581 deletions(-)
  delete mode 100644 drivers/hid/intel-ish-hid/ishtp-tty-client.c
 
@@ -620,5 +619,5 @@ index 545e8ff..0000000
 -MODULE_LICENSE("GPL");
 -MODULE_ALIAS("ishtp:*");
 -- 
-2.7.4
+https://clearlinux.org
 

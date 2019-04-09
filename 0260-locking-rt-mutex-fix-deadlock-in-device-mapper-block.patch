@@ -1,8 +1,7 @@
-From fcf078e94e9e8addf0a210dba6962564c42f59f6 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Mikulas Patocka <mpatocka@redhat.com>
 Date: Mon, 13 Nov 2017 12:56:53 -0500
-Subject: [PATCH 0260/2278] locking/rt-mutex: fix deadlock in device mapper /
- block-IO
+Subject: [PATCH] locking/rt-mutex: fix deadlock in device mapper / block-IO
 
 When some block device driver creates a bio and submits it to another
 block device driver, the bio is added to current->bio_list (in order to
@@ -76,5 +75,5 @@ index 5772283..070cd95 100644
  }
  
 -- 
-2.7.4
+https://clearlinux.org
 

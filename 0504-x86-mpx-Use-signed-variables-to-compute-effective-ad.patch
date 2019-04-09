@@ -1,8 +1,7 @@
-From a4b8729e66ecce3a645036956db0ed25c2a3f4ab Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ricardo Neri <ricardo.neri-calderon@linux.intel.com>
 Date: Tue, 5 Sep 2017 15:01:19 -0700
-Subject: [PATCH 0504/2278] x86/mpx: Use signed variables to compute effective
- addresses
+Subject: [PATCH] x86/mpx: Use signed variables to compute effective addresses
 
 Even though memory addresses are unsigned, the operands used to compute the
 effective address do have a sign. This is true for ModRM.rm, SIB.base,
@@ -86,5 +85,5 @@ index f0d6877..9ee37f4 100644
  
  static int mpx_insn_decode(struct insn *insn,
 -- 
-2.7.4
+https://clearlinux.org
 

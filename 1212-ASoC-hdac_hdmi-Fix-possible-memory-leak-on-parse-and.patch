@@ -1,8 +1,8 @@
-From 11133f03972e26fbc00017b7c23ad8e0c16cde90 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Subhransu S. Prusty" <subhransu.s.prusty@intel.com>
 Date: Tue, 7 Nov 2017 16:16:26 +0530
-Subject: [PATCH 1212/2278] ASoC: hdac_hdmi: Fix possible memory leak on parse
- and map nid failure
+Subject: [PATCH] ASoC: hdac_hdmi: Fix possible memory leak on parse and map
+ nid failure
 
 During failure, widgets in cvt_list and pin_list are not freed. So fix
 the possible memory leak by freeing them when failure occurs.
@@ -91,5 +91,5 @@ index 13040ee..69416f4 100644
  
  static void hdac_hdmi_eld_notify_cb(void *aptr, int port, int pipe)
 -- 
-2.7.4
+https://clearlinux.org
 

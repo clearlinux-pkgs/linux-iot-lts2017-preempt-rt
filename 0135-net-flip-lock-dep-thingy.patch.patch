@@ -1,7 +1,7 @@
-From 053fd5b50529dc2265d30948b6e90624a73ee854 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Thomas Gleixner <tglx@linutronix.de>
 Date: Tue, 28 Jun 2011 10:59:58 +0200
-Subject: [PATCH 0135/2278] net-flip-lock-dep-thingy.patch
+Subject: [PATCH] net-flip-lock-dep-thingy.patch
 
 =======================================================
 [ INFO: possible circular locking dependency detected ]
@@ -14,7 +14,6 @@ but task is already holding lock:
  (sk_lock-AF_INET){+.+...}, at: [<ffffffff81433308>] lock_sock+0x10/0x12
 
 which lock already depends on the new lock.
-
 
 the existing dependency chain (in reverse order) is:
 
@@ -88,7 +87,6 @@ Call Trace:
  [<ffffffff8112667a>] sys_close+0xf8/0x13d
  [<ffffffff814ae882>] system_call_fastpath+0x16/0x1b
 
-
 Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
 ---
  net/core/sock.c | 3 +--
@@ -113,5 +111,5 @@ index 01cae48..e7978eb 100644
  EXPORT_SYMBOL(lock_sock_nested);
  
 -- 
-2.7.4
+https://clearlinux.org
 

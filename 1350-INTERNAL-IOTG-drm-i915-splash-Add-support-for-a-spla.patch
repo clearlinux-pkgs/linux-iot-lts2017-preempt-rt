@@ -1,8 +1,8 @@
-From dcd98fd4675a9a968dd7c585df37e09538893983 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: James Xiong <james.xiong@intel.com>
 Date: Fri, 16 Dec 2016 14:37:12 -0800
-Subject: [PATCH 1350/2278] INTERNAL [IOTG] drm/i915/splash: Add support for a
- splash screen image
+Subject: [PATCH] INTERNAL [IOTG] drm/i915/splash: Add support for a splash
+ screen image
 
 This feature loads a raw ARGB888 image from a firmware, maps it via the
 GTT(copyless) and displays it in the given area of the specified connector,
@@ -17,11 +17,11 @@ Reviewed-by: Matt Roper <matthew.d.roper@intel.com>
 Change-Id: I985a65885b9fc91af20dfecf27ed173527a82d6c
 ---
  drivers/gpu/drm/i915/Makefile                |   1 +
- drivers/gpu/drm/i915/i915_drv.h              |  24 +++
- drivers/gpu/drm/i915/i915_gem_splash.c       | 144 ++++++++++++++
+ drivers/gpu/drm/i915/i915_drv.h              |  24 ++
+ drivers/gpu/drm/i915/i915_gem_splash.c       | 144 ++++++++++
  drivers/gpu/drm/i915/i915_params.c           |   4 +
  drivers/gpu/drm/i915/i915_params.h           |   1 +
- drivers/gpu/drm/i915/intel_initial_modeset.c | 287 +++++++++++++++++++++++++--
+ drivers/gpu/drm/i915/intel_initial_modeset.c | 287 ++++++++++++++++++-
  6 files changed, 446 insertions(+), 15 deletions(-)
  create mode 100644 drivers/gpu/drm/i915/i915_gem_splash.c
 
@@ -627,5 +627,5 @@ index 4883ba2..3043535 100644
 +	}
  }
 -- 
-2.7.4
+https://clearlinux.org
 

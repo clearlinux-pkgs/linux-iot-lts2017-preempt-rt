@@ -1,7 +1,7 @@
-From da5cd47f240f7742939037473d063f301f3f4196 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tomas Winkler <tomas.winkler@intel.com>
 Date: Sat, 28 Apr 2018 22:01:32 +0300
-Subject: [PATCH 1717/2278] rpmb: add nvme rpmb frame type
+Subject: [PATCH] rpmb: add nvme rpmb frame type
 
 The NVMe RPMB frame differs in layout and endianity
 from the one defined by JDEC.
@@ -9,8 +9,8 @@ from the one defined by JDEC.
 Change-Id: I3014f0bf870376b28f8eb80b61493ad7e76cfafe
 Signed-off-by: Tomas Winkler <tomas.winkler@intel.com>
 ---
- drivers/char/rpmb/cdev.c  | 26 +++++++++++++++++++-------
- include/uapi/linux/rpmb.h | 41 +++++++++++++++++++++++++++++++++++++++++
+ drivers/char/rpmb/cdev.c  | 26 ++++++++++++++++++-------
+ include/uapi/linux/rpmb.h | 41 +++++++++++++++++++++++++++++++++++++++
  2 files changed, 60 insertions(+), 7 deletions(-)
 
 diff --git a/drivers/char/rpmb/cdev.c b/drivers/char/rpmb/cdev.c
@@ -160,5 +160,5 @@ index d304701..f41a28e 100644
   * struct rpmb_ioc_seq_cmd - rpmb command sequence
   *
 -- 
-2.7.4
+https://clearlinux.org
 

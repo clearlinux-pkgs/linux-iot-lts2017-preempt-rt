@@ -1,7 +1,7 @@
-From ea1e38ec7f609e9236ecd573e2bcc4192822bd91 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Jason Chen CJ <jason.cj.chen@intel.com>
 Date: Wed, 30 May 2018 22:18:12 +0800
-Subject: [PATCH 1569/2278] vhm: add sos offline cpu support
+Subject: [PATCH] vhm: add sos offline cpu support
 
 add sysfs with attr "offline_cpu", use
 	echo cpu_id > /sys/class/vhm/acrn_vhm/offline_cpu
@@ -14,8 +14,8 @@ Signed-off-by: Jason Chen CJ <jason.cj.chen@intel.com>
 Reviewed-by: Zhao Yakui <yakui.zhao@intel.com>
 Acked-by: Eddie Dong <eddie.dong@intel.com>
 ---
- drivers/char/vhm/vhm_dev.c        | 41 +++++++++++++++++++++++++++++++++++++++
- drivers/vhm/vhm_hypercall.c       |  5 +++++
+ drivers/char/vhm/vhm_dev.c        | 41 +++++++++++++++++++++++++++++++
+ drivers/vhm/vhm_hypercall.c       |  5 ++++
  include/linux/vhm/acrn_hv_defs.h  |  1 +
  include/linux/vhm/vhm_hypercall.h |  1 +
  4 files changed, 48 insertions(+)
@@ -127,5 +127,5 @@ index 6133a3d..71ec2f2 100644
  inline long hcall_create_vm(unsigned long vminfo);
  inline long hcall_start_vm(unsigned long vmid);
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,7 @@
-From 6dff07ba0c8f7eeff9f96627c6ce53b8e5d7bc8a Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Mon, 8 Jan 2018 20:32:12 +0000
-Subject: [PATCH 1284/2278] ASoC: SOF: Add support for IPC IO between DSP and
- Host
+Subject: [PATCH] ASoC: SOF: Add support for IPC IO between DSP and Host
 
 Define an IPC ABI for all host <--> DSP communication. This ABI should
 be transport agnostic. i.e. it should work on MMIO and SPI/I2C style
@@ -10,8 +9,8 @@ interfaces.
 
 Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 ---
- include/uapi/sound/sof-ipc.h | 851 +++++++++++++++++++++++++++++++++++++++++++
- sound/soc/sof/ipc.c          | 605 ++++++++++++++++++++++++++++++
+ include/uapi/sound/sof-ipc.h | 851 +++++++++++++++++++++++++++++++++++
+ sound/soc/sof/ipc.c          | 605 +++++++++++++++++++++++++
  2 files changed, 1456 insertions(+)
  create mode 100644 include/uapi/sound/sof-ipc.h
  create mode 100644 sound/soc/sof/ipc.c
@@ -1485,5 +1484,5 @@ index 0000000..d9dc36b
 +}
 +EXPORT_SYMBOL(snd_sof_ipc_get_comp_data);
 -- 
-2.7.4
+https://clearlinux.org
 

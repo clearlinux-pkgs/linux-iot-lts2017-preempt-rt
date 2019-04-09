@@ -1,8 +1,8 @@
-From ab90cef8d1c536281857a4f4d9bf92d267f85feb Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Zhu, Bing" <bing.zhu@intel.com>
 Date: Fri, 15 Jul 2016 13:24:42 +0800
-Subject: [PATCH 0476/2278] trusty: implement trusty OS timer proxy for
- performance enhancement
+Subject: [PATCH] trusty: implement trusty OS timer proxy for performance
+ enhancement
 
 Previously VMX timer causes 14 times of vmexit/vmresume switches every
 10ms and VMX timer stops when processor enters C3+ sleep state. With
@@ -18,8 +18,8 @@ Signed-off-by: Zhu, Bing <bing.zhu@intel.com>
 Signed-off-by: Feng, Wang <feng.f.wang@intel.com>
 Signed-off-by: weideng <wei.a.deng@intel.com>
 ---
- drivers/trusty/trusty-irq.c |  2 --
- drivers/trusty/trusty.c     | 87 +++++++++++++++++++++++++++++++++++++++++++++
+ drivers/trusty/trusty-irq.c |  2 -
+ drivers/trusty/trusty.c     | 87 +++++++++++++++++++++++++++++++++++++
  2 files changed, 87 insertions(+), 2 deletions(-)
 
 diff --git a/drivers/trusty/trusty-irq.c b/drivers/trusty/trusty-irq.c
@@ -174,5 +174,5 @@ index 12a9022..8daf817 100644
  	return 0;
  }
 -- 
-2.7.4
+https://clearlinux.org
 

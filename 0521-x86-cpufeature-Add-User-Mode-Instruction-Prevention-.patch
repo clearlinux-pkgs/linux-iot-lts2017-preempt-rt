@@ -1,8 +1,8 @@
-From a02e5d2e4e1e36d96004c93cf52c65938ffa765d Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ricardo Neri <ricardo.neri-calderon@linux.intel.com>
 Date: Wed, 14 Jun 2017 14:52:11 -0700
-Subject: [PATCH 0521/2278] x86/cpufeature: Add User-Mode Instruction
- Prevention definitions
+Subject: [PATCH] x86/cpufeature: Add User-Mode Instruction Prevention
+ definitions
 
 User-Mode Instruction Prevention is a security feature present in new
 Intel processors that, when set, prevents the execution of a subset of
@@ -89,5 +89,5 @@ index 97abdaa..bcba3c6 100644
  #define X86_CR4_LA57		_BITUL(X86_CR4_LA57_BIT)
  #define X86_CR4_VMXE_BIT	13 /* enable VMX virtualization */
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,8 @@
-From 6d82d59e96ccf62f383454f0d2f0f93ea40037ee Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ulf Hansson <ulf.hansson@linaro.org>
 Date: Tue, 3 Oct 2017 09:11:08 +0200
-Subject: [PATCH 0827/2278] ACPI / PM: Split code validating need for runtime
- resume in ->prepare()
+Subject: [PATCH] ACPI / PM: Split code validating need for runtime resume in
+ ->prepare()
 
 Move the code dealing with validation of whether runtime resuming the
 device is needed during system suspend.
@@ -79,5 +79,5 @@ index e47527c..608e9dd 100644
  EXPORT_SYMBOL_GPL(acpi_subsys_prepare);
  
 -- 
-2.7.4
+https://clearlinux.org
 

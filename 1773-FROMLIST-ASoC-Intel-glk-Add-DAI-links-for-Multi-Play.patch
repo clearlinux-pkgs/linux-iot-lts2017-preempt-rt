@@ -1,8 +1,7 @@
-From 719f330d616ae18469c4dbfd73c23720bf594836 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Naveen Manohar <naveen.m@intel.com>
 Date: Tue, 3 Apr 2018 11:50:01 +0530
-Subject: [PATCH 1773/2278] FROMLIST: ASoC: Intel: glk: Add DAI links for
- Multi-Playback
+Subject: [PATCH] FROMLIST: ASoC: Intel: glk: Add DAI links for Multi-Playback
 
 Add new FE DAI link to support: Parallel playback on 2 ports simultaneously
 
@@ -54,5 +53,5 @@ index 9a2f7f3..17f4ad9 100644
  		.name = "Bxt Audio Reference cap",
  		.stream_name = "Refcap",
 -- 
-2.7.4
+https://clearlinux.org
 

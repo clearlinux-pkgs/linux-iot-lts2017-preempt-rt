@@ -1,8 +1,7 @@
-From 6162df6e6b212d822b81b4d88d3ec31ad51e049f Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Mousami Jana <mousami.janax@intel.com>
 Date: Mon, 19 Dec 2016 12:00:13 +0530
-Subject: [PATCH 0684/2278] ASoC: Intel: Skylake: Support for all rates from 8K
- to 192K
+Subject: [PATCH] ASoC: Intel: Skylake: Support for all rates from 8K to 192K
 
 Add support for all sample rates in FE pipelines which are
 required for IVI usecases.
@@ -21,7 +20,7 @@ Reviewed-by: R, Dharageswari <dharageswari.r@intel.com>
 Reviewed-by: Kp, Jeeja <jeeja.kp@intel.com>
 Tested-by: Avati, Santosh Kumar <santosh.kumar.avati@intel.com>
 ---
- sound/soc/intel/skylake/skl-pcm.c | 36 ++++++++++++++++++++++++++++++++----
+ sound/soc/intel/skylake/skl-pcm.c | 36 +++++++++++++++++++++++++++----
  1 file changed, 32 insertions(+), 4 deletions(-)
 
 diff --git a/sound/soc/intel/skylake/skl-pcm.c b/sound/soc/intel/skylake/skl-pcm.c
@@ -93,5 +92,5 @@ index 0fd2156..8320825 100644
  			SNDRV_PCM_FMTBIT_S24_LE | SNDRV_PCM_FMTBIT_S32_LE,
  		.sig_bits = 32,
 -- 
-2.7.4
+https://clearlinux.org
 

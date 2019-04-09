@@ -1,7 +1,7 @@
-From b0ad4093a19ce5806655959f87657729b3c5fae8 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 Date: Thu, 30 Nov 2017 13:40:10 +0100
-Subject: [PATCH 0355/2278] crypto: limit more FPU-enabled sections
+Subject: [PATCH] crypto: limit more FPU-enabled sections
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -29,16 +29,16 @@ performance.
 Cc: stable-rt@vger.kernel.org
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- arch/x86/crypto/camellia_aesni_avx2_glue.c | 20 ++++++++++++++++++++
- arch/x86/crypto/camellia_aesni_avx_glue.c  | 19 +++++++++++++++++++
- arch/x86/crypto/cast6_avx_glue.c           | 24 +++++++++++++++++++-----
- arch/x86/crypto/chacha20_glue.c            |  9 +++++----
- arch/x86/crypto/serpent_avx2_glue.c        | 19 +++++++++++++++++++
- arch/x86/crypto/serpent_avx_glue.c         | 23 +++++++++++++++++++----
- arch/x86/crypto/serpent_sse2_glue.c        | 23 +++++++++++++++++++----
- arch/x86/crypto/twofish_avx_glue.c         | 27 +++++++++++++++++++++++++--
+ arch/x86/crypto/camellia_aesni_avx2_glue.c | 20 ++++++++++++++++
+ arch/x86/crypto/camellia_aesni_avx_glue.c  | 19 +++++++++++++++
+ arch/x86/crypto/cast6_avx_glue.c           | 24 +++++++++++++++----
+ arch/x86/crypto/chacha20_glue.c            |  9 ++++----
+ arch/x86/crypto/serpent_avx2_glue.c        | 19 +++++++++++++++
+ arch/x86/crypto/serpent_avx_glue.c         | 23 ++++++++++++++----
+ arch/x86/crypto/serpent_sse2_glue.c        | 23 ++++++++++++++----
+ arch/x86/crypto/twofish_avx_glue.c         | 27 ++++++++++++++++++++--
  arch/x86/include/asm/fpu/api.h             |  1 +
- arch/x86/kernel/fpu/core.c                 | 12 ++++++++++++
+ arch/x86/kernel/fpu/core.c                 | 12 ++++++++++
  10 files changed, 158 insertions(+), 19 deletions(-)
 
 diff --git a/arch/x86/crypto/camellia_aesni_avx2_glue.c b/arch/x86/crypto/camellia_aesni_avx2_glue.c
@@ -496,5 +496,5 @@ index 2ea85b3..6914dc5 100644
   * Save the FPU state (mark it for reload if necessary):
   *
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,7 @@
-From d5833b8b15eedb7e8baf1395b532702911a5fad6 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Thomas Gleixner <tglx@linutronix.de>
 Date: Sun, 13 Nov 2011 17:17:09 +0100
-Subject: [PATCH 0231/2278] softirq: Check preemption after reenabling
- interrupts
+Subject: [PATCH] softirq: Check preemption after reenabling interrupts
 
 raise_softirq_irqoff() disables interrupts and wakes the softirq
 daemon, but after reenabling interrupts there is no preemption check,
@@ -50,7 +49,7 @@ index 01e2b35..e8c0d49 100644
  
  /**
 diff --git a/include/linux/preempt.h b/include/linux/preempt.h
-index 2d5d002e..a3b19af 100644
+index 2d5d002..a3b19af 100644
 --- a/include/linux/preempt.h
 +++ b/include/linux/preempt.h
 @@ -187,8 +187,10 @@ do { \
@@ -176,5 +175,5 @@ index 4337450..49812d1 100644
  #ifdef CONFIG_RPS
  	remsd = oldsd->rps_ipi_list;
 -- 
-2.7.4
+https://clearlinux.org
 

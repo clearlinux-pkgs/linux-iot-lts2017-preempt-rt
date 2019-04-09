@@ -1,17 +1,17 @@
-From 1906f72214ecb63bbabfcc89cc5cc8803bdfb8ea Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Sun, 17 Jun 2018 22:07:51 +0100
-Subject: [PATCH 1674/2278] ASoC: SOF: intel: SKL, CNL, APL platform DAIs
+Subject: [PATCH] ASoC: SOF: intel: SKL, CNL, APL platform DAIs
 
 Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Signed-off-by: Keyon Jie <yang.jie@linux.intel.com>
 ---
  sound/soc/sof/intel/Makefile  |   2 +-
- sound/soc/sof/intel/apl.c     |   3 ++
- sound/soc/sof/intel/cnl.c     |   3 ++
- sound/soc/sof/intel/hda-dai.c | 118 ++++++++++++++++++++++++++++++++++++++++++
- sound/soc/sof/intel/hda.h     |   3 ++
- sound/soc/sof/intel/skl.c     |   3 ++
+ sound/soc/sof/intel/apl.c     |   3 +
+ sound/soc/sof/intel/cnl.c     |   3 +
+ sound/soc/sof/intel/hda-dai.c | 118 ++++++++++++++++++++++++++++++++++
+ sound/soc/sof/intel/hda.h     |   3 +
+ sound/soc/sof/intel/skl.c     |   3 +
  6 files changed, 131 insertions(+), 1 deletion(-)
  create mode 100644 sound/soc/sof/intel/hda-dai.c
 
@@ -206,5 +206,5 @@ index d4b6de6..adb85a5 100644
  };
  EXPORT_SYMBOL(sof_skl_ops);
 -- 
-2.7.4
+https://clearlinux.org
 

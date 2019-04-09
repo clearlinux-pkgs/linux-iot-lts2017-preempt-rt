@@ -1,8 +1,7 @@
-From d17a8bf6dd715d148bea11e037a431ca1bcfcf49 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Wu Zhigang <zhigang.wu@linux.intel.com>
 Date: Tue, 15 May 2018 17:14:53 +0800
-Subject: [PATCH 1648/2278] ASoC: tdf8532: Fix the codec status error issue on
- APL-GPMRB
+Subject: [PATCH] ASoC: tdf8532: Fix the codec status error issue on APL-GPMRB
 
 Based on the TDF8532 manual:
 If the wait_state result is ok, we should send CLK_DISCONNECT
@@ -48,5 +47,5 @@ index 1860e82..c7bdb39 100644
  	ret = tdf8532_amp_write(tdf8532, SET_CLK_STATE, CLK_DISCONNECT);
  	if (ret < 0)
 -- 
-2.7.4
+https://clearlinux.org
 

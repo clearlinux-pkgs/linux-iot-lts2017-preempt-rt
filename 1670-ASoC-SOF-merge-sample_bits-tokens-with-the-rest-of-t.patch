@@ -1,8 +1,8 @@
-From 2d1ce74a60485f4b864bd483ed97bb813df6e8b7 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ranjani Sridharan <ranjani.sridharan@linux.intel.com>
 Date: Mon, 25 Jun 2018 00:14:40 -0700
-Subject: [PATCH 1670/2278] ASoC: SOF: merge sample_bits tokens with the rest
- of the ssp_tokens
+Subject: [PATCH] ASoC: SOF: merge sample_bits tokens with the rest of the
+ ssp_tokens
 
 Sample bits is SSP specific. So move it to be part of SSP
 tokens. dai_ssp_link_tokens are not need anymore. So remove it
@@ -78,5 +78,5 @@ index 1d4685c..f934738 100644
  			       ARRAY_SIZE(ssp_tokens), private->array,
  			       private->size);
 -- 
-2.7.4
+https://clearlinux.org
 

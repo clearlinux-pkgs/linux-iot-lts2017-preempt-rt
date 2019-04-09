@@ -1,26 +1,25 @@
-From 8cbd560f5ee81b5f50f284ba829dda36eb3d3a59 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Bandi,Kushal" <kushal.bandi@intel.com>
 Date: Fri, 25 May 2018 03:38:04 +0800
-Subject: [PATCH 2013/2278] media: intel-ipu4: [VIRT] Base code for IPU virtio
- support.
+Subject: [PATCH] media: intel-ipu4: [VIRT] Base code for IPU virtio support.
 
 Change-Id: Iada14ecdc1d7a4f5601704cd2b9f1dc0b4cb27de
 Signed-off-by: Yu, Ong Hock <ong.hock.yu@intel.com>
 Signed-off-by: Bandi, Kushal <kushal.bandi@intel.com>
 ---
- drivers/media/pci/intel/Kconfig                    |  20 +
- drivers/media/pci/intel/Makefile                   |   1 +
- .../media/pci/intel/ici/ici-isys-stream-device.h   |   4 +
- drivers/media/pci/intel/virtio/Makefile            |  10 +
- drivers/media/pci/intel/virtio/Makefile.virt       |  18 +
- .../pci/intel/virtio/intel-ipu4-para-virt-drv.c    | 352 ++++++++++++++++
- .../pci/intel/virtio/intel-ipu4-para-virt-drv.h    |  21 +
- .../media/pci/intel/virtio/intel-ipu4-virtio-be.c  | 446 +++++++++++++++++++++
- .../pci/intel/virtio/intel-ipu4-virtio-bridge.c    | 201 ++++++++++
- .../pci/intel/virtio/intel-ipu4-virtio-bridge.h    |  25 ++
- .../pci/intel/virtio/intel-ipu4-virtio-common.c    |  76 ++++
- .../pci/intel/virtio/intel-ipu4-virtio-common.h    | 119 ++++++
- .../media/pci/intel/virtio/intel-ipu4-virtio-fe.c  | 237 +++++++++++
+ drivers/media/pci/intel/Kconfig               |  20 +
+ drivers/media/pci/intel/Makefile              |   1 +
+ .../pci/intel/ici/ici-isys-stream-device.h    |   4 +
+ drivers/media/pci/intel/virtio/Makefile       |  10 +
+ drivers/media/pci/intel/virtio/Makefile.virt  |  18 +
+ .../intel/virtio/intel-ipu4-para-virt-drv.c   | 352 ++++++++++++++
+ .../intel/virtio/intel-ipu4-para-virt-drv.h   |  21 +
+ .../pci/intel/virtio/intel-ipu4-virtio-be.c   | 446 ++++++++++++++++++
+ .../intel/virtio/intel-ipu4-virtio-bridge.c   | 201 ++++++++
+ .../intel/virtio/intel-ipu4-virtio-bridge.h   |  25 +
+ .../intel/virtio/intel-ipu4-virtio-common.c   |  76 +++
+ .../intel/virtio/intel-ipu4-virtio-common.h   | 119 +++++
+ .../pci/intel/virtio/intel-ipu4-virtio-fe.c   | 237 ++++++++++
  13 files changed, 1530 insertions(+)
  create mode 100644 drivers/media/pci/intel/virtio/Makefile
  create mode 100644 drivers/media/pci/intel/virtio/Makefile.virt
@@ -1419,7 +1418,7 @@ index 0000000..f389dc8
 +#endif
 diff --git a/drivers/media/pci/intel/virtio/intel-ipu4-virtio-fe.c b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-fe.c
 new file mode 100644
-index 0000000..09c1fb47
+index 0000000..09c1fb4
 --- /dev/null
 +++ b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-fe.c
 @@ -0,0 +1,237 @@
@@ -1661,5 +1660,5 @@ index 0000000..09c1fb47
 +MODULE_DESCRIPTION("IPU4 virtio driver");
 +MODULE_LICENSE("Dual BSD/GPL");
 -- 
-2.7.4
+https://clearlinux.org
 

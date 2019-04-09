@@ -1,8 +1,8 @@
-From 96f2066333ea58c3393e130a5e566e1bb1e2edfb Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tomas Winkler <tomas.winkler@intel.com>
 Date: Thu, 31 May 2018 23:57:37 +0300
-Subject: [PATCH 1706/2278] Revert "rpmb: add Replay Protected Memory Block
- (RPMB) subsystem"
+Subject: [PATCH] Revert "rpmb: add Replay Protected Memory Block (RPMB)
+ subsystem"
 
 This reverts commit 126a4207c4d01e603df700ec0da3fab2ccfe8a94.
 
@@ -13,8 +13,8 @@ Change-Id: I63e5662e74d95e309ffa373d6d890dcd129bac0d
  drivers/char/Makefile      |   1 -
  drivers/char/rpmb/Kconfig  |   8 -
  drivers/char/rpmb/Makefile |   4 -
- drivers/char/rpmb/core.c   | 451 ---------------------------------------------
- include/linux/rpmb.h       | 233 -----------------------
+ drivers/char/rpmb/core.c   | 451 -------------------------------------
+ include/linux/rpmb.h       | 233 -------------------
  7 files changed, 706 deletions(-)
  delete mode 100644 drivers/char/rpmb/Kconfig
  delete mode 100644 drivers/char/rpmb/Makefile
@@ -782,5 +782,5 @@ index 8acc0c0..0000000
 -
 -#endif /* __RPMB_H__ */
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,7 +1,7 @@
-From 9d773f3a1f36f32fe084d42ac86a824dfb120e21 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Fei Jiang <fei.jiang@intel.com>
 Date: Tue, 24 Jul 2018 09:20:23 +0800
-Subject: [PATCH 1852/2278] drm/i915/gvt: pvmmio optimization for plane update
+Subject: [PATCH] drm/i915/gvt: pvmmio optimization for plane update
 
 It is performance optimization to reduce plane related register trap
 counter. When update plane, multiple plane related registers are updated
@@ -16,9 +16,9 @@ Signed-off-by: Fei Jiang <fei.jiang@intel.com>
 Reviewed-by: Min He <min.he@intel.com>
 Reviewed-by: Zhao Yakui <yakui.zhao@intel.com>
 ---
- drivers/gpu/drm/i915/i915_pvinfo.h   | 27 +++++++++++++-
- drivers/gpu/drm/i915/intel_display.c | 62 ++++++++++++++++++++++++++++++++
- drivers/gpu/drm/i915/intel_sprite.c  | 69 ++++++++++++++++++++++++++++++++++++
+ drivers/gpu/drm/i915/i915_pvinfo.h   | 27 ++++++++++-
+ drivers/gpu/drm/i915/intel_display.c | 62 +++++++++++++++++++++++++
+ drivers/gpu/drm/i915/intel_sprite.c  | 69 ++++++++++++++++++++++++++++
  3 files changed, 157 insertions(+), 1 deletion(-)
 
 diff --git a/drivers/gpu/drm/i915/i915_pvinfo.h b/drivers/gpu/drm/i915/i915_pvinfo.h
@@ -73,7 +73,7 @@ index 28d22bf..01ed66c 100644
  
  struct vgt_if {
 diff --git a/drivers/gpu/drm/i915/intel_display.c b/drivers/gpu/drm/i915/intel_display.c
-index 273aa2b..bd5b809e 100644
+index 273aa2b..bd5b809 100644
 --- a/drivers/gpu/drm/i915/intel_display.c
 +++ b/drivers/gpu/drm/i915/intel_display.c
 @@ -3539,6 +3539,61 @@ u32 skl_plane_ctl(const struct intel_crtc_state *crtc_state,
@@ -240,5 +240,5 @@ index fb33ac3..fe5c892 100644
  
  #if IS_ENABLED(CONFIG_DRM_I915_GVT)
 -- 
-2.7.4
+https://clearlinux.org
 

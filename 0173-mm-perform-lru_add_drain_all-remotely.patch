@@ -1,7 +1,7 @@
-From c46e9b09e04bd36d7e43b400ba78b967975f67fc Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Luiz Capitulino <lcapitulino@redhat.com>
 Date: Fri, 27 May 2016 15:03:28 +0200
-Subject: [PATCH 0173/2278] mm: perform lru_add_drain_all() remotely
+Subject: [PATCH] mm: perform lru_add_drain_all() remotely
 
 lru_add_drain_all() works by scheduling lru_add_drain_cpu() to run
 on all CPUs that have non-empty LRU pagevecs and then waiting for
@@ -104,5 +104,5 @@ index c63d649..30d62ef 100644
  	mutex_unlock(&lock);
  }
 -- 
-2.7.4
+https://clearlinux.org
 

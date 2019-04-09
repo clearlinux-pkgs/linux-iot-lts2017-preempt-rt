@@ -1,8 +1,8 @@
-From 506651c4f9b964264b3b31c525902114a8eddd84 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Xinyun Liu <xinyun.liu@intel.com>
 Date: Fri, 31 Aug 2018 10:02:45 +0800
-Subject: [PATCH 2075/2278] drm/i915/gvt: only kick out invalid request instead
- of reset execlist
+Subject: [PATCH] drm/i915/gvt: only kick out invalid request instead of reset
+ execlist
 
 When GVT finds a request from DomU causes GPU hang, it needs to kick out
 this bad request and trigger DomU do GPU reset. The execlist csb
@@ -44,7 +44,7 @@ index 9d74080..fa1c693 100644
  	struct drm_i915_private *dev_priv = vgpu->gvt->dev_priv;
  	struct intel_engine_cs *engine;
 diff --git a/drivers/gpu/drm/i915/gvt/execlist.h b/drivers/gpu/drm/i915/gvt/execlist.h
-index d2348b4..f20284f8 100644
+index d2348b4..f20284f 100644
 --- a/drivers/gpu/drm/i915/gvt/execlist.h
 +++ b/drivers/gpu/drm/i915/gvt/execlist.h
 @@ -182,4 +182,5 @@ int intel_vgpu_submit_execlist(struct intel_vgpu *vgpu, int ring_id);
@@ -74,5 +74,5 @@ index be910c9..0d1c92f 100644
  	workload->complete(workload);
  
 -- 
-2.7.4
+https://clearlinux.org
 

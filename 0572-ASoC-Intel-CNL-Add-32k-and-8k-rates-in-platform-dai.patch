@@ -1,8 +1,7 @@
-From 7e5e9aa58442065527f17db036d4c1d23e639116 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Guneshwor Singh <guneshwor.o.singh@intel.com>
 Date: Tue, 22 Dec 2015 20:24:53 +0530
-Subject: [PATCH 0572/2278] ASoC: Intel: CNL: Add 32k and 8k rates in platform
- dai
+Subject: [PATCH] ASoC: Intel: CNL: Add 32k and 8k rates in platform dai
 
 Change-Id: I69ee2c69c35e24c6d27008d23f19cdfda0e4ff15
 Signed-off-by: Guneshwor Singh <guneshwor.o.singh@intel.com>
@@ -50,5 +49,5 @@ index 7fe1e8f..6605207 100644
  		.sig_bits = 32,
  	},
 -- 
-2.7.4
+https://clearlinux.org
 

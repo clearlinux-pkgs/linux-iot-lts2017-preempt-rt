@@ -1,7 +1,7 @@
-From b2baff693bf47bab6914e30b0197a940c0f834cd Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tomas Winkler <tomas.winkler@intel.com>
 Date: Sun, 28 Feb 2016 23:59:39 +0200
-Subject: [PATCH 0544/2278] char: rpmb: add device attributes
+Subject: [PATCH] char: rpmb: add device attributes
 
 Add attribute type that displays underlay storage type technology
 EMMC, UFS, and attribute id, that displays underlay storage device id.
@@ -24,8 +24,8 @@ Change-Id: If25a96f1371d8fea5820f6e06366bc0945d32faa
 Signed-off-by: Tomas Winkler <tomas.winkler@intel.com>
 Signed-off-by: Alexander Usyskin <alexander.usyskin@intel.com>
 ---
- Documentation/ABI/testing/sysfs-class-rpmb | 27 +++++++++++
- drivers/char/rpmb/core.c                   | 72 ++++++++++++++++++++++++++++++
+ Documentation/ABI/testing/sysfs-class-rpmb | 27 ++++++++
+ drivers/char/rpmb/core.c                   | 72 ++++++++++++++++++++++
  2 files changed, 99 insertions(+)
 
 diff --git a/Documentation/ABI/testing/sysfs-class-rpmb b/Documentation/ABI/testing/sysfs-class-rpmb
@@ -154,5 +154,5 @@ index 1bdb5e6..7c0ceed 100644
  	if (ret)
  		goto exit;
 -- 
-2.7.4
+https://clearlinux.org
 

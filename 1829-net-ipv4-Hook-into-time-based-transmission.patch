@@ -1,7 +1,7 @@
-From af560b473a2af3e84ff8e1068984c97a9ad8616c Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Jesus Sanchez-Palencia <jesus.sanchez-palencia@intel.com>
 Date: Tue, 3 Jul 2018 15:42:49 -0700
-Subject: [PATCH 1829/2278] net: ipv4: Hook into time based transmission
+Subject: [PATCH] net: ipv4: Hook into time based transmission
 
 Add a transmit_time field to struct inet_cork, then copy the
 timestamp from the CMSG cookie at ip_setup_cork() so we can
@@ -126,5 +126,5 @@ index b89920c..85a3b3a 100644
  	getfrag = is_udplite ? udplite_getfrag : ip_generic_getfrag;
  
 -- 
-2.7.4
+https://clearlinux.org
 

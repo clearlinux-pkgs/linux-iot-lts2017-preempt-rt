@@ -1,19 +1,19 @@
-From abbdf0e4ed6dfff8e928143bf385370f0504d81f Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: WeiX Meng <weix.meng@intel.com>
 Date: Thu, 24 May 2018 08:31:00 +0100
-Subject: [PATCH 1920/2278] Revert "media:intel-ipu4:isys:v4l2-compliance fix
- for ISA Config"
+Subject: [PATCH] Revert "media:intel-ipu4:isys:v4l2-compliance fix for ISA
+ Config"
 
 This reverts commit 70975168ff1968729593f53ee9eccdde04cde619.
 
 Change-Id: I9f9d216a2e89c8a56876691c0e2d44417917c430
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- drivers/media/pci/intel/ipu4/ipu4-isys-isa.c | 84 +++-------------------------
+ drivers/media/pci/intel/ipu4/ipu4-isys-isa.c | 84 ++------------------
  1 file changed, 7 insertions(+), 77 deletions(-)
 
 diff --git a/drivers/media/pci/intel/ipu4/ipu4-isys-isa.c b/drivers/media/pci/intel/ipu4/ipu4-isys-isa.c
-index 3bc6510..2270ee04 100644
+index 3bc6510..2270ee0 100644
 --- a/drivers/media/pci/intel/ipu4/ipu4-isys-isa.c
 +++ b/drivers/media/pci/intel/ipu4/ipu4-isys-isa.c
 @@ -113,27 +113,15 @@ isa_config_try_fmt_vid_out_mplane(struct ipu_isys_video *av,
@@ -145,5 +145,5 @@ index 3bc6510..2270ee04 100644
  	isa->av_3a.prepare_firmware_stream_cfg =
  	    isa_prepare_firmware_stream_cfg_param;
 -- 
-2.7.4
+https://clearlinux.org
 

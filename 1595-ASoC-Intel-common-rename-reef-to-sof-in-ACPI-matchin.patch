@@ -1,16 +1,16 @@
-From 3b72ded32bcfe30f0cf1642dc553238cfb5e1f8a Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Mon, 12 Mar 2018 15:35:11 -0500
-Subject: [PATCH 1595/2278] ASoC: Intel: common: rename 'reef' to 'sof' in ACPI
- matching table
+Subject: [PATCH] ASoC: Intel: common: rename 'reef' to 'sof' in ACPI matching
+ table
 
 Align with firmware tools, no functionality change
 
 Signed-off-by: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 ---
- sound/soc/intel/common/soc-acpi-intel-byt-match.c  | 40 ++++++++---------
- sound/soc/intel/common/soc-acpi-intel-cht-match.c  | 52 +++++++++++-----------
- .../intel/common/soc-acpi-intel-hsw-bdw-match.c    | 16 +++----
+ .../intel/common/soc-acpi-intel-byt-match.c   | 40 +++++++-------
+ .../intel/common/soc-acpi-intel-cht-match.c   | 52 +++++++++----------
+ .../common/soc-acpi-intel-hsw-bdw-match.c     | 16 +++---
  3 files changed, 54 insertions(+), 54 deletions(-)
 
 diff --git a/sound/soc/intel/common/soc-acpi-intel-byt-match.c b/sound/soc/intel/common/soc-acpi-intel-byt-match.c
@@ -321,5 +321,5 @@ index 53e7acd..494a0ea 100644
  	},
  	{}
 -- 
-2.7.4
+https://clearlinux.org
 

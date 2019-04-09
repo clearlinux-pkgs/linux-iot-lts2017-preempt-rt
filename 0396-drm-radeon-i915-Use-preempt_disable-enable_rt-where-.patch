@@ -1,8 +1,8 @@
-From 7547868765b2e632f5ed2348758746693b82cb9f Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Mike Galbraith <umgwanakikbuti@gmail.com>
 Date: Sat, 27 Feb 2016 08:09:11 +0100
-Subject: [PATCH 0396/2278] drm,radeon,i915: Use preempt_disable/enable_rt()
- where recommended
+Subject: [PATCH] drm,radeon,i915: Use preempt_disable/enable_rt() where
+ recommended
 
 DRM folks identified the spots, so use them.
 
@@ -36,7 +36,7 @@ index 20a471a..5d34d48 100644
  	spin_unlock_irqrestore(&dev_priv->uncore.lock, irqflags);
  
 diff --git a/drivers/gpu/drm/radeon/radeon_display.c b/drivers/gpu/drm/radeon/radeon_display.c
-index ddfe91ef..3157bcf 100644
+index ddfe91e..3157bcf 100644
 --- a/drivers/gpu/drm/radeon/radeon_display.c
 +++ b/drivers/gpu/drm/radeon/radeon_display.c
 @@ -1839,6 +1839,7 @@ int radeon_get_crtc_scanoutpos(struct drm_device *dev, unsigned int pipe,
@@ -56,5 +56,5 @@ index ddfe91ef..3157bcf 100644
  	/* Decode into vertical and horizontal scanout position. */
  	*vpos = position & 0x1fff;
 -- 
-2.7.4
+https://clearlinux.org
 

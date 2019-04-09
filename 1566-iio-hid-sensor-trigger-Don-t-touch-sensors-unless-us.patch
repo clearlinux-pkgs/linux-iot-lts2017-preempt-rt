@@ -1,8 +1,8 @@
-From 4af424fadd7719fd4a9c23c1c627a9498964c3e0 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>
 Date: Wed, 11 Oct 2017 09:35:01 -0700
-Subject: [PATCH 1566/2278] iio: hid-sensor-trigger: Don't touch sensors unless
- user space requests
+Subject: [PATCH] iio: hid-sensor-trigger: Don't touch sensors unless user
+ space requests
 
 One of the user complained that on his system Thinkpad Yoga S1, with
 commit f1664eaacec3 ("iio: hid-sensor-trigger: Fix the race with user
@@ -101,5 +101,5 @@ index 000de6d..dc12f5c 100644
  	int raw_hystersis;
  	int latency_ms;
 -- 
-2.7.4
+https://clearlinux.org
 

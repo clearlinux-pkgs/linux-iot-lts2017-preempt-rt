@@ -1,7 +1,7 @@
-From 658208a00df19b9c43f0e3790fd739d12fae9ac8 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Zhong,Fangjian" <fangjian.zhong@intel.com>
 Date: Tue, 11 Jul 2017 04:19:21 +0000
-Subject: [PATCH 0495/2278] Revert "trusty: implement trusty OS timer proxy for
+Subject: [PATCH] Revert "trusty: implement trusty OS timer proxy for
  performance enhancement"
 
 This reverts commit 3e30c8c0a0b5928bc11fa44571563635a9b1e0a8.
@@ -9,8 +9,8 @@ This reverts commit 3e30c8c0a0b5928bc11fa44571563635a9b1e0a8.
 Change-Id: I16e64b07a9ddfd50f44ab85ed0aa27925c8ac8a2
 Signed-off-by: Zhong,Fangjian <fangjian.zhong@intel.com>
 ---
- drivers/trusty/trusty-irq.c |  2 ++
- drivers/trusty/trusty.c     | 88 ---------------------------------------------
+ drivers/trusty/trusty-irq.c |  2 +
+ drivers/trusty/trusty.c     | 88 -------------------------------------
  2 files changed, 2 insertions(+), 88 deletions(-)
 
 diff --git a/drivers/trusty/trusty-irq.c b/drivers/trusty/trusty-irq.c
@@ -169,5 +169,5 @@ index 2fc1b23..7e55453 100644
  	return 0;
  }
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,7 @@
-From 9d7cafa1d149496b4da40dccec2273e9084dafab Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Thu, 12 Oct 2017 18:38:05 -0500
-Subject: [PATCH 1186/2278] ASoC: Intel: boards: remove hard-coded compressed
- dailinks
+Subject: [PATCH] ASoC: Intel: boards: remove hard-coded compressed dailinks
 
 The hard-coded compressed dailinks are not supported using
 publicly-available firmwares, which creates unnecessary user
@@ -102,10 +101,11 @@ diff --git a/sound/soc/intel/boards/bytcr_rt5640.c b/sound/soc/intel/boards/bytc
 index 6c7b71d..3eeb020 100644
 --- a/sound/soc/intel/boards/bytcr_rt5640.c
 +++ b/sound/soc/intel/boards/bytcr_rt5640.c
-@@ -679,14 +679,6 @@ static struct snd_soc_dai_link byt_rt5640_dais[] = {
+@@ -678,14 +678,6 @@ static struct snd_soc_dai_link byt_rt5640_dais[] = {
+ 		.dynamic = 1,
  		.dpcm_playback = 1,
  		.ops = &byt_rt5640_aif1_ops,
- 	},
+-	},
 -	[MERR_DPCM_COMPR] = {
 -		.name = "Baytrail Compressed Port",
 -		.stream_name = "Baytrail Compress",
@@ -113,10 +113,9 @@ index 6c7b71d..3eeb020 100644
 -		.codec_dai_name = "snd-soc-dummy-dai",
 -		.codec_name = "snd-soc-dummy",
 -		.platform_name = "sst-mfld-platform",
--	},
+ 	},
  		/* back ends */
  	{
- 		.name = "SSP2-Codec",
 @@ -748,7 +740,7 @@ static int snd_byt_rt5640_mc_probe(struct platform_device *pdev)
  	struct sst_acpi_mach *mach;
  	const char *i2c_name = NULL;
@@ -135,7 +134,7 @@ index 6c7b71d..3eeb020 100644
  		if (!strcmp(byt_rt5640_dais[i].codec_name, "i2c-10EC5640:00")) {
  			dai_index = i;
 diff --git a/sound/soc/intel/boards/bytcr_rt5651.c b/sound/soc/intel/boards/bytcr_rt5651.c
-index e0caee2..3076bfc0 100644
+index e0caee2..3076bfc 100644
 --- a/sound/soc/intel/boards/bytcr_rt5651.c
 +++ b/sound/soc/intel/boards/bytcr_rt5651.c
 @@ -389,14 +389,6 @@ static struct snd_soc_dai_link byt_rt5651_dais[] = {
@@ -228,5 +227,5 @@ index 3464cf4..d135640 100644
  	/* Back End DAI links */
  	{
 -- 
-2.7.4
+https://clearlinux.org
 

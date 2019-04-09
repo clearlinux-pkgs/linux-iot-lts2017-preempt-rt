@@ -1,8 +1,8 @@
-From 41bb5a7618a227ab270942e0ab957d3db5231103 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Thomas Gleixner <tglx@linutronix.de>
 Date: Thu, 19 Jul 2018 21:50:23 +0200
-Subject: [PATCH 0426/2278] x86/ioapic: Don't let setaffinity unmask threaded
- EOI interrupt too early
+Subject: [PATCH] x86/ioapic: Don't let setaffinity unmask threaded EOI
+ interrupt too early
 
 [ Upstream commit ac14002317721910204b82b9d8611dadb1cec2bb ]
 
@@ -112,5 +112,5 @@ index 5832a9d..c9af5af 100644
  
  static void ioapic_ir_ack_level(struct irq_data *irq_data)
 -- 
-2.7.4
+https://clearlinux.org
 

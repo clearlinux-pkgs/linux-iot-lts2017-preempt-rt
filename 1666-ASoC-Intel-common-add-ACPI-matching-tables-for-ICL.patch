@@ -1,14 +1,13 @@
-From 42044762746006496df3aaf863c50fa1fed2301f Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Fri, 22 Jun 2018 15:47:24 -0500
-Subject: [PATCH 1666/2278] ASoC: Intel: common: add ACPI matching tables for
- ICL
+Subject: [PATCH] ASoC: Intel: common: add ACPI matching tables for ICL
 
 Signed-off-by: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 ---
- include/sound/soc-acpi-intel-match.h              |  1 +
- sound/soc/intel/common/Makefile                   |  2 +-
- sound/soc/intel/common/soc-acpi-intel-icl-match.c | 32 +++++++++++++++++++++++
+ include/sound/soc-acpi-intel-match.h          |  1 +
+ sound/soc/intel/common/Makefile               |  2 +-
+ .../intel/common/soc-acpi-intel-icl-match.c   | 32 +++++++++++++++++++
  3 files changed, 34 insertions(+), 1 deletion(-)
  create mode 100644 sound/soc/intel/common/soc-acpi-intel-icl-match.c
 
@@ -75,5 +74,5 @@ index 0000000..33b441d
 +MODULE_LICENSE("GPL v2");
 +MODULE_DESCRIPTION("Intel Common ACPI Match module");
 -- 
-2.7.4
+https://clearlinux.org
 

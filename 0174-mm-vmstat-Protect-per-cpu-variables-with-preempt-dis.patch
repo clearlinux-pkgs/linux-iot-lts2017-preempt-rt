@@ -1,8 +1,8 @@
-From a1db4436cd0b97c7dda75feb135a583d437d743c Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ingo Molnar <mingo@elte.hu>
 Date: Fri, 3 Jul 2009 08:30:13 -0500
-Subject: [PATCH 0174/2278] mm/vmstat: Protect per cpu variables with preempt
- disable on RT
+Subject: [PATCH] mm/vmstat: Protect per cpu variables with preempt disable on
+ RT
 
 Disable preemption on -RT for the vmstat code. On vanila the code runs in
 IRQ-off regions while on -RT it is not. "preempt_disable" ensures that the
@@ -140,5 +140,5 @@ index 6389e87..203bc6d 100644
  
  void __dec_zone_page_state(struct page *page, enum zone_stat_item item)
 -- 
-2.7.4
+https://clearlinux.org
 

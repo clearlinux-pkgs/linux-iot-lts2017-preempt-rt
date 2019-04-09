@@ -1,7 +1,7 @@
-From dfe5a0ba116ad1fea8172a8db90257001b7d86e9 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Chris Wilson <chris@chris-wilson.co.uk>
 Date: Thu, 9 Nov 2017 08:55:40 +0000
-Subject: [PATCH 0941/2278] drm/i915: Reorder context-close to avoid calling
+Subject: [PATCH] drm/i915: Reorder context-close to avoid calling
  i915_vma_close() under RCU
 
 When we close the VMA, we unbind it from the ppgtt and tear down the
@@ -68,5 +68,5 @@ index 8a6dec9..688c161 100644
  	if (ctx->ppgtt)
  		i915_ppgtt_close(&ctx->ppgtt->base);
 -- 
-2.7.4
+https://clearlinux.org
 

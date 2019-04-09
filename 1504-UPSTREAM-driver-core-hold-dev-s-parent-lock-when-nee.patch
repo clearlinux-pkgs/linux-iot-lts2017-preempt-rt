@@ -1,8 +1,7 @@
-From 47d0a3ab9f093100d7139d934b932e5c36ac36e8 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Martin Liu <liumartin@google.com>
 Date: Thu, 31 May 2018 00:31:36 +0800
-Subject: [PATCH 1504/2278] UPSTREAM: driver core: hold dev's parent lock when
- needed
+Subject: [PATCH] UPSTREAM: driver core: hold dev's parent lock when needed
 
 [ Upstream commit 8c97a46af04b4f7c0a0dded031fef1806872e648 ]
 
@@ -44,7 +43,7 @@ Signed-off-by: Lili Li <lili.li@intel.com>
  4 files changed, 17 insertions(+), 12 deletions(-)
 
 diff --git a/drivers/base/bus.c b/drivers/base/bus.c
-index 22a64fd3..641a52b 100644
+index 22a64fd..641a52b 100644
 --- a/drivers/base/bus.c
 +++ b/drivers/base/bus.c
 @@ -186,10 +186,10 @@ static ssize_t unbind_store(struct device_driver *drv, const char *buf,
@@ -172,5 +171,5 @@ index 16c0a8f..14032db 100644
  
  extern int __must_check bus_register(struct bus_type *bus);
 -- 
-2.7.4
+https://clearlinux.org
 

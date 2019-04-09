@@ -1,8 +1,8 @@
-From 03bac9371a0744557b8777a7dc550db1c554f678 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Bandi,Kushal" <kushal.bandi@intel.com>
 Date: Fri, 25 May 2018 16:14:08 -0700
-Subject: [PATCH 2014/2278] media: intel-ipu4: [VIRT] Adding Buffer mapping &
- virtual stream initialization.
+Subject: [PATCH] media: intel-ipu4: [VIRT] Adding Buffer mapping & virtual
+ stream initialization.
 
 1] Addition of virtual streams devs equivalent to native devs.
 This will help to create 1:1 mapping between FE & BE
@@ -16,12 +16,12 @@ Change-Id: I8846dd8ad86d14eaff712f331dcc47274ba56a2e
 Signed-off-by: Yu, Ong Hock <ong.hock.yu@intel.com>
 Signed-off-by: Bandi, Kushal <kushal.bandi@intel.com>
 ---
- .../pci/intel/virtio/intel-ipu4-para-virt-drv.c    | 609 +++++++++++++++++++--
- .../pci/intel/virtio/intel-ipu4-para-virt-drv.h    |  19 +-
- .../media/pci/intel/virtio/intel-ipu4-virtio-be.c  |  16 +-
- .../pci/intel/virtio/intel-ipu4-virtio-bridge.c    |  11 +-
- .../pci/intel/virtio/intel-ipu4-virtio-common.h    |  13 +-
- .../media/pci/intel/virtio/intel-ipu4-virtio-fe.c  |  24 +-
+ .../intel/virtio/intel-ipu4-para-virt-drv.c   | 609 ++++++++++++++++--
+ .../intel/virtio/intel-ipu4-para-virt-drv.h   |  19 +-
+ .../pci/intel/virtio/intel-ipu4-virtio-be.c   |  16 +-
+ .../intel/virtio/intel-ipu4-virtio-bridge.c   |  11 +-
+ .../intel/virtio/intel-ipu4-virtio-common.h   |  13 +-
+ .../pci/intel/virtio/intel-ipu4-virtio-fe.c   |  24 +-
  6 files changed, 613 insertions(+), 79 deletions(-)
 
 diff --git a/drivers/media/pci/intel/virtio/intel-ipu4-para-virt-drv.c b/drivers/media/pci/intel/virtio/intel-ipu4-para-virt-drv.c
@@ -998,7 +998,7 @@ index f389dc8..fe33bd9 100644
  	IPU4_CMD_DEVICE_OPEN = 0x1,
  	IPU4_CMD_DEVICE_CLOSE,
 diff --git a/drivers/media/pci/intel/virtio/intel-ipu4-virtio-fe.c b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-fe.c
-index 09c1fb47..e4bb5e9 100644
+index 09c1fb4..e4bb5e9 100644
 --- a/drivers/media/pci/intel/virtio/intel-ipu4-virtio-fe.c
 +++ b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-fe.c
 @@ -15,7 +15,7 @@
@@ -1094,5 +1094,5 @@ index 09c1fb47..e4bb5e9 100644
  
  	if (vi == NULL) {
 -- 
-2.7.4
+https://clearlinux.org
 

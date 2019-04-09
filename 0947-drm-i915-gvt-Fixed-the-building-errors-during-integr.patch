@@ -1,8 +1,7 @@
-From 6ba5fd48e9b89e713ca08bce76b73134e3210092 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Min He <min.he@intel.com>
 Date: Wed, 10 Jan 2018 05:55:30 +0800
-Subject: [PATCH 0947/2278] drm/i915/gvt: Fixed the building errors during
- integration
+Subject: [PATCH] drm/i915/gvt: Fixed the building errors during integration
 
 1. modified cwpgt.c to accommodate latest CWP hypervisor changes
 2. added dependency in Kconfig to CWP hypervisor
@@ -10,7 +9,7 @@ Subject: [PATCH 0947/2278] drm/i915/gvt: Fixed the building errors during
 Signed-off-by: Min He <min.he@intel.com>
 ---
  drivers/gpu/drm/i915/Kconfig     |  1 +
- drivers/gpu/drm/i915/gvt/cwpgt.c | 46 ++++++++++++++++++++--------------------
+ drivers/gpu/drm/i915/gvt/cwpgt.c | 46 ++++++++++++++++----------------
  2 files changed, 24 insertions(+), 23 deletions(-)
 
 diff --git a/drivers/gpu/drm/i915/Kconfig b/drivers/gpu/drm/i915/Kconfig
@@ -165,5 +164,5 @@ index 4e8ef1a..8936425 100644
  	} else {
  		mfn = cwpgt_virt_to_mfn(info->vgpu->mmio.vreg);
 -- 
-2.7.4
+https://clearlinux.org
 

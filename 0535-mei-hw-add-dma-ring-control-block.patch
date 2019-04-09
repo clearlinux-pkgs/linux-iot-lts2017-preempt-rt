@@ -1,7 +1,7 @@
-From 55820edb58a3e638bfe46c5c277d544f3f4aeaab Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tomas Winkler <tomas.winkler@intel.com>
 Date: Tue, 1 Nov 2016 02:02:52 +0200
-Subject: [PATCH 0535/2278] mei: hw: add dma ring control block
+Subject: [PATCH] mei: hw: add dma ring control block
 
 The DMA ring control block contains write and read
 indices for host and device circular buffers.
@@ -100,5 +100,5 @@ index e52664a..8089db0 100644
  /*
   *  MEI interrupt functions prototype
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,7 @@
-From 7ba1b79e1073447f6a0d08901c8d23a98808cb55 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Prakash, Divya1" <divya1.prakash@intel.com>
 Date: Thu, 14 Sep 2017 22:02:01 +0530
-Subject: [PATCH 0863/2278] ASoC: Intel: Skylake: Reset DSP pipe in
- skl_pcm_hw_free
+Subject: [PATCH] ASoC: Intel: Skylake: Reset DSP pipe in skl_pcm_hw_free
 
 Currently during destroy pipeline the gateway is disabled
 before DMA completion. This leads to improper draining of
@@ -48,5 +47,5 @@ index 61fb43b..e623d55 100644
  	snd_hdac_stream_cleanup(hdac_stream(stream));
  	hdac_stream(stream)->prepared = 0;
 -- 
-2.7.4
+https://clearlinux.org
 

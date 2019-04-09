@@ -1,8 +1,8 @@
-From 16f406b08029b7e8b7f85f6e57327d18baef6bfd Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 Date: Mon, 4 Sep 2017 18:31:50 +0200
-Subject: [PATCH 0199/2278] hrtimer: consolidate hrtimer_init() +
- hrtimer_init_sleeper() calls
+Subject: [PATCH] hrtimer: consolidate hrtimer_init() + hrtimer_init_sleeper()
+ calls
 
 hrtimer_init_sleeper() calls require a prior initialisation of the
 hrtimer object with hrtimer_init(). Lets make the initialisation of the
@@ -11,10 +11,10 @@ hrtimer object part of hrtimer_init_sleeper().
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
  block/blk-mq.c          |  3 +--
- include/linux/hrtimer.h | 19 ++++++++++++++++---
+ include/linux/hrtimer.h | 19 ++++++++++++++---
  include/linux/wait.h    |  4 ++--
- kernel/futex.c          | 19 ++++++++-----------
- kernel/time/hrtimer.c   | 46 ++++++++++++++++++++++++++++++++++++----------
+ kernel/futex.c          | 19 +++++++----------
+ kernel/time/hrtimer.c   | 46 ++++++++++++++++++++++++++++++++---------
  net/core/pktgen.c       |  4 ++--
  6 files changed, 65 insertions(+), 30 deletions(-)
 
@@ -258,5 +258,5 @@ index 6e1e10f..c1ae407 100644
  			set_current_state(TASK_INTERRUPTIBLE);
  			hrtimer_start_expires(&t.timer, HRTIMER_MODE_ABS);
 -- 
-2.7.4
+https://clearlinux.org
 

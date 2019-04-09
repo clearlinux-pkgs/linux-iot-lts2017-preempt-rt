@@ -1,8 +1,7 @@
-From bd1e3ba8926f0c7c015e089caa24c8cc963d644d Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Wed, 18 Jul 2018 20:53:49 +0100
-Subject: [PATCH 1789/2278] ASoC: SOF: topology: Add comments to help
- readability.
+Subject: [PATCH] ASoC: SOF: topology: Add comments to help readability.
 
 Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 ---
@@ -82,5 +81,5 @@ index 143a191..7907199 100644
  }
  
 -- 
-2.7.4
+https://clearlinux.org
 

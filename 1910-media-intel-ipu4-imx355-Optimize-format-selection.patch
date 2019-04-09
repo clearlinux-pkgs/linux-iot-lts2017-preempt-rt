@@ -1,8 +1,7 @@
-From 1eeab93363cb6e7a9eb5eea37d7c3aec557e37db Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tianshu Qiu <tian.shu.qiu@intel.com>
 Date: Wed, 16 May 2018 11:13:43 +0800
-Subject: [PATCH 1910/2278] media: intel-ipu4: imx355: Optimize format
- selection
+Subject: [PATCH] media: intel-ipu4: imx355: Optimize format selection
 
 Message for Open Source:
 Optimize format selection.
@@ -18,7 +17,7 @@ Change-Id: Ib22949c61d917af07861c0656a47d7b1a177040a
 Signed-off-by: Tianshu Qiu <tian.shu.qiu@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- drivers/media/i2c/imx355.c | 47 +++++++---------------------------------------
+ drivers/media/i2c/imx355.c | 47 ++++++--------------------------------
  1 file changed, 7 insertions(+), 40 deletions(-)
 
 diff --git a/drivers/media/i2c/imx355.c b/drivers/media/i2c/imx355.c
@@ -96,5 +95,5 @@ index 4d69b9b..334609c 100644
  	if (fmt->which == V4L2_SUBDEV_FORMAT_TRY) {
  		framefmt = v4l2_subdev_get_try_format(sd, cfg, fmt->pad);
 -- 
-2.7.4
+https://clearlinux.org
 

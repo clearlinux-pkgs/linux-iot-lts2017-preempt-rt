@@ -1,7 +1,7 @@
-From 3e7cb53add7f4d7f9076feb08c60cb1486f4f865 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: wu xia <xia.wu@intel.com>
 Date: Tue, 3 Nov 2015 07:58:52 +0200
-Subject: [PATCH 1389/2278] media: Add per-file-handle data support
+Subject: [PATCH] media: Add per-file-handle data support
 
 The media devnode core associates devnodes with files by storing the
 devnode pointer in the file structure private_data field. In order to
@@ -106,10 +106,11 @@ diff --git a/include/media/media-devnode.h b/include/media/media-devnode.h
 index 511615d..7c3a7ff 100644
 --- a/include/media/media-devnode.h
 +++ b/include/media/media-devnode.h
-@@ -64,6 +64,20 @@ struct media_file_operations {
+@@ -63,6 +63,20 @@ struct media_file_operations {
+ 	int (*release) (struct file *);
  };
  
- /**
++/**
 + * struct media_devnode_fh - Media device node file handle
 + * @devnode:	pointer to the media device node
 + *
@@ -123,10 +124,9 @@ index 511615d..7c3a7ff 100644
 +	struct media_devnode *devnode;
 +};
 +
-+/**
+ /**
   * struct media_devnode - Media device node
   * @media_dev:	pointer to struct &media_device
-  * @fops:	pointer to struct &media_file_operations with media device ops
 @@ -154,7 +168,9 @@ void media_devnode_unregister(struct media_devnode *devnode);
   */
  static inline struct media_devnode *media_devnode_data(struct file *filp)
@@ -139,5 +139,5 @@ index 511615d..7c3a7ff 100644
  
  /**
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,7 +1,7 @@
-From 1deed27636204df799cd8e4ce37f9a023bffbff4 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Tue, 3 Jul 2018 12:33:03 -0500
-Subject: [PATCH 1748/2278] ASoC: Intel: fix Kconfig typos
+Subject: [PATCH] ASoC: Intel: fix Kconfig typos
 
 Fix ASoC: Intel: select relevant machine drivers for SOF
 s/INTEL_SKL/INTEL_SKYLAKE
@@ -40,5 +40,5 @@ index 67ca087..1f53302 100644
  config SND_SOC_INTEL_KBL_RT5663_MAX98927_MACH
  	tristate "KBL with RT5663 and MAX98927 in I2S Mode"
 -- 
-2.7.4
+https://clearlinux.org
 

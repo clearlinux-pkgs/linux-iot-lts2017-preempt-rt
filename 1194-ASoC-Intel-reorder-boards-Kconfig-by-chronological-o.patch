@@ -1,8 +1,7 @@
-From 2f7230aa8e300ef6df0318455a7811cb2a08e906 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Thu, 12 Oct 2017 18:49:44 -0500
-Subject: [PATCH 1194/2278] ASoC: Intel: reorder boards Kconfig by
- chronological order
+Subject: [PATCH] ASoC: Intel: reorder boards Kconfig by chronological order
 
 This file is a mess, order by generation with more recent last
 
@@ -11,7 +10,7 @@ Acked-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Signed-off-by: Mark Brown <broonie@kernel.org>
 (cherry picked from commit d4d86b86e1ffa6be16b287ee34b0090ef79a0fbb)
 ---
- sound/soc/intel/boards/Kconfig | 190 ++++++++++++++++++++---------------------
+ sound/soc/intel/boards/Kconfig | 190 ++++++++++++++++-----------------
  1 file changed, 95 insertions(+), 95 deletions(-)
 
 diff --git a/sound/soc/intel/boards/Kconfig b/sound/soc/intel/boards/Kconfig
@@ -237,5 +236,5 @@ index d341cb9..56bb360 100644
  	tristate "Enable CNL FPGA board settings"
  	depends on X86
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,14 +1,14 @@
-From e2c81904b32a50d72e86bc5eb059fb661071cdc8 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Mon, 8 Jan 2018 20:32:38 +0000
-Subject: [PATCH 1285/2278] ASoC: SOF: Add PCM operations support
+Subject: [PATCH] ASoC: SOF: Add PCM operations support
 
 Add support for exposing PCMs to userspace. PCMs are defined by topology
 and the operations in this patch map to SOF IPC calls.
 
 Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 ---
- sound/soc/sof/pcm.c | 632 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ sound/soc/sof/pcm.c | 632 ++++++++++++++++++++++++++++++++++++++++++++
  1 file changed, 632 insertions(+)
  create mode 100644 sound/soc/sof/pcm.c
 
@@ -651,5 +651,5 @@ index 0000000..8671dc1
 +	sdev->num_dai = 1;
 +}
 -- 
-2.7.4
+https://clearlinux.org
 

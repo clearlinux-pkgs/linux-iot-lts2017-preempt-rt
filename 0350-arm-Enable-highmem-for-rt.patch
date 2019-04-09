@@ -1,14 +1,14 @@
-From 9c7b40c3c733adc4d2fde59b0a99478d5605230e Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Thomas Gleixner <tglx@linutronix.de>
 Date: Wed, 13 Feb 2013 11:03:11 +0100
-Subject: [PATCH 0350/2278] arm: Enable highmem for rt
+Subject: [PATCH] arm: Enable highmem for rt
 
 fixup highmem for ARM.
 
 Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
 ---
- arch/arm/include/asm/switch_to.h |  8 ++++++
- arch/arm/mm/highmem.c            | 56 ++++++++++++++++++++++++++++++++++------
+ arch/arm/include/asm/switch_to.h |  8 +++++
+ arch/arm/mm/highmem.c            | 56 +++++++++++++++++++++++++++-----
  include/linux/highmem.h          |  1 +
  3 files changed, 57 insertions(+), 8 deletions(-)
 
@@ -39,7 +39,7 @@ index d3e937d..6ab96a2 100644
  } while (0)
  
 diff --git a/arch/arm/mm/highmem.c b/arch/arm/mm/highmem.c
-index eb4b225d..542692d 100644
+index eb4b225..542692d 100644
 --- a/arch/arm/mm/highmem.c
 +++ b/arch/arm/mm/highmem.c
 @@ -34,6 +34,11 @@ static inline pte_t get_fixmap_pte(unsigned long vaddr)
@@ -179,5 +179,5 @@ index 8f248e2..5f0bd7a 100644
  #include <asm/cacheflush.h>
  
 -- 
-2.7.4
+https://clearlinux.org
 

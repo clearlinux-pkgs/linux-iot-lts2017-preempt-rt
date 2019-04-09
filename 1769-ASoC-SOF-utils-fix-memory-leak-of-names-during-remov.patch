@@ -1,8 +1,7 @@
-From 42433a1c0927499793e4aaa6fcb0bd246bf93b2b Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Keyon Jie <yang.jie@linux.intel.com>
 Date: Mon, 9 Jul 2018 13:08:56 +0800
-Subject: [PATCH 1769/2278] ASoC: SOF: utils: fix memory leak of names during
- remove()
+Subject: [PATCH] ASoC: SOF: utils: fix memory leak of names during remove()
 
 Change to use devm_kstrdup() for string duplicate allocation, which will
 be freed together with dev free, to fix memory leak (names are not freed)
@@ -44,5 +43,5 @@ index 8f2116a..215ea84 100644
  EXPORT_SYMBOL(sof_bes_setup);
  
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,7 @@
-From 081403158c13bb25847207c80ad2664dd04bad06 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Thu, 4 Jan 2018 16:35:52 -0600
-Subject: [PATCH 1243/2278] ASoC: acpi: add missing includes for non-ACPI
- platforms
+Subject: [PATCH] ASoC: acpi: add missing includes for non-ACPI platforms
 
 0-day reports compilation issues with non-ACPI platforms.
 
@@ -30,7 +29,7 @@ Signed-off-by: Mark Brown <broonie@kernel.org>
  2 files changed, 2 insertions(+)
 
 diff --git a/include/sound/soc-acpi-intel-match.h b/include/sound/soc-acpi-intel-match.h
-index 1a9191cd..9da6388 100644
+index 1a9191c..9da6388 100644
 --- a/include/sound/soc-acpi-intel-match.h
 +++ b/include/sound/soc-acpi-intel-match.h
 @@ -16,6 +16,7 @@
@@ -42,7 +41,7 @@ index 1a9191cd..9da6388 100644
  #include <linux/acpi.h>
  
 diff --git a/include/sound/soc-acpi.h b/include/sound/soc-acpi.h
-index a7d8d335..a934360 100644
+index a7d8d33..a934360 100644
 --- a/include/sound/soc-acpi.h
 +++ b/include/sound/soc-acpi.h
 @@ -17,6 +17,7 @@
@@ -54,5 +53,5 @@ index a7d8d335..a934360 100644
  struct snd_soc_acpi_package_context {
  	char *name;           /* package name */
 -- 
-2.7.4
+https://clearlinux.org
 

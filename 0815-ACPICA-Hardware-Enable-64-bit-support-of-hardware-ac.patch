@@ -1,8 +1,7 @@
-From 16780322e5914489fdab6ac5525d19679b75f3b8 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Lv Zheng <lv.zheng@intel.com>
 Date: Wed, 20 Sep 2017 10:00:11 +0800
-Subject: [PATCH 0815/2278] ACPICA: Hardware: Enable 64-bit support of hardware
- accesses
+Subject: [PATCH] ACPICA: Hardware: Enable 64-bit support of hardware accesses
 
 ACPICA commit 6b0a604d171334f61a18bc92b44ec0437b11bf98
 
@@ -17,10 +16,10 @@ Signed-off-by: Bob Moore <robert.moore@intel.com>
 Signed-off-by: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
 ---
  drivers/acpi/acpica/achware.h |   4 +-
- drivers/acpi/acpica/evgpe.c   |   6 +--
+ drivers/acpi/acpica/evgpe.c   |   6 +-
  drivers/acpi/acpica/hwgpe.c   |   4 +-
- drivers/acpi/acpica/hwregs.c  |  72 ++++++++++++++------------
- drivers/acpi/acpica/hwxface.c | 118 ++----------------------------------------
+ drivers/acpi/acpica/hwregs.c  |  72 +++++++++++----------
+ drivers/acpi/acpica/hwxface.c | 118 +---------------------------------
  5 files changed, 49 insertions(+), 155 deletions(-)
 
 diff --git a/drivers/acpi/acpica/achware.h b/drivers/acpi/acpica/achware.h
@@ -345,7 +344,7 @@ index ea49e08..81ae601 100644
  
  	/*
 diff --git a/drivers/acpi/acpica/hwxface.c b/drivers/acpi/acpica/hwxface.c
-index fb84983..834f7d73 100644
+index fb84983..834f7d7 100644
 --- a/drivers/acpi/acpica/hwxface.c
 +++ b/drivers/acpi/acpica/hwxface.c
 @@ -125,76 +125,12 @@ ACPI_EXPORT_SYMBOL(acpi_reset)
@@ -489,5 +488,5 @@ index fb84983..834f7d73 100644
  }
  
 -- 
-2.7.4
+https://clearlinux.org
 

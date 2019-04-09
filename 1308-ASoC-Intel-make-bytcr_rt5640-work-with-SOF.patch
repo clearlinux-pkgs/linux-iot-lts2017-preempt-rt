@@ -1,7 +1,7 @@
-From 7685699ce11dc0a688e14b9870f91b72aef921c8 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Wed, 20 Dec 2017 18:36:49 -0600
-Subject: [PATCH 1308/2278] ASoC: Intel: make bytcr_rt5640 work with SOF
+Subject: [PATCH] ASoC: Intel: make bytcr_rt5640 work with SOF
 
 Disable hard-coded routes when SOF is enabled
 TODO: bytcr is not yet supported
@@ -46,5 +46,5 @@ index b6a1cfe..7786d93 100644
  
  	if (is_bytcr) {
 -- 
-2.7.4
+https://clearlinux.org
 

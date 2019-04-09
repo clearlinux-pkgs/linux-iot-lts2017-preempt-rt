@@ -1,7 +1,7 @@
-From 3e4cc4d76544497d5ba1f29659b9409e99e02359 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 Date: Wed, 13 Sep 2017 14:43:41 +0200
-Subject: [PATCH 0374/2278] srcu: use cpu_online() instead custom check
+Subject: [PATCH] srcu: use cpu_online() instead custom check
 
 The current check via srcu_online is slightly racy because after looking
 at srcu_online there could be an interrupt that interrupted us long
@@ -33,10 +33,11 @@ index 6d58800..b72d8c5 100644
  
  #include "rcu.h"
  #include "rcu_segcblist.h"
-@@ -425,21 +426,6 @@ static void srcu_gp_start(struct srcu_struct *sp)
+@@ -424,21 +425,6 @@ static void srcu_gp_start(struct srcu_struct *sp)
+ 	WARN_ON_ONCE(state != SRCU_STATE_SCAN1);
  }
  
- /*
+-/*
 - * Track online CPUs to guide callback workqueue placement.
 - */
 -DEFINE_PER_CPU(bool, srcu_online);
@@ -51,10 +52,9 @@ index 6d58800..b72d8c5 100644
 -	WRITE_ONCE(per_cpu(srcu_online, cpu), false);
 -}
 -
--/*
+ /*
   * Place the workqueue handler on the specified CPU if online, otherwise
   * just run it whereever.  This is useful for placing workqueue handlers
-  * that are to invoke the specified CPU's callbacks.
 @@ -450,12 +436,12 @@ static bool srcu_queue_delayed_work_on(int cpu, struct workqueue_struct *wq,
  {
  	bool ret;
@@ -103,5 +103,5 @@ index f37d06e..9eb9cfc 100644
  }
  
 -- 
-2.7.4
+https://clearlinux.org
 

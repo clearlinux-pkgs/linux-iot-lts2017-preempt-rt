@@ -1,8 +1,7 @@
-From 9b98a2af39c50cbb9f23e4679b09f956dd35d80d Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Rafael J. Wysocki" <rafael.j.wysocki@intel.com>
 Date: Tue, 10 Oct 2017 18:49:22 +0200
-Subject: [PATCH 0825/2278] ACPI / PM: Combine two identical device resume
- routines
+Subject: [PATCH] ACPI / PM: Combine two identical device resume routines
 
 Notice that acpi_dev_runtime_resume() and acpi_dev_resume_early() are
 actually literally identical after some more-or-less recent changes,
@@ -88,10 +87,11 @@ index 18af710..b2b1bb5 100644
  	return ret ? ret : pm_generic_runtime_resume(dev);
  }
  EXPORT_SYMBOL_GPL(acpi_subsys_runtime_resume);
-@@ -971,28 +970,6 @@ int acpi_dev_suspend_late(struct device *dev)
+@@ -970,28 +969,6 @@ int acpi_dev_suspend_late(struct device *dev)
+ }
  EXPORT_SYMBOL_GPL(acpi_dev_suspend_late);
  
- /**
+-/**
 - * acpi_dev_resume_early - Put device into the full-power state using ACPI.
 - * @dev: Device to put into the full-power state.
 - *
@@ -113,10 +113,9 @@ index 18af710..b2b1bb5 100644
 -}
 -EXPORT_SYMBOL_GPL(acpi_dev_resume_early);
 -
--/**
+ /**
   * acpi_subsys_prepare - Prepare device for system transition to a sleep state.
   * @dev: Device to prepare.
-  */
 @@ -1060,7 +1037,7 @@ EXPORT_SYMBOL_GPL(acpi_subsys_suspend_late);
   */
  int acpi_subsys_resume_early(struct device *dev)
@@ -148,5 +147,5 @@ index 0a385e6..0e1dace 100644
  void acpi_subsys_complete(struct device *dev);
  int acpi_subsys_suspend_late(struct device *dev);
 -- 
-2.7.4
+https://clearlinux.org
 

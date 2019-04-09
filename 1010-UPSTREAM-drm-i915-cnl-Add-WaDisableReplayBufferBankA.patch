@@ -1,7 +1,7 @@
-From 37d8a004885788068a25ab1a3ba08faff778a28c Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Rodrigo Vivi <rodrigo.vivi@intel.com>
 Date: Tue, 15 Aug 2017 16:16:49 -0700
-Subject: [PATCH 1010/2278] UPSTREAM: drm/i915/cnl: Add
+Subject: [PATCH] UPSTREAM: drm/i915/cnl: Add
  WaDisableReplayBufferBankArbitrationOptimization
 
 WA to disable replay buffer destination buffer arbitration optimization.
@@ -33,5 +33,5 @@ index 6e91d10..723e54b 100644
  	WA_SET_BIT(GEN9_GAMT_ECO_REG_RW_IA,
  		   GAMT_ECO_ENABLE_IN_PLACE_DECOMPRESS);
 -- 
-2.7.4
+https://clearlinux.org
 

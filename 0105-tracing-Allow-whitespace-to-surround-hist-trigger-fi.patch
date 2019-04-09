@@ -1,8 +1,7 @@
-From 110ac395c14c090f8eb7645733e61092ec76b527 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tom Zanussi <tom.zanussi@linux.intel.com>
 Date: Mon, 15 Jan 2018 20:52:02 -0600
-Subject: [PATCH 0105/2278] tracing: Allow whitespace to surround hist trigger
- filter
+Subject: [PATCH] tracing: Allow whitespace to surround hist trigger filter
 
 The existing code only allows for one space before and after the 'if'
 specifying the filter for a hist trigger.  Add code to make that more
@@ -18,7 +17,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
 (cherry picked from commit ab257ec0f8eb50c58fafd50b1cb5352553f31ccf)
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- kernel/trace/trace_events_hist.c | 37 ++++++++++++++++++++++++++++++++-----
+ kernel/trace/trace_events_hist.c | 37 +++++++++++++++++++++++++++-----
  1 file changed, 32 insertions(+), 5 deletions(-)
 
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
@@ -77,5 +76,5 @@ index 0803b84..0b73852 100644
  	attrs = parse_hist_trigger_attrs(trigger);
  	if (IS_ERR(attrs))
 -- 
-2.7.4
+https://clearlinux.org
 

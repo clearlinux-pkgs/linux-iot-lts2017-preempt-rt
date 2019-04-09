@@ -1,7 +1,7 @@
-From a22faaf9e1a7ce5385298de6cc6b85e26959e3d4 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Takashi Iwai <tiwai@suse.de>
 Date: Thu, 7 Sep 2017 10:59:18 +0200
-Subject: [PATCH 1168/2278] ASoC: intel: Kill BUG_ON() usage
+Subject: [PATCH] ASoC: intel: Kill BUG_ON() usage
 
 Don't use BUG_ON() for a non-critical sanity check on production
 systems.  This patch either removes useless BUG_ON() calls.
@@ -40,5 +40,5 @@ index 4eeb9af..20f5066 100644
  	str_params = (struct snd_sst_params *)params;
  	memset(&alloc_param, 0, sizeof(alloc_param));
 -- 
-2.7.4
+https://clearlinux.org
 

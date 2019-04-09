@@ -1,7 +1,7 @@
-From 3ad0909c4ab2426d50dba9c993106fe653fca71d Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Peter Zijlstra <peterz@infradead.org>
 Date: Thu, 28 Jul 2011 10:43:51 +0200
-Subject: [PATCH 0346/2278] mm, rt: kmap_atomic scheduling
+Subject: [PATCH] mm, rt: kmap_atomic scheduling
 
 In fact, with migrate_disable() existing one could play games with
 kmap_atomic. You could save/restore the kmap_atomic slots on context
@@ -30,7 +30,7 @@ Link: http://lkml.kernel.org/r/1311842631.5890.208.camel@twins
  7 files changed, 86 insertions(+), 10 deletions(-)
 
 diff --git a/arch/x86/kernel/process_32.c b/arch/x86/kernel/process_32.c
-index c2df91e..f6f18939 100644
+index c2df91e..f6f1893 100644
 --- a/arch/x86/kernel/process_32.c
 +++ b/arch/x86/kernel/process_32.c
 @@ -38,6 +38,7 @@
@@ -302,5 +302,5 @@ index 59db322..22aa3dd 100644
  unsigned int nr_free_highpages (void)
  {
 -- 
-2.7.4
+https://clearlinux.org
 

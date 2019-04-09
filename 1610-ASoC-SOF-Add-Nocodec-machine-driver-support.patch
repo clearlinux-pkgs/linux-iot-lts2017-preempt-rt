@@ -1,7 +1,7 @@
-From 9638d04814ce15500c339ee9903a57f5080ea355 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Mon, 8 Jan 2018 20:37:08 +0000
-Subject: [PATCH 1610/2278] ASoC: SOF: Add Nocodec machine driver support
+Subject: [PATCH] ASoC: SOF: Add Nocodec machine driver support
 
 Add a simple "fallback" machine driver that can be used to enable SOF
 on boards with no codec device. This machine driver can also be forced
@@ -9,8 +9,8 @@ for debug/development.
 
 Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 ---
- include/sound/sof.h     |   5 +++
- sound/soc/sof/nocodec.c | 114 ++++++++++++++++++++++++++++++++++++++++++++++++
+ include/sound/sof.h     |   5 ++
+ sound/soc/sof/nocodec.c | 114 ++++++++++++++++++++++++++++++++++++++++
  2 files changed, 119 insertions(+)
  create mode 100644 sound/soc/sof/nocodec.c
 
@@ -149,5 +149,5 @@ index 0000000..0685d29
 +MODULE_LICENSE("Dual BSD/GPL");
 +MODULE_ALIAS("platform:sof-nocodec");
 -- 
-2.7.4
+https://clearlinux.org
 

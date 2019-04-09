@@ -1,7 +1,7 @@
-From 017f08df3c7da55c757ed1607c45467c3a515702 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tom Zanussi <tom.zanussi@linux.intel.com>
 Date: Mon, 15 Jan 2018 20:51:41 -0600
-Subject: [PATCH 0084/2278] tracing: Add timestamp_mode trace file
+Subject: [PATCH] tracing: Add timestamp_mode trace file
 
 Add a new option flag indicating whether or not the ring buffer is in
 'absolute timestamp' mode.
@@ -22,8 +22,8 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
 (cherry picked from commit 0eba34f9bf5b66217355a6a66054b3194aca123d)
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- Documentation/trace/ftrace.txt | 24 +++++++++++++++++++++
- kernel/trace/trace.c           | 47 ++++++++++++++++++++++++++++++++++++++++++
+ Documentation/trace/ftrace.txt | 24 +++++++++++++++++
+ kernel/trace/trace.c           | 47 ++++++++++++++++++++++++++++++++++
  2 files changed, 71 insertions(+)
 
 diff --git a/Documentation/trace/ftrace.txt b/Documentation/trace/ftrace.txt
@@ -141,5 +141,5 @@ index ffb6727..c358cae 100644
  
  #if defined(CONFIG_TRACER_MAX_TRACE) || defined(CONFIG_HWLAT_TRACER)
 -- 
-2.7.4
+https://clearlinux.org
 

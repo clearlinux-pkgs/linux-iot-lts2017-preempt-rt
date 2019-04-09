@@ -1,8 +1,8 @@
-From a62a0322c633e9c70408f30d7befdeb1a9c3ee37 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Mon, 8 Jan 2018 14:54:53 +0000
-Subject: [PATCH 1596/2278] ASoC: core: Allow topology to override machine
- driver FE DAI link config.
+Subject: [PATCH] ASoC: core: Allow topology to override machine driver FE DAI
+ link config.
 
 Machine drivers statically define a number of DAI links that currently
 cannot be changed or removed by topology. This means PCMs and platform
@@ -24,9 +24,9 @@ before loading topologies.
 
 Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 ---
- include/sound/soc.h  | 10 +++++++
- sound/soc/soc-core.c | 79 ++++++++++++++++++++++++++++++++++++++++++++++++++--
- sound/soc/soc-pcm.c  | 12 ++++++++
+ include/sound/soc.h  | 10 ++++++
+ sound/soc/soc-core.c | 79 ++++++++++++++++++++++++++++++++++++++++++--
+ sound/soc/soc-pcm.c  | 12 +++++++
  3 files changed, 98 insertions(+), 3 deletions(-)
 
 diff --git a/include/sound/soc.h b/include/sound/soc.h
@@ -210,5 +210,5 @@ index e6a167f..477d29c 100644
  		ret = dai->driver->ops->hw_params(substream, params, dai);
  		if (ret < 0) {
 -- 
-2.7.4
+https://clearlinux.org
 

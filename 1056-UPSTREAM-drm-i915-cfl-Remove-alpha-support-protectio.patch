@@ -1,8 +1,7 @@
-From 5148abd2e14eabf94760855af2e8f0b3c286ddff Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Rodrigo Vivi <rodrigo.vivi@intel.com>
 Date: Thu, 7 Sep 2017 16:06:32 -0700
-Subject: [PATCH 1056/2278] UPSTREAM: drm/i915/cfl: Remove alpha support
- protection.
+Subject: [PATCH] UPSTREAM: drm/i915/cfl: Remove alpha support protection.
 
 We now have Coffee Lake on our CI systems.
 
@@ -35,5 +34,5 @@ index 12f2835..022ee65 100644
  	.gen = 9, \
  	.platform = INTEL_COFFEELAKE, \
 -- 
-2.7.4
+https://clearlinux.org
 

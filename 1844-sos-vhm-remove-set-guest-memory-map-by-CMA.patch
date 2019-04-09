@@ -1,7 +1,7 @@
-From cbb1b5c0dd84f4a8b3019fe703cbbd5def908fc5 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Li, Fei1" <fei1.li@intel.com>
 Date: Fri, 13 Jul 2018 16:15:57 +0800
-Subject: [PATCH 1844/2278] sos: vhm: remove set guest memory map by CMA
+Subject: [PATCH] sos: vhm: remove set guest memory map by CMA
 
 We removed CMA Device Manager memory allocation mechanisms and use
 hugetlb as the only Device Manager memory allocation mechanism.
@@ -10,8 +10,8 @@ So there is no needs to support set guest vm memory by CMA any more.
 Signed-off-by: Li, Fei1 <fei1.li@intel.com>
 Acked-by: Anthony Xu <anthony.xu@intel.com>
 ---
- drivers/char/vhm/vhm_dev.c         |  14 ---
- drivers/vhm/vhm_mm.c               | 252 +++----------------------------------
+ drivers/char/vhm/vhm_dev.c         |  14 --
+ drivers/vhm/vhm_mm.c               | 252 ++---------------------------
  include/linux/vhm/acrn_vhm_mm.h    |  13 --
  include/linux/vhm/vhm_ioctl_defs.h |   1 +
  include/linux/vhm/vhm_vm_mngt.h    |   4 -
@@ -402,10 +402,11 @@ index 21269e4..645a8a5 100644
  /**
   * free_guest_mem - free memory of guest
   *
-@@ -175,17 +173,6 @@ int check_guest_mem(struct vhm_vm *vm);
+@@ -174,17 +172,6 @@ int check_guest_mem(struct vhm_vm *vm);
+  */
  void free_guest_mem(struct vhm_vm *vm);
  
- /**
+-/**
 - * alloc_guest_memseg - alloc memory of guest according to pre-defined
 - * memory segment info
 - *
@@ -416,10 +417,9 @@ index 21269e4..645a8a5 100644
 - */
 -int alloc_guest_memseg(struct vhm_vm *vm, struct vm_memseg *memseg);
 -
--/**
+ /**
   * map_guest_memseg - set guest mmapping of memory according to
   * pre-defined memory mapping info
-  *
 diff --git a/include/linux/vhm/vhm_ioctl_defs.h b/include/linux/vhm/vhm_ioctl_defs.h
 index dc51c83..32e081a 100644
 --- a/include/linux/vhm/vhm_ioctl_defs.h
@@ -455,5 +455,5 @@ index 65a301a..eccd389 100644
  	struct hlist_head hugepage_hlist[HUGEPAGE_HLIST_ARRAY_SIZE];
  	int max_gfn;
 -- 
-2.7.4
+https://clearlinux.org
 

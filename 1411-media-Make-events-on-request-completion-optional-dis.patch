@@ -1,8 +1,8 @@
-From 3a65dba035b14b5b47fa5536db184f0405442dba Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: wu xia <xia.wu@intel.com>
 Date: Mon, 2 May 2016 12:22:27 +0300
-Subject: [PATCH 1411/2278] media: Make events on request completion optional,
- disabled by
+Subject: [PATCH] media: Make events on request completion optional, disabled
+ by
 
 Add flags to requests. The first defined flag,
 MEDIA_REQ_FL_COMPLETE_EVENT is used to tell whether to queue an
@@ -114,5 +114,5 @@ index 62b2bff..50a92a5 100644
  
  struct __attribute__ ((packed)) media_event_request_complete {
 -- 
-2.7.4
+https://clearlinux.org
 

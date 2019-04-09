@@ -1,8 +1,7 @@
-From b4705a8c46bc7aa89280f9ba813a4854d7225e3e Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ranjani Sridharan <ranjani.sridharan@linux.intel.com>
 Date: Tue, 12 Jun 2018 12:25:48 -0700
-Subject: [PATCH 1659/2278] ASoC: SOF: topology: fix logic for parsing dmic pdm
- tokens
+Subject: [PATCH] ASoC: SOF: topology: fix logic for parsing dmic pdm tokens
 
 This patch fixes the logic for parsing the dmic pdm tokens
 by using the private value in sof_dev to track the pdm
@@ -12,7 +11,7 @@ to parse the pdm tokens anymore.
 
 Signed-off-by: Ranjani Sridharan <ranjani.sridharan@linux.intel.com>
 ---
- sound/soc/sof/topology.c | 104 +++++++++++++++++------------------------------
+ sound/soc/sof/topology.c | 104 ++++++++++++++-------------------------
  1 file changed, 37 insertions(+), 67 deletions(-)
 
 diff --git a/sound/soc/sof/topology.c b/sound/soc/sof/topology.c
@@ -173,5 +172,5 @@ index 89428f1..3c03cac 100644
  
  	return ret;
 -- 
-2.7.4
+https://clearlinux.org
 

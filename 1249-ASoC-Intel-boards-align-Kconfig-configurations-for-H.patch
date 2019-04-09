@@ -1,8 +1,7 @@
-From 2fa37794f004297d573875f194690ae5efb21803 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Thu, 4 Jan 2018 16:35:58 -0600
-Subject: [PATCH 1249/2278] ASoC: Intel: boards: align Kconfig configurations
- for HiFi2
+Subject: [PATCH] ASoC: Intel: boards: align Kconfig configurations for HiFi2
 
 Make sure all the configs are aligned
 Also add the missing dependencies on SOC_ACPI stuff used to fix
@@ -85,5 +84,5 @@ index abe3cc1..c8b2667 100644
  	help
  	  This adds support for ASoC machine driver for Intel(R) Baytrail & CherryTrail
 -- 
-2.7.4
+https://clearlinux.org
 

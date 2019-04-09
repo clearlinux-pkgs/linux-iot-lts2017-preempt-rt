@@ -1,8 +1,8 @@
-From dfd9f8a37c77a78dcb4d12139f1a66f5779ac8a3 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Andrew Kim <andrew.kim@intel.com>
 Date: Wed, 1 Aug 2018 19:22:11 -0700
-Subject: [PATCH 1816/2278] Revert "AndroidIA: drm/i915: Sysfs interface to get
- GFX shmem usage stats per process"
+Subject: [PATCH] Revert "AndroidIA: drm/i915: Sysfs interface to get GFX shmem
+ usage stats per process"
 
 This reverts commit 47ee3503361c5a77c780de02df48fe459e4b3a50.
 ---
@@ -10,14 +10,14 @@ This reverts commit 47ee3503361c5a77c780de02df48fe459e4b3a50.
  drivers/gpu/drm/drm_internal.h         |    1 -
  drivers/gpu/drm/i915/i915_drv.c        |    2 -
  drivers/gpu/drm/i915/i915_drv.h        |   34 -
- drivers/gpu/drm/i915/i915_gem.c        | 1057 +-------------------------------
+ drivers/gpu/drm/i915/i915_gem.c        | 1057 +-----------------------
  drivers/gpu/drm/i915/i915_gem_object.h |    4 -
  drivers/gpu/drm/i915/i915_gpu_error.c  |   21 +-
  drivers/gpu/drm/i915/i915_params.c     |    5 +-
  drivers/gpu/drm/i915/i915_params.h     |    5 +-
  drivers/gpu/drm/i915/i915_pci.c        |    2 +-
  drivers/gpu/drm/i915/i915_perf.c       |    8 +-
- drivers/gpu/drm/i915/i915_sysfs.c      |  313 +---------
+ drivers/gpu/drm/i915/i915_sysfs.c      |  313 +------
  drivers/gpu/drm/i915/intel_fbdev.c     |    2 +-
  13 files changed, 15 insertions(+), 1440 deletions(-)
 
@@ -1386,7 +1386,7 @@ index e9be07b..5b15182 100644
  {
  	int page;
 diff --git a/drivers/gpu/drm/i915/i915_params.c b/drivers/gpu/drm/i915/i915_params.c
-index d92c14a..040e32ae 100644
+index d92c14a..040e32a 100644
 --- a/drivers/gpu/drm/i915/i915_params.c
 +++ b/drivers/gpu/drm/i915/i915_params.c
 @@ -84,7 +84,6 @@ struct i915_params i915_modparams __read_mostly = {
@@ -1484,7 +1484,7 @@ index 2017ec4..4b9e101 100644
  				return -EACCES;
  			}
 diff --git a/drivers/gpu/drm/i915/i915_sysfs.c b/drivers/gpu/drm/i915/i915_sysfs.c
-index c7c4ff34..79fbab4 100644
+index c7c4ff3..79fbab4 100644
 --- a/drivers/gpu/drm/i915/i915_sysfs.c
 +++ b/drivers/gpu/drm/i915/i915_sysfs.c
 @@ -31,7 +31,6 @@
@@ -1847,5 +1847,5 @@ index 598d4e2..1b6ed68 100644
  			schedule_work(&dev_priv->fbdev_suspend_work);
  			return;
 -- 
-2.7.4
+https://clearlinux.org
 

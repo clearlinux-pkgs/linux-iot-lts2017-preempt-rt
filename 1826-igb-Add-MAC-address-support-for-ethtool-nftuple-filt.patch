@@ -1,8 +1,7 @@
-From 0a7ad2a8e492b2faf5cab309a7e4dcb649e9e0b9 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Vinicius Costa Gomes <vinicius.gomes@intel.com>
 Date: Tue, 10 Apr 2018 10:49:57 -0700
-Subject: [PATCH 1826/2278] igb: Add MAC address support for ethtool nftuple
- filters
+Subject: [PATCH] igb: Add MAC address support for ethtool nftuple filters
 
 This adds the capability of configuring the queue steering of arriving
 packets based on their source and destination MAC addresses.
@@ -28,7 +27,7 @@ Signed-off-by: Vinicius Costa Gomes <vinicius.gomes@intel.com>
 Tested-by: Aaron Brown <aaron.f.brown@intel.com>
 Signed-off-by: Jeff Kirsher <jeffrey.t.kirsher@intel.com>
 ---
- drivers/net/ethernet/intel/igb/igb_ethtool.c | 43 +++++++++++++++++++++++++---
+ drivers/net/ethernet/intel/igb/igb_ethtool.c | 43 ++++++++++++++++++--
  1 file changed, 39 insertions(+), 4 deletions(-)
 
 diff --git a/drivers/net/ethernet/intel/igb/igb_ethtool.c b/drivers/net/ethernet/intel/igb/igb_ethtool.c
@@ -109,5 +108,5 @@ index e1e3ccf..b9d089f 100644
  		if (fsp->m_ext.vlan_tci != htons(VLAN_PRIO_MASK)) {
  			err = -EINVAL;
 -- 
-2.7.4
+https://clearlinux.org
 

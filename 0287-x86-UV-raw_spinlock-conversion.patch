@@ -1,10 +1,9 @@
-From 0f0b995a9a0545e3684eb6e21f1b8ed63c76872d Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Mike Galbraith <umgwanakikbuti@gmail.com>
 Date: Sun, 2 Nov 2014 08:31:37 +0100
-Subject: [PATCH 0287/2278] x86: UV: raw_spinlock conversion
+Subject: [PATCH] x86: UV: raw_spinlock conversion
 
 Shrug.  Lots of hobbyists have a beast in their basement, right?
-
 
 Signed-off-by: Mike Galbraith <mgalbraith@suse.de>
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
@@ -225,5 +224,5 @@ index b082d71..badf377 100644
  
  /*
 -- 
-2.7.4
+https://clearlinux.org
 

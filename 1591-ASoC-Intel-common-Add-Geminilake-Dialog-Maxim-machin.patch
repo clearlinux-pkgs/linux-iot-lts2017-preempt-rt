@@ -1,8 +1,8 @@
-From 6baa72ff0106c03bb9013dec65c1e5d52e9fb16d Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Naveen Manohar <naveen.m@intel.com>
 Date: Mon, 18 Jun 2018 13:29:38 -0500
-Subject: [PATCH 1591/2278] ASoC: Intel: common: Add Geminilake Dialog+Maxim
- machine driver entry
+Subject: [PATCH] ASoC: Intel: common: Add Geminilake Dialog+Maxim machine
+ driver entry
 
 This patch adds da7219_max98357a machine driver entry into
 machine table
@@ -45,5 +45,5 @@ index dee0943..5902aa1 100644
  };
  EXPORT_SYMBOL_GPL(snd_soc_acpi_intel_glk_machines);
 -- 
-2.7.4
+https://clearlinux.org
 

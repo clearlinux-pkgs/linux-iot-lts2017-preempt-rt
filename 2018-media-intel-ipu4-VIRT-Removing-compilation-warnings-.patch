@@ -1,8 +1,8 @@
-From dbee1c03fd6a10535fa86c7c0b1e9e282719ac5f Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Bandi, Kushal" <kushal.bandi@intel.com>
 Date: Mon, 11 Jun 2018 16:28:39 -0700
-Subject: [PATCH 2018/2278] media: intel-ipu4: [VIRT] Removing compilation
- warnings & printk
+Subject: [PATCH] media: intel-ipu4: [VIRT] Removing compilation warnings &
+ printk
 
 Replacing printk with dynamic dbg
 
@@ -15,11 +15,11 @@ Change-Id: I343dea9928d4a18ae43de2632d90ca5ca0af0445
 Signed-off-by: Bandi, Kushal <kushal.bandi@intel.com>
 Signed-off-by: Ong Hock Yu <ong.hock.yu@intel.com>
 ---
- .../pci/intel/virtio/intel-ipu4-para-virt-drv.c    | 210 +++++++--------------
- .../intel/virtio/intel-ipu4-virtio-be-pipeline.c   |  37 ++--
- .../pci/intel/virtio/intel-ipu4-virtio-be-stream.c |  74 +++++---
- .../media/pci/intel/virtio/intel-ipu4-virtio-be.c  |  21 ++-
- .../media/pci/intel/virtio/intel-ipu4-virtio-fe.c  |  18 +-
+ .../intel/virtio/intel-ipu4-para-virt-drv.c   | 210 ++++++------------
+ .../virtio/intel-ipu4-virtio-be-pipeline.c    |  37 ++-
+ .../virtio/intel-ipu4-virtio-be-stream.c      |  74 ++++--
+ .../pci/intel/virtio/intel-ipu4-virtio-be.c   |  21 +-
+ .../pci/intel/virtio/intel-ipu4-virtio-fe.c   |  18 +-
  5 files changed, 169 insertions(+), 191 deletions(-)
 
 diff --git a/drivers/media/pci/intel/virtio/intel-ipu4-para-virt-drv.c b/drivers/media/pci/intel/virtio/intel-ipu4-para-virt-drv.c
@@ -1154,5 +1154,5 @@ index 57cbb47..eb1caec 100644
  }
  
 -- 
-2.7.4
+https://clearlinux.org
 

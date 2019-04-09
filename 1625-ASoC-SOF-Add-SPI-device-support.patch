@@ -1,14 +1,14 @@
-From ef3775357f0736009262ce6226bd51de2cde1d2a Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Mon, 8 Jan 2018 20:36:46 +0000
-Subject: [PATCH 1625/2278] ASoC: SOF: Add SPI device support
+Subject: [PATCH] ASoC: SOF: Add SPI device support
 
 Add support for SPI based DSP devices.
 
 Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 ---
- sound/soc/sof/hw-spi.c      | 250 ++++++++++++++++++++++++++++++++++++++++++++
- sound/soc/sof/sof-spi-dev.c | 167 +++++++++++++++++++++++++++++
+ sound/soc/sof/hw-spi.c      | 250 ++++++++++++++++++++++++++++++++++++
+ sound/soc/sof/sof-spi-dev.c | 167 ++++++++++++++++++++++++
  2 files changed, 417 insertions(+)
  create mode 100644 sound/soc/sof/hw-spi.c
  create mode 100644 sound/soc/sof/sof-spi-dev.c
@@ -443,5 +443,5 @@ index 0000000..b3811db
 +
 +MODULE_LICENSE("Dual BSD/GPL");
 -- 
-2.7.4
+https://clearlinux.org
 

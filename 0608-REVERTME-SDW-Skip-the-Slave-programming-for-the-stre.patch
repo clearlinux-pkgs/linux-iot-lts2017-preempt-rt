@@ -1,8 +1,7 @@
-From fe31c6a669a6803ccd079964d95e215d7ad6deb6 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Hardik Shah <hardik.t.shah@intel.com>
 Date: Sun, 1 May 2016 18:13:41 +0530
-Subject: [PATCH 0608/2278] REVERTME:SDW: Skip the Slave programming for the
- stream
+Subject: [PATCH] REVERTME:SDW: Skip the Slave programming for the stream
 
 Aggretation is tested with Maxim Slave device. This is
 just  used to enable the aggregation test. Actually loop
@@ -13,7 +12,7 @@ loopback.
 Change-Id: Ie1fd183b5ebb155234d52ea17c78ca522df41e4d
 Signed-off-by: Hardik Shah <hardik.t.shah@intel.com>
 ---
- drivers/sdw/sdw_bwcalc.c | 42 ++++++++++++++++++++++++++++++++++--------
+ drivers/sdw/sdw_bwcalc.c | 42 ++++++++++++++++++++++++++++++++--------
  1 file changed, 34 insertions(+), 8 deletions(-)
 
 diff --git a/drivers/sdw/sdw_bwcalc.c b/drivers/sdw/sdw_bwcalc.c
@@ -147,5 +146,5 @@ index 4c3a6c9..e3ae262 100644
  
  		/*
 -- 
-2.7.4
+https://clearlinux.org
 

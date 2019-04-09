@@ -1,8 +1,7 @@
-From 77891a651b2e99534786a7299e9e48839d31d737 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Li Wei <wei.l.li@intel.com>
 Date: Wed, 17 Jan 2018 00:19:41 +0800
-Subject: [PATCH 1417/2278] media: v4l2-mc: fix entity use_count issue for dual
- sensors
+Subject: [PATCH] media: v4l2-mc: fix entity use_count issue for dual sensors
 
 [Issue]
 In dual sensors mode, if one sensor is closed, the runtime
@@ -34,7 +33,7 @@ Signed-off-by: wu xia <xia.wu@intel.com>
  1 file changed, 8 insertions(+), 4 deletions(-)
 
 diff --git a/drivers/media/v4l2-core/v4l2-mc.c b/drivers/media/v4l2-core/v4l2-mc.c
-index 3d1ad93e..7e117cd 100644
+index 3d1ad93..7e117cd 100644
 --- a/drivers/media/v4l2-core/v4l2-mc.c
 +++ b/drivers/media/v4l2-core/v4l2-mc.c
 @@ -265,12 +265,13 @@ EXPORT_SYMBOL_GPL(v4l_vb2q_enable_media_source);
@@ -74,5 +73,5 @@ index 3d1ad93e..7e117cd 100644
  	}
  
 -- 
-2.7.4
+https://clearlinux.org
 

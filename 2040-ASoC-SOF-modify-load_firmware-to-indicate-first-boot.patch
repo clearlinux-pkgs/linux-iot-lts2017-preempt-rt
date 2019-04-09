@@ -1,8 +1,7 @@
-From f9d7764e30c8df89c3977da362720e4c0c4e712d Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ranjani Sridharan <ranjani.sridharan@linux.intel.com>
 Date: Tue, 24 Jul 2018 21:44:38 -0700
-Subject: [PATCH 2040/2278] ASoC: SOF: modify load_firmware() to indicate first
- boot
+Subject: [PATCH] ASoC: SOF: modify load_firmware() to indicate first boot
 
 Modify the signature for load_firmware to add a flag indicating
 if this is the first time the DSP is being booted up.
@@ -24,7 +23,7 @@ Signed-off-by: Ranjani Sridharan <ranjani.sridharan@linux.intel.com>
  5 files changed, 11 insertions(+), 9 deletions(-)
 
 diff --git a/sound/soc/sof/core.c b/sound/soc/sof/core.c
-index 6cdd3ea..924220c5 100644
+index 6cdd3ea..924220c 100644
 --- a/sound/soc/sof/core.c
 +++ b/sound/soc/sof/core.c
 @@ -292,7 +292,7 @@ static int sof_probe(struct platform_device *pdev)
@@ -118,5 +117,5 @@ index 716e590..c382754 100644
  int snd_sof_parse_module_memcpy(struct snd_sof_dev *sdev,
  				struct snd_sof_mod_hdr *module);
 -- 
-2.7.4
+https://clearlinux.org
 

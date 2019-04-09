@@ -1,8 +1,7 @@
-From 083899c75e16ea0893dee2466084b2be5376cf83 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Fri, 8 Sep 2017 00:13:09 -0500
-Subject: [PATCH 1166/2278] ASoC: Intel: cht_bsw_max98090: add gpio-based jack
- detection
+Subject: [PATCH] ASoC: Intel: cht_bsw_max98090: add gpio-based jack detection
 
 Jacks are created but only enabled when the external TI chip is
 present, this probably never worked as well. Forklift the gpio-based
@@ -17,7 +16,7 @@ Acked-By: Vinod Koul <vinod.koul@intel.com>
 Signed-off-by: Mark Brown <broonie@kernel.org>
 (cherry picked from commit 355b3552d59f471bfaf41cf7c6cc0a6fa193b303)
 ---
- sound/soc/intel/boards/cht_bsw_max98090_ti.c | 56 +++++++++++++++++++++++++++-
+ sound/soc/intel/boards/cht_bsw_max98090_ti.c | 56 +++++++++++++++++++-
  1 file changed, 55 insertions(+), 1 deletion(-)
 
 diff --git a/sound/soc/intel/boards/cht_bsw_max98090_ti.c b/sound/soc/intel/boards/cht_bsw_max98090_ti.c
@@ -117,5 +116,5 @@ index a1502c7..74c047a 100644
  
  	/* register the soc card */
 -- 
-2.7.4
+https://clearlinux.org
 

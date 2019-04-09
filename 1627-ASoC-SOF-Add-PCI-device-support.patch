@@ -1,13 +1,13 @@
-From 647e93e31a927fa91593b1b8402f1be513b22c26 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Mon, 8 Jan 2018 20:36:19 +0000
-Subject: [PATCH 1627/2278] ASoC: SOF: Add PCI device support
+Subject: [PATCH] ASoC: SOF: Add PCI device support
 
 Add support for PCI based DSP devices.
 
 Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 ---
- sound/soc/sof/sof-pci-dev.c | 341 ++++++++++++++++++++++++++++++++++++++++++++
+ sound/soc/sof/sof-pci-dev.c | 341 ++++++++++++++++++++++++++++++++++++
  1 file changed, 341 insertions(+)
  create mode 100644 sound/soc/sof/sof-pci-dev.c
 
@@ -359,5 +359,5 @@ index 0000000..7a2d48e
 +
 +MODULE_LICENSE("Dual BSD/GPL");
 -- 
-2.7.4
+https://clearlinux.org
 

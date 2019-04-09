@@ -1,8 +1,7 @@
-From e87ef05faaf88e11196113bf576e2795480e38f9 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Yan, Shaopu" <shaopu.yan@intel.com>
 Date: Thu, 12 Apr 2018 09:06:04 +0800
-Subject: [PATCH 1343/2278] Revert "trusty-ipc: change DEFAULT_MSG_BUF_SIZE to
- 68K"
+Subject: [PATCH] Revert "trusty-ipc: change DEFAULT_MSG_BUF_SIZE to 68K"
 
 This reverts commit f3e776a486937859e6cd67ab558544544fae7004.
 
@@ -27,5 +26,5 @@ index 7df0972..f0b6b1b 100644
  
  #define TIPC_CTRL_ADDR			53
 -- 
-2.7.4
+https://clearlinux.org
 

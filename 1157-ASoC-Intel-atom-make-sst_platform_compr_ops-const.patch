@@ -1,8 +1,7 @@
-From 85e89086b1896b00e69e7c171701186ad18e789c Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Bhumika Goyal <bhumirks@gmail.com>
 Date: Thu, 14 Sep 2017 00:08:36 +0530
-Subject: [PATCH 1157/2278] ASoC: Intel: atom: make sst_platform_compr_ops
- const
+Subject: [PATCH] ASoC: Intel: atom: make sst_platform_compr_ops const
 
 Make this const as it not modified in the file referencing it.
 It only stored in the const field 'compr_ops' of a snd_soc_platform_driver
@@ -43,5 +42,5 @@ index cb32cc7..31a58c2 100644
  #define SST_MONO		1
  #define SST_STEREO		2
 -- 
-2.7.4
+https://clearlinux.org
 

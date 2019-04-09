@@ -1,8 +1,8 @@
-From b5fe5eeaa29de8c87473f4294492ce007bd05e61 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: kbandi <kushal.bandi@intel.com>
 Date: Thu, 28 Jun 2018 21:30:39 -0700
-Subject: [PATCH 1557/2278] intel-ipu4: Reversing Fixed compilation error
- without DEBUG_FS patch
+Subject: [PATCH] intel-ipu4: Reversing Fixed compilation error without
+ DEBUG_FS patch
 
 [Reason]
 	Patch needs to be checked in to domain maintainer trunk &
@@ -58,5 +58,5 @@ index 19c64f1..0f128f3 100644
  static int ipu_buttress_tsc_get(void *data, u64 *val)
  {
 -- 
-2.7.4
+https://clearlinux.org
 

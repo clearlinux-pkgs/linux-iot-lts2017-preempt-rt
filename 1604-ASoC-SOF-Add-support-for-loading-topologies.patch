@@ -1,7 +1,7 @@
-From 6436cddf3c8f4bebf447ba81d08ceeb1ce93c862 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Mon, 8 Jan 2018 20:33:05 +0000
-Subject: [PATCH 1604/2278] ASoC: SOF: Add support for loading topologies
+Subject: [PATCH] ASoC: SOF: Add support for loading topologies
 
 SOF uses topology to define the DAPM graphs and widgets, DAIs, PCMs and set
 parameters for init and run time usage. This patch loads topology and
@@ -11,7 +11,7 @@ Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 ---
  include/uapi/sound/sof-topology.h |   76 ++
  sound/soc/sof/sof-priv.h          |    1 +
- sound/soc/sof/topology.c          | 1825 +++++++++++++++++++++++++++++++++++++
+ sound/soc/sof/topology.c          | 1825 +++++++++++++++++++++++++++++
  3 files changed, 1902 insertions(+)
  create mode 100644 include/uapi/sound/sof-topology.h
  create mode 100644 sound/soc/sof/topology.c
@@ -1942,5 +1942,5 @@ index 0000000..5fe74fa
 +}
 +EXPORT_SYMBOL(snd_sof_free_topology);
 -- 
-2.7.4
+https://clearlinux.org
 

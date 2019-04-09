@@ -1,8 +1,7 @@
-From 9cf0648d50b39487a8d9077660b3bc108602313f Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Hardik T Shah <hardik.t.shah@intel.com>
 Date: Thu, 10 Mar 2016 13:00:27 +0530
-Subject: [PATCH 0590/2278] ASoC: Intel: Skylake: Add support for the SDW dai
- ops.
+Subject: [PATCH] ASoC: Intel: Skylake: Add support for the SDW dai ops.
 
 Add support for the SoundWire dai link operation. DAI
 ops needs to be different for different link based on
@@ -12,9 +11,9 @@ Change-Id: I2c3d24c3d982f339f8b7ca180079b547227c6e70
 Signed-off-by: Hardik T Shah <hardik.t.shah@intel.com>
 ---
  sound/soc/intel/skylake/Makefile      |   3 +-
- sound/soc/intel/skylake/skl-pcm.c     |  94 +++++++++++++
- sound/soc/intel/skylake/skl-sdw-pcm.c | 246 ++++++++++++++++++++++++++++++++++
- sound/soc/intel/skylake/skl-sdw-pcm.h |  41 ++++++
+ sound/soc/intel/skylake/skl-pcm.c     |  94 ++++++++++
+ sound/soc/intel/skylake/skl-sdw-pcm.c | 246 ++++++++++++++++++++++++++
+ sound/soc/intel/skylake/skl-sdw-pcm.h |  41 +++++
  4 files changed, 382 insertions(+), 2 deletions(-)
  create mode 100644 sound/soc/intel/skylake/skl-sdw-pcm.c
  create mode 100644 sound/soc/intel/skylake/skl-sdw-pcm.h
@@ -126,10 +125,11 @@ index ca19c6e..b49c89b 100644
  static struct snd_soc_dai_driver skl_platform_dai[] = {
  {
  	.name = "System Pin",
-@@ -983,6 +1054,29 @@ static struct snd_soc_dai_driver skl_platform_dai[] = {
+@@ -982,6 +1053,29 @@ static struct snd_soc_dai_driver skl_platform_dai[] = {
+ 		.rates = SNDRV_PCM_RATE_48000,
  		.formats = SNDRV_PCM_FMTBIT_S16_LE,
  	},
- },
++},
 +{
 +	/* Currently adding 1 playback and 1 capture pin, ideally it
 +	 * should be coming from CLT based on endpoints to be supported
@@ -152,10 +152,9 @@ index ca19c6e..b49c89b 100644
 +	},
 +
 +
-+},
+ },
  };
  
- static int skl_platform_open(struct snd_pcm_substream *substream)
 diff --git a/sound/soc/intel/skylake/skl-sdw-pcm.c b/sound/soc/intel/skylake/skl-sdw-pcm.c
 new file mode 100644
 index 0000000..90a11f4
@@ -456,5 +455,5 @@ index 0000000..ab1314a
 +
 +#endif /* _SKL_SDW_PCM_H */
 -- 
-2.7.4
+https://clearlinux.org
 

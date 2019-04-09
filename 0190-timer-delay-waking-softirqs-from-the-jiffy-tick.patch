@@ -1,7 +1,7 @@
-From 938dc03c11ce23d9066e5469dcb02fda7aad8e07 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Peter Zijlstra <peterz@infradead.org>
 Date: Fri, 21 Aug 2009 11:56:45 +0200
-Subject: [PATCH 0190/2278] timer: delay waking softirqs from the jiffy tick
+Subject: [PATCH] timer: delay waking softirqs from the jiffy tick
 
 People were complaining about broken balancing with the recent -rt
 series.
@@ -76,5 +76,5 @@ index 97c28b9..807133c 100644
  		run_posix_cpu_timers(p);
  }
 -- 
-2.7.4
+https://clearlinux.org
 

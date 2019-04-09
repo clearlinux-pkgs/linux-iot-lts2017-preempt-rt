@@ -1,8 +1,8 @@
-From 5036acd492553aa01002c8da5631fce7e06abebf Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Hao Li <hao.l.li@intel.com>
 Date: Tue, 2 Jan 2018 21:36:39 -0500
-Subject: [PATCH 0881/2278] VBS-K (Virtio Backend Service in Kernel): a
- kernel-level virtio framework for Clearwater Pass hypervisor.
+Subject: [PATCH] VBS-K (Virtio Backend Service in Kernel): a kernel-level
+ virtio framework for Clearwater Pass hypervisor.
 
 This patch added the basic VBS-K framework including the following:
  - Definitions of the data structures shared between VBS-K and its
@@ -18,11 +18,11 @@ Tested-by: Dong, Eddie <eddie.dong@intel.com>
 ---
  drivers/Kconfig                   |   2 +
  drivers/Makefile                  |   1 +
- drivers/vbs/Kconfig               |  19 ++++++
+ drivers/vbs/Kconfig               |  19 +++++
  drivers/vbs/Makefile              |   3 +
- drivers/vbs/vbs.c                 | 125 ++++++++++++++++++++++++++++++++++++++
- include/linux/vbs/vbs.h           |  98 ++++++++++++++++++++++++++++++
- include/linux/vbs/vbs_common_if.h |  78 ++++++++++++++++++++++++
+ drivers/vbs/vbs.c                 | 125 ++++++++++++++++++++++++++++++
+ include/linux/vbs/vbs.h           |  98 +++++++++++++++++++++++
+ include/linux/vbs/vbs_common_if.h |  78 +++++++++++++++++++
  7 files changed, 326 insertions(+)
  create mode 100644 drivers/vbs/Kconfig
  create mode 100644 drivers/vbs/Makefile
@@ -407,5 +407,5 @@ index 0000000..bbdafed
 +
 +#endif
 -- 
-2.7.4
+https://clearlinux.org
 

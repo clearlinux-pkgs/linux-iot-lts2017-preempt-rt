@@ -1,8 +1,7 @@
-From 161cce78e3ab9e8a8be675b1eef624f5efc34068 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Bandi,Kushal" <kushal.bandi@intel.com>
 Date: Fri, 1 Jun 2018 08:40:32 -0700
-Subject: [PATCH 2015/2278] media: intel-ipu4: [VIRT] Buffer mapping between
- sos & uos
+Subject: [PATCH] media: intel-ipu4: [VIRT] Buffer mapping between sos & uos
 
 Pages shared between 2 domain and mapped in to virtual address at sos
 
@@ -10,11 +9,11 @@ Change-Id: I305dfead1a76680258696800103b4f0c8c9a6162
 Signed-off-by: Yu, Ong Hock <ong.hock.yu@intel.com>
 Signed-off-by: Bandi, Kushal <kushal.bandi@intel.com>
 ---
- drivers/media/pci/intel/ici/ici-isys-frame-buf.h   |   4 +
- .../pci/intel/virtio/intel-ipu4-para-virt-drv.c    | 121 ++++++++++++++-------
- .../pci/intel/virtio/intel-ipu4-virtio-bridge.c    |  81 +++++++++++++-
- .../pci/intel/virtio/intel-ipu4-virtio-bridge.h    |   1 +
- .../pci/intel/virtio/intel-ipu4-virtio-common.h    |   7 +-
+ .../media/pci/intel/ici/ici-isys-frame-buf.h  |   4 +
+ .../intel/virtio/intel-ipu4-para-virt-drv.c   | 121 ++++++++++++------
+ .../intel/virtio/intel-ipu4-virtio-bridge.c   |  81 +++++++++++-
+ .../intel/virtio/intel-ipu4-virtio-bridge.h   |   1 +
+ .../intel/virtio/intel-ipu4-virtio-common.h   |   7 +-
  5 files changed, 170 insertions(+), 44 deletions(-)
 
 diff --git a/drivers/media/pci/intel/ici/ici-isys-frame-buf.h b/drivers/media/pci/intel/ici/ici-isys-frame-buf.h
@@ -486,5 +485,5 @@ index fe33bd9..15c5f63 100644
  struct ipu4_virtio_resp {
  	unsigned int resp_id;
 -- 
-2.7.4
+https://clearlinux.org
 

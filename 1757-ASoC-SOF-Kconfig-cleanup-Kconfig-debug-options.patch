@@ -1,7 +1,7 @@
-From a0d22073f8cca6b56ac9c805c7808a2380ad0e46 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Thu, 5 Jul 2018 16:39:48 +0100
-Subject: [PATCH 1757/2278] ASoC: SOF: Kconfig: cleanup Kconfig debug options
+Subject: [PATCH] ASoC: SOF: Kconfig: cleanup Kconfig debug options
 
 Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 (cherry picked from commit b66e8ef1122d04210a1829c9245b0e1d7b37b5bc)
@@ -58,5 +58,5 @@ index bdae3f5..cec2ea9 100644
  source "sound/soc/sof/intel/Kconfig"
  source "sound/soc/sof/xtensa/Kconfig"
 -- 
-2.7.4
+https://clearlinux.org
 

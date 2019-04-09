@@ -1,8 +1,7 @@
-From b48bcdaaaee8d7b56ef8c507bbb27535765edc70 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Tue, 29 May 2018 18:30:02 -0500
-Subject: [PATCH 1574/2278] ASoC: fix 0-day warnings with
- snd_soc_new_compress()
+Subject: [PATCH] ASoC: fix 0-day warnings with snd_soc_new_compress()
 
 All conditionally-defined routines in include/sound/soc.h expose a
 static inline fallback to avoid 0-day warnings and compilation issues,
@@ -33,5 +32,5 @@ index f88a9aa..8701564 100644
  
  struct snd_pcm_substream *snd_soc_get_dai_substream(struct snd_soc_card *card,
 -- 
-2.7.4
+https://clearlinux.org
 

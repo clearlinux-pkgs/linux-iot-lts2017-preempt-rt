@@ -1,7 +1,7 @@
-From aded9a1aae8214cf5549c90556ad996565e53123 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: xinyudox <xinyux.dong@intel.com>
 Date: Thu, 26 Apr 2018 15:10:18 +0800
-Subject: [PATCH 1907/2278] media: intel-ipu4: ov10635: fix ipu stream issue
+Subject: [PATCH] media: intel-ipu4: ov10635: fix ipu stream issue
 
 Message for Open Source:
 OV10635 has special timing when configure its internal registers, with
@@ -19,7 +19,7 @@ Change-Id: I3917a9ba52508e188106d692ca56ce4b27519085
 Signed-off-by: xinyudox <xinyux.dong@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- .../media/i2c/crlmodule/crl_ov10635_configuration.h   | 19 +++++++++++++++++++
+ .../i2c/crlmodule/crl_ov10635_configuration.h | 19 +++++++++++++++++++
  1 file changed, 19 insertions(+)
 
 diff --git a/drivers/media/i2c/crlmodule/crl_ov10635_configuration.h b/drivers/media/i2c/crlmodule/crl_ov10635_configuration.h
@@ -83,5 +83,5 @@ index 7fd960c..c056e4b 100644
  
  static struct crl_dynamic_register_access ov10635_h_flip_regs[] = {
 -- 
-2.7.4
+https://clearlinux.org
 

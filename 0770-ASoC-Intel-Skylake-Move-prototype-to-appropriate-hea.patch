@@ -1,8 +1,7 @@
-From 121849e4831d9441b249dd8f504da6d37793f688 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Guneshwor Singh <guneshwor.o.singh@intel.com>
 Date: Thu, 7 Sep 2017 09:59:36 +0530
-Subject: [PATCH 0770/2278] ASoC: Intel: Skylake: Move prototype to appropriate
- header
+Subject: [PATCH] ASoC: Intel: Skylake: Move prototype to appropriate header
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -44,5 +43,5 @@ index cf0a2a3..02e7316 100644
  			unsigned int __user *data, unsigned int size);
  struct snd_kcontrol *skl_search_notify_kctl(struct skl_sst *skl,
 -- 
-2.7.4
+https://clearlinux.org
 

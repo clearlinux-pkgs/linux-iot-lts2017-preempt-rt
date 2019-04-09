@@ -1,13 +1,13 @@
-From 9399a9ac074c7bc4df012958948c7bc9c5463977 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: kgopala2 <karthik.l.gopalakrishnan@intel.com>
 Date: Sun, 13 May 2018 23:22:45 +0800
-Subject: [PATCH 1477/2278] media:intel-ipu: dma functions for ici driver
+Subject: [PATCH] media:intel-ipu: dma functions for ici driver
 
 Change-Id: Ie8c9b154b00a6265495bdacaa7045c2908421849
 Signed-off-by: kgopala2 <karthik.l.gopalakrishnan@intel.com>
 ---
  drivers/media/pci/intel/ici/Makefile  |   2 +-
- drivers/media/pci/intel/ici/ici-dma.c | 417 ++++++++++++++++++++++++++++++++++
+ drivers/media/pci/intel/ici/ici-dma.c | 417 ++++++++++++++++++++++++++
  2 files changed, 418 insertions(+), 1 deletion(-)
  create mode 100644 drivers/media/pci/intel/ici/ici-dma.c
 
@@ -448,5 +448,5 @@ index 0000000..da501a2
 +EXPORT_SYMBOL_GPL(ipu_dma_ops);
 +
 -- 
-2.7.4
+https://clearlinux.org
 

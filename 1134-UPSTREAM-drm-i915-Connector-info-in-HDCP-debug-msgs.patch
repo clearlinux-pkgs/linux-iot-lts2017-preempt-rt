@@ -1,8 +1,7 @@
-From b566bc0898baf9ad5c7bc8692d8fbef68eb29dfc Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ramalingam C <ramalingam.c@intel.com>
 Date: Sat, 3 Feb 2018 03:39:05 +0530
-Subject: [PATCH 1134/2278] UPSTREAM: drm/i915: Connector info in HDCP debug
- msgs
+Subject: [PATCH] UPSTREAM: drm/i915: Connector info in HDCP debug msgs
 
 When HDCP authentication is triggered on multiple connector, having
 connector name and ID in debug message will be more informative.
@@ -69,5 +68,5 @@ index 0a1ef82..cfd13ee 100644
  	ret = _intel_hdcp_disable(connector);
  	if (ret) {
 -- 
-2.7.4
+https://clearlinux.org
 

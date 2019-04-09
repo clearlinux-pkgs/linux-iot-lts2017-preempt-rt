@@ -1,8 +1,7 @@
-From a195350d9896b16f8c0b0a5e83b688b633b2a611 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Kuninori Morimoto <kuninori.morimoto.gx@renesas.com>
 Date: Tue, 26 Sep 2017 00:40:42 +0000
-Subject: [PATCH 1271/2278] ASoC: add null_snd_soc_ops and reduce NULL ops
- check
+Subject: [PATCH] ASoC: add null_snd_soc_ops and reduce NULL ops check
 
 Double NULL pointer check for ops and ops->func is difficult to read
 and might be forget to check it if new func was add.
@@ -116,5 +115,5 @@ index fd6a28d..dbca102 100644
  		if (ret < 0)
  			return ret;
 -- 
-2.7.4
+https://clearlinux.org
 

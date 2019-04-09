@@ -1,8 +1,7 @@
-From cecce863fee58bccc653b134ccae37d1398507c5 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Min He <min.he@intel.com>
 Date: Thu, 24 Aug 2017 06:59:52 +0800
-Subject: [PATCH 0932/2278] drm/i915/gvt: Added error interrupt handler for
- GVT-g guest
+Subject: [PATCH] drm/i915/gvt: Added error interrupt handler for GVT-g guest
 
 An draft version of adding error interrupt handler in GVT-g guest, to
 trigger a GPU reset when receiving the CS error interrupt.
@@ -77,7 +76,7 @@ index 83fa119..1008006 100644
  
  	return true;
 diff --git a/drivers/gpu/drm/i915/i915_irq.c b/drivers/gpu/drm/i915/i915_irq.c
-index 9606d2e..c0b484bc 100644
+index 9606d2e..c0b484b 100644
 --- a/drivers/gpu/drm/i915/i915_irq.c
 +++ b/drivers/gpu/drm/i915/i915_irq.c
 @@ -1325,6 +1325,12 @@ gen8_cs_irq_handler(struct intel_engine_cs *engine, u32 iir, int test_shift)
@@ -169,5 +168,5 @@ index 6b2067f..0fb5e1d 100644
  	/* Contexts are pinned whilst they are active on the GPU. The last
  	 * context executed remains active whilst the GPU is idle - the
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,7 +1,7 @@
-From 45750091846ed92f87599b0430aa382bc2fbef58 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ranjani Sridharan <ranjani.sridharan@linux.intel.com>
 Date: Mon, 16 Jul 2018 23:05:39 -0700
-Subject: [PATCH 2036/2278] ASoC: SOF: make sof_complete_pipeline non static
+Subject: [PATCH] ASoC: SOF: make sof_complete_pipeline non static
 
 This will be called during resume to send ipc for pipeline
 completion.
@@ -52,5 +52,5 @@ index 07c3248..c17bfa1 100644
  		default:
  			break;
 -- 
-2.7.4
+https://clearlinux.org
 

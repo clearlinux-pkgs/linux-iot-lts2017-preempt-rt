@@ -1,16 +1,16 @@
-From 4734b11a23f8719d8e5d16e82a0748506e49a482 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tomas Winkler <tomas.winkler@intel.com>
 Date: Mon, 30 Apr 2018 12:57:51 +0300
-Subject: [PATCH 1718/2278] tools/rpmb: add support for nvme device
+Subject: [PATCH] tools/rpmb: add support for nvme device
 
 Change-Id: Ib09217c7b86e6b256c1a7b07c563cd23d6a6a8ce
 Signed-off-by: Tomas Winkler <tomas.winkler@intel.com>
 ---
- tools/rpmb/rpmb.c | 815 +++++++++++++++++++++++++++++++++++++++++++-----------
+ tools/rpmb/rpmb.c | 815 +++++++++++++++++++++++++++++++++++++---------
  1 file changed, 655 insertions(+), 160 deletions(-)
 
 diff --git a/tools/rpmb/rpmb.c b/tools/rpmb/rpmb.c
-index 1a507db..9f3697fb 100644
+index 1a507db..9f3697f 100644
 --- a/tools/rpmb/rpmb.c
 +++ b/tools/rpmb/rpmb.c
 @@ -31,6 +31,11 @@
@@ -1134,5 +1134,5 @@ index 1a507db..9f3697fb 100644
  	free(frames_in);
  	free(frame_out);
 -- 
-2.7.4
+https://clearlinux.org
 

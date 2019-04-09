@@ -1,8 +1,8 @@
-From e350fd0a2b32d8dbedfcae903b4a5ffaa2f24fab Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Bob Moore <robert.moore@intel.com>
 Date: Wed, 20 Sep 2017 10:00:36 +0800
-Subject: [PATCH 0818/2278] ACPICA: Restructure/cleanup all string-to-integer
- conversion functions
+Subject: [PATCH] ACPICA: Restructure/cleanup all string-to-integer conversion
+ functions
 
 ACPICA commit 610046d444ad781cc36673bf1f030abe50cbc61f
 
@@ -18,23 +18,20 @@ Signed-off-by: Bob Moore <robert.moore@intel.com>
 Signed-off-by: Lv Zheng <lv.zheng@intel.com>
 Signed-off-by: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
 ---
- drivers/acpi/acpica/Makefile             |   1 +
- drivers/acpi/acpica/acinterp.h           |   6 +-
- drivers/acpi/acpica/acutils.h            |  31 ++-
- drivers/acpi/acpica/dbconvert.c          |   5 +-
- drivers/acpi/acpica/dswexec.c            |   2 +-
- drivers/acpi/acpica/exconcat.c           |   2 +-
- drivers/acpi/acpica/exconvrt.c           |  30 ++-
- drivers/acpi/acpica/exmisc.c             |   2 +-
- drivers/acpi/acpica/exresop.c            |   2 +-
- drivers/acpi/acpica/nsconvert.c          |   4 +-
- drivers/acpi/acpica/utstrsuppt.c         | 417 ++++++++++++++++++++++++++++++
- drivers/acpi/acpica/utstrtoul64.c        | 420 +++++++++++++++----------------
- include/acpi/acexcep.h                   |  16 +-
- tools/power/acpi/tools/acpidump/Makefile |   1 +
- tools/power/acpi/tools/acpidump/apdump.c |   3 +-
- tools/power/acpi/tools/acpidump/apmain.c |   4 +-
- 16 files changed, 690 insertions(+), 256 deletions(-)
+ drivers/acpi/acpica/Makefile      |   1 +
+ drivers/acpi/acpica/acinterp.h    |   6 +-
+ drivers/acpi/acpica/acutils.h     |  31 ++-
+ drivers/acpi/acpica/dbconvert.c   |   5 +-
+ drivers/acpi/acpica/dswexec.c     |   2 +-
+ drivers/acpi/acpica/exconcat.c    |   2 +-
+ drivers/acpi/acpica/exconvrt.c    |  30 ++-
+ drivers/acpi/acpica/exmisc.c      |   2 +-
+ drivers/acpi/acpica/exresop.c     |   2 +-
+ drivers/acpi/acpica/nsconvert.c   |   4 +-
+ drivers/acpi/acpica/utstrsuppt.c  | 417 +++++++++++++++++++++++++++++
+ drivers/acpi/acpica/utstrtoul64.c | 420 +++++++++++++++---------------
+ include/acpi/acexcep.h            |  16 +-
+ 13 files changed, 687 insertions(+), 251 deletions(-)
  create mode 100644 drivers/acpi/acpica/utstrsuppt.c
 
 diff --git a/drivers/acpi/acpica/Makefile b/drivers/acpi/acpica/Makefile
@@ -1253,47 +1250,6 @@ index ad54610..17d61b1 100644
  };
  
  static const struct acpi_exception_info acpi_gbl_exception_names_pgm[] = {
-diff --git a/tools/power/acpi/tools/acpidump/Makefile b/tools/power/acpi/tools/acpidump/Makefile
-index f7c7af1..b436f86 100644
---- a/tools/power/acpi/tools/acpidump/Makefile
-+++ b/tools/power/acpi/tools/acpidump/Makefile
-@@ -39,6 +39,7 @@ TOOL_OBJS = \
- 	utnonansi.o\
- 	utprint.o\
- 	utstring.o\
-+	utstrsuppt.o\
- 	utstrtoul64.o\
- 	utxferror.o\
- 	oslinuxtbl.o\
-diff --git a/tools/power/acpi/tools/acpidump/apdump.c b/tools/power/acpi/tools/acpidump/apdump.c
-index 60df1fb..0634449 100644
---- a/tools/power/acpi/tools/acpidump/apdump.c
-+++ b/tools/power/acpi/tools/acpidump/apdump.c
-@@ -287,8 +287,7 @@ int ap_dump_table_by_address(char *ascii_address)
- 
- 	/* Convert argument to an integer physical address */
- 
--	status = acpi_ut_strtoul64(ascii_address, ACPI_STRTOUL_64BIT,
--				   &long_address);
-+	status = acpi_ut_strtoul64(ascii_address, &long_address);
- 	if (ACPI_FAILURE(status)) {
- 		fprintf(stderr, "%s: Could not convert to a physical address\n",
- 			ascii_address);
-diff --git a/tools/power/acpi/tools/acpidump/apmain.c b/tools/power/acpi/tools/acpidump/apmain.c
-index 943b6b6..22c3b4e 100644
---- a/tools/power/acpi/tools/acpidump/apmain.c
-+++ b/tools/power/acpi/tools/acpidump/apmain.c
-@@ -208,9 +208,7 @@ static int ap_do_options(int argc, char **argv)
- 		case 'r':	/* Dump tables from specified RSDP */
- 
- 			status =
--			    acpi_ut_strtoul64(acpi_gbl_optarg,
--					      ACPI_STRTOUL_64BIT,
--					      &gbl_rsdp_base);
-+			    acpi_ut_strtoul64(acpi_gbl_optarg, &gbl_rsdp_base);
- 			if (ACPI_FAILURE(status)) {
- 				fprintf(stderr,
- 					"%s: Could not convert to a physical address\n",
 -- 
-2.7.4
+https://clearlinux.org
 

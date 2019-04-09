@@ -1,8 +1,8 @@
-From 3628de638ffa70d7dae6abdf8cbf5a123e1a46d3 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Sinha, Mohit" <mohit.sinha@intel.com>
 Date: Thu, 26 Oct 2017 14:52:16 +0530
-Subject: [PATCH 0790/2278] ASoC: Intel: Skylake: Avoid global kcontrol pointer
- for event handling
+Subject: [PATCH] ASoC: Intel: Skylake: Avoid global kcontrol pointer for event
+ handling
 
 The audio driver registers multiple kcontrols to represent
 multiple events like topology change or async notifications.
@@ -22,11 +22,11 @@ Reviewed-by: audio_build <audio_build@intel.com>
 Tested-by: Sm, Bhadur A <bhadur.a.sm@intel.com>
 ---
  sound/soc/intel/skylake/skl-sst-ipc.h  |  2 --
- sound/soc/intel/skylake/skl-topology.c | 29 ++++++++++++++---------------
+ sound/soc/intel/skylake/skl-topology.c | 29 +++++++++++++-------------
  2 files changed, 14 insertions(+), 17 deletions(-)
 
 diff --git a/sound/soc/intel/skylake/skl-sst-ipc.h b/sound/soc/intel/skylake/skl-sst-ipc.h
-index ed7f50e..dc93f620 100644
+index ed7f50e..dc93f62 100644
 --- a/sound/soc/intel/skylake/skl-sst-ipc.h
 +++ b/sound/soc/intel/skylake/skl-sst-ipc.h
 @@ -316,8 +316,6 @@ struct skl_sst {
@@ -108,5 +108,5 @@ index 9fb0290..9d5c6e2 100644
  	default:
  		return -EINVAL;
 -- 
-2.7.4
+https://clearlinux.org
 

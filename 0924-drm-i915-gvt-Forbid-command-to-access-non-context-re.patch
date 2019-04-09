@@ -1,8 +1,7 @@
-From 3440d0e6ffac4a25de81f502f63e1d2f698e053d Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ping Gao <ping.a.gao@intel.com>
 Date: Wed, 30 Aug 2017 14:59:22 +0800
-Subject: [PATCH 0924/2278] drm/i915/gvt: Forbid command to access non-context
- registers
+Subject: [PATCH] drm/i915/gvt: Forbid command to access non-context registers
 
 After MMIO save/restore removing, the guest cannot access non-context
 registers through cmd. This patch implement it by replacing the
@@ -24,11 +23,11 @@ Reviewed-by: Jiang, Fei <fei.jiang@intel.com>
 Reviewed-by: Dong, Eddie <eddie.dong@intel.com>
 Tested-by: Dong, Eddie <eddie.dong@intel.com>
 ---
- drivers/gpu/drm/i915/gvt/cmd_parser.c |  9 +++++++++
- drivers/gpu/drm/i915/gvt/gvt.h        | 30 ++++++++++++++++++++++++++++++
+ drivers/gpu/drm/i915/gvt/cmd_parser.c |  9 ++++++++
+ drivers/gpu/drm/i915/gvt/gvt.h        | 30 +++++++++++++++++++++++++
  drivers/gpu/drm/i915/gvt/handlers.c   |  4 +++-
- drivers/gpu/drm/i915/gvt/render.c     | 32 ++++++++++++++++++++++++++++++++
- drivers/gpu/drm/i915/i915_pvinfo.h    |  6 ++++++
+ drivers/gpu/drm/i915/gvt/render.c     | 32 +++++++++++++++++++++++++++
+ drivers/gpu/drm/i915/i915_pvinfo.h    |  6 +++++
  5 files changed, 80 insertions(+), 1 deletion(-)
 
 diff --git a/drivers/gpu/drm/i915/gvt/cmd_parser.c b/drivers/gpu/drm/i915/gvt/cmd_parser.c
@@ -182,5 +181,5 @@ index cea90ab..a4c897b 100644
   * The following structure pages are defined in GEN MMIO space
   * for virtualization. (One page for now)
 -- 
-2.7.4
+https://clearlinux.org
 

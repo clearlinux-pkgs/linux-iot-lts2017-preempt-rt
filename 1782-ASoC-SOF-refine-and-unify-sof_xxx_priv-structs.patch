@@ -1,7 +1,7 @@
-From a252dc274097c58f9c4e2f8568b3e553b781a4fd Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Keyon Jie <yang.jie@linux.intel.com>
 Date: Fri, 13 Jul 2018 13:27:23 +0800
-Subject: [PATCH 1782/2278] ASoC: SOF: refine and unify sof_xxx_priv structs
+Subject: [PATCH] ASoC: SOF: refine and unify sof_xxx_priv structs
 
 All sof_pci_priv, sof_acpi_priv and sof_spi_priv are exactly same
 structs, here unify them and put it to sof-priv.h.
@@ -94,10 +94,11 @@ diff --git a/sound/soc/sof/sof-priv.h b/sound/soc/sof/sof-priv.h
 index c4162d3..5def46b 100644
 --- a/sound/soc/sof/sof-priv.h
 +++ b/sound/soc/sof/sof-priv.h
-@@ -354,6 +354,15 @@ struct snd_sof_dev {
+@@ -353,6 +353,15 @@ struct snd_sof_dev {
+ 	void *private;			/* core does not touch this */
  };
  
- /*
++/*
 + * SOF platform private struct used as drvdata of
 + * platform dev (e.g. pci/acpi/spi...) drvdata.
 + */
@@ -106,10 +107,9 @@ index c4162d3..5def46b 100644
 +	struct platform_device *pdev_pcm;
 +};
 +
-+/*
+ /*
   * Device Level.
   */
- void snd_sof_shutdown(struct device *dev);
 diff --git a/sound/soc/sof/sof-spi-dev.c b/sound/soc/sof/sof-spi-dev.c
 index b3811db..45860bf 100644
 --- a/sound/soc/sof/sof-spi-dev.c
@@ -149,5 +149,5 @@ index b3811db..45860bf 100644
  
  	platform_device_unregister(sof_pdata->pdev_mach);
 -- 
-2.7.4
+https://clearlinux.org
 

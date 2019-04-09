@@ -1,8 +1,8 @@
-From 44bf35039b85c6a0422bbcc4f95b42d63349fcb7 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Anamika Lal <anamikax.lal@intel.com>
 Date: Wed, 3 May 2017 01:20:41 +0530
-Subject: [PATCH 0731/2278] ASoC: Intel: Skylake: Add user notification event
- for pipe creation/deletion
+Subject: [PATCH] ASoC: Intel: Skylake: Add user notification event for pipe
+ creation/deletion
 
 This patch provides kernel event generation on pipeline creation/deletion
 and also update the debugfs file with event timestamp.
@@ -17,7 +17,7 @@ Reviewed-by: Prusty, Subhransu S <subhransu.s.prusty@intel.com>
 Reviewed-by: Koul, Vinod <vinod.koul@intel.com>
 Tested-by: Sm, Bhadur A <bhadur.a.sm@intel.com>
 ---
- sound/soc/intel/skylake/skl-debug.c    | 80 ++++++++++++++++++++++++++++++++++
+ sound/soc/intel/skylake/skl-debug.c    | 80 ++++++++++++++++++++++++++
  sound/soc/intel/skylake/skl-messages.c |  2 +
  sound/soc/intel/skylake/skl.h          |  4 ++
  3 files changed, 86 insertions(+)
@@ -180,5 +180,5 @@ index 889ce3e..235952c 100644
  
  #endif /* __SOUND_SOC_SKL_H */
 -- 
-2.7.4
+https://clearlinux.org
 

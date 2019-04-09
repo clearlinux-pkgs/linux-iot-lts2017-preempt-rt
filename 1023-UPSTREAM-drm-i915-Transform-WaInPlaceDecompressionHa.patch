@@ -1,8 +1,8 @@
-From c6c36bab1aeef7bf425cda4ff946121b183d91fb Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Oscar Mateo <oscar.mateo@intel.com>
 Date: Thu, 7 Sep 2017 08:40:04 -0700
-Subject: [PATCH 1023/2278] UPSTREAM: drm/i915: Transform
- WaInPlaceDecompressionHang into a simple reg write
+Subject: [PATCH] UPSTREAM: drm/i915: Transform WaInPlaceDecompressionHang into
+ a simple reg write
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -90,5 +90,5 @@ index 3b7aaba..52a142b 100644
  	return 0;
  }
 -- 
-2.7.4
+https://clearlinux.org
 

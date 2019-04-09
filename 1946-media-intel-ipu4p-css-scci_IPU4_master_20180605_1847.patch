@@ -1,8 +1,8 @@
-From 08578f42def4b2b67907855a3f6f4323e444d2ea Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: icg_intg <icg_intg@intel.com>
 Date: Thu, 7 Jun 2018 10:20:00 +0800
-Subject: [PATCH 1946/2278] media: intel-ipu4p: css:
- scci_IPU4_master_20180605_1847 FwRelease
+Subject: [PATCH] media: intel-ipu4p: css: scci_IPU4_master_20180605_1847
+ FwRelease
 
 Message for Open Source:
 New firmware css release.
@@ -23,10 +23,10 @@ Depends-on: I61a4da702c2a708a0116e7fdb4a4cab225d1e35c
 Signed-off-by: icg_intg <icg_intg@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- drivers/media/pci/intel/ipu4/ipu4p-css/ia_css_fw_pkg_release.h          | 2 +-
- .../pci/intel/ipu4/ipu4p-css/lib2600/cpd_binary/ia_css_fw_pkg_release.h | 2 +-
- .../ipu4p-css/lib2600psys/lib/CNL_program_group/ia_css_fw_pkg_release.h | 2 +-
- .../ipu4p-css/lib2600psys/lib/ICL_program_group/ia_css_fw_pkg_release.h | 2 +-
+ drivers/media/pci/intel/ipu4/ipu4p-css/ia_css_fw_pkg_release.h  | 2 +-
+ .../ipu4/ipu4p-css/lib2600/cpd_binary/ia_css_fw_pkg_release.h   | 2 +-
+ .../lib2600psys/lib/CNL_program_group/ia_css_fw_pkg_release.h   | 2 +-
+ .../lib2600psys/lib/ICL_program_group/ia_css_fw_pkg_release.h   | 2 +-
  4 files changed, 4 insertions(+), 4 deletions(-)
 
 diff --git a/drivers/media/pci/intel/ipu4/ipu4p-css/ia_css_fw_pkg_release.h b/drivers/media/pci/intel/ipu4/ipu4p-css/ia_css_fw_pkg_release.h
@@ -70,5 +70,5 @@ index cabe5ba..081886c 100644
 -#define IA_CSS_FW_PKG_RELEASE  0x20180602
 +#define IA_CSS_FW_PKG_RELEASE  0x20180605
 -- 
-2.7.4
+https://clearlinux.org
 

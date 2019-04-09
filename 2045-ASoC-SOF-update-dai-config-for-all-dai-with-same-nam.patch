@@ -1,8 +1,7 @@
-From b6bc33b811d1d388bcba6c769eab794428038078 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ranjani Sridharan <ranjani.sridharan@linux.intel.com>
 Date: Wed, 8 Aug 2018 11:08:44 -0700
-Subject: [PATCH 2045/2278] ASoC: SOF: update dai config for all dai with same
- name
+Subject: [PATCH] ASoC: SOF: update dai config for all dai with same name
 
 Previously, dai config was updated only for one DAI with the same
 name as the link name. But in the case of duplex pcm's, there will
@@ -45,5 +44,5 @@ index 44eae25..4f2e9cf 100644
  
  static int sof_link_unload(struct snd_soc_component *scomp,
 -- 
-2.7.4
+https://clearlinux.org
 

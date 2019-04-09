@@ -1,14 +1,14 @@
-From 38d0671c828e751e2d187a7a259efa93bfd13a9a Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tomas Winkler <tomas.winkler@intel.com>
 Date: Thu, 31 May 2018 23:24:46 +0300
-Subject: [PATCH 1702/2278] Revert "char: rpmb: add device attributes"
+Subject: [PATCH] Revert "char: rpmb: add device attributes"
 
 This reverts commit 61ed35e0a7bf46fbf98119087de57a4f61e0cc66.
 
 Change-Id: I9721b69ef206e5c984706c8a0ae8f2a94c3280f5
 ---
- Documentation/ABI/testing/sysfs-class-rpmb | 27 -----------
- drivers/char/rpmb/core.c                   | 72 ------------------------------
+ Documentation/ABI/testing/sysfs-class-rpmb | 27 --------
+ drivers/char/rpmb/core.c                   | 72 ----------------------
  2 files changed, 99 deletions(-)
 
 diff --git a/Documentation/ABI/testing/sysfs-class-rpmb b/Documentation/ABI/testing/sysfs-class-rpmb
@@ -137,5 +137,5 @@ index 7c0ceed..1bdb5e6 100644
  	if (ret)
  		goto exit;
 -- 
-2.7.4
+https://clearlinux.org
 

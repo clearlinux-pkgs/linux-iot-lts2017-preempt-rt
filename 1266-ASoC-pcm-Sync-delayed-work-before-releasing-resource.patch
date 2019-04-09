@@ -1,8 +1,7 @@
-From 1c852caad4b02635f21f23928a6f90009d44172b Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Takashi Iwai <tiwai@suse.de>
 Date: Fri, 25 Aug 2017 12:04:07 +0200
-Subject: [PATCH 1266/2278] ASoC: pcm: Sync delayed work before releasing
- resources
+Subject: [PATCH] ASoC: pcm: Sync delayed work before releasing resources
 
 When ASoC driver is unbound dynamically during its operation (i.e. a
 kind of hot-unplug), we may hit Oops due to the resource access after
@@ -67,5 +66,5 @@ index 6fc8519..d6c2da6 100644
  	dev_info(rtd->card->dev, "%s <-> %s mapping ok\n",
  		 (rtd->num_codecs > 1) ? "multicodec" : rtd->codec_dai->name,
 -- 
-2.7.4
+https://clearlinux.org
 

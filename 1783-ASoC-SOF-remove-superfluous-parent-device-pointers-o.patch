@@ -1,8 +1,8 @@
-From 54ee477bf9f3814e0e67395be86bbe6093a786b7 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Keyon Jie <yang.jie@linux.intel.com>
 Date: Mon, 16 Jul 2018 13:05:31 +0800
-Subject: [PATCH 1783/2278] ASoC: SOF: remove superfluous parent device
- pointers of snd_sof_pdata
+Subject: [PATCH] ASoC: SOF: remove superfluous parent device pointers of
+ snd_sof_pdata
 
 We had pointers for parent device of snd_sof_pdata, pci for pci_dev,
 pdev for platform_device, and spi for spi_device (intended to but not
@@ -136,5 +136,5 @@ index 45860bf..57928d1 100644
  	/* register machine driver */
  	sof_pdata->pdev_mach =
 -- 
-2.7.4
+https://clearlinux.org
 

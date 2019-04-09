@@ -1,8 +1,7 @@
-From 85c2b36c62b7cfcd83333e1ea05ac35f83c97408 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Gao Chun <chun.gao@intel.com>
 Date: Thu, 26 Oct 2017 23:12:03 +0800
-Subject: [PATCH 0856/2278] Internal: drm/i915: Add interface to set ctm post
- offset
+Subject: [PATCH] Internal: drm/i915: Add interface to set ctm post offset
 
 In Android a 4x4 color transform matrix is provided to set color
 correction and color inversion, a post offset vector is also in
@@ -131,20 +130,20 @@ diff --git a/drivers/gpu/drm/drm_mode_config.c b/drivers/gpu/drm/drm_mode_config
 index 74f6ff5..47647bc 100644
 --- a/drivers/gpu/drm/drm_mode_config.c
 +++ b/drivers/gpu/drm/drm_mode_config.c
-@@ -325,6 +325,13 @@ static int drm_mode_create_standard_properties(struct drm_device *dev)
+@@ -323,6 +323,13 @@ static int drm_mode_create_standard_properties(struct drm_device *dev)
+ 		return -ENOMEM;
+ 	dev->mode_config.ctm_property = prop;
  
- 	prop = drm_property_create(dev,
- 			DRM_MODE_PROP_BLOB,
++	prop = drm_property_create(dev,
++			DRM_MODE_PROP_BLOB,
 +			"CTM_POST_OFFSET", 0);
 +	if (!prop)
 +		return -ENOMEM;
 +	dev->mode_config.ctm_post_offset_property = prop;
 +
-+	prop = drm_property_create(dev,
-+			DRM_MODE_PROP_BLOB,
+ 	prop = drm_property_create(dev,
+ 			DRM_MODE_PROP_BLOB,
  			"GAMMA_LUT", 0);
- 	if (!prop)
- 		return -ENOMEM;
 diff --git a/drivers/gpu/drm/i915/intel_color.c b/drivers/gpu/drm/i915/intel_color.c
 index 975ebc2..d95aa81 100644
 --- a/drivers/gpu/drm/i915/intel_color.c
@@ -192,10 +191,11 @@ diff --git a/include/drm/drm_crtc.h b/include/drm/drm_crtc.h
 index 1a64202..aa5e373 100644
 --- a/include/drm/drm_crtc.h
 +++ b/include/drm/drm_crtc.h
-@@ -179,6 +179,15 @@ struct drm_crtc_state {
+@@ -178,6 +178,15 @@ struct drm_crtc_state {
+ 	 */
  	struct drm_property_blob *ctm;
  
- 	/**
++	/**
 +	 * @ctm_post_offset:
 +	 *
 +	 * Post offset used to convert colors after applying ctm. See
@@ -204,26 +204,25 @@ index 1a64202..aa5e373 100644
 +	 */
 +	struct drm_property_blob *ctm_post_offset;
 +
-+	/**
+ 	/**
  	 * @gamma_lut:
  	 *
- 	 * Lookup table for converting pixel data after the color conversion
 diff --git a/include/drm/drm_mode_config.h b/include/drm/drm_mode_config.h
 index 1b37368..35cd592 100644
 --- a/include/drm/drm_mode_config.h
 +++ b/include/drm/drm_mode_config.h
-@@ -719,6 +719,11 @@ struct drm_mode_config {
+@@ -718,6 +718,11 @@ struct drm_mode_config {
+ 	 * degamma LUT.
  	 */
  	struct drm_property *ctm_property;
- 	/**
++	/**
 +	 * @ctm_post_offset_property: Optional CRTC property to set the
 +	 * post offset used to convert colors after applying ctm.
 +	 */
 +	struct drm_property *ctm_post_offset_property;
-+	/**
+ 	/**
  	 * @gamma_lut_property: Optional CRTC property to set the LUT used to
  	 * convert the colors, after the CTM matrix, to the gamma space of the
- 	 * connected screen.
 diff --git a/include/uapi/drm/drm_mode.h b/include/uapi/drm/drm_mode.h
 index 54fc38c..1136a05 100644
 --- a/include/uapi/drm/drm_mode.h
@@ -243,5 +242,5 @@ index 54fc38c..1136a05 100644
  	/*
  	 * Data is U0.16 fixed point format.
 -- 
-2.7.4
+https://clearlinux.org
 

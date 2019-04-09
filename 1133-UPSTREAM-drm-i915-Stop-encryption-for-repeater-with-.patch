@@ -1,8 +1,7 @@
-From 49c52cea87c68f444d684805fb65d89307dc6293 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ramalingam C <ramalingam.c@intel.com>
 Date: Sat, 3 Feb 2018 03:39:04 +0530
-Subject: [PATCH 1133/2278] UPSTREAM: drm/i915: Stop encryption for repeater
- with no sink
+Subject: [PATCH] UPSTREAM: drm/i915: Stop encryption for repeater with no sink
 
 If a HDCP repeater is detected with zero downstream devices,
 HDCP spec approves either of below actions:
@@ -56,5 +55,5 @@ index de9a925..0a1ef82 100644
  	ksv_fifo = kzalloc(num_downstream * DRM_HDCP_KSV_LEN, GFP_KERNEL);
  	if (!ksv_fifo)
 -- 
-2.7.4
+https://clearlinux.org
 

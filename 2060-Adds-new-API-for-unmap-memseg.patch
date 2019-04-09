@@ -1,7 +1,7 @@
-From 054c4ed993ff82f5b8248ef92447f0a89a5628e1 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Edwin Zhai <edwin.zhai@intel.com>
 Date: Wed, 29 Aug 2018 14:37:47 +0800
-Subject: [PATCH 2060/2278] Adds new API for unmap memseg
+Subject: [PATCH] Adds new API for unmap memseg
 
 It is required when DM unmap ptdev BAR in deinit
 
@@ -38,7 +38,7 @@ index 236a5c7..9202f3c 100644
  		/* init ioreq buffer */
  		ret = acrn_ioreq_init(vm, (unsigned long)ioctl_param);
 diff --git a/drivers/vhm/vhm_mm.c b/drivers/vhm/vhm_mm.c
-index 4d5854d..6bea6688 100644
+index 4d5854d..6bea668 100644
 --- a/drivers/vhm/vhm_mm.c
 +++ b/drivers/vhm/vhm_mm.c
 @@ -208,6 +208,23 @@ int map_guest_memseg(struct vhm_vm *vm, struct vm_memmap *memmap)
@@ -100,5 +100,5 @@ index 32e081a..983d4be 100644
  /* PCI assignment*/
  #define IC_ID_PCI_BASE                  0x50UL
 -- 
-2.7.4
+https://clearlinux.org
 

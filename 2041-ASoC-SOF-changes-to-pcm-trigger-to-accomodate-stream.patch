@@ -1,8 +1,8 @@
-From 2f67ee1fe6599922a88eef72c42644d4d09e5d68 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ranjani Sridharan <ranjani.sridharan@linux.intel.com>
 Date: Wed, 18 Jul 2018 00:32:15 -0700
-Subject: [PATCH 2041/2278] ASoC: SOF: changes to pcm trigger to accomodate
- stream restore
+Subject: [PATCH] ASoC: SOF: changes to pcm trigger to accomodate stream
+ restore
 
 This patch adds the changes required to save the pcm hw_params
 that will be used to restart streams during system resume.
@@ -27,8 +27,8 @@ up after resume anyway.
 
 Signed-off-by: Ranjani Sridharan <ranjani.sridharan@linux.intel.com>
 ---
- sound/soc/sof/pcm.c      | 90 ++++++++++++++++++++++++++++++++++++++++++++----
- sound/soc/sof/sof-priv.h |  2 ++
+ sound/soc/sof/pcm.c      | 90 ++++++++++++++++++++++++++++++++++++----
+ sound/soc/sof/sof-priv.h |  2 +
  2 files changed, 85 insertions(+), 7 deletions(-)
 
 diff --git a/sound/soc/sof/pcm.c b/sound/soc/sof/pcm.c
@@ -174,5 +174,5 @@ index c382754..cb81e4a 100644
  
  /* ALSA SOF Kcontrol device */
 -- 
-2.7.4
+https://clearlinux.org
 

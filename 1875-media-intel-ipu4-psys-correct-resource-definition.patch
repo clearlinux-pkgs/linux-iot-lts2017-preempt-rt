@@ -1,8 +1,7 @@
-From bd909bfc49547dfe90494496888a62309ff23e41 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Wang Zaikuo <zaikuo.wang@intel.com>
 Date: Wed, 9 May 2018 10:28:22 +0800
-Subject: [PATCH 1875/2278] media: intel-ipu4: psys: correct resource
- definition
+Subject: [PATCH] media: intel-ipu4: psys: correct resource definition
 
 Message for Open Source:
 The resource definition array: ipu_fw_psys_cell_mem[][] is not align to
@@ -31,9 +30,9 @@ Change-Id: I8095aa27a6b4bae1a9086c36a187db6002940781
 Signed-off-by: Wang Zaikuo <zaikuo.wang@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- .../media/pci/intel/ipu4/ipu-platform-resources.h  |  2 +-
- drivers/media/pci/intel/ipu4/ipu4-fw-resources.c   |  2 +-
- drivers/media/pci/intel/ipu4/ipu4-resources.c      | 27 ++++++++++++++++++----
+ .../pci/intel/ipu4/ipu-platform-resources.h   |  2 +-
+ .../media/pci/intel/ipu4/ipu4-fw-resources.c  |  2 +-
+ drivers/media/pci/intel/ipu4/ipu4-resources.c | 27 +++++++++++++++----
  3 files changed, 24 insertions(+), 7 deletions(-)
 
 diff --git a/drivers/media/pci/intel/ipu4/ipu-platform-resources.h b/drivers/media/pci/intel/ipu4/ipu-platform-resources.h
@@ -197,5 +196,5 @@ index 0bed8da..fba8c65 100644
  	}
  };
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,7 +1,7 @@
-From 191fe7f94e1f53f3e1ee3651185595350f0e3c15 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Tue, 7 Aug 2018 10:53:19 -0500
-Subject: [PATCH 2029/2278] ASoC: SOF: ipc: add verbose IPC logs
+Subject: [PATCH] ASoC: SOF: ipc: add verbose IPC logs
 
 Add human-readable strings to dynamic debug if selected by distros or users.
 
@@ -28,8 +28,8 @@ requiring knowledge of the command encoding.
 
 Signed-off-by: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 ---
- sound/soc/sof/Kconfig |   9 ++++
- sound/soc/sof/ipc.c   | 136 ++++++++++++++++++++++++++++++++++++++++++++++++--
+ sound/soc/sof/Kconfig |   9 +++
+ sound/soc/sof/ipc.c   | 136 ++++++++++++++++++++++++++++++++++++++++--
  2 files changed, 141 insertions(+), 4 deletions(-)
 
 diff --git a/sound/soc/sof/Kconfig b/sound/soc/sof/Kconfig
@@ -227,5 +227,5 @@ index 150fc4e..a649f87 100644
  	/* tell DSP we are done */
  	snd_sof_dsp_cmd_done(sdev, SOF_IPC_HOST_REPLY);
 -- 
-2.7.4
+https://clearlinux.org
 

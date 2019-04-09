@@ -1,7 +1,7 @@
-From 54b173dcf2628e45c2d9e824b64b05dd75ef7253 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tom Zanussi <tom.zanussi@linux.intel.com>
 Date: Mon, 15 Jan 2018 20:51:58 -0600
-Subject: [PATCH 0101/2278] tracing: Add support for 'synthetic' events
+Subject: [PATCH] tracing: Add support for 'synthetic' events
 
 Synthetic events are user-defined events generated from hist trigger
 variables saved from one or more other events.
@@ -54,7 +54,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
 (cherry picked from commit cc9371f8641efd7ce6c8d4e1fd44eae249deadb4)
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- kernel/trace/trace_events_hist.c | 895 ++++++++++++++++++++++++++++++++++++++-
+ kernel/trace/trace_events_hist.c | 895 ++++++++++++++++++++++++++++++-
  1 file changed, 893 insertions(+), 2 deletions(-)
 
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
@@ -1043,5 +1043,5 @@ index e5fea3c..ababc28 100644
 +
 +fs_initcall(trace_events_hist_init);
 -- 
-2.7.4
+https://clearlinux.org
 

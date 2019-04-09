@@ -1,8 +1,7 @@
-From 78a3d73d3edf75c40a2a809ce26e2c8cbc2122f0 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Mon, 8 Jan 2018 20:40:02 +0000
-Subject: [PATCH 1628/2278] ASoC: SOF: Add Build support for SOF core and Intel
- drivers
+Subject: [PATCH] ASoC: SOF: Add Build support for SOF core and Intel drivers
 
 Build SOF core and Intel-specific drivers.
 
@@ -10,10 +9,10 @@ Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 ---
  sound/soc/Kconfig            |  1 +
  sound/soc/Makefile           |  1 +
- sound/soc/sof/Kconfig        | 44 +++++++++++++++++++++
- sound/soc/sof/Makefile       | 22 +++++++++++
- sound/soc/sof/intel/Kconfig  | 94 ++++++++++++++++++++++++++++++++++++++++++++
- sound/soc/sof/intel/Makefile | 15 +++++++
+ sound/soc/sof/Kconfig        | 44 +++++++++++++++++
+ sound/soc/sof/Makefile       | 22 +++++++++
+ sound/soc/sof/intel/Kconfig  | 94 ++++++++++++++++++++++++++++++++++++
+ sound/soc/sof/intel/Makefile | 15 ++++++
  6 files changed, 177 insertions(+)
  create mode 100644 sound/soc/sof/Kconfig
  create mode 100644 sound/soc/sof/Makefile
@@ -21,7 +20,7 @@ Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
  create mode 100644 sound/soc/sof/intel/Makefile
 
 diff --git a/sound/soc/Kconfig b/sound/soc/Kconfig
-index d227581..e8f3acae 100644
+index d227581..e8f3aca 100644
 --- a/sound/soc/Kconfig
 +++ b/sound/soc/Kconfig
 @@ -65,6 +65,7 @@ source "sound/soc/rockchip/Kconfig"
@@ -244,5 +243,5 @@ index 0000000..dfeb4fc
 +obj-$(CONFIG_SND_SOC_SOF_BROADWELL) += snd-sof-intel-bdw.o
 +obj-$(CONFIG_SND_SOC_SOF_HDA_COMMON) += snd-sof-intel-hda-common.o
 -- 
-2.7.4
+https://clearlinux.org
 

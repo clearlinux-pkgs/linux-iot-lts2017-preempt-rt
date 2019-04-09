@@ -1,8 +1,7 @@
-From 013a207b037d11b91cf247331b096553026db0b5 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>
 Date: Tue, 23 Jan 2018 10:02:27 -0800
-Subject: [PATCH 1544/2278] HID: intel_ish-hid: Enhance API to get ring buffer
- sizes
+Subject: [PATCH] HID: intel_ish-hid: Enhance API to get ring buffer sizes
 
 Added two APIs:
 
@@ -14,9 +13,9 @@ This returns total number of TX rings available for a client.
 
 Signed-off-by: Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>
 ---
- drivers/hid/intel-ish-hid/ishtp/client-buffers.c |  4 ++++
- drivers/hid/intel-ish-hid/ishtp/client.c         | 24 ++++++++++++++++++++++++
- drivers/hid/intel-ish-hid/ishtp/client.h         |  3 +++
+ .../hid/intel-ish-hid/ishtp/client-buffers.c  |  4 ++++
+ drivers/hid/intel-ish-hid/ishtp/client.c      | 24 +++++++++++++++++++
+ drivers/hid/intel-ish-hid/ishtp/client.h      |  3 +++
  3 files changed, 31 insertions(+)
 
 diff --git a/drivers/hid/intel-ish-hid/ishtp/client-buffers.c b/drivers/hid/intel-ish-hid/ishtp/client-buffers.c
@@ -133,5 +132,5 @@ index a82ee4d..042f4c4 100644
  /* DMA I/F functions */
  void recv_ishtp_cl_msg_dma(struct ishtp_device *dev, void *msg,
 -- 
-2.7.4
+https://clearlinux.org
 

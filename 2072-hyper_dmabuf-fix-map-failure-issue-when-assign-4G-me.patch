@@ -1,8 +1,8 @@
-From 742139e039be970f77623e2d64c3e96013b16f90 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Fei Jiang <fei.jiang@intel.com>
 Date: Mon, 27 Aug 2018 09:34:15 +0200
-Subject: [PATCH 2072/2278] hyper_dmabuf: fix map failure issue when assign 4G
- memory to UOS (v2)
+Subject: [PATCH] hyper_dmabuf: fix map failure issue when assign 4G memory to
+ UOS (v2)
 
 When assign 4G memory to UOS, 32bit GPA ref_handle will overflow, instead
 we need set ref_handle as unsigned long to fix this issue. op is int type,
@@ -15,14 +15,14 @@ Change-Id: Ibc827e54897b0b48a4056d8df400d0bf4b3e923f
 Signed-off-by: Fei Jiang <fei.jiang@intel.com>
 Signed-off-by: Mateusz Polrola <mateuszx.potrola@intel.com>
 ---
- drivers/dma-buf/hyper_dmabuf/hyper_dmabuf_drv.h    |  2 +-
- drivers/dma-buf/hyper_dmabuf/hyper_dmabuf_ioctl.c  | 15 ++++++----
- drivers/dma-buf/hyper_dmabuf/hyper_dmabuf_msg.c    | 35 ++++++++++++----------
- drivers/dma-buf/hyper_dmabuf/hyper_dmabuf_struct.h |  2 +-
- .../hyper_dmabuf/virtio/hyper_dmabuf_virtio_shm.c  |  8 ++---
- .../hyper_dmabuf/virtio/hyper_dmabuf_virtio_shm.h  |  2 +-
- .../hyper_dmabuf/xen/hyper_dmabuf_xen_shm.c        |  4 +--
- .../hyper_dmabuf/xen/hyper_dmabuf_xen_shm.h        |  4 +--
+ .../dma-buf/hyper_dmabuf/hyper_dmabuf_drv.h   |  2 +-
+ .../dma-buf/hyper_dmabuf/hyper_dmabuf_ioctl.c | 15 ++++----
+ .../dma-buf/hyper_dmabuf/hyper_dmabuf_msg.c   | 35 ++++++++++---------
+ .../hyper_dmabuf/hyper_dmabuf_struct.h        |  2 +-
+ .../virtio/hyper_dmabuf_virtio_shm.c          |  8 ++---
+ .../virtio/hyper_dmabuf_virtio_shm.h          |  2 +-
+ .../hyper_dmabuf/xen/hyper_dmabuf_xen_shm.c   |  4 +--
+ .../hyper_dmabuf/xen/hyper_dmabuf_xen_shm.h   |  4 +--
  8 files changed, 39 insertions(+), 33 deletions(-)
 
 diff --git a/drivers/dma-buf/hyper_dmabuf/hyper_dmabuf_drv.h b/drivers/dma-buf/hyper_dmabuf/hyper_dmabuf_drv.h
@@ -86,7 +86,7 @@ index 66cdcf6..62f83cc 100644
  
  	dev_dbg(hy_drv_priv->dev,
 diff --git a/drivers/dma-buf/hyper_dmabuf/hyper_dmabuf_msg.c b/drivers/dma-buf/hyper_dmabuf/hyper_dmabuf_msg.c
-index c5d99d2f..d91a9eb 100644
+index c5d99d2..d91a9eb 100644
 --- a/drivers/dma-buf/hyper_dmabuf/hyper_dmabuf_msg.c
 +++ b/drivers/dma-buf/hyper_dmabuf/hyper_dmabuf_msg.c
 @@ -59,13 +59,14 @@ void hyper_dmabuf_create_req(struct hyper_dmabuf_req *req,
@@ -271,5 +271,5 @@ index d5236b5..f23deb3 100644
  int xen_be_unshare_pages(void **refs_info, int nents);
  
 -- 
-2.7.4
+https://clearlinux.org
 

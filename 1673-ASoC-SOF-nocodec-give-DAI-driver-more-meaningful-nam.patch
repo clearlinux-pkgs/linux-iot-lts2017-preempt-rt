@@ -1,8 +1,7 @@
-From 736acb2b9845d080a5d85d4a3fa62b7dddf9f9c7 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Sun, 17 Jun 2018 22:07:50 +0100
-Subject: [PATCH 1673/2278] ASoC: SOF: nocodec: give DAI driver more meaningful
- name
+Subject: [PATCH] ASoC: SOF: nocodec: give DAI driver more meaningful name
 
 Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 ---
@@ -23,5 +22,5 @@ index 0685d29..dab4e2e 100644
  		.no_pcm = 1,
  		.codec_dai_name = "snd-soc-dummy-dai",
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,21 +1,20 @@
-From 018f3367161b99b1209fd8b7f2ffb05e68fd29f8 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Zhou Furong <furong.zhou@intel.com>
 Date: Tue, 28 Nov 2017 11:06:18 +0800
-Subject: [PATCH 0852/2278] Update timer implementation as kernel api
- init_timer removed
+Subject: [PATCH] Update timer implementation as kernel api init_timer removed
 
 init_timer api removed from v4.15-rc1, this patch is to match
 the change.
 
 Change-Id: Ic3276cbe6c430e0931cb5d1ee139d6f1df1d27dc
 ---
- drivers/net/wireless/bcmdhd/dhd_ip.c        | 12 ++++++++++++
- drivers/net/wireless/bcmdhd/dhd_linux.c     | 25 +++++++++++++++++++++++++
- drivers/net/wireless/bcmdhd/wl_cfg80211.c   | 25 +++++++++++++++++++++++++
- drivers/net/wireless/bcmdhd/wl_cfg_btcoex.c | 12 ++++++++++++
- drivers/net/wireless/bcmdhd/wl_cfgp2p.c     | 11 +++++++++++
- drivers/net/wireless/bcmdhd/wl_cfgp2p.h     | 15 +++++++++++++++
- drivers/net/wireless/bcmdhd/wl_iw.c         | 16 ++++++++++++++++
+ drivers/net/wireless/bcmdhd/dhd_ip.c        | 12 ++++++++++
+ drivers/net/wireless/bcmdhd/dhd_linux.c     | 25 +++++++++++++++++++++
+ drivers/net/wireless/bcmdhd/wl_cfg80211.c   | 25 +++++++++++++++++++++
+ drivers/net/wireless/bcmdhd/wl_cfg_btcoex.c | 12 ++++++++++
+ drivers/net/wireless/bcmdhd/wl_cfgp2p.c     | 11 +++++++++
+ drivers/net/wireless/bcmdhd/wl_cfgp2p.h     | 15 +++++++++++++
+ drivers/net/wireless/bcmdhd/wl_iw.c         | 16 +++++++++++++
  7 files changed, 116 insertions(+)
 
 diff --git a/drivers/net/wireless/bcmdhd/dhd_ip.c b/drivers/net/wireless/bcmdhd/dhd_ip.c
@@ -205,7 +204,7 @@ index 26af40e..90e7a9c 100644
  }
  #endif /* DHD_LOSSLESS_ROAMING */
 diff --git a/drivers/net/wireless/bcmdhd/wl_cfg_btcoex.c b/drivers/net/wireless/bcmdhd/wl_cfg_btcoex.c
-index 81e42ab..1aaa8fe4 100644
+index 81e42ab..1aaa8fe 100644
 --- a/drivers/net/wireless/bcmdhd/wl_cfg_btcoex.c
 +++ b/drivers/net/wireless/bcmdhd/wl_cfg_btcoex.c
 @@ -298,9 +298,17 @@ wl_cfg80211_bt_setflag(struct net_device *dev, bool set)
@@ -323,7 +322,7 @@ index a57ca39..aab1061 100644
  wl_cfgp2p_is_pub_action(void *frame, u32 frame_len);
  extern bool
 diff --git a/drivers/net/wireless/bcmdhd/wl_iw.c b/drivers/net/wireless/bcmdhd/wl_iw.c
-index 78336e2..92d9aa16 100644
+index 78336e2..92d9aa1 100644
 --- a/drivers/net/wireless/bcmdhd/wl_iw.c
 +++ b/drivers/net/wireless/bcmdhd/wl_iw.c
 @@ -157,7 +157,11 @@ typedef struct iscan_info {
@@ -371,5 +370,5 @@ index 78336e2..92d9aa16 100644
  	sema_init(&iscan->sysioc_sem, 0);
  	init_completion(&iscan->sysioc_exited);
 -- 
-2.7.4
+https://clearlinux.org
 

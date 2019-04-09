@@ -1,8 +1,8 @@
-From e8b95a529df6ad4c7944f9b83bf340db09c2388e Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Diwakar, Praveen" <praveen.diwakar@intel.com>
 Date: Tue, 25 Apr 2017 06:24:38 +0530
-Subject: [PATCH 0734/2278] ASoC: Intel: Skylake: Add single module support in
- a given pipeline
+Subject: [PATCH] ASoC: Intel: Skylake: Add single module support in a given
+ pipeline
 
 Single pipeline module will be modelled as PGA leaf. Decision to model
 it as PGA instead of mixer is taken because there may be pipeline with
@@ -23,7 +23,7 @@ Reviewed-by: Kp, Jeeja <jeeja.kp@intel.com>
 Reviewed-by: Prusty, Subhransu S <subhransu.s.prusty@intel.com>
 Tested-by: Sm, Bhadur A <bhadur.a.sm@intel.com>
 ---
- sound/soc/intel/skylake/skl-topology.c | 136 +++++++++++++++++++++++++++++++++
+ sound/soc/intel/skylake/skl-topology.c | 136 +++++++++++++++++++++++++
  sound/soc/intel/skylake/skl-topology.h |   4 +
  2 files changed, 140 insertions(+)
 
@@ -224,5 +224,5 @@ index 6f4ab4e..65201db 100644
  #define MAX_TS_GROUPS 8
  #define MAX_DMIC_TS_GROUPS 4
 -- 
-2.7.4
+https://clearlinux.org
 

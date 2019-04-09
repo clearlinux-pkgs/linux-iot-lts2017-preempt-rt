@@ -1,8 +1,7 @@
-From f97b980538462d26c2af5ddc985fd0a6879129a6 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 Date: Tue, 4 Apr 2017 12:50:16 +0200
-Subject: [PATCH 0068/2278] kernel: sched: Provide a pointer to the valid CPU
- mask
+Subject: [PATCH] kernel: sched: Provide a pointer to the valid CPU mask
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -61,23 +60,23 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  arch/ia64/kernel/mca.c                     |  2 +-
  arch/mips/include/asm/switch_to.h          |  4 +--
  arch/mips/kernel/mips-mt-fpaff.c           |  2 +-
- arch/mips/kernel/traps.c                   |  6 ++---
+ arch/mips/kernel/traps.c                   |  6 ++--
  arch/powerpc/platforms/cell/spufs/sched.c  |  2 +-
  arch/tile/include/asm/setup.h              |  2 +-
- arch/tile/kernel/hardwall.c                | 10 ++++----
- drivers/infiniband/hw/hfi1/affinity.c      |  6 ++---
- drivers/infiniband/hw/hfi1/sdma.c          |  3 +--
- drivers/infiniband/hw/qib/qib_file_ops.c   |  7 +++---
+ arch/tile/kernel/hardwall.c                | 10 +++---
+ drivers/infiniband/hw/hfi1/affinity.c      |  6 ++--
+ drivers/infiniband/hw/hfi1/sdma.c          |  3 +-
+ drivers/infiniband/hw/qib/qib_file_ops.c   |  7 ++--
  fs/proc/array.c                            |  4 +--
- include/linux/init_task.h                  |  3 ++-
- include/linux/sched.h                      |  5 ++--
+ include/linux/init_task.h                  |  3 +-
+ include/linux/sched.h                      |  5 +--
  kernel/cgroup/cpuset.c                     |  2 +-
- kernel/fork.c                              |  3 ++-
- kernel/sched/core.c                        | 40 +++++++++++++++---------------
+ kernel/fork.c                              |  3 +-
+ kernel/sched/core.c                        | 40 +++++++++++-----------
  kernel/sched/cpudeadline.c                 |  4 +--
  kernel/sched/cpupri.c                      |  4 +--
- kernel/sched/deadline.c                    |  6 ++---
- kernel/sched/fair.c                        | 28 ++++++++++-----------
+ kernel/sched/deadline.c                    |  6 ++--
+ kernel/sched/fair.c                        | 28 +++++++--------
  kernel/sched/rt.c                          |  4 +--
  kernel/trace/trace_hwlat.c                 |  2 +-
  lib/smp_processor_id.c                     |  2 +-
@@ -120,7 +119,7 @@ index e610473..1428b4f 100644
  	next->thread.emulated_fp = 0;					\
  } while(0)
 diff --git a/arch/mips/kernel/mips-mt-fpaff.c b/arch/mips/kernel/mips-mt-fpaff.c
-index a7c0f97e..1a08428 100644
+index a7c0f97..1a08428 100644
 --- a/arch/mips/kernel/mips-mt-fpaff.c
 +++ b/arch/mips/kernel/mips-mt-fpaff.c
 @@ -177,7 +177,7 @@ asmlinkage long mipsmt_sys_sched_getaffinity(pid_t pid, unsigned int len,
@@ -803,5 +802,5 @@ index 5522692..8b4be8e 100644
  	trace_foo_with_template_simple("HELLO", cnt);
  
 -- 
-2.7.4
+https://clearlinux.org
 

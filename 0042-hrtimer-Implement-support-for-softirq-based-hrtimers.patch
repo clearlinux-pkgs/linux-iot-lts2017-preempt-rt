@@ -1,8 +1,7 @@
-From 1c85a061d3d5696f6fc72ad821f4ae4a0b0b2666 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Anna-Maria Gleixner <anna-maria@linutronix.de>
 Date: Wed, 20 Dec 2017 17:13:17 +0100
-Subject: [PATCH 0042/2278] hrtimer: Implement support for softirq based
- hrtimers
+Subject: [PATCH] hrtimer: Implement support for softirq based hrtimers
 
 hrtimer callbacks are always invoked in hard interrupt context. Several
 users in tree require soft interrupt context for their callbacks and
@@ -35,8 +34,8 @@ Suggested-by: Peter Zijlstra <peterz@infradead.org>
 Signed-off-by: Anna-Maria Gleixner <anna-maria@linutronix.de>
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- include/linux/hrtimer.h |  21 +++--
- kernel/time/hrtimer.c   | 199 +++++++++++++++++++++++++++++++++++++++++-------
+ include/linux/hrtimer.h |  21 ++++-
+ kernel/time/hrtimer.c   | 199 ++++++++++++++++++++++++++++++++++------
  2 files changed, 189 insertions(+), 31 deletions(-)
 
 diff --git a/include/linux/hrtimer.h b/include/linux/hrtimer.h
@@ -267,10 +266,11 @@ index 9a1f2b0..66d7a12 100644
  {
  	struct hrtimer_cpu_base *cpu_base = this_cpu_ptr(&hrtimer_bases);
  	struct hrtimer_clock_base *base = timer->base;
-@@ -711,6 +755,37 @@ static void hrtimer_reprogram(struct hrtimer *timer)
+@@ -710,6 +754,37 @@ static void hrtimer_reprogram(struct hrtimer *timer)
+ 
  	WARN_ON_ONCE(hrtimer_get_expires_tv64(timer) < 0);
  
- 	/*
++	/*
 +	 * CLOCK_REALTIME timer might be requested with an absolute
 +	 * expiry time which is less than base->offset. Set it to 0.
 +	 */
@@ -301,10 +301,9 @@ index 9a1f2b0..66d7a12 100644
 +			return;
 +	}
 +
-+	/*
+ 	/*
  	 * If the timer is not on the current cpu, we cannot reprogram
  	 * the other cpus clock event device.
- 	 */
 @@ -727,13 +802,6 @@ static void hrtimer_reprogram(struct hrtimer *timer)
  	if (cpu_base->in_hrtirq)
  		return;
@@ -503,5 +502,5 @@ index 9a1f2b0..66d7a12 100644
  
  /**
 -- 
-2.7.4
+https://clearlinux.org
 

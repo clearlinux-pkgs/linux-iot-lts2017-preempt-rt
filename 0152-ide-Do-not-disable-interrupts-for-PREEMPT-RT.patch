@@ -1,7 +1,7 @@
-From 66aa377c3c86a145450a676e071eb06c95fb7fd8 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ingo Molnar <mingo@elte.hu>
 Date: Fri, 3 Jul 2009 08:30:16 -0500
-Subject: [PATCH 0152/2278] ide: Do not disable interrupts for PREEMPT-RT
+Subject: [PATCH] ide: Do not disable interrupts for PREEMPT-RT
 
 Use the local_irq_*_nort variants.
 
@@ -18,7 +18,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  7 files changed, 16 insertions(+), 16 deletions(-)
 
 diff --git a/drivers/ide/alim15x3.c b/drivers/ide/alim15x3.c
-index 36f76e2..394f142f 100644
+index 36f76e2..394f142 100644
 --- a/drivers/ide/alim15x3.c
 +++ b/drivers/ide/alim15x3.c
 @@ -234,7 +234,7 @@ static int init_chipset_ali15x3(struct pci_dev *dev)
@@ -102,7 +102,7 @@ index 1976397..4169433 100644
  		if (((len + 1) & 3) < 2)
  			return;
 diff --git a/drivers/ide/ide-io.c b/drivers/ide/ide-io.c
-index 3a234701..420e4e6 100644
+index 3a23470..420e4e6 100644
 --- a/drivers/ide/ide-io.c
 +++ b/drivers/ide/ide-io.c
 @@ -660,7 +660,7 @@ void ide_timer_expiry (unsigned long data)
@@ -182,5 +182,5 @@ index 4efe4c6..7eae3aa 100644
  	ide_set_handler(drive, &task_pio_intr, WAIT_WORSTCASE);
  
 -- 
-2.7.4
+https://clearlinux.org
 

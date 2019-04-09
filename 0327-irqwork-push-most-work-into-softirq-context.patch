@@ -1,7 +1,7 @@
-From 908866c441f8f31a4116de2ee0767833ef00af31 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 Date: Tue, 23 Jun 2015 15:32:51 +0200
-Subject: [PATCH 0327/2278] irqwork: push most work into softirq context
+Subject: [PATCH] irqwork: push most work into softirq context
 
 Initially we defered all irqwork into softirq because we didn't want the
 latency spikes if perf or another user was busy and delayed the RT task.
@@ -21,7 +21,7 @@ Mike Galbraith,
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
  include/linux/irq_work.h |  1 +
- kernel/irq_work.c        | 47 ++++++++++++++++++++++++++++++++++-------------
+ kernel/irq_work.c        | 47 +++++++++++++++++++++++++++++-----------
  kernel/sched/topology.c  |  1 +
  kernel/time/tick-sched.c |  1 +
  kernel/time/timer.c      |  5 ++++-
@@ -194,5 +194,5 @@ index 9b08190..2362b03 100644
  	if (IS_ENABLED(CONFIG_NO_HZ_COMMON))
  		__run_timers(this_cpu_ptr(&timer_bases[BASE_DEF]));
 -- 
-2.7.4
+https://clearlinux.org
 

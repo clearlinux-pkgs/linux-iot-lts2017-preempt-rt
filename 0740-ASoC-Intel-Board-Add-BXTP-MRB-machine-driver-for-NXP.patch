@@ -1,8 +1,8 @@
-From 1ec4ae15d2d5d30d1be6db63e86427800d96b969 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Schweikhardt, Markus" <markus.schweikhardt@intel.com>
 Date: Tue, 9 May 2017 23:00:20 +0530
-Subject: [PATCH 0740/2278] ASoC: Intel: Board: Add BXTP MRB machine driver for
- NXP TDF8532
+Subject: [PATCH] ASoC: Intel: Board: Add BXTP MRB machine driver for NXP
+ TDF8532
 
 This is the machine driver for NXP TDF8532
 
@@ -16,7 +16,7 @@ Tested-by: Sm, Bhadur A <bhadur.a.sm@intel.com>
 ---
  sound/soc/intel/Kconfig              |  10 ++
  sound/soc/intel/boards/Makefile      |   2 +
- sound/soc/intel/boards/bxt_tdf8532.c | 209 +++++++++++++++++++++++++++++++++++
+ sound/soc/intel/boards/bxt_tdf8532.c | 209 +++++++++++++++++++++++++++
  3 files changed, 221 insertions(+)
  create mode 100644 sound/soc/intel/boards/bxt_tdf8532.c
 
@@ -277,5 +277,5 @@ index 0000000..027060b
 +MODULE_LICENSE("GPL v2");
 +MODULE_ALIAS("platform:gpmrb_machine");
 -- 
-2.7.4
+https://clearlinux.org
 

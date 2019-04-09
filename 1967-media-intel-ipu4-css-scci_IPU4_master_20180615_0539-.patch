@@ -1,8 +1,8 @@
-From bb7ae4d6dfe2582e3823f305d26299f6f7e24f28 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: icg_intg <icg_intg@intel.com>
 Date: Wed, 20 Jun 2018 15:30:09 +0800
-Subject: [PATCH 1967/2278] media: intel-ipu4: css:
- scci_IPU4_master_20180615_0539 fw release
+Subject: [PATCH] media: intel-ipu4: css: scci_IPU4_master_20180615_0539 fw
+ release
 
 Message for Open Source:
 New firmware css release.
@@ -23,25 +23,25 @@ Depends-on: Id13181b2dee1c2f3d67c285c3ab2a8b3d49369f9
 Signed-off-by: icg_intg <icg_intg@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- .../pci/intel/ipu4/ipu4-css/Makefile.ipu4isys_inc  |  1 +
- .../pci/intel/ipu4/ipu4-css/Makefile.ipu4psys_inc  |  1 +
- .../intel/ipu4/ipu4-css/ia_css_fw_pkg_release.h    |  2 +-
- .../lib2600/isysapi/interface/ia_css_isysapi.h     |  7 ++
- .../lib2600/isysapi/src/ia_css_isys_public.c       | 18 ++++
- .../lib2600/regmem/interface/regmem_access.h       |  9 ++
- .../lib2600/syscom/interface/ia_css_syscom.h       | 38 +++++++++
- .../ipu4-css/lib2600/syscom/src/ia_css_syscom.c    | 96 +++++++++++++++++++---
- .../lib2600/syscom/src/ia_css_syscom_config_fw.h   | 18 ++++
- .../intel/ipu4/ipu4-css/lib2600/syscom/syscom.mk   |  1 +
- .../DSS_V2_program_group/ia_css_fw_pkg_release.h   |  2 +-
- .../lib2600psys/lib/psys_server/psys_server.mk     |  1 +
- .../psysapi/device/interface/ia_css_psys_device.h  | 13 +++
- .../lib/psysapi/device/src/ia_css_psys_device.c    |  8 ++
- .../lib/regmem/interface/regmem_access.h           |  9 ++
- .../lib/syscom/interface/ia_css_syscom.h           | 38 +++++++++
- .../lib2600psys/lib/syscom/src/ia_css_syscom.c     | 96 +++++++++++++++++++---
- .../lib/syscom/src/ia_css_syscom_config_fw.h       | 18 ++++
- .../ipu4/ipu4-css/lib2600psys/lib/syscom/syscom.mk |  1 +
+ .../intel/ipu4/ipu4-css/Makefile.ipu4isys_inc |  1 +
+ .../intel/ipu4/ipu4-css/Makefile.ipu4psys_inc |  1 +
+ .../ipu4/ipu4-css/ia_css_fw_pkg_release.h     |  2 +-
+ .../isysapi/interface/ia_css_isysapi.h        |  7 ++
+ .../lib2600/isysapi/src/ia_css_isys_public.c  | 18 ++++
+ .../lib2600/regmem/interface/regmem_access.h  |  9 ++
+ .../lib2600/syscom/interface/ia_css_syscom.h  | 38 ++++++++
+ .../lib2600/syscom/src/ia_css_syscom.c        | 96 +++++++++++++++++--
+ .../syscom/src/ia_css_syscom_config_fw.h      | 18 ++++
+ .../ipu4/ipu4-css/lib2600/syscom/syscom.mk    |  1 +
+ .../ia_css_fw_pkg_release.h                   |  2 +-
+ .../lib/psys_server/psys_server.mk            |  1 +
+ .../device/interface/ia_css_psys_device.h     | 13 +++
+ .../psysapi/device/src/ia_css_psys_device.c   |  8 ++
+ .../lib/regmem/interface/regmem_access.h      |  9 ++
+ .../lib/syscom/interface/ia_css_syscom.h      | 38 ++++++++
+ .../lib/syscom/src/ia_css_syscom.c            | 96 +++++++++++++++++--
+ .../lib/syscom/src/ia_css_syscom_config_fw.h  | 18 ++++
+ .../ipu4-css/lib2600psys/lib/syscom/syscom.mk |  1 +
  19 files changed, 355 insertions(+), 22 deletions(-)
 
 diff --git a/drivers/media/pci/intel/ipu4/ipu4-css/Makefile.ipu4isys_inc b/drivers/media/pci/intel/ipu4/ipu4-css/Makefile.ipu4isys_inc
@@ -148,7 +148,7 @@ index 3fc8958..d4576af 100644
  
  #if HAS_DUAL_CMD_CTX_SUPPORT
 diff --git a/drivers/media/pci/intel/ipu4/ipu4-css/lib2600/syscom/interface/ia_css_syscom.h b/drivers/media/pci/intel/ipu4/ipu4-css/lib2600/syscom/interface/ia_css_syscom.h
-index 5293c006..5426d6d 100644
+index 5293c00..5426d6d 100644
 --- a/drivers/media/pci/intel/ipu4/ipu4-css/lib2600/syscom/interface/ia_css_syscom.h
 +++ b/drivers/media/pci/intel/ipu4/ipu4-css/lib2600/syscom/interface/ia_css_syscom.h
 @@ -206,4 +206,42 @@ ia_css_syscom_recv_port_transfer(
@@ -441,7 +441,7 @@ index 3fc8958..d4576af 100644
  
  #if HAS_DUAL_CMD_CTX_SUPPORT
 diff --git a/drivers/media/pci/intel/ipu4/ipu4-css/lib2600psys/lib/syscom/interface/ia_css_syscom.h b/drivers/media/pci/intel/ipu4/ipu4-css/lib2600psys/lib/syscom/interface/ia_css_syscom.h
-index 5293c006..5426d6d 100644
+index 5293c00..5426d6d 100644
 --- a/drivers/media/pci/intel/ipu4/ipu4-css/lib2600psys/lib/syscom/interface/ia_css_syscom.h
 +++ b/drivers/media/pci/intel/ipu4/ipu4-css/lib2600psys/lib/syscom/interface/ia_css_syscom.h
 @@ -206,4 +206,42 @@ ia_css_syscom_recv_port_transfer(
@@ -647,5 +647,5 @@ index 403f1c0..8d36b89 100644
  ifdef REGMEM_SECURE_OFFSET
  SYSCOM_HOST_CPPFLAGS += -DREGMEM_SECURE_OFFSET=$(REGMEM_SECURE_OFFSET)
 -- 
-2.7.4
+https://clearlinux.org
 

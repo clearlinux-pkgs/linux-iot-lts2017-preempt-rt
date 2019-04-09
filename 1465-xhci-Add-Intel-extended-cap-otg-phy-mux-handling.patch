@@ -1,7 +1,7 @@
-From 094a110a6f8664f6d109e13bc0095827109df2cd Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Hans de Goede <hdegoede@redhat.com>
 Date: Tue, 20 Mar 2018 15:57:09 +0300
-Subject: [PATCH 1465/2278] xhci: Add Intel extended cap / otg phy mux handling
+Subject: [PATCH] xhci: Add Intel extended cap / otg phy mux handling
 
 The xHCI controller on various Intel SoCs has an extended cap mmio-range
 which contains registers to control the muxing to the xHCI (host mode)
@@ -27,9 +27,9 @@ Signed-off-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
 Signed-off-by: Kuppuswamy Sathyanarayanan <sathyanarayanan.kuppuswamy@linux.intel.com>
 ---
  drivers/usb/host/Makefile        |  2 +-
- drivers/usb/host/xhci-ext-caps.c | 90 ++++++++++++++++++++++++++++++++++++++++
+ drivers/usb/host/xhci-ext-caps.c | 90 ++++++++++++++++++++++++++++++++
  drivers/usb/host/xhci-ext-caps.h |  2 +
- drivers/usb/host/xhci-pci.c      |  5 +++
+ drivers/usb/host/xhci-pci.c      |  5 ++
  drivers/usb/host/xhci.h          |  1 +
  5 files changed, 99 insertions(+), 1 deletion(-)
  create mode 100644 drivers/usb/host/xhci-ext-caps.c
@@ -192,5 +192,5 @@ index cbc9153..2ede828 100644
  int xhci_suspend(struct xhci_hcd *xhci, bool do_wakeup);
  int xhci_resume(struct xhci_hcd *xhci, bool hibernated);
 -- 
-2.7.4
+https://clearlinux.org
 

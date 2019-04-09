@@ -1,7 +1,7 @@
-From 967a73945c0d7f46d9ff9f0f596b82c60d6753d7 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ramesh Babu <ramesh.babu@intel.com>
 Date: Tue, 17 Nov 2015 02:33:39 +0530
-Subject: [PATCH 0580/2278] ASoC: HDA: EXT: Mark dma buffers as un-cacheble
+Subject: [PATCH] ASoC: HDA: EXT: Mark dma buffers as un-cacheble
 
 Driver shouldn't not assume HDA DMA has snooping
 enabled. Driver should always allocate non-cached
@@ -12,7 +12,7 @@ Signed-off-by: Ramesh Babu <ramesh.babu@intel.com>
 Signed-off-by: Hardik T Shah <hardik.t.shah@intel.com>
 ---
  include/sound/hdaudio.h      |  2 ++
- sound/hda/ext/hdac_ext_bus.c | 37 ++++++++++++++++++++++++++++++++++++-
+ sound/hda/ext/hdac_ext_bus.c | 37 +++++++++++++++++++++++++++++++++++-
  2 files changed, 38 insertions(+), 1 deletion(-)
 
 diff --git a/include/sound/hdaudio.h b/include/sound/hdaudio.h
@@ -98,5 +98,5 @@ index 31b510c..2b2db81 100644
  
  /**
 -- 
-2.7.4
+https://clearlinux.org
 

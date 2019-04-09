@@ -1,11 +1,11 @@
-From b6f9026ff00e91543b11d75c8f7957c5366f4ca4 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 Date: Thu, 12 Oct 2017 17:34:38 +0200
-Subject: [PATCH 0259/2278] rtmutex: add ww_mutex addon for mutex-rt
+Subject: [PATCH] rtmutex: add ww_mutex addon for mutex-rt
 
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- kernel/locking/rtmutex.c        | 264 ++++++++++++++++++++++++++++++++++++++--
+ kernel/locking/rtmutex.c        | 264 ++++++++++++++++++++++++++++++--
  kernel/locking/rtmutex_common.h |   2 +
  kernel/locking/rwsem-rt.c       |   2 +-
  3 files changed, 257 insertions(+), 11 deletions(-)
@@ -428,5 +428,5 @@ index a8f7ce5..26991dd 100644
  	/*
  	 * The slowlock() above is guaranteed to return with the rtmutex is
 -- 
-2.7.4
+https://clearlinux.org
 

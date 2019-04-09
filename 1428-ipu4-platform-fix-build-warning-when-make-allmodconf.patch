@@ -1,8 +1,7 @@
-From ae396bfea96eb246fbc4b4e2dc6c10466588263f Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Zhong Huiping <huipingdx.zhong@intel.com>
 Date: Sat, 28 Apr 2018 16:47:53 +0800
-Subject: [PATCH 1428/2278] ipu4: platform: fix build warning when make
- allmodconfig
+Subject: [PATCH] ipu4: platform: fix build warning when make allmodconfig
 
 Change-Id: Id4ead3c0bdb6c3ff4587ac68d9006c00ba5d1bcc
 Signed-off-by: Zhong Huiping <huipingdx.zhong@intel.com>
@@ -65,5 +64,5 @@ index cd5649d..3818ea0 100755
  		&ti964_sd_2,
  #endif
 -- 
-2.7.4
+https://clearlinux.org
 

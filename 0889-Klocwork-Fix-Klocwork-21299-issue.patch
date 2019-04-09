@@ -1,7 +1,7 @@
-From 075a8dbe324273d0992217225516044b01acc73c Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Yin Fengwei <fengwei.yin@intel.com>
 Date: Wed, 10 Jan 2018 20:22:07 +0800
-Subject: [PATCH 0889/2278] Klocwork: Fix Klocwork 21299 issue.
+Subject: [PATCH] Klocwork: Fix Klocwork 21299 issue.
 
 "'gpa2hpa.hpa' is used. But is uninitialized."
 
@@ -27,5 +27,5 @@ index fb47c12..100435d 100644
  	if (ret < 0) {
  		pr_err("vhm: failed to inject!\n");
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,7 @@
-From 718c0018b619d3e6ab515114d9b318c2327b3d65 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Vinicius Costa Gomes <vinicius.gomes@intel.com>
 Date: Tue, 10 Apr 2018 10:49:54 -0700
-Subject: [PATCH 1823/2278] igb: Add support for enabling queue steering in
- filters
+Subject: [PATCH] igb: Add support for enabling queue steering in filters
 
 On some igb models (82575 and i210) the MAC address filters can
 control to which queue the packet will be assigned.
@@ -19,9 +18,9 @@ Signed-off-by: Vinicius Costa Gomes <vinicius.gomes@intel.com>
 Tested-by: Aaron Brown <aaron.f.brown@intel.com>
 Signed-off-by: Jeff Kirsher <jeffrey.t.kirsher@intel.com>
 ---
- drivers/net/ethernet/intel/igb/e1000_defines.h |  1 +
- drivers/net/ethernet/intel/igb/igb.h           |  6 ++++++
- drivers/net/ethernet/intel/igb/igb_main.c      | 26 ++++++++++++++++++++++++++
+ .../net/ethernet/intel/igb/e1000_defines.h    |  1 +
+ drivers/net/ethernet/intel/igb/igb.h          |  6 +++++
+ drivers/net/ethernet/intel/igb/igb_main.c     | 26 +++++++++++++++++++
  3 files changed, 33 insertions(+)
 
 diff --git a/drivers/net/ethernet/intel/igb/e1000_defines.h b/drivers/net/ethernet/intel/igb/e1000_defines.h
@@ -103,5 +102,5 @@ index a870066..21de454 100644
  				    adapter->mac_table[index].queue;
  			break;
 -- 
-2.7.4
+https://clearlinux.org
 

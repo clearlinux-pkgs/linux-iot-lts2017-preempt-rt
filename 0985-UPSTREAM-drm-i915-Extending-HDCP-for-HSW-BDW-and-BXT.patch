@@ -1,8 +1,7 @@
-From d70de8d284071337063b3de3bf529e04e6baa9bc Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ramalingam C <ramalingam.c@intel.com>
 Date: Thu, 18 Jan 2018 11:18:05 +0530
-Subject: [PATCH 0985/2278] UPSTREAM: drm/i915: Extending HDCP for HSW, BDW and
- BXT+
+Subject: [PATCH] UPSTREAM: drm/i915: Extending HDCP for HSW, BDW and BXT+
 
 This patch extends the Key load process and hdcp initialization for
 few more capable intel platforms i.e. HSW, BDW and BXT+.
@@ -18,7 +17,7 @@ Change-Id: Icfc63660121cb1aec1d00e2008887dff03f2ce85
  drivers/gpu/drm/i915/i915_reg.h   |  1 +
  drivers/gpu/drm/i915/intel_dp.c   |  2 +-
  drivers/gpu/drm/i915/intel_drv.h  |  1 +
- drivers/gpu/drm/i915/intel_hdcp.c | 40 ++++++++++++++++++++++++++++++++-------
+ drivers/gpu/drm/i915/intel_hdcp.c | 40 +++++++++++++++++++++++++------
  drivers/gpu/drm/i915/intel_hdmi.c |  3 +--
  5 files changed, 37 insertions(+), 10 deletions(-)
 
@@ -132,5 +131,5 @@ index e60d1f9..60fd172 100644
  					  &intel_hdmi_hdcp_shim);
  		if (ret)
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,7 @@
-From 8055194819ac10804810933b5397442533f1103c Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Thu, 4 Jan 2018 16:35:54 -0600
-Subject: [PATCH 1245/2278] ASoC: Intel: Kconfig: Simplify-clarify ACPI/PCI
- dependencies
+Subject: [PATCH] ASoC: Intel: Kconfig: Simplify-clarify ACPI/PCI dependencies
 
 PCI/ACPI selections should not happen in Kconfig for machine drivers,
 move to SOC selections.
@@ -175,5 +174,5 @@ index 25e587d..424cdfe 100644
  	  This adds support for ASoC machine driver for the MinnowBoard Max or
  	  Up boards and provides access to I2S signals on the Low-Speed
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,7 @@
-From 9452d1afa98b97cf453e63e1a10ecee0d52a098d Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Fei Jiang <fei.jiang@intel.com>
 Date: Tue, 12 Jun 2018 11:15:21 +0800
-Subject: [PATCH 1550/2278] drm/i915/gvt: fix i915 boot issue when gvt is not
- enabled
+Subject: [PATCH] drm/i915/gvt: fix i915 boot issue when gvt is not enabled
 
 Previous plane scaling patch didn't consider following case: ACRN_GVT is
 built in kernel, while didn't enable SOS gvt in kernel cmdline. In such
@@ -26,5 +25,5 @@ index 096aa8f..6ea01a7 100644
  			scaler->owned = 0;
  #endif
 -- 
-2.7.4
+https://clearlinux.org
 

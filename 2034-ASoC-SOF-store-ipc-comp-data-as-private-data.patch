@@ -1,7 +1,7 @@
-From f50b70b3604804349f53611a3c8cff54de014d29 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ranjani Sridharan <ranjani.sridharan@linux.intel.com>
 Date: Mon, 16 Jul 2018 15:21:10 -0700
-Subject: [PATCH 2034/2278] ASoC: SOF: store ipc comp data as private data
+Subject: [PATCH] ASoC: SOF: store ipc comp data as private data
 
 Save the ipc comp data so that the pipeline components can be
 restored during PM resume.
@@ -11,7 +11,7 @@ widgets are unloaded and the associated data is freed.
 
 Signed-off-by: Ranjani Sridharan <ranjani.sridharan@linux.intel.com>
 ---
- sound/soc/sof/topology.c | 316 ++++++++++++++++++++++++++++++-----------------
+ sound/soc/sof/topology.c | 316 +++++++++++++++++++++++++--------------
  1 file changed, 202 insertions(+), 114 deletions(-)
 
 diff --git a/sound/soc/sof/topology.c b/sound/soc/sof/topology.c
@@ -546,5 +546,5 @@ index 1142b4a..07c3248 100644
  					    SND_SOC_TPLG_INDEX_ALL);
  	if (ret < 0)
 -- 
-2.7.4
+https://clearlinux.org
 

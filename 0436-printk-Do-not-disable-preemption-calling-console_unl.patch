@@ -1,8 +1,8 @@
-From 132894d0f1147903e143d4f3932dfad8298a8a19 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Steven Rostedt <rostedt@goodmis.org>
 Date: Tue, 18 Dec 2018 14:30:10 -0500
-Subject: [PATCH 0436/2278] printk: Do not disable preemption calling
- console_unlock() in PREEMPT_RT
+Subject: [PATCH] printk: Do not disable preemption calling console_unlock() in
+ PREEMPT_RT
 
 A stable backport placed open coded preempt_disable() around console_unlock()
 to prevent delays in output of printk() due to a task holding the console
@@ -41,5 +41,5 @@ index 326610b..f41f500 100644
  
  	return printed_len;
 -- 
-2.7.4
+https://clearlinux.org
 

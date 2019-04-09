@@ -1,7 +1,7 @@
-From c1d91f89617889087c9cef91ab58cc7093609aef Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 Date: Thu, 29 Aug 2013 18:21:04 +0200
-Subject: [PATCH 0262/2278] ptrace: fix ptrace vs tasklist_lock race
+Subject: [PATCH] ptrace: fix ptrace vs tasklist_lock race
 
 As explained by Alexander Fyodorov <halcy@yandex.ru>:
 
@@ -24,9 +24,9 @@ taken in case the caller is interrupted between looking into ->state and
 
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- include/linux/sched.h | 49 +++++++++++++++++++++++++++++++++++++++++++++----
- kernel/ptrace.c       |  9 ++++++++-
- kernel/sched/core.c   | 17 +++++++++++++++--
+ include/linux/sched.h | 49 +++++++++++++++++++++++++++++++++++++++----
+ kernel/ptrace.c       |  9 +++++++-
+ kernel/sched/core.c   | 17 +++++++++++++--
  3 files changed, 68 insertions(+), 7 deletions(-)
 
 diff --git a/include/linux/sched.h b/include/linux/sched.h
@@ -161,5 +161,5 @@ index b34002b..c9f8f06 100644
  		task_rq_unlock(rq, p, &rf);
  
 -- 
-2.7.4
+https://clearlinux.org
 

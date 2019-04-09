@@ -1,7 +1,7 @@
-From 70371a2c6f237db3f4016b9feb9697225bb29cce Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Peter Zijlstra <peterz@infradead.org>
 Date: Mon, 14 Nov 2011 18:19:27 +0100
-Subject: [PATCH 0353/2278] x86: crypto: Reduce preempt disabled regions
+Subject: [PATCH] x86: crypto: Reduce preempt disabled regions
 
 Restrict the preempt disabled regions to the actual floating point
 operations and enable preemption for the administrative actions.
@@ -113,5 +113,5 @@ index c690ddc..7a3138d 100644
  	return err;
  }
 -- 
-2.7.4
+https://clearlinux.org
 

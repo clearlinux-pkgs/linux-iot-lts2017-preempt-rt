@@ -1,8 +1,8 @@
-From b2850c2b6a2b28c00eacbbfeeb9d22347e5af898 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Erik Schmauss <erik.schmauss@intel.com>
 Date: Thu, 26 Jul 2018 11:00:36 -0700
-Subject: [PATCH 1725/2278] ACPICA: ACPICA: add status check for acpi_hw_read
- before assigning return value
+Subject: [PATCH] ACPICA: ACPICA: add status check for acpi_hw_read before
+ assigning return value
 
 Reported-by: Mark Gross <mark.gross@intel.com>
 Suggested-by: Robert Moore <robert.moore@intel.com>
@@ -37,5 +37,5 @@ index 81ae601..af69c13 100644
  
  	case ACPI_REGISTER_SMI_COMMAND_BLOCK:	/* 8-bit access */
 -- 
-2.7.4
+https://clearlinux.org
 

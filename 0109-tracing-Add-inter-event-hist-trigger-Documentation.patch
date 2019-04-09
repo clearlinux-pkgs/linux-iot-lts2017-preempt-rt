@@ -1,7 +1,7 @@
-From d187e4b7cc720f77c5e10fa424e43b84648d277a Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tom Zanussi <tom.zanussi@linux.intel.com>
 Date: Mon, 15 Jan 2018 20:52:06 -0600
-Subject: [PATCH 0109/2278] tracing: Add inter-event hist trigger Documentation
+Subject: [PATCH] tracing: Add inter-event hist trigger Documentation
 
 Add background and details on inter-event hist triggers, including
 hist variables, synthetic events, and actions.
@@ -14,7 +14,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
 (cherry picked from commit 7d5f30af5e39e572f6984c1083fe79fd7dc34d04)
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- Documentation/trace/histogram.txt | 381 ++++++++++++++++++++++++++++++++++++++
+ Documentation/trace/histogram.txt | 381 ++++++++++++++++++++++++++++++
  1 file changed, 381 insertions(+)
 
 diff --git a/Documentation/trace/histogram.txt b/Documentation/trace/histogram.txt
@@ -407,5 +407,5 @@ index 0aec2d8..df08882 100644
 +          Entries: 2
 +          Dropped: 0
 -- 
-2.7.4
+https://clearlinux.org
 

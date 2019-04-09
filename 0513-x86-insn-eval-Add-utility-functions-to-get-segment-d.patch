@@ -1,7 +1,7 @@
-From 4b19c4e1e0a7b2dcdaf516e33c57d8d11b03ecfa Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ricardo Neri <ricardo.neri-calderon@linux.intel.com>
 Date: Thu, 1 Jun 2017 12:29:23 -0700
-Subject: [PATCH 0513/2278] x86/insn-eval: Add utility functions to get segment
+Subject: [PATCH] x86/insn-eval: Add utility functions to get segment
  descriptor base address and limit
 
 With segmentation, the base address of the segment is needed to compute a
@@ -47,7 +47,7 @@ Cc: x86@kernel.org
 Signed-off-by: Ricardo Neri <ricardo.neri-calderon@linux.intel.com>
 ---
  arch/x86/include/asm/insn-eval.h |   2 +
- arch/x86/lib/insn-eval.c         | 127 +++++++++++++++++++++++++++++++++++++++
+ arch/x86/lib/insn-eval.c         | 127 +++++++++++++++++++++++++++++++
  2 files changed, 129 insertions(+)
 
 diff --git a/arch/x86/include/asm/insn-eval.h b/arch/x86/include/asm/insn-eval.h
@@ -66,10 +66,11 @@ diff --git a/arch/x86/lib/insn-eval.c b/arch/x86/lib/insn-eval.c
 index 11a5d77..a048bad 100644
 --- a/arch/x86/lib/insn-eval.c
 +++ b/arch/x86/lib/insn-eval.c
-@@ -460,6 +460,133 @@ static struct desc_struct *get_desc(unsigned short sel)
+@@ -459,6 +459,133 @@ static struct desc_struct *get_desc(unsigned short sel)
+ 	return desc;
  }
  
- /**
++/**
 + * insn_get_seg_base() - Obtain base address of segment descriptor.
 + * @regs:	Structure with register values as seen when entering kernel mode
 + * @insn:	Instruction structure with selector override prefixes
@@ -196,10 +197,9 @@ index 11a5d77..a048bad 100644
 +	return limit;
 +}
 +
-+/**
+ /**
   * insn_get_modrm_rm_off() - Obtain register in r/m part of ModRM byte
   * @insn:	Instruction structure containing the ModRM byte
-  * @regs:	Structure with register values as seen when entering kernel mode
 -- 
-2.7.4
+https://clearlinux.org
 

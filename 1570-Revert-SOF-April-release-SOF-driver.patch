@@ -1,7 +1,7 @@
-From fc8ae505dedfe6898ef5e4ac30289ec287abe639 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Keyon Jie <yang.jie@linux.intel.com>
 Date: Tue, 26 Jun 2018 18:41:31 +0800
-Subject: [PATCH 1570/2278] Revert SOF April release -- SOF driver.
+Subject: [PATCH] Revert SOF April release -- SOF driver.
 
 Signed-off-by: Keyon Jie <yang.jie@linux.intel.com>
 ---
@@ -9,7 +9,7 @@ Signed-off-by: Keyon Jie <yang.jie@linux.intel.com>
  include/uapi/sound/sof-abi.h                 |   29 -
  include/uapi/sound/sof-eq.h                  |  102 -
  include/uapi/sound/sof-fw.h                  |   69 -
- include/uapi/sound/sof-ipc.h                 |  853 ---------
+ include/uapi/sound/sof-ipc.h                 |  853 ------
  include/uapi/sound/sof-tone.h                |   28 -
  include/uapi/sound/sof-topology.h            |   71 -
  sound/core/pcm.c                             |    2 -
@@ -29,32 +29,32 @@ Signed-off-by: Keyon Jie <yang.jie@linux.intel.com>
  sound/soc/intel/boards/cht_bsw_rt5672.c      |    2 -
  sound/soc/intel/boards/haswell.c             |    4 -
  sound/soc/soc-topology.c                     |    3 -
- sound/soc/sof/Kconfig                        |  110 --
+ sound/soc/sof/Kconfig                        |  110 -
  sound/soc/sof/Makefile                       |   26 -
  sound/soc/sof/compressed.c                   |  168 --
- sound/soc/sof/control.c                      |  233 ---
- sound/soc/sof/debug.c                        |  137 --
- sound/soc/sof/hw-apl.c                       | 2647 --------------------------
- sound/soc/sof/hw-bdw.c                       |  757 --------
- sound/soc/sof/hw-byt.c                       |  849 ---------
- sound/soc/sof/hw-hsw.c                       |  756 --------
- sound/soc/sof/hw-spi.c                       |  253 ---
- sound/soc/sof/intel.h                        |  322 ----
- sound/soc/sof/ipc.c                          |  605 ------
- sound/soc/sof/loader.c                       |  283 ---
- sound/soc/sof/nocodec.c                      |  114 --
+ sound/soc/sof/control.c                      |  233 --
+ sound/soc/sof/debug.c                        |  137 -
+ sound/soc/sof/hw-apl.c                       | 2647 ------------------
+ sound/soc/sof/hw-bdw.c                       |  757 -----
+ sound/soc/sof/hw-byt.c                       |  849 ------
+ sound/soc/sof/hw-hsw.c                       |  756 -----
+ sound/soc/sof/hw-spi.c                       |  253 --
+ sound/soc/sof/intel.h                        |  322 ---
+ sound/soc/sof/ipc.c                          |  605 ----
+ sound/soc/sof/loader.c                       |  283 --
+ sound/soc/sof/nocodec.c                      |  114 -
  sound/soc/sof/ops.c                          |  190 --
- sound/soc/sof/ops.h                          |  251 ---
- sound/soc/sof/pcm.c                          |  632 ------
+ sound/soc/sof/ops.h                          |  251 --
+ sound/soc/sof/pcm.c                          |  632 -----
  sound/soc/sof/pm.c                           |   48 -
- sound/soc/sof/sof-acpi-dev.c                 |  353 ----
- sound/soc/sof/sof-pci-dev.c                  |  307 ---
+ sound/soc/sof/sof-acpi-dev.c                 |  353 ---
+ sound/soc/sof/sof-pci-dev.c                  |  307 --
  sound/soc/sof/sof-priv.h                     |    6 -
  sound/soc/sof/sof-spi-dev.c                  |  167 --
- sound/soc/sof/topology.c                     | 1532 ---------------
- sound/soc/sof/trace.c                        |  290 ---
- sound/soc/sof/virtio-be.c                    |  126 --
- sound/soc/sof/virtio-fe.c                    |  130 --
+ sound/soc/sof/topology.c                     | 1532 ----------
+ sound/soc/sof/trace.c                        |  290 --
+ sound/soc/sof/virtio-be.c                    |  126 -
+ sound/soc/sof/virtio-fe.c                    |  130 -
  50 files changed, 9 insertions(+), 12587 deletions(-)
  delete mode 100644 include/uapi/sound/sof-abi.h
  delete mode 100644 include/uapi/sound/sof-eq.h
@@ -1291,7 +1291,7 @@ index f4d2898..0000000
 -
 -#endif
 diff --git a/sound/core/pcm.c b/sound/core/pcm.c
-index 14ccc74f..2b5caa8 100644
+index 14ccc74..2b5caa8 100644
 --- a/sound/core/pcm.c
 +++ b/sound/core/pcm.c
 @@ -1160,7 +1160,6 @@ static int snd_pcm_dev_disconnect(struct snd_device *device)
@@ -1311,7 +1311,7 @@ index 14ccc74f..2b5caa8 100644
  	}
  	if (!pcm->internal) {
 diff --git a/sound/soc/Kconfig b/sound/soc/Kconfig
-index e8f3acae..d227581 100644
+index e8f3aca..d227581 100644
 --- a/sound/soc/Kconfig
 +++ b/sound/soc/Kconfig
 @@ -65,7 +65,6 @@ source "sound/soc/rockchip/Kconfig"
@@ -1823,7 +1823,7 @@ index 0062d73..49cf30c 100644
  	{"Headset Mic", NULL, "Platform Clock"},
  	{"Int Mic", NULL, "Platform Clock"},
 diff --git a/sound/soc/intel/boards/haswell.c b/sound/soc/intel/boards/haswell.c
-index 666d077..3c516077 100644
+index 666d077..3c51607 100644
 --- a/sound/soc/intel/boards/haswell.c
 +++ b/sound/soc/intel/boards/haswell.c
 @@ -85,7 +85,6 @@ static const struct snd_soc_ops haswell_rt5640_ops = {
@@ -7864,7 +7864,7 @@ index d6ba29f..0000000
 -MODULE_LICENSE("Dual BSD/GPL");
 diff --git a/sound/soc/sof/intel.h b/sound/soc/sof/intel.h
 deleted file mode 100644
-index 4bcf7870..0000000
+index 4bcf787..0000000
 --- a/sound/soc/sof/intel.h
 +++ /dev/null
 @@ -1,322 +0,0 @@
@@ -13334,5 +13334,5 @@ index 1019e65..0000000
 -
 -MODULE_LICENSE("Dual BSD/GPL");
 -- 
-2.7.4
+https://clearlinux.org
 

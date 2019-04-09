@@ -1,8 +1,8 @@
-From b756c65c01f57fc4a7cf1002c608c126e06e1b9d Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Yong Zhi <yong.zhi@intel.com>
 Date: Wed, 28 Feb 2018 17:35:19 -0600
-Subject: [PATCH 1912/2278] media: intel-ipu4: isys: v4l2-compliance fix for
- ISA Config node
+Subject: [PATCH] media: intel-ipu4: isys: v4l2-compliance fix for ISA Config
+ node
 
 Message for Open Source:
 Fix v4l2-compliance fails on "Intel IPU4 ISA config" and
@@ -38,11 +38,11 @@ Change-Id: Ide89d8c0b3e5488d7d433f02c20fc56ced07f137
 Signed-off-by: Yong Zhi <yong.zhi@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- drivers/media/pci/intel/ipu4/ipu4-isys-isa.c | 84 +++++++++++++++++++++++++---
+ drivers/media/pci/intel/ipu4/ipu4-isys-isa.c | 84 ++++++++++++++++++--
  1 file changed, 77 insertions(+), 7 deletions(-)
 
 diff --git a/drivers/media/pci/intel/ipu4/ipu4-isys-isa.c b/drivers/media/pci/intel/ipu4/ipu4-isys-isa.c
-index 2270ee04..3bc6510 100644
+index 2270ee0..3bc6510 100644
 --- a/drivers/media/pci/intel/ipu4/ipu4-isys-isa.c
 +++ b/drivers/media/pci/intel/ipu4/ipu4-isys-isa.c
 @@ -113,15 +113,27 @@ isa_config_try_fmt_vid_out_mplane(struct ipu_isys_video *av,
@@ -174,5 +174,5 @@ index 2270ee04..3bc6510 100644
  	isa->av_3a.prepare_firmware_stream_cfg =
  	    isa_prepare_firmware_stream_cfg_param;
 -- 
-2.7.4
+https://clearlinux.org
 

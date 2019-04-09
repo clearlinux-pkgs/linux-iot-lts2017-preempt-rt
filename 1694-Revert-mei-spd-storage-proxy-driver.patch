@@ -1,7 +1,7 @@
-From ccb3ead5999ecb685c5205b3d1c5480b1b587c3e Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tomas Winkler <tomas.winkler@intel.com>
 Date: Thu, 31 May 2018 22:57:21 +0300
-Subject: [PATCH 1694/2278] Revert "mei: spd: storage proxy driver"
+Subject: [PATCH] Revert "mei: spd: storage proxy driver"
 
 This reverts commit 77a283594fd36645f5fdec4f2e4ef6bc56c7689a.
 
@@ -11,12 +11,12 @@ Change-Id: I469694ad4403cc711816b9b633bf6324dc4bee5c
  drivers/misc/mei/Makefile      |   1 -
  drivers/misc/mei/spd/Kconfig   |  12 -
  drivers/misc/mei/spd/Makefile  |  12 -
- drivers/misc/mei/spd/cmd.c     | 495 -----------------------------------------
- drivers/misc/mei/spd/cmd.h     | 285 ------------------------
- drivers/misc/mei/spd/debugfs.c |  88 --------
- drivers/misc/mei/spd/gpp.c     | 310 --------------------------
- drivers/misc/mei/spd/main.c    | 127 -----------
- drivers/misc/mei/spd/spd.h     | 146 ------------
+ drivers/misc/mei/spd/cmd.c     | 495 ---------------------------------
+ drivers/misc/mei/spd/cmd.h     | 285 -------------------
+ drivers/misc/mei/spd/debugfs.c |  88 ------
+ drivers/misc/mei/spd/gpp.c     | 310 ---------------------
+ drivers/misc/mei/spd/main.c    | 127 ---------
+ drivers/misc/mei/spd/spd.h     | 146 ----------
  10 files changed, 1477 deletions(-)
  delete mode 100644 drivers/misc/mei/spd/Kconfig
  delete mode 100644 drivers/misc/mei/spd/Makefile
@@ -1569,5 +1569,5 @@ index 61c9ac5..0000000
 -
 -#endif /* _MEI_SPD_H */
 -- 
-2.7.4
+https://clearlinux.org
 

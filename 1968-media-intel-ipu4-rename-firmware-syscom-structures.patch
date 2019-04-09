@@ -1,8 +1,7 @@
-From 07fc96845ce527d4563eae4c47fec173b9986cee Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ding Yunliang <yunliang.ding@intel.com>
 Date: Thu, 14 Jun 2018 17:55:20 +0800
-Subject: [PATCH 1968/2278] media: intel-ipu4: rename firmware syscom
- structures
+Subject: [PATCH] media: intel-ipu4: rename firmware syscom structures
 
 Message for Open Source:
 The common practice to name firmware strucures is adding ipu_fw
@@ -16,10 +15,10 @@ Change-Id: Ib93992a6f069b555fae508143fe5cedd03b3835f
 Signed-off-by: Ding Yunliang <yunliang.ding@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- drivers/media/pci/intel/ipu-fw-com.c  | 46 +++++++++++++++++------------------
- drivers/media/pci/intel/ipu-fw-com.h  |  6 ++---
+ drivers/media/pci/intel/ipu-fw-com.c  | 46 +++++++++++++--------------
+ drivers/media/pci/intel/ipu-fw-com.h  |  6 ++--
  drivers/media/pci/intel/ipu-fw-isys.c |  4 +--
- drivers/media/pci/intel/ipu-psys.c    | 20 ++++++++-------
+ drivers/media/pci/intel/ipu-psys.c    | 20 ++++++------
  4 files changed, 39 insertions(+), 37 deletions(-)
 
 diff --git a/drivers/media/pci/intel/ipu-fw-com.c b/drivers/media/pci/intel/ipu-fw-com.c
@@ -276,5 +275,5 @@ index c46669b..5c550cc 100644
  	fwcom.dmem_addr = psys->pdata->ipdata->hw_variant.dmem_offset;
  
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,8 @@
-From 8b965dda639d5dd22579aaf9d0eb0b85c441eb3b Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Thu, 31 May 2018 17:35:22 -0500
-Subject: [PATCH 1629/2278] ASoC: Intel: Kconfig: disable SST and legacy
- drivers when SOF is selected
+Subject: [PATCH] ASoC: Intel: Kconfig: disable SST and legacy drivers when SOF
+ is selected
 
 Make sure distros don't run into issues with multiple incompatible
 drivers selected for the same hardware.
@@ -35,5 +35,5 @@ index 02c9465..890d90f 100644
  	select SND_SST_ATOM_HIFI2_PLATFORM
  	select SND_SOC_ACPI_INTEL_MATCH
 -- 
-2.7.4
+https://clearlinux.org
 

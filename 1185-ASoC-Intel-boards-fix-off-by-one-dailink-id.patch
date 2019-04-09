@@ -1,7 +1,7 @@
-From 4a66fc78182ab61a41a016a800da424a6ad8f0b5 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Thu, 12 Oct 2017 18:38:04 -0500
-Subject: [PATCH 1185/2278] ASoC: Intel: boards: fix off-by-one dailink id
+Subject: [PATCH] ASoC: Intel: boards: fix off-by-one dailink id
 
 For some reason the Atom/HiFi2 machine drivers use an id=1 instead
 of zero as done on all other platforms. This gets in the way of
@@ -91,7 +91,7 @@ index dc15846..e0caee2 100644
  		.platform_name = "sst-mfld-platform",
  		.no_pcm = 1,
 diff --git a/sound/soc/intel/boards/cht_bsw_max98090_ti.c b/sound/soc/intel/boards/cht_bsw_max98090_ti.c
-index 0b1b881c..e763593 100644
+index 0b1b881..e763593 100644
 --- a/sound/soc/intel/boards/cht_bsw_max98090_ti.c
 +++ b/sound/soc/intel/boards/cht_bsw_max98090_ti.c
 @@ -361,7 +361,7 @@ static struct snd_soc_dai_link cht_dailink[] = {
@@ -130,5 +130,5 @@ index 1dffe76..3464cf4 100644
  		.platform_name = "sst-mfld-platform",
  		.no_pcm = 1,
 -- 
-2.7.4
+https://clearlinux.org
 

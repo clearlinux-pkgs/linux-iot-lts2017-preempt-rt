@@ -1,8 +1,7 @@
-From 2c482369dfa02deb68bd67ec45b94fd08867ea11 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Mike Galbraith <umgwanakikbuti@gmail.com>
 Date: Wed, 18 Feb 2015 15:09:23 +0100
-Subject: [PATCH 0329/2278] snd/pcm: fix snd_pcm_stream_lock*() irqs_disabled()
- splats
+Subject: [PATCH] snd/pcm: fix snd_pcm_stream_lock*() irqs_disabled() splats
 
 Locking functions previously using read_lock_irq()/read_lock_irqsave() were
 changed to local_irq_disable/save(), leading to gripes.  Use nort variants.
@@ -72,5 +71,5 @@ index 966ac38..25c67e8 100644
  EXPORT_SYMBOL_GPL(snd_pcm_stream_unlock_irqrestore);
  
 -- 
-2.7.4
+https://clearlinux.org
 

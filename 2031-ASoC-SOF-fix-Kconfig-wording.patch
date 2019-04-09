@@ -1,7 +1,7 @@
-From fed66084752eb79b96d064178bc09bbbd3e5a090 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Tue, 7 Aug 2018 19:14:44 -0500
-Subject: [PATCH 2031/2278] ASoC: SOF: fix Kconfig wording
+Subject: [PATCH] ASoC: SOF: fix Kconfig wording
 
 typos and bad wording. Gah.
 
@@ -26,5 +26,5 @@ index 48a212e..0036f1c 100644
            If unsure select "N".
  
 -- 
-2.7.4
+https://clearlinux.org
 

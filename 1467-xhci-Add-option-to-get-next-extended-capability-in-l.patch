@@ -1,8 +1,8 @@
-From f9edd5fc93994b56d92948c9176d518dd407afc0 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Mathias Nyman <mathias.nyman@linux.intel.com>
 Date: Tue, 20 Mar 2018 15:57:08 +0300
-Subject: [PATCH 1467/2278] xhci: Add option to get next extended capability in
- list by passing id = 0
+Subject: [PATCH] xhci: Add option to get next extended capability in list by
+ passing id = 0
 
 Modify xhci_find_next_ext_cap(base, offset, id) to return the next
 capability offset if 0 is passed for id. Otherwise it will behave as
@@ -45,5 +45,5 @@ index 7c58eb5..872fbec 100644
  
  		next = XHCI_EXT_CAPS_NEXT(val);
 -- 
-2.7.4
+https://clearlinux.org
 

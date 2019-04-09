@@ -1,7 +1,7 @@
-From 17beb46e25e92bf64d7de03bb6cc735064ec68e7 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Thomas Gleixner <tglx@linutronix.de>
 Date: Thu, 23 Nov 2017 16:39:14 +0100
-Subject: [PATCH 0047/2278] softirq: Remove tasklet_hrtimer
+Subject: [PATCH] softirq: Remove tasklet_hrtimer
 
 There are no more tasklet_hrtimer users of this interface.
 Remove it.
@@ -10,8 +10,8 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
 Signed-off-by: Anna-Maria Gleixner <anna-maria@linutronix.de>
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- include/linux/interrupt.h | 25 -----------------------
- kernel/softirq.c          | 51 -----------------------------------------------
+ include/linux/interrupt.h | 25 -------------------
+ kernel/softirq.c          | 51 ---------------------------------------
  2 files changed, 76 deletions(-)
 
 diff --git a/include/linux/interrupt.h b/include/linux/interrupt.h
@@ -113,5 +113,5 @@ index a4c87cf..1a5dfc8 100644
  {
  	int cpu;
 -- 
-2.7.4
+https://clearlinux.org
 

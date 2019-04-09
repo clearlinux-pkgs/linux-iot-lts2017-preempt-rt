@@ -1,8 +1,8 @@
-From 002fe8b86bd0d505ff154a3fc005ec284f66ae13 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Mike Galbraith <efault@gmx.de>
 Date: Sun, 19 Aug 2018 08:28:35 +0200
-Subject: [PATCH 0433/2278] sched: Allow pinned user tasks to be awakened to
- the CPU they pinned
+Subject: [PATCH] sched: Allow pinned user tasks to be awakened to the CPU they
+ pinned
 
 [ Upstream commit cd4d35ef89948221f7cd1751cee453943967364c ]
 
@@ -36,5 +36,5 @@ index e1fc948..6ce950f 100644
  
  	return cpu_active(cpu);
 -- 
-2.7.4
+https://clearlinux.org
 

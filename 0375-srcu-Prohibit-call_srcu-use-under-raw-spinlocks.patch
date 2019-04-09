@@ -1,7 +1,7 @@
-From 0feace5f54ae5f4af7a39f3a67d97ebbee7a8c6d Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Paul E. McKenney" <paulmck@linux.vnet.ibm.com>
 Date: Tue, 10 Oct 2017 13:52:30 -0700
-Subject: [PATCH 0375/2278] srcu: Prohibit call_srcu() use under raw spinlocks
+Subject: [PATCH] srcu: Prohibit call_srcu() use under raw spinlocks
 
 Upstream commit 08265b8f1a139c1cff052b35ab7cf929528f88bb
 
@@ -14,8 +14,8 @@ is not ever called while holding a raw spinlock.
 Reported-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 Signed-off-by: Paul E. McKenney <paulmck@linux.vnet.ibm.com>
 ---
- include/linux/srcutree.h |   8 ++--
- kernel/rcu/srcutree.c    | 109 +++++++++++++++++++++++++++++------------------
+ include/linux/srcutree.h |   8 +--
+ kernel/rcu/srcutree.c    | 109 ++++++++++++++++++++++++---------------
  2 files changed, 72 insertions(+), 45 deletions(-)
 
 diff --git a/include/linux/srcutree.h b/include/linux/srcutree.h
@@ -406,5 +406,5 @@ index b72d8c5..c9d1f0e 100644
  	if (pushgp)
  		queue_delayed_work(system_power_efficient_wq, &sp->work, delay);
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,28 +1,28 @@
-From ab44470903b53bdbf1db0c1f20ec60c2c07fc8bb Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Yu, Ong Hock" <ong.hock.yu@intel.com>
 Date: Fri, 1 Jun 2018 09:15:09 -0700
-Subject: [PATCH 2016/2278] media: intel-ipu4: [VIRT] Creating ipu mediation
- baseline v0.1
+Subject: [PATCH] media: intel-ipu4: [VIRT] Creating ipu mediation baseline
+ v0.1
 
 Change-Id: I76e7ee54d9dc521374a605d488c48eb5f9221118
 Signed-off-by: Yu, Ong Hock <ong.hock.yu@intel.com>
 Signed-off-by: Bandi, Kushal <kushal.bandi@intel.com>
 ---
- drivers/media/pci/intel/virtio/Makefile.virt       |   6 +-
- .../pci/intel/virtio/intel-ipu4-para-virt-drv.c    | 495 +++++++++++++++++----
- ...rtio-bridge.c => intel-ipu4-virtio-be-bridge.c} | 230 +++++-----
- ...rtio-bridge.h => intel-ipu4-virtio-be-bridge.h} |   0
- .../intel/virtio/intel-ipu4-virtio-be-pipeline.c   | 212 +++++++++
- .../intel/virtio/intel-ipu4-virtio-be-pipeline.h   |  27 ++
- .../pci/intel/virtio/intel-ipu4-virtio-be-stream.c | 233 ++++++++++
- .../pci/intel/virtio/intel-ipu4-virtio-be-stream.h |  24 +
- .../media/pci/intel/virtio/intel-ipu4-virtio-be.c  |   2 +-
- .../pci/intel/virtio/intel-ipu4-virtio-common.h    |   4 +
- .../intel/virtio/intel-ipu4-virtio-fe-payload.c    |  52 +++
- .../intel/virtio/intel-ipu4-virtio-fe-payload.h    |  14 +
- .../intel/virtio/intel-ipu4-virtio-fe-pipeline.c   |  46 ++
- .../intel/virtio/intel-ipu4-virtio-fe-pipeline.h   |  19 +
- .../media/pci/intel/virtio/intel-ipu4-virtio-fe.c  |  24 +-
+ drivers/media/pci/intel/virtio/Makefile.virt  |   6 +-
+ .../intel/virtio/intel-ipu4-para-virt-drv.c   | 495 +++++++++++++++---
+ ...bridge.c => intel-ipu4-virtio-be-bridge.c} | 230 ++++----
+ ...bridge.h => intel-ipu4-virtio-be-bridge.h} |   0
+ .../virtio/intel-ipu4-virtio-be-pipeline.c    | 212 ++++++++
+ .../virtio/intel-ipu4-virtio-be-pipeline.h    |  27 +
+ .../virtio/intel-ipu4-virtio-be-stream.c      | 233 +++++++++
+ .../virtio/intel-ipu4-virtio-be-stream.h      |  24 +
+ .../pci/intel/virtio/intel-ipu4-virtio-be.c   |   2 +-
+ .../intel/virtio/intel-ipu4-virtio-common.h   |   4 +
+ .../virtio/intel-ipu4-virtio-fe-payload.c     |  52 ++
+ .../virtio/intel-ipu4-virtio-fe-payload.h     |  14 +
+ .../virtio/intel-ipu4-virtio-fe-pipeline.c    |  46 ++
+ .../virtio/intel-ipu4-virtio-fe-pipeline.h    |  19 +
+ .../pci/intel/virtio/intel-ipu4-virtio-fe.c   |  24 +-
  15 files changed, 1162 insertions(+), 226 deletions(-)
  rename drivers/media/pci/intel/virtio/{intel-ipu4-virtio-bridge.c => intel-ipu4-virtio-be-bridge.c} (54%)
  rename drivers/media/pci/intel/virtio/{intel-ipu4-virtio-bridge.h => intel-ipu4-virtio-be-bridge.h} (100%)
@@ -1754,5 +1754,5 @@ index e4bb5e9..57cbb47 100644
  	return ret;
  }
 -- 
-2.7.4
+https://clearlinux.org
 

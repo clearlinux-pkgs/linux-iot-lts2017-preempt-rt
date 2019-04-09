@@ -1,8 +1,7 @@
-From 2004c7b63b490705ad7de86ad70de9eb5164be28 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tom Zanussi <tom.zanussi@linux.intel.com>
 Date: Mon, 15 Jan 2018 20:51:42 -0600
-Subject: [PATCH 0085/2278] tracing: Give event triggers access to
- ring_buffer_event
+Subject: [PATCH] tracing: Give event triggers access to ring_buffer_event
 
 The ring_buffer event can provide a timestamp that may be useful to
 various triggers - pass it into the handlers for that purpose.
@@ -14,10 +13,10 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
 (cherry picked from commit 373514437a6f75b5cfe890742b590f2c12f6c335)
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- include/linux/trace_events.h        | 14 ++++++-----
- kernel/trace/trace.h                |  9 +++----
- kernel/trace/trace_events_hist.c    | 11 +++++----
- kernel/trace/trace_events_trigger.c | 47 +++++++++++++++++++++++--------------
+ include/linux/trace_events.h        | 14 +++++----
+ kernel/trace/trace.h                |  9 +++---
+ kernel/trace/trace_events_hist.c    | 11 ++++---
+ kernel/trace/trace_events_trigger.c | 47 ++++++++++++++++++-----------
  4 files changed, 49 insertions(+), 32 deletions(-)
 
 diff --git a/include/linux/trace_events.h b/include/linux/trace_events.h
@@ -312,5 +311,5 @@ index e2da180..fd26c06 100644
  
  int event_enable_trigger_print(struct seq_file *m,
 -- 
-2.7.4
+https://clearlinux.org
 

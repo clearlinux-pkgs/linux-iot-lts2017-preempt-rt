@@ -1,7 +1,7 @@
-From bde5feec4185cd67a3a7cceaf5db1f35a505c2d9 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Jeeja KP <jeeja.kp@intel.com>
 Date: Wed, 16 Sep 2015 01:56:54 +0530
-Subject: [PATCH 0614/2278] ASoC: core: Adds support for DSP loopback dai link
+Subject: [PATCH] ASoC: core: Adds support for DSP loopback dai link
 
 Only codec-codec dai link is supported. This patch adds support
 for dsp loopback dai link
@@ -66,5 +66,5 @@ index 31f1ff3..5069951 100644
  		ret = snd_soc_dapm_new_pcm(card, dai_link->params,
  					   dai_link->num_params,
 -- 
-2.7.4
+https://clearlinux.org
 

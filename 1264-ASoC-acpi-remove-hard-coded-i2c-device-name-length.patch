@@ -1,8 +1,7 @@
-From 6d54047ac3cb99c4d4b182401e32d69b558e5dc5 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Thu, 11 Jan 2018 13:52:09 -0600
-Subject: [PATCH 1264/2278] ASoC: acpi: remove hard-coded i2c-device name
- length
+Subject: [PATCH] ASoC: acpi: remove hard-coded i2c-device name length
 
 Remove hard-codec [16] array size, replace with clearer description and
 dependency on ACPI_ID_LEN
@@ -39,7 +38,7 @@ index d1aaf87..83320af 100644
  /* translation fron HID to I2C name, needed for DAI codec_name */
  const char *snd_soc_acpi_find_name_from_hid(const u8 hid[ACPI_ID_LEN]);
 diff --git a/sound/soc/intel/boards/bytcht_da7213.c b/sound/soc/intel/boards/bytcht_da7213.c
-index c4d82ad..6219c04d 100644
+index c4d82ad..6219c04 100644
 --- a/sound/soc/intel/boards/bytcht_da7213.c
 +++ b/sound/soc/intel/boards/bytcht_da7213.c
 @@ -219,7 +219,7 @@ static struct snd_soc_card bytcht_da7213_card = {
@@ -126,5 +125,5 @@ index f8f21ee..1f3d38d 100644
  };
  
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,7 @@
-From 593128040d570adca05a4fc530607051100def12 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Wang Zaikuo <zaikuo.wang@intel.com>
 Date: Mon, 7 May 2018 12:38:21 +0800
-Subject: [PATCH 1883/2278] media: intel-ipu4: isys: tpg support
- store_csi2_header
+Subject: [PATCH] media: intel-ipu4: isys: tpg support store_csi2_header
 
 Message for Open Source:
 Currently, mipi_store_mode value in stream_cfg is 1 for TPG pipe
@@ -26,9 +25,9 @@ Change-Id: Iad8bf46184e244997911806993936bfa8e0a5adb
 Signed-off-by: Wang Zaikuo <zaikuo.wang@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- drivers/media/pci/intel/ipu-isys-tpg.c   | 32 +++++++++++++++++++++++++++++++-
+ drivers/media/pci/intel/ipu-isys-tpg.c   | 32 +++++++++++++++++++++++-
  drivers/media/pci/intel/ipu-isys-tpg.h   |  1 +
- drivers/media/pci/intel/ipu-isys-video.c |  4 ++++
+ drivers/media/pci/intel/ipu-isys-video.c |  4 +++
  drivers/media/pci/intel/ipu-isys-video.h |  2 --
  4 files changed, 36 insertions(+), 3 deletions(-)
 
@@ -138,5 +137,5 @@ index 9b7da62..c7a264b 100644
  	 * Number of capture queues, write access serialised using struct
  	 * ipu_isys.stream_mutex
 -- 
-2.7.4
+https://clearlinux.org
 

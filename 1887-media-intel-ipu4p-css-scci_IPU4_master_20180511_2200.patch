@@ -1,8 +1,8 @@
-From bc8b3075e7adc6467f31c77359b8a97f60fb705a Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: icg_intg <icg_intg@intel.com>
 Date: Mon, 14 May 2018 10:11:41 +0800
-Subject: [PATCH 1887/2278] media: intel-ipu4p: css:
- scci_IPU4_master_20180511_2200 fw release
+Subject: [PATCH] media: intel-ipu4p: css: scci_IPU4_master_20180511_2200 fw
+ release
 
 Message for Open Source:
 New firmware css release.
@@ -25,14 +25,14 @@ Depends-on: I3d7e2314f569f687c672bf74deaebbb5fd880a14
 Signed-off-by: icg_intg <icg_intg@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- drivers/media/pci/intel/ipu4/ipu4p-css/ia_css_fw_pkg_release.h      | 2 +-
- .../intel/ipu4/ipu4p-css/lib2600/cpd_binary/ia_css_fw_pkg_release.h | 2 +-
- .../lib2600/isysapi/interface/ia_css_isys_fw_bridged_types.h        | 2 ++
- .../ipu4/ipu4p-css/lib2600/isysapi/interface/ia_css_isysapi_types.h | 2 ++
- .../intel/ipu4/ipu4p-css/lib2600/isysapi/src/ia_css_isys_private.c  | 4 ++++
- .../lib2600psys/lib/CNL_program_group/ia_css_fw_pkg_release.h       | 2 +-
- .../lib2600psys/lib/ICL_program_group/ia_css_fw_pkg_release.h       | 2 +-
- .../psysapi/dynamic/interface/ia_css_psys_process_group_cmd_impl.h  | 6 ++++--
+ .../media/pci/intel/ipu4/ipu4p-css/ia_css_fw_pkg_release.h  | 2 +-
+ .../ipu4p-css/lib2600/cpd_binary/ia_css_fw_pkg_release.h    | 2 +-
+ .../isysapi/interface/ia_css_isys_fw_bridged_types.h        | 2 ++
+ .../lib2600/isysapi/interface/ia_css_isysapi_types.h        | 2 ++
+ .../ipu4p-css/lib2600/isysapi/src/ia_css_isys_private.c     | 4 ++++
+ .../lib/CNL_program_group/ia_css_fw_pkg_release.h           | 2 +-
+ .../lib/ICL_program_group/ia_css_fw_pkg_release.h           | 2 +-
+ .../dynamic/interface/ia_css_psys_process_group_cmd_impl.h  | 6 ++++--
  8 files changed, 16 insertions(+), 6 deletions(-)
 
 diff --git a/drivers/media/pci/intel/ipu4/ipu4p-css/ia_css_fw_pkg_release.h b/drivers/media/pci/intel/ipu4/ipu4p-css/ia_css_fw_pkg_release.h
@@ -141,5 +141,5 @@ index f4b191e..530f93e 100644
  	uint8_t padding[N_PADDING_UINT8_IN_PROCESS_GROUP_STRUCT];
  };
 -- 
-2.7.4
+https://clearlinux.org
 

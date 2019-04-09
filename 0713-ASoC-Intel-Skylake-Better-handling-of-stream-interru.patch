@@ -1,8 +1,7 @@
-From 64dc03f3b7dbff507bd10181478f33d18574720e Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Jayachandran B <jayachandran.b@intel.com>
 Date: Thu, 11 Feb 2016 20:02:14 +0530
-Subject: [PATCH 0713/2278] ASoC: Intel: Skylake: Better handling of stream
- interrupts
+Subject: [PATCH] ASoC: Intel: Skylake: Better handling of stream interrupts
 
 There are storm of interrupts while audio is running.
 It seems like we have level triggered irq for audio.
@@ -94,5 +93,5 @@ index 5aa6625..7ee85af 100644
  }
  
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,7 +1,7 @@
-From 77f7dc52c3492567bc19b1835b578a8c9f24bcf7 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Hui Xia <hui.xia@intel.com>
 Date: Wed, 22 Aug 2018 13:22:11 -0400
-Subject: [PATCH 2048/2278] media: omap3isp: fix cross build issue
+Subject: [PATCH] media: omap3isp: fix cross build issue
 
 The build issue is found in arm-allmodconfig build and
 casued by media_graph_walk_start definition change.
@@ -26,5 +26,5 @@ index 218e6d7..c70efce 100644
  	while ((entity = media_graph_walk_next(&graph))) {
  		struct isp_video *__video;
 -- 
-2.7.4
+https://clearlinux.org
 

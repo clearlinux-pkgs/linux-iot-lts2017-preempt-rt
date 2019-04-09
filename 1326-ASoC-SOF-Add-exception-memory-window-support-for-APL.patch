@@ -1,8 +1,8 @@
-From 75cb47f7d0514ed3140765b8016f81ddb7003577 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pan Xiuli <xiuli.pan@linux.intel.com>
 Date: Wed, 21 Mar 2018 16:38:59 +0800
-Subject: [PATCH 1326/2278] ASoC: SOF: Add exception memory window support for
- APL and CNL
+Subject: [PATCH] ASoC: SOF: Add exception memory window support for APL and
+ CNL
 
 Use memory window to handle DSP panic.
 
@@ -79,5 +79,5 @@ index a6fd071..0e6c153 100644
  		/* clear busy interrupt to tell dsp controller this */
  		/* interrupt has been accepted, not trigger it again */
 -- 
-2.7.4
+https://clearlinux.org
 

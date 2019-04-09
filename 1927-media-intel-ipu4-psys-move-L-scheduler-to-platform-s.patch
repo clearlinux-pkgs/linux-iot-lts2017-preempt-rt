@@ -1,8 +1,8 @@
-From 9431e7ee001bd902481158b0433b08c64d79b6c4 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Wang Zaikuo <zaikuo.wang@intel.com>
 Date: Fri, 18 May 2018 16:13:51 +0800
-Subject: [PATCH 1927/2278] media: intel-ipu4: psys: move L-scheduler to
- platform specific
+Subject: [PATCH] media: intel-ipu4: psys: move L-scheduler to platform
+ specific
 
 Message for Open Source:
 L-scheduler and watchdog mechanism and implement are different
@@ -24,9 +24,9 @@ Change-Id: I110e5d9d4f3d8a1135cfcdd5ce5df9ed72ec3559
 Signed-off-by: Wang Zaikuo <zaikuo.wang@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- drivers/media/pci/intel/ipu-psys.c       | 202 -------------------------------
+ drivers/media/pci/intel/ipu-psys.c       | 202 -----------------------
  drivers/media/pci/intel/ipu-psys.h       |   3 +-
- drivers/media/pci/intel/ipu4/ipu4-psys.c | 202 +++++++++++++++++++++++++++++++
+ drivers/media/pci/intel/ipu4/ipu4-psys.c | 202 +++++++++++++++++++++++
  3 files changed, 204 insertions(+), 203 deletions(-)
 
 diff --git a/drivers/media/pci/intel/ipu-psys.c b/drivers/media/pci/intel/ipu-psys.c
@@ -288,10 +288,11 @@ index 1f6227c..a527561 100644
  
  struct ipu_trace_block psys_trace_blocks[] = {
  	{
-@@ -435,6 +439,97 @@ void ipu_psys_kcmd_complete(struct ipu_psys *psys,
+@@ -434,6 +438,97 @@ void ipu_psys_kcmd_complete(struct ipu_psys *psys,
+ 	wake_up_interruptible(&fh->wait);
  }
  
- /*
++/*
 + * Schedule next kcmd by finding a runnable kcmd from the highest
 + * priority queue in a round-robin fashion versus the client
 + * queues and running it.
@@ -382,10 +383,9 @@ index 1f6227c..a527561 100644
 +	}
 +}
 +
-+/*
+ /*
   * Move kcmd into completed state. If kcmd is currently running,
   * abort it.
-  */
 @@ -544,6 +639,113 @@ static int ipu_psys_kcmd_start(struct ipu_psys *psys,
  	return ret;
  }
@@ -501,5 +501,5 @@ index 1f6227c..a527561 100644
  static void ipu_psys_watchdog(unsigned long data)
  {
 -- 
-2.7.4
+https://clearlinux.org
 

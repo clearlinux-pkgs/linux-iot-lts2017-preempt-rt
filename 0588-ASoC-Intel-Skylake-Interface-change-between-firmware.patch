@@ -1,8 +1,8 @@
-From 505912024b495fbe9d6656ead0dfb2a3f7126ecd Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Hardik T Shah <hardik.t.shah@intel.com>
 Date: Thu, 10 Mar 2016 11:32:51 +0530
-Subject: [PATCH 0588/2278] ASoC: Intel: Skylake: Interface change between
- firmware and driver.
+Subject: [PATCH] ASoC: Intel: Skylake: Interface change between firmware and
+ driver.
 
 Copier interface changed between the firmware and driver.
 This patch takes care of the firmware interface change.
@@ -29,5 +29,5 @@ index 9102c17..e4173f7 100644
  };
  
 -- 
-2.7.4
+https://clearlinux.org
 

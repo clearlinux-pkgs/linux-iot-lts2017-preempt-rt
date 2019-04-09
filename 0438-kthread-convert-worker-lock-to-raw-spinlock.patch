@@ -1,7 +1,7 @@
-From 13ed2c0f734f03fdafb2fe659e2c37324215b532 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Julia Cartwright <julia@ni.com>
 Date: Fri, 28 Sep 2018 21:03:51 +0000
-Subject: [PATCH 0438/2278] kthread: convert worker lock to raw spinlock
+Subject: [PATCH] kthread: convert worker lock to raw spinlock
 
 [ Upstream commit 5c8919eed1cfcad5da452047bd4ab088837afc41 ]
 
@@ -21,7 +21,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
 ---
  include/linux/kthread.h |  2 +-
- kernel/kthread.c        | 42 +++++++++++++++++++++---------------------
+ kernel/kthread.c        | 42 ++++++++++++++++++++---------------------
  2 files changed, 22 insertions(+), 22 deletions(-)
 
 diff --git a/include/linux/kthread.h b/include/linux/kthread.h
@@ -201,5 +201,5 @@ index 4e6d85b..430fd79 100644
  	return ret;
  }
 -- 
-2.7.4
+https://clearlinux.org
 

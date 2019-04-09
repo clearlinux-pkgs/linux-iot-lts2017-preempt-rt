@@ -1,8 +1,8 @@
-From b1f637666d7c32e3714bcbb957cb3856d17c710a Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: wu xia <xia.wu@intel.com>
 Date: Tue, 13 May 2014 15:20:55 +0300
-Subject: [PATCH 1382/2278] v4l: Add information for 2D DMA to the frame
- descriptor entries
+Subject: [PATCH] v4l: Add information for 2D DMA to the frame descriptor
+ entries
 
 2D dma information is needed in frame descriptor
 
@@ -123,5 +123,5 @@ index 7705e94..f55606b 100755
  		struct v4l2_mbus_frame_desc_entry_csi2 csi2;
  	} bus;
 -- 
-2.7.4
+https://clearlinux.org
 

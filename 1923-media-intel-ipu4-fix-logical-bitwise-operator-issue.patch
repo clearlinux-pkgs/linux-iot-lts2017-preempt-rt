@@ -1,8 +1,7 @@
-From 9176926b06e91b27a9123e0d531166a0f268d7be Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ding Yunliang <yunliang.ding@intel.com>
 Date: Fri, 25 May 2018 11:25:16 +0800
-Subject: [PATCH 1923/2278] media: intel-ipu4: fix logical bitwise operator
- issue
+Subject: [PATCH] media: intel-ipu4: fix logical bitwise operator issue
 
 Message for Open Source:
 This issue was reported by clang-6.0 compile:
@@ -36,5 +35,5 @@ index fd3c5a8..b0f9739 100644
  			if (asd->route[i].source == sel->pad) {
  				sink_pad = asd->route[i].sink;
 -- 
-2.7.4
+https://clearlinux.org
 

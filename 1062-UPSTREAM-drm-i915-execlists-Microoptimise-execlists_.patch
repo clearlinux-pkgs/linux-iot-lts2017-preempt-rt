@@ -1,7 +1,7 @@
-From eb6882bd6aa06f746a8e6d87ea5236189a3da5c4 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Chris Wilson <chris@chris-wilson.co.uk>
 Date: Mon, 25 Sep 2017 13:49:27 +0100
-Subject: [PATCH 1062/2278] UPSTREAM: drm/i915/execlists: Microoptimise
+Subject: [PATCH] UPSTREAM: drm/i915/execlists: Microoptimise
  execlists_cancel_port_request()
 
 Just rearrange the code slightly to trim the number of iterations
@@ -54,5 +54,5 @@ index 731ff2a..b70ca04 100644
  	/*
  	 * The port is checked prior to scheduling a tasklet, but
 -- 
-2.7.4
+https://clearlinux.org
 

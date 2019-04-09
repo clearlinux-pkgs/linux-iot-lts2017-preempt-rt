@@ -1,7 +1,7 @@
-From daf3ac3605fcc21f3060b896784747bbfc8d73ee Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: kgopala2 <karthik.l.gopalakrishnan@intel.com>
 Date: Tue, 10 Jul 2018 16:36:24 +0800
-Subject: [PATCH 1868/2278] media: intel-ipu4: bring back platform ACPI support
+Subject: [PATCH] media: intel-ipu4: bring back platform ACPI support
 
 The ACPI support was intending to remove inside ICG and replaced
 by fwnode, but some old customer may still need this feature support,
@@ -12,9 +12,9 @@ loaded via ipu.conf under /etc/modprobe.d/ipu.conf
 
 Signed-off-by: kgopala2 <karthik.l.gopalakrishnan@intel.com>
 ---
- drivers/media/pci/intel/ipu-isys.c       |  135 +++-
+ drivers/media/pci/intel/ipu-isys.c       |  135 ++-
  drivers/media/platform/intel/Makefile    |    1 +
- drivers/media/platform/intel/ipu4-acpi.c | 1003 ++++++++++++++++++++++++++++++
+ drivers/media/platform/intel/ipu4-acpi.c | 1003 ++++++++++++++++++++++
  include/media/ipu-isys.h                 |    1 +
  include/media/ipu4-acpi.h                |   27 +
  5 files changed, 1159 insertions(+), 8 deletions(-)
@@ -1274,5 +1274,5 @@ index 0000000..b4c3611
 +
 +#endif
 -- 
-2.7.4
+https://clearlinux.org
 

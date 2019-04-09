@@ -1,7 +1,7 @@
-From a55cfcadf9b0689d7cefdcd1eb2a3be671f57cf8 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Thu, 5 Jul 2018 14:36:20 +0100
-Subject: [PATCH 1763/2278] ASoC: SOF: pcm: fix sparse warnings.
+Subject: [PATCH] ASoC: SOF: pcm: fix sparse warnings.
 
 Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 (cherry picked from commit c764884be50142fd585965070e930f7a7181f26e)
@@ -94,5 +94,5 @@ index 2ab73d1..92da307 100644
  	default:
  		dev_err(sdev->dev, "No available DAI format!\n");
 -- 
-2.7.4
+https://clearlinux.org
 

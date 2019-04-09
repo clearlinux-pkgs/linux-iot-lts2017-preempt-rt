@@ -1,7 +1,7 @@
-From acde4a7777ca0abdb4ba7f805568e571a994d875 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Fri, 23 Mar 2018 22:06:41 +0000
-Subject: [PATCH 1329/2278] ASoC: SOF: HSW dont send payload in doorbell part2
+Subject: [PATCH] ASoC: SOF: HSW dont send payload in doorbell part2
 
 Payload is in mailbox
 
@@ -29,5 +29,5 @@ index 1c241f8..a5b8f2d 100644
  	return 0;
  }
 -- 
-2.7.4
+https://clearlinux.org
 

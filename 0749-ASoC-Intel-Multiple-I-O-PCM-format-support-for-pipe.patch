@@ -1,8 +1,7 @@
-From ff28deee232dde6f37e829ef8aca66ea0576e1a3 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "S, Pavan K" <pavan.k.s@intel.com>
 Date: Fri, 30 Jun 2017 20:52:37 +0530
-Subject: [PATCH 0749/2278] ASoC: Intel: Multiple I/O PCM format support for
- pipe
+Subject: [PATCH] ASoC: Intel: Multiple I/O PCM format support for pipe
 
 If a pipe supports multiple input/output formats, kcontrol is
 created and selection of pipe input and output configuration
@@ -21,7 +20,7 @@ Reviewed-by: Singh, Guneshwor O <guneshwor.o.singh@intel.com>
 Reviewed-by: Diwakar, Praveen <praveen.diwakar@intel.com>
 Tested-by: Sm, Bhadur A <bhadur.a.sm@intel.com>
 ---
- sound/soc/intel/skylake/skl-topology.c       | 105 +++++++++++++++++++++++++++
+ sound/soc/intel/skylake/skl-topology.c       | 105 +++++++++++++++++++
  sound/soc/intel/skylake/skl-topology.h       |   1 +
  sound/soc/intel/skylake/skl-tplg-interface.h |   1 +
  3 files changed, 107 insertions(+)
@@ -201,5 +200,5 @@ index 5cbcd02..8cd85e1 100644
  #define HDA_SST_CFG_MAX	900 /* size of copier cfg*/
  #define MAX_IN_QUEUE 8
 -- 
-2.7.4
+https://clearlinux.org
 

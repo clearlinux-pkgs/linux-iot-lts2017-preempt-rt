@@ -1,7 +1,7 @@
-From 268b47e72d8d6606ca1191768bb607c1b45aa819 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Arve=20Hj=C3=B8nnev=C3=A5g?= <arve@android.com>
 Date: Mon, 18 Nov 2013 20:46:48 -0800
-Subject: [PATCH 0458/2278] trusty: Add trusty driver
+Subject: [PATCH] trusty: Add trusty driver
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -29,15 +29,15 @@ then fail with SM_ERR_INTERLEAVED_SMC.
 Change-Id: Idc0bbe78b557bc5d95dbec448e4085e3ab9111b4
 Signed-off-by: Arve Hjønnevåg <arve@android.com>
 ---
- .../devicetree/bindings/trusty/trusty-smc.txt      |   6 +
- drivers/Kconfig                                    |   2 +
- drivers/Makefile                                   |   1 +
- drivers/trusty/Kconfig                             |  11 +
- drivers/trusty/Makefile                            |   5 +
- drivers/trusty/trusty.c                            | 258 +++++++++++++++++++++
- include/linux/trusty/sm_err.h                      |  39 ++++
- include/linux/trusty/smcall.h                      |  75 ++++++
- include/linux/trusty/trusty.h                      |  46 ++++
+ .../devicetree/bindings/trusty/trusty-smc.txt |   6 +
+ drivers/Kconfig                               |   2 +
+ drivers/Makefile                              |   1 +
+ drivers/trusty/Kconfig                        |  11 +
+ drivers/trusty/Makefile                       |   5 +
+ drivers/trusty/trusty.c                       | 258 ++++++++++++++++++
+ include/linux/trusty/sm_err.h                 |  39 +++
+ include/linux/trusty/smcall.h                 |  75 +++++
+ include/linux/trusty/trusty.h                 |  46 ++++
  9 files changed, 443 insertions(+)
  create mode 100644 Documentation/devicetree/bindings/trusty/trusty-smc.txt
  create mode 100644 drivers/trusty/Kconfig
@@ -60,7 +60,7 @@ index 0000000..1b39ad3
 +Required properties:
 +- compatible: "android,trusty-smc-v1"
 diff --git a/drivers/Kconfig b/drivers/Kconfig
-index 1d7af3c2..842a1aa 100644
+index 1d7af3c..842a1aa 100644
 --- a/drivers/Kconfig
 +++ b/drivers/Kconfig
 @@ -77,6 +77,8 @@ source "drivers/hwmon/Kconfig"
@@ -555,5 +555,5 @@ index 0000000..30d4300
 +
 +#endif
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,7 @@
-From 9774b7d9c8c79f18d298381a214cc3f409380659 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Guneshwor Singh <guneshwor.o.singh@intel.com>
 Date: Thu, 9 Jun 2016 17:35:39 +0530
-Subject: [PATCH 0641/2278] ASoC: Intel: SKL: Remove SDW aggregation hardcode
- data
+Subject: [PATCH] ASoC: Intel: SKL: Remove SDW aggregation hardcode data
 
 Change-Id: I6601af59781950f4fcf2a13e93be6e3014957c69
 Signed-off-by: Guneshwor Singh <guneshwor.o.singh@intel.com>
@@ -45,5 +44,5 @@ index 07b6bb8..f1598ac 100644
  	if (!m_cfg->sdw_agg_enable)
  		m_cfg->sdw_stream_num = dma->port->pdi_stream->sdw_pdi_num;
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,7 @@
-From 2a6aba8f3e0632cb63695c63f87419ac32d55cac Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Michel Thierry <michel.thierry@intel.com>
 Date: Wed, 26 Apr 2017 12:05:33 -0700
-Subject: [PATCH 1540/2278] MUST_REBASE [VPG]: drm/i915: Allow late GuC/HuC
- loading
+Subject: [PATCH] MUST_REBASE [VPG]: drm/i915: Allow late GuC/HuC loading
 
 This patch allows for the GuC and HuC to be loaded until the first
 device is open (instead of during the driver initialisation).
@@ -26,12 +25,12 @@ on Android.
 Change-Id: I8bc36eca473dcaded3f52edafb65d315f949083c
 Signed-off-by: Michel Thierry <michel.thierry@intel.com>
 ---
- drivers/gpu/drm/i915/i915_drv.c         | 11 ++++++--
- drivers/gpu/drm/i915/i915_drv.h         |  3 +++
- drivers/gpu/drm/i915/i915_gem.c         | 38 ++++++++++++++++++++++++---
- drivers/gpu/drm/i915/i915_gem_context.c | 46 ++++++++++++++++++++++++++++-----
+ drivers/gpu/drm/i915/i915_drv.c         | 11 ++++--
+ drivers/gpu/drm/i915/i915_drv.h         |  3 ++
+ drivers/gpu/drm/i915/i915_gem.c         | 38 +++++++++++++++++---
+ drivers/gpu/drm/i915/i915_gem_context.c | 46 +++++++++++++++++++++----
  drivers/gpu/drm/i915/intel_guc_log.c    |  2 --
- drivers/gpu/drm/i915/intel_pm.c         |  7 +++++
+ drivers/gpu/drm/i915/intel_pm.c         |  7 ++++
  6 files changed, 92 insertions(+), 15 deletions(-)
 
 diff --git a/drivers/gpu/drm/i915/i915_drv.c b/drivers/gpu/drm/i915/i915_drv.c
@@ -242,5 +241,5 @@ index 5f55577..16b2060 100644
  		goto out;
  
 -- 
-2.7.4
+https://clearlinux.org
 

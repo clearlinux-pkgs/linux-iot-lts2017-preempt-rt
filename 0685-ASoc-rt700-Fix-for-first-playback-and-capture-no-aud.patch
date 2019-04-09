@@ -1,8 +1,8 @@
-From d56d609f88cb0f1f58d0c38385beed4410e0943f Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: bardliao <bardliao@realtek.com>
 Date: Tue, 10 Jan 2017 10:54:11 +0530
-Subject: [PATCH 0685/2278] ASoc: rt700: Fix for first playback and capture no
- audio issue
+Subject: [PATCH] ASoc: rt700: Fix for first playback and capture no audio
+ issue
 
 This patch fixes no audio issue observed with first playback and
 capture after booting the platform with power disconnect/connect.
@@ -15,7 +15,7 @@ Signed-off-by: Sanyog Kale <sanyog.r.kale@intel.com>
 Reviewed-by: Diwakar, Praveen <praveen.diwakar@intel.com>
 Tested-by: Avati, Santosh Kumar <santosh.kumar.avati@intel.com>
 ---
- sound/soc/codecs/rt700.c | 171 +++++++++++++++++++++++++++++------------------
+ sound/soc/codecs/rt700.c | 171 ++++++++++++++++++++++++---------------
  1 file changed, 107 insertions(+), 64 deletions(-)
 
 diff --git a/sound/soc/codecs/rt700.c b/sound/soc/codecs/rt700.c
@@ -293,5 +293,5 @@ index 8ea91c5..2d0dee9 100644
  	pm_runtime_put_sync_autosuspend(&rt700->sdw->mstr->dev);
  
 -- 
-2.7.4
+https://clearlinux.org
 

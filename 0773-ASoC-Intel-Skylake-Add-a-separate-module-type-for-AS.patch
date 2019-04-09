@@ -1,8 +1,8 @@
-From 891bd3ba954abe29d191f9c36c5bcdb538d1ea2e Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pardha Saradhi K <pardha.saradhi.kesapragada@intel.com>
 Date: Mon, 21 Aug 2017 22:03:10 +0530
-Subject: [PATCH 0773/2278] ASoC: Intel: Skylake: Add a separate module type
- for ASRC algo
+Subject: [PATCH] ASoC: Intel: Skylake: Add a separate module type for ASRC
+ algo
 
 ASRC algorithm has the same interfaces like the SRC algorithm.
 This patch distinguishes both of them with similar names
@@ -100,5 +100,5 @@ index 8cd85e1..3f51adf 100644
  
  enum skl_core_affinity {
 -- 
-2.7.4
+https://clearlinux.org
 

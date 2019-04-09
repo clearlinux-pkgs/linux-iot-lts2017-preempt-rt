@@ -1,7 +1,7 @@
-From fce611581e77345691fa5bccaf8f0091a3d59ad4 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Fei Jiang <fei.jiang@intel.com>
 Date: Fri, 29 Jun 2018 09:51:55 +0800
-Subject: [PATCH 1565/2278] drm/i915/gvt: check pvmmio level with enable_pvmmio
+Subject: [PATCH] drm/i915/gvt: check pvmmio level with enable_pvmmio
 
 Final pvmmio level is result of SOS's enable_pvmmio & UOS's enable_pvmmio.
 Also need check detailed level when handling pvmmio mmio write.
@@ -36,5 +36,5 @@ index 5c28e5c..7b54550 100644
  		execlist->elsp_dwords.data[1] = elsp_data[1];
  		execlist->elsp_dwords.data[2] = elsp_data[2];
 -- 
-2.7.4
+https://clearlinux.org
 

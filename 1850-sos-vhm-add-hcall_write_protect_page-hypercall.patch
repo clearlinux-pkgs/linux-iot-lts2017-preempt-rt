@@ -1,7 +1,7 @@
-From 79bf08b08741b40d56ffc1b6c93a57e1c7824f11 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Li, Fei1" <fei1.li@intel.com>
 Date: Tue, 24 Jul 2018 21:06:44 +0800
-Subject: [PATCH 1850/2278] sos: vhm: add hcall_write_protect_page hypercall
+Subject: [PATCH] sos: vhm: add hcall_write_protect_page hypercall
 
 1. add write_protect_page to set or unset one page write protect
 2. replace update_memmap_attr with write_protect_page to set or
@@ -10,11 +10,11 @@ unset one page write protect
 
 Signed-off-by: Li, Fei1 <fei1.li@intel.com>
 ---
- drivers/gpu/drm/i915/gvt/acrn-gvt.c | 45 +++++++++++++++++--------------------
- drivers/vhm/vhm_hypercall.c         |  5 +++++
- drivers/vhm/vhm_mm.c                | 25 ++++++++++++++++-----
- include/linux/vhm/acrn_hv_defs.h    | 14 ++++++++++++
- include/linux/vhm/acrn_vhm_mm.h     | 23 +++++--------------
+ drivers/gpu/drm/i915/gvt/acrn-gvt.c | 45 ++++++++++++++---------------
+ drivers/vhm/vhm_hypercall.c         |  5 ++++
+ drivers/vhm/vhm_mm.c                | 25 ++++++++++++----
+ include/linux/vhm/acrn_hv_defs.h    | 14 +++++++++
+ include/linux/vhm/acrn_vhm_mm.h     | 23 ++++-----------
  include/linux/vhm/vhm_hypercall.h   |  2 ++
  6 files changed, 67 insertions(+), 47 deletions(-)
 
@@ -123,7 +123,7 @@ index 2c51c36..8611bb1 100644
  {
  	return acrn_hypercall2(HC_SET_IOREQ_BUFFER, vmid, buffer);
 diff --git a/drivers/vhm/vhm_mm.c b/drivers/vhm/vhm_mm.c
-index f663558..c7ca8e99 100644
+index f663558..c7ca8e9 100644
 --- a/drivers/vhm/vhm_mm.c
 +++ b/drivers/vhm/vhm_mm.c
 @@ -159,12 +159,27 @@ int set_memmaps(struct set_memmaps *memmaps)
@@ -244,5 +244,5 @@ index fff8e73..99d1a3f 100644
  		unsigned long buffer);
  inline long hcall_notify_req_finish(unsigned long vmid, unsigned long vcpu);
 -- 
-2.7.4
+https://clearlinux.org
 

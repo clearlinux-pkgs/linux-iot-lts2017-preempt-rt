@@ -1,7 +1,7 @@
-From 5f83e8e5879be82bbd3c9beffdc4d11394360c29 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ding Yunliang <yunliang.ding@intel.com>
 Date: Tue, 29 May 2018 16:59:20 +0800
-Subject: [PATCH 1937/2278] media: intel-ipu4: add more abi check
+Subject: [PATCH] media: intel-ipu4: add more abi check
 
 Message for Open Source:
 Since there will be some firmware abi update which may
@@ -17,7 +17,7 @@ Change-Id: If8b752b11b7b14cba126dd2aa4683f4cd144fa64
 Signed-off-by: Ding Yunliang <yunliang.ding@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- drivers/media/pci/intel/libintel-checker.c | 50 ++++++++++++++++++++++++++----
+ drivers/media/pci/intel/libintel-checker.c | 50 +++++++++++++++++++---
  1 file changed, 44 insertions(+), 6 deletions(-)
 
 diff --git a/drivers/media/pci/intel/libintel-checker.c b/drivers/media/pci/intel/libintel-checker.c
@@ -98,5 +98,5 @@ index a831da7..7def833 100644
 -MODULE_LICENSE("GPL");
 -MODULE_DESCRIPTION("Intel ipu library sanity checker");
 -- 
-2.7.4
+https://clearlinux.org
 

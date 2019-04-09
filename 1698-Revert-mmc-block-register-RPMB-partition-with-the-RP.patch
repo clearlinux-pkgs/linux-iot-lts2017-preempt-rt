@@ -1,15 +1,15 @@
-From 5faab382373ad61bb29f4e50e9fef16b2feba69b Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tomas Winkler <tomas.winkler@intel.com>
 Date: Thu, 31 May 2018 23:19:50 +0300
-Subject: [PATCH 1698/2278] Revert "mmc: block: register RPMB partition with
- the RPMB subsystem"
+Subject: [PATCH] Revert "mmc: block: register RPMB partition with the RPMB
+ subsystem"
 
 This reverts commit 50e83220243905a8538eab6fcdcd2767c41715b1.
 
 Change-Id: I50b61ba8001066ad0572ebb164ac7c31017c147e
 ---
  drivers/mmc/core/Kconfig |   1 -
- drivers/mmc/core/block.c | 261 +----------------------------------------------
+ drivers/mmc/core/block.c | 261 +--------------------------------------
  2 files changed, 3 insertions(+), 259 deletions(-)
 
 diff --git a/drivers/mmc/core/Kconfig b/drivers/mmc/core/Kconfig
@@ -346,5 +346,5 @@ index 3962cf1..ce6dd49 100644
  }
  
 -- 
-2.7.4
+https://clearlinux.org
 

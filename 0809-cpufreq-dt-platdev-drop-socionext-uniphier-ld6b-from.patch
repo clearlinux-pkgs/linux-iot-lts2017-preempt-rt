@@ -1,8 +1,8 @@
-From 630251b3c6a49e10a17ccc5f17f495adf0d04514 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Masahiro Yamada <yamada.masahiro@socionext.com>
 Date: Wed, 30 Aug 2017 00:37:03 +0900
-Subject: [PATCH 0809/2278] cpufreq: dt-platdev: drop socionext,uniphier-ld6b
- from whitelist
+Subject: [PATCH] cpufreq: dt-platdev: drop socionext,uniphier-ld6b from
+ whitelist
 
 As you see arch/arm/boot/dts/uniphier-ld6b.dtsi, it includes
 uniphier-pxs2.dtsi, which uses "operating-points-v2" property
@@ -28,5 +28,5 @@ index 9e0aa76..2db1525 100644
  	{ .compatible = "st-ericsson,u8540", },
  	{ .compatible = "st-ericsson,u9500", },
 -- 
-2.7.4
+https://clearlinux.org
 

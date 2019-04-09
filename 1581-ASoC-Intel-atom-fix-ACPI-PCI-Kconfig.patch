@@ -1,7 +1,7 @@
-From 26f64089f5fa3a84cb2c2075b32137b37bba0ac9 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Mon, 2 Apr 2018 12:06:14 -0500
-Subject: [PATCH 1581/2278] ASoC: Intel: atom: fix ACPI/PCI Kconfig
+Subject: [PATCH] ASoC: Intel: atom: fix ACPI/PCI Kconfig
 
 The split between ACPI and PCI platforms generated issues with randconfig:
 
@@ -88,5 +88,5 @@ index 3e356f9..d42e2f1 100644
  	select IOSF_MBI
  	help
 -- 
-2.7.4
+https://clearlinux.org
 

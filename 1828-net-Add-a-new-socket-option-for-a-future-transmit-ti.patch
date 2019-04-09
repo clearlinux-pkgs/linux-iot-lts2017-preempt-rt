@@ -1,8 +1,7 @@
-From c5ab6d2e0ad65239eadecd1ac746ad4b256dcaf8 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Richard Cochran <rcochran@linutronix.de>
 Date: Tue, 3 Jul 2018 15:42:48 -0700
-Subject: [PATCH 1828/2278] net: Add a new socket option for a future transmit
- time.
+Subject: [PATCH] net: Add a new socket option for a future transmit time.
 
 This patch introduces SO_TXTIME. User space enables this option in
 order to pass a desired future transmit time in a CMSG when calling
@@ -29,10 +28,10 @@ Signed-off-by: David S. Miller <davem@davemloft.net>
  arch/s390/include/uapi/asm/socket.h   |  3 +++
  arch/sparc/include/uapi/asm/socket.h  |  3 +++
  arch/xtensa/include/uapi/asm/socket.h |  3 +++
- include/net/sock.h                    | 10 ++++++++++
+ include/net/sock.h                    | 10 ++++++++
  include/uapi/asm-generic/socket.h     |  3 +++
- include/uapi/linux/net_tstamp.h       | 15 +++++++++++++++
- net/core/sock.c                       | 35 +++++++++++++++++++++++++++++++++++
+ include/uapi/linux/net_tstamp.h       | 15 ++++++++++++
+ net/core/sock.c                       | 35 +++++++++++++++++++++++++++
  11 files changed, 84 insertions(+)
 
 diff --git a/arch/alpha/include/uapi/asm/socket.h b/arch/alpha/include/uapi/asm/socket.h
@@ -281,5 +280,5 @@ index e7978eb..d99cc78 100644
  	case SCM_RIGHTS:
  	case SCM_CREDENTIALS:
 -- 
-2.7.4
+https://clearlinux.org
 

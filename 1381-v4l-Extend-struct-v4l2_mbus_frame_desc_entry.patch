@@ -1,7 +1,7 @@
-From 9cfb34b2c9916519ff8ca621de1013a17a261741 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: wu xia <xia.wu@intel.com>
 Date: Wed, 18 Dec 2013 13:45:21 +0200
-Subject: [PATCH 1381/2278] v4l: Extend struct v4l2_mbus_frame_desc_entry
+Subject: [PATCH] v4l: Extend struct v4l2_mbus_frame_desc_entry
 
 Add bpp fields and bus-specific information (CSI-2).
 
@@ -61,5 +61,5 @@ index 0db8d9c..7705e94
  
  #define V4L2_FRAME_DESC_ENTRY_MAX	4
 -- 
-2.7.4
+https://clearlinux.org
 

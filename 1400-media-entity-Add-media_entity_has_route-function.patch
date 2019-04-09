@@ -1,8 +1,7 @@
-From 734aa265c7b7f0064d7e906fa9b10564559085a5 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: wu xia <xia.wu@intel.com>
 Date: Wed, 26 Mar 2014 04:01:46 +0100
-Subject: [PATCH 1400/2278] media: entity: Add media_entity_has_route()
- function
+Subject: [PATCH] media: entity: Add media_entity_has_route() function
 
 This is a wrapper around the media entity has_route operation.
 
@@ -57,7 +56,7 @@ index 2ace041..087f507 100644
  media_entity_other(struct media_entity *entity, struct media_link *link)
  {
 diff --git a/include/media/media-entity.h b/include/media/media-entity.h
-index 3ccaebe..f1bb7cd1 100644
+index 3ccaebe..f1bb7cd 100644
 --- a/include/media/media-entity.h
 +++ b/include/media/media-entity.h
 @@ -875,6 +875,9 @@ void media_graph_walk_cleanup(struct media_graph *graph);
@@ -71,5 +70,5 @@ index 3ccaebe..f1bb7cd1 100644
   * media_graph_walk_start - Start walking the media graph at a
   *	given entity
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,8 +1,7 @@
-From 4e79e63c47584cf4295040de8206dc5e135bf7ef Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Fei Yang <fei.yang@intel.com>
 Date: Fri, 16 Jun 2017 17:36:19 -0700
-Subject: [PATCH 0452/2278] AndroidIA: Allow RenderNode to be used for kms
- getters.
+Subject: [PATCH] AndroidIA: Allow RenderNode to be used for kms getters.
 
 Minigbm relies on this to query if a particular format
 can be scanned out or not.
@@ -57,5 +56,5 @@ index 53f3193..185ac74 100644
  	DRM_IOCTL_DEF(DRM_IOCTL_MODE_CURSOR2, drm_mode_cursor2_ioctl, DRM_MASTER|DRM_CONTROL_ALLOW|DRM_UNLOCKED),
  	DRM_IOCTL_DEF(DRM_IOCTL_MODE_ATOMIC, drm_mode_atomic_ioctl, DRM_MASTER|DRM_CONTROL_ALLOW|DRM_UNLOCKED),
 -- 
-2.7.4
+https://clearlinux.org
 

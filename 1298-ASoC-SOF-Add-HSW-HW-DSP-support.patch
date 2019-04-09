@@ -1,13 +1,13 @@
-From 86556e73d1205345d4c6031bb24a66958e52fb56 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Mon, 8 Jan 2018 20:37:51 +0000
-Subject: [PATCH 1298/2278] ASoC: SOF: Add HSW HW DSP support
+Subject: [PATCH] ASoC: SOF: Add HSW HW DSP support
 
 Add DSP hardware support for Intel Haswell based devices.
 
 Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 ---
- sound/soc/sof/hw-hsw.c | 744 +++++++++++++++++++++++++++++++++++++++++++++++++
+ sound/soc/sof/hw-hsw.c | 744 +++++++++++++++++++++++++++++++++++++++++
  1 file changed, 744 insertions(+)
  create mode 100644 sound/soc/sof/hw-hsw.c
 
@@ -762,5 +762,5 @@ index 0000000..7a40806
 +
 +MODULE_LICENSE("Dual BSD/GPL");
 -- 
-2.7.4
+https://clearlinux.org
 

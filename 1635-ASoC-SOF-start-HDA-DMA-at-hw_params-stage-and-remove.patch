@@ -1,8 +1,8 @@
-From 72e719fbca24b0df569f2ca0cf31276c02919779 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Keyon Jie <yang.jie@linux.intel.com>
 Date: Tue, 15 May 2018 23:27:28 +0800
-Subject: [PATCH 1635/2278] ASoC: SOF: start HDA DMA at hw_params() stage and
- remove stream_trigger()
+Subject: [PATCH] ASoC: SOF: start HDA DMA at hw_params() stage and remove
+ stream_trigger()
 
 It require HDA DMA to be available before trigger_start(), Here move
 host side DMA start to earlier stage(hw_params) and remove
@@ -135,5 +135,5 @@ index bde985f..7e86fae 100644
  	int (*load_firmware)(struct snd_sof_dev *sof_dev,
  			     const struct firmware *fw);
 -- 
-2.7.4
+https://clearlinux.org
 

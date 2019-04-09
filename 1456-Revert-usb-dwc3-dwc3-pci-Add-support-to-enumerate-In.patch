@@ -1,8 +1,8 @@
-From 1f75c322eaa212d2db7f0a3499d303546f920bc2 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Kuppuswamy Sathyanarayanan <sathyanarayanan.kuppuswamy@linux.intel.com>
 Date: Mon, 21 May 2018 14:50:26 -0700
-Subject: [PATCH 1456/2278] Revert "usb: dwc3: dwc3-pci: Add support to
- enumerate Intel Dual Role phy"
+Subject: [PATCH] Revert "usb: dwc3: dwc3-pci: Add support to enumerate Intel
+ Dual Role phy"
 
 This reverts commit dd3d6614913fc9bd392399c60bc44cdb074bd77e.
 
@@ -71,5 +71,5 @@ index a49bd1e..f15d239 100644
  	if (!host || !gadget || !gadget->dev.parent || !intel_phy->edev)
  		return -ENODEV;
 -- 
-2.7.4
+https://clearlinux.org
 

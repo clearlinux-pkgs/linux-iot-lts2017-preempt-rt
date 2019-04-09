@@ -1,8 +1,7 @@
-From 5c17f79a9968a4e283ef8a6ea6b0ad868ea418c2 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Wang Zaikuo <zaikuo.wang@intel.com>
 Date: Fri, 1 Jun 2018 15:56:50 +0800
-Subject: [PATCH 1944/2278] media: intel-ipu4: psys: move resource tables to
- abi file
+Subject: [PATCH] media: intel-ipu4: psys: move resource tables to abi file
 
 Message for Open Source:
 Those tables are only used by ABI, so move to ABI specific file
@@ -15,9 +14,9 @@ Change-Id: I78ea5415938f277196ebd0e4340c916f44ce4a5d
 Signed-off-by: Wang Zaikuo <zaikuo.wang@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- .../media/pci/intel/ipu4/ipu-platform-resources.h  |   5 -
- drivers/media/pci/intel/ipu4/ipu4-fw-resources.c   | 185 +++++++++++++++++++++
- drivers/media/pci/intel/ipu4/ipu4-resources.c      | 185 ---------------------
+ .../pci/intel/ipu4/ipu-platform-resources.h   |   5 -
+ .../media/pci/intel/ipu4/ipu4-fw-resources.c  | 185 ++++++++++++++++++
+ drivers/media/pci/intel/ipu4/ipu4-resources.c | 185 ------------------
  3 files changed, 185 insertions(+), 190 deletions(-)
 
 diff --git a/drivers/media/pci/intel/ipu4/ipu-platform-resources.h b/drivers/media/pci/intel/ipu4/ipu-platform-resources.h
@@ -429,5 +428,5 @@ index fba8c65..4f05fa0 100644
  {
  	if (elements <= 0) {
 -- 
-2.7.4
+https://clearlinux.org
 

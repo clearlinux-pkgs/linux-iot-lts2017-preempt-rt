@@ -1,8 +1,7 @@
-From 26d4b4108af702c2f9f433ace589e2e910223986 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pankaj Bharadiya <pankaj.laxminarayan.bharadiya@intel.com>
 Date: Fri, 23 Feb 2018 14:53:01 +0530
-Subject: [PATCH 1440/2278] ASoC: Intel: Skylake: Remove unused link_cpr_params
- variable
+Subject: [PATCH] ASoC: Intel: Skylake: Remove unused link_cpr_params variable
 
 In cnl_sdw_bra_pipe_cfg_pb(), link_cpr_params variable serves no useful
 purpose hence remove its code reference.
@@ -37,5 +36,5 @@ index 04926b5..9b5c2b8 100644
  	link_cpr_cfg->id.instance_id = 2;
  	link_cpr_cfg->id.pvt_id = skl_get_pvt_id(ctx,
 -- 
-2.7.4
+https://clearlinux.org
 

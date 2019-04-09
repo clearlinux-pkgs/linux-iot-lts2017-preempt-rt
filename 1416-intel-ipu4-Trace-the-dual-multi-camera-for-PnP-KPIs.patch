@@ -1,8 +1,7 @@
-From f202306e9d398432be7455fb73c90dc1210f5113 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Jiang Kun <kun.jiang@intel.com>
 Date: Mon, 16 Oct 2017 17:28:37 +0800
-Subject: [PATCH 1416/2278] intel-ipu4: Trace the dual/multi camera for PnP
- KPIs
+Subject: [PATCH] intel-ipu4: Trace the dual/multi camera for PnP KPIs
 
 add "reserved" in vb2_v4l2_buffer. So the PnP KPI
 can use it to trace the multi camera.
@@ -27,7 +26,7 @@ index 5e9f6e7..67f60eb 100644
  	if (q->is_multiplanar) {
  		/*
 diff --git a/include/media/videobuf2-v4l2.h b/include/media/videobuf2-v4l2.h
-index 06f38523..d1995eb 100644
+index 06f3852..d1995eb 100644
 --- a/include/media/videobuf2-v4l2.h
 +++ b/include/media/videobuf2-v4l2.h
 @@ -43,6 +43,7 @@ struct vb2_v4l2_buffer {
@@ -39,5 +38,5 @@ index 06f38523..d1995eb 100644
  
  /*
 -- 
-2.7.4
+https://clearlinux.org
 

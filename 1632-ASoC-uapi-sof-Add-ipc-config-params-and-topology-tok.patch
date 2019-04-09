@@ -1,8 +1,8 @@
-From 573bbf2925895bcf0005b3dc13a231a6c1430193 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ranjani Sridharan <ranjani.sridharan@linux.intel.com>
 Date: Sat, 26 May 2018 23:29:09 -0700
-Subject: [PATCH 1632/2278] ASoC: uapi: sof: Add ipc config params and topology
- tokens for DMIC DAI type
+Subject: [PATCH] ASoC: uapi: sof: Add ipc config params and topology tokens
+ for DMIC DAI type
 
 This patch adds the ipc config params and the topology tokens
 for SOF DMIC DAI type.
@@ -80,5 +80,5 @@ index 62c3f24..5941c4c 100644
 +
  #endif
 -- 
-2.7.4
+https://clearlinux.org
 

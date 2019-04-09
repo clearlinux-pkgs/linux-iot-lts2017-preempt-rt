@@ -1,8 +1,7 @@
-From 1c2f7d4143819e69adad6c8113e00448112e6983 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tom Zanussi <tom.zanussi@linux.intel.com>
 Date: Wed, 28 Mar 2018 15:10:56 -0500
-Subject: [PATCH 0121/2278] tracing: Make sure variable string fields are
- NULL-terminated
+Subject: [PATCH] tracing: Make sure variable string fields are NULL-terminated
 
 The strncpy() currently being used for variable string fields can
 result in a lack of termination if the string length is equal to the
@@ -38,5 +37,5 @@ index 514ec0b..37db861 100644
  		}
  		tracing_map_set_var(elt, var_idx, var_val);
 -- 
-2.7.4
+https://clearlinux.org
 

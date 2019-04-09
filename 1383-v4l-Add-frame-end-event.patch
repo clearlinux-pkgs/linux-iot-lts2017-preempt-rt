@@ -1,7 +1,7 @@
-From 10fcf87717b64f4fbd5958e083e45bbd6ee2b374 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: wu xia <xia.wu@intel.com>
 Date: Wed, 30 Oct 2013 22:30:03 +0200
-Subject: [PATCH 1383/2278] v4l: Add frame end event
+Subject: [PATCH] v4l: Add frame end event
 
 Add an event to signal frame end. This is not
 necessarily the same timestamp as the video
@@ -41,5 +41,5 @@ index 1c095b5..eb8e13e 100644
  	__u32 frame_sequence;
  };
 -- 
-2.7.4
+https://clearlinux.org
 

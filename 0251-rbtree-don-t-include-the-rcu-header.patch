@@ -1,7 +1,7 @@
-From fbf77d4976674c6da3b1a3d2f69025cf532f800d Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 Date: Thu, 3 May 2018 17:46:31 +0200
-Subject: [PATCH 0251/2278] rbtree: don't include the rcu header
+Subject: [PATCH] rbtree: don't include the rcu header
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -24,8 +24,8 @@ a new header file which can be included by both users.
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
  include/linux/rbtree.h             |  2 +-
- include/linux/rcu_assign_pointer.h | 54 ++++++++++++++++++++++++++++++++++++++
- include/linux/rcupdate.h           | 49 +---------------------------------
+ include/linux/rcu_assign_pointer.h | 54 ++++++++++++++++++++++++++++++
+ include/linux/rcupdate.h           | 49 +--------------------------
  3 files changed, 56 insertions(+), 49 deletions(-)
  create mode 100644 include/linux/rcu_assign_pointer.h
 
@@ -114,10 +114,11 @@ index dbadbdb..a2dc82b 100644
  
  #define ULONG_CMP_GE(a, b)	(ULONG_MAX / 2 >= (a) - (b))
  #define ULONG_CMP_LT(a, b)	(ULONG_MAX / 2 < (a) - (b))
-@@ -372,54 +373,6 @@ static inline void rcu_preempt_sleep_check(void) { }
+@@ -371,54 +372,6 @@ static inline void rcu_preempt_sleep_check(void) { }
+ 	((typeof(*p) __force __kernel *)(________p1)); \
  })
  
- /**
+-/**
 - * RCU_INITIALIZER() - statically initialize an RCU-protected global variable
 - * @v: The value to statically initialize with.
 - */
@@ -165,10 +166,9 @@ index dbadbdb..a2dc82b 100644
 -	_r_a_p__v;							      \
 -})
 -
--/**
+ /**
   * rcu_swap_protected() - swap an RCU and a regular pointer
   * @rcu_ptr: RCU pointer
-  * @ptr: regular pointer
 -- 
-2.7.4
+https://clearlinux.org
 

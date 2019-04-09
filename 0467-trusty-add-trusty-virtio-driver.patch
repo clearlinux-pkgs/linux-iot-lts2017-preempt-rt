@@ -1,7 +1,7 @@
-From 50cab1cd6ab698298b7b21210ba72daac4fd5319 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Michael Ryleev <gmar@google.com>
 Date: Mon, 30 Mar 2015 12:43:59 -0700
-Subject: [PATCH 0467/2278] trusty: add trusty virtio driver
+Subject: [PATCH] trusty: add trusty virtio driver
 
 Trusty virtio driver is responsible for management an
 interaction with virtio devices exposed by Trusty.
@@ -15,7 +15,7 @@ Signed-off-by: Michael Ryleev <gmar@google.com>
 ---
  drivers/trusty/Kconfig         |   6 +
  drivers/trusty/Makefile        |   1 +
- drivers/trusty/trusty-virtio.c | 697 +++++++++++++++++++++++++++++++++++++++++
+ drivers/trusty/trusty-virtio.c | 697 +++++++++++++++++++++++++++++++++
  include/linux/trusty/smcall.h  |   8 +
  4 files changed, 712 insertions(+)
  create mode 100644 drivers/trusty/trusty-virtio.c
@@ -765,5 +765,5 @@ index aaad5ce..a2be2e3 100644
 +
  #endif /* __LINUX_TRUSTY_SMCALL_H */
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,7 +1,7 @@
-From db47a860a9683bfaf79a8926f16f24c0abb8b398 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Thu, 19 Jul 2018 14:32:50 +0100
-Subject: [PATCH 1796/2278] ASoC: SOF: utils: remove snd_sof_dai_drv
+Subject: [PATCH] ASoC: SOF: utils: remove snd_sof_dai_drv
 
 No need for extra level of indirection.
 
@@ -24,5 +24,5 @@ index 215ea84..91c8417 100644
  		links[i].codec_dai_name = "snd-soc-dummy-dai";
  		links[i].codec_name = "snd-soc-dummy";
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,7 +1,7 @@
-From f852aa413e4e10f6466b7a9a1a1d2fe756e49ee9 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Bandi, Kushal" <kushal.bandi@intel.com>
 Date: Fri, 27 Jul 2018 16:55:43 -0700
-Subject: [PATCH 2022/2278] media: intel-ipu4: [VIRT] Implementation for 2 VQs
+Subject: [PATCH] media: intel-ipu4: [VIRT] Implementation for 2 VQs
 
 File ops are mapped to VIRT_Q_1
 Stream & Pipeline ops are mapped to VIRT_Q_2
@@ -12,11 +12,11 @@ Change-Id: I00c0c09c3640cf8f0f30bb084b4fa5eb8214227d
 Signed-off-by: Bandi, Kushal <kushal.bandi@intel.com>
 Signed-off-by: Ong Hock Yu <ong.hock.yu@intel.com>
 ---
- .../pci/intel/virtio/intel-ipu4-para-virt-drv.c    | 44 +++++++------
- .../media/pci/intel/virtio/intel-ipu4-virtio-be.c  | 14 ++---
- .../pci/intel/virtio/intel-ipu4-virtio-common.h    |  8 ++-
- .../intel/virtio/intel-ipu4-virtio-fe-pipeline.c   |  8 +--
- .../media/pci/intel/virtio/intel-ipu4-virtio-fe.c  | 73 ++++++++++++++--------
+ .../intel/virtio/intel-ipu4-para-virt-drv.c   | 44 ++++++-----
+ .../pci/intel/virtio/intel-ipu4-virtio-be.c   | 14 +---
+ .../intel/virtio/intel-ipu4-virtio-common.h   |  8 +-
+ .../virtio/intel-ipu4-virtio-fe-pipeline.c    |  8 +-
+ .../pci/intel/virtio/intel-ipu4-virtio-fe.c   | 73 ++++++++++++-------
  5 files changed, 86 insertions(+), 61 deletions(-)
 
 diff --git a/drivers/media/pci/intel/virtio/intel-ipu4-para-virt-drv.c b/drivers/media/pci/intel/virtio/intel-ipu4-para-virt-drv.c
@@ -436,5 +436,5 @@ index eb1caec..a800113 100644
  	while (timeout--) {
  		if (vi->vmid > 0)
 -- 
-2.7.4
+https://clearlinux.org
 

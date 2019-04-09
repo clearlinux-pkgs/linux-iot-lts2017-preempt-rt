@@ -1,8 +1,7 @@
-From 70973e0b6d352c2be126ad4a27e6b2333cd5b1b3 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tom Zanussi <tom.zanussi@linux.intel.com>
 Date: Mon, 15 Jan 2018 20:51:35 -0600
-Subject: [PATCH 0078/2278] tracing: Move hist trigger Documentation to
- histogram.txt
+Subject: [PATCH] tracing: Move hist trigger Documentation to histogram.txt
 
 The hist trigger Documentation takes up a large part of events.txt -
 since it will be getting even larger, move it to a separate file.
@@ -14,8 +13,8 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
 (cherry picked from commit 995f87b4d6ddb6bbb40309c08c3ca2a1f9f9db80)
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- Documentation/trace/events.txt    | 1548 +-----------------------------------
- Documentation/trace/histogram.txt | 1568 +++++++++++++++++++++++++++++++++++++
+ Documentation/trace/events.txt    | 1548 +---------------------------
+ Documentation/trace/histogram.txt | 1568 +++++++++++++++++++++++++++++
  2 files changed, 1569 insertions(+), 1547 deletions(-)
  create mode 100644 Documentation/trace/histogram.txt
 
@@ -3150,5 +3149,5 @@ index 0000000..b2145f4
 +        Entries: 7
 +        Dropped: 0
 -- 
-2.7.4
+https://clearlinux.org
 

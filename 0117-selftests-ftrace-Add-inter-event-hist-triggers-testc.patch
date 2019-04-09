@@ -1,8 +1,7 @@
-From 67d555ca7a95c8875f3f663f388e3aa15ffaba80 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Rajvi Jingar <rajvi.jingar@intel.com>
 Date: Mon, 15 Jan 2018 20:52:11 -0600
-Subject: [PATCH 0117/2278] selftests: ftrace: Add inter-event hist triggers
- testcases
+Subject: [PATCH] selftests: ftrace: Add inter-event hist triggers testcases
 
     This adds inter-event hist triggers testcases which covers following:
      - create/remove synthetic event
@@ -34,14 +33,14 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
 (cherry picked from commit fb08b656dc9caee4a097bc4d8e050e2ead59bc24)
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- tools/testing/selftests/ftrace/test.d/functions    |  7 +++
- .../inter-event/trigger-extended-error-support.tc  | 39 +++++++++++++++
- .../inter-event/trigger-field-variable-support.tc  | 54 ++++++++++++++++++++
- .../trigger-inter-event-combined-hist.tc           | 58 ++++++++++++++++++++++
- .../inter-event/trigger-onmatch-action-hist.tc     | 50 +++++++++++++++++++
- .../trigger-onmatch-onmax-action-hist.tc           | 50 +++++++++++++++++++
- .../inter-event/trigger-onmax-action-hist.tc       | 48 ++++++++++++++++++
- .../trigger-synthetic-event-createremove.tc        | 54 ++++++++++++++++++++
+ .../testing/selftests/ftrace/test.d/functions |  7 +++
+ .../trigger-extended-error-support.tc         | 39 +++++++++++++
+ .../trigger-field-variable-support.tc         | 54 +++++++++++++++++
+ .../trigger-inter-event-combined-hist.tc      | 58 +++++++++++++++++++
+ .../trigger-onmatch-action-hist.tc            | 50 ++++++++++++++++
+ .../trigger-onmatch-onmax-action-hist.tc      | 50 ++++++++++++++++
+ .../inter-event/trigger-onmax-action-hist.tc  | 48 +++++++++++++++
+ .../trigger-synthetic-event-createremove.tc   | 54 +++++++++++++++++
  8 files changed, 360 insertions(+)
  create mode 100644 tools/testing/selftests/ftrace/test.d/trigger/inter-event/trigger-extended-error-support.tc
  create mode 100644 tools/testing/selftests/ftrace/test.d/trigger/inter-event/trigger-field-variable-support.tc
@@ -465,5 +464,5 @@ index 0000000..cef1137
 +
 +exit 0
 -- 
-2.7.4
+https://clearlinux.org
 

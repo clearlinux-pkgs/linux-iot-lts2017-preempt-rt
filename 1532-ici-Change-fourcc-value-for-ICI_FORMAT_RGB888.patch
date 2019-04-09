@@ -1,7 +1,7 @@
-From b2e5d9c6e07bd1156b81f11d199932779550a508 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Gopal, Puunithaaraj" <puunithaaraj.gopal@intel.com>
 Date: Wed, 6 Jun 2018 15:28:39 +0800
-Subject: [PATCH 1532/2278] ici: Change fourcc value for ICI_FORMAT_RGB888
+Subject: [PATCH] ici: Change fourcc value for ICI_FORMAT_RGB888
 
 Change-Id: I52846bf896c547172adaaecf86e93f3c03f60bba
 Signed-off-by: Gopal, Puunithaaraj <puunithaaraj.gopal@intel.com>
@@ -23,5 +23,5 @@ index 76daf1f..83dd760 100644
  	ICI_FORMAT_UYVY			 = ici_fourcc_code('U', 'Y', 'V', 'Y'),
  	ICI_FORMAT_YUYV			 = ici_fourcc_code('Y', 'U', 'Y', 'V'),
 -- 
-2.7.4
+https://clearlinux.org
 

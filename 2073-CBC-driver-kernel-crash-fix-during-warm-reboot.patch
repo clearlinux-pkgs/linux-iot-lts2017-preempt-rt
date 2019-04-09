@@ -1,7 +1,7 @@
-From fe9f78811d41ec70d481cf4e4ea548a2a01beda3 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: pedapalapati <padmarao.edapalapati@intel.com>
 Date: Wed, 5 Sep 2018 16:10:31 +0530
-Subject: [PATCH 2073/2278] CBC driver kernel crash fix during warm reboot
+Subject: [PATCH] CBC driver kernel crash fix during warm reboot
 
 Change-Id: Ibe93c5e38904ff59057ba21ea14b7505a35f704f
 Signed-off-by: pedapalapati <padmarao.edapalapati@intel.com>
@@ -28,7 +28,7 @@ index 1933a85..23728c0 100644
  
  void cbc_file_init(struct cbc_file_data *file)
 diff --git a/drivers/tty/cbc/cbc_device.h b/drivers/tty/cbc/cbc_device.h
-index deb0cd92..09c8067 100644
+index deb0cd9..09c8067 100644
 --- a/drivers/tty/cbc/cbc_device.h
 +++ b/drivers/tty/cbc/cbc_device.h
 @@ -22,6 +22,7 @@
@@ -116,5 +116,5 @@ index 0e74183..4fc671e 100644
  		pr_err("cbc-core: (<- IOC) dev_receive data is null\n");
  	}
 -- 
-2.7.4
+https://clearlinux.org
 

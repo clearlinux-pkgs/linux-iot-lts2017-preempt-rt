@@ -1,15 +1,15 @@
-From 4445eca869ad3e8339039902496c6296cc47811e Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ranjani Sridharan <ranjani.sridharan@linux.intel.com>
 Date: Sat, 26 May 2018 23:29:10 -0700
-Subject: [PATCH 1633/2278] ASoC: SOF: Add support for parsing DMIC specific
- tokens from topology
+Subject: [PATCH] ASoC: SOF: Add support for parsing DMIC specific tokens from
+ topology
 
 Update dmic specific tokens in topology parser and configure ipc
 params for DMIC DAI type.
 
 Signed-off-by: Ranjani Sridharan <ranjani.sridharan@linux.intel.com>
 ---
- sound/soc/sof/topology.c | 231 ++++++++++++++++++++++++++++++++++++++++++++---
+ sound/soc/sof/topology.c | 231 +++++++++++++++++++++++++++++++++++++--
  1 file changed, 219 insertions(+), 12 deletions(-)
 
 diff --git a/sound/soc/sof/topology.c b/sound/soc/sof/topology.c
@@ -310,5 +310,5 @@ index b98078f..a2c986e 100644
  }
  
 -- 
-2.7.4
+https://clearlinux.org
 

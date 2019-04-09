@@ -1,8 +1,8 @@
-From 48a2daeab23113806e68dc255961f8a5dea9a5b4 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Mattias Nissler <mnissler@google.com>
 Date: Fri, 21 Apr 2017 23:34:26 +0000
-Subject: [PATCH 0562/2278] VENDOR: broadcom: bcmdhd: Use sdio_reset_comm from
- common kernel
+Subject: [PATCH] VENDOR: broadcom: bcmdhd: Use sdio_reset_comm from common
+ kernel
 
 A proper definition of sdio_reset_comm() was brought in when merging
 Android-specific common kernel changes into Brillo's common kernel. We
@@ -37,5 +37,5 @@ index 04a3e0d..199522e 100644
  #define DEFAULT_SDIO_F2_BLKSIZE		512
  #ifndef CUSTOM_SDIO_F2_BLKSIZE
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,7 +1,7 @@
-From 9979d78d4cee1a90c3845a7f4748ad1807b5e351 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: yingbinx <yingbinx.zeng@intel.com>
 Date: Mon, 27 Mar 2017 12:24:04 +0800
-Subject: [PATCH 0489/2278] check CPUID while probe trusty drivers.
+Subject: [PATCH] check CPUID while probe trusty drivers.
 
 Trusty ipc drivers only work when eVmm is alive.
 So when probe the trusty drivers, we need to call CPUID
@@ -45,7 +45,7 @@ index 9d6f6bf..a05c5f9 100644
  
  	vds = kzalloc(sizeof(*vds), GFP_KERNEL);
 diff --git a/drivers/trusty/trusty-irq.c b/drivers/trusty/trusty-irq.c
-index 363b302..afdea66c2 100644
+index 363b302..afdea66 100644
 --- a/drivers/trusty/trusty-irq.c
 +++ b/drivers/trusty/trusty-irq.c
 @@ -587,6 +587,12 @@ static int trusty_irq_probe(struct platform_device *pdev)
@@ -138,5 +138,5 @@ index 7459838..7dc2dad 100644
 +}
  #endif
 -- 
-2.7.4
+https://clearlinux.org
 

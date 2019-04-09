@@ -1,8 +1,8 @@
-From 9639605689dc5e7fae64d7e8cb694fbfe2e16930 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Oscar Mateo <oscar.mateo@intel.com>
 Date: Thu, 7 Sep 2017 08:40:06 -0700
-Subject: [PATCH 1025/2278] UPSTREAM: drm/i915:
- WaPushConstantDereferenceHoldDisable needs to modify a masked register
+Subject: [PATCH] UPSTREAM: drm/i915: WaPushConstantDereferenceHoldDisable
+ needs to modify a masked register
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -36,5 +36,5 @@ index 3fa36c5..f1c4ee9 100644
  	/* FtrEnableFastAnisoL1BankingFix: cnl */
  	WA_SET_BIT_MASKED(HALF_SLICE_CHICKEN3, CNL_FAST_ANISO_L1_BANKING_FIX);
 -- 
-2.7.4
+https://clearlinux.org
 

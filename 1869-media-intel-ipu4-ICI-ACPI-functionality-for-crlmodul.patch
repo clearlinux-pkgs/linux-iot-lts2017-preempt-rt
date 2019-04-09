@@ -1,14 +1,14 @@
-From a4bb41a263aa4393807083978a8360a2cb76feea Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: kgopala2 <karthik.l.gopalakrishnan@intel.com>
 Date: Tue, 10 Jul 2018 18:16:10 +0800
-Subject: [PATCH 1869/2278] media: intel-ipu4: [ICI] ACPI functionality for
+Subject: [PATCH] media: intel-ipu4: [ICI] ACPI functionality for
  crlmodule-lite sensors
 
 Signed-off-by: kgopala2 <karthik.l.gopalakrishnan@intel.com>
 ---
- drivers/media/i2c/crlmodule-lite/crlmodule-data.c |  2 +
- drivers/media/pci/intel/ici/ici-isys.c            | 19 ++------
- drivers/media/platform/intel/ipu4-acpi.c          | 59 +++++++++++++++++++++++
+ .../media/i2c/crlmodule-lite/crlmodule-data.c |  2 +
+ drivers/media/pci/intel/ici/ici-isys.c        | 19 ++----
+ drivers/media/platform/intel/ipu4-acpi.c      | 59 +++++++++++++++++++
  3 files changed, 65 insertions(+), 15 deletions(-)
 
 diff --git a/drivers/media/i2c/crlmodule-lite/crlmodule-data.c b/drivers/media/i2c/crlmodule-lite/crlmodule-data.c
@@ -25,7 +25,7 @@ index db85db5..c22dc1f 100644
  
  /*
 diff --git a/drivers/media/pci/intel/ici/ici-isys.c b/drivers/media/pci/intel/ici/ici-isys.c
-index d4ef12cb..466659b 100644
+index d4ef12c..466659b 100644
 --- a/drivers/media/pci/intel/ici/ici-isys.c
 +++ b/drivers/media/pci/intel/ici/ici-isys.c
 @@ -15,6 +15,7 @@
@@ -194,5 +194,5 @@ index 513f265..e8167d2 100644
  };
  
 -- 
-2.7.4
+https://clearlinux.org
 

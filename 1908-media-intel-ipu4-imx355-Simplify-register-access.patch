@@ -1,7 +1,7 @@
-From cd32c8a72d47de8c0fe8ec0a29d6649775ee0d73 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tianshu Qiu <tian.shu.qiu@intel.com>
 Date: Wed, 16 May 2018 11:09:56 +0800
-Subject: [PATCH 1908/2278] media: intel-ipu4: imx355: Simplify register access
+Subject: [PATCH] media: intel-ipu4: imx355: Simplify register access
 
 Message for Open Source:
 Simplify register access
@@ -14,7 +14,7 @@ Change-Id: I7166aaafe22f8ee63cad027e38fb4888807b8fe8
 Signed-off-by: Tianshu Qiu <tian.shu.qiu@intel.com>
 Signed-off-by: Meng Wei <wei.meng@intel.com>
 ---
- drivers/media/i2c/imx355.c | 43 +++++++++++++------------------------------
+ drivers/media/i2c/imx355.c | 43 ++++++++++++--------------------------
  1 file changed, 13 insertions(+), 30 deletions(-)
 
 diff --git a/drivers/media/i2c/imx355.c b/drivers/media/i2c/imx355.c
@@ -136,5 +136,5 @@ index c2c10e0..4d69b9b 100644
  		dev_err(&client->dev, "%s failed to set mode\n", __func__);
  		return ret;
 -- 
-2.7.4
+https://clearlinux.org
 

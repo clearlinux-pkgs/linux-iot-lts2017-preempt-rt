@@ -1,8 +1,7 @@
-From e1cafda8a61df24d0f0c82fbfb6406a40a40a8fe Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Axel Lin <axel.lin@ingics.com>
 Date: Fri, 13 Oct 2017 09:21:01 +0800
-Subject: [PATCH 1175/2278] ASoC: max98925: Return proper error if revision
- mismatch
+Subject: [PATCH] ASoC: max98925: Return proper error if revision mismatch
 
 Return proper error instead of 0 if the revision does not match.
 
@@ -64,5 +63,5 @@ index 327eaa2..921f95f 100644
  }
  
 -- 
-2.7.4
+https://clearlinux.org
 

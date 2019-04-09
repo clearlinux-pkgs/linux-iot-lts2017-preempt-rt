@@ -1,7 +1,7 @@
-From 3456e50a4669017ba0eee49362bf30350e0f443c Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Xinyun Liu <xinyun.liu@intel.com>
 Date: Thu, 24 May 2018 11:52:44 +0800
-Subject: [PATCH 1488/2278] drm/i915/gvt: check msg length before use it
+Subject: [PATCH] drm/i915/gvt: check msg length before use it
 
 Signed-off-by: Xinyun Liu <xinyun.liu@intel.com>
 Reviewed-by: Min He <min.he@intel.com>
@@ -25,5 +25,5 @@ index a61546c..8acf937 100644
  		intel_dp_unpack_aux(vgpu_vreg(vgpu, offset + 4 + rxsize),
  				rxbuf + rxsize, msg_length - rxsize);
 -- 
-2.7.4
+https://clearlinux.org
 

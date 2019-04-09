@@ -1,8 +1,7 @@
-From 7234fe423a783437fe4f306f4c7dc896f5ac5fe9 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Chris Wilson <chris@chris-wilson.co.uk>
 Date: Sat, 16 Sep 2017 21:44:13 +0100
-Subject: [PATCH 1050/2278] UPSTREAM: drm/i915/execlists: Split
- insert_request()
+Subject: [PATCH] UPSTREAM: drm/i915/execlists: Split insert_request()
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
@@ -19,7 +18,7 @@ Link: https://patchwork.freedesktop.org/patch/msgid/20170916204414.32762-3-chris
 (cherry picked from commit 0fcee756ffffa091eff757522ab49169fc73a6c6)
 Signed-off-by: Asif Haswarey <asif.haswarey@intel.com>
 ---
- drivers/gpu/drm/i915/intel_lrc.c | 35 +++++++++++++++++++----------------
+ drivers/gpu/drm/i915/intel_lrc.c | 35 +++++++++++++++++---------------
  1 file changed, 19 insertions(+), 16 deletions(-)
 
 diff --git a/drivers/gpu/drm/i915/intel_lrc.c b/drivers/gpu/drm/i915/intel_lrc.c
@@ -103,5 +102,5 @@ index f09fe12..8ac28e6 100644
  	GEM_BUG_ON(!engine->execlist_first);
  	GEM_BUG_ON(list_empty(&request->priotree.link));
 -- 
-2.7.4
+https://clearlinux.org
 

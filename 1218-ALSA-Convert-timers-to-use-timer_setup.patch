@@ -1,7 +1,7 @@
-From c3979ecb18cff0231c5bb86b9177047c726df818 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Kees Cook <keescook@chromium.org>
 Date: Wed, 25 Oct 2017 08:09:27 -0700
-Subject: [PATCH 1218/2278] ALSA: Convert timers to use timer_setup()
+Subject: [PATCH] ALSA: Convert timers to use timer_setup()
 
 In preparation for unconditionally passing the struct timer_list
 pointer to all timer callbacks, switch to using the new timer_setup()
@@ -173,7 +173,7 @@ index e41bb41..ba99ff0 100644
  			hmidi->istimer++;
  		}
 diff --git a/sound/pci/rme9652/hdspm.c b/sound/pci/rme9652/hdspm.c
-index 343f533..11b5b5e0 100644
+index 343f533..11b5b5e 100644
 --- a/sound/pci/rme9652/hdspm.c
 +++ b/sound/pci/rme9652/hdspm.c
 @@ -1947,9 +1947,9 @@ snd_hdspm_midi_input_trigger(struct snd_rawmidi_substream *substream, int up)
@@ -248,5 +248,5 @@ index 6c49f3d..d402196 100644
  		v253_ops.receive_buf(tty, cp, fp, count);
  
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,7 +1,7 @@
-From 46c1ac2ebd8343381194e1697ae79c6f7d545c28 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Mon, 8 Jan 2018 20:33:43 +0000
-Subject: [PATCH 1288/2278] ASoC: SOF: Add DSP HW abstraction operations
+Subject: [PATCH] ASoC: SOF: Add DSP HW abstraction operations
 
 Add operation pointers that can be called by core to control a wide
 variety of DSP targets. The DSP HW drivers will fill in these
@@ -9,8 +9,8 @@ operations.
 
 Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 ---
- sound/soc/sof/ops.c | 190 ++++++++++++++++++++++++++++++++++++++++++++
- sound/soc/sof/ops.h | 225 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ sound/soc/sof/ops.c | 190 +++++++++++++++++++++++++++++++++++++
+ sound/soc/sof/ops.h | 225 ++++++++++++++++++++++++++++++++++++++++++++
  2 files changed, 415 insertions(+)
  create mode 100644 sound/soc/sof/ops.c
  create mode 100644 sound/soc/sof/ops.h
@@ -443,5 +443,5 @@ index 0000000..f28a0df
 +
 +#endif
 -- 
-2.7.4
+https://clearlinux.org
 

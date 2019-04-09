@@ -1,8 +1,7 @@
-From 4d916b9a9b151c7a7a34f86687987011109c48c5 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Arvind Yadav <arvind.yadav.cs@gmail.com>
 Date: Wed, 29 Nov 2017 21:47:13 +0530
-Subject: [PATCH 1231/2278] ASoC: intel: sst: Handle return value of
- platform_get_irq
+Subject: [PATCH] ASoC: intel: sst: Handle return value of platform_get_irq
 
 platform_get_irq() can fail here and we must check its return value.
 
@@ -28,5 +27,5 @@ index 32d6e02..6cd481b 100644
  }
  
 -- 
-2.7.4
+https://clearlinux.org
 

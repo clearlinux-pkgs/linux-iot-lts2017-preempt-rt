@@ -1,8 +1,8 @@
-From 45c61eeeea711534c21f3c6d1fc19b967c138947 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Pawse, GuruprasadX" <guruprasadx.pawse@intel.com>
 Date: Tue, 14 Jun 2016 18:19:44 +0530
-Subject: [PATCH 0649/2278] ASoC: Intel: Skylake: Probe - Start DMA before
- setting probe params
+Subject: [PATCH] ASoC: Intel: Skylake: Probe - Start DMA before setting probe
+ params
 
 FW starts probe module soon after its params are set. But to avoid
 xruns from FW point of view, DMA has to be started before this.
@@ -61,5 +61,5 @@ index 7c6e377..7d23798 100644
  	return 0;
  }
 -- 
-2.7.4
+https://clearlinux.org
 

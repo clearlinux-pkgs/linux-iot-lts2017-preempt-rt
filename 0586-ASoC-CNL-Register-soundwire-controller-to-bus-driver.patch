@@ -1,8 +1,7 @@
-From 53f719b1612d8a098ad66dbee7b4e1a03cdfa696 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Hardik T Shah <hardik.t.shah@intel.com>
 Date: Thu, 10 Mar 2016 10:33:33 +0530
-Subject: [PATCH 0586/2278] ASoC: CNL: Register soundwire controller to bus
- driver.
+Subject: [PATCH] ASoC: CNL: Register soundwire controller to bus driver.
 
 This patch registers the SoundWire controller to the
 SoundWire bus driver.
@@ -11,8 +10,8 @@ Change-Id: Iefc4a7cd30d2f5ad043fe63e82f519ebc488bf65
 Signed-off-by: Hardik T Shah <hardik.t.shah@intel.com>
 ---
  sound/soc/intel/skylake/cnl-sst-dsp.c |   6 ++
- sound/soc/intel/skylake/cnl-sst-dsp.h |  13 ++++
- sound/soc/intel/skylake/cnl-sst.c     | 121 ++++++++++++++++++++++++++++++++++
+ sound/soc/intel/skylake/cnl-sst-dsp.h |  13 +++
+ sound/soc/intel/skylake/cnl-sst.c     | 121 ++++++++++++++++++++++++++
  sound/soc/intel/skylake/skl-sst-ipc.h |   5 ++
  4 files changed, 145 insertions(+)
 
@@ -225,7 +224,7 @@ index fe396fb..f970306 100644
  
  	ctx->dsp->ops->free(ctx->dsp);
 diff --git a/sound/soc/intel/skylake/skl-sst-ipc.h b/sound/soc/intel/skylake/skl-sst-ipc.h
-index 55f2d2c..52823f40 100644
+index 55f2d2c..52823f4 100644
 --- a/sound/soc/intel/skylake/skl-sst-ipc.h
 +++ b/sound/soc/intel/skylake/skl-sst-ipc.h
 @@ -118,6 +118,11 @@ struct skl_sst {
@@ -241,5 +240,5 @@ index 55f2d2c..52823f40 100644
  
  struct skl_ipc_init_instance_msg {
 -- 
-2.7.4
+https://clearlinux.org
 

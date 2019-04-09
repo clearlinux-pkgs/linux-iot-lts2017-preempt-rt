@@ -1,8 +1,7 @@
-From 1bd571df7a9992e81d7c43119fa313d640e2bb62 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Ughreja, Rakesh A" <rakesh.a.ughreja@intel.com>
 Date: Fri, 1 Dec 2017 14:43:18 +0530
-Subject: [PATCH 1229/2278] ASoC: hdac_hdmi: clean up hdac_ext_device variable
- names
+Subject: [PATCH] ASoC: hdac_hdmi: clean up hdac_ext_device variable names
 
 Existing code uses hdac and edev inconsistently to represent
 hdac_ext_device structure which creates confusion because hdac
@@ -19,7 +18,7 @@ Signed-off-by: Rakesh Ughreja <rakesh.a.ughreja@intel.com>
 Signed-off-by: Mark Brown <broonie@kernel.org>
 (cherry picked from commit 72bc39cf53fabf56907f9d6c4b120fc49d9abc95)
 ---
- sound/soc/codecs/hdac_hdmi.c | 82 ++++++++++++++++++++++----------------------
+ sound/soc/codecs/hdac_hdmi.c | 82 ++++++++++++++++++------------------
  1 file changed, 41 insertions(+), 41 deletions(-)
 
 diff --git a/sound/soc/codecs/hdac_hdmi.c b/sound/soc/codecs/hdac_hdmi.c
@@ -283,5 +282,5 @@ index bb1fbc8..d9009ba 100644
  	struct hdac_hdmi_pcm *pcm;
  
 -- 
-2.7.4
+https://clearlinux.org
 

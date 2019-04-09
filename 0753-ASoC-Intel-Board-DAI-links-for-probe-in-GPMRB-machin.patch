@@ -1,8 +1,8 @@
-From 97dbabfbbf54089fbf90929b11b90134a77bd019 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Sinha, Mohit" <mohit.sinha@intel.com>
 Date: Thu, 6 Jul 2017 16:10:32 +0530
-Subject: [PATCH 0753/2278] ASoC: Intel: Board: DAI links for probe in GPMRB
- machine driver
+Subject: [PATCH] ASoC: Intel: Board: DAI links for probe in GPMRB machine
+ driver
 
 Added two DAI links for probe playback and capture
 
@@ -45,5 +45,5 @@ index 027060b..1e2b8be 100644
  	{
  		/* SSP0 - BT */
 -- 
-2.7.4
+https://clearlinux.org
 

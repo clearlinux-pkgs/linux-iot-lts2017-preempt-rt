@@ -1,8 +1,7 @@
-From fc13900e5703208cbff3e311791c00a4612a975b Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 Date: Mon, 2 Jul 2018 15:31:15 +0100
-Subject: [PATCH 1755/2278] ASoC: sof: ops: cleanup - add comments and reorder
- funcs
+Subject: [PATCH] ASoC: sof: ops: cleanup - add comments and reorder funcs
 
 Add comments describing funcs/code blocks and reorder funcs so features
 are grouped.
@@ -70,5 +69,5 @@ index 1a00a4b..340f1cc 100644
  				     u32 offset, u32 mask, u32 value);
  
 -- 
-2.7.4
+https://clearlinux.org
 

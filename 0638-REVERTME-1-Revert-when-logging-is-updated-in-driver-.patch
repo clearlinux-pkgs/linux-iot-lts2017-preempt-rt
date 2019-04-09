@@ -1,7 +1,7 @@
-From 7eab47ad3dd5deb481be213a03647df755f3dcbf Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: "Panwar, Ashish" <ashish.panwar@intel.com>
 Date: Sat, 19 Mar 2016 08:44:11 +0530
-Subject: [PATCH 0638/2278] REVERTME-1: Revert when logging is updated in
+Subject: [PATCH] REVERTME-1: Revert when logging is updated in
  driver/firmware.
 
 Core 0 is currently using entire 8KB window for logging.
@@ -62,5 +62,5 @@ index 36c22c5..d34ff3f 100644
  	/* move to the source dsp tracing window */
  	base += (core * size);
 -- 
-2.7.4
+https://clearlinux.org
 

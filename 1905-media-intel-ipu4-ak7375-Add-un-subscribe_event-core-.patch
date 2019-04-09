@@ -1,8 +1,7 @@
-From 2c46208a86d6c98e0bde2569ec4a226aab0014df Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Yong Zhi <yong.zhi@intel.com>
 Date: Thu, 12 Apr 2018 10:28:45 -0500
-Subject: [PATCH 1905/2278] media: intel-ipu4: ak7375: Add (un)subscribe_event
- core ops
+Subject: [PATCH] media: intel-ipu4: ak7375: Add (un)subscribe_event core ops
 
 Message for Open Source:
 Fix v4l2-compliance fails on ak7375 lens controller subdev.
@@ -62,5 +61,5 @@ index a75eb4c..890983e 100644
  
  	rval = ak7375_init_controls(ak7375_dev);
 -- 
-2.7.4
+https://clearlinux.org
 

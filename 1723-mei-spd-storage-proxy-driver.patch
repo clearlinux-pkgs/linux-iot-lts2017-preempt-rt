@@ -1,7 +1,7 @@
-From a23d7f2e0baad147861d9cb5f03de3bf57123071 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Alexander Usyskin <alexander.usyskin@intel.com>
 Date: Tue, 23 Dec 2014 17:18:37 +0200
-Subject: [PATCH 1723/2278] mei: spd: storage proxy driver
+Subject: [PATCH] mei: spd: storage proxy driver
 
 Host storage proxy driver enables ME FW to store its data on a storage
 devices such as eMMC or UFS via host interface on a dedicated partition.
@@ -19,12 +19,12 @@ Signed-off-by: Tomas Winkler <tomas.winkler@intel.com>
  drivers/misc/mei/Makefile      |   1 +
  drivers/misc/mei/spd/Kconfig   |  12 +
  drivers/misc/mei/spd/Makefile  |  11 +
- drivers/misc/mei/spd/cmd.c     | 485 +++++++++++++++++++++++++++++++++++++++++
- drivers/misc/mei/spd/cmd.h     | 230 +++++++++++++++++++
- drivers/misc/mei/spd/debugfs.c |  79 +++++++
- drivers/misc/mei/spd/gpp.c     | 299 +++++++++++++++++++++++++
- drivers/misc/mei/spd/main.c    | 118 ++++++++++
- drivers/misc/mei/spd/spd.h     |  93 ++++++++
+ drivers/misc/mei/spd/cmd.c     | 485 +++++++++++++++++++++++++++++++++
+ drivers/misc/mei/spd/cmd.h     | 230 ++++++++++++++++
+ drivers/misc/mei/spd/debugfs.c |  79 ++++++
+ drivers/misc/mei/spd/gpp.c     | 299 ++++++++++++++++++++
+ drivers/misc/mei/spd/main.c    | 118 ++++++++
+ drivers/misc/mei/spd/spd.h     |  93 +++++++
  10 files changed, 1329 insertions(+)
  create mode 100644 drivers/misc/mei/spd/Kconfig
  create mode 100644 drivers/misc/mei/spd/Makefile
@@ -1429,5 +1429,5 @@ index 0000000..cd30d0e
 +
 +#endif /* _MEI_SPD_H */
 -- 
-2.7.4
+https://clearlinux.org
 

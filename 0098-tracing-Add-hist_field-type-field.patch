@@ -1,7 +1,7 @@
-From 0ef4d888b7c96a7998f8c7e6fb23c6d6dc3e9ffc Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tom Zanussi <tom.zanussi@linux.intel.com>
 Date: Mon, 15 Jan 2018 20:51:55 -0600
-Subject: [PATCH 0098/2278] tracing: Add hist_field 'type' field
+Subject: [PATCH] tracing: Add hist_field 'type' field
 
 Future support for synthetic events requires hist_field 'type'
 information, so add a field for that.
@@ -16,11 +16,11 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
 (cherry picked from commit d544a468f82526e97cc80c18a019708eb203b00a)
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- kernel/trace/trace_events_hist.c | 33 +++++++++++++++++++++++++++++++++
+ kernel/trace/trace_events_hist.c | 33 ++++++++++++++++++++++++++++++++
  1 file changed, 33 insertions(+)
 
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
-index becf37b..6e60cb79 100644
+index becf37b..6e60cb7 100644
 --- a/kernel/trace/trace_events_hist.c
 +++ b/kernel/trace/trace_events_hist.c
 @@ -54,6 +54,7 @@ struct hist_field {
@@ -119,5 +119,5 @@ index becf37b..6e60cb79 100644
  	switch (field_op) {
  	case FIELD_OP_MINUS:
 -- 
-2.7.4
+https://clearlinux.org
 

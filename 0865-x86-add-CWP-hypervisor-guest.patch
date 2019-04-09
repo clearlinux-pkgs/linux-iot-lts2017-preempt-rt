@@ -1,7 +1,7 @@
-From cb40721feef65f16759b94ded4060dcd78375f7e Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Jason Chen CJ <jason.cj.chen@intel.com>
 Date: Tue, 26 Dec 2017 03:05:33 +0800
-Subject: [PATCH 0865/2278] x86: add CWP hypervisor guest
+Subject: [PATCH] x86: add CWP hypervisor guest
 
 add x86_hyper_cwp into supported hypervisors array, which enabling
 CWP services guest run on CWP hypervisor.
@@ -13,13 +13,13 @@ Reviewed-by: Chi, Mingqiang <mingqiang.chi@intel.com>
 Reviewed-by: Dong, Eddie <eddie.dong@intel.com>
 Tested-by: Dong, Eddie <eddie.dong@intel.com>
 ---
- arch/x86/Kbuild                   |  2 ++
- arch/x86/Kconfig                  |  2 ++
- arch/x86/cwp/Kconfig              | 15 +++++++++
- arch/x86/cwp/Makefile             |  2 ++
- arch/x86/cwp/cwp.c                | 71 +++++++++++++++++++++++++++++++++++++++
+ arch/x86/Kbuild                   |  2 +
+ arch/x86/Kconfig                  |  2 +
+ arch/x86/cwp/Kconfig              | 15 +++++++
+ arch/x86/cwp/Makefile             |  2 +
+ arch/x86/cwp/cwp.c                | 71 +++++++++++++++++++++++++++++++
  arch/x86/include/asm/hypervisor.h |  1 +
- arch/x86/kernel/cpu/hypervisor.c  |  4 +++
+ arch/x86/kernel/cpu/hypervisor.c  |  4 ++
  7 files changed, 97 insertions(+)
  create mode 100644 arch/x86/cwp/Kconfig
  create mode 100644 arch/x86/cwp/Makefile
@@ -39,7 +39,7 @@ index 0038a2d..fd9c227 100644
  obj-$(subst m,y,$(CONFIG_HYPERV)) += hyperv/
  
 diff --git a/arch/x86/Kconfig b/arch/x86/Kconfig
-index 616ed8a2..1f2209b 100644
+index 616ed8a..1f2209b 100644
 --- a/arch/x86/Kconfig
 +++ b/arch/x86/Kconfig
 @@ -774,6 +774,8 @@ config QUEUED_LOCK_STAT
@@ -192,5 +192,5 @@ index bea8d3e..fc46ce7 100644
  
  enum x86_hypervisor_type x86_hyper_type;
 -- 
-2.7.4
+https://clearlinux.org
 

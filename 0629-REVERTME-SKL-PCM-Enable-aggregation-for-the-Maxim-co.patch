@@ -1,8 +1,7 @@
-From f9b0c7f6c21916898c794f38785d01e33424d3fd Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Hardik Shah <hardik.t.shah@intel.com>
 Date: Fri, 20 May 2016 15:02:36 +0530
-Subject: [PATCH 0629/2278] REVERTME:SKL:PCM: Enable aggregation for the Maxim
- codec.
+Subject: [PATCH] REVERTME:SKL:PCM: Enable aggregation for the Maxim codec.
 
 Set the aggregation parameters if Maxim codec is enabled.
 Aggregation parameters should ideally come from ITT topology.
@@ -74,5 +73,5 @@ index 504228e..07b6bb8 100644
  	if (!m_cfg->sdw_agg_enable)
  		m_cfg->sdw_stream_num = dma->port->pdi_stream->sdw_pdi_num;
 -- 
-2.7.4
+https://clearlinux.org
 

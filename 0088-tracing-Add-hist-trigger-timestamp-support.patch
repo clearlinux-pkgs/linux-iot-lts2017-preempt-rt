@@ -1,7 +1,7 @@
-From da53fdb23d2eee224eb670b40de62403e6c494f9 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tom Zanussi <tom.zanussi@linux.intel.com>
 Date: Mon, 15 Jan 2018 20:51:45 -0600
-Subject: [PATCH 0088/2278] tracing: Add hist trigger timestamp support
+Subject: [PATCH] tracing: Add hist trigger timestamp support
 
 Add support for a timestamp event field.  This is actually a 'pseudo-'
 event field in that it behaves like it's part of the event record, but
@@ -31,7 +31,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
 (cherry picked from commit 5d9d58b00ff82078deac8557c91359cd13c8959d)
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- kernel/trace/trace_events_hist.c | 94 ++++++++++++++++++++++++++++++----------
+ kernel/trace/trace_events_hist.c | 94 ++++++++++++++++++++++++--------
  1 file changed, 71 insertions(+), 23 deletions(-)
 
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
@@ -248,5 +248,5 @@ index 4935290..cd80bca 100644
  				test->ops->free(test->ops, test);
  		}
 -- 
-2.7.4
+https://clearlinux.org
 

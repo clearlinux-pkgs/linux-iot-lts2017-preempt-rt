@@ -1,7 +1,7 @@
-From 933a13ffc46430b9dac524dbbbe825d86e0727f1 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
 Date: Thu, 12 Oct 2017 18:49:40 -0500
-Subject: [PATCH 1190/2278] ASoC: ACPI: add new fields for SOF support
+Subject: [PATCH] ASoC: ACPI: add new fields for SOF support
 
 To prepare for SOF integration, we need new fields in the machine table.
 It is intended that the same table is used for both closed-source and
@@ -18,7 +18,7 @@ Signed-off-by: Mark Brown <broonie@kernel.org>
  1 file changed, 12 insertions(+), 1 deletion(-)
 
 diff --git a/include/sound/soc-acpi.h b/include/sound/soc-acpi.h
-index 918d78e..a7d8d335 100644
+index 918d78e..a7d8d33 100644
 --- a/include/sound/soc-acpi.h
 +++ b/include/sound/soc-acpi.h
 @@ -55,10 +55,12 @@ bool snd_soc_acpi_check_hid(const u8 hid[ACPI_ID_LEN]);
@@ -59,5 +59,5 @@ index 918d78e..a7d8d335 100644
  
  #define SND_SOC_ACPI_MAX_CODECS 3
 -- 
-2.7.4
+https://clearlinux.org
 

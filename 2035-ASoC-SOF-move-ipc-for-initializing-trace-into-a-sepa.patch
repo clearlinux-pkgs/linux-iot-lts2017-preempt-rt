@@ -1,8 +1,8 @@
-From f78349171563dd824718a24a24b96ec8685a7186 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ranjani Sridharan <ranjani.sridharan@linux.intel.com>
 Date: Mon, 16 Jul 2018 23:02:46 -0700
-Subject: [PATCH 2035/2278] ASoC: SOF: move ipc for initializing trace into a
- separate function
+Subject: [PATCH] ASoC: SOF: move ipc for initializing trace into a separate
+ function
 
 Move the code to send ipc for initializing trace into a separate
 function that can also be called during suspend/resume.
@@ -10,7 +10,7 @@ function that can also be called during suspend/resume.
 Signed-off-by: Ranjani Sridharan <ranjani.sridharan@linux.intel.com>
 ---
  sound/soc/sof/sof-priv.h |  1 +
- sound/soc/sof/trace.c    | 85 +++++++++++++++++++++++++++---------------------
+ sound/soc/sof/trace.c    | 85 +++++++++++++++++++++++-----------------
  2 files changed, 49 insertions(+), 37 deletions(-)
 
 diff --git a/sound/soc/sof/sof-priv.h b/sound/soc/sof/sof-priv.h
@@ -137,5 +137,5 @@ index 1b37970..172ff25 100644
  	snd_dma_free_pages(&sdev->dmatb);
  page_err:
 -- 
-2.7.4
+https://clearlinux.org
 

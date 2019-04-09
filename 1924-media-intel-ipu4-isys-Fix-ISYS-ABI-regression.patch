@@ -1,7 +1,7 @@
-From 6223f0af18305c9f2f1f48b37b98f84d6efaff1c Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tianshu Qiu <tian.shu.qiu@intel.com>
 Date: Thu, 24 May 2018 17:27:30 +0800
-Subject: [PATCH 1924/2278] media: intel-ipu4: isys: Fix ISYS ABI regression
+Subject: [PATCH] media: intel-ipu4: isys: Fix ISYS ABI regression
 
 Message for Open Source:
 crop_first_and_last_lines is not a valid field in
@@ -49,5 +49,5 @@ index 2a10721..8ef68d4 100644
  
  /**
 -- 
-2.7.4
+https://clearlinux.org
 

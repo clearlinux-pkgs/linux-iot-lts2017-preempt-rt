@@ -1,8 +1,7 @@
-From 4cee466ef92395f1aa9520bfd1ac9e80afdddc94 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Thomas Gleixner <tglx@linutronix.de>
 Date: Thu, 23 Nov 2017 16:39:16 +0100
-Subject: [PATCH 0049/2278] usb/gadget/NCM: Replace tasklet with softirq
- hrtimer
+Subject: [PATCH] usb/gadget/NCM: Replace tasklet with softirq hrtimer
 
 The tx_tasklet tasklet is used in invoke the hrtimer (task_timer) in
 softirq context. This can be also achieved without the tasklet but
@@ -14,7 +13,7 @@ Cc: Felipe Balbi <balbi@kernel.org>
 Cc: linux-usb@vger.kernel.org
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- drivers/usb/gadget/function/f_ncm.c | 30 +++++++-----------------------
+ drivers/usb/gadget/function/f_ncm.c | 30 +++++++----------------------
  1 file changed, 7 insertions(+), 23 deletions(-)
 
 diff --git a/drivers/usb/gadget/function/f_ncm.c b/drivers/usb/gadget/function/f_ncm.c
@@ -99,5 +98,5 @@ index 45b334c..5f24e6d 100644
  	ncm_string_defs[0].id = 0;
  	usb_free_all_descriptors(f);
 -- 
-2.7.4
+https://clearlinux.org
 

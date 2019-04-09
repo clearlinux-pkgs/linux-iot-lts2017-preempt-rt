@@ -1,8 +1,7 @@
-From 768156af091d2de79a5678dce82c2037739b6da0 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tianshu Qiu <tian.shu.qiu@intel.com>
 Date: Tue, 15 May 2018 14:13:18 +0800
-Subject: [PATCH 1891/2278] media: intel-ipu4: imx355: Remove kernel version
- checking
+Subject: [PATCH] media: intel-ipu4: imx355: Remove kernel version checking
 
 Message for Open Source:
 Remove kernel version checking
@@ -44,5 +43,5 @@ index 8f90416..5e4b149 100644
  		dev_err(&client->dev, "%s failed:%d\n", __func__, ret);
  		goto error_handler_free;
 -- 
-2.7.4
+https://clearlinux.org
 

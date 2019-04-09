@@ -1,7 +1,7 @@
-From 798859509a9d17e665936b892a008ed737c486a1 Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Tom Zanussi <tom.zanussi@linux.intel.com>
 Date: Mon, 15 Jan 2018 20:51:57 -0600
-Subject: [PATCH 0100/2278] tracing: Add hist trigger action hook
+Subject: [PATCH] tracing: Add hist trigger action hook
 
 Add a hook for executing extra actions whenever a histogram entry is
 added or updated.
@@ -21,7 +21,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
 (cherry picked from commit b91ae245c2f781e6da0532d8545f51a0f1291cc0)
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
- kernel/trace/trace_events_hist.c | 106 ++++++++++++++++++++++++++++++++++++++-
+ kernel/trace/trace_events_hist.c | 106 ++++++++++++++++++++++++++++++-
  1 file changed, 104 insertions(+), 2 deletions(-)
 
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
@@ -217,5 +217,5 @@ index 2bc1f76..e5fea3c 100644
  	if (ret)
  		goto out_unreg;
 -- 
-2.7.4
+https://clearlinux.org
 

@@ -1,7 +1,7 @@
-From c30a1178ca627eaee38dbb700e935ffed14f2caf Mon Sep 17 00:00:00 2001
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: wu xia <xia.wu@intel.com>
 Date: Tue, 26 Apr 2016 15:41:37 +0300
-Subject: [PATCH 1410/2278] media: Add MEDIA_IOC_DQEVENT
+Subject: [PATCH] media: Add MEDIA_IOC_DQEVENT
 
 Events on a media device tell about completion of requests. Blocking
 and non-blocking operation is supported.
@@ -9,9 +9,9 @@ and non-blocking operation is supported.
 Signed-off-by: Sakari Ailus <sakari.ailus@linux.intel.com>
 Signed-off-by: wu xia <xia.wu@intel.com>
 ---
- drivers/media/media-device.c | 102 +++++++++++++++++++++++++++++++++++++++++--
- include/media/media-device.h |  10 +++++
- include/uapi/linux/media.h   |  17 ++++++++
+ drivers/media/media-device.c | 102 +++++++++++++++++++++++++++++++++--
+ include/media/media-device.h |  10 ++++
+ include/uapi/linux/media.h   |  17 ++++++
  3 files changed, 126 insertions(+), 3 deletions(-)
 
 diff --git a/drivers/media/media-device.c b/drivers/media/media-device.c
@@ -305,5 +305,5 @@ index ac227af..62b2bff 100644
  
  #endif /* __LINUX_MEDIA_H */
 -- 
-2.7.4
+https://clearlinux.org
 
