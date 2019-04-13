@@ -16,10 +16,10 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  4 files changed, 29 insertions(+), 19 deletions(-)
 
 diff --git a/include/linux/swap.h b/include/linux/swap.h
-index aff4f83..6c77516 100644
+index bc039b8..cbf6207 100644
 --- a/include/linux/swap.h
 +++ b/include/linux/swap.h
-@@ -312,6 +312,7 @@ extern unsigned long nr_free_pagecache_pages(void);
+@@ -321,6 +321,7 @@ extern unsigned long nr_free_pagecache_pages(void);
  
  
  /* linux/mm/swap.c */

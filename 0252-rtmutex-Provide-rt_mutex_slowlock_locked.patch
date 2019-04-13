@@ -13,7 +13,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 46 insertions(+), 30 deletions(-)
 
 diff --git a/kernel/locking/rtmutex.c b/kernel/locking/rtmutex.c
-index 5f2b760..1ae8d88 100644
+index d870f79..91b735a 100644
 --- a/kernel/locking/rtmutex.c
 +++ b/kernel/locking/rtmutex.c
 @@ -1244,35 +1244,16 @@ static void rt_mutex_handle_deadlock(int res, int detect_deadlock,

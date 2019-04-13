@@ -20,18 +20,18 @@ Cc: stable-rt@vger.kernel.org
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/kernel/locking/rtmutex.c b/kernel/locking/rtmutex.c
-index 456750b..a8119de 100644
+index b4a83a6..f41d6b5 100644
 --- a/kernel/locking/rtmutex.c
 +++ b/kernel/locking/rtmutex.c
-@@ -1750,7 +1750,7 @@ int __rt_mutex_start_proxy_lock(struct rt_mutex *lock,
- 		ret = 0;
- 	}
+@@ -1803,7 +1803,7 @@ int rt_mutex_start_proxy_lock(struct rt_mutex *lock,
  
+ 	raw_spin_lock_irq(&lock->wait_lock);
+ 	ret = __rt_mutex_start_proxy_lock(lock, waiter, task);
 -	if (unlikely(ret))
 +	if (ret && rt_mutex_has_waiters(lock))
  		remove_waiter(lock, waiter);
+ 	raw_spin_unlock_irq(&lock->wait_lock);
  
- 	debug_rt_mutex_print_deadlock(waiter);
 -- 
 https://clearlinux.org
 

@@ -26,10 +26,10 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 4 insertions(+), 4 deletions(-)
 
 diff --git a/net/ipv4/tcp_ipv4.c b/net/ipv4/tcp_ipv4.c
-index a08d68e..851f241 100644
+index 3d29d3b..368e407 100644
 --- a/net/ipv4/tcp_ipv4.c
 +++ b/net/ipv4/tcp_ipv4.c
-@@ -711,8 +711,8 @@ static void tcp_v4_send_reset(const struct sock *sk, struct sk_buff *skb)
+@@ -712,8 +712,8 @@ static void tcp_v4_send_reset(const struct sock *sk, struct sk_buff *skb)
  
  	arg.tos = ip_hdr(skb)->tos;
  	arg.uid = sock_net_uid(net, sk && sk_fullsock(sk) ? sk : NULL);
@@ -39,7 +39,7 @@ index a08d68e..851f241 100644
  	ip_send_unicast_reply(*this_cpu_ptr(net->ipv4.tcp_sk),
  			      skb, &TCP_SKB_CB(skb)->header.h4.opt,
  			      ip_hdr(skb)->saddr, ip_hdr(skb)->daddr,
-@@ -720,8 +720,8 @@ static void tcp_v4_send_reset(const struct sock *sk, struct sk_buff *skb)
+@@ -721,8 +721,8 @@ static void tcp_v4_send_reset(const struct sock *sk, struct sk_buff *skb)
  
  	__TCP_INC_STATS(net, TCP_MIB_OUTSEGS);
  	__TCP_INC_STATS(net, TCP_MIB_OUTRSTS);
@@ -49,7 +49,7 @@ index a08d68e..851f241 100644
  
  #ifdef CONFIG_TCP_MD5SIG
  out:
-@@ -799,16 +799,16 @@ static void tcp_v4_send_ack(const struct sock *sk,
+@@ -800,16 +800,16 @@ static void tcp_v4_send_ack(const struct sock *sk,
  		arg.bound_dev_if = oif;
  	arg.tos = tos;
  	arg.uid = sock_net_uid(net, sk_fullsock(sk) ? sk : NULL);

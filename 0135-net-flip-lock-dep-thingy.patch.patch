@@ -93,10 +93,10 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 1 insertion(+), 2 deletions(-)
 
 diff --git a/net/core/sock.c b/net/core/sock.c
-index 01cae48..e7978eb 100644
+index a885795..7b7fe02 100644
 --- a/net/core/sock.c
 +++ b/net/core/sock.c
-@@ -2760,12 +2760,11 @@ void lock_sock_nested(struct sock *sk, int subclass)
+@@ -2761,12 +2761,11 @@ void lock_sock_nested(struct sock *sk, int subclass)
  	if (sk->sk_lock.owned)
  		__lock_sock(sk);
  	sk->sk_lock.owned = 1;

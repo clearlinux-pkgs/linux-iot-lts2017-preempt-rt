@@ -67,7 +67,7 @@ index ade8493..c74b329 100644
  
  static inline unsigned long rb_page_entries(struct buffer_page *bpage)
 diff --git a/kernel/trace/trace.c b/kernel/trace/trace.c
-index f3d7c25..ffb6727 100644
+index f568bd0..f9701d1 100644
 --- a/kernel/trace/trace.c
 +++ b/kernel/trace/trace.c
 @@ -2275,7 +2275,7 @@ trace_event_buffer_lock_reserve(struct ring_buffer **current_rb,
@@ -79,7 +79,7 @@ index f3d7c25..ffb6727 100644
  	     (EVENT_FILE_FL_SOFT_DISABLED | EVENT_FILE_FL_FILTERED)) &&
  	    (entry = this_cpu_read(trace_buffered_event))) {
  		/* Try to use the per cpu buffer first */
-@@ -6298,6 +6298,37 @@ static int tracing_clock_open(struct inode *inode, struct file *file)
+@@ -6300,6 +6300,37 @@ static int tracing_clock_open(struct inode *inode, struct file *file)
  	return ret;
  }
  

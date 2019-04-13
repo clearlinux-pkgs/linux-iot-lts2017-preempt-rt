@@ -70,7 +70,7 @@ index 1689c83..675cbae 100644
   * Wrappers for p->thread_info->cpu access. No-op on UP.
   */
 diff --git a/kernel/locking/rtmutex.c b/kernel/locking/rtmutex.c
-index 53b510d..08e233b 100644
+index 0407766..2cf5158 100644
 --- a/kernel/locking/rtmutex.c
 +++ b/kernel/locking/rtmutex.c
 @@ -1141,6 +1141,7 @@ void __sched rt_spin_lock_slowunlock(struct rt_mutex *lock)

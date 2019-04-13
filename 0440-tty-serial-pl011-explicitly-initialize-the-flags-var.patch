@@ -29,7 +29,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/drivers/tty/serial/amba-pl011.c b/drivers/tty/serial/amba-pl011.c
-index 81d6b15..9379db8 100644
+index 938d4db..1c18040 100644
 --- a/drivers/tty/serial/amba-pl011.c
 +++ b/drivers/tty/serial/amba-pl011.c
 @@ -2231,7 +2231,7 @@ pl011_console_write(struct console *co, const char *s, unsigned int count)

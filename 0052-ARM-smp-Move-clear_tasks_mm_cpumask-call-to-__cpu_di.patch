@@ -65,10 +65,10 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 1 insertion(+), 2 deletions(-)
 
 diff --git a/arch/arm/kernel/smp.c b/arch/arm/kernel/smp.c
-index e61af06..d8f2e77 100644
+index f57333f..9bac54e 100644
 --- a/arch/arm/kernel/smp.c
 +++ b/arch/arm/kernel/smp.c
-@@ -237,8 +237,6 @@ int __cpu_disable(void)
+@@ -266,8 +266,6 @@ int __cpu_disable(void)
  	flush_cache_louis();
  	local_flush_tlb_all();
  
@@ -77,7 +77,7 @@ index e61af06..d8f2e77 100644
  	return 0;
  }
  
-@@ -256,6 +254,7 @@ void __cpu_die(unsigned int cpu)
+@@ -285,6 +283,7 @@ void __cpu_die(unsigned int cpu)
  	}
  	pr_debug("CPU%u: shutdown\n", cpu);
  

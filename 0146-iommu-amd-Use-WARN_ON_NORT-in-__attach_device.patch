@@ -16,10 +16,10 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 6 insertions(+), 6 deletions(-)
 
 diff --git a/drivers/iommu/amd_iommu.c b/drivers/iommu/amd_iommu.c
-index 876947f..7d9d41f 100644
+index 5949f2b..e0f97ea 100644
 --- a/drivers/iommu/amd_iommu.c
 +++ b/drivers/iommu/amd_iommu.c
-@@ -1943,10 +1943,10 @@ static int __attach_device(struct iommu_dev_data *dev_data,
+@@ -1957,10 +1957,10 @@ static int __attach_device(struct iommu_dev_data *dev_data,
  	int ret;
  
  	/*
@@ -33,7 +33,7 @@ index 876947f..7d9d41f 100644
  
  	/* lock domain */
  	spin_lock(&domain->lock);
-@@ -2114,10 +2114,10 @@ static void __detach_device(struct iommu_dev_data *dev_data)
+@@ -2128,10 +2128,10 @@ static void __detach_device(struct iommu_dev_data *dev_data)
  	struct protection_domain *domain;
  
  	/*

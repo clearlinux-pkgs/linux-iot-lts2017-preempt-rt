@@ -27,7 +27,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/mm/backing-dev.c b/mm/backing-dev.c
-index 9386c98..5e9d804 100644
+index 6fa3175..a290f1f 100644
 --- a/mm/backing-dev.c
 +++ b/mm/backing-dev.c
 @@ -470,9 +470,9 @@ void wb_congested_put(struct bdi_writeback_congested *congested)

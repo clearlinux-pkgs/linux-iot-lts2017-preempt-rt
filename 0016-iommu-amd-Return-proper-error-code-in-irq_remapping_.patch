@@ -19,10 +19,10 @@ Signed-off-by: Joerg Roedel <jroedel@suse.de>
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/drivers/iommu/amd_iommu.c b/drivers/iommu/amd_iommu.c
-index 6700803..876947f 100644
+index f9cc066..5949f2b 100644
 --- a/drivers/iommu/amd_iommu.c
 +++ b/drivers/iommu/amd_iommu.c
-@@ -4100,7 +4100,7 @@ static int irq_remapping_alloc(struct irq_domain *domain, unsigned int virq,
+@@ -4114,7 +4114,7 @@ static int irq_remapping_alloc(struct irq_domain *domain, unsigned int virq,
  	struct amd_ir_data *data = NULL;
  	struct irq_cfg *cfg;
  	int i, ret, devid;
@@ -31,7 +31,7 @@ index 6700803..876947f 100644
  
  	if (!info)
  		return -EINVAL;
-@@ -4142,7 +4142,7 @@ static int irq_remapping_alloc(struct irq_domain *domain, unsigned int virq,
+@@ -4156,7 +4156,7 @@ static int irq_remapping_alloc(struct irq_domain *domain, unsigned int virq,
  			WARN_ON(table->min_index != 32);
  			index = info->ioapic_pin;
  		} else {

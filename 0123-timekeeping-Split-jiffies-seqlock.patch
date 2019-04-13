@@ -135,10 +135,10 @@ index 67e2b79..296b623 100644
  
  	/*
 diff --git a/kernel/time/timekeeping.c b/kernel/time/timekeeping.c
-index 2cafb49..2720f2c 100644
+index 1ce7c40..1c54ead 100644
 --- a/kernel/time/timekeeping.c
 +++ b/kernel/time/timekeeping.c
-@@ -2326,8 +2326,10 @@ EXPORT_SYMBOL(hardpps);
+@@ -2328,8 +2328,10 @@ EXPORT_SYMBOL(hardpps);
   */
  void xtime_update(unsigned long ticks)
  {

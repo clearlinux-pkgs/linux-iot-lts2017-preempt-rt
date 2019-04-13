@@ -52,7 +52,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  2 files changed, 32 insertions(+), 1 deletion(-)
 
 diff --git a/kernel/locking/rtmutex.c b/kernel/locking/rtmutex.c
-index 65c50c8..ea8dd82 100644
+index c8922d2..38b14a4 100644
 --- a/kernel/locking/rtmutex.c
 +++ b/kernel/locking/rtmutex.c
 @@ -137,7 +137,8 @@ static void fixup_rt_mutex_waiters(struct rt_mutex *lock)
@@ -65,7 +65,7 @@ index 65c50c8..ea8dd82 100644
  }
  
  /*
-@@ -1764,6 +1765,35 @@ int __rt_mutex_start_proxy_lock(struct rt_mutex *lock,
+@@ -1785,6 +1786,35 @@ int __rt_mutex_start_proxy_lock(struct rt_mutex *lock,
  	if (try_to_take_rt_mutex(lock, task, NULL))
  		return 1;
  

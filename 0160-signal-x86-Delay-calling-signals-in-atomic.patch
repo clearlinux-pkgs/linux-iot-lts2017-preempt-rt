@@ -93,10 +93,10 @@ index 92f7f58..a7d48ad 100644
  	size_t				sas_ss_size;
  	unsigned int			sas_ss_flags;
 diff --git a/kernel/signal.c b/kernel/signal.c
-index 374d60e..c626604 100644
+index 96d6f75..dd90b77 100644
 --- a/kernel/signal.c
 +++ b/kernel/signal.c
-@@ -1237,8 +1237,8 @@ int do_send_sig_info(int sig, struct siginfo *info, struct task_struct *p,
+@@ -1279,8 +1279,8 @@ int do_send_sig_info(int sig, struct siginfo *info, struct task_struct *p,
   * We don't want to have recursive SIGSEGV's etc, for example,
   * that is why we also clear SIGNAL_UNKILLABLE.
   */
@@ -107,7 +107,7 @@ index 374d60e..c626604 100644
  {
  	unsigned long int flags;
  	int ret, blocked, ignored;
-@@ -1267,6 +1267,39 @@ force_sig_info(int sig, struct siginfo *info, struct task_struct *t)
+@@ -1309,6 +1309,39 @@ force_sig_info(int sig, struct siginfo *info, struct task_struct *t)
  	return ret;
  }
  

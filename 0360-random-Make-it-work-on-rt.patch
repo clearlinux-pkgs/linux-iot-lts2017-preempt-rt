@@ -57,10 +57,10 @@ index 8a6228a..29a46c3 100644
  	fast_mix(fast_pool);
  	add_interrupt_bench(cycles);
 diff --git a/drivers/hv/vmbus_drv.c b/drivers/hv/vmbus_drv.c
-index 4218a61..fd64abb 100644
+index 1fd812e..b8af02e 100644
 --- a/drivers/hv/vmbus_drv.c
 +++ b/drivers/hv/vmbus_drv.c
-@@ -986,6 +986,8 @@ static void vmbus_isr(void)
+@@ -1017,6 +1017,8 @@ static void vmbus_isr(void)
  	void *page_addr = hv_cpu->synic_event_page;
  	struct hv_message *msg;
  	union hv_synic_event_flags *event;
@@ -69,7 +69,7 @@ index 4218a61..fd64abb 100644
  	bool handled = false;
  
  	if (unlikely(page_addr == NULL))
-@@ -1029,7 +1031,7 @@ static void vmbus_isr(void)
+@@ -1060,7 +1062,7 @@ static void vmbus_isr(void)
  			tasklet_schedule(&hv_cpu->msg_dpc);
  	}
  
@@ -126,10 +126,10 @@ index 79f987b..d1dbacc 100644
  	if (!noirqdebug)
  		note_interrupt(desc, retval);
 diff --git a/kernel/irq/manage.c b/kernel/irq/manage.c
-index 400eca8..01b282d 100644
+index db8af42..5871957 100644
 --- a/kernel/irq/manage.c
 +++ b/kernel/irq/manage.c
-@@ -1031,6 +1031,12 @@ static int irq_thread(void *data)
+@@ -1034,6 +1034,12 @@ static int irq_thread(void *data)
  		if (action_ret == IRQ_WAKE_THREAD)
  			irq_wake_secondary(desc, action);
  

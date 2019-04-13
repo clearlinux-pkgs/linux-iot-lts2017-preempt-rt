@@ -25,7 +25,7 @@ index 6fd615a..81ece6a 100644
  			       struct hrtimer_sleeper *timeout);
  
 diff --git a/kernel/locking/rtmutex.c b/kernel/locking/rtmutex.c
-index 935adbb..fb6bb56 100644
+index a697bc0..1a7fdfd 100644
 --- a/kernel/locking/rtmutex.c
 +++ b/kernel/locking/rtmutex.c
 @@ -1563,6 +1563,25 @@ int __sched __rt_mutex_futex_trylock(struct rt_mutex *lock)
