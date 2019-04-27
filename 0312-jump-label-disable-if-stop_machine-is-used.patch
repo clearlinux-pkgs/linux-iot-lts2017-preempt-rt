@@ -24,7 +24,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/arch/arm/Kconfig b/arch/arm/Kconfig
-index d1346a1..e572216 100644
+index cf69aab..4616b53 100644
 --- a/arch/arm/Kconfig
 +++ b/arch/arm/Kconfig
 @@ -45,7 +45,7 @@ config ARM

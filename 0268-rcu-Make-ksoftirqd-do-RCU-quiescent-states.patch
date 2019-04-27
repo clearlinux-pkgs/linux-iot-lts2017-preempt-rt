@@ -45,7 +45,7 @@ index 104fa2b..70996e1 100644
  void rcu_report_dead(unsigned int cpu);
  void rcu_cpu_starting(unsigned int cpu);
 diff --git a/kernel/rcu/tree.c b/kernel/rcu/tree.c
-index f9d942d..5e99104 100644
+index ac51abf..1a0baf9 100644
 --- a/kernel/rcu/tree.c
 +++ b/kernel/rcu/tree.c
 @@ -243,7 +243,14 @@ void rcu_sched_qs(void)

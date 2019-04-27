@@ -21,10 +21,10 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 32 insertions(+), 5 deletions(-)
 
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
-index 0803b84..0b73852 100644
+index e283828..38a59ed 100644
 --- a/kernel/trace/trace_events_hist.c
 +++ b/kernel/trace/trace_events_hist.c
-@@ -5164,7 +5164,7 @@ static int event_hist_trigger_func(struct event_command *cmd_ops,
+@@ -5165,7 +5165,7 @@ static int event_hist_trigger_func(struct event_command *cmd_ops,
  	struct synth_event *se;
  	const char *se_name;
  	bool remove = false;
@@ -33,7 +33,7 @@ index 0803b84..0b73852 100644
  	int ret = 0;
  
  	if (!param)
-@@ -5173,10 +5173,37 @@ static int event_hist_trigger_func(struct event_command *cmd_ops,
+@@ -5174,10 +5174,37 @@ static int event_hist_trigger_func(struct event_command *cmd_ops,
  	if (glob[0] == '!')
  		remove = true;
  

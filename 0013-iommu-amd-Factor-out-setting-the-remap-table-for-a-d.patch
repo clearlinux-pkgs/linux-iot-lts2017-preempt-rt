@@ -19,10 +19,10 @@ Signed-off-by: Joerg Roedel <jroedel@suse.de>
  1 file changed, 12 insertions(+), 11 deletions(-)
 
 diff --git a/drivers/iommu/amd_iommu.c b/drivers/iommu/amd_iommu.c
-index 9f44b8b..a8916d1 100644
+index 38ca33b..1e9a5f0 100644
 --- a/drivers/iommu/amd_iommu.c
 +++ b/drivers/iommu/amd_iommu.c
-@@ -3614,6 +3614,14 @@ static struct irq_remap_table *get_irq_table(u16 devid)
+@@ -3619,6 +3619,14 @@ static struct irq_remap_table *get_irq_table(u16 devid)
  	return table;
  }
  
@@ -37,7 +37,7 @@ index 9f44b8b..a8916d1 100644
  static struct irq_remap_table *alloc_irq_table(u16 devid)
  {
  	struct irq_remap_table *table = NULL;
-@@ -3634,9 +3642,7 @@ static struct irq_remap_table *alloc_irq_table(u16 devid)
+@@ -3639,9 +3647,7 @@ static struct irq_remap_table *alloc_irq_table(u16 devid)
  	alias = amd_iommu_alias_table[devid];
  	table = irq_lookup_table[alias];
  	if (table) {
@@ -48,7 +48,7 @@ index 9f44b8b..a8916d1 100644
  		goto out;
  	}
  
-@@ -3663,14 +3669,9 @@ static struct irq_remap_table *alloc_irq_table(u16 devid)
+@@ -3668,14 +3674,9 @@ static struct irq_remap_table *alloc_irq_table(u16 devid)
  		       (MAX_IRQS_PER_TABLE * (sizeof(u64) * 2)));
  
  

@@ -26,10 +26,10 @@ Signed-off-by: Joerg Roedel <jroedel@suse.de>
  1 file changed, 45 insertions(+), 18 deletions(-)
 
 diff --git a/drivers/iommu/amd_iommu.c b/drivers/iommu/amd_iommu.c
-index a8916d1..be051e2 100644
+index 1e9a5f0..0051c69 100644
 --- a/drivers/iommu/amd_iommu.c
 +++ b/drivers/iommu/amd_iommu.c
-@@ -3614,6 +3614,30 @@ static struct irq_remap_table *get_irq_table(u16 devid)
+@@ -3619,6 +3619,30 @@ static struct irq_remap_table *get_irq_table(u16 devid)
  	return table;
  }
  
@@ -60,7 +60,7 @@ index a8916d1..be051e2 100644
  static void set_remap_table_entry(struct amd_iommu *iommu, u16 devid,
  				  struct irq_remap_table *table)
  {
-@@ -3625,6 +3649,7 @@ static void set_remap_table_entry(struct amd_iommu *iommu, u16 devid,
+@@ -3630,6 +3654,7 @@ static void set_remap_table_entry(struct amd_iommu *iommu, u16 devid,
  static struct irq_remap_table *alloc_irq_table(u16 devid)
  {
  	struct irq_remap_table *table = NULL;
@@ -68,7 +68,7 @@ index a8916d1..be051e2 100644
  	struct amd_iommu *iommu;
  	unsigned long flags;
  	u16 alias;
-@@ -3643,42 +3668,44 @@ static struct irq_remap_table *alloc_irq_table(u16 devid)
+@@ -3648,42 +3673,44 @@ static struct irq_remap_table *alloc_irq_table(u16 devid)
  	table = irq_lookup_table[alias];
  	if (table) {
  		set_remap_table_entry(iommu, devid, table);

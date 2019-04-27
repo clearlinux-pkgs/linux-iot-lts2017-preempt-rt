@@ -20,10 +20,10 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  3 files changed, 13 insertions(+), 12 deletions(-)
 
 diff --git a/arch/arm/Kconfig b/arch/arm/Kconfig
-index e572216..ac05a02 100644
+index 4616b53..c1671f0 100644
 --- a/arch/arm/Kconfig
 +++ b/arch/arm/Kconfig
-@@ -2164,7 +2164,7 @@ config NEON
+@@ -2165,7 +2165,7 @@ config NEON
  
  config KERNEL_MODE_NEON
  	bool "Support for NEON in kernel mode"

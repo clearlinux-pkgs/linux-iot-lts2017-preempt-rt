@@ -404,7 +404,7 @@ index 74e2b69..c149c05 100644
  	account_kernel_stack(tsk, 1);
  
 diff --git a/kernel/futex.c b/kernel/futex.c
-index 2568a2a..68f11e7 100644
+index 05582a9..6e5a785 100644
 --- a/kernel/futex.c
 +++ b/kernel/futex.c
 @@ -1492,6 +1492,7 @@ static int wake_futex_pi(u32 __user *uaddr, u32 uval, struct futex_pi_state *pi_

@@ -72,10 +72,10 @@ index 6d58800..b72d8c5 100644
  }
  
 diff --git a/kernel/rcu/tree.c b/kernel/rcu/tree.c
-index f37d06e..9eb9cfc 100644
+index 74c47a6..9efab68 100644
 --- a/kernel/rcu/tree.c
 +++ b/kernel/rcu/tree.c
-@@ -3784,8 +3784,6 @@ int rcutree_online_cpu(unsigned int cpu)
+@@ -3792,8 +3792,6 @@ int rcutree_online_cpu(unsigned int cpu)
  {
  	sync_sched_exp_online_cleanup(cpu);
  	rcutree_affinity_setting(cpu, -1);
@@ -84,7 +84,7 @@ index f37d06e..9eb9cfc 100644
  	return 0;
  }
  
-@@ -3796,8 +3794,6 @@ int rcutree_online_cpu(unsigned int cpu)
+@@ -3804,8 +3802,6 @@ int rcutree_online_cpu(unsigned int cpu)
  int rcutree_offline_cpu(unsigned int cpu)
  {
  	rcutree_affinity_setting(cpu, cpu);
@@ -93,7 +93,7 @@ index f37d06e..9eb9cfc 100644
  	return 0;
  }
  
-@@ -4245,8 +4241,6 @@ void __init rcu_init(void)
+@@ -4253,8 +4249,6 @@ void __init rcu_init(void)
  	for_each_online_cpu(cpu) {
  		rcutree_prepare_cpu(cpu);
  		rcu_cpu_starting(cpu);

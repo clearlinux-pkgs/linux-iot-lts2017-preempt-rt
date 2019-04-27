@@ -15,7 +15,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  3 files changed, 94 insertions(+), 21 deletions(-)
 
 diff --git a/kernel/futex.c b/kernel/futex.c
-index 2f39503..3ff1a2e 100644
+index bd0b452..8c14720 100644
 --- a/kernel/futex.c
 +++ b/kernel/futex.c
 @@ -2164,6 +2164,16 @@ static int futex_requeue(u32 __user *uaddr1, unsigned int flags,

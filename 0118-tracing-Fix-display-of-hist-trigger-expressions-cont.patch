@@ -28,7 +28,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 5 insertions(+), 14 deletions(-)
 
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
-index 49afef3..85b032a 100644
+index 20a7958..4ca1059 100644
 --- a/kernel/trace/trace_events_hist.c
 +++ b/kernel/trace/trace_events_hist.c
 @@ -1686,8 +1686,6 @@ static const char *hist_field_name(struct hist_field *field,
@@ -50,7 +50,7 @@ index 49afef3..85b032a 100644
  
  	if (field_name == NULL)
  		field_name = "";
-@@ -4859,23 +4858,15 @@ static void hist_field_print(struct seq_file *m, struct hist_field *hist_field)
+@@ -4860,23 +4859,15 @@ static void hist_field_print(struct seq_file *m, struct hist_field *hist_field)
  	if (hist_field->var.name)
  		seq_printf(m, "%s=", hist_field->var.name);
  

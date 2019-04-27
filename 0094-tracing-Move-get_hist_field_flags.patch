@@ -17,7 +17,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 22 insertions(+), 22 deletions(-)
 
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
-index 68ff249..c6c24d6 100644
+index 638717f..e5a29aa 100644
 --- a/kernel/trace/trace_events_hist.c
 +++ b/kernel/trace/trace_events_hist.c
 @@ -497,6 +497,28 @@ static const struct tracing_map_ops hist_trigger_elt_comm_ops = {
@@ -49,7 +49,7 @@ index 68ff249..c6c24d6 100644
  static void destroy_hist_field(struct hist_field *hist_field,
  			       unsigned int level)
  {
-@@ -1497,28 +1519,6 @@ const struct file_operations event_hist_fops = {
+@@ -1498,28 +1520,6 @@ const struct file_operations event_hist_fops = {
  	.release = single_release,
  };
  

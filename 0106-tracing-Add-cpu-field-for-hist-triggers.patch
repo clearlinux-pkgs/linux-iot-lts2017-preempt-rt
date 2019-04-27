@@ -44,7 +44,7 @@ index 25c9473..be612ca 100644
  6.2 'hist' trigger examples
  ---------------------------
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
-index 0b73852..34a2e8d 100644
+index 38a59ed..5155564 100644
 --- a/kernel/trace/trace_events_hist.c
 +++ b/kernel/trace/trace_events_hist.c
 @@ -227,6 +227,7 @@ enum hist_field_flags {
@@ -108,7 +108,7 @@ index 0b73852..34a2e8d 100644
  		field = trace_find_event_field(file->event_call, field_name);
  		if (!field || !field->size) {
  			field = ERR_PTR(-EINVAL);
-@@ -4621,6 +4645,8 @@ static void hist_field_print(struct seq_file *m, struct hist_field *hist_field)
+@@ -4622,6 +4646,8 @@ static void hist_field_print(struct seq_file *m, struct hist_field *hist_field)
  
  	if (hist_field->flags & HIST_FIELD_FL_TIMESTAMP)
  		seq_puts(m, "common_timestamp");

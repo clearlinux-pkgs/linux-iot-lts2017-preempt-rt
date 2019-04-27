@@ -47,7 +47,7 @@ index 85395dc..d6c8ed0 100644
  				cc->last_migrated_pfn = 0;
  			}
 diff --git a/mm/page_alloc.c b/mm/page_alloc.c
-index fca84cf..6cf23f0 100644
+index 819e7b6..875e4aa 100644
 --- a/mm/page_alloc.c
 +++ b/mm/page_alloc.c
 @@ -6835,8 +6835,9 @@ void __init free_area_init(unsigned long *zones_size)

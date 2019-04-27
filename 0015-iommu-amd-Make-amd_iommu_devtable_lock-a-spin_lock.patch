@@ -20,7 +20,7 @@ Signed-off-by: Joerg Roedel <jroedel@suse.de>
  1 file changed, 7 insertions(+), 7 deletions(-)
 
 diff --git a/drivers/iommu/amd_iommu.c b/drivers/iommu/amd_iommu.c
-index be051e2..f9cc066 100644
+index 0051c69..e78fa4b 100644
 --- a/drivers/iommu/amd_iommu.c
 +++ b/drivers/iommu/amd_iommu.c
 @@ -81,7 +81,7 @@
@@ -56,7 +56,7 @@ index be051e2..f9cc066 100644
  
  	if (!dev_is_pci(dev))
  		return;
-@@ -2824,7 +2824,7 @@ static void cleanup_domain(struct protection_domain *domain)
+@@ -2829,7 +2829,7 @@ static void cleanup_domain(struct protection_domain *domain)
  	struct iommu_dev_data *entry;
  	unsigned long flags;
  
@@ -65,7 +65,7 @@ index be051e2..f9cc066 100644
  
  	while (!list_empty(&domain->dev_list)) {
  		entry = list_first_entry(&domain->dev_list,
-@@ -2832,7 +2832,7 @@ static void cleanup_domain(struct protection_domain *domain)
+@@ -2837,7 +2837,7 @@ static void cleanup_domain(struct protection_domain *domain)
  		__detach_device(entry);
  	}
  

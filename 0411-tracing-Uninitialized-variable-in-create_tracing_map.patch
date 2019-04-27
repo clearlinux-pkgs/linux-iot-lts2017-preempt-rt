@@ -22,7 +22,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
-index 4745ed5..b380896 100644
+index c8a2158..c03aa4b 100644
 --- a/kernel/trace/trace_events_hist.c
 +++ b/kernel/trace/trace_events_hist.c
 @@ -4459,7 +4459,7 @@ static int create_tracing_map_fields(struct hist_trigger_data *hist_data)

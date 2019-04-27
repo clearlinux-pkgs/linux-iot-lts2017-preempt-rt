@@ -16,7 +16,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  6 files changed, 33 insertions(+), 8 deletions(-)
 
 diff --git a/arch/arm/Kconfig b/arch/arm/Kconfig
-index ac05a02..558b099 100644
+index c1671f0..1331286 100644
 --- a/arch/arm/Kconfig
 +++ b/arch/arm/Kconfig
 @@ -85,6 +85,7 @@ config ARM

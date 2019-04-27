@@ -17,10 +17,10 @@ Signed-off-by: Joerg Roedel <jroedel@suse.de>
  1 file changed, 1 insertion(+), 3 deletions(-)
 
 diff --git a/drivers/iommu/amd_iommu.c b/drivers/iommu/amd_iommu.c
-index d4b2691..bfea850 100644
+index 6944344..b497c4d 100644
 --- a/drivers/iommu/amd_iommu.c
 +++ b/drivers/iommu/amd_iommu.c
-@@ -3883,10 +3883,8 @@ static void irte_ga_set_affinity(void *entry, u16 devid, u16 index,
+@@ -3888,10 +3888,8 @@ static void irte_ga_set_affinity(void *entry, u16 devid, u16 index,
  				 u8 vector, u32 dest_apicid)
  {
  	struct irte_ga *irte = (struct irte_ga *) entry;

@@ -21,10 +21,10 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 6 insertions(+), 1 deletion(-)
 
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
-index b430154..68ff249 100644
+index 1bc92b9..638717f 100644
 --- a/kernel/trace/trace_events_hist.c
 +++ b/kernel/trace/trace_events_hist.c
-@@ -1612,7 +1612,7 @@ static int event_hist_trigger_print(struct seq_file *m,
+@@ -1613,7 +1613,7 @@ static int event_hist_trigger_print(struct seq_file *m,
  		sort_key = &hist_data->sort_keys[i];
  		idx = sort_key->field_idx;
  
@@ -33,7 +33,7 @@ index b430154..68ff249 100644
  			return -EINVAL;
  
  		if (i > 0)
-@@ -1800,6 +1800,11 @@ static bool hist_trigger_match(struct event_trigger_data *data,
+@@ -1801,6 +1801,11 @@ static bool hist_trigger_match(struct event_trigger_data *data,
  			return false;
  		if (key_field->is_signed != key_field_test->is_signed)
  			return false;

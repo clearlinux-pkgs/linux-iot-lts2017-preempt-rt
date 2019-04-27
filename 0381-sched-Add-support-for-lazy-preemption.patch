@@ -510,7 +510,7 @@ index 4401be3..3df09c7 100644
  extern void init_rt_bandwidth(struct rt_bandwidth *rt_b, u64 period, u64 runtime);
  
 diff --git a/kernel/trace/trace.c b/kernel/trace/trace.c
-index a7eb47c..9605743 100644
+index acbb9cb..d36a145 100644
 --- a/kernel/trace/trace.c
 +++ b/kernel/trace/trace.c
 @@ -2135,6 +2135,7 @@ tracing_generic_entry_update(struct trace_entry *entry, unsigned long flags,

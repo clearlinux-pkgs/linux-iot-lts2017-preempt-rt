@@ -13,7 +13,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 65 insertions(+), 28 deletions(-)
 
 diff --git a/mm/page_alloc.c b/mm/page_alloc.c
-index 1509eba..fca84cf 100644
+index 39cfa2b..819e7b6 100644
 --- a/mm/page_alloc.c
 +++ b/mm/page_alloc.c
 @@ -1107,7 +1107,7 @@ static bool bulkfree_pcp_prepare(struct page *page)

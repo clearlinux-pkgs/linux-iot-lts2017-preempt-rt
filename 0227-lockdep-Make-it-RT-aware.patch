@@ -58,10 +58,10 @@ index 7834117..2e023bf 100644
  
  #if defined(CONFIG_IRQSOFF_TRACER) || \
 diff --git a/kernel/locking/lockdep.c b/kernel/locking/lockdep.c
-index bf694c7..8012378 100644
+index e57be70..2ca502c 100644
 --- a/kernel/locking/lockdep.c
 +++ b/kernel/locking/lockdep.c
-@@ -3914,6 +3914,7 @@ static void check_flags(unsigned long flags)
+@@ -3917,6 +3917,7 @@ static void check_flags(unsigned long flags)
  		}
  	}
  
@@ -69,7 +69,7 @@ index bf694c7..8012378 100644
  	/*
  	 * We dont accurately track softirq state in e.g.
  	 * hardirq contexts (such as on 4KSTACKS), so only
-@@ -3928,6 +3929,7 @@ static void check_flags(unsigned long flags)
+@@ -3931,6 +3932,7 @@ static void check_flags(unsigned long flags)
  			DEBUG_LOCKS_WARN_ON(!current->softirqs_enabled);
  		}
  	}

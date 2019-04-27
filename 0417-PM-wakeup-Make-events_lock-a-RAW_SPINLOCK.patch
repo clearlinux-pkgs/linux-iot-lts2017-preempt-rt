@@ -16,7 +16,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
  1 file changed, 9 insertions(+), 9 deletions(-)
 
 diff --git a/drivers/base/power/wakeup.c b/drivers/base/power/wakeup.c
-index cdd6f25..2269d37 100644
+index df53e2b..2624ac3 100644
 --- a/drivers/base/power/wakeup.c
 +++ b/drivers/base/power/wakeup.c
 @@ -52,7 +52,7 @@ static void split_counters(unsigned int *cnt, unsigned int *inpr)
@@ -28,7 +28,7 @@ index cdd6f25..2269d37 100644
  
  static void pm_wakeup_timer_fn(unsigned long data);
  
-@@ -180,9 +180,9 @@ void wakeup_source_add(struct wakeup_source *ws)
+@@ -179,9 +179,9 @@ void wakeup_source_add(struct wakeup_source *ws)
  	ws->active = false;
  	ws->last_time = ktime_get();
  
@@ -40,7 +40,7 @@ index cdd6f25..2269d37 100644
  }
  EXPORT_SYMBOL_GPL(wakeup_source_add);
  
-@@ -197,9 +197,9 @@ void wakeup_source_remove(struct wakeup_source *ws)
+@@ -196,9 +196,9 @@ void wakeup_source_remove(struct wakeup_source *ws)
  	if (WARN_ON(!ws))
  		return;
  
@@ -50,9 +50,9 @@ index cdd6f25..2269d37 100644
 -	spin_unlock_irqrestore(&events_lock, flags);
 +	raw_spin_unlock_irqrestore(&events_lock, flags);
  	synchronize_srcu(&wakeup_srcu);
- }
- EXPORT_SYMBOL_GPL(wakeup_source_remove);
-@@ -844,7 +844,7 @@ bool pm_wakeup_pending(void)
+ 
+ 	del_timer_sync(&ws->timer);
+@@ -850,7 +850,7 @@ bool pm_wakeup_pending(void)
  	unsigned long flags;
  	bool ret = false;
  
@@ -61,7 +61,7 @@ index cdd6f25..2269d37 100644
  	if (events_check_enabled) {
  		unsigned int cnt, inpr;
  
-@@ -852,7 +852,7 @@ bool pm_wakeup_pending(void)
+@@ -858,7 +858,7 @@ bool pm_wakeup_pending(void)
  		ret = (cnt != saved_count || inpr > 0);
  		events_check_enabled = !ret;
  	}
@@ -70,7 +70,7 @@ index cdd6f25..2269d37 100644
  
  	if (ret) {
  		pr_info("PM: Wakeup pending, aborting suspend\n");
-@@ -941,13 +941,13 @@ bool pm_save_wakeup_count(unsigned int count)
+@@ -947,13 +947,13 @@ bool pm_save_wakeup_count(unsigned int count)
  	unsigned long flags;
  
  	events_check_enabled = false;

@@ -23,7 +23,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  3 files changed, 115 insertions(+), 154 deletions(-)
 
 diff --git a/kernel/rcu/tree.c b/kernel/rcu/tree.c
-index 9eb9cfc..06bd35f 100644
+index 9efab68..955aa89 100644
 --- a/kernel/rcu/tree.c
 +++ b/kernel/rcu/tree.c
 @@ -58,6 +58,11 @@
@@ -38,7 +38,7 @@ index 9eb9cfc..06bd35f 100644
  
  #include "tree.h"
  #include "rcu.h"
-@@ -2955,18 +2960,17 @@ __rcu_process_callbacks(struct rcu_state *rsp)
+@@ -2963,18 +2968,17 @@ __rcu_process_callbacks(struct rcu_state *rsp)
  /*
   * Do RCU core processing for the current CPU.
   */
@@ -59,7 +59,7 @@ index 9eb9cfc..06bd35f 100644
  /*
   * Schedule RCU callback invocation.  If the specified type of RCU
   * does not support RCU priority boosting, just do a direct call,
-@@ -2978,18 +2982,105 @@ static void invoke_rcu_callbacks(struct rcu_state *rsp, struct rcu_data *rdp)
+@@ -2986,18 +2990,105 @@ static void invoke_rcu_callbacks(struct rcu_state *rsp, struct rcu_data *rdp)
  {
  	if (unlikely(!READ_ONCE(rcu_scheduler_fully_active)))
  		return;
@@ -172,7 +172,7 @@ index 9eb9cfc..06bd35f 100644
  
  /*
   * Handle any core-RCU processing required by a call_rcu() invocation.
-@@ -4230,7 +4321,6 @@ void __init rcu_init(void)
+@@ -4238,7 +4329,6 @@ void __init rcu_init(void)
  	if (dump_tree)
  		rcu_dump_rcu_node_tree(&rcu_sched_state);
  	__rcu_init_preempt();
