@@ -25,7 +25,7 @@ Requires: systemd-bin
 
 # quilt.url: https://github.com/intel/linux-intel-quilt
 # quilt.branch: 4.14/preempt-rt
-# quilt.tag:  lts-v4.14.115-preempt-rt-190528T052828Z
+# quilt.tag:  lts-v4.14.126-preempt-rt-190626T040000Z
 
 # PK XXXX: Series
 Patch0001: 0001-rtmutex-Make-rt_mutex_futex_unlock-safe-for-irq-off-.patch
@@ -486,7 +486,7 @@ Patch0455: 0455-x86-lazy-preempt-properly-check-against-preempt-mask.patch
 Patch0456: 0456-hrtimer-cpu_chill-save-task-state-in-saved_state.patch
 Patch0457: 0457-tty-sysrq-Convert-show_lock-to-raw_spinlock_t.patch
 Patch0458: 0458-powerpc-pseries-iommu-Use-a-locallock-instead-local_.patch
-Patch0459: 0459-Linux-4.14.115-rt59-REBASE.patch
+Patch0459: 0459-Linux-4.14.126-rt62-REBASE.patch
 Patch0460: 0460-greybus-Remove-android-make-file.patch
 Patch0461: 0461-AndroidIA-Allow-RenderNode-to-be-used-for-kms-getter.patch
 Patch0462: 0462-thermal-Add-processor-thermal-device-support.patch
@@ -2328,7 +2328,18 @@ Patch2297: 2297-tpm-Correct-tpm-cmd_ready-go_idle-for-upstream-chang.patch
 Patch2298: 2298-xhci-Correct-multiple-line-dev_err-statement.patch
 Patch2299: 2299-media-pci-improper-use-of-pointer-before-verified-as.patch
 Patch2300: 2300-media-pci-Check-pointer-validity-before-use.patch
-Patch2301: 2301-cpu-intel-rdt-update-cpus_allowed.patch
+Patch2301: 2301-x86-speculation-rdt_pseudo_lock-cpu-name-change.patch
+Patch2302: 2302-x86-cpu-fix-FAM6_ATOM-naming.patch
+Patch2303: 2303-media-intel-ipu4-ti960-ov495-frame-sync-setting.patch
+Patch2304: 2304-media-intel-ipu4-Fixing-static-code-check-issue.patch
+Patch2305: 2305-isys-psys-package-lib2600b0-for-commit-id-5efdf9c.patch
+Patch2306: 2306-media-intel-ipu4-pdata-for-OV495-multiport.patch
+Patch2307: 2307-media-intel-ipu4-pdata-change-for-sensors-connected-.patch
+Patch2308: 2308-media-intel-ipu4-ox03a10-add-ficosa-module.patch
+Patch2309: 2309-media-intel-ipu4-ti960-split-ti953-code.patch
+Patch2310: 2310-media-intel-ipu4-ox03a10-Modify-I2C-bus-ID-and-GPIO-.patch
+Patch2311: 2311-media-intel-ipu4-remove-unused-function-and-other-bu.patch
+Patch2312: 2312-cpu-intel-rdt-update-cpus_allowed.patch
 #END XXXX: PK Series
 
 # Clear Linux patch
@@ -4650,6 +4661,17 @@ Linux kernel extra files
 %patch2299 -p1
 %patch2300 -p1
 %patch2301 -p1
+%patch2302 -p1
+%patch2303 -p1
+%patch2304 -p1
+%patch2305 -p1
+%patch2306 -p1
+%patch2307 -p1
+%patch2308 -p1
+%patch2309 -p1
+%patch2310 -p1
+%patch2311 -p1
+%patch2312 -p1
 # End XXXX PK Series
 
 # Clear Linux patch
