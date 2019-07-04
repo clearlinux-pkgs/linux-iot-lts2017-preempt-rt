@@ -11,7 +11,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/block/blk-core.c b/block/blk-core.c
-index 9e3521c..b3edf24 100644
+index 0a8eeda..15c3120 100644
 --- a/block/blk-core.c
 +++ b/block/blk-core.c
 @@ -280,7 +280,7 @@ EXPORT_SYMBOL(blk_start_queue_async);

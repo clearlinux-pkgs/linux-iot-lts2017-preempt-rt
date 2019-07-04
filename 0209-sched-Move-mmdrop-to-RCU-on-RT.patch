@@ -59,10 +59,10 @@ index ef4ae0a..a5b356d 100644
  {
  	struct mm_struct *mm = container_of(work, struct mm_struct, async_put_work);
 diff --git a/kernel/fork.c b/kernel/fork.c
-index 71fb90e..986ced9 100644
+index 8d34933..c8d028f 100644
 --- a/kernel/fork.c
 +++ b/kernel/fork.c
-@@ -929,6 +929,19 @@ void __mmdrop(struct mm_struct *mm)
+@@ -938,6 +938,19 @@ void __mmdrop(struct mm_struct *mm)
  }
  EXPORT_SYMBOL_GPL(__mmdrop);
  
@@ -83,7 +83,7 @@ index 71fb90e..986ced9 100644
  {
  	VM_BUG_ON(atomic_read(&mm->mm_users));
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index 1608faf..0d854e7 100644
+index 7436a3f..dba8102 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -2713,8 +2713,12 @@ static struct rq *finish_task_switch(struct task_struct *prev)

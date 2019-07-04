@@ -29,7 +29,7 @@ Tested-by: Sm, Bhadur A <bhadur.a.sm@intel.com>
  4 files changed, 111 insertions(+), 65 deletions(-)
 
 diff --git a/include/uapi/sound/snd_sst_tokens.h b/include/uapi/sound/snd_sst_tokens.h
-index f160462..9a739dd 100644
+index f160462b..9a739dd 100644
 --- a/include/uapi/sound/snd_sst_tokens.h
 +++ b/include/uapi/sound/snd_sst_tokens.h
 @@ -263,6 +263,8 @@

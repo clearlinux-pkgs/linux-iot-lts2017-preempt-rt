@@ -73,10 +73,10 @@ index 787321a..18b98ae 100644
  #endif
  	WARN_ON_ONCE(!preempt && t->rcu_read_lock_nesting > 0 && !mg_counter);
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index c9f8f06..44c22ff 100644
+index e614266..1b06b86 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
-@@ -7022,4 +7022,49 @@ void migrate_enable(void)
+@@ -7029,4 +7029,49 @@ void migrate_enable(void)
  	preempt_enable();
  }
  EXPORT_SYMBOL(migrate_enable);

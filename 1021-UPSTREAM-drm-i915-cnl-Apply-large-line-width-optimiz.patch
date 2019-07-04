@@ -41,10 +41,10 @@ index 27406f8..4c9311f 100644
  #define  _3D_CHICKEN_SDE_LIMIT_FIFO_POLY_DEPTH(x)	((x)<<1) /* gen8+ */
  #define  _3D_CHICKEN3_SF_DISABLE_PIPELINED_ATTR_FETCH	(1 << 1) /* gen6 */
 diff --git a/drivers/gpu/drm/i915/intel_pm.c b/drivers/gpu/drm/i915/intel_pm.c
-index fda1312..d4b1c56 100644
+index 7446626..d6acd1e 100644
 --- a/drivers/gpu/drm/i915/intel_pm.c
 +++ b/drivers/gpu/drm/i915/intel_pm.c
-@@ -8305,6 +8305,10 @@ static void gen8_set_l3sqc_credits(struct drm_i915_private *dev_priv,
+@@ -8344,6 +8344,10 @@ static void gen8_set_l3sqc_credits(struct drm_i915_private *dev_priv,
  
  static void cannonlake_init_clock_gating(struct drm_i915_private *dev_priv)
  {

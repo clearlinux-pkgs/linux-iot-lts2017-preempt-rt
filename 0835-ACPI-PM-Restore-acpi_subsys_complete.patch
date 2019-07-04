@@ -31,7 +31,7 @@ Signed-off-by: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
  2 files changed, 19 insertions(+), 2 deletions(-)
 
 diff --git a/drivers/acpi/acpi_lpss.c b/drivers/acpi/acpi_lpss.c
-index 482c94c..8c93466 100644
+index e12ab1b..f074b5d 100644
 --- a/drivers/acpi/acpi_lpss.c
 +++ b/drivers/acpi/acpi_lpss.c
 @@ -904,7 +904,7 @@ static struct dev_pm_domain acpi_lpss_pm_domain = {

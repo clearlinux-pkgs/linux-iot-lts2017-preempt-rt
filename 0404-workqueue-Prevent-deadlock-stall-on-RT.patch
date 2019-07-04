@@ -42,7 +42,7 @@ Cc: Steven Rostedt <rostedt@goodmis.org>
  2 files changed, 52 insertions(+), 15 deletions(-)
 
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index 64f3c37..d7bfa2d 100644
+index e47bc28..23537bd 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -3477,9 +3477,8 @@ void __noreturn do_task_dead(void)

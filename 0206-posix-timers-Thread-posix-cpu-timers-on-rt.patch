@@ -57,10 +57,10 @@ index a7d48ad..086c191 100644
  
  	/* Process credentials: */
 diff --git a/kernel/fork.c b/kernel/fork.c
-index fddd217..6a2916a 100644
+index 2da1462..857f6db 100644
 --- a/kernel/fork.c
 +++ b/kernel/fork.c
-@@ -1497,6 +1497,9 @@ static void rt_mutex_init_task(struct task_struct *p)
+@@ -1507,6 +1507,9 @@ static void rt_mutex_init_task(struct task_struct *p)
   */
  static void posix_cpu_timers_init(struct task_struct *tsk)
  {

@@ -11,7 +11,7 @@ Signed-off-by: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
  1 file changed, 4 insertions(+), 4 deletions(-)
 
 diff --git a/drivers/tty/serial/8250/8250_dw.c b/drivers/tty/serial/8250/8250_dw.c
-index 3209d47..e5324d0 100644
+index a5d68cc..cd96da6 100644
 --- a/drivers/tty/serial/8250/8250_dw.c
 +++ b/drivers/tty/serial/8250/8250_dw.c
 @@ -410,10 +410,10 @@ static void dw8250_setup_port(struct uart_port *p)

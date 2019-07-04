@@ -18,7 +18,7 @@ Signed-off-by: Lili Li <lili.li@intel.com>
  1 file changed, 8 insertions(+)
 
 diff --git a/drivers/dma/idma64.c b/drivers/dma/idma64.c
-index 1953e57..2ee93cf 100644
+index f17a4c7..9933017 100644
 --- a/drivers/dma/idma64.c
 +++ b/drivers/dma/idma64.c
 @@ -496,6 +496,13 @@ static int idma64_terminate_all(struct dma_chan *chan)

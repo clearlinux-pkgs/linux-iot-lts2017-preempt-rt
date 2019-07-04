@@ -23,7 +23,7 @@ Link: https://lkml.kernel.org/r/1513810644-78015-4-git-send-email-fenghua.yu@int
  2 files changed, 2 insertions(+)
 
 diff --git a/arch/x86/include/asm/cpufeatures.h b/arch/x86/include/asm/cpufeatures.h
-index e90940e..36b3ba7 100644
+index 48ef9ed..a82d0a5 100644
 --- a/arch/x86/include/asm/cpufeatures.h
 +++ b/arch/x86/include/asm/cpufeatures.h
 @@ -205,6 +205,7 @@

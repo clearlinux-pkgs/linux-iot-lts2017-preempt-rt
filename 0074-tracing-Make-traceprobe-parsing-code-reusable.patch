@@ -28,10 +28,10 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  6 files changed, 103 insertions(+), 103 deletions(-)
 
 diff --git a/kernel/trace/trace.c b/kernel/trace/trace.c
-index 05311e1..3f66529 100644
+index c4e0644..9ca762e 100644
 --- a/kernel/trace/trace.c
 +++ b/kernel/trace/trace.c
-@@ -8286,6 +8286,92 @@ void ftrace_dump(enum ftrace_dump_mode oops_dump_mode)
+@@ -8290,6 +8290,92 @@ void ftrace_dump(enum ftrace_dump_mode oops_dump_mode)
  }
  EXPORT_SYMBOL_GPL(ftrace_dump);
  
@@ -125,10 +125,10 @@ index 05311e1..3f66529 100644
  {
  	int ring_buf_size;
 diff --git a/kernel/trace/trace.h b/kernel/trace/trace.h
-index 851cd16..2215916 100644
+index a51e32d..4f22e07 100644
 --- a/kernel/trace/trace.h
 +++ b/kernel/trace/trace.h
-@@ -1755,6 +1755,13 @@ void trace_printk_start_comm(void);
+@@ -1806,6 +1806,13 @@ void trace_printk_start_comm(void);
  int trace_keep_overwrite(struct tracer *tracer, u32 mask, int set);
  int set_tracer_flag(struct trace_array *tr, unsigned int mask, int enabled);
  

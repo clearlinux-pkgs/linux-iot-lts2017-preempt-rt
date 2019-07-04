@@ -54,10 +54,10 @@ Reviewed-by: Jiang, Fei <fei.jiang@intel.com>
  1 file changed, 1 insertion(+)
 
 diff --git a/drivers/gpu/drm/i915/intel_pm.c b/drivers/gpu/drm/i915/intel_pm.c
-index 8f25ec6..b380c5d 100644
+index 42f9281..7e8c21f 100644
 --- a/drivers/gpu/drm/i915/intel_pm.c
 +++ b/drivers/gpu/drm/i915/intel_pm.c
-@@ -3714,6 +3714,7 @@ bool intel_can_enable_sagv(struct drm_atomic_state *state)
+@@ -3753,6 +3753,7 @@ bool intel_can_enable_sagv(struct drm_atomic_state *state)
  		latency = dev_priv->wm.skl_latency[level];
  
  		if (skl_needs_memory_bw_wa(intel_state) &&

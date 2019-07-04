@@ -25,7 +25,7 @@ index 8b545a9..e27b4d4 100644
  	This selects the support for UFS devices in Linux, say Y and make
  	  sure that you know the name of your UFS host adapter (the card
 diff --git a/drivers/scsi/ufs/ufshcd.c b/drivers/scsi/ufs/ufshcd.c
-index 0403a51..746e2e6 100644
+index 2dae5a6..a3822aa 100644
 --- a/drivers/scsi/ufs/ufshcd.c
 +++ b/drivers/scsi/ufs/ufshcd.c
 @@ -37,13 +37,10 @@
@@ -245,7 +245,7 @@ index 0403a51..746e2e6 100644
  		/* Initialize devfreq after UFS device is detected */
  		if (ufshcd_is_clkscaling_supported(hba)) {
  			memcpy(&hba->clk_scaling.saved_pwr_info.info,
-@@ -7977,8 +7793,6 @@ int ufshcd_shutdown(struct ufs_hba *hba)
+@@ -7989,8 +7805,6 @@ int ufshcd_shutdown(struct ufs_hba *hba)
  			goto out;
  	}
  
@@ -254,7 +254,7 @@ index 0403a51..746e2e6 100644
  	ret = ufshcd_suspend(hba, UFS_SHUTDOWN_PM);
  out:
  	if (ret)
-@@ -7995,10 +7809,7 @@ EXPORT_SYMBOL(ufshcd_shutdown);
+@@ -8007,10 +7821,7 @@ EXPORT_SYMBOL(ufshcd_shutdown);
   */
  void ufshcd_remove(struct ufs_hba *hba)
  {

@@ -29,7 +29,7 @@ Signed-off-by: Jeff Kirsher <jeffrey.t.kirsher@intel.com>
  1 file changed, 16 insertions(+), 1 deletion(-)
 
 diff --git a/drivers/net/ethernet/intel/igb/igb_main.c b/drivers/net/ethernet/intel/igb/igb_main.c
-index 4e96ad9..f46e9ea 100644
+index 8eceba4..1c560c3 100644
 --- a/drivers/net/ethernet/intel/igb/igb_main.c
 +++ b/drivers/net/ethernet/intel/igb/igb_main.c
 @@ -1698,7 +1698,22 @@ static void igb_configure_cbs(struct igb_adapter *adapter, int queue,

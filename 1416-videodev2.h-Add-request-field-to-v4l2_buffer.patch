@@ -20,7 +20,7 @@ Signed-off-by: wu xia <xia.wu@intel.com>
  6 files changed, 19 insertions(+), 9 deletions(-)
 
 diff --git a/drivers/media/usb/cpia2/cpia2_v4l.c b/drivers/media/usb/cpia2/cpia2_v4l.c
-index a1c59f1..2094f99 100644
+index 1e3da41..3950972 100644
 --- a/drivers/media/usb/cpia2/cpia2_v4l.c
 +++ b/drivers/media/usb/cpia2/cpia2_v4l.c
 @@ -948,7 +948,7 @@ static int cpia2_dqbuf(struct file *file, void *fh, struct v4l2_buffer *buf)

@@ -27,7 +27,7 @@ Signed-off-by: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
  2 files changed, 9 insertions(+)
 
 diff --git a/drivers/cpufreq/cpufreq.c b/drivers/cpufreq/cpufreq.c
-index 9f5c51c..ebe0633 100644
+index fceb18d..792e1b0 100644
 --- a/drivers/cpufreq/cpufreq.c
 +++ b/drivers/cpufreq/cpufreq.c
 @@ -161,6 +161,12 @@ u64 get_cpu_idle_time(unsigned int cpu, u64 *wall, int io_busy)

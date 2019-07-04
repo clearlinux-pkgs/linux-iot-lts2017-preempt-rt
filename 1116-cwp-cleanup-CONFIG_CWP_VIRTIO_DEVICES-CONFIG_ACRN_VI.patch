@@ -38,10 +38,10 @@ index 8a453fa..6001202 100644
  	  a little bit so that virtio PCI driver could be loaded for these
  	  devices.
 diff --git a/drivers/virtio/virtio_pci_common.c b/drivers/virtio/virtio_pci_common.c
-index 00cbb51..58e73ea 100644
+index d169d0c..ec653ac 100644
 --- a/drivers/virtio/virtio_pci_common.c
 +++ b/drivers/virtio/virtio_pci_common.c
-@@ -494,35 +494,35 @@ static const struct dev_pm_ops virtio_pci_pm_ops = {
+@@ -496,35 +496,35 @@ static const struct dev_pm_ops virtio_pci_pm_ops = {
  /* Qumranet donated their vendor ID for devices 0x1000 thru 0x10FF. */
  static const struct pci_device_id virtio_pci_id_table[] = {
  	{ PCI_DEVICE(PCI_VENDOR_ID_REDHAT_QUMRANET, PCI_ANY_ID) },

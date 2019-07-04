@@ -24,7 +24,7 @@ Change-Id: Ibaaa35a041689797452a318aa610c3eb9f23fd37
  delete mode 100644 Documentation/rpmb/simulation-device.rst
 
 diff --git a/Documentation/conf.py b/Documentation/conf.py
-index b9cadc9..63857d3 100644
+index 5ee2fd0..329c519 100644
 --- a/Documentation/conf.py
 +++ b/Documentation/conf.py
 @@ -404,8 +404,6 @@ latex_documents = [
@@ -37,7 +37,7 @@ index b9cadc9..63857d3 100644
  
  # The name of an image file (relative to this directory) to place at the top of
 diff --git a/Documentation/index.rst b/Documentation/index.rst
-index 380868d..cb7f1ba 100644
+index 6d89d36..ccfebc2 100644
 --- a/Documentation/index.rst
 +++ b/Documentation/index.rst
 @@ -75,7 +75,6 @@ needed).

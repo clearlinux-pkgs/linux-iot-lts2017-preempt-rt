@@ -166,7 +166,7 @@ index b051e11..9bd084f 100644
  }
  
 diff --git a/include/uapi/drm/i915_drm.h b/include/uapi/drm/i915_drm.h
-index 5f2ba0f..489d2b2 100644
+index 3ad5bc7..ac158bf 100644
 --- a/include/uapi/drm/i915_drm.h
 +++ b/include/uapi/drm/i915_drm.h
 @@ -1329,14 +1329,16 @@ struct drm_i915_reg_read {

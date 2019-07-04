@@ -146,7 +146,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 6 insertions(+), 2 deletions(-)
 
 diff --git a/drivers/char/random.c b/drivers/char/random.c
-index 9fb3c92..c72a7f0 100644
+index ecba3ec..459e222 100644
 --- a/drivers/char/random.c
 +++ b/drivers/char/random.c
 @@ -857,7 +857,7 @@ static int crng_fast_load(const char *cp, size_t len)

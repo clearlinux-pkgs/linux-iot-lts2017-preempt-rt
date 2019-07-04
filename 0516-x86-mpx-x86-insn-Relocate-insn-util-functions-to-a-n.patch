@@ -76,10 +76,10 @@ index 0000000..5cab1b1
 +
 +#endif /* _ASM_X86_INSN_EVAL_H */
 diff --git a/arch/x86/lib/Makefile b/arch/x86/lib/Makefile
-index d435c89..f23934b 100644
+index 60b410f..58145df 100644
 --- a/arch/x86/lib/Makefile
 +++ b/arch/x86/lib/Makefile
-@@ -24,7 +24,7 @@ lib-y := delay.o misc.o cmdline.o cpu.o
+@@ -36,7 +36,7 @@ lib-y := delay.o misc.o cmdline.o cpu.o
  lib-y += usercopy_$(BITS).o usercopy.o getuser.o putuser.o
  lib-y += memcpy_$(BITS).o
  lib-$(CONFIG_RWSEM_XCHGADD_ALGORITHM) += rwsem.o

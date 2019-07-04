@@ -14,7 +14,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  2 files changed, 8 insertions(+), 1 deletion(-)
 
 diff --git a/include/linux/rcupdate.h b/include/linux/rcupdate.h
-index a6ddc42..dbadbdb 100644
+index f960c85..25e5416 100644
 --- a/include/linux/rcupdate.h
 +++ b/include/linux/rcupdate.h
 @@ -74,6 +74,11 @@ void synchronize_rcu(void);
@@ -29,7 +29,7 @@ index a6ddc42..dbadbdb 100644
  
  #else /* #ifdef CONFIG_PREEMPT_RCU */
  
-@@ -99,6 +104,8 @@ static inline int rcu_preempt_depth(void)
+@@ -97,6 +102,8 @@ static inline int rcu_preempt_depth(void)
  	return 0;
  }
  
@@ -39,7 +39,7 @@ index a6ddc42..dbadbdb 100644
  
  /* Internal to kernel */
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index 840f5fe..bcb5ea0 100644
+index 8b0816c..28e543a 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -6052,7 +6052,7 @@ void __init sched_init(void)

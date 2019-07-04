@@ -27,7 +27,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 9 insertions(+)
 
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index 590a3a3..5b1a761 100644
+index 850fb16..706ca04 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -3607,7 +3607,16 @@ asmlinkage __visible void __sched notrace preempt_schedule_notrace(void)

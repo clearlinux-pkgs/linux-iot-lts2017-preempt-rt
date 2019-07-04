@@ -30,7 +30,7 @@ index 54deeb7..b43efad 100644
  
  #endif /* End of Header */
 diff --git a/drivers/scsi/ufs/ufshcd.c b/drivers/scsi/ufs/ufshcd.c
-index ea18749..746e2e6 100644
+index 26874de..a3822aa 100644
 --- a/drivers/scsi/ufs/ufshcd.c
 +++ b/drivers/scsi/ufs/ufshcd.c
 @@ -285,16 +285,6 @@ static inline void ufshcd_disable_irq(struct ufs_hba *hba)

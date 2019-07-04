@@ -27,7 +27,7 @@ index b43efad..77ff3c9 100644
  
  #endif /* End of Header */
 diff --git a/drivers/scsi/ufs/ufshcd.c b/drivers/scsi/ufs/ufshcd.c
-index 2727af8..4a53f5a 100644
+index 10a02b8..bfa2dbb 100644
 --- a/drivers/scsi/ufs/ufshcd.c
 +++ b/drivers/scsi/ufs/ufshcd.c
 @@ -42,6 +42,7 @@

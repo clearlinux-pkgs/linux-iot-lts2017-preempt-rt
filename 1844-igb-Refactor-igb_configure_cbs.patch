@@ -21,7 +21,7 @@ Signed-off-by: David S. Miller <davem@davemloft.net>
  1 file changed, 28 insertions(+), 32 deletions(-)
 
 diff --git a/drivers/net/ethernet/intel/igb/igb_main.c b/drivers/net/ethernet/intel/igb/igb_main.c
-index 4078cd4..1369f40 100644
+index c3f0807..86e1693 100644
 --- a/drivers/net/ethernet/intel/igb/igb_main.c
 +++ b/drivers/net/ethernet/intel/igb/igb_main.c
 @@ -1673,23 +1673,17 @@ static void set_queue_mode(struct e1000_hw *hw, int queue, enum queue_mode mode)

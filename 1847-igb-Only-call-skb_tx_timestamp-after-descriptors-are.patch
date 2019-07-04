@@ -18,7 +18,7 @@ Signed-off-by: David S. Miller <davem@davemloft.net>
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/drivers/net/ethernet/intel/igb/igb_main.c b/drivers/net/ethernet/intel/igb/igb_main.c
-index 5494d92..b9335aa 100644
+index b090feb..ef38fd4 100644
 --- a/drivers/net/ethernet/intel/igb/igb_main.c
 +++ b/drivers/net/ethernet/intel/igb/igb_main.c
 @@ -5794,8 +5794,6 @@ netdev_tx_t igb_xmit_frame_ring(struct sk_buff *skb,

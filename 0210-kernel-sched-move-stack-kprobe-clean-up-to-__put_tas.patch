@@ -16,7 +16,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 10 insertions(+), 9 deletions(-)
 
 diff --git a/kernel/fork.c b/kernel/fork.c
-index 986ced9..74e2b69 100644
+index c8d028f..9fbd50d 100644
 --- a/kernel/fork.c
 +++ b/kernel/fork.c
 @@ -40,6 +40,7 @@
@@ -44,7 +44,7 @@ index 986ced9..74e2b69 100644
  	task_numa_free(tsk);
  	security_task_free(tsk);
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index 0d854e7..8bdfb64 100644
+index dba8102..02ee29d 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -2723,15 +2723,6 @@ static struct rq *finish_task_switch(struct task_struct *prev)

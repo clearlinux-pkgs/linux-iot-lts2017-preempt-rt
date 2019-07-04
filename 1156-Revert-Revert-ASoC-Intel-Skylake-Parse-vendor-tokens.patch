@@ -14,7 +14,7 @@ Change-Id: Ia0dc38cc45c30405cccc41ddfdcdad147b0869ab
  3 files changed, 70 insertions(+), 1 deletion(-)
 
 diff --git a/include/uapi/sound/snd_sst_tokens.h b/include/uapi/sound/snd_sst_tokens.h
-index 7831330..f160462 100644
+index 7831330..f160462b 100644
 --- a/include/uapi/sound/snd_sst_tokens.h
 +++ b/include/uapi/sound/snd_sst_tokens.h
 @@ -222,6 +222,17 @@

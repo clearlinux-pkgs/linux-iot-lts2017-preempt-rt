@@ -43,7 +43,7 @@ index e27b4d4..8b545a9 100644
  	This selects the support for UFS devices in Linux, say Y and make
  	  sure that you know the name of your UFS host adapter (the card
 diff --git a/drivers/scsi/ufs/ufshcd.c b/drivers/scsi/ufs/ufshcd.c
-index 746e2e6..2727af8 100644
+index a3822aa..10a02b8 100644
 --- a/drivers/scsi/ufs/ufshcd.c
 +++ b/drivers/scsi/ufs/ufshcd.c
 @@ -37,10 +37,13 @@
@@ -317,7 +317,7 @@ index 746e2e6..2727af8 100644
  	/*
  	 * If we failed to initialize the device or the device is not
  	 * present, turn off the power/clocks etc.
-@@ -7793,6 +8015,8 @@ int ufshcd_shutdown(struct ufs_hba *hba)
+@@ -7805,6 +8027,8 @@ int ufshcd_shutdown(struct ufs_hba *hba)
  			goto out;
  	}
  
@@ -326,7 +326,7 @@ index 746e2e6..2727af8 100644
  	ret = ufshcd_suspend(hba, UFS_SHUTDOWN_PM);
  out:
  	if (ret)
-@@ -7809,7 +8033,10 @@ EXPORT_SYMBOL(ufshcd_shutdown);
+@@ -7821,7 +8045,10 @@ EXPORT_SYMBOL(ufshcd_shutdown);
   */
  void ufshcd_remove(struct ufs_hba *hba)
  {

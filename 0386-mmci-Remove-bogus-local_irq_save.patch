@@ -12,7 +12,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 5 deletions(-)
 
 diff --git a/drivers/mmc/host/mmci.c b/drivers/mmc/host/mmci.c
-index f1f54a8..ce10237 100644
+index 77f1872..ffb2a7d 100644
 --- a/drivers/mmc/host/mmci.c
 +++ b/drivers/mmc/host/mmci.c
 @@ -1200,15 +1200,12 @@ static irqreturn_t mmci_pio_irq(int irq, void *dev_id)

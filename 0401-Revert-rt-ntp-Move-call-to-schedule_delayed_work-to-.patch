@@ -25,7 +25,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 26 deletions(-)
 
 diff --git a/kernel/time/ntp.c b/kernel/time/ntp.c
-index 2c226b9..99e03be 100644
+index dd54302..4bb9b66 100644
 --- a/kernel/time/ntp.c
 +++ b/kernel/time/ntp.c
 @@ -18,7 +18,6 @@

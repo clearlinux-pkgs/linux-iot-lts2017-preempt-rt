@@ -25,7 +25,7 @@ Signed-off-by: Jeff Kirsher <jeffrey.t.kirsher@intel.com>
  1 file changed, 36 insertions(+), 4 deletions(-)
 
 diff --git a/drivers/net/ethernet/intel/igb/igb_main.c b/drivers/net/ethernet/intel/igb/igb_main.c
-index 555e514..4078cd4 100644
+index 8b2ef93..c3f0807 100644
 --- a/drivers/net/ethernet/intel/igb/igb_main.c
 +++ b/drivers/net/ethernet/intel/igb/igb_main.c
 @@ -6849,6 +6849,27 @@ static void igb_set_default_mac_filter(struct igb_adapter *adapter)

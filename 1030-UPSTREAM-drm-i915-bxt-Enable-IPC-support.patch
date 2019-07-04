@@ -108,10 +108,10 @@ index b733538..a1ebaa5 100644
  {
  	return i915.enable_rc6;
 diff --git a/drivers/gpu/drm/i915/intel_pm.c b/drivers/gpu/drm/i915/intel_pm.c
-index d4b1c56..25a661b 100644
+index d6acd1e..777a81d 100644
 --- a/drivers/gpu/drm/i915/intel_pm.c
 +++ b/drivers/gpu/drm/i915/intel_pm.c
-@@ -5801,6 +5801,30 @@ void intel_update_watermarks(struct intel_crtc *crtc)
+@@ -5840,6 +5840,30 @@ void intel_update_watermarks(struct intel_crtc *crtc)
  		dev_priv->display.update_wm(crtc);
  }
  

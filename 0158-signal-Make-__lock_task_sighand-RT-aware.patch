@@ -12,7 +12,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 3 insertions(+), 3 deletions(-)
 
 diff --git a/kernel/signal.c b/kernel/signal.c
-index ff13520..96d6f75 100644
+index a92991d..369abb6 100644
 --- a/kernel/signal.c
 +++ b/kernel/signal.c
 @@ -1343,12 +1343,12 @@ struct sighand_struct *__lock_task_sighand(struct task_struct *tsk,

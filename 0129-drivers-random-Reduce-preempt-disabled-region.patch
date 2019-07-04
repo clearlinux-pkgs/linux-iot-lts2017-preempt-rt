@@ -12,7 +12,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 3 deletions(-)
 
 diff --git a/drivers/char/random.c b/drivers/char/random.c
-index ea4dbfa..8a6228a 100644
+index e6efa07..1a25be4 100644
 --- a/drivers/char/random.c
 +++ b/drivers/char/random.c
 @@ -1122,8 +1122,6 @@ static void add_timer_randomness(struct timer_rand_state *state, unsigned num)

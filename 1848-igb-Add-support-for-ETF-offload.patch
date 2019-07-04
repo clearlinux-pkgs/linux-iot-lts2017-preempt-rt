@@ -32,10 +32,10 @@ Signed-off-by: David S. Miller <davem@davemloft.net>
  3 files changed, 138 insertions(+), 18 deletions(-)
 
 diff --git a/drivers/net/ethernet/intel/igb/e1000_defines.h b/drivers/net/ethernet/intel/igb/e1000_defines.h
-index c6f552d..62bc7d8 100644
+index 7484738..8329f60 100644
 --- a/drivers/net/ethernet/intel/igb/e1000_defines.h
 +++ b/drivers/net/ethernet/intel/igb/e1000_defines.h
-@@ -1068,6 +1068,22 @@
+@@ -1070,6 +1070,22 @@
  #define E1000_TQAVCTRL_XMIT_MODE	BIT(0)
  #define E1000_TQAVCTRL_DATAFETCHARB	BIT(4)
  #define E1000_TQAVCTRL_DATATRANARB	BIT(8)
@@ -71,7 +71,7 @@ index 5abb4fa..6b23a57 100644
  	s32 idleslope;			/* idleSlope in kbps */
  	s32 sendslope;			/* sendSlope in kbps */
 diff --git a/drivers/net/ethernet/intel/igb/igb_main.c b/drivers/net/ethernet/intel/igb/igb_main.c
-index b9335aa..1e6b6a4 100644
+index ef38fd4..89e054a 100644
 --- a/drivers/net/ethernet/intel/igb/igb_main.c
 +++ b/drivers/net/ethernet/intel/igb/igb_main.c
 @@ -1684,13 +1684,26 @@ static bool is_any_cbs_enabled(struct igb_adapter *adapter)

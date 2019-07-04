@@ -67,7 +67,7 @@ index 7fc3261..dfa7ad3 100644
  
  static inline unsigned long rb_page_entries(struct buffer_page *bpage)
 diff --git a/kernel/trace/trace.c b/kernel/trace/trace.c
-index 3f66529..7d8579a 100644
+index 9ca762e..1815765 100644
 --- a/kernel/trace/trace.c
 +++ b/kernel/trace/trace.c
 @@ -2278,7 +2278,7 @@ trace_event_buffer_lock_reserve(struct ring_buffer **current_rb,
@@ -118,7 +118,7 @@ index 3f66529..7d8579a 100644
  	struct trace_iterator	iter;
  	void			*spare;
 diff --git a/kernel/trace/trace.h b/kernel/trace/trace.h
-index 2215916..0506c4c 100644
+index 4f22e07..81c0f73 100644
 --- a/kernel/trace/trace.h
 +++ b/kernel/trace/trace.h
 @@ -273,6 +273,7 @@ struct trace_array {

@@ -14,10 +14,10 @@ Reviewed-by: Zhao Yakui <yakui.zhao@intel.com>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/drivers/gpu/drm/i915/intel_pm.c b/drivers/gpu/drm/i915/intel_pm.c
-index 16b2060..671561e 100644
+index a5b0075..22169a2 100644
 --- a/drivers/gpu/drm/i915/intel_pm.c
 +++ b/drivers/gpu/drm/i915/intel_pm.c
-@@ -4793,7 +4793,7 @@ static void skl_write_plane_wm(struct intel_crtc *intel_crtc,
+@@ -4832,7 +4832,7 @@ static void skl_write_plane_wm(struct intel_crtc *intel_crtc,
  				&wm->trans_wm);
  	}
  #else

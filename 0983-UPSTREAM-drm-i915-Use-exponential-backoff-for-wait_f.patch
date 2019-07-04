@@ -83,10 +83,10 @@ index a5a1f89..3eb1115 100644
  		ret__ = _wait_for_atomic((COND), (US), 0); \
  	ret__; \
 diff --git a/drivers/gpu/drm/i915/intel_pm.c b/drivers/gpu/drm/i915/intel_pm.c
-index ea4cb3c..84710a8 100644
+index 190f001..06273d2 100644
 --- a/drivers/gpu/drm/i915/intel_pm.c
 +++ b/drivers/gpu/drm/i915/intel_pm.c
-@@ -9082,7 +9082,7 @@ int skl_pcode_request(struct drm_i915_private *dev_priv, u32 mbox, u32 request,
+@@ -9121,7 +9121,7 @@ int skl_pcode_request(struct drm_i915_private *dev_priv, u32 mbox, u32 request,
  		ret = 0;
  		goto out;
  	}

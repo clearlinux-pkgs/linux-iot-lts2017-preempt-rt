@@ -30,7 +30,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  3 files changed, 41 insertions(+), 100 deletions(-)
 
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index 44c22ff..c304127 100644
+index 1b06b86..98d472e 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -1733,10 +1733,6 @@ static inline void ttwu_activate(struct rq *rq, struct task_struct *p, int en_fl

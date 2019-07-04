@@ -70,10 +70,10 @@ index 2af849b..75744f9 100644
  		ip6_cork_release(&cork, &v6_cork);
  		return ERR_PTR(err);
 diff --git a/net/ipv6/raw.c b/net/ipv6/raw.c
-index f08cc65..ecda554 100644
+index ac42831..e0b0884 100644
 --- a/net/ipv6/raw.c
 +++ b/net/ipv6/raw.c
-@@ -620,7 +620,7 @@ static int rawv6_push_pending_frames(struct sock *sk, struct flowi6 *fl6,
+@@ -622,7 +622,7 @@ static int rawv6_push_pending_frames(struct sock *sk, struct flowi6 *fl6,
  
  static int rawv6_send_hdrinc(struct sock *sk, struct msghdr *msg, int length,
  			struct flowi6 *fl6, struct dst_entry **dstp,
@@ -82,7 +82,7 @@ index f08cc65..ecda554 100644
  {
  	struct ipv6_pinfo *np = inet6_sk(sk);
  	struct net *net = sock_net(sk);
-@@ -650,6 +650,9 @@ static int rawv6_send_hdrinc(struct sock *sk, struct msghdr *msg, int length,
+@@ -652,6 +652,9 @@ static int rawv6_send_hdrinc(struct sock *sk, struct msghdr *msg, int length,
  	skb->protocol = htons(ETH_P_IPV6);
  	skb->priority = sk->sk_priority;
  	skb->mark = sk->sk_mark;
@@ -92,7 +92,7 @@ index f08cc65..ecda554 100644
  
  	skb_put(skb, length);
  	skb_reset_network_header(skb);
-@@ -859,6 +862,7 @@ static int rawv6_sendmsg(struct sock *sk, struct msghdr *msg, size_t len)
+@@ -869,6 +872,7 @@ static int rawv6_sendmsg(struct sock *sk, struct msghdr *msg, size_t len)
  		fl6.flowi6_oif = sk->sk_bound_dev_if;
  
  	sockc.tsflags = sk->sk_tsflags;
@@ -100,10 +100,10 @@ index f08cc65..ecda554 100644
  	if (msg->msg_controllen) {
  		opt = &opt_space;
  		memset(opt, 0, sizeof(struct ipv6_txoptions));
-@@ -932,7 +936,8 @@ static int rawv6_sendmsg(struct sock *sk, struct msghdr *msg, size_t len)
+@@ -945,7 +949,8 @@ static int rawv6_sendmsg(struct sock *sk, struct msghdr *msg, size_t len)
  
  back_from_confirm:
- 	if (inet->hdrincl)
+ 	if (hdrincl)
 -		err = rawv6_send_hdrinc(sk, msg, len, &fl6, &dst, msg->msg_flags);
 +		err = rawv6_send_hdrinc(sk, msg, len, &fl6, &dst,
 +					msg->msg_flags, &sockc);

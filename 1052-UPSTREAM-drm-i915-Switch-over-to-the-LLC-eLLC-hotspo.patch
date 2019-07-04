@@ -98,7 +98,7 @@ index 0023860..91d8e9d 100644
  	/* WaDisablePartialInstShootdown:skl,bxt,kbl,glk,cfl */
  	WA_SET_BIT_MASKED(GEN8_ROW_CHICKEN,
 diff --git a/drivers/gpu/drm/i915/intel_pm.c b/drivers/gpu/drm/i915/intel_pm.c
-index 25a661b..1a9000e 100644
+index 777a81d..fbeaa46 100644
 --- a/drivers/gpu/drm/i915/intel_pm.c
 +++ b/drivers/gpu/drm/i915/intel_pm.c
 @@ -62,24 +62,23 @@

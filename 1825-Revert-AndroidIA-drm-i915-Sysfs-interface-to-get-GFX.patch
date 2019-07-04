@@ -22,7 +22,7 @@ This reverts commit 47ee3503361c5a77c780de02df48fe459e4b3a50.
  13 files changed, 15 insertions(+), 1440 deletions(-)
 
 diff --git a/drivers/gpu/drm/drm_file.c b/drivers/gpu/drm/drm_file.c
-index 9d8a363..03244b3 100644
+index eccf551..3cf07f5 100644
 --- a/drivers/gpu/drm/drm_file.c
 +++ b/drivers/gpu/drm/drm_file.c
 @@ -44,7 +44,6 @@

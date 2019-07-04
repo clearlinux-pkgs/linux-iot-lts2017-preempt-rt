@@ -22,7 +22,7 @@ Signed-off-by: Mark Brown <broonie@kernel.org>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/sound/soc/codecs/max98090.c b/sound/soc/codecs/max98090.c
-index 13bcfb1..f5075d1 100644
+index cc66ea5..a499147 100644
 --- a/sound/soc/codecs/max98090.c
 +++ b/sound/soc/codecs/max98090.c
 @@ -2115,7 +2115,7 @@ static void max98090_pll_work(struct work_struct *work)

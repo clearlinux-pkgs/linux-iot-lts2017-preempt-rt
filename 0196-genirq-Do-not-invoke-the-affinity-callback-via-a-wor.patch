@@ -12,8 +12,8 @@ This patch uses swork_queue() instead.
 Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
 ---
  include/linux/interrupt.h |  6 ++++++
- kernel/irq/manage.c       | 43 ++++++++++++++++++++++++++++++++++++---
- 2 files changed, 46 insertions(+), 3 deletions(-)
+ kernel/irq/manage.c       | 45 ++++++++++++++++++++++++++++++++++++---
+ 2 files changed, 48 insertions(+), 3 deletions(-)
 
 diff --git a/include/linux/interrupt.h b/include/linux/interrupt.h
 index 2395ebb..172376b 100644
@@ -48,7 +48,7 @@ index 2395ebb..172376b 100644
  	void (*release)(struct kref *ref);
  };
 diff --git a/kernel/irq/manage.c b/kernel/irq/manage.c
-index 4b6992e..0e67ce7 100644
+index 06863aa..296ff4e 100644
 --- a/kernel/irq/manage.c
 +++ b/kernel/irq/manage.c
 @@ -226,7 +226,12 @@ int irq_set_affinity_locked(struct irq_data *data, const struct cpumask *mask,
@@ -125,6 +125,16 @@ index 4b6992e..0e67ce7 100644
  	}
  
  	raw_spin_lock_irqsave(&desc->lock, flags);
+@@ -326,7 +363,9 @@ irq_set_affinity_notifier(unsigned int irq, struct irq_affinity_notify *notify)
+ 	raw_spin_unlock_irqrestore(&desc->lock, flags);
+ 
+ 	if (old_notify) {
++#ifndef CONFIG_PREEMPT_RT_BASE
+ 		cancel_work_sync(&old_notify->work);
++#endif
+ 		kref_put(&old_notify->kref, old_notify->release);
+ 	}
+ 
 -- 
 https://clearlinux.org
 

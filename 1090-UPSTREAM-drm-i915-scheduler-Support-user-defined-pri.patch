@@ -153,7 +153,7 @@ index e25fcb1..e129202 100644
  
  struct i915_gem_capture_list {
 diff --git a/include/uapi/drm/i915_drm.h b/include/uapi/drm/i915_drm.h
-index 8d450f9..791368c 100644
+index 91a3578..c689bcb 100644
 --- a/include/uapi/drm/i915_drm.h
 +++ b/include/uapi/drm/i915_drm.h
 @@ -407,6 +407,9 @@ typedef struct drm_i915_irq_wait {

@@ -15,7 +15,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  4 files changed, 30 insertions(+), 1 deletion(-)
 
 diff --git a/block/blk-core.c b/block/blk-core.c
-index b3edf24..ec5c206 100644
+index 15c3120..d4c6ab4 100644
 --- a/block/blk-core.c
 +++ b/block/blk-core.c
 @@ -116,6 +116,9 @@ void blk_rq_init(struct request_queue *q, struct request *rq)
@@ -29,7 +29,7 @@ index b3edf24..ec5c206 100644
  	rq->q = q;
  	rq->__sector = (sector_t) -1;
 diff --git a/block/blk-mq.c b/block/blk-mq.c
-index d6dc746..a6314b8 100644
+index 4e6120c..e898619 100644
 --- a/block/blk-mq.c
 +++ b/block/blk-mq.c
 @@ -339,6 +339,9 @@ static struct request *blk_mq_rq_ctx_init(struct blk_mq_alloc_data *data,

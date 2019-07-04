@@ -22,7 +22,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 2 insertions(+), 1 deletion(-)
 
 diff --git a/kernel/trace/trace.c b/kernel/trace/trace.c
-index 57b116d..853c688 100644
+index d8f9a53..30824ce 100644
 --- a/kernel/trace/trace.c
 +++ b/kernel/trace/trace.c
 @@ -6236,7 +6236,7 @@ static int tracing_clock_show(struct seq_file *m, void *v)
@@ -35,7 +35,7 @@ index 57b116d..853c688 100644
  	int i;
  
 diff --git a/kernel/trace/trace.h b/kernel/trace/trace.h
-index 5975d5f..0b8af84 100644
+index c0d5ccb..9d26415 100644
 --- a/kernel/trace/trace.h
 +++ b/kernel/trace/trace.h
 @@ -289,6 +289,7 @@ extern int trace_array_get(struct trace_array *tr);

@@ -17,7 +17,7 @@ Signed-off-by: Pankaj Bharadiya <pankaj.laxminarayan.bharadiya@intel.com>
  3 files changed, 1 insertion(+), 70 deletions(-)
 
 diff --git a/include/uapi/sound/snd_sst_tokens.h b/include/uapi/sound/snd_sst_tokens.h
-index f160462..7831330 100644
+index f160462b..7831330 100644
 --- a/include/uapi/sound/snd_sst_tokens.h
 +++ b/include/uapi/sound/snd_sst_tokens.h
 @@ -222,17 +222,6 @@

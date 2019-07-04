@@ -12,10 +12,10 @@ Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
  1 file changed, 11 insertions(+)
 
 diff --git a/sound/soc/soc-pcm.c b/sound/soc/soc-pcm.c
-index 665afae..aac2c9e 100644
+index cd0940e..a76f341 100644
 --- a/sound/soc/soc-pcm.c
 +++ b/sound/soc/soc-pcm.c
-@@ -1227,12 +1227,18 @@ static struct snd_soc_pcm_runtime *dpcm_get_be(struct snd_soc_card *card,
+@@ -1230,12 +1230,18 @@ static struct snd_soc_pcm_runtime *dpcm_get_be(struct snd_soc_card *card,
  	struct snd_soc_pcm_runtime *be;
  	int i;
  
@@ -34,7 +34,7 @@ index 665afae..aac2c9e 100644
  			if (be->cpu_dai->playback_widget == widget)
  				return be;
  
-@@ -1249,6 +1255,10 @@ static struct snd_soc_pcm_runtime *dpcm_get_be(struct snd_soc_card *card,
+@@ -1252,6 +1258,10 @@ static struct snd_soc_pcm_runtime *dpcm_get_be(struct snd_soc_card *card,
  			if (!be->dai_link->no_pcm)
  				continue;
  
@@ -45,7 +45,7 @@ index 665afae..aac2c9e 100644
  			if (be->cpu_dai->capture_widget == widget)
  				return be;
  
-@@ -1260,6 +1270,7 @@ static struct snd_soc_pcm_runtime *dpcm_get_be(struct snd_soc_card *card,
+@@ -1263,6 +1273,7 @@ static struct snd_soc_pcm_runtime *dpcm_get_be(struct snd_soc_card *card,
  		}
  	}
  

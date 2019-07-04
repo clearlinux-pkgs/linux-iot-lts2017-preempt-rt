@@ -15,10 +15,10 @@ Signed-off-by: Junxiao Chang <junxiao.chang@intel.com>
  1 file changed, 13 insertions(+), 13 deletions(-)
 
 diff --git a/drivers/tty/serial/serial_core.c b/drivers/tty/serial/serial_core.c
-index e491a86..e2de03a 100644
+index a6aa8b8..e124d6b 100644
 --- a/drivers/tty/serial/serial_core.c
 +++ b/drivers/tty/serial/serial_core.c
-@@ -588,17 +588,17 @@ static int uart_put_char(struct tty_struct *tty, unsigned char c)
+@@ -585,17 +585,17 @@ static int uart_put_char(struct tty_struct *tty, unsigned char c)
  	int ret = 0;
  
  	circ = &state->xmit;
@@ -42,7 +42,7 @@ index e491a86..e2de03a 100644
  	if (uart_circ_chars_free(circ) != 0) {
  		circ->buf[circ->head] = c;
  		circ->head = (circ->head + 1) & (UART_XMIT_SIZE - 1);
-@@ -632,18 +632,18 @@ static int uart_write(struct tty_struct *tty,
+@@ -629,18 +629,18 @@ static int uart_write(struct tty_struct *tty,
  		return -EL3HLT;
  	}
  

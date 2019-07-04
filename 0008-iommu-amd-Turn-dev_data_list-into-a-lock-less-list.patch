@@ -24,7 +24,7 @@ Signed-off-by: Joerg Roedel <jroedel@suse.de>
  2 files changed, 11 insertions(+), 19 deletions(-)
 
 diff --git a/drivers/iommu/amd_iommu.c b/drivers/iommu/amd_iommu.c
-index c02ee9a..ef1ac2c 100644
+index 42c52ba..4d9752c 100644
 --- a/drivers/iommu/amd_iommu.c
 +++ b/drivers/iommu/amd_iommu.c
 @@ -84,8 +84,7 @@
@@ -88,10 +88,10 @@ index c02ee9a..ef1ac2c 100644
  
  static int __last_alias(struct pci_dev *pdev, u16 alias, void *data)
 diff --git a/drivers/iommu/amd_iommu_types.h b/drivers/iommu/amd_iommu_types.h
-index 7521745..16b1404 100644
+index aadd3c6..419655a 100644
 --- a/drivers/iommu/amd_iommu_types.h
 +++ b/drivers/iommu/amd_iommu_types.h
-@@ -625,7 +625,7 @@ struct devid_map {
+@@ -627,7 +627,7 @@ struct devid_map {
   */
  struct iommu_dev_data {
  	struct list_head list;		  /* For domain->dev_list */

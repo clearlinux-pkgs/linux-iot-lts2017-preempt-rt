@@ -24,7 +24,7 @@ Signed-off-by: Heikki Krogerus <heikki.krogerus@linux.intel.com>
  1 file changed, 16 insertions(+)
 
 diff --git a/drivers/tty/serial/8250/8250_dw.c b/drivers/tty/serial/8250/8250_dw.c
-index 27c5b2b..99fdbb2 100644
+index 4ca46aa..54ef76a 100644
 --- a/drivers/tty/serial/8250/8250_dw.c
 +++ b/drivers/tty/serial/8250/8250_dw.c
 @@ -24,9 +24,11 @@

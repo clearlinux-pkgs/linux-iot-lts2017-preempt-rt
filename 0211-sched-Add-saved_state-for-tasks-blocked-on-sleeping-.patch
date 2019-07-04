@@ -38,7 +38,7 @@ index 8281cf6..962c3e6 100644
  
  #ifdef CONFIG_SMP
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index 8bdfb64..d5210a7 100644
+index 02ee29d..28e6d54 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -2033,8 +2033,25 @@ try_to_wake_up(struct task_struct *p, unsigned int state, int wake_flags)

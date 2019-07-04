@@ -130,7 +130,7 @@ index c30d8f8..63b88df 100644
  		struct i915_gem_userptr {
  			uintptr_t ptr;
 diff --git a/include/uapi/drm/i915_drm.h b/include/uapi/drm/i915_drm.h
-index 671e664..5f2ba0f 100644
+index 51784cc..3ad5bc7 100644
 --- a/include/uapi/drm/i915_drm.h
 +++ b/include/uapi/drm/i915_drm.h
 @@ -263,6 +263,7 @@ typedef struct _drm_i915_sarea {

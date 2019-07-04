@@ -116,7 +116,7 @@ index 04da826..3695828 100644
  
  /* At this point, native_get/set_debugreg has real function entries */
 diff --git a/arch/x86/kernel/tsc.c b/arch/x86/kernel/tsc.c
-index 36d0248..380f590 100644
+index 5d681fe..30b8afd 100644
 --- a/arch/x86/kernel/tsc.c
 +++ b/arch/x86/kernel/tsc.c
 @@ -675,6 +675,10 @@ unsigned long native_calibrate_cpu(void)

@@ -65,7 +65,7 @@ index 676fdf5..5cbb6f0 100644
  		Not all drivers support this attribute.  If it isn't supported,
  		it is not present.
 diff --git a/drivers/base/cpu.c b/drivers/base/cpu.c
-index 93758b5..74dccd9 100644
+index 32b52e6..d79d77b 100644
 --- a/drivers/base/cpu.c
 +++ b/drivers/base/cpu.c
 @@ -377,7 +377,8 @@ int register_cpu(struct cpu *cpu, int num)

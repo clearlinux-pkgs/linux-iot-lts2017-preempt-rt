@@ -14,10 +14,10 @@ Signed-off-by: Mark Brown <broonie@kernel.org>
  1 file changed, 11 insertions(+)
 
 diff --git a/sound/soc/soc-pcm.c b/sound/soc/soc-pcm.c
-index da588b3..e6a167f 100644
+index c6c31aa..873bc07 100644
 --- a/sound/soc/soc-pcm.c
 +++ b/sound/soc/soc-pcm.c
-@@ -1215,12 +1215,18 @@ static struct snd_soc_pcm_runtime *dpcm_get_be(struct snd_soc_card *card,
+@@ -1218,12 +1218,18 @@ static struct snd_soc_pcm_runtime *dpcm_get_be(struct snd_soc_card *card,
  	struct snd_soc_pcm_runtime *be;
  	int i;
  
@@ -36,7 +36,7 @@ index da588b3..e6a167f 100644
  			if (be->cpu_dai->playback_widget == widget)
  				return be;
  
-@@ -1237,6 +1243,10 @@ static struct snd_soc_pcm_runtime *dpcm_get_be(struct snd_soc_card *card,
+@@ -1240,6 +1246,10 @@ static struct snd_soc_pcm_runtime *dpcm_get_be(struct snd_soc_card *card,
  			if (!be->dai_link->no_pcm)
  				continue;
  
@@ -47,7 +47,7 @@ index da588b3..e6a167f 100644
  			if (be->cpu_dai->capture_widget == widget)
  				return be;
  
-@@ -1248,6 +1258,7 @@ static struct snd_soc_pcm_runtime *dpcm_get_be(struct snd_soc_card *card,
+@@ -1251,6 +1261,7 @@ static struct snd_soc_pcm_runtime *dpcm_get_be(struct snd_soc_card *card,
  		}
  	}
  

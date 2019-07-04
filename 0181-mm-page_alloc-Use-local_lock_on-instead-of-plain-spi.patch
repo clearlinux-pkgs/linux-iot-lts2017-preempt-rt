@@ -12,7 +12,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/mm/page_alloc.c b/mm/page_alloc.c
-index 9d3127c..31fd940 100644
+index 1d54b33..866a218 100644
 --- a/mm/page_alloc.c
 +++ b/mm/page_alloc.c
 @@ -291,9 +291,9 @@ static DEFINE_LOCAL_IRQ_LOCK(pa_lock);

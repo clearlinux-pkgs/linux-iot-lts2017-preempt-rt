@@ -23,7 +23,7 @@ Signed-off-by: Mark Brown <broonie@kernel.org>
  1 file changed, 1 insertion(+)
 
 diff --git a/sound/soc/intel/common/sst-firmware.c b/sound/soc/intel/common/sst-firmware.c
-index 79a9fdf..657afc0 100644
+index 582b30a..7a6a645 100644
 --- a/sound/soc/intel/common/sst-firmware.c
 +++ b/sound/soc/intel/common/sst-firmware.c
 @@ -19,6 +19,7 @@

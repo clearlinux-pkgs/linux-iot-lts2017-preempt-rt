@@ -57,7 +57,7 @@ index a74ec61..8e7f741 100644
  
  #ifdef CONFIG_ARCH_WANTS_DYNAMIC_TASK_STRUCT
 diff --git a/kernel/fork.c b/kernel/fork.c
-index 6a2916a..71fb90e 100644
+index 857f6db..8d34933 100644
 --- a/kernel/fork.c
 +++ b/kernel/fork.c
 @@ -407,7 +407,9 @@ static inline void put_signal_struct(struct signal_struct *sig)

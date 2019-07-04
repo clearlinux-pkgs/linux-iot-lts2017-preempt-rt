@@ -113,10 +113,10 @@ index 3aabe55..b5d63bf 100644
  }
  
 diff --git a/include/linux/fs.h b/include/linux/fs.h
-index dafac28..e48763e 100644
+index da56c79..6232312 100644
 --- a/include/linux/fs.h
 +++ b/include/linux/fs.h
-@@ -657,7 +657,7 @@ struct inode {
+@@ -660,7 +660,7 @@ struct inode {
  		struct block_device	*i_bdev;
  		struct cdev		*i_cdev;
  		char			*i_link;

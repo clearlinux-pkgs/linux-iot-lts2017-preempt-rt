@@ -71,7 +71,7 @@ index fc786d3..b833258 100644
  				 _TIF_SYSCALL_TRACEPOINT | _TIF_SECCOMP | \
  				 _TIF_NOHZ)
 diff --git a/arch/arm64/kernel/asm-offsets.c b/arch/arm64/kernel/asm-offsets.c
-index b5e43b0..ae26a16 100644
+index b4a0f4a..7738d43 100644
 --- a/arch/arm64/kernel/asm-offsets.c
 +++ b/arch/arm64/kernel/asm-offsets.c
 @@ -39,6 +39,7 @@ int main(void)

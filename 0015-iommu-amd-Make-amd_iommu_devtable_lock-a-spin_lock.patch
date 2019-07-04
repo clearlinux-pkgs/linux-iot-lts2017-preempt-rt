@@ -20,7 +20,7 @@ Signed-off-by: Joerg Roedel <jroedel@suse.de>
  1 file changed, 7 insertions(+), 7 deletions(-)
 
 diff --git a/drivers/iommu/amd_iommu.c b/drivers/iommu/amd_iommu.c
-index 0051c69..e78fa4b 100644
+index 5e61497..622cecf 100644
 --- a/drivers/iommu/amd_iommu.c
 +++ b/drivers/iommu/amd_iommu.c
 @@ -81,7 +81,7 @@

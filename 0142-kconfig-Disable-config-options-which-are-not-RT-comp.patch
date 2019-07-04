@@ -24,7 +24,7 @@ index 77b3e21..69d6f37 100644
  	select RING_BUFFER_ALLOW_SWAP
  	help
 diff --git a/mm/Kconfig b/mm/Kconfig
-index 59efbd3..3df123c 100644
+index cc4d633..205bc66 100644
 --- a/mm/Kconfig
 +++ b/mm/Kconfig
 @@ -385,7 +385,7 @@ config NOMMU_INITIAL_TRIM_EXCESS

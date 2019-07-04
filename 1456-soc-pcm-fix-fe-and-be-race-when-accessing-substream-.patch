@@ -30,10 +30,10 @@ Signed-off-by: Zhang Yanmin <yanmin.zhang@intel.com>
  1 file changed, 2 insertions(+), 1 deletion(-)
 
 diff --git a/sound/soc/soc-pcm.c b/sound/soc/soc-pcm.c
-index aac2c9e..477d29c 100644
+index a76f341..1fc201a 100644
 --- a/sound/soc/soc-pcm.c
 +++ b/sound/soc/soc-pcm.c
-@@ -1535,6 +1535,8 @@ int dpcm_be_dai_startup(struct snd_soc_pcm_runtime *fe, int stream)
+@@ -1538,6 +1538,8 @@ int dpcm_be_dai_startup(struct snd_soc_pcm_runtime *fe, int stream)
  		if (be->dpcm[stream].users++ != 0)
  			continue;
  
@@ -42,7 +42,7 @@ index aac2c9e..477d29c 100644
  		if ((be->dpcm[stream].state != SND_SOC_DPCM_STATE_NEW) &&
  		    (be->dpcm[stream].state != SND_SOC_DPCM_STATE_CLOSE))
  			continue;
-@@ -1542,7 +1544,6 @@ int dpcm_be_dai_startup(struct snd_soc_pcm_runtime *fe, int stream)
+@@ -1545,7 +1547,6 @@ int dpcm_be_dai_startup(struct snd_soc_pcm_runtime *fe, int stream)
  		dev_dbg(be->dev, "ASoC: open %s BE %s\n",
  			stream ? "capture" : "playback", be->dai_link->name);
  

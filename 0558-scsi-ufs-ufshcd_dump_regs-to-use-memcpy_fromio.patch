@@ -76,7 +76,7 @@ index c87d770..edd0554 100644
  	/* sleep a bit intermittently as we are dumping too much data */
  	ufs_qcom_print_hw_debug_reg_all(hba, NULL, ufs_qcom_dump_regs_wrapper);
 diff --git a/drivers/scsi/ufs/ufshcd.c b/drivers/scsi/ufs/ufshcd.c
-index 581571d..ea18749 100644
+index d8f0a1c..26874de 100644
 --- a/drivers/scsi/ufs/ufshcd.c
 +++ b/drivers/scsi/ufs/ufshcd.c
 @@ -97,8 +97,29 @@

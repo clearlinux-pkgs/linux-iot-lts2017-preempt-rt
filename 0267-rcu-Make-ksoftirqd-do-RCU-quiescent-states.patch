@@ -29,10 +29,10 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  3 files changed, 15 insertions(+), 6 deletions(-)
 
 diff --git a/include/linux/rcupdate.h b/include/linux/rcupdate.h
-index 104fa2b..70996e1 100644
+index 94719d7..b027f96 100644
 --- a/include/linux/rcupdate.h
 +++ b/include/linux/rcupdate.h
-@@ -117,11 +117,7 @@ static inline int rcu_preempt_depth(void)
+@@ -115,11 +115,7 @@ static inline int rcu_preempt_depth(void)
  void rcu_init(void);
  extern int rcu_scheduler_active __read_mostly;
  void rcu_sched_qs(void);

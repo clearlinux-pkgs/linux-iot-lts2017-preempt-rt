@@ -104,10 +104,10 @@ index 9240809..dc744da 100644
  int intel_gvt_scan_and_shadow_workload(struct intel_vgpu_workload *workload);
  
 diff --git a/drivers/gpu/drm/i915/intel_pm.c b/drivers/gpu/drm/i915/intel_pm.c
-index b380c5d..f0c7ed7 100644
+index 7e8c21f..9f9436b 100644
 --- a/drivers/gpu/drm/i915/intel_pm.c
 +++ b/drivers/gpu/drm/i915/intel_pm.c
-@@ -5038,9 +5038,18 @@ skl_compute_ddb(struct drm_atomic_state *state)
+@@ -5077,9 +5077,18 @@ skl_compute_ddb(struct drm_atomic_state *state)
  	memcpy(ddb, &dev_priv->wm.skl_hw.ddb, sizeof(*ddb));
  
  #if IS_ENABLED(CONFIG_DRM_I915_GVT)

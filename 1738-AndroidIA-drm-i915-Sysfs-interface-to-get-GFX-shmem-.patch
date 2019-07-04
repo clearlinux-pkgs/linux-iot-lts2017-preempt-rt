@@ -61,7 +61,7 @@ Change-Id: I772a45d699e909d95e0d3fa3bcbb7afe61330aee
  13 files changed, 1440 insertions(+), 15 deletions(-)
 
 diff --git a/drivers/gpu/drm/drm_file.c b/drivers/gpu/drm/drm_file.c
-index 03244b3..9d8a363 100644
+index 3cf07f5..eccf551 100644
 --- a/drivers/gpu/drm/drm_file.c
 +++ b/drivers/gpu/drm/drm_file.c
 @@ -44,6 +44,7 @@
