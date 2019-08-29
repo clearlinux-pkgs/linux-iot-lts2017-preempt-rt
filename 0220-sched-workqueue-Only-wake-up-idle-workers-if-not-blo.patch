@@ -23,7 +23,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 3 insertions(+), 1 deletion(-)
 
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index e6284ae..01c4f14 100644
+index 1a3c2c5..c858f5b 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -3405,8 +3405,10 @@ static void __sched notrace __schedule(bool preempt)

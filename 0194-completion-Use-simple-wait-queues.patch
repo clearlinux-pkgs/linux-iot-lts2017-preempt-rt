@@ -36,10 +36,10 @@ index 56f6e3b..a50350d 100644
  		}
  		break;
 diff --git a/drivers/usb/gadget/function/f_fs.c b/drivers/usb/gadget/function/f_fs.c
-index 79900c0..c3dafb1 100644
+index cdffbe9..2e6a575 100644
 --- a/drivers/usb/gadget/function/f_fs.c
 +++ b/drivers/usb/gadget/function/f_fs.c
-@@ -1614,7 +1614,7 @@ static void ffs_data_put(struct ffs_data *ffs)
+@@ -1616,7 +1616,7 @@ static void ffs_data_put(struct ffs_data *ffs)
  		pr_info("%s(): freeing\n", __func__);
  		ffs_data_clear(ffs);
  		BUG_ON(waitqueue_active(&ffs->ev.waitq) ||
@@ -308,7 +308,7 @@ index 2ddaec4..0fe2982 100644
  }
  EXPORT_SYMBOL(completion_done);
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index ccdc8ae..9b410af 100644
+index f25e9e5..d03099f 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -6826,7 +6826,10 @@ void migrate_disable(void)

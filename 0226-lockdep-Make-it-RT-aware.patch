@@ -58,7 +58,7 @@ index 7834117..2e023bf 100644
  
  #if defined(CONFIG_IRQSOFF_TRACER) || \
 diff --git a/kernel/locking/lockdep.c b/kernel/locking/lockdep.c
-index bf694c7..8012378 100644
+index 565005a..e576d23 100644
 --- a/kernel/locking/lockdep.c
 +++ b/kernel/locking/lockdep.c
 @@ -3914,6 +3914,7 @@ static void check_flags(unsigned long flags)

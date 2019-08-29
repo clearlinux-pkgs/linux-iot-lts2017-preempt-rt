@@ -24,10 +24,10 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  3 files changed, 12 insertions(+)
 
 diff --git a/include/linux/kernel.h b/include/linux/kernel.h
-index 1c5469a..4d76b5f 100644
+index bb7baec..93722f3 100644
 --- a/include/linux/kernel.h
 +++ b/include/linux/kernel.h
-@@ -531,6 +531,7 @@ extern enum system_states {
+@@ -532,6 +532,7 @@ extern enum system_states {
  	SYSTEM_HALT,
  	SYSTEM_POWER_OFF,
  	SYSTEM_RESTART,

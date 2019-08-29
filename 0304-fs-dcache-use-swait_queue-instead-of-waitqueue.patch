@@ -119,7 +119,7 @@ index d1e467b..895363a 100644
  	if (unlikely(IS_DEADDIR(dir_inode)))
  		return -ENOENT;
 diff --git a/fs/nfs/dir.c b/fs/nfs/dir.c
-index 1f38185..f43f5da 100644
+index 54dca0e..daf4bf6 100644
 --- a/fs/nfs/dir.c
 +++ b/fs/nfs/dir.c
 @@ -452,7 +452,7 @@ static
@@ -131,7 +131,7 @@ index 1f38185..f43f5da 100644
  	struct dentry *dentry;
  	struct dentry *alias;
  	struct inode *dir = d_inode(parent);
-@@ -1443,7 +1443,7 @@ int nfs_atomic_open(struct inode *dir, struct dentry *dentry,
+@@ -1479,7 +1479,7 @@ int nfs_atomic_open(struct inode *dir, struct dentry *dentry,
  		    struct file *file, unsigned open_flags,
  		    umode_t mode, int *opened)
  {
@@ -176,10 +176,10 @@ index 64695dc..fd8fade 100644
  		if (IS_ERR(child))
  			goto end_instantiate;
 diff --git a/fs/proc/proc_sysctl.c b/fs/proc/proc_sysctl.c
-index 555698d..fe3085a 100644
+index 12bac45..d045ab0 100644
 --- a/fs/proc/proc_sysctl.c
 +++ b/fs/proc/proc_sysctl.c
-@@ -678,7 +678,7 @@ static bool proc_sys_fill_cache(struct file *file,
+@@ -682,7 +682,7 @@ static bool proc_sys_fill_cache(struct file *file,
  
  	child = d_lookup(dir, &qname);
  	if (!child) {

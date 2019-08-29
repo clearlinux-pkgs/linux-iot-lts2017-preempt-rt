@@ -22,7 +22,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
  1 file changed, 9 insertions(+), 10 deletions(-)
 
 diff --git a/crypto/cryptd.c b/crypto/cryptd.c
-index 248f6ba..54b7985 100644
+index 4cc1871..948ae42 100644
 --- a/crypto/cryptd.c
 +++ b/crypto/cryptd.c
 @@ -37,6 +37,7 @@

@@ -830,7 +830,7 @@ index c21fd6a..9222268 100644
  	}
  
 diff --git a/net/core/dev.c b/net/core/dev.c
-index 26b87e9..1489f11 100644
+index 25e1251..574ef83 100644
 --- a/net/core/dev.c
 +++ b/net/core/dev.c
 @@ -4110,11 +4110,9 @@ int netif_rx_ni(struct sk_buff *skb)

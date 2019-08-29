@@ -96,7 +96,7 @@ index 462baf1..5d06942 100644
  # endif
  #endif
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index 23537bd..7f42436 100644
+index 40e676c..332e44d 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -1107,7 +1107,7 @@ void set_cpus_allowed_common(struct task_struct *p, const struct cpumask *new_ma

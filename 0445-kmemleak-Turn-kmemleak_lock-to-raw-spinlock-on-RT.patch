@@ -81,7 +81,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
  1 file changed, 10 insertions(+), 10 deletions(-)
 
 diff --git a/mm/kmemleak.c b/mm/kmemleak.c
-index 71ba1c7..841f6af 100644
+index d779181..c18e236 100644
 --- a/mm/kmemleak.c
 +++ b/mm/kmemleak.c
 @@ -26,7 +26,7 @@

@@ -37,7 +37,7 @@ index 45c1bc5..ea110a4 100644
  static inline void cond_resched_rcu(void)
  {
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index 28e543a..8cd3d63 100644
+index cd977c3..153ba15 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -4948,6 +4948,7 @@ int __cond_resched_lock(spinlock_t *lock)

@@ -52,7 +52,7 @@ index fdb0cd0..6548d4e 100644
  		struct lock_class_key *class)
  {
 diff --git a/net/core/dev.c b/net/core/dev.c
-index 1489f11..2abfbfc 100644
+index 574ef83..3cd2d10 100644
 --- a/net/core/dev.c
 +++ b/net/core/dev.c
 @@ -217,14 +217,14 @@ static inline struct hlist_head *dev_index_hash(struct net *net, int ifindex)
@@ -150,7 +150,7 @@ index 1489f11..2abfbfc 100644
  
  	return 0;
  }
-@@ -8777,8 +8793,9 @@ static int __init net_dev_init(void)
+@@ -8779,8 +8795,9 @@ static int __init net_dev_init(void)
  
  		INIT_WORK(flush, flush_backlog);
  

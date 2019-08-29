@@ -14,7 +14,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  2 files changed, 8 insertions(+), 1 deletion(-)
 
 diff --git a/include/linux/rcupdate.h b/include/linux/rcupdate.h
-index f960c85..25e5416 100644
+index 8d57019..5e6d424 100644
 --- a/include/linux/rcupdate.h
 +++ b/include/linux/rcupdate.h
 @@ -74,6 +74,11 @@ void synchronize_rcu(void);
@@ -39,7 +39,7 @@ index f960c85..25e5416 100644
  
  /* Internal to kernel */
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index 8b0816c..28e543a 100644
+index af7f266..cd977c3 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -6052,7 +6052,7 @@ void __init sched_init(void)

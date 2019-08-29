@@ -57,7 +57,7 @@ index a7d48ad..086c191 100644
  
  	/* Process credentials: */
 diff --git a/kernel/fork.c b/kernel/fork.c
-index 2da1462..857f6db 100644
+index e1b39a4..d729ed7 100644
 --- a/kernel/fork.c
 +++ b/kernel/fork.c
 @@ -1507,6 +1507,9 @@ static void rt_mutex_init_task(struct task_struct *p)

@@ -85,7 +85,7 @@ index 9fb239e..5801e51 100644
   * Callback to arch code if there's nosmp or maxcpus=0 on the
   * boot command line:
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index 34bb15e..850fb16 100644
+index af67b9f..2e9da2a 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -1042,7 +1042,15 @@ void set_cpus_allowed_common(struct task_struct *p, const struct cpumask *new_ma

@@ -12,7 +12,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 8 insertions(+), 5 deletions(-)
 
 diff --git a/mm/vmalloc.c b/mm/vmalloc.c
-index 6c906f6..06ad121 100644
+index 0b8852d..27acb8e 100644
 --- a/mm/vmalloc.c
 +++ b/mm/vmalloc.c
 @@ -869,7 +869,7 @@ static void *new_vmap_block(unsigned int order, gfp_t gfp_mask)

@@ -116,7 +116,7 @@ index 86a7099..9c069ef 100644
  	return 0;
  }
 diff --git a/net/core/dev.c b/net/core/dev.c
-index 08c0e76..26b87e9 100644
+index f79b513..25e1251 100644
 --- a/net/core/dev.c
 +++ b/net/core/dev.c
 @@ -2460,6 +2460,7 @@ static void __netif_reschedule(struct Qdisc *q)

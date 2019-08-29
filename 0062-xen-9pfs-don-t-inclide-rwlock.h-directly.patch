@@ -18,7 +18,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 1 deletion(-)
 
 diff --git a/net/9p/trans_xen.c b/net/9p/trans_xen.c
-index c10bdf6..84a49f2 100644
+index ea9f177..4bebdbf 100644
 --- a/net/9p/trans_xen.c
 +++ b/net/9p/trans_xen.c
 @@ -38,7 +38,6 @@

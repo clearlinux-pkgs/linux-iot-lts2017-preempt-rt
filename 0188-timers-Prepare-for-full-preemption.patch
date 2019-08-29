@@ -29,7 +29,7 @@ index e0ea1fe..df3085d 100644
  #else
  # define del_timer_sync(t)		del_timer(t)
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index 706ca04..ccdc8ae 100644
+index fee0ef2..f25e9e5 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -523,11 +523,14 @@ void resched_cpu(int cpu)

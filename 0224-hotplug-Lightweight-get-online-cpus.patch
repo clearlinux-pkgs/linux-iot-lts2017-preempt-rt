@@ -42,7 +42,7 @@ index efc48ef..3fa859c 100644
  
  /* Wrappers which go away once all code is converted */
 diff --git a/kernel/cpu.c b/kernel/cpu.c
-index 127a69b..8f8cb84 100644
+index d768e15..597630c 100644
 --- a/kernel/cpu.c
 +++ b/kernel/cpu.c
 @@ -288,6 +288,21 @@ static int cpu_hotplug_disabled;
@@ -68,7 +68,7 @@ index 127a69b..8f8cb84 100644
  
  void cpus_read_lock(void)
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index e751648..54f72b2 100644
+index 80fb9dd..594fc1a 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -6924,6 +6924,7 @@ void migrate_disable(void)

@@ -24,7 +24,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
  1 file changed, 1 insertion(+)
 
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index 3f4abb5..2094ba0 100644
+index ddaa9ff..7d2cc07 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
 @@ -1112,6 +1112,7 @@ int __migrate_disabled(struct task_struct *p)
