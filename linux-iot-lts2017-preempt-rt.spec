@@ -25,7 +25,7 @@ Requires: systemd-bin
 
 # quilt.url: https://github.com/intel/linux-intel-quilt
 # quilt.branch: 4.14/preempt-rt
-# quilt.tag:  lts-v4.14.139-preempt-rt-190824T154600Z
+# quilt.tag:  lts-v4.14.146-preempt-rt-191003T140007Z
 
 # PK XXXX: Series
 Patch0001: 0001-rtmutex-Make-rt_mutex_futex_unlock-safe-for-irq-off-.patch
