@@ -44,7 +44,7 @@ index 0a15771..7f61920 100644
 +obj-$(CONFIG_ACRN_HV_NPK_LOG) += hv_npk_log.o
 diff --git a/drivers/acrn/hv_npk_log.c b/drivers/acrn/hv_npk_log.c
 new file mode 100644
-index 0000000..2303b9a
+index 00000000..2303b9a
 --- /dev/null
 +++ b/drivers/acrn/hv_npk_log.c
 @@ -0,0 +1,384 @@
@@ -434,7 +434,7 @@ index 0000000..2303b9a
 +MODULE_VERSION("0.1");
 diff --git a/drivers/acrn/hv_npk_log.h b/drivers/acrn/hv_npk_log.h
 new file mode 100644
-index 0000000..68bd682
+index 00000000..68bd682
 --- /dev/null
 +++ b/drivers/acrn/hv_npk_log.h
 @@ -0,0 +1,109 @@

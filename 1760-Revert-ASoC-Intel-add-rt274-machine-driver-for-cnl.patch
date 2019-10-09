@@ -33,7 +33,7 @@ index 760fe5d..4ef6175 100644
  endif ## SND_SOC_INTEL_MACH
 diff --git a/sound/soc/intel/boards/cnl_rt274.c b/sound/soc/intel/boards/cnl_rt274.c
 deleted file mode 100644
-index 3165952..0000000
+index 3165952..00000000
 --- a/sound/soc/intel/boards/cnl_rt274.c
 +++ /dev/null
 @@ -1,334 +0,0 @@

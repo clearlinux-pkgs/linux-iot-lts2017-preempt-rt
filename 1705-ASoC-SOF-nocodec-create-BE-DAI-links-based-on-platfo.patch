@@ -195,7 +195,7 @@ index 7a2d48e..83c71ac 100644
  #else
 diff --git a/sound/soc/sof/utils.c b/sound/soc/sof/utils.c
 new file mode 100644
-index 0000000..8f2116a
+index 00000000..8f2116a
 --- /dev/null
 +++ b/sound/soc/sof/utils.c
 @@ -0,0 +1,55 @@

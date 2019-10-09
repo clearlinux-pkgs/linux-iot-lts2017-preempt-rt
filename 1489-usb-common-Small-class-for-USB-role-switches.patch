@@ -39,7 +39,7 @@ Signed-off-by: Kuppuswamy Sathyanarayanan <sathyanarayanan.kuppuswamy@linux.inte
 
 diff --git a/Documentation/ABI/testing/sysfs-class-usb_role b/Documentation/ABI/testing/sysfs-class-usb_role
 new file mode 100644
-index 0000000..3b810a4
+index 00000000..3b810a4
 --- /dev/null
 +++ b/Documentation/ABI/testing/sysfs-class-usb_role
 @@ -0,0 +1,21 @@
@@ -87,7 +87,7 @@ index 0a7c45e..fb4d5ef 100644
 +obj-$(CONFIG_USB_ROLE_SWITCH)	+= roles.o
 diff --git a/drivers/usb/common/roles.c b/drivers/usb/common/roles.c
 new file mode 100644
-index 0000000..15cc76e
+index 00000000..15cc76e
 --- /dev/null
 +++ b/drivers/usb/common/roles.c
 @@ -0,0 +1,305 @@
@@ -398,7 +398,7 @@ index 0000000..15cc76e
 +MODULE_DESCRIPTION("USB Role Class");
 diff --git a/include/linux/usb/role.h b/include/linux/usb/role.h
 new file mode 100644
-index 0000000..edc51be
+index 00000000..edc51be
 --- /dev/null
 +++ b/include/linux/usb/role.h
 @@ -0,0 +1,53 @@

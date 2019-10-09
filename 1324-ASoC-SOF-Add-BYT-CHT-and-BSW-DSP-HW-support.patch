@@ -16,7 +16,7 @@ Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 
 diff --git a/sound/soc/sof/hw-byt.c b/sound/soc/sof/hw-byt.c
 new file mode 100644
-index 0000000..c7a88a2
+index 00000000..c7a88a2
 --- /dev/null
 +++ b/sound/soc/sof/hw-byt.c
 @@ -0,0 +1,837 @@
@@ -859,7 +859,7 @@ index 0000000..c7a88a2
 +MODULE_LICENSE("Dual BSD/GPL");
 diff --git a/sound/soc/sof/intel.h b/sound/soc/sof/intel.h
 new file mode 100644
-index 0000000..4bcf787
+index 00000000..4bcf787
 --- /dev/null
 +++ b/sound/soc/sof/intel.h
 @@ -0,0 +1,322 @@

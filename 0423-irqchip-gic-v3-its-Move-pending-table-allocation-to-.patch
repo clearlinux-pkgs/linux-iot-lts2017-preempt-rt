@@ -17,7 +17,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
  2 files changed, 37 insertions(+), 35 deletions(-)
 
 diff --git a/drivers/irqchip/irq-gic-v3-its.c b/drivers/irqchip/irq-gic-v3-its.c
-index d60d108..585b77a 100644
+index a0d2378..2a9fa40 100644
 --- a/drivers/irqchip/irq-gic-v3-its.c
 +++ b/drivers/irqchip/irq-gic-v3-its.c
 @@ -1439,7 +1439,7 @@ static void its_free_prop_table(struct page *prop_page)

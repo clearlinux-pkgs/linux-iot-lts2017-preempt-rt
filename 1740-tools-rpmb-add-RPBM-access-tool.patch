@@ -123,7 +123,7 @@ index c4f41ef..6992a7b 100644
  		gpio_clean objtool_clean leds_clean
 diff --git a/tools/rpmb/Makefile b/tools/rpmb/Makefile
 new file mode 100644
-index 0000000..c99d5f9
+index 00000000..c99d5f9
 --- /dev/null
 +++ b/tools/rpmb/Makefile
 @@ -0,0 +1,38 @@
@@ -167,7 +167,7 @@ index 0000000..c99d5f9
 +	$(INSTALL) $(prog) $(DESTDIR)$(bindir)
 diff --git a/tools/rpmb/rpmb.c b/tools/rpmb/rpmb.c
 new file mode 100644
-index 0000000..1a507db
+index 00000000..1a507db
 --- /dev/null
 +++ b/tools/rpmb/rpmb.c
 @@ -0,0 +1,1020 @@

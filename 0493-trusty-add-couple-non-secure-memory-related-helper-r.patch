@@ -33,7 +33,7 @@ index 641ee2a..e527a23 100644
 +obj-$(CONFIG_TRUSTY)		+= trusty-mem.o
 diff --git a/drivers/trusty/trusty-mem.c b/drivers/trusty/trusty-mem.c
 new file mode 100644
-index 0000000..c55ace2
+index 00000000..c55ace2
 --- /dev/null
 +++ b/drivers/trusty/trusty-mem.c
 @@ -0,0 +1,134 @@

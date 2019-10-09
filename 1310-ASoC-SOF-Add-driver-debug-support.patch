@@ -14,7 +14,7 @@ Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 
 diff --git a/sound/soc/sof/debug.c b/sound/soc/sof/debug.c
 new file mode 100644
-index 0000000..c1580a1
+index 00000000..c1580a1
 --- /dev/null
 +++ b/sound/soc/sof/debug.c
 @@ -0,0 +1,137 @@

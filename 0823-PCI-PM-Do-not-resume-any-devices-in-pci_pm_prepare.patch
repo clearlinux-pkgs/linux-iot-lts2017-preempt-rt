@@ -16,10 +16,10 @@ Signed-off-by: Rafael J. Wysocki <rafael.j.wysocki@intel.com>
  1 file changed, 7 deletions(-)
 
 diff --git a/drivers/pci/pci-driver.c b/drivers/pci/pci-driver.c
-index e5a8bf2..454d907 100644
+index 7e4bec7..ae7ba30 100644
 --- a/drivers/pci/pci-driver.c
 +++ b/drivers/pci/pci-driver.c
-@@ -681,13 +681,6 @@ static int pci_pm_prepare(struct device *dev)
+@@ -682,13 +682,6 @@ static int pci_pm_prepare(struct device *dev)
  {
  	struct device_driver *drv = dev->driver;
  

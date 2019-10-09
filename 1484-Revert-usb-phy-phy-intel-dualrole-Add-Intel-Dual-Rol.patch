@@ -42,7 +42,7 @@ index a414932..0c40ccc 100644
 -obj-$(CONFIG_USB_INTEL_DUAL_ROLE_PHY)	+= phy-intel-dualrole.o
 diff --git a/drivers/usb/phy/phy-intel-dualrole.c b/drivers/usb/phy/phy-intel-dualrole.c
 deleted file mode 100644
-index f15d239..0000000
+index f15d239..00000000
 --- a/drivers/usb/phy/phy-intel-dualrole.c
 +++ /dev/null
 @@ -1,420 +0,0 @@

@@ -13,7 +13,7 @@ Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 
 diff --git a/sound/soc/sof/pm.c b/sound/soc/sof/pm.c
 new file mode 100644
-index 0000000..d825ff4
+index 00000000..d825ff4
 --- /dev/null
 +++ b/sound/soc/sof/pm.c
 @@ -0,0 +1,48 @@

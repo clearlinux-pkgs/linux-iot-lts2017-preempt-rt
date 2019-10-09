@@ -152,7 +152,7 @@ index 4bd960d..b4d58a9 100644
 +obj-y += vhm_mm.o vhm_ioreq.o vhm_vm_mngt.o vhm_msi.o vhm_hypercall.o
 diff --git a/drivers/vhm/vhm_msi.c b/drivers/vhm/vhm_msi.c
 new file mode 100644
-index 0000000..05e166b
+index 00000000..05e166b
 --- /dev/null
 +++ b/drivers/vhm/vhm_msi.c
 @@ -0,0 +1,135 @@
@@ -313,7 +313,7 @@ index a89cdea..20a7c91 100644
  u32 __pci_msi_desc_mask_irq(struct msi_desc *desc, u32 mask, u32 flag);
 diff --git a/include/linux/vhm/vhm_msi.h b/include/linux/vhm/vhm_msi.h
 new file mode 100644
-index 0000000..e2a5182
+index 00000000..e2a5182
 --- /dev/null
 +++ b/include/linux/vhm/vhm_msi.h
 @@ -0,0 +1,61 @@

@@ -24,7 +24,7 @@ Signed-off-by: Meng Wei <wei.meng@intel.com>
 
 diff --git a/drivers/media/i2c/crlmodule/crl_ov2775_configuration.h b/drivers/media/i2c/crlmodule/crl_ov2775_configuration.h
 new file mode 100644
-index 0000000..282eb7e
+index 00000000..282eb7e
 --- /dev/null
 +++ b/drivers/media/i2c/crlmodule/crl_ov2775_configuration.h
 @@ -0,0 +1,2807 @@

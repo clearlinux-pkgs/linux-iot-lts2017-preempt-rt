@@ -14,7 +14,7 @@ Signed-off-by: Yael Samet <yael.samet@intel.com>
 
 diff --git a/Documentation/misc-devices/mei/dal/dal.txt b/Documentation/misc-devices/mei/dal/dal.txt
 new file mode 100644
-index 0000000..09801e7
+index 00000000..09801e7
 --- /dev/null
 +++ b/Documentation/misc-devices/mei/dal/dal.txt
 @@ -0,0 +1,126 @@

@@ -44,7 +44,7 @@ index d574361..0a9f442 100644
  	unsigned long  __rb_parent_color;
 diff --git a/include/linux/rcu_assign_pointer.h b/include/linux/rcu_assign_pointer.h
 new file mode 100644
-index 0000000..7066962
+index 00000000..7066962
 --- /dev/null
 +++ b/include/linux/rcu_assign_pointer.h
 @@ -0,0 +1,54 @@

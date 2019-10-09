@@ -104,7 +104,7 @@ index f605624..7767ec8 100644
  #endif
 diff --git a/include/uapi/sound/sof-abi.h b/include/uapi/sound/sof-abi.h
 deleted file mode 100644
-index 4e78fa1..0000000
+index 4e78fa1..00000000
 --- a/include/uapi/sound/sof-abi.h
 +++ /dev/null
 @@ -1,29 +0,0 @@
@@ -139,7 +139,7 @@ index 4e78fa1..0000000
 -#endif
 diff --git a/include/uapi/sound/sof-eq.h b/include/uapi/sound/sof-eq.h
 deleted file mode 100644
-index 96aefd1..0000000
+index 96aefd1..00000000
 --- a/include/uapi/sound/sof-eq.h
 +++ /dev/null
 @@ -1,102 +0,0 @@
@@ -247,7 +247,7 @@ index 96aefd1..0000000
 -#endif /* EQ_H */
 diff --git a/include/uapi/sound/sof-fw.h b/include/uapi/sound/sof-fw.h
 deleted file mode 100644
-index 2f9bd82..0000000
+index 2f9bd82..00000000
 --- a/include/uapi/sound/sof-fw.h
 +++ /dev/null
 @@ -1,69 +0,0 @@
@@ -322,7 +322,7 @@ index 2f9bd82..0000000
 -#endif
 diff --git a/include/uapi/sound/sof-ipc.h b/include/uapi/sound/sof-ipc.h
 deleted file mode 100644
-index 6f91b6c..0000000
+index 6f91b6c..00000000
 --- a/include/uapi/sound/sof-ipc.h
 +++ /dev/null
 @@ -1,853 +0,0 @@
@@ -1181,7 +1181,7 @@ index 6f91b6c..0000000
 -#endif
 diff --git a/include/uapi/sound/sof-tone.h b/include/uapi/sound/sof-tone.h
 deleted file mode 100644
-index f9c9bf5..0000000
+index f9c9bf5..00000000
 --- a/include/uapi/sound/sof-tone.h
 +++ /dev/null
 @@ -1,28 +0,0 @@
@@ -1215,7 +1215,7 @@ index f9c9bf5..0000000
 -#endif /* TONE_ABI_H */
 diff --git a/include/uapi/sound/sof-topology.h b/include/uapi/sound/sof-topology.h
 deleted file mode 100644
-index f4d2898..0000000
+index f4d2898..00000000
 --- a/include/uapi/sound/sof-topology.h
 +++ /dev/null
 @@ -1,71 +0,0 @@
@@ -1868,7 +1868,7 @@ index b4242a0..419ee6f 100644
  
 diff --git a/sound/soc/sof/Kconfig b/sound/soc/sof/Kconfig
 deleted file mode 100644
-index cdd5fd4..0000000
+index cdd5fd4..00000000
 --- a/sound/soc/sof/Kconfig
 +++ /dev/null
 @@ -1,110 +0,0 @@
@@ -1984,7 +1984,7 @@ index cdd5fd4..0000000
 -endif ## SND_SOC_SOF_INTEL
 diff --git a/sound/soc/sof/Makefile b/sound/soc/sof/Makefile
 deleted file mode 100644
-index b594c4e..0000000
+index b594c4e..00000000
 --- a/sound/soc/sof/Makefile
 +++ /dev/null
 @@ -1,26 +0,0 @@
@@ -2016,7 +2016,7 @@ index b594c4e..0000000
 -obj-$(CONFIG_SND_SOC_SOF_SPIDSP) += snd-sof-spi.o
 diff --git a/sound/soc/sof/compressed.c b/sound/soc/sof/compressed.c
 deleted file mode 100644
-index 64b35fb..0000000
+index 64b35fb..00000000
 --- a/sound/soc/sof/compressed.c
 +++ /dev/null
 @@ -1,168 +0,0 @@
@@ -2190,7 +2190,7 @@ index 64b35fb..0000000
 -};
 diff --git a/sound/soc/sof/control.c b/sound/soc/sof/control.c
 deleted file mode 100644
-index ed52aac..0000000
+index ed52aac..00000000
 --- a/sound/soc/sof/control.c
 +++ /dev/null
 @@ -1,233 +0,0 @@
@@ -2429,7 +2429,7 @@ index ed52aac..0000000
 -}
 diff --git a/sound/soc/sof/debug.c b/sound/soc/sof/debug.c
 deleted file mode 100644
-index c1580a1..0000000
+index c1580a1..00000000
 --- a/sound/soc/sof/debug.c
 +++ /dev/null
 @@ -1,137 +0,0 @@
@@ -2572,7 +2572,7 @@ index c1580a1..0000000
 -EXPORT_SYMBOL(snd_sof_free_debug);
 diff --git a/sound/soc/sof/hw-apl.c b/sound/soc/sof/hw-apl.c
 deleted file mode 100644
-index 7375430..0000000
+index 7375430..00000000
 --- a/sound/soc/sof/hw-apl.c
 +++ /dev/null
 @@ -1,2647 +0,0 @@
@@ -5225,7 +5225,7 @@ index 7375430..0000000
 -MODULE_LICENSE("Dual BSD/GPL");
 diff --git a/sound/soc/sof/hw-bdw.c b/sound/soc/sof/hw-bdw.c
 deleted file mode 100644
-index 1e51323..0000000
+index 1e51323..00000000
 --- a/sound/soc/sof/hw-bdw.c
 +++ /dev/null
 @@ -1,757 +0,0 @@
@@ -5988,7 +5988,7 @@ index 1e51323..0000000
 -MODULE_LICENSE("Dual BSD/GPL");
 diff --git a/sound/soc/sof/hw-byt.c b/sound/soc/sof/hw-byt.c
 deleted file mode 100644
-index b1ea5f9..0000000
+index b1ea5f9..00000000
 --- a/sound/soc/sof/hw-byt.c
 +++ /dev/null
 @@ -1,849 +0,0 @@
@@ -6843,7 +6843,7 @@ index b1ea5f9..0000000
 -MODULE_LICENSE("Dual BSD/GPL");
 diff --git a/sound/soc/sof/hw-hsw.c b/sound/soc/sof/hw-hsw.c
 deleted file mode 100644
-index a5b8f2d..0000000
+index a5b8f2d..00000000
 --- a/sound/soc/sof/hw-hsw.c
 +++ /dev/null
 @@ -1,756 +0,0 @@
@@ -7605,7 +7605,7 @@ index a5b8f2d..0000000
 -MODULE_LICENSE("Dual BSD/GPL");
 diff --git a/sound/soc/sof/hw-spi.c b/sound/soc/sof/hw-spi.c
 deleted file mode 100644
-index d6ba29f..0000000
+index d6ba29f..00000000
 --- a/sound/soc/sof/hw-spi.c
 +++ /dev/null
 @@ -1,253 +0,0 @@
@@ -7864,7 +7864,7 @@ index d6ba29f..0000000
 -MODULE_LICENSE("Dual BSD/GPL");
 diff --git a/sound/soc/sof/intel.h b/sound/soc/sof/intel.h
 deleted file mode 100644
-index 4bcf787..0000000
+index 4bcf787..00000000
 --- a/sound/soc/sof/intel.h
 +++ /dev/null
 @@ -1,322 +0,0 @@
@@ -8192,7 +8192,7 @@ index 4bcf787..0000000
 -#endif
 diff --git a/sound/soc/sof/ipc.c b/sound/soc/sof/ipc.c
 deleted file mode 100644
-index 60287e3..0000000
+index 60287e3..00000000
 --- a/sound/soc/sof/ipc.c
 +++ /dev/null
 @@ -1,605 +0,0 @@
@@ -8803,7 +8803,7 @@ index 60287e3..0000000
 -EXPORT_SYMBOL(snd_sof_ipc_get_comp_data);
 diff --git a/sound/soc/sof/loader.c b/sound/soc/sof/loader.c
 deleted file mode 100644
-index 9fa0b94..0000000
+index 9fa0b94..00000000
 --- a/sound/soc/sof/loader.c
 +++ /dev/null
 @@ -1,283 +0,0 @@
@@ -9092,7 +9092,7 @@ index 9fa0b94..0000000
 -EXPORT_SYMBOL(snd_sof_fw_unload);
 diff --git a/sound/soc/sof/nocodec.c b/sound/soc/sof/nocodec.c
 deleted file mode 100644
-index 0685d29..0000000
+index 0685d29..00000000
 --- a/sound/soc/sof/nocodec.c
 +++ /dev/null
 @@ -1,114 +0,0 @@
@@ -9212,7 +9212,7 @@ index 0685d29..0000000
 -MODULE_ALIAS("platform:sof-nocodec");
 diff --git a/sound/soc/sof/ops.c b/sound/soc/sof/ops.c
 deleted file mode 100644
-index 9ac69e8..0000000
+index 9ac69e8..00000000
 --- a/sound/soc/sof/ops.c
 +++ /dev/null
 @@ -1,190 +0,0 @@
@@ -9408,7 +9408,7 @@ index 9ac69e8..0000000
 -EXPORT_SYMBOL(snd_sof_dsp_register_poll);
 diff --git a/sound/soc/sof/ops.h b/sound/soc/sof/ops.h
 deleted file mode 100644
-index d28a55c..0000000
+index d28a55c..00000000
 --- a/sound/soc/sof/ops.h
 +++ /dev/null
 @@ -1,251 +0,0 @@
@@ -9665,7 +9665,7 @@ index d28a55c..0000000
 -#endif
 diff --git a/sound/soc/sof/pcm.c b/sound/soc/sof/pcm.c
 deleted file mode 100644
-index 8671dc1..0000000
+index 8671dc1..00000000
 --- a/sound/soc/sof/pcm.c
 +++ /dev/null
 @@ -1,632 +0,0 @@
@@ -10303,7 +10303,7 @@ index 8671dc1..0000000
 -}
 diff --git a/sound/soc/sof/pm.c b/sound/soc/sof/pm.c
 deleted file mode 100644
-index d825ff4..0000000
+index d825ff4..00000000
 --- a/sound/soc/sof/pm.c
 +++ /dev/null
 @@ -1,48 +0,0 @@
@@ -10357,7 +10357,7 @@ index d825ff4..0000000
 -EXPORT_SYMBOL(snd_sof_suspend_late);
 diff --git a/sound/soc/sof/sof-acpi-dev.c b/sound/soc/sof/sof-acpi-dev.c
 deleted file mode 100644
-index 9afaf5b..0000000
+index 9afaf5b..00000000
 --- a/sound/soc/sof/sof-acpi-dev.c
 +++ /dev/null
 @@ -1,353 +0,0 @@
@@ -10716,7 +10716,7 @@ index 9afaf5b..0000000
 -MODULE_LICENSE("Dual BSD/GPL");
 diff --git a/sound/soc/sof/sof-pci-dev.c b/sound/soc/sof/sof-pci-dev.c
 deleted file mode 100644
-index ddb8b94..0000000
+index ddb8b94..00000000
 --- a/sound/soc/sof/sof-pci-dev.c
 +++ /dev/null
 @@ -1,307 +0,0 @@
@@ -11060,7 +11060,7 @@ index e7e1b7b..5a9f19b 100644
  	u32 host_offset;
 diff --git a/sound/soc/sof/sof-spi-dev.c b/sound/soc/sof/sof-spi-dev.c
 deleted file mode 100644
-index f5b17d0..0000000
+index f5b17d0..00000000
 --- a/sound/soc/sof/sof-spi-dev.c
 +++ /dev/null
 @@ -1,167 +0,0 @@
@@ -11233,7 +11233,7 @@ index f5b17d0..0000000
 -MODULE_LICENSE("Dual BSD/GPL");
 diff --git a/sound/soc/sof/topology.c b/sound/soc/sof/topology.c
 deleted file mode 100644
-index d068c37..0000000
+index d068c37..00000000
 --- a/sound/soc/sof/topology.c
 +++ /dev/null
 @@ -1,1532 +0,0 @@
@@ -12771,7 +12771,7 @@ index d068c37..0000000
 -EXPORT_SYMBOL(snd_sof_free_topology);
 diff --git a/sound/soc/sof/trace.c b/sound/soc/sof/trace.c
 deleted file mode 100644
-index dc452ad..0000000
+index dc452ad..00000000
 --- a/sound/soc/sof/trace.c
 +++ /dev/null
 @@ -1,290 +0,0 @@
@@ -13067,7 +13067,7 @@ index dc452ad..0000000
 -EXPORT_SYMBOL(snd_sof_release_trace);
 diff --git a/sound/soc/sof/virtio-be.c b/sound/soc/sof/virtio-be.c
 deleted file mode 100644
-index 4c07cae..0000000
+index 4c07cae..00000000
 --- a/sound/soc/sof/virtio-be.c
 +++ /dev/null
 @@ -1,126 +0,0 @@
@@ -13199,7 +13199,7 @@ index 4c07cae..0000000
 -}
 diff --git a/sound/soc/sof/virtio-fe.c b/sound/soc/sof/virtio-fe.c
 deleted file mode 100644
-index 1019e65..0000000
+index 1019e65..00000000
 --- a/sound/soc/sof/virtio-fe.c
 +++ /dev/null
 @@ -1,130 +0,0 @@

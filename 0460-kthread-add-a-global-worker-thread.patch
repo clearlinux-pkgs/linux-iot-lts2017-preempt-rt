@@ -67,7 +67,7 @@ index 8bbc371..a9454ad 100644
  #define BLKG_STAT_CPU_BATCH	(INT_MAX / 2)
 diff --git a/include/linux/kthread-cgroup.h b/include/linux/kthread-cgroup.h
 new file mode 100644
-index 0000000..53d34bc
+index 00000000..53d34bc
 --- /dev/null
 +++ b/include/linux/kthread-cgroup.h
 @@ -0,0 +1,17 @@

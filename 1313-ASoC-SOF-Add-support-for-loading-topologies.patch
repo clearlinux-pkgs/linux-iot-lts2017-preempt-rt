@@ -17,7 +17,7 @@ Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 
 diff --git a/include/uapi/sound/sof-topology.h b/include/uapi/sound/sof-topology.h
 new file mode 100644
-index 0000000..f4d2898
+index 00000000..f4d2898
 --- /dev/null
 +++ b/include/uapi/sound/sof-topology.h
 @@ -0,0 +1,71 @@
@@ -94,7 +94,7 @@ index 0000000..f4d2898
 +#endif
 diff --git a/sound/soc/sof/topology.c b/sound/soc/sof/topology.c
 new file mode 100644
-index 0000000..26063ff
+index 00000000..26063ff
 --- /dev/null
 +++ b/sound/soc/sof/topology.c
 @@ -0,0 +1,1532 @@

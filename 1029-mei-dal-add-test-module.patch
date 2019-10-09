@@ -48,7 +48,7 @@ index e9d0b5d..636fb60 100644
 +obj-$(CONFIG_INTEL_MEI_DAL_TEST) += dal_test.o
 diff --git a/drivers/misc/mei/dal/dal_test.c b/drivers/misc/mei/dal/dal_test.c
 new file mode 100644
-index 0000000..baa3dec
+index 00000000..baa3dec
 --- /dev/null
 +++ b/drivers/misc/mei/dal/dal_test.c
 @@ -0,0 +1,829 @@
@@ -883,7 +883,7 @@ index 0000000..baa3dec
 +MODULE_LICENSE("GPL v2");
 diff --git a/drivers/misc/mei/dal/uapi/kdi_cmd_defs.h b/drivers/misc/mei/dal/uapi/kdi_cmd_defs.h
 new file mode 100644
-index 0000000..ed7b8b7
+index 00000000..ed7b8b7
 --- /dev/null
 +++ b/drivers/misc/mei/dal/uapi/kdi_cmd_defs.h
 @@ -0,0 +1,230 @@

@@ -36,7 +36,7 @@ index c73167f..1326bdf 100644
  obj-$(CONFIG_VIDEO_AS3638) += as3638.o
 diff --git a/drivers/media/i2c/ti953-ser.c b/drivers/media/i2c/ti953-ser.c
 new file mode 100644
-index 0000000..e1610c1
+index 00000000..e1610c1
 --- /dev/null
 +++ b/drivers/media/i2c/ti953-ser.c
 @@ -0,0 +1,128 @@
@@ -170,7 +170,7 @@ index 0000000..e1610c1
 +}
 diff --git a/drivers/media/i2c/ti953.h b/drivers/media/i2c/ti953.h
 new file mode 100644
-index 0000000..2f48416
+index 00000000..2f48416
 --- /dev/null
 +++ b/drivers/media/i2c/ti953.h
 @@ -0,0 +1,122 @@

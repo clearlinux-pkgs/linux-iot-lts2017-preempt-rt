@@ -79,7 +79,7 @@ index 05018b7..950215c 100644
  obj-$(CONFIG_SND_SOC_CS42L52)	+= snd-soc-cs42l52.o
 diff --git a/sound/soc/codecs/svfpga-i2c.c b/sound/soc/codecs/svfpga-i2c.c
 new file mode 100644
-index 0000000..75d0aec
+index 00000000..75d0aec
 --- /dev/null
 +++ b/sound/soc/codecs/svfpga-i2c.c
 @@ -0,0 +1,91 @@
@@ -176,7 +176,7 @@ index 0000000..75d0aec
 +
 diff --git a/sound/soc/codecs/svfpga-sdw.c b/sound/soc/codecs/svfpga-sdw.c
 new file mode 100644
-index 0000000..72d7c07
+index 00000000..72d7c07
 --- /dev/null
 +++ b/sound/soc/codecs/svfpga-sdw.c
 @@ -0,0 +1,142 @@
@@ -324,7 +324,7 @@ index 0000000..72d7c07
 +MODULE_LICENSE("GPL");
 diff --git a/sound/soc/codecs/svfpga.c b/sound/soc/codecs/svfpga.c
 new file mode 100644
-index 0000000..80b5147
+index 00000000..80b5147
 --- /dev/null
 +++ b/sound/soc/codecs/svfpga.c
 @@ -0,0 +1,490 @@
@@ -820,7 +820,7 @@ index 0000000..80b5147
 +MODULE_LICENSE("GPL");
 diff --git a/sound/soc/codecs/svfpga.h b/sound/soc/codecs/svfpga.h
 new file mode 100644
-index 0000000..1b9d9c2
+index 00000000..1b9d9c2
 --- /dev/null
 +++ b/sound/soc/codecs/svfpga.h
 @@ -0,0 +1,398 @@

@@ -229,10 +229,10 @@ index feab209..a0f2623 100644
  	.release_port	= serial8250_release_port,
  	.request_port	= serial8250_request_port,
 diff --git a/drivers/tty/serial/atmel_serial.c b/drivers/tty/serial/atmel_serial.c
-index f747f1a..ef09c51 100644
+index 9ee41ba..e96f760 100644
 --- a/drivers/tty/serial/atmel_serial.c
 +++ b/drivers/tty/serial/atmel_serial.c
-@@ -2016,41 +2016,6 @@ static void atmel_shutdown(struct uart_port *port)
+@@ -2015,41 +2015,6 @@ static void atmel_shutdown(struct uart_port *port)
  	atmel_flush_buffer(port);
  }
  
@@ -274,7 +274,7 @@ index f747f1a..ef09c51 100644
  /*
   * Change the port parameters
   */
-@@ -2379,7 +2344,6 @@ static const struct uart_ops atmel_pops = {
+@@ -2378,7 +2343,6 @@ static const struct uart_ops atmel_pops = {
  	.request_port	= atmel_request_port,
  	.config_port	= atmel_config_port,
  	.verify_port	= atmel_verify_port,

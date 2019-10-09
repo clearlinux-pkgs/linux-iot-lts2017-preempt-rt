@@ -201,7 +201,7 @@ index 809e5c3..04d313d 100644
    snd-soc-skl-objs += skl-debug.o
 diff --git a/sound/soc/intel/skylake/skl-compress.c b/sound/soc/intel/skylake/skl-compress.c
 new file mode 100644
-index 0000000..c8b26e8
+index 00000000..c8b26e8
 --- /dev/null
 +++ b/sound/soc/intel/skylake/skl-compress.c
 @@ -0,0 +1,132 @@
@@ -339,7 +339,7 @@ index 0000000..c8b26e8
 +}
 diff --git a/sound/soc/intel/skylake/skl-compress.h b/sound/soc/intel/skylake/skl-compress.h
 new file mode 100644
-index 0000000..9fcf6c3
+index 00000000..9fcf6c3
 --- /dev/null
 +++ b/sound/soc/intel/skylake/skl-compress.h
 @@ -0,0 +1,35 @@
@@ -650,7 +650,7 @@ index 0567443..e1a2e16 100644
  	pm_runtime_put_autosuspend(platform->dev);
 diff --git a/sound/soc/intel/skylake/skl-probe.c b/sound/soc/intel/skylake/skl-probe.c
 new file mode 100644
-index 0000000..7c206ec
+index 00000000..7c206ec
 --- /dev/null
 +++ b/sound/soc/intel/skylake/skl-probe.c
 @@ -0,0 +1,324 @@
@@ -980,7 +980,7 @@ index 0000000..7c206ec
 +}
 diff --git a/sound/soc/intel/skylake/skl-probe.h b/sound/soc/intel/skylake/skl-probe.h
 new file mode 100644
-index 0000000..a7b8f34
+index 00000000..a7b8f34
 --- /dev/null
 +++ b/sound/soc/intel/skylake/skl-probe.h
 @@ -0,0 +1,37 @@

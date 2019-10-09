@@ -113,7 +113,7 @@ index 32ec926..dd2ba02 100644
  	long ret = 0;
 diff --git a/drivers/vhm/vhm_mm.c b/drivers/vhm/vhm_mm.c
 new file mode 100644
-index 0000000..7ef4116
+index 00000000..7ef4116
 --- /dev/null
 +++ b/drivers/vhm/vhm_mm.c
 @@ -0,0 +1,364 @@
@@ -542,7 +542,7 @@ index 4f45260..45c9c23 100644
  #endif /* CWP_HV_DEFS_H */
 diff --git a/include/linux/vhm/cwp_vhm_mm.h b/include/linux/vhm/cwp_vhm_mm.h
 new file mode 100644
-index 0000000..62661d0
+index 00000000..62661d0
 --- /dev/null
 +++ b/include/linux/vhm/cwp_vhm_mm.h
 @@ -0,0 +1,88 @@

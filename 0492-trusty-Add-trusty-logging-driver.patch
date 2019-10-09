@@ -44,7 +44,7 @@ index e162a40..641ee2a 100644
 +obj-$(CONFIG_TRUSTY_LOG)	+= trusty-log.o
 diff --git a/drivers/trusty/trusty-log.c b/drivers/trusty/trusty-log.c
 new file mode 100644
-index 0000000..e8dcced
+index 00000000..e8dcced
 --- /dev/null
 +++ b/drivers/trusty/trusty-log.c
 @@ -0,0 +1,274 @@
@@ -324,7 +324,7 @@ index 0000000..e8dcced
 +module_platform_driver(trusty_log_driver);
 diff --git a/drivers/trusty/trusty-log.h b/drivers/trusty/trusty-log.h
 new file mode 100644
-index 0000000..09f6021
+index 00000000..09f6021
 --- /dev/null
 +++ b/drivers/trusty/trusty-log.h
 @@ -0,0 +1,22 @@

@@ -54,7 +54,7 @@ index 69d2dfa..b09b8a5 100644
 +obj-$(CONFIG_SND_SOC_INTEL_CNL_CS42L42_MACH) += snd-soc-cnl_cs42l42.o
 diff --git a/sound/soc/intel/boards/cnl_cs42l42.c b/sound/soc/intel/boards/cnl_cs42l42.c
 new file mode 100644
-index 0000000..d10edf6
+index 00000000..d10edf6
 --- /dev/null
 +++ b/sound/soc/intel/boards/cnl_cs42l42.c
 @@ -0,0 +1,314 @@

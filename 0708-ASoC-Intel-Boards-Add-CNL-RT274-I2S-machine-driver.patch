@@ -60,7 +60,7 @@ index e4af8c2..627c83a 100644
  obj-$(CONFIG_SND_SOC_INTEL_CNL_SVFPGA_MACH) += snd-soc-cnl_svfpga.o
 diff --git a/sound/soc/intel/boards/cnl_rt274.c b/sound/soc/intel/boards/cnl_rt274.c
 new file mode 100644
-index 0000000..636aaaa
+index 00000000..636aaaa
 --- /dev/null
 +++ b/sound/soc/intel/boards/cnl_rt274.c
 @@ -0,0 +1,385 @@

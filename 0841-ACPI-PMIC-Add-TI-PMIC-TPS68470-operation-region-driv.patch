@@ -68,7 +68,7 @@ index cd1abc9..709c112 100644
  
 diff --git a/drivers/acpi/pmic/tps68470_pmic.c b/drivers/acpi/pmic/tps68470_pmic.c
 new file mode 100644
-index 0000000..7f3c567
+index 00000000..7f3c567
 --- /dev/null
 +++ b/drivers/acpi/pmic/tps68470_pmic.c
 @@ -0,0 +1,455 @@

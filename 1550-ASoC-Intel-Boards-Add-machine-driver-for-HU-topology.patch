@@ -58,7 +58,7 @@ index bda290c..0adc3e5 100644
 +obj-$(CONFIG_SND_SOC_INTEL_BXTP_IVI_HU_MACH) += snd-soc-bxtp_ivi_hu_rt298.o
 diff --git a/sound/soc/intel/boards/bxtp_ivi_hu_rt298.c b/sound/soc/intel/boards/bxtp_ivi_hu_rt298.c
 new file mode 100644
-index 0000000..ce46772
+index 00000000..ce46772
 --- /dev/null
 +++ b/sound/soc/intel/boards/bxtp_ivi_hu_rt298.c
 @@ -0,0 +1,250 @@

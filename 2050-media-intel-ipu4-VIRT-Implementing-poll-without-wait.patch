@@ -447,7 +447,7 @@ index 0662a9e..c4ab255 100644
  {
 diff --git a/drivers/media/pci/intel/virtio/intel-ipu4-virtio-be.h b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-be.h
 new file mode 100644
-index 0000000..3fb8710
+index 00000000..3fb8710
 --- /dev/null
 +++ b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-be.h
 @@ -0,0 +1,11 @@

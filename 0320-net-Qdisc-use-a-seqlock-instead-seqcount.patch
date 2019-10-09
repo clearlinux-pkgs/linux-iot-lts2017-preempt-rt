@@ -85,7 +85,7 @@ index 304f7aa..00d3813 100644
  			struct gnet_stats_rate_est64 *sample);
 diff --git a/include/net/net_seq_lock.h b/include/net/net_seq_lock.h
 new file mode 100644
-index 0000000..a703429
+index 00000000..a703429
 --- /dev/null
 +++ b/include/net/net_seq_lock.h
 @@ -0,0 +1,15 @@
@@ -255,7 +255,7 @@ index 7b42709..4a2f635 100644
  			err = -EOPNOTSUPP;
  			if (sch->flags & TCQ_F_MQROOT)
 diff --git a/net/sched/sch_generic.c b/net/sched/sch_generic.c
-index de08394..341f789 100644
+index 1bf76f1..0309c52 100644
 --- a/net/sched/sch_generic.c
 +++ b/net/sched/sch_generic.c
 @@ -429,7 +429,11 @@ struct Qdisc noop_qdisc = {

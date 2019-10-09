@@ -14,7 +14,7 @@ Change-Id: I1808433accb82944276f82a8c257aedc472b7877
 
 diff --git a/Documentation/ABI/testing/sysfs-class-rpmb b/Documentation/ABI/testing/sysfs-class-rpmb
 deleted file mode 100644
-index 23a31be..0000000
+index 23a31be..00000000
 --- a/Documentation/ABI/testing/sysfs-class-rpmb
 +++ /dev/null
 @@ -1,20 +0,0 @@

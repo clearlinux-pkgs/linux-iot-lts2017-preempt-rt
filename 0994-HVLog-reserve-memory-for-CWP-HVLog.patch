@@ -39,7 +39,7 @@ index 34c9bf9..2e5fe43 100644
 +obj-$(CONFIG_CWP_HVLOG) += cwp_hvlog.o
 diff --git a/drivers/cwp/cwp_hvlog.c b/drivers/cwp/cwp_hvlog.c
 new file mode 100644
-index 0000000..e977a14
+index 00000000..e977a14
 --- /dev/null
 +++ b/drivers/cwp/cwp_hvlog.c
 @@ -0,0 +1,83 @@

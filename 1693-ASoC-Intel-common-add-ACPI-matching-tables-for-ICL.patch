@@ -37,7 +37,7 @@ index 915a34c..fd52419 100644
  obj-$(CONFIG_SND_SOC_INTEL_SST_ACPI) += snd-soc-sst-acpi.o
 diff --git a/sound/soc/intel/common/soc-acpi-intel-icl-match.c b/sound/soc/intel/common/soc-acpi-intel-icl-match.c
 new file mode 100644
-index 0000000..33b441d
+index 00000000..33b441d
 --- /dev/null
 +++ b/sound/soc/intel/common/soc-acpi-intel-icl-match.c
 @@ -0,0 +1,32 @@

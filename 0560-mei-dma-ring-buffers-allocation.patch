@@ -30,7 +30,7 @@ index cd6825a..d9215fc 100644
  mei-$(CONFIG_DEBUG_FS) += debugfs.o
 diff --git a/drivers/misc/mei/dma-ring.c b/drivers/misc/mei/dma-ring.c
 new file mode 100644
-index 0000000..650c46e
+index 00000000..650c46e
 --- /dev/null
 +++ b/drivers/misc/mei/dma-ring.c
 @@ -0,0 +1,93 @@

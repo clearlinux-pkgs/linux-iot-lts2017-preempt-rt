@@ -98,7 +98,7 @@ index d7380b4..c4f41ef 100644
  		gpio_clean objtool_clean leds_clean
 diff --git a/tools/rpmb/.gitignore b/tools/rpmb/.gitignore
 deleted file mode 100644
-index 218f680..0000000
+index 218f680..00000000
 --- a/tools/rpmb/.gitignore
 +++ /dev/null
 @@ -1,2 +0,0 @@
@@ -106,7 +106,7 @@ index 218f680..0000000
 -rpmb
 diff --git a/tools/rpmb/Makefile b/tools/rpmb/Makefile
 deleted file mode 100644
-index c6ab3fc..0000000
+index c6ab3fc..00000000
 --- a/tools/rpmb/Makefile
 +++ /dev/null
 @@ -1,38 +0,0 @@
@@ -150,7 +150,7 @@ index c6ab3fc..0000000
 -
 diff --git a/tools/rpmb/rpmb.c b/tools/rpmb/rpmb.c
 deleted file mode 100644
-index 2f16f77..0000000
+index 2f16f77..00000000
 --- a/tools/rpmb/rpmb.c
 +++ /dev/null
 @@ -1,1036 +0,0 @@

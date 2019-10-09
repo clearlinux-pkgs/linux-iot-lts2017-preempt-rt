@@ -142,7 +142,7 @@ index d00a428..a021543 100644
  	return 0;
 diff --git a/drivers/vbs/vq.c b/drivers/vbs/vq.c
 new file mode 100644
-index 0000000..61785de
+index 00000000..61785de
 --- /dev/null
 +++ b/drivers/vbs/vq.c
 @@ -0,0 +1,125 @@
@@ -394,7 +394,7 @@ index bbdafed..68a8f1f 100644
  #endif
 diff --git a/include/linux/vbs/vq.h b/include/linux/vbs/vq.h
 new file mode 100644
-index 0000000..dde6f89
+index 00000000..dde6f89
 --- /dev/null
 +++ b/include/linux/vbs/vq.h
 @@ -0,0 +1,99 @@

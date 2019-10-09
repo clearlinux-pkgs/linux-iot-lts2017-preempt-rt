@@ -31,7 +31,7 @@ index 62f37ff..bc3045a 100644
 +obj-$(CONFIG_SND_SOC_INTEL_CNL_FPGA) += fpga/
 diff --git a/sound/soc/intel/fpga/Makefile b/sound/soc/intel/fpga/Makefile
 new file mode 100644
-index 0000000..f434f7b
+index 00000000..f434f7b
 --- /dev/null
 +++ b/sound/soc/intel/fpga/Makefile
 @@ -0,0 +1,4 @@
@@ -41,7 +41,7 @@ index 0000000..f434f7b
 +
 diff --git a/sound/soc/intel/fpga/hda_intel_cnl_fpga.c b/sound/soc/intel/fpga/hda_intel_cnl_fpga.c
 new file mode 100644
-index 0000000..25f3d3c
+index 00000000..25f3d3c
 --- /dev/null
 +++ b/sound/soc/intel/fpga/hda_intel_cnl_fpga.c
 @@ -0,0 +1,280 @@

@@ -83,7 +83,7 @@ index 8310d77..e952c7e 100644
  i915-y					+= $(addprefix $(GVT_DIR)/, $(GVT_SOURCE))
 diff --git a/drivers/gpu/drm/i915/gvt/fb_decoder.c b/drivers/gpu/drm/i915/gvt/fb_decoder.c
 new file mode 100644
-index 0000000..020b447
+index 00000000..020b447
 --- /dev/null
 +++ b/drivers/gpu/drm/i915/gvt/fb_decoder.c
 @@ -0,0 +1,422 @@
@@ -511,7 +511,7 @@ index 0000000..020b447
 +}
 diff --git a/drivers/gpu/drm/i915/gvt/fb_decoder.h b/drivers/gpu/drm/i915/gvt/fb_decoder.h
 new file mode 100644
-index 0000000..180d392
+index 00000000..180d392
 --- /dev/null
 +++ b/drivers/gpu/drm/i915/gvt/fb_decoder.h
 @@ -0,0 +1,155 @@
@@ -697,7 +697,7 @@ index 47912c8..7763ed5 100644
  int __must_check i915_gem_evict_something(struct i915_address_space *vm,
 diff --git a/drivers/gpu/drm/i915/i915_gem_gvtbuffer.c b/drivers/gpu/drm/i915/i915_gem_gvtbuffer.c
 new file mode 100644
-index 0000000..d2939c2
+index 00000000..d2939c2
 --- /dev/null
 +++ b/drivers/gpu/drm/i915/i915_gem_gvtbuffer.c
 @@ -0,0 +1,287 @@

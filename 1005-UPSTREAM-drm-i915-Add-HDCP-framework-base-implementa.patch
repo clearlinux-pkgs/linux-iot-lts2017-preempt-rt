@@ -340,7 +340,7 @@ index 43bcac8..5d7b33e 100644
  void intel_psr_enable(struct intel_dp *intel_dp);
 diff --git a/drivers/gpu/drm/i915/intel_hdcp.c b/drivers/gpu/drm/i915/intel_hdcp.c
 new file mode 100644
-index 0000000..3c164a2
+index 00000000..3c164a2
 --- /dev/null
 +++ b/drivers/gpu/drm/i915/intel_hdcp.c
 @@ -0,0 +1,723 @@

@@ -152,7 +152,7 @@ index 0679a58..cea90ab 100644
  
  #define vgtif_reg(x) \
 diff --git a/drivers/gpu/drm/i915/i915_vgpu.c b/drivers/gpu/drm/i915/i915_vgpu.c
-index 5fe9f3f..f01d019 100644
+index e13ddd5..f780261 100644
 --- a/drivers/gpu/drm/i915/i915_vgpu.c
 +++ b/drivers/gpu/drm/i915/i915_vgpu.c
 @@ -77,6 +77,15 @@ void i915_check_vgpu(struct drm_i915_private *dev_priv)

@@ -22,7 +22,7 @@ Signed-off-by: Meng Wei <wei.meng@intel.com>
 
 diff --git a/drivers/media/i2c/crlmodule/crl_ox03a10_configuration.h b/drivers/media/i2c/crlmodule/crl_ox03a10_configuration.h
 new file mode 100644
-index 0000000..4ee8e64
+index 00000000..4ee8e64
 --- /dev/null
 +++ b/drivers/media/i2c/crlmodule/crl_ox03a10_configuration.h
 @@ -0,0 +1,1547 @@

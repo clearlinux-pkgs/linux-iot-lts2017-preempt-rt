@@ -16,7 +16,7 @@ Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 
 diff --git a/sound/soc/sof/intel/hda.c b/sound/soc/sof/intel/hda.c
 new file mode 100644
-index 0000000..de138cf
+index 00000000..de138cf
 --- /dev/null
 +++ b/sound/soc/sof/intel/hda.c
 @@ -0,0 +1,531 @@
@@ -553,7 +553,7 @@ index 0000000..de138cf
 +MODULE_LICENSE("Dual BSD/GPL");
 diff --git a/sound/soc/sof/intel/hda.h b/sound/soc/sof/intel/hda.h
 new file mode 100644
-index 0000000..5eb677c
+index 00000000..5eb677c
 --- /dev/null
 +++ b/sound/soc/sof/intel/hda.h
 @@ -0,0 +1,504 @@

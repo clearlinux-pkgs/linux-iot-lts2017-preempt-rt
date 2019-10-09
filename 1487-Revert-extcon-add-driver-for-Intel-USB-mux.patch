@@ -52,7 +52,7 @@ index 1cb6988..0888fde 100644
 -obj-$(CONFIG_EXTCON_INTEL_USB)	+= extcon-intel-usb.o
 diff --git a/drivers/extcon/extcon-intel-usb.c b/drivers/extcon/extcon-intel-usb.c
 deleted file mode 100644
-index 9290eb7..0000000
+index 9290eb7..00000000
 --- a/drivers/extcon/extcon-intel-usb.c
 +++ /dev/null
 @@ -1,110 +0,0 @@
@@ -168,7 +168,7 @@ index 9290eb7..0000000
 -EXPORT_SYMBOL_GPL(intel_usb_mux_unregister);
 diff --git a/include/linux/extcon/intel_usb_mux.h b/include/linux/extcon/intel_usb_mux.h
 deleted file mode 100644
-index 060263a..0000000
+index 060263a..00000000
 --- a/include/linux/extcon/intel_usb_mux.h
 +++ /dev/null
 @@ -1,29 +0,0 @@

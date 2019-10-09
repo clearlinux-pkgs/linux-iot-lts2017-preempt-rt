@@ -25,7 +25,7 @@ Signed-off-by: Arve Hjønnevåg <arve@android.com>
 
 diff --git a/Documentation/devicetree/bindings/trusty/trusty-irq.txt b/Documentation/devicetree/bindings/trusty/trusty-irq.txt
 new file mode 100644
-index 0000000..85fe1f1
+index 00000000..85fe1f1
 --- /dev/null
 +++ b/Documentation/devicetree/bindings/trusty/trusty-irq.txt
 @@ -0,0 +1,8 @@
@@ -48,7 +48,7 @@ index 1d77805..89acb6f 100644
 +obj-$(CONFIG_TRUSTY)		+= trusty-irq.o
 diff --git a/drivers/trusty/trusty-irq.c b/drivers/trusty/trusty-irq.c
 new file mode 100644
-index 0000000..ae9535a
+index 00000000..ae9535a
 --- /dev/null
 +++ b/drivers/trusty/trusty-irq.c
 @@ -0,0 +1,536 @@

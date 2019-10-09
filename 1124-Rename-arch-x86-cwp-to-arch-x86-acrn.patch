@@ -52,7 +52,7 @@ index 50698b3..d3553ac 100644
  
 diff --git a/arch/x86/acrn/Kconfig b/arch/x86/acrn/Kconfig
 new file mode 100644
-index 0000000..b7cf03d
+index 00000000..b7cf03d
 --- /dev/null
 +++ b/arch/x86/acrn/Kconfig
 @@ -0,0 +1,20 @@
@@ -171,7 +171,7 @@ index 09a6a1a..c39987f 100644
 +EXPORT_SYMBOL(x86_hyper_acrn);
 diff --git a/arch/x86/cwp/Kconfig b/arch/x86/cwp/Kconfig
 deleted file mode 100644
-index 2880c87..0000000
+index 2880c87..00000000
 --- a/arch/x86/cwp/Kconfig
 +++ /dev/null
 @@ -1,12 +0,0 @@

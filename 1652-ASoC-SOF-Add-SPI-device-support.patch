@@ -15,7 +15,7 @@ Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 
 diff --git a/sound/soc/sof/hw-spi.c b/sound/soc/sof/hw-spi.c
 new file mode 100644
-index 0000000..e20682d
+index 00000000..e20682d
 --- /dev/null
 +++ b/sound/soc/sof/hw-spi.c
 @@ -0,0 +1,250 @@
@@ -271,7 +271,7 @@ index 0000000..e20682d
 +MODULE_LICENSE("Dual BSD/GPL");
 diff --git a/sound/soc/sof/sof-spi-dev.c b/sound/soc/sof/sof-spi-dev.c
 new file mode 100644
-index 0000000..b3811db
+index 00000000..b3811db
 --- /dev/null
 +++ b/sound/soc/sof/sof-spi-dev.c
 @@ -0,0 +1,167 @@

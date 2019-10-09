@@ -903,7 +903,7 @@ index c23b567..ddd71d1 100644
  #endif /* IPU_FW_PSYS_H */
 diff --git a/drivers/media/pci/intel/ipu-fw-resources.h b/drivers/media/pci/intel/ipu-fw-resources.h
 deleted file mode 100644
-index 8a76597..0000000
+index 8a76597..00000000
 --- a/drivers/media/pci/intel/ipu-fw-resources.h
 +++ /dev/null
 @@ -1,25 +0,0 @@
@@ -934,7 +934,7 @@ index 8a76597..0000000
 -#endif
 diff --git a/drivers/media/pci/intel/ipu-isys-media.c b/drivers/media/pci/intel/ipu-isys-media.c
 deleted file mode 100644
-index 199131f..0000000
+index 199131f..00000000
 --- a/drivers/media/pci/intel/ipu-isys-media.c
 +++ /dev/null
 @@ -1,26 +0,0 @@
@@ -2111,7 +2111,7 @@ index 1743b01..55a6744 100644
  #endif /* IPU_PSYS_H */
 diff --git a/drivers/media/pci/intel/ipu-resources.h b/drivers/media/pci/intel/ipu-resources.h
 deleted file mode 100644
-index 39ed8e1..0000000
+index 39ed8e1..00000000
 --- a/drivers/media/pci/intel/ipu-resources.h
 +++ /dev/null
 @@ -1,154 +0,0 @@
@@ -2685,7 +2685,7 @@ index 4251d2f..795c783 100644
 +#define IA_CSS_FW_PKG_RELEASE  0x20180420
 diff --git a/drivers/media/pci/intel/ipu4/ipu4-css/ipu-wrapper.c b/drivers/media/pci/intel/ipu4/ipu4-css/ipu-wrapper.c
 deleted file mode 100644
-index 736f15d..0000000
+index 736f15d..00000000
 --- a/drivers/media/pci/intel/ipu4/ipu4-css/ipu-wrapper.c
 +++ /dev/null
 @@ -1,512 +0,0 @@
@@ -3203,7 +3203,7 @@ index 736f15d..0000000
 -}
 diff --git a/drivers/media/pci/intel/ipu4/ipu4-css/lib2600/config/isys/subsystem_bxtB0.mk b/drivers/media/pci/intel/ipu4/ipu4-css/lib2600/config/isys/subsystem_bxtB0.mk
 new file mode 100644
-index 0000000..da14203
+index 00000000..da14203
 --- /dev/null
 +++ b/drivers/media/pci/intel/ipu4/ipu4-css/lib2600/config/isys/subsystem_bxtB0.mk
 @@ -0,0 +1,60 @@
@@ -4519,7 +4519,7 @@ index 9dc6dc1..82fa987 100644
 +}
 diff --git a/drivers/media/pci/intel/ipu4/ipu4-resource-tables.c b/drivers/media/pci/intel/ipu4/ipu4-resource-tables.c
 deleted file mode 100644
-index 029bd74..0000000
+index 029bd74..00000000
 --- a/drivers/media/pci/intel/ipu4/ipu4-resource-tables.c
 +++ /dev/null
 @@ -1,173 +0,0 @@
@@ -5111,7 +5111,7 @@ index 3435bd5..795c783 100644
 +#define IA_CSS_FW_PKG_RELEASE  0x20180420
 diff --git a/drivers/media/pci/intel/ipu4/ipu4p-css/lib2600/config/isys/subsystem_cnlB0.mk b/drivers/media/pci/intel/ipu4/ipu4p-css/lib2600/config/isys/subsystem_cnlB0.mk
 new file mode 100644
-index 0000000..e49be29
+index 00000000..e49be29
 --- /dev/null
 +++ b/drivers/media/pci/intel/ipu4/ipu4p-css/lib2600/config/isys/subsystem_cnlB0.mk
 @@ -0,0 +1,73 @@

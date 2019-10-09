@@ -13,7 +13,7 @@ Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 
 diff --git a/sound/soc/sof/intel/hda-pcm.c b/sound/soc/sof/intel/hda-pcm.c
 new file mode 100644
-index 0000000..0abb2e5
+index 00000000..0abb2e5
 --- /dev/null
 +++ b/sound/soc/sof/intel/hda-pcm.c
 @@ -0,0 +1,177 @@

@@ -16,10 +16,10 @@ Signed-off-by: David S. Miller <davem@davemloft.net>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/net/core/skbuff.c b/net/core/skbuff.c
-index 7c174f8..da67551 100644
+index f31c44b..915162d 100644
 --- a/net/core/skbuff.c
 +++ b/net/core/skbuff.c
-@@ -4893,7 +4893,6 @@ EXPORT_SYMBOL(skb_try_coalesce);
+@@ -4912,7 +4912,6 @@ EXPORT_SYMBOL(skb_try_coalesce);
   */
  void skb_scrub_packet(struct sk_buff *skb, bool xnet)
  {
@@ -27,7 +27,7 @@ index 7c174f8..da67551 100644
  	skb->pkt_type = PACKET_HOST;
  	skb->skb_iif = 0;
  	skb->ignore_df = 0;
-@@ -4912,6 +4911,7 @@ void skb_scrub_packet(struct sk_buff *skb, bool xnet)
+@@ -4931,6 +4930,7 @@ void skb_scrub_packet(struct sk_buff *skb, bool xnet)
  	ipvs_reset(skb);
  	skb_orphan(skb);
  	skb->mark = 0;

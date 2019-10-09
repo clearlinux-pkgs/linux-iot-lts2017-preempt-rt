@@ -127,7 +127,7 @@ index 5b63544..92552dc 100644
  obj-$(CONFIG_NET_CLS_ROUTE4)	+= cls_route.o
 diff --git a/net/sched/sch_etf.c b/net/sched/sch_etf.c
 new file mode 100644
-index 0000000..4b7f490
+index 00000000..4b7f490
 --- /dev/null
 +++ b/net/sched/sch_etf.c
 @@ -0,0 +1,384 @@

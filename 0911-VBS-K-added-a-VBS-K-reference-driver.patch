@@ -64,7 +64,7 @@ index cbd5076..85e1cc2 100644
 +obj-$(CONFIG_VBS_RNG)		+= vbs_rng.o
 diff --git a/drivers/vbs/vbs_rng.c b/drivers/vbs/vbs_rng.c
 new file mode 100644
-index 0000000..5b1354f
+index 00000000..5b1354f
 --- /dev/null
 +++ b/drivers/vbs/vbs_rng.c
 @@ -0,0 +1,590 @@

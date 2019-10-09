@@ -20,7 +20,7 @@ Signed-off-by: Daniel Wagner <daniel.wagner@bmw-carit.de>
 
 diff --git a/include/linux/swork.h b/include/linux/swork.h
 new file mode 100644
-index 0000000..f175fa9
+index 00000000..f175fa9
 --- /dev/null
 +++ b/include/linux/swork.h
 @@ -0,0 +1,24 @@
@@ -63,7 +63,7 @@ index a9ee16b..9943019 100644
  obj-$(CONFIG_SCHEDSTATS) += stats.o
 diff --git a/kernel/sched/swork.c b/kernel/sched/swork.c
 new file mode 100644
-index 0000000..1950f40
+index 00000000..1950f40
 --- /dev/null
 +++ b/kernel/sched/swork.c
 @@ -0,0 +1,173 @@

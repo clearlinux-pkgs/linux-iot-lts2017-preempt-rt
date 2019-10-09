@@ -62,7 +62,7 @@ index 8fd7cb5..6994deb 100644
  #define DP_PEER_DEVICE_NONE		0x0
 diff --git a/include/drm/drm_hdcp.h b/include/drm/drm_hdcp.h
 new file mode 100644
-index 0000000..43f7bd9
+index 00000000..43f7bd9
 --- /dev/null
 +++ b/include/drm/drm_hdcp.h
 @@ -0,0 +1,39 @@

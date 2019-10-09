@@ -77,7 +77,7 @@ Signed-off-by: spoluri <sarat.chandra.poluri@intel.com>
 
 diff --git a/drivers/media/i2c/crlmodule/crl_ov495_configuration.h b/drivers/media/i2c/crlmodule/crl_ov495_configuration.h
 new file mode 100644
-index 0000000..6884cf5
+index 00000000..6884cf5
 --- /dev/null
 +++ b/drivers/media/i2c/crlmodule/crl_ov495_configuration.h
 @@ -0,0 +1,284 @@
@@ -2814,7 +2814,7 @@ index 50ec8e9..408726c 100644
 +#define IA_CSS_FW_PKG_RELEASE  0x20181222
 diff --git a/drivers/media/pci/intel/ipu4/ipu4-css/ipu-wrapper.c b/drivers/media/pci/intel/ipu4/ipu4-css/ipu-wrapper.c
 new file mode 120000
-index 0000000..3167dda
+index 00000000..3167dda
 --- /dev/null
 +++ b/drivers/media/pci/intel/ipu4/ipu4-css/ipu-wrapper.c
 @@ -0,0 +1 @@
@@ -3142,7 +3142,7 @@ index cb20a68..408726c 100644
 +#define IA_CSS_FW_PKG_RELEASE  0x20181222
 diff --git a/drivers/media/pci/intel/ipu4/ipu4p-css/ipu-wrapper.c b/drivers/media/pci/intel/ipu4/ipu4p-css/ipu-wrapper.c
 new file mode 120000
-index 0000000..3167dda
+index 00000000..3167dda
 --- /dev/null
 +++ b/drivers/media/pci/intel/ipu4/ipu4p-css/ipu-wrapper.c
 @@ -0,0 +1 @@

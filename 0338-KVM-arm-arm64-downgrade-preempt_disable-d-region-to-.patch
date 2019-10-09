@@ -23,10 +23,10 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 3 insertions(+), 3 deletions(-)
 
 diff --git a/virt/kvm/arm/arm.c b/virt/kvm/arm/arm.c
-index 97ecc3f..6fe029f 100644
+index acd1050..290caa0 100644
 --- a/virt/kvm/arm/arm.c
 +++ b/virt/kvm/arm/arm.c
-@@ -653,7 +653,7 @@ int kvm_arch_vcpu_ioctl_run(struct kvm_vcpu *vcpu, struct kvm_run *run)
+@@ -663,7 +663,7 @@ int kvm_arch_vcpu_ioctl_run(struct kvm_vcpu *vcpu, struct kvm_run *run)
  		 * involves poking the GIC, which must be done in a
  		 * non-preemptible context.
  		 */
@@ -35,7 +35,7 @@ index 97ecc3f..6fe029f 100644
  
  		kvm_pmu_flush_hwstate(vcpu);
  
-@@ -690,7 +690,7 @@ int kvm_arch_vcpu_ioctl_run(struct kvm_vcpu *vcpu, struct kvm_run *run)
+@@ -700,7 +700,7 @@ int kvm_arch_vcpu_ioctl_run(struct kvm_vcpu *vcpu, struct kvm_run *run)
  			kvm_pmu_sync_hwstate(vcpu);
  			kvm_timer_sync_hwstate(vcpu);
  			kvm_vgic_sync_hwstate(vcpu);
@@ -44,7 +44,7 @@ index 97ecc3f..6fe029f 100644
  			continue;
  		}
  
-@@ -745,7 +745,7 @@ int kvm_arch_vcpu_ioctl_run(struct kvm_vcpu *vcpu, struct kvm_run *run)
+@@ -755,7 +755,7 @@ int kvm_arch_vcpu_ioctl_run(struct kvm_vcpu *vcpu, struct kvm_run *run)
  
  		kvm_vgic_sync_hwstate(vcpu);
  

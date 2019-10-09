@@ -14,7 +14,7 @@ Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 
 diff --git a/sound/soc/sof/intel/hda-ctrl.c b/sound/soc/sof/intel/hda-ctrl.c
 new file mode 100644
-index 0000000..57b877b
+index 00000000..57b877b
 --- /dev/null
 +++ b/sound/soc/sof/intel/hda-ctrl.c
 @@ -0,0 +1,133 @@

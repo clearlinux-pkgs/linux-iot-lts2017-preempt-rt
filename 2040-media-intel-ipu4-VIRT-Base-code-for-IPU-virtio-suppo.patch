@@ -96,7 +96,7 @@ index 89780ce..2b44fa4 100644
  struct ici_ioctl_ops {
 diff --git a/drivers/media/pci/intel/virtio/Makefile b/drivers/media/pci/intel/virtio/Makefile
 new file mode 100644
-index 0000000..0f4eab5
+index 00000000..0f4eab5
 --- /dev/null
 +++ b/drivers/media/pci/intel/virtio/Makefile
 @@ -0,0 +1,10 @@
@@ -112,7 +112,7 @@ index 0000000..0f4eab5
 +ccflags-y += -I$(srcpath)/$(src)/../
 diff --git a/drivers/media/pci/intel/virtio/Makefile.virt b/drivers/media/pci/intel/virtio/Makefile.virt
 new file mode 100644
-index 0000000..07ece61
+index 00000000..07ece61
 --- /dev/null
 +++ b/drivers/media/pci/intel/virtio/Makefile.virt
 @@ -0,0 +1,18 @@
@@ -136,7 +136,7 @@ index 0000000..07ece61
 +obj-$(CONFIG_VIDEO_INTEL_IPU_ACRN) := $(TARGET_MODULE).o
 diff --git a/drivers/media/pci/intel/virtio/intel-ipu4-para-virt-drv.c b/drivers/media/pci/intel/virtio/intel-ipu4-para-virt-drv.c
 new file mode 100644
-index 0000000..d29be28
+index 00000000..d29be28
 --- /dev/null
 +++ b/drivers/media/pci/intel/virtio/intel-ipu4-para-virt-drv.c
 @@ -0,0 +1,352 @@
@@ -494,7 +494,7 @@ index 0000000..d29be28
 +
 diff --git a/drivers/media/pci/intel/virtio/intel-ipu4-para-virt-drv.h b/drivers/media/pci/intel/virtio/intel-ipu4-para-virt-drv.h
 new file mode 100644
-index 0000000..b36e6f7
+index 00000000..b36e6f7
 --- /dev/null
 +++ b/drivers/media/pci/intel/virtio/intel-ipu4-para-virt-drv.h
 @@ -0,0 +1,21 @@
@@ -521,7 +521,7 @@ index 0000000..b36e6f7
 +#endif INTEL_IPU4_PARA_VIRT_H
 diff --git a/drivers/media/pci/intel/virtio/intel-ipu4-virtio-be.c b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-be.c
 new file mode 100644
-index 0000000..b8e2836
+index 00000000..b8e2836
 --- /dev/null
 +++ b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-be.c
 @@ -0,0 +1,446 @@
@@ -973,7 +973,7 @@ index 0000000..b8e2836
 +MODULE_LICENSE("Dual BSD/GPL");
 diff --git a/drivers/media/pci/intel/virtio/intel-ipu4-virtio-bridge.c b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-bridge.c
 new file mode 100644
-index 0000000..9653bb8f
+index 00000000..9653bb8f
 --- /dev/null
 +++ b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-bridge.c
 @@ -0,0 +1,201 @@
@@ -1180,7 +1180,7 @@ index 0000000..9653bb8f
 +}
 diff --git a/drivers/media/pci/intel/virtio/intel-ipu4-virtio-bridge.h b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-bridge.h
 new file mode 100644
-index 0000000..f3fc29f
+index 00000000..f3fc29f
 --- /dev/null
 +++ b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-bridge.h
 @@ -0,0 +1,25 @@
@@ -1211,7 +1211,7 @@ index 0000000..f3fc29f
 +
 diff --git a/drivers/media/pci/intel/virtio/intel-ipu4-virtio-common.c b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-common.c
 new file mode 100644
-index 0000000..17b0f06
+index 00000000..17b0f06
 --- /dev/null
 +++ b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-common.c
 @@ -0,0 +1,76 @@
@@ -1293,7 +1293,7 @@ index 0000000..17b0f06
 +}
 diff --git a/drivers/media/pci/intel/virtio/intel-ipu4-virtio-common.h b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-common.h
 new file mode 100644
-index 0000000..f389dc8
+index 00000000..f389dc8
 --- /dev/null
 +++ b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-common.h
 @@ -0,0 +1,119 @@
@@ -1418,7 +1418,7 @@ index 0000000..f389dc8
 +#endif
 diff --git a/drivers/media/pci/intel/virtio/intel-ipu4-virtio-fe.c b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-fe.c
 new file mode 100644
-index 0000000..09c1fb4
+index 00000000..09c1fb4
 --- /dev/null
 +++ b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-fe.c
 @@ -0,0 +1,237 @@

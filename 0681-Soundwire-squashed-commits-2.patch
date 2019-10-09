@@ -7041,7 +7041,7 @@ index 63f5462..b165d72 100644
  int sdw_trylock_mstr(struct sdw_master *mstr);
 diff --git a/drivers/sdw/sdw_utils.c b/drivers/sdw/sdw_utils.c
 new file mode 100644
-index 0000000..724323d
+index 00000000..724323d
 --- /dev/null
 +++ b/drivers/sdw/sdw_utils.c
 @@ -0,0 +1,49 @@

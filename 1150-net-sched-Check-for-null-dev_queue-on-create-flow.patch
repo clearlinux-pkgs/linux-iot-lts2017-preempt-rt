@@ -22,7 +22,7 @@ Signed-off-by: Jeff Kirsher <jeffrey.t.kirsher@intel.com>
  1 file changed, 7 insertions(+), 1 deletion(-)
 
 diff --git a/net/sched/sch_generic.c b/net/sched/sch_generic.c
-index 341f789..5c22edc 100644
+index 0309c52..b1cc755 100644
 --- a/net/sched/sch_generic.c
 +++ b/net/sched/sch_generic.c
 @@ -607,8 +607,14 @@ struct Qdisc *qdisc_alloc(struct netdev_queue *dev_queue,

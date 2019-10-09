@@ -107,7 +107,7 @@ index 55d5744..809e5c3 100644
  obj-$(CONFIG_SND_SOC_INTEL_SKYLAKE) += snd-soc-skl-ipc.o
 diff --git a/sound/soc/intel/skylake/skl-fwlog.c b/sound/soc/intel/skylake/skl-fwlog.c
 new file mode 100644
-index 0000000..a8b0d66
+index 00000000..a8b0d66
 --- /dev/null
 +++ b/sound/soc/intel/skylake/skl-fwlog.c
 @@ -0,0 +1,168 @@
@@ -281,7 +281,7 @@ index 0000000..a8b0d66
 +MODULE_LICENSE("GPL v2");
 diff --git a/sound/soc/intel/skylake/skl-fwlog.h b/sound/soc/intel/skylake/skl-fwlog.h
 new file mode 100644
-index 0000000..06304de
+index 00000000..06304de
 --- /dev/null
 +++ b/sound/soc/intel/skylake/skl-fwlog.h
 @@ -0,0 +1,20 @@

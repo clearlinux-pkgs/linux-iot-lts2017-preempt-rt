@@ -153,7 +153,7 @@ index 92552dc..e460277 100644
  obj-$(CONFIG_NET_CLS_ROUTE4)	+= cls_route.o
 diff --git a/net/sched/sch_taprio.c b/net/sched/sch_taprio.c
 new file mode 100644
-index 0000000..206e4db
+index 00000000..206e4db
 --- /dev/null
 +++ b/net/sched/sch_taprio.c
 @@ -0,0 +1,962 @@

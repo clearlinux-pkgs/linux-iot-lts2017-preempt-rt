@@ -47,7 +47,7 @@ index eed0af3..4e6fd2b 100644
 -obj-$(CONFIG_INTEL_MEI_SPD) += spd/
 diff --git a/drivers/misc/mei/spd/Kconfig b/drivers/misc/mei/spd/Kconfig
 deleted file mode 100644
-index 8347fbc..0000000
+index 8347fbc..00000000
 --- a/drivers/misc/mei/spd/Kconfig
 +++ /dev/null
 @@ -1,12 +0,0 @@
@@ -65,7 +65,7 @@ index 8347fbc..0000000
 -	  To compile this driver as a module, choose M here.
 diff --git a/drivers/misc/mei/spd/Makefile b/drivers/misc/mei/spd/Makefile
 deleted file mode 100644
-index 0d3ac8e..0000000
+index 0d3ac8e..00000000
 --- a/drivers/misc/mei/spd/Makefile
 +++ /dev/null
 @@ -1,12 +0,0 @@
@@ -83,7 +83,7 @@ index 0d3ac8e..0000000
 -
 diff --git a/drivers/misc/mei/spd/cmd.c b/drivers/misc/mei/spd/cmd.c
 deleted file mode 100644
-index 6049298..0000000
+index 6049298..00000000
 --- a/drivers/misc/mei/spd/cmd.c
 +++ /dev/null
 @@ -1,495 +0,0 @@
@@ -584,7 +584,7 @@ index 6049298..0000000
 -}
 diff --git a/drivers/misc/mei/spd/cmd.h b/drivers/misc/mei/spd/cmd.h
 deleted file mode 100644
-index c7138a3..0000000
+index c7138a3..00000000
 --- a/drivers/misc/mei/spd/cmd.h
 +++ /dev/null
 @@ -1,285 +0,0 @@
@@ -875,7 +875,7 @@ index c7138a3..0000000
 -#endif /* _SPD_CMD_H */
 diff --git a/drivers/misc/mei/spd/debugfs.c b/drivers/misc/mei/spd/debugfs.c
 deleted file mode 100644
-index 9ac1a55..0000000
+index 9ac1a55..00000000
 --- a/drivers/misc/mei/spd/debugfs.c
 +++ /dev/null
 @@ -1,88 +0,0 @@
@@ -969,7 +969,7 @@ index 9ac1a55..0000000
 -}
 diff --git a/drivers/misc/mei/spd/gpp.c b/drivers/misc/mei/spd/gpp.c
 deleted file mode 100644
-index 4ac480b..0000000
+index 4ac480b..00000000
 --- a/drivers/misc/mei/spd/gpp.c
 +++ /dev/null
 @@ -1,310 +0,0 @@
@@ -1285,7 +1285,7 @@ index 4ac480b..0000000
 -}
 diff --git a/drivers/misc/mei/spd/main.c b/drivers/misc/mei/spd/main.c
 deleted file mode 100644
-index c8c202f..0000000
+index c8c202f..00000000
 --- a/drivers/misc/mei/spd/main.c
 +++ /dev/null
 @@ -1,127 +0,0 @@
@@ -1418,7 +1418,7 @@ index c8c202f..0000000
 -MODULE_DESCRIPTION("Storage Proxy driver based on mei bus");
 diff --git a/drivers/misc/mei/spd/spd.h b/drivers/misc/mei/spd/spd.h
 deleted file mode 100644
-index 61c9ac5..0000000
+index 61c9ac5..00000000
 --- a/drivers/misc/mei/spd/spd.h
 +++ /dev/null
 @@ -1,146 +0,0 @@

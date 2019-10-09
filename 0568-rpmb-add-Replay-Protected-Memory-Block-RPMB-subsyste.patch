@@ -102,7 +102,7 @@ index 7dc3abe..7480fbf 100644
 +obj-$(CONFIG_RPMB)		+= rpmb/
 diff --git a/drivers/char/rpmb/Kconfig b/drivers/char/rpmb/Kconfig
 new file mode 100644
-index 0000000..c5e6e90
+index 00000000..c5e6e90
 --- /dev/null
 +++ b/drivers/char/rpmb/Kconfig
 @@ -0,0 +1,8 @@
@@ -116,7 +116,7 @@ index 0000000..c5e6e90
 +	  If unsure, select N.
 diff --git a/drivers/char/rpmb/Makefile b/drivers/char/rpmb/Makefile
 new file mode 100644
-index 0000000..812b3ed
+index 00000000..812b3ed
 --- /dev/null
 +++ b/drivers/char/rpmb/Makefile
 @@ -0,0 +1,4 @@
@@ -126,7 +126,7 @@ index 0000000..812b3ed
 +ccflags-y += -D__CHECK_ENDIAN__
 diff --git a/drivers/char/rpmb/core.c b/drivers/char/rpmb/core.c
 new file mode 100644
-index 0000000..3603729
+index 00000000..3603729
 --- /dev/null
 +++ b/drivers/char/rpmb/core.c
 @@ -0,0 +1,451 @@
@@ -583,7 +583,7 @@ index 0000000..3603729
 +MODULE_LICENSE("GPL");
 diff --git a/include/linux/rpmb.h b/include/linux/rpmb.h
 new file mode 100644
-index 0000000..8acc0c0
+index 00000000..8acc0c0
 --- /dev/null
 +++ b/include/linux/rpmb.h
 @@ -0,0 +1,233 @@

@@ -180,7 +180,7 @@ index 6bd1753..d8ab82a 100644
  #endif /* _DAL_KDI_H_ */
 diff --git a/drivers/misc/mei/dal/dal_kdi.c b/drivers/misc/mei/dal/dal_kdi.c
 new file mode 100644
-index 0000000..b4a4637
+index 00000000..b4a4637
 --- /dev/null
 +++ b/drivers/misc/mei/dal/dal_kdi.c
 @@ -0,0 +1,531 @@
@@ -717,7 +717,7 @@ index 0000000..b4a4637
 +}
 diff --git a/include/linux/dal.h b/include/linux/dal.h
 new file mode 100644
-index 0000000..4ddbbd6
+index 00000000..4ddbbd6
 --- /dev/null
 +++ b/include/linux/dal.h
 @@ -0,0 +1,114 @@

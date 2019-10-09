@@ -210,7 +210,7 @@ index b4a4637..bed43c9 100644
  #define KDI_HOTFIX_VER        "0"
 diff --git a/drivers/misc/mei/dal/dal_ta_access.c b/drivers/misc/mei/dal/dal_ta_access.c
 new file mode 100644
-index 0000000..1a8f27b
+index 00000000..1a8f27b
 --- /dev/null
 +++ b/drivers/misc/mei/dal/dal_ta_access.c
 @@ -0,0 +1,288 @@

@@ -13,7 +13,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/drivers/ata/libata-sff.c b/drivers/ata/libata-sff.c
-index cc2f2e3..0f0bc86 100644
+index 8c36ff0..795cf2f 100644
 --- a/drivers/ata/libata-sff.c
 +++ b/drivers/ata/libata-sff.c
 @@ -679,9 +679,9 @@ unsigned int ata_sff_data_xfer_noirq(struct ata_queued_cmd *qc, unsigned char *b

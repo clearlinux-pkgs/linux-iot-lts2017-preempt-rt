@@ -157,7 +157,7 @@ index ca19c6e..b49c89b 100644
  
 diff --git a/sound/soc/intel/skylake/skl-sdw-pcm.c b/sound/soc/intel/skylake/skl-sdw-pcm.c
 new file mode 100644
-index 0000000..90a11f4
+index 00000000..90a11f4
 --- /dev/null
 +++ b/sound/soc/intel/skylake/skl-sdw-pcm.c
 @@ -0,0 +1,246 @@
@@ -409,7 +409,7 @@ index 0000000..90a11f4
 +}
 diff --git a/sound/soc/intel/skylake/skl-sdw-pcm.h b/sound/soc/intel/skylake/skl-sdw-pcm.h
 new file mode 100644
-index 0000000..ab1314a
+index 00000000..ab1314a
 --- /dev/null
 +++ b/sound/soc/intel/skylake/skl-sdw-pcm.h
 @@ -0,0 +1,41 @@

@@ -75,10 +75,10 @@ index 6ed99de..29ece91 100644
  					struct cpu_hw_events *cpuc,
  					int i)
 diff --git a/arch/x86/include/asm/perf_event.h b/arch/x86/include/asm/perf_event.h
-index 78241b7..8bdf749 100644
+index f6c4915..a81443b 100644
 --- a/arch/x86/include/asm/perf_event.h
 +++ b/arch/x86/include/asm/perf_event.h
-@@ -278,6 +278,7 @@ struct perf_guest_switch_msr {
+@@ -282,6 +282,7 @@ struct perf_guest_switch_msr {
  extern struct perf_guest_switch_msr *perf_guest_get_msrs(int *nr);
  extern void perf_get_x86_pmu_capability(struct x86_pmu_capability *cap);
  extern void perf_check_microcode(void);

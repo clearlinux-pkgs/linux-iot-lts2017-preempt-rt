@@ -296,7 +296,7 @@ index debd46f..c0bf42e 100644
  	for_each_engine(engine, dev_priv, tmp) {
  		clear_bit(I915_RESET_ENGINE + engine->id,
 diff --git a/drivers/gpu/drm/i915/intel_hangcheck.c b/drivers/gpu/drm/i915/intel_hangcheck.c
-index deed8a53..870186c 100644
+index deed8a5..870186c 100644
 --- a/drivers/gpu/drm/i915/intel_hangcheck.c
 +++ b/drivers/gpu/drm/i915/intel_hangcheck.c
 @@ -266,9 +266,8 @@ engine_stuck(struct intel_engine_cs *engine, u64 acthd)

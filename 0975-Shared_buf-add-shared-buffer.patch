@@ -41,7 +41,7 @@ index 4087240..bd9ed2f 100644
 +obj-$(CONFIG_CWP)		+= cwp/
 diff --git a/drivers/cwp/Kconfig b/drivers/cwp/Kconfig
 new file mode 100644
-index 0000000..15bbf1b
+index 00000000..15bbf1b
 --- /dev/null
 +++ b/drivers/cwp/Kconfig
 @@ -0,0 +1,5 @@
@@ -52,14 +52,14 @@ index 0000000..15bbf1b
 +	  Help CWP performance profiling.
 diff --git a/drivers/cwp/Makefile b/drivers/cwp/Makefile
 new file mode 100644
-index 0000000..4ec9f1d
+index 00000000..4ec9f1d
 --- /dev/null
 +++ b/drivers/cwp/Makefile
 @@ -0,0 +1 @@
 +obj-$(CONFIG_CWP_SHARED_BUFFER) += sbuf.o
 diff --git a/drivers/cwp/sbuf.c b/drivers/cwp/sbuf.c
 new file mode 100644
-index 0000000..dcf2032
+index 00000000..dcf2032
 --- /dev/null
 +++ b/drivers/cwp/sbuf.c
 @@ -0,0 +1,188 @@
@@ -253,7 +253,7 @@ index 0000000..dcf2032
 +EXPORT_SYMBOL(sbuf_construct);
 diff --git a/drivers/cwp/sbuf.h b/drivers/cwp/sbuf.h
 new file mode 100644
-index 0000000..7f36949
+index 00000000..7f36949
 --- /dev/null
 +++ b/drivers/cwp/sbuf.h
 @@ -0,0 +1,119 @@

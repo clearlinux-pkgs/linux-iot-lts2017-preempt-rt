@@ -531,7 +531,7 @@ index 8d62b95..37f84d6 100644
  MODULE_DESCRIPTION("Intel ipu library");
 diff --git a/drivers/media/pci/intel/libintel-checker.c b/drivers/media/pci/intel/libintel-checker.c
 deleted file mode 100644
-index 7def833..0000000
+index 7def833..00000000
 --- a/drivers/media/pci/intel/libintel-checker.c
 +++ /dev/null
 @@ -1,165 +0,0 @@
@@ -702,7 +702,7 @@ index 7def833..0000000
 -}
 diff --git a/drivers/media/pci/intel/libintel-checker.h b/drivers/media/pci/intel/libintel-checker.h
 deleted file mode 100644
-index 83a068a..0000000
+index 83a068a..00000000
 --- a/drivers/media/pci/intel/libintel-checker.h
 +++ /dev/null
 @@ -1,9 +0,0 @@

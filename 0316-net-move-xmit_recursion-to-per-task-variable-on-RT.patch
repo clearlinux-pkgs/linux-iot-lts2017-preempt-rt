@@ -96,7 +96,7 @@ index 675cbae..ff13666 100644
  	int				pagefault_disabled;
  #ifdef CONFIG_MMU
 diff --git a/net/core/dev.c b/net/core/dev.c
-index 47685be..b0fa138 100644
+index 5dea496..9c4d76c 100644
 --- a/net/core/dev.c
 +++ b/net/core/dev.c
 @@ -3270,8 +3270,10 @@ static void skb_update_prio(struct sk_buff *skb)

@@ -84,7 +84,7 @@ index 8c1247a..3c4b742 100644
 +obj-$(CONFIG_CWP_VHM)		+= vhm/
 diff --git a/drivers/vhm/Kconfig b/drivers/vhm/Kconfig
 new file mode 100644
-index 0000000..2ac3032
+index 00000000..2ac3032
 --- /dev/null
 +++ b/drivers/vhm/Kconfig
 @@ -0,0 +1,18 @@

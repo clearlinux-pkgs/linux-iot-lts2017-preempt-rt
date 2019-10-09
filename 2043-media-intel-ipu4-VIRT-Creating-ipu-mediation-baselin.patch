@@ -998,7 +998,7 @@ rename from drivers/media/pci/intel/virtio/intel-ipu4-virtio-bridge.h
 rename to drivers/media/pci/intel/virtio/intel-ipu4-virtio-be-bridge.h
 diff --git a/drivers/media/pci/intel/virtio/intel-ipu4-virtio-be-pipeline.c b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-be-pipeline.c
 new file mode 100644
-index 0000000..43c6b5e
+index 00000000..43c6b5e
 --- /dev/null
 +++ b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-be-pipeline.c
 @@ -0,0 +1,212 @@
@@ -1216,7 +1216,7 @@ index 0000000..43c6b5e
 +
 diff --git a/drivers/media/pci/intel/virtio/intel-ipu4-virtio-be-pipeline.h b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-be-pipeline.h
 new file mode 100644
-index 0000000..df65e88
+index 00000000..df65e88
 --- /dev/null
 +++ b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-be-pipeline.h
 @@ -0,0 +1,27 @@
@@ -1249,7 +1249,7 @@ index 0000000..df65e88
 +
 diff --git a/drivers/media/pci/intel/virtio/intel-ipu4-virtio-be-stream.c b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-be-stream.c
 new file mode 100644
-index 0000000..6373546
+index 00000000..6373546
 --- /dev/null
 +++ b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-be-stream.c
 @@ -0,0 +1,233 @@
@@ -1488,7 +1488,7 @@ index 0000000..6373546
 +}
 diff --git a/drivers/media/pci/intel/virtio/intel-ipu4-virtio-be-stream.h b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-be-stream.h
 new file mode 100644
-index 0000000..4915ab0
+index 00000000..4915ab0
 --- /dev/null
 +++ b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-be-stream.h
 @@ -0,0 +1,24 @@
@@ -1553,7 +1553,7 @@ index 15c5f63..3098b47 100644
  
 diff --git a/drivers/media/pci/intel/virtio/intel-ipu4-virtio-fe-payload.c b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-fe-payload.c
 new file mode 100644
-index 0000000..d878224
+index 00000000..d878224
 --- /dev/null
 +++ b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-fe-payload.c
 @@ -0,0 +1,52 @@
@@ -1611,7 +1611,7 @@ index 0000000..d878224
 +}
 diff --git a/drivers/media/pci/intel/virtio/intel-ipu4-virtio-fe-payload.h b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-fe-payload.h
 new file mode 100644
-index 0000000..173c31a
+index 00000000..173c31a
 --- /dev/null
 +++ b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-fe-payload.h
 @@ -0,0 +1,14 @@
@@ -1632,7 +1632,7 @@ index 0000000..173c31a
 \ No newline at end of file
 diff --git a/drivers/media/pci/intel/virtio/intel-ipu4-virtio-fe-pipeline.c b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-fe-pipeline.c
 new file mode 100644
-index 0000000..0706c18
+index 00000000..0706c18
 --- /dev/null
 +++ b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-fe-pipeline.c
 @@ -0,0 +1,46 @@
@@ -1684,7 +1684,7 @@ index 0000000..0706c18
 +
 diff --git a/drivers/media/pci/intel/virtio/intel-ipu4-virtio-fe-pipeline.h b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-fe-pipeline.h
 new file mode 100644
-index 0000000..d1fbe10
+index 00000000..d1fbe10
 --- /dev/null
 +++ b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-fe-pipeline.h
 @@ -0,0 +1,19 @@

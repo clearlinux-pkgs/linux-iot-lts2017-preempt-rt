@@ -61,7 +61,7 @@ index 139e383..c21bd2f 100644
  obj-$(CONFIG_SND_SOC_INTEL_BYTCR_RT5640_MACH) += snd-soc-sst-bytcr-rt5640.o
 diff --git a/sound/soc/intel/boards/bxt_pcm512x.c b/sound/soc/intel/boards/bxt_pcm512x.c
 new file mode 100644
-index 0000000..5bc8085
+index 00000000..5bc8085
 --- /dev/null
 +++ b/sound/soc/intel/boards/bxt_pcm512x.c
 @@ -0,0 +1,186 @@

@@ -38,7 +38,7 @@ index 7b0a14f..bcfedc1 100644
  	struct snd_soc_dai *codec_dai;
 diff --git a/include/sound/sof.h b/include/sound/sof.h
 new file mode 100644
-index 0000000..7767ec8
+index 00000000..7767ec8
 --- /dev/null
 +++ b/include/sound/sof.h
 @@ -0,0 +1,76 @@
@@ -120,7 +120,7 @@ index 0000000..7767ec8
 +#endif
 diff --git a/sound/soc/sof/core.c b/sound/soc/sof/core.c
 new file mode 100644
-index 0000000..f4586a2
+index 00000000..f4586a2
 --- /dev/null
 +++ b/sound/soc/sof/core.c
 @@ -0,0 +1,417 @@
@@ -543,7 +543,7 @@ index 0000000..f4586a2
 +MODULE_ALIAS("platform:sof-audio");
 diff --git a/sound/soc/sof/sof-priv.h b/sound/soc/sof/sof-priv.h
 new file mode 100644
-index 0000000..5a9f19b
+index 00000000..5a9f19b
 --- /dev/null
 +++ b/sound/soc/sof/sof-priv.h
 @@ -0,0 +1,514 @@

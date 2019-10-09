@@ -120,7 +120,7 @@ index 73548eb..5c8664d 100644
  
 diff --git a/include/linux/spinlock_types_nort.h b/include/linux/spinlock_types_nort.h
 new file mode 100644
-index 0000000..f1dac1f
+index 00000000..f1dac1f
 --- /dev/null
 +++ b/include/linux/spinlock_types_nort.h
 @@ -0,0 +1,33 @@
@@ -159,7 +159,7 @@ index 0000000..f1dac1f
 +#endif
 diff --git a/include/linux/spinlock_types_raw.h b/include/linux/spinlock_types_raw.h
 new file mode 100644
-index 0000000..03235b4
+index 00000000..03235b4
 --- /dev/null
 +++ b/include/linux/spinlock_types_raw.h
 @@ -0,0 +1,58 @@

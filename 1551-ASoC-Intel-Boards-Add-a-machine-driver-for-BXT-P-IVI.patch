@@ -66,7 +66,7 @@ index 0adc3e5..129f6dc 100644
 +obj-$(CONFIG_SND_SOC_INTEL_BXTP_IVI_M3_MACH) += snd-soc-bxtp_ivi_m3.o
 diff --git a/sound/soc/intel/boards/bxtp_ivi_m3.c b/sound/soc/intel/boards/bxtp_ivi_m3.c
 new file mode 100644
-index 0000000..5dcafb9
+index 00000000..5dcafb9
 --- /dev/null
 +++ b/sound/soc/intel/boards/bxtp_ivi_m3.c
 @@ -0,0 +1,327 @@

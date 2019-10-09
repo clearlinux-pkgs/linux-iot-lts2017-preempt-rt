@@ -49,7 +49,7 @@ index 4ab2689..dbee2f9 100644
  ifneq ($(CONFIG_USB_XHCI_MTK), )
 diff --git a/drivers/usb/host/xhci-ext-caps.c b/drivers/usb/host/xhci-ext-caps.c
 new file mode 100644
-index 0000000..399113f
+index 00000000..399113f
 --- /dev/null
 +++ b/drivers/usb/host/xhci-ext-caps.c
 @@ -0,0 +1,90 @@

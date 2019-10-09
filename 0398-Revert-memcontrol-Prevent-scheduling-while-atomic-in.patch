@@ -38,10 +38,10 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 6 insertions(+), 7 deletions(-)
 
 diff --git a/mm/memcontrol.c b/mm/memcontrol.c
-index 8d08b70..3cc2977 100644
+index 98963ce..97d3f83 100644
 --- a/mm/memcontrol.c
 +++ b/mm/memcontrol.c
-@@ -1723,7 +1723,6 @@ struct memcg_stock_pcp {
+@@ -1742,7 +1742,6 @@ struct memcg_stock_pcp {
  #define FLUSHING_CACHED_CHARGE	0
  };
  static DEFINE_PER_CPU(struct memcg_stock_pcp, memcg_stock);
@@ -49,7 +49,7 @@ index 8d08b70..3cc2977 100644
  static DEFINE_MUTEX(percpu_charge_mutex);
  
  /**
-@@ -1746,7 +1745,7 @@ static bool consume_stock(struct mem_cgroup *memcg, unsigned int nr_pages)
+@@ -1765,7 +1764,7 @@ static bool consume_stock(struct mem_cgroup *memcg, unsigned int nr_pages)
  	if (nr_pages > CHARGE_BATCH)
  		return ret;
  
@@ -58,7 +58,7 @@ index 8d08b70..3cc2977 100644
  
  	stock = this_cpu_ptr(&memcg_stock);
  	if (memcg == stock->cached && stock->nr_pages >= nr_pages) {
-@@ -1754,7 +1753,7 @@ static bool consume_stock(struct mem_cgroup *memcg, unsigned int nr_pages)
+@@ -1773,7 +1772,7 @@ static bool consume_stock(struct mem_cgroup *memcg, unsigned int nr_pages)
  		ret = true;
  	}
  
@@ -67,7 +67,7 @@ index 8d08b70..3cc2977 100644
  
  	return ret;
  }
-@@ -1785,13 +1784,13 @@ static void drain_local_stock(struct work_struct *dummy)
+@@ -1804,13 +1803,13 @@ static void drain_local_stock(struct work_struct *dummy)
  	 * The only protection from memory hotplug vs. drain_stock races is
  	 * that we always operate on local CPU stock here with IRQ disabled
  	 */
@@ -83,7 +83,7 @@ index 8d08b70..3cc2977 100644
  }
  
  /*
-@@ -1803,7 +1802,7 @@ static void refill_stock(struct mem_cgroup *memcg, unsigned int nr_pages)
+@@ -1822,7 +1821,7 @@ static void refill_stock(struct mem_cgroup *memcg, unsigned int nr_pages)
  	struct memcg_stock_pcp *stock;
  	unsigned long flags;
  
@@ -92,7 +92,7 @@ index 8d08b70..3cc2977 100644
  
  	stock = this_cpu_ptr(&memcg_stock);
  	if (stock->cached != memcg) { /* reset if necessary */
-@@ -1815,7 +1814,7 @@ static void refill_stock(struct mem_cgroup *memcg, unsigned int nr_pages)
+@@ -1834,7 +1833,7 @@ static void refill_stock(struct mem_cgroup *memcg, unsigned int nr_pages)
  	if (stock->nr_pages > CHARGE_BATCH)
  		drain_stock(stock);
  

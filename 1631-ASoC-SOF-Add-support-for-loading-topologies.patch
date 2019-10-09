@@ -18,7 +18,7 @@ Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 
 diff --git a/include/uapi/sound/sof-topology.h b/include/uapi/sound/sof-topology.h
 new file mode 100644
-index 0000000..62c3f24
+index 00000000..62c3f24
 --- /dev/null
 +++ b/include/uapi/sound/sof-topology.h
 @@ -0,0 +1,76 @@
@@ -112,7 +112,7 @@ index 0f9b659..bde985f 100644
  	struct list_head list;	/* list in sdev control list */
 diff --git a/sound/soc/sof/topology.c b/sound/soc/sof/topology.c
 new file mode 100644
-index 0000000..5fe74fa
+index 00000000..5fe74fa
 --- /dev/null
 +++ b/sound/soc/sof/topology.c
 @@ -0,0 +1,1825 @@

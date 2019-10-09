@@ -17,7 +17,7 @@ Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 
 diff --git a/include/uapi/sound/sof-ipc.h b/include/uapi/sound/sof-ipc.h
 new file mode 100644
-index 0000000..9b33691
+index 00000000..9b33691
 --- /dev/null
 +++ b/include/uapi/sound/sof-ipc.h
 @@ -0,0 +1,860 @@
@@ -883,7 +883,7 @@ index 0000000..9b33691
 +#endif
 diff --git a/sound/soc/sof/ipc.c b/sound/soc/sof/ipc.c
 new file mode 100644
-index 0000000..bd646c2
+index 00000000..bd646c2
 --- /dev/null
 +++ b/sound/soc/sof/ipc.c
 @@ -0,0 +1,609 @@

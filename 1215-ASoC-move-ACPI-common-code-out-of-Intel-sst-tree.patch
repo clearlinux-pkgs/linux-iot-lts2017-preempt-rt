@@ -43,7 +43,7 @@ Signed-off-by: Mark Brown <broonie@kernel.org>
 
 diff --git a/include/sound/soc-acpi.h b/include/sound/soc-acpi.h
 new file mode 100644
-index 0000000..918d78e
+index 00000000..918d78e
 --- /dev/null
 +++ b/include/sound/soc-acpi.h
 @@ -0,0 +1,100 @@
@@ -606,7 +606,7 @@ index 1285cc5..9866998 100644
  	{}
 diff --git a/sound/soc/intel/common/sst-acpi.h b/sound/soc/intel/common/sst-acpi.h
 deleted file mode 100644
-index afe9b87..0000000
+index afe9b87..00000000
 --- a/sound/soc/intel/common/sst-acpi.h
 +++ /dev/null
 @@ -1,82 +0,0 @@

@@ -21,7 +21,7 @@ Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 
 diff --git a/include/uapi/sound/sof-abi.h b/include/uapi/sound/sof-abi.h
 new file mode 100644
-index 0000000..4e78fa1
+index 00000000..4e78fa1
 --- /dev/null
 +++ b/include/uapi/sound/sof-abi.h
 @@ -0,0 +1,29 @@
@@ -56,7 +56,7 @@ index 0000000..4e78fa1
 +#endif
 diff --git a/include/uapi/sound/sof-eq.h b/include/uapi/sound/sof-eq.h
 new file mode 100644
-index 0000000..96aefd1
+index 00000000..96aefd1
 --- /dev/null
 +++ b/include/uapi/sound/sof-eq.h
 @@ -0,0 +1,102 @@
@@ -164,7 +164,7 @@ index 0000000..96aefd1
 +#endif /* EQ_H */
 diff --git a/include/uapi/sound/sof-fw.h b/include/uapi/sound/sof-fw.h
 new file mode 100644
-index 0000000..2f9bd82
+index 00000000..2f9bd82
 --- /dev/null
 +++ b/include/uapi/sound/sof-fw.h
 @@ -0,0 +1,69 @@
@@ -239,7 +239,7 @@ index 0000000..2f9bd82
 +#endif
 diff --git a/include/uapi/sound/sof-tone.h b/include/uapi/sound/sof-tone.h
 new file mode 100644
-index 0000000..f9c9bf5
+index 00000000..f9c9bf5
 --- /dev/null
 +++ b/include/uapi/sound/sof-tone.h
 @@ -0,0 +1,28 @@

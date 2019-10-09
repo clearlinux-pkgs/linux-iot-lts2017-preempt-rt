@@ -59,7 +59,7 @@ index 77cd6e1..5e0a6f0 100644
 +obj-$(CONFIG_SND_SOC_INTEL_BXT_ULL_MACH) += snd-soc-bxt_ivi_ull.o
 diff --git a/sound/soc/intel/boards/bxt_ivi_ull.c b/sound/soc/intel/boards/bxt_ivi_ull.c
 new file mode 100644
-index 0000000..22ae8ab
+index 00000000..22ae8ab
 --- /dev/null
 +++ b/sound/soc/intel/boards/bxt_ivi_ull.c
 @@ -0,0 +1,330 @@

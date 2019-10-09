@@ -29,7 +29,7 @@ Signed-off-by: David S. Miller <davem@davemloft.net>
  1 file changed, 1 insertion(+)
 
 diff --git a/net/core/dev.c b/net/core/dev.c
-index 3e19dc7..f4c9fc8 100644
+index 6006368..db39aaf 100644
 --- a/net/core/dev.c
 +++ b/net/core/dev.c
 @@ -2040,6 +2040,7 @@ int netdev_txq_to_tc(struct net_device *dev, unsigned int txq)

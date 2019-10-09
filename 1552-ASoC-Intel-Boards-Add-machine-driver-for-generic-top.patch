@@ -61,7 +61,7 @@ index 129f6dc..139e383 100644
 +obj-$(CONFIG_SND_SOC_INTEL_BXTP_IVI_GENERIC_MACH) += snd-soc-bxtp_ivi_generic.o
 diff --git a/sound/soc/intel/boards/bxtp_ivi_generic.c b/sound/soc/intel/boards/bxtp_ivi_generic.c
 new file mode 100644
-index 0000000..e256a4b
+index 00000000..e256a4b
 --- /dev/null
 +++ b/sound/soc/intel/boards/bxtp_ivi_generic.c
 @@ -0,0 +1,366 @@

@@ -21,7 +21,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  4 files changed, 43 insertions(+), 4 deletions(-)
 
 diff --git a/fs/nfs/dir.c b/fs/nfs/dir.c
-index 85a6fdd..54dca0e 100644
+index 50c181f..b53ce57 100644
 --- a/fs/nfs/dir.c
 +++ b/fs/nfs/dir.c
 @@ -1792,7 +1792,11 @@ int nfs_rmdir(struct inode *dir, struct dentry *dentry)

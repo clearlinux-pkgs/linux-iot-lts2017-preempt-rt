@@ -30,7 +30,7 @@ index 375f486..67f7e18 100644
 +mei_dal-objs += dal_cdev.o
 diff --git a/drivers/misc/mei/dal/dal_cdev.c b/drivers/misc/mei/dal/dal_cdev.c
 new file mode 100644
-index 0000000..c5d6e96
+index 00000000..c5d6e96
 --- /dev/null
 +++ b/drivers/misc/mei/dal/dal_cdev.c
 @@ -0,0 +1,300 @@
@@ -336,7 +336,7 @@ index 0000000..c5d6e96
 +}
 diff --git a/drivers/misc/mei/dal/dal_cdev.h b/drivers/misc/mei/dal/dal_cdev.h
 new file mode 100644
-index 0000000..16b0cc6
+index 00000000..16b0cc6
 --- /dev/null
 +++ b/drivers/misc/mei/dal/dal_cdev.h
 @@ -0,0 +1,68 @@

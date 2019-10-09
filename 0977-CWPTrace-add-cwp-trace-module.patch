@@ -38,7 +38,7 @@ index 4ec9f1d..34c9bf9 100644
 \ No newline at end of file
 diff --git a/drivers/cwp/cwp_trace.c b/drivers/cwp/cwp_trace.c
 new file mode 100644
-index 0000000..0f9e7f3
+index 00000000..0f9e7f3
 --- /dev/null
 +++ b/drivers/cwp/cwp_trace.c
 @@ -0,0 +1,297 @@

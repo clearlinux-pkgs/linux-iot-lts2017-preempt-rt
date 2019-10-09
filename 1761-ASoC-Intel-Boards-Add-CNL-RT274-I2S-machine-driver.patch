@@ -44,7 +44,7 @@ index 4ef6175..d7ebe12 100644
  endif ## SND_SOC_INTEL_MACH
 diff --git a/sound/soc/intel/boards/cnl_rt274.c b/sound/soc/intel/boards/cnl_rt274.c
 new file mode 100644
-index 0000000..1b788f8
+index 00000000..1b788f8
 --- /dev/null
 +++ b/sound/soc/intel/boards/cnl_rt274.c
 @@ -0,0 +1,385 @@

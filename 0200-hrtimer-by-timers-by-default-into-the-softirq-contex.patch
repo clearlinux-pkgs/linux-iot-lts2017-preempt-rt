@@ -26,10 +26,10 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  10 files changed, 48 insertions(+), 12 deletions(-)
 
 diff --git a/arch/x86/kvm/lapic.c b/arch/x86/kvm/lapic.c
-index 3aa0b81..e581862 100644
+index 7b9ad9d..e3e0377 100644
 --- a/arch/x86/kvm/lapic.c
 +++ b/arch/x86/kvm/lapic.c
-@@ -2138,7 +2138,7 @@ int kvm_create_lapic(struct kvm_vcpu *vcpu)
+@@ -2143,7 +2143,7 @@ int kvm_create_lapic(struct kvm_vcpu *vcpu)
  	apic->vcpu = vcpu;
  
  	hrtimer_init(&apic->lapic_timer.timer, CLOCK_MONOTONIC,

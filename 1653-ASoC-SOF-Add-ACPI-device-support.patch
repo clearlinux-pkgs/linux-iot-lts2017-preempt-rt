@@ -13,7 +13,7 @@ Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 
 diff --git a/sound/soc/sof/sof-acpi-dev.c b/sound/soc/sof/sof-acpi-dev.c
 new file mode 100644
-index 0000000..dd71297
+index 00000000..dd71297
 --- /dev/null
 +++ b/sound/soc/sof/sof-acpi-dev.c
 @@ -0,0 +1,357 @@

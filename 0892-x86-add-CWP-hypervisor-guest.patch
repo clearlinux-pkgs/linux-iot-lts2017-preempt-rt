@@ -53,7 +53,7 @@ index e6181a1..50698b3 100644
  config KVM_GUEST
 diff --git a/arch/x86/cwp/Kconfig b/arch/x86/cwp/Kconfig
 new file mode 100644
-index 0000000..0aaab97
+index 00000000..0aaab97
 --- /dev/null
 +++ b/arch/x86/cwp/Kconfig
 @@ -0,0 +1,15 @@
@@ -74,7 +74,7 @@ index 0000000..0aaab97
 +	  CWP hypervisor.
 diff --git a/arch/x86/cwp/Makefile b/arch/x86/cwp/Makefile
 new file mode 100644
-index 0000000..cd62b47
+index 00000000..cd62b47
 --- /dev/null
 +++ b/arch/x86/cwp/Makefile
 @@ -0,0 +1,2 @@
@@ -82,7 +82,7 @@ index 0000000..cd62b47
 +obj-$(CONFIG_CWP)	+= cwp.o
 diff --git a/arch/x86/cwp/cwp.c b/arch/x86/cwp/cwp.c
 new file mode 100644
-index 0000000..8083cf6
+index 00000000..8083cf6
 --- /dev/null
 +++ b/arch/x86/cwp/cwp.c
 @@ -0,0 +1,71 @@

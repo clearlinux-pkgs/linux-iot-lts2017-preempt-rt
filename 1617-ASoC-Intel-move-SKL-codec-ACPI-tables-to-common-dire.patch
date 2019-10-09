@@ -60,7 +60,7 @@ index 7379d88..915a34c 100644
  obj-$(CONFIG_SND_SOC_INTEL_SST_ACPI) += snd-soc-sst-acpi.o
 diff --git a/sound/soc/intel/common/soc-acpi-intel-bxt-match.c b/sound/soc/intel/common/soc-acpi-intel-bxt-match.c
 new file mode 100644
-index 0000000..569f1de
+index 00000000..569f1de
 --- /dev/null
 +++ b/sound/soc/intel/common/soc-acpi-intel-bxt-match.c
 @@ -0,0 +1,35 @@
@@ -101,7 +101,7 @@ index 0000000..569f1de
 +MODULE_DESCRIPTION("Intel Common ACPI Match module");
 diff --git a/sound/soc/intel/common/soc-acpi-intel-cnl-match.c b/sound/soc/intel/common/soc-acpi-intel-cnl-match.c
 new file mode 100644
-index 0000000..b83ee05
+index 00000000..b83ee05
 --- /dev/null
 +++ b/sound/soc/intel/common/soc-acpi-intel-cnl-match.c
 @@ -0,0 +1,29 @@
@@ -136,7 +136,7 @@ index 0000000..b83ee05
 +MODULE_DESCRIPTION("Intel Common ACPI Match module");
 diff --git a/sound/soc/intel/common/soc-acpi-intel-glk-match.c b/sound/soc/intel/common/soc-acpi-intel-glk-match.c
 new file mode 100644
-index 0000000..dee0943
+index 00000000..dee0943
 --- /dev/null
 +++ b/sound/soc/intel/common/soc-acpi-intel-glk-match.c
 @@ -0,0 +1,23 @@
@@ -165,7 +165,7 @@ index 0000000..dee0943
 +MODULE_DESCRIPTION("Intel Common ACPI Match module");
 diff --git a/sound/soc/intel/common/soc-acpi-intel-kbl-match.c b/sound/soc/intel/common/soc-acpi-intel-kbl-match.c
 new file mode 100644
-index 0000000..0ee173c
+index 00000000..0ee173c
 --- /dev/null
 +++ b/sound/soc/intel/common/soc-acpi-intel-kbl-match.c
 @@ -0,0 +1,91 @@
@@ -262,7 +262,7 @@ index 0000000..0ee173c
 +MODULE_DESCRIPTION("Intel Common ACPI Match module");
 diff --git a/sound/soc/intel/common/soc-acpi-intel-skl-match.c b/sound/soc/intel/common/soc-acpi-intel-skl-match.c
 new file mode 100644
-index 0000000..0c9c0ed
+index 00000000..0c9c0ed
 --- /dev/null
 +++ b/sound/soc/intel/common/soc-acpi-intel-skl-match.c
 @@ -0,0 +1,47 @@

@@ -52,7 +52,7 @@ index 570e8bb..53022c2 100644
  obj-$(CONFIG_MTRR)			+= mtrr/
 diff --git a/arch/x86/kernel/cpu/intel_rdt_pseudo_lock.c b/arch/x86/kernel/cpu/intel_rdt_pseudo_lock.c
 new file mode 100644
-index 0000000..dc79b30
+index 00000000..dc79b30
 --- /dev/null
 +++ b/arch/x86/kernel/cpu/intel_rdt_pseudo_lock.c
 @@ -0,0 +1,113 @@

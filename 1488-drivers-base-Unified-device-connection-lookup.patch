@@ -30,7 +30,7 @@ Signed-off-by: Kuppuswamy Sathyanarayanan <sathyanarayanan.kuppuswamy@linux.inte
 
 diff --git a/Documentation/driver-api/device_connection.rst b/Documentation/driver-api/device_connection.rst
 new file mode 100644
-index 0000000..affbc55
+index 00000000..affbc55
 --- /dev/null
 +++ b/Documentation/driver-api/device_connection.rst
 @@ -0,0 +1,43 @@
@@ -93,7 +93,7 @@ index e32a524..12a7f64 100644
  obj-y			+= power/
 diff --git a/drivers/base/devcon.c b/drivers/base/devcon.c
 new file mode 100644
-index 0000000..d427e80
+index 00000000..d427e80
 --- /dev/null
 +++ b/drivers/base/devcon.c
 @@ -0,0 +1,136 @@

@@ -14,7 +14,7 @@ Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 
 diff --git a/sound/soc/sof/control.c b/sound/soc/sof/control.c
 new file mode 100644
-index 0000000..ed52aac
+index 00000000..ed52aac
 --- /dev/null
 +++ b/sound/soc/sof/control.c
 @@ -0,0 +1,233 @@

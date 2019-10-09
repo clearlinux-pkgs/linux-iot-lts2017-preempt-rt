@@ -43,7 +43,7 @@ index 1ccdbde..2c160c6 100644
  config SND_SOC_INTEL_HASWELL_MACH
 diff --git a/sound/soc/intel/boards/mfld_machine.c b/sound/soc/intel/boards/mfld_machine.c
 deleted file mode 100644
-index 7cb44fd..0000000
+index 7cb44fd..00000000
 --- a/sound/soc/intel/boards/mfld_machine.c
 +++ /dev/null
 @@ -1,430 +0,0 @@

@@ -23,10 +23,10 @@ Link: https://lkml.kernel.org/r/1513810644-78015-7-git-send-email-fenghua.yu@int
  2 files changed, 4 insertions(+), 1 deletion(-)
 
 diff --git a/Documentation/admin-guide/kernel-parameters.txt b/Documentation/admin-guide/kernel-parameters.txt
-index ab29fd5..abe436f 100644
+index a91da47..8b76273 100644
 --- a/Documentation/admin-guide/kernel-parameters.txt
 +++ b/Documentation/admin-guide/kernel-parameters.txt
-@@ -3790,7 +3790,8 @@
+@@ -3797,7 +3797,8 @@
  
  	rdt=		[HW,X86,RDT]
  			Turn on/off individual RDT features. List is:

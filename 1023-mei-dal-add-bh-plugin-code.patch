@@ -27,7 +27,7 @@ Signed-off-by: Tomas Winkler <tomas.winkler@intel.com>
 
 diff --git a/drivers/misc/mei/dal/bh_cmd_defs.h b/drivers/misc/mei/dal/bh_cmd_defs.h
 new file mode 100644
-index 0000000..aa86f52
+index 00000000..aa86f52
 --- /dev/null
 +++ b/drivers/misc/mei/dal/bh_cmd_defs.h
 @@ -0,0 +1,293 @@
@@ -326,7 +326,7 @@ index 0000000..aa86f52
 +#endif /* __BH_DAL_H_*/
 diff --git a/drivers/misc/mei/dal/bh_errcode.h b/drivers/misc/mei/dal/bh_errcode.h
 new file mode 100644
-index 0000000..1273242
+index 00000000..1273242
 --- /dev/null
 +++ b/drivers/misc/mei/dal/bh_errcode.h
 @@ -0,0 +1,208 @@
@@ -540,7 +540,7 @@ index 0000000..1273242
 +#endif /* __BH_SHARED_ERRCODE_H */
 diff --git a/drivers/misc/mei/dal/bh_external.c b/drivers/misc/mei/dal/bh_external.c
 new file mode 100644
-index 0000000..64d1a36
+index 00000000..64d1a36
 --- /dev/null
 +++ b/drivers/misc/mei/dal/bh_external.c
 @@ -0,0 +1,580 @@
@@ -1126,7 +1126,7 @@ index 0000000..64d1a36
 +}
 diff --git a/drivers/misc/mei/dal/bh_external.h b/drivers/misc/mei/dal/bh_external.h
 new file mode 100644
-index 0000000..c56809d
+index 00000000..c56809d
 --- /dev/null
 +++ b/drivers/misc/mei/dal/bh_external.h
 @@ -0,0 +1,101 @@
@@ -1233,7 +1233,7 @@ index 0000000..c56809d
 +#endif /* __BH_EXTERNAL_H */
 diff --git a/drivers/misc/mei/dal/bh_internal.c b/drivers/misc/mei/dal/bh_internal.c
 new file mode 100644
-index 0000000..94dc836
+index 00000000..94dc836
 --- /dev/null
 +++ b/drivers/misc/mei/dal/bh_internal.c
 @@ -0,0 +1,619 @@
@@ -1858,7 +1858,7 @@ index 0000000..94dc836
 +}
 diff --git a/drivers/misc/mei/dal/bh_internal.h b/drivers/misc/mei/dal/bh_internal.h
 new file mode 100644
-index 0000000..b151139
+index 00000000..b151139
 --- /dev/null
 +++ b/drivers/misc/mei/dal/bh_internal.h
 @@ -0,0 +1,133 @@

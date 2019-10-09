@@ -143,7 +143,7 @@ index 8e2c41d..8eda2a6 100644
  			dev_err(dev, "Cannot read device properties.\n");
 diff --git a/include/linux/power/bq25890_charger.h b/include/linux/power/bq25890_charger.h
 new file mode 100644
-index 0000000..6caf198
+index 00000000..6caf198
 --- /dev/null
 +++ b/include/linux/power/bq25890_charger.h
 @@ -0,0 +1,32 @@

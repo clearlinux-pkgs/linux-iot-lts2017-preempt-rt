@@ -173,7 +173,7 @@ index c8c202f..24a597e 100644
  		mutex_unlock(&spd->lock);
 diff --git a/drivers/misc/mei/spd/rpmb.c b/drivers/misc/mei/spd/rpmb.c
 new file mode 100644
-index 0000000..8e18db0
+index 00000000..8e18db0
 --- /dev/null
 +++ b/drivers/misc/mei/spd/rpmb.c
 @@ -0,0 +1,183 @@

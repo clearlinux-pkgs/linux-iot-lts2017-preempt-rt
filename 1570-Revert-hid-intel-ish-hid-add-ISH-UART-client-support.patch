@@ -48,7 +48,7 @@ index 399446a..825b70a 100644
  ccflags-y += -Idrivers/hid/intel-ish-hid/ishtp
 diff --git a/drivers/hid/intel-ish-hid/ishtp-tty-client.c b/drivers/hid/intel-ish-hid/ishtp-tty-client.c
 deleted file mode 100644
-index 545e8ff..0000000
+index 545e8ff..00000000
 --- a/drivers/hid/intel-ish-hid/ishtp-tty-client.c
 +++ /dev/null
 @@ -1,566 +0,0 @@

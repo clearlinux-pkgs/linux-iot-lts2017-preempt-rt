@@ -86,7 +86,7 @@ index 29cd71d..e1bb691 100644
  
 diff --git a/drivers/opp/Kconfig b/drivers/opp/Kconfig
 new file mode 100644
-index 0000000..a7fbb93
+index 00000000..a7fbb93
 --- /dev/null
 +++ b/drivers/opp/Kconfig
 @@ -0,0 +1,13 @@

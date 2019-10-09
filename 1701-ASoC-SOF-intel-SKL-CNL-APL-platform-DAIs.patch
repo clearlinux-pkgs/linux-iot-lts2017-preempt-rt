@@ -56,7 +56,7 @@ index 80d6cc7..99c80d7 100644
  EXPORT_SYMBOL(sof_cnl_ops);
 diff --git a/sound/soc/sof/intel/hda-dai.c b/sound/soc/sof/intel/hda-dai.c
 new file mode 100644
-index 0000000..091fcc1
+index 00000000..091fcc1
 --- /dev/null
 +++ b/sound/soc/sof/intel/hda-dai.c
 @@ -0,0 +1,118 @@

@@ -19,7 +19,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 19 insertions(+), 13 deletions(-)
 
 diff --git a/include/net/xfrm.h b/include/net/xfrm.h
-index db99efb..a7b95ff 100644
+index 57b8b11..83d1d10 100644
 --- a/include/net/xfrm.h
 +++ b/include/net/xfrm.h
 @@ -217,7 +217,7 @@ struct xfrm_state {
@@ -32,7 +32,7 @@ index db99efb..a7b95ff 100644
  	struct xfrm_state_offload xso;
  
 diff --git a/net/xfrm/xfrm_state.c b/net/xfrm/xfrm_state.c
-index 0cd2bdf..b765c35 100644
+index bd16e68..4ef1fcb 100644
 --- a/net/xfrm/xfrm_state.c
 +++ b/net/xfrm/xfrm_state.c
 @@ -427,7 +427,7 @@ static void xfrm_put_mode(struct xfrm_mode *mode)
@@ -85,7 +85,7 @@ index 0cd2bdf..b765c35 100644
  		setup_timer(&x->rtimer, xfrm_replay_timer_handler,
  				(unsigned long)x);
  		x->curlft.add_time = get_seconds();
-@@ -1031,7 +1032,9 @@ xfrm_state_find(const xfrm_address_t *daddr, const xfrm_address_t *saddr,
+@@ -1030,7 +1031,9 @@ xfrm_state_find(const xfrm_address_t *daddr, const xfrm_address_t *saddr,
  				hlist_add_head_rcu(&x->byspi, net->xfrm.state_byspi + h);
  			}
  			x->lft.hard_add_expires_seconds = net->xfrm.sysctl_acq_expires;
@@ -96,7 +96,7 @@ index 0cd2bdf..b765c35 100644
  			net->xfrm.state_num++;
  			xfrm_hash_grow_check(net, x->bydst.next != NULL);
  			spin_unlock_bh(&net->xfrm.xfrm_state_lock);
-@@ -1142,7 +1145,7 @@ static void __xfrm_state_insert(struct xfrm_state *x)
+@@ -1141,7 +1144,7 @@ static void __xfrm_state_insert(struct xfrm_state *x)
  		hlist_add_head_rcu(&x->byspi, net->xfrm.state_byspi + h);
  	}
  
@@ -105,7 +105,7 @@ index 0cd2bdf..b765c35 100644
  	if (x->replay_maxage)
  		mod_timer(&x->rtimer, jiffies + x->replay_maxage);
  
-@@ -1246,7 +1249,9 @@ static struct xfrm_state *__find_acq_core(struct net *net,
+@@ -1245,7 +1248,9 @@ static struct xfrm_state *__find_acq_core(struct net *net,
  		x->mark.m = m->m;
  		x->lft.hard_add_expires_seconds = net->xfrm.sysctl_acq_expires;
  		xfrm_state_hold(x);
@@ -116,7 +116,7 @@ index 0cd2bdf..b765c35 100644
  		list_add(&x->km.all, &net->xfrm.state_all);
  		hlist_add_head_rcu(&x->bydst, net->xfrm.state_bydst + h);
  		h = xfrm_src_hash(net, daddr, saddr, family);
-@@ -1546,7 +1551,8 @@ int xfrm_state_update(struct xfrm_state *x)
+@@ -1545,7 +1550,8 @@ int xfrm_state_update(struct xfrm_state *x)
  		memcpy(&x1->lft, &x->lft, sizeof(x1->lft));
  		x1->km.dying = 0;
  
@@ -126,7 +126,7 @@ index 0cd2bdf..b765c35 100644
  		if (x1->curlft.use_time)
  			xfrm_state_check_expire(x1);
  
-@@ -1570,7 +1576,7 @@ int xfrm_state_check_expire(struct xfrm_state *x)
+@@ -1569,7 +1575,7 @@ int xfrm_state_check_expire(struct xfrm_state *x)
  	if (x->curlft.bytes >= x->lft.hard_byte_limit ||
  	    x->curlft.packets >= x->lft.hard_packet_limit) {
  		x->km.state = XFRM_STATE_EXPIRED;

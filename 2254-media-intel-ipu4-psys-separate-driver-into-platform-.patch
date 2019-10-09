@@ -140,7 +140,7 @@ index 762950f..26dc8a1 100644
  #endif /* IPU_PSYS_H */
 diff --git a/drivers/media/pci/intel/ipu4/ipu-platform-psys.h b/drivers/media/pci/intel/ipu4/ipu-platform-psys.h
 new file mode 100644
-index 0000000..7826727
+index 00000000..7826727
 --- /dev/null
 +++ b/drivers/media/pci/intel/ipu4/ipu-platform-psys.h
 @@ -0,0 +1,30 @@

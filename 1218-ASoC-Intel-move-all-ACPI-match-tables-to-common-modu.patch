@@ -31,7 +31,7 @@ Signed-off-by: Mark Brown <broonie@kernel.org>
 
 diff --git a/include/sound/soc-acpi-intel-match.h b/include/sound/soc-acpi-intel-match.h
 new file mode 100644
-index 0000000..1a9191c
+index 00000000..1a9191c
 --- /dev/null
 +++ b/include/sound/soc-acpi-intel-match.h
 @@ -0,0 +1,32 @@
@@ -548,7 +548,7 @@ index 0f46ff2..7379d88 100644
 +obj-$(CONFIG_SND_SOC_ACPI_INTEL_MATCH) += snd-soc-acpi-intel-match.o
 diff --git a/sound/soc/intel/common/soc-acpi-intel-byt-match.c b/sound/soc/intel/common/soc-acpi-intel-byt-match.c
 new file mode 100644
-index 0000000..da80b48
+index 00000000..da80b48
 --- /dev/null
 +++ b/sound/soc/intel/common/soc-acpi-intel-byt-match.c
 @@ -0,0 +1,166 @@
@@ -720,7 +720,7 @@ index 0000000..da80b48
 +MODULE_DESCRIPTION("Intel Common ACPI Match module");
 diff --git a/sound/soc/intel/common/soc-acpi-intel-cht-match.c b/sound/soc/intel/common/soc-acpi-intel-cht-match.c
 new file mode 100644
-index 0000000..73eb577
+index 00000000..73eb577
 --- /dev/null
 +++ b/sound/soc/intel/common/soc-acpi-intel-cht-match.c
 @@ -0,0 +1,156 @@
@@ -882,7 +882,7 @@ index 0000000..73eb577
 +MODULE_DESCRIPTION("Intel Common ACPI Match module");
 diff --git a/sound/soc/intel/common/soc-acpi-intel-hsw-bdw-match.c b/sound/soc/intel/common/soc-acpi-intel-hsw-bdw-match.c
 new file mode 100644
-index 0000000..23329f2
+index 00000000..23329f2
 --- /dev/null
 +++ b/sound/soc/intel/common/soc-acpi-intel-hsw-bdw-match.c
 @@ -0,0 +1,52 @@

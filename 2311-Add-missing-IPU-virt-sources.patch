@@ -42,7 +42,7 @@ index 91bb500..fb23912 100644
  
 diff --git a/drivers/media/pci/intel/ipu-psys-virt.c b/drivers/media/pci/intel/ipu-psys-virt.c
 new file mode 100644
-index 0000000..132e49b
+index 00000000..132e49b
 --- /dev/null
 +++ b/drivers/media/pci/intel/ipu-psys-virt.c
 @@ -0,0 +1,812 @@
@@ -860,7 +860,7 @@ index 0000000..132e49b
 +};
 diff --git a/drivers/media/pci/intel/ipu-psys-virt.h b/drivers/media/pci/intel/ipu-psys-virt.h
 new file mode 100644
-index 0000000..6289207
+index 00000000..6289207
 --- /dev/null
 +++ b/drivers/media/pci/intel/ipu-psys-virt.h
 @@ -0,0 +1,38 @@
@@ -959,7 +959,7 @@ index 73e2b7c..3fe3a06 100644
  
 diff --git a/drivers/media/pci/intel/virtio/intel-ipu4-virtio-be-request-queue.h b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-be-request-queue.h
 new file mode 100644
-index 0000000..febcf73
+index 00000000..febcf73
 --- /dev/null
 +++ b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-be-request-queue.h
 @@ -0,0 +1,27 @@
@@ -992,7 +992,7 @@ index 0000000..febcf73
 +#endif
 diff --git a/drivers/media/pci/intel/virtio/intel-ipu4-virtio-common-psys.h b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-common-psys.h
 new file mode 100644
-index 0000000..0d8df64
+index 00000000..0d8df64
 --- /dev/null
 +++ b/drivers/media/pci/intel/virtio/intel-ipu4-virtio-common-psys.h
 @@ -0,0 +1,34 @@

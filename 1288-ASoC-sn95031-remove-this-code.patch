@@ -54,7 +54,7 @@ index 4b60879..8a6ee2c 100644
  snd-soc-ssm2518-objs := ssm2518.o
 diff --git a/sound/soc/codecs/sn95031.c b/sound/soc/codecs/sn95031.c
 deleted file mode 100644
-index 887923e..0000000
+index 887923e..00000000
 --- a/sound/soc/codecs/sn95031.c
 +++ /dev/null
 @@ -1,936 +0,0 @@
@@ -996,7 +996,7 @@ index 887923e..0000000
 -MODULE_ALIAS("platform:sn95031");
 diff --git a/sound/soc/codecs/sn95031.h b/sound/soc/codecs/sn95031.h
 deleted file mode 100644
-index 7651fe4..0000000
+index 7651fe4..00000000
 --- a/sound/soc/codecs/sn95031.h
 +++ /dev/null
 @@ -1,133 +0,0 @@

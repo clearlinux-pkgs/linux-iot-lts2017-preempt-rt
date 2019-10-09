@@ -63,7 +63,7 @@ index 522e71c..ce9be1e 100644
  obj-$(CONFIG_ACRN_VHM)		+= vhm/
 diff --git a/drivers/char/rpmb/Kconfig b/drivers/char/rpmb/Kconfig
 deleted file mode 100644
-index c5e6e90..0000000
+index c5e6e90..00000000
 --- a/drivers/char/rpmb/Kconfig
 +++ /dev/null
 @@ -1,8 +0,0 @@
@@ -77,7 +77,7 @@ index c5e6e90..0000000
 -	  If unsure, select N.
 diff --git a/drivers/char/rpmb/Makefile b/drivers/char/rpmb/Makefile
 deleted file mode 100644
-index 812b3ed..0000000
+index 812b3ed..00000000
 --- a/drivers/char/rpmb/Makefile
 +++ /dev/null
 @@ -1,4 +0,0 @@
@@ -87,7 +87,7 @@ index 812b3ed..0000000
 -ccflags-y += -D__CHECK_ENDIAN__
 diff --git a/drivers/char/rpmb/core.c b/drivers/char/rpmb/core.c
 deleted file mode 100644
-index 3603729..0000000
+index 3603729..00000000
 --- a/drivers/char/rpmb/core.c
 +++ /dev/null
 @@ -1,451 +0,0 @@
@@ -544,7 +544,7 @@ index 3603729..0000000
 -MODULE_LICENSE("GPL");
 diff --git a/include/linux/rpmb.h b/include/linux/rpmb.h
 deleted file mode 100644
-index 8acc0c0..0000000
+index 8acc0c0..00000000
 --- a/include/linux/rpmb.h
 +++ /dev/null
 @@ -1,233 +0,0 @@

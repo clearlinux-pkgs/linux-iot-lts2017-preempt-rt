@@ -737,7 +737,7 @@ index 3e49317..4b9e101 100644
  		 * legacy ringbuffer mode on BDW (and earlier iterations of
  		 * this driver, before upstreaming did this) it didn't seem
 diff --git a/drivers/gpu/drm/i915/i915_vgpu.c b/drivers/gpu/drm/i915/i915_vgpu.c
-index f01d019..6a153f4 100644
+index f780261..685ed55 100644
 --- a/drivers/gpu/drm/i915/i915_vgpu.c
 +++ b/drivers/gpu/drm/i915/i915_vgpu.c
 @@ -82,8 +82,8 @@ void i915_check_vgpu(struct drm_i915_private *dev_priv)

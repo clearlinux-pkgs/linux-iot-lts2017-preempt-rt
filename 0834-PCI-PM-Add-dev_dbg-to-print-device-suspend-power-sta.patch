@@ -14,10 +14,10 @@ Acked-by: Bjorn Helgaas <bhelgaas@google.com>
  1 file changed, 3 insertions(+)
 
 diff --git a/drivers/pci/pci-driver.c b/drivers/pci/pci-driver.c
-index 454d907..8609c23 100644
+index ae7ba30..abb9b51 100644
 --- a/drivers/pci/pci-driver.c
 +++ b/drivers/pci/pci-driver.c
-@@ -799,6 +799,9 @@ static int pci_pm_suspend_noirq(struct device *dev)
+@@ -800,6 +800,9 @@ static int pci_pm_suspend_noirq(struct device *dev)
  			pci_prepare_to_sleep(pci_dev);
  	}
  

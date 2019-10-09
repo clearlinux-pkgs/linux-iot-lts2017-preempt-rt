@@ -46,7 +46,7 @@ index e527a23..beb89a8 100644
 +obj-$(CONFIG_TRUSTY_VIRTIO)	+= trusty-virtio.o
 diff --git a/drivers/trusty/trusty-virtio.c b/drivers/trusty/trusty-virtio.c
 new file mode 100644
-index 0000000..fabbf29
+index 00000000..fabbf29
 --- /dev/null
 +++ b/drivers/trusty/trusty-virtio.c
 @@ -0,0 +1,697 @@

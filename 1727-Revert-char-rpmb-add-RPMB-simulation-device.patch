@@ -50,7 +50,7 @@ index 81f924f..b5dc087 100644
  ccflags-y += -D__CHECK_ENDIAN__
 diff --git a/drivers/char/rpmb/rpmb_sim.c b/drivers/char/rpmb/rpmb_sim.c
 deleted file mode 100644
-index bf0681d..0000000
+index bf0681d..00000000
 --- a/drivers/char/rpmb/rpmb_sim.c
 +++ /dev/null
 @@ -1,753 +0,0 @@

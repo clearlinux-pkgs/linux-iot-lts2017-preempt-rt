@@ -26,7 +26,7 @@ index 523d24c..f3f538a 100644
  						../ipu-cpd.o \
 diff --git a/drivers/media/pci/intel/ici/ici-dma.c b/drivers/media/pci/intel/ici/ici-dma.c
 new file mode 100644
-index 0000000..da501a2
+index 00000000..da501a2
 --- /dev/null
 +++ b/drivers/media/pci/intel/ici/ici-dma.c
 @@ -0,0 +1,417 @@

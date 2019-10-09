@@ -22,7 +22,7 @@ Signed-off-by: Jeff McGee <jeff.mcgee@intel.com>
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/drivers/gpu/drm/i915/intel_hangcheck.c b/drivers/gpu/drm/i915/intel_hangcheck.c
-index e8522e3..deed8a53 100644
+index e8522e3..deed8a5 100644
 --- a/drivers/gpu/drm/i915/intel_hangcheck.c
 +++ b/drivers/gpu/drm/i915/intel_hangcheck.c
 @@ -266,7 +266,7 @@ engine_stuck(struct intel_engine_cs *engine, u64 acthd)

@@ -59,7 +59,7 @@ index 3f7a9a2..1795359 100644
  /*
   * void call_do_irq(struct pt_regs *regs, struct thread_info *irqtp);
 diff --git a/arch/powerpc/kernel/misc_64.S b/arch/powerpc/kernel/misc_64.S
-index 3280953..dd2a80d 100644
+index 09af857..f90d0d0 100644
 --- a/arch/powerpc/kernel/misc_64.S
 +++ b/arch/powerpc/kernel/misc_64.S
 @@ -31,6 +31,7 @@

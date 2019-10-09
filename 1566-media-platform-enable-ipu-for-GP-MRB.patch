@@ -41,7 +41,7 @@ index 91e5798..7b2fc67 100644
  obj-$(CONFIG_INTEL_IPU4P_CNL_RVP_PDATA)   += ipu4p-cnl-rvp-pdata.o
 diff --git a/drivers/media/platform/intel/ipu4-bxt-gp-pdata.c b/drivers/media/platform/intel/ipu4-bxt-gp-pdata.c
 new file mode 100644
-index 0000000..c49ab8d
+index 00000000..c49ab8d
 --- /dev/null
 +++ b/drivers/media/platform/intel/ipu4-bxt-gp-pdata.c
 @@ -0,0 +1,121 @@

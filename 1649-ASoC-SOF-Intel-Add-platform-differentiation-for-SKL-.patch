@@ -19,7 +19,7 @@ Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 
 diff --git a/sound/soc/sof/intel/apl.c b/sound/soc/sof/intel/apl.c
 new file mode 100644
-index 0000000..d36e30d
+index 00000000..d36e30d
 --- /dev/null
 +++ b/sound/soc/sof/intel/apl.c
 @@ -0,0 +1,96 @@
@@ -121,7 +121,7 @@ index 0000000..d36e30d
 +EXPORT_SYMBOL(sof_apl_ops);
 diff --git a/sound/soc/sof/intel/cnl.c b/sound/soc/sof/intel/cnl.c
 new file mode 100644
-index 0000000..80d6cc7
+index 00000000..80d6cc7
 --- /dev/null
 +++ b/sound/soc/sof/intel/cnl.c
 @@ -0,0 +1,224 @@
@@ -351,7 +351,7 @@ index 0000000..80d6cc7
 +EXPORT_SYMBOL(sof_cnl_ops);
 diff --git a/sound/soc/sof/intel/skl.c b/sound/soc/sof/intel/skl.c
 new file mode 100644
-index 0000000..d4b6de6
+index 00000000..d4b6de6
 --- /dev/null
 +++ b/sound/soc/sof/intel/skl.c
 @@ -0,0 +1,101 @@

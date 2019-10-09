@@ -57,7 +57,7 @@ index 04d313d..1abb7ad 100644
  obj-$(CONFIG_SND_SOC_INTEL_SKYLAKE) += snd-soc-skl-ipc.o
 diff --git a/sound/soc/intel/skylake/cnl-acpi.c b/sound/soc/intel/skylake/cnl-acpi.c
 new file mode 100644
-index 0000000..0f7ef3b
+index 00000000..0f7ef3b
 --- /dev/null
 +++ b/sound/soc/intel/skylake/cnl-acpi.c
 @@ -0,0 +1,160 @@

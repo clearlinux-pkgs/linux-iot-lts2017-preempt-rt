@@ -72,7 +72,7 @@ index b5dc087..812b3ed 100644
  ccflags-y += -D__CHECK_ENDIAN__
 diff --git a/drivers/char/rpmb/cdev.c b/drivers/char/rpmb/cdev.c
 deleted file mode 100644
-index 6874172..0000000
+index 6874172..00000000
 --- a/drivers/char/rpmb/cdev.c
 +++ /dev/null
 @@ -1,330 +0,0 @@
@@ -457,7 +457,7 @@ index 1667139..7c0ceed 100644
  }
 diff --git a/drivers/char/rpmb/rpmb-cdev.h b/drivers/char/rpmb/rpmb-cdev.h
 deleted file mode 100644
-index 5fb41e5..0000000
+index 5fb41e5..00000000
 --- a/drivers/char/rpmb/rpmb-cdev.h
 +++ /dev/null
 @@ -1,25 +0,0 @@
@@ -602,7 +602,7 @@ index 8f2c290..8acc0c0 100644
  
 diff --git a/include/uapi/linux/rpmb.h b/include/uapi/linux/rpmb.h
 deleted file mode 100644
-index 6fbdbc9..0000000
+index 6fbdbc9..00000000
 --- a/include/uapi/linux/rpmb.h
 +++ /dev/null
 @@ -1,153 +0,0 @@

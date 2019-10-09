@@ -88,7 +88,7 @@ index 1a8668d..e29c256 100644
  static inline void i915_gem_drain_freed_objects(struct drm_i915_private *i915)
 diff --git a/drivers/gpu/drm/i915/i915_gem_splash.c b/drivers/gpu/drm/i915/i915_gem_splash.c
 new file mode 100644
-index 0000000..317675a
+index 00000000..317675a
 --- /dev/null
 +++ b/drivers/gpu/drm/i915/i915_gem_splash.c
 @@ -0,0 +1,144 @@

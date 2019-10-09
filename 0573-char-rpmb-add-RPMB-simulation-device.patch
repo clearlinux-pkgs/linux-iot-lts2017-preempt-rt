@@ -89,7 +89,7 @@ index b5dc087..81f924f 100644
  ccflags-y += -D__CHECK_ENDIAN__
 diff --git a/drivers/char/rpmb/rpmb_sim.c b/drivers/char/rpmb/rpmb_sim.c
 new file mode 100644
-index 0000000..bf0681d
+index 00000000..bf0681d
 --- /dev/null
 +++ b/drivers/char/rpmb/rpmb_sim.c
 @@ -0,0 +1,753 @@

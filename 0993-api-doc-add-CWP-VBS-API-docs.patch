@@ -35,7 +35,7 @@ index af0d239..4f400ba 100644
 +	- Clearwater Pass Project. See also http://xxxx
 diff --git a/Documentation/virtual/cwp/00-INDEX b/Documentation/virtual/cwp/00-INDEX
 new file mode 100644
-index 0000000..5beb50e
+index 00000000..5beb50e
 --- /dev/null
 +++ b/Documentation/virtual/cwp/00-INDEX
 @@ -0,0 +1,8 @@
@@ -49,7 +49,7 @@ index 0000000..5beb50e
 +	- virtio and backend service (VBS) APIs.
 diff --git a/Documentation/virtual/cwp/conf.py b/Documentation/virtual/cwp/conf.py
 new file mode 100644
-index 0000000..b05de9d
+index 00000000..b05de9d
 --- /dev/null
 +++ b/Documentation/virtual/cwp/conf.py
 @@ -0,0 +1,5 @@
@@ -60,7 +60,7 @@ index 0000000..b05de9d
 +tags.add("subproject")
 diff --git a/Documentation/virtual/cwp/index.rst b/Documentation/virtual/cwp/index.rst
 new file mode 100644
-index 0000000..9a80e6e
+index 00000000..9a80e6e
 --- /dev/null
 +++ b/Documentation/virtual/cwp/index.rst
 @@ -0,0 +1,17 @@
@@ -83,7 +83,7 @@ index 0000000..9a80e6e
 +   * :ref:`genindex`
 diff --git a/Documentation/virtual/cwp/vbs.rst b/Documentation/virtual/cwp/vbs.rst
 new file mode 100644
-index 0000000..f4ce7e3
+index 00000000..f4ce7e3
 --- /dev/null
 +++ b/Documentation/virtual/cwp/vbs.rst
 @@ -0,0 +1,21 @@
@@ -110,7 +110,7 @@ index 0000000..f4ce7e3
 +.. kernel-doc:: include/linux/vbs/vq.h
 diff --git a/Documentation/virtual/cwp/vhm.rst b/Documentation/virtual/cwp/vhm.rst
 new file mode 100644
-index 0000000..7402e50
+index 00000000..7402e50
 --- /dev/null
 +++ b/Documentation/virtual/cwp/vhm.rst
 @@ -0,0 +1,6 @@

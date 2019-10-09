@@ -61,7 +61,7 @@ index c1afb14..69a7868 100644
 +obj-$(CONFIG_TRUSTY_BACKUP_TIMER) += trusty-timer.o
 diff --git a/drivers/trusty/trusty-timer.c b/drivers/trusty/trusty-timer.c
 new file mode 100644
-index 0000000..0998e02
+index 00000000..0998e02
 --- /dev/null
 +++ b/drivers/trusty/trusty-timer.c
 @@ -0,0 +1,166 @@

@@ -167,7 +167,7 @@ index 25afcd0..6227d12 100644
  			   struct drm_atomic_state *state);
 diff --git a/drivers/gpu/drm/i915/intel_initial_modeset.c b/drivers/gpu/drm/i915/intel_initial_modeset.c
 new file mode 100644
-index 0000000..4883ba2
+index 00000000..4883ba2
 --- /dev/null
 +++ b/drivers/gpu/drm/i915/intel_initial_modeset.c
 @@ -0,0 +1,487 @@

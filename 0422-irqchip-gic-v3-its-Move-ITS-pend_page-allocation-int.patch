@@ -21,7 +21,7 @@ Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
  1 file changed, 41 insertions(+), 19 deletions(-)
 
 diff --git a/drivers/irqchip/irq-gic-v3-its.c b/drivers/irqchip/irq-gic-v3-its.c
-index f5a75e4..d60d108 100644
+index cbea5e6..a0d2378 100644
 --- a/drivers/irqchip/irq-gic-v3-its.c
 +++ b/drivers/irqchip/irq-gic-v3-its.c
 @@ -171,6 +171,7 @@ static DEFINE_RAW_SPINLOCK(vmovp_lock);

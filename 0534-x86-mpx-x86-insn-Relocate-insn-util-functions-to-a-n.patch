@@ -55,7 +55,7 @@ Signed-off-by: Ricardo Neri <ricardo.neri-calderon@linux.intel.com>
 
 diff --git a/arch/x86/include/asm/insn-eval.h b/arch/x86/include/asm/insn-eval.h
 new file mode 100644
-index 0000000..5cab1b1
+index 00000000..5cab1b1
 --- /dev/null
 +++ b/arch/x86/include/asm/insn-eval.h
 @@ -0,0 +1,16 @@
@@ -90,7 +90,7 @@ index 60b410f..58145df 100644
  
 diff --git a/arch/x86/lib/insn-eval.c b/arch/x86/lib/insn-eval.c
 new file mode 100644
-index 0000000..df9418c
+index 00000000..df9418c
 --- /dev/null
 +++ b/arch/x86/lib/insn-eval.c
 @@ -0,0 +1,163 @@

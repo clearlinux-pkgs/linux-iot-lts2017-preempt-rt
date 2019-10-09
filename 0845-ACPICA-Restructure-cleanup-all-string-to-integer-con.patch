@@ -276,7 +276,7 @@ index e4a7da8..539d775 100644
  		}
 diff --git a/drivers/acpi/acpica/utstrsuppt.c b/drivers/acpi/acpica/utstrsuppt.c
 new file mode 100644
-index 0000000..ca41f03
+index 00000000..ca41f03
 --- /dev/null
 +++ b/drivers/acpi/acpica/utstrsuppt.c
 @@ -0,0 +1,417 @@

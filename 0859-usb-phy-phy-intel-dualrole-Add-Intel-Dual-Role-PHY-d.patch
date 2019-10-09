@@ -50,7 +50,7 @@ index 0c40ccc..a414932 100644
 +obj-$(CONFIG_USB_INTEL_DUAL_ROLE_PHY)	+= phy-intel-dualrole.o
 diff --git a/drivers/usb/phy/phy-intel-dualrole.c b/drivers/usb/phy/phy-intel-dualrole.c
 new file mode 100644
-index 0000000..f15d239
+index 00000000..f15d239
 --- /dev/null
 +++ b/drivers/usb/phy/phy-intel-dualrole.c
 @@ -0,0 +1,420 @@

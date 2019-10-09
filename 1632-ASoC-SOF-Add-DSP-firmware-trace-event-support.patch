@@ -14,7 +14,7 @@ Signed-off-by: Liam Girdwood <liam.r.girdwood@linux.intel.com>
 
 diff --git a/sound/soc/sof/trace.c b/sound/soc/sof/trace.c
 new file mode 100644
-index 0000000..dc452ad
+index 00000000..dc452ad
 --- /dev/null
 +++ b/sound/soc/sof/trace.c
 @@ -0,0 +1,290 @@

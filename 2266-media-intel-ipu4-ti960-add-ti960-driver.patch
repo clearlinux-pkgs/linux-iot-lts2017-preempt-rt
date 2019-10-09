@@ -27,7 +27,7 @@ Signed-off-by: Meng Wei <wei.meng@intel.com>
 
 diff --git a/drivers/media/i2c/ti960-reg.h b/drivers/media/i2c/ti960-reg.h
 new file mode 100644
-index 0000000..260c178
+index 00000000..260c178
 --- /dev/null
 +++ b/drivers/media/i2c/ti960-reg.h
 @@ -0,0 +1,209 @@
@@ -242,7 +242,7 @@ index 0000000..260c178
 +#endif
 diff --git a/drivers/media/i2c/ti960.c b/drivers/media/i2c/ti960.c
 new file mode 100644
-index 0000000..59d2593
+index 00000000..59d2593
 --- /dev/null
 +++ b/drivers/media/i2c/ti960.c
 @@ -0,0 +1,1370 @@
@@ -1618,7 +1618,7 @@ index 0000000..59d2593
 +MODULE_DESCRIPTION("TI960 CSI2-Aggregator driver");
 diff --git a/include/media/ti960.h b/include/media/ti960.h
 new file mode 100644
-index 0000000..60e134f
+index 00000000..60e134f
 --- /dev/null
 +++ b/include/media/ti960.h
 @@ -0,0 +1,62 @@

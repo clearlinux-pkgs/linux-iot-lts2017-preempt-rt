@@ -52,7 +52,7 @@ index fe9d99d..66b218c 100644
  obj-$(CONFIG_INTEL_MEI_SPD) += spd/
 diff --git a/drivers/misc/mei/dal/Kconfig b/drivers/misc/mei/dal/Kconfig
 new file mode 100644
-index 0000000..5d8356a
+index 00000000..5d8356a
 --- /dev/null
 +++ b/drivers/misc/mei/dal/Kconfig
 @@ -0,0 +1,7 @@
@@ -65,7 +65,7 @@ index 0000000..5d8356a
 +	  The DAL module exposes both user space api and kernel space api.
 diff --git a/drivers/misc/mei/dal/Makefile b/drivers/misc/mei/dal/Makefile
 new file mode 100644
-index 0000000..375f486
+index 00000000..375f486
 --- /dev/null
 +++ b/drivers/misc/mei/dal/Makefile
 @@ -0,0 +1,7 @@
@@ -78,7 +78,7 @@ index 0000000..375f486
 +mei_dal-objs += bh_internal.o
 diff --git a/drivers/misc/mei/dal/dal_class.c b/drivers/misc/mei/dal/dal_class.c
 new file mode 100644
-index 0000000..733bdb2
+index 00000000..733bdb2
 --- /dev/null
 +++ b/drivers/misc/mei/dal/dal_class.c
 @@ -0,0 +1,824 @@
@@ -908,7 +908,7 @@ index 0000000..733bdb2
 +MODULE_LICENSE("GPL v2");
 diff --git a/drivers/misc/mei/dal/dal_dev.h b/drivers/misc/mei/dal/dal_dev.h
 new file mode 100644
-index 0000000..6bd1753
+index 00000000..6bd1753
 --- /dev/null
 +++ b/drivers/misc/mei/dal/dal_dev.h
 @@ -0,0 +1,204 @@

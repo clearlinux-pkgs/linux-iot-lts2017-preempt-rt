@@ -22,7 +22,7 @@ Signed-off-by: Alexander Usyskin <alexander.usyskin@intel.com>
 
 diff --git a/Documentation/ABI/testing/sysfs-class-rpmb b/Documentation/ABI/testing/sysfs-class-rpmb
 new file mode 100644
-index 0000000..23a31be
+index 00000000..23a31be
 --- /dev/null
 +++ b/Documentation/ABI/testing/sysfs-class-rpmb
 @@ -0,0 +1,20 @@

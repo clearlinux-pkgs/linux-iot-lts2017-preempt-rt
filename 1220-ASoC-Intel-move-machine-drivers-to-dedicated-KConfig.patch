@@ -381,7 +381,7 @@ index c632406..4400d6d 100644
 +source "sound/soc/intel/boards/Kconfig"
 diff --git a/sound/soc/intel/boards/Kconfig b/sound/soc/intel/boards/Kconfig
 new file mode 100644
-index 0000000..d341cb9
+index 00000000..d341cb9
 --- /dev/null
 +++ b/sound/soc/intel/boards/Kconfig
 @@ -0,0 +1,341 @@

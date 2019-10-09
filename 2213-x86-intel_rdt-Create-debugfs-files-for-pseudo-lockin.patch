@@ -314,7 +314,7 @@ index 22387af..3009a4f 100644
  }
 diff --git a/arch/x86/kernel/cpu/intel_rdt_pseudo_lock_event.h b/arch/x86/kernel/cpu/intel_rdt_pseudo_lock_event.h
 new file mode 100644
-index 0000000..3cd0fa2
+index 00000000..3cd0fa2
 --- /dev/null
 +++ b/arch/x86/kernel/cpu/intel_rdt_pseudo_lock_event.h
 @@ -0,0 +1,23 @@

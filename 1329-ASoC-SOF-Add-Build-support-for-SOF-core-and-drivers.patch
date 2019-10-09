@@ -41,7 +41,7 @@ index 5327f4d..4e760a7 100644
  obj-$(CONFIG_SND_SOC)	+= stm/
 diff --git a/sound/soc/sof/Kconfig b/sound/soc/sof/Kconfig
 new file mode 100644
-index 0000000..cdd5fd4
+index 00000000..cdd5fd4
 --- /dev/null
 +++ b/sound/soc/sof/Kconfig
 @@ -0,0 +1,110 @@
@@ -157,7 +157,7 @@ index 0000000..cdd5fd4
 +endif ## SND_SOC_SOF_INTEL
 diff --git a/sound/soc/sof/Makefile b/sound/soc/sof/Makefile
 new file mode 100644
-index 0000000..b594c4e
+index 00000000..b594c4e
 --- /dev/null
 +++ b/sound/soc/sof/Makefile
 @@ -0,0 +1,26 @@

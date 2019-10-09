@@ -55,7 +55,7 @@ index ccfebc2..6d89d36 100644
  -----------------------------------
 diff --git a/Documentation/rpmb/conf.py b/Documentation/rpmb/conf.py
 new file mode 100644
-index 0000000..15430a0
+index 00000000..15430a0
 --- /dev/null
 +++ b/Documentation/rpmb/conf.py
 @@ -0,0 +1,5 @@
@@ -66,7 +66,7 @@ index 0000000..15430a0
 +tags.add("subproject")
 diff --git a/Documentation/rpmb/index.rst b/Documentation/rpmb/index.rst
 new file mode 100644
-index 0000000..876a260
+index 00000000..876a260
 --- /dev/null
 +++ b/Documentation/rpmb/index.rst
 @@ -0,0 +1,18 @@
@@ -90,7 +90,7 @@ index 0000000..876a260
 +   * :ref:`genindex`
 diff --git a/Documentation/rpmb/introduction.rst b/Documentation/rpmb/introduction.rst
 new file mode 100644
-index 0000000..f4ded7d
+index 00000000..f4ded7d
 --- /dev/null
 +++ b/Documentation/rpmb/introduction.rst
 @@ -0,0 +1,102 @@
@@ -198,7 +198,7 @@ index 0000000..f4ded7d
 +
 diff --git a/Documentation/rpmb/rpmb-tool.rst b/Documentation/rpmb/rpmb-tool.rst
 new file mode 100644
-index 0000000..148eb0d
+index 00000000..148eb0d
 --- /dev/null
 +++ b/Documentation/rpmb/rpmb-tool.rst
 @@ -0,0 +1,19 @@
@@ -223,7 +223,7 @@ index 0000000..148eb0d
 +        rpmb -r/--request:  use RPMB_IOC_REQ_CMD
 diff --git a/Documentation/rpmb/simulation-device.rst b/Documentation/rpmb/simulation-device.rst
 new file mode 100644
-index 0000000..9192a78
+index 00000000..9192a78
 --- /dev/null
 +++ b/Documentation/rpmb/simulation-device.rst
 @@ -0,0 +1,19 @@

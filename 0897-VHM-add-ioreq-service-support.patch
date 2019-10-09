@@ -226,7 +226,7 @@ index dd2ba02..4412e29 100644
  	return cwp_hypercall2(HC_VM_SET_MEMMAP, vmid, memmap);
 diff --git a/drivers/vhm/vhm_ioreq.c b/drivers/vhm/vhm_ioreq.c
 new file mode 100644
-index 0000000..3f2743c
+index 00000000..3f2743c
 --- /dev/null
 +++ b/drivers/vhm/vhm_ioreq.c
 @@ -0,0 +1,922 @@
@@ -1322,7 +1322,7 @@ index 45c9c23..9bf06bc 100644
  #define HC_VM_SET_MEMMAP            _HC_ID(HC_ID, HC_ID_MEM_BASE + 0x00)
 diff --git a/include/linux/vhm/cwp_vhm_ioreq.h b/include/linux/vhm/cwp_vhm_ioreq.h
 new file mode 100644
-index 0000000..c0f76d7
+index 00000000..c0f76d7
 --- /dev/null
 +++ b/include/linux/vhm/cwp_vhm_ioreq.h
 @@ -0,0 +1,86 @@

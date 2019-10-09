@@ -42,7 +42,7 @@ index a01c824..e162a40 100644
 +obj-$(CONFIG_TRUSTY_FIQ_ARM64)	+= trusty-fiq-arm64.o trusty-fiq-arm64-glue.o
 diff --git a/drivers/trusty/trusty-fiq-arm64-glue.S b/drivers/trusty/trusty-fiq-arm64-glue.S
 new file mode 100644
-index 0000000..6994b3a
+index 00000000..6994b3a
 --- /dev/null
 +++ b/drivers/trusty/trusty-fiq-arm64-glue.S
 @@ -0,0 +1,54 @@
@@ -102,7 +102,7 @@ index 0000000..6994b3a
 +	b	.	/* should not get here */
 diff --git a/drivers/trusty/trusty-fiq-arm64.c b/drivers/trusty/trusty-fiq-arm64.c
 new file mode 100644
-index 0000000..df05a98
+index 00000000..df05a98
 --- /dev/null
 +++ b/drivers/trusty/trusty-fiq-arm64.c
 @@ -0,0 +1,140 @@

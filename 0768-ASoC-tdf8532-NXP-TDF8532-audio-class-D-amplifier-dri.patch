@@ -67,7 +67,7 @@ index 8b2cd2c..4b60879 100644
  obj-$(CONFIG_SND_SOC_TLV320AIC23_I2C)	+= snd-soc-tlv320aic23-i2c.o
 diff --git a/sound/soc/codecs/tdf8532.c b/sound/soc/codecs/tdf8532.c
 new file mode 100644
-index 0000000..59db83d
+index 00000000..59db83d
 --- /dev/null
 +++ b/sound/soc/codecs/tdf8532.c
 @@ -0,0 +1,379 @@
@@ -452,7 +452,7 @@ index 0000000..59db83d
 +MODULE_LICENSE("GPL v2");
 diff --git a/sound/soc/codecs/tdf8532.h b/sound/soc/codecs/tdf8532.h
 new file mode 100644
-index 0000000..6e3f2c1
+index 00000000..6e3f2c1
 --- /dev/null
 +++ b/sound/soc/codecs/tdf8532.h
 @@ -0,0 +1,101 @@
