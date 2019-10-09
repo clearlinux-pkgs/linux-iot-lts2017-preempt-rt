@@ -1,13 +1,13 @@
 # This is a linux kernel with the preempt_rt patch set plus PK patches
 
 Name:           linux-iot-lts2017-preempt-rt
-Version:        4.14.139
-Release:        9
+Version:        4.14.146
+Release:        10
 License:        GPL-2.0
 Summary:        The Linux kernel
 Url:            http://www.kernel.org/
 Group:          kernel
-Source0:        https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.14.139.tar.xz
+Source0:        https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.14.146.tar.xz
 Source2:        config
 Source3:        cmdline
 
@@ -504,7 +504,7 @@ Patch0473: 0473-Revert-futex-workaround-migrate_disable-enable-in-di.patch
 Patch0474: 0474-futex-Make-the-futex_hash_bucket-lock-raw.patch
 Patch0475: 0475-futex-Delay-deallocation-of-pi_state.patch
 Patch0476: 0476-mm-zswap-Do-not-disable-preemption-in-zswap_frontswa.patch
-Patch0477: 0477-Linux-4.14.139-rt66-REBASE.patch
+Patch0477: 0477-Linux-4.14.146-rt66-REBASE.patch
 Patch0478: 0478-greybus-Remove-android-make-file.patch
 Patch0479: 0479-AndroidIA-Allow-RenderNode-to-be-used-for-kms-getter.patch
 Patch0480: 0480-thermal-Add-processor-thermal-device-support.patch
@@ -2389,7 +2389,7 @@ Group:          kernel
 Linux kernel extra files
 
 %prep
-%setup -q -n linux-4.14.139
+%setup -q -n linux-4.14.146
 
 #patchXXXX PK Series
 %patch0001 -p1
