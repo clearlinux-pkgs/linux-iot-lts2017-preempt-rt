@@ -2376,6 +2376,7 @@ Patch2343: 2343-media-intel-ipu4-fix-potential-memory-leak.patch
 # Clear Linux port patch set
 patch8001: 8001-fix-drm-i915-Move-rps.hw_lock-to-dev_priv.patch
 patch8002: 8002-fix-drm-i915-drop-duplicate-eb_use_cmdparser-functio.patch
+patch8003: 8003-fix-x86-intel_rdt-update-cpus_ptr-pointer.patch
 
 # Clear Linux patch
 Patch9001: 9001-init-wait-for-partition-and-retry-scan.patch
@@ -4745,6 +4746,7 @@ Linux kernel extra files
 # Clear Linux port patch set
 %patch8001 -p1
 %patch8002 -p1
+%patch8003 -p1
 
 # Clear Linux patch
 %patch9001 -p1
