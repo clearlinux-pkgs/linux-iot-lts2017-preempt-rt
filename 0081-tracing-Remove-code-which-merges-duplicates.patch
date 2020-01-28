@@ -24,7 +24,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  3 files changed, 6 insertions(+), 95 deletions(-)
 
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
-index f2119ee..3c396e7 100644
+index f2119ee8a11e..3c396e72eba9 100644
 --- a/kernel/trace/trace_events_hist.c
 +++ b/kernel/trace/trace_events_hist.c
 @@ -340,16 +340,6 @@ static int hist_trigger_elt_comm_alloc(struct tracing_map_elt *elt)
@@ -53,7 +53,7 @@ index f2119ee..3c396e7 100644
  	.elt_init	= hist_trigger_elt_comm_init,
  };
 diff --git a/kernel/trace/tracing_map.c b/kernel/trace/tracing_map.c
-index b30f343..f47a4d5 100644
+index 868d0be7abd8..f6c7e1f81f85 100644
 --- a/kernel/trace/tracing_map.c
 +++ b/kernel/trace/tracing_map.c
 @@ -847,67 +847,15 @@ create_sort_entry(void *key, struct tracing_map_elt *elt)
@@ -173,7 +173,7 @@ index b30f343..f47a4d5 100644
  	if (is_key(map, sort_keys[0].field_idx))
  		cmp_entries_fn = cmp_entries_key;
 diff --git a/kernel/trace/tracing_map.h b/kernel/trace/tracing_map.h
-index 5b5bbf8..de57887 100644
+index 5b5bbf8ae550..de57887c0670 100644
 --- a/kernel/trace/tracing_map.h
 +++ b/kernel/trace/tracing_map.h
 @@ -215,11 +215,6 @@ struct tracing_map {

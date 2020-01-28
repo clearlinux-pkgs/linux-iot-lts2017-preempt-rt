@@ -22,7 +22,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 1 insertion(+), 3 deletions(-)
 
 diff --git a/drivers/iommu/iova.c b/drivers/iommu/iova.c
-index 9f35b9a..1e5f51e 100644
+index 4edf65dbbcab..f26649d50c80 100644
 --- a/drivers/iommu/iova.c
 +++ b/drivers/iommu/iova.c
 @@ -580,7 +580,7 @@ void queue_iova(struct iova_domain *iovad,
@@ -34,8 +34,8 @@ index 9f35b9a..1e5f51e 100644
  	unsigned long flags;
  	unsigned idx;
  
-@@ -610,8 +610,6 @@ void queue_iova(struct iova_domain *iovad,
- 	if (atomic_cmpxchg(&iovad->fq_timer_on, 0, 1) == 0)
+@@ -612,8 +612,6 @@ void queue_iova(struct iova_domain *iovad,
+ 	    !atomic_cmpxchg(&iovad->fq_timer_on, 0, 1))
  		mod_timer(&iovad->fq_timer,
  			  jiffies + msecs_to_jiffies(IOVA_FQ_TIMEOUT));
 -

@@ -35,7 +35,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 71 insertions(+), 23 deletions(-)
 
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
-index 10ec089..48d2fdd 100644
+index 10ec08942aa6..48d2fdd47083 100644
 --- a/kernel/trace/trace_events_hist.c
 +++ b/kernel/trace/trace_events_hist.c
 @@ -89,6 +89,12 @@ static u64 hist_field_log2(struct hist_field *hist_field, void *event,

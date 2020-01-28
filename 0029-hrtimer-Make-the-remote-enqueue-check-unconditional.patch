@@ -29,7 +29,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 12 insertions(+), 26 deletions(-)
 
 diff --git a/include/linux/hrtimer.h b/include/linux/hrtimer.h
-index 22627b3..bb7270e 100644
+index 524374f5e799..5eac50b9322e 100644
 --- a/include/linux/hrtimer.h
 +++ b/include/linux/hrtimer.h
 @@ -164,13 +164,13 @@ enum  hrtimer_base_type {
@@ -64,7 +64,7 @@ index 22627b3..bb7270e 100644
  } ____cacheline_aligned;
  
 diff --git a/kernel/time/hrtimer.c b/kernel/time/hrtimer.c
-index 85882d5..b1016aa 100644
+index 4fafcbe663f4..8636d2552e9a 100644
 --- a/kernel/time/hrtimer.c
 +++ b/kernel/time/hrtimer.c
 @@ -154,26 +154,21 @@ struct hrtimer_clock_base *lock_hrtimer_base(const struct hrtimer *timer,
@@ -124,7 +124,7 @@ index 85882d5..b1016aa 100644
  static inline void retrigger_next_event(void *arg) { }
  
  #endif /* CONFIG_HIGH_RES_TIMERS */
-@@ -1601,10 +1585,12 @@ int hrtimers_prepare_cpu(unsigned int cpu)
+@@ -1604,10 +1588,12 @@ int hrtimers_prepare_cpu(unsigned int cpu)
  		timerqueue_init_head(&cpu_base->clock_base[i].active);
  	}
  

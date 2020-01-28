@@ -20,7 +20,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/net/Kconfig b/net/Kconfig
-index 9dba271..9c7b383 100644
+index 9dba2715919d..9c7b38379c09 100644
 --- a/net/Kconfig
 +++ b/net/Kconfig
 @@ -272,7 +272,7 @@ config CGROUP_NET_CLASSID

@@ -28,10 +28,10 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  6 files changed, 103 insertions(+), 103 deletions(-)
 
 diff --git a/kernel/trace/trace.c b/kernel/trace/trace.c
-index b47a316..3eb1c26 100644
+index 8fe7dcbabf24..e0955936327e 100644
 --- a/kernel/trace/trace.c
 +++ b/kernel/trace/trace.c
-@@ -8288,6 +8288,92 @@ void ftrace_dump(enum ftrace_dump_mode oops_dump_mode)
+@@ -8310,6 +8310,92 @@ void ftrace_dump(enum ftrace_dump_mode oops_dump_mode)
  }
  EXPORT_SYMBOL_GPL(ftrace_dump);
  
@@ -125,7 +125,7 @@ index b47a316..3eb1c26 100644
  {
  	int ring_buf_size;
 diff --git a/kernel/trace/trace.h b/kernel/trace/trace.h
-index dbb212c..7c43bd6 100644
+index dbb212c40a41..7c43bd6f518a 100644
 --- a/kernel/trace/trace.h
 +++ b/kernel/trace/trace.h
 @@ -1806,6 +1806,13 @@ void trace_printk_start_comm(void);
@@ -143,7 +143,7 @@ index dbb212c..7c43bd6 100644
   * Normal trace_printk() and friends allocates special buffers
   * to do the manipulation, as well as saves the print formats
 diff --git a/kernel/trace/trace_kprobe.c b/kernel/trace/trace_kprobe.c
-index ea20274..3c40d41 100644
+index ea20274a105a..3c40d4174052 100644
 --- a/kernel/trace/trace_kprobe.c
 +++ b/kernel/trace/trace_kprobe.c
 @@ -918,8 +918,8 @@ static int probes_open(struct inode *inode, struct file *file)
@@ -198,7 +198,7 @@ index ea20274..3c40d41 100644
  		pr_warn("error on deleting a probe.\n");
  		warn++;
 diff --git a/kernel/trace/trace_probe.c b/kernel/trace/trace_probe.c
-index fe45133..daf54bd 100644
+index fe4513330412..daf54bda4dc8 100644
 --- a/kernel/trace/trace_probe.c
 +++ b/kernel/trace/trace_probe.c
 @@ -621,92 +621,6 @@ void traceprobe_free_probe_arg(struct probe_arg *arg)
@@ -295,7 +295,7 @@ index fe45133..daf54bd 100644
  			   bool is_return)
  {
 diff --git a/kernel/trace/trace_probe.h b/kernel/trace/trace_probe.h
-index dc39472..a0d750e 100644
+index dc39472ca9e4..a0d750e3d17c 100644
 --- a/kernel/trace/trace_probe.h
 +++ b/kernel/trace/trace_probe.h
 @@ -42,7 +42,6 @@
@@ -320,7 +320,7 @@ index dc39472..a0d750e 100644
  static nokprobe_inline int
  __get_data_size(struct trace_probe *tp, struct pt_regs *regs)
 diff --git a/kernel/trace/trace_uprobe.c b/kernel/trace/trace_uprobe.c
-index fdf2ea4..970e217 100644
+index fdf2ea4d64ec..970e21769ebc 100644
 --- a/kernel/trace/trace_uprobe.c
 +++ b/kernel/trace/trace_uprobe.c
 @@ -654,7 +654,7 @@ static int probes_open(struct inode *inode, struct file *file)

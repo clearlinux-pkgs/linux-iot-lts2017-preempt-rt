@@ -18,7 +18,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 51 insertions(+), 21 deletions(-)
 
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
-index 96efecb..10ec089 100644
+index 96efecbb9157..10ec08942aa6 100644
 --- a/kernel/trace/trace_events_hist.c
 +++ b/kernel/trace/trace_events_hist.c
 @@ -251,6 +251,51 @@ static void destroy_hist_trigger_attrs(struct hist_trigger_attrs *attrs)

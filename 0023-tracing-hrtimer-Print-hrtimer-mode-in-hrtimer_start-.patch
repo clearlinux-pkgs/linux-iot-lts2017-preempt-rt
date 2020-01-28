@@ -18,7 +18,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 17 insertions(+), 12 deletions(-)
 
 diff --git a/include/trace/events/timer.h b/include/trace/events/timer.h
-index c6f7280..744b431 100644
+index c6f728037c53..744b4310b24b 100644
 --- a/include/trace/events/timer.h
 +++ b/include/trace/events/timer.h
 @@ -186,15 +186,16 @@ TRACE_EVENT(hrtimer_init,
@@ -59,7 +59,7 @@ index c6f7280..744b431 100644
  
  /**
 diff --git a/kernel/time/hrtimer.c b/kernel/time/hrtimer.c
-index 6460aa2..476fe68 100644
+index f71f0869a0df..e09a0199ef29 100644
 --- a/kernel/time/hrtimer.c
 +++ b/kernel/time/hrtimer.c
 @@ -435,10 +435,11 @@ debug_init(struct hrtimer *timer, clockid_t clockid,
@@ -89,7 +89,7 @@ index 6460aa2..476fe68 100644
  
  	base->cpu_base->active_bases |= 1 << base->index;
  
-@@ -957,7 +959,7 @@ void hrtimer_start_range_ns(struct hrtimer *timer, ktime_t tim,
+@@ -960,7 +962,7 @@ void hrtimer_start_range_ns(struct hrtimer *timer, ktime_t tim,
  	/* Switch the timer base, if necessary: */
  	new_base = switch_hrtimer_base(timer, base, mode & HRTIMER_MODE_PINNED);
  
@@ -98,7 +98,7 @@ index 6460aa2..476fe68 100644
  	if (!leftmost)
  		goto unlock;
  
-@@ -1226,7 +1228,7 @@ static void __run_hrtimer(struct hrtimer_cpu_base *cpu_base,
+@@ -1229,7 +1231,7 @@ static void __run_hrtimer(struct hrtimer_cpu_base *cpu_base,
  	 */
  	if (restart != HRTIMER_NORESTART &&
  	    !(timer->state & HRTIMER_STATE_ENQUEUED))
@@ -107,7 +107,7 @@ index 6460aa2..476fe68 100644
  
  	/*
  	 * Separate the ->running assignment from the ->state assignment.
-@@ -1626,7 +1628,7 @@ static void migrate_hrtimer_list(struct hrtimer_clock_base *old_base,
+@@ -1629,7 +1631,7 @@ static void migrate_hrtimer_list(struct hrtimer_clock_base *old_base,
  		 * sort out already expired timers and reprogram the
  		 * event device.
  		 */

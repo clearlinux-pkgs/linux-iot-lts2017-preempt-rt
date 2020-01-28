@@ -24,7 +24,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 57 insertions(+), 3 deletions(-)
 
 diff --git a/include/linux/ring_buffer.h b/include/linux/ring_buffer.h
-index 45d5bec..b0e72c6 100644
+index 45d5bec7dae3..b0e72c612ecf 100644
 --- a/include/linux/ring_buffer.h
 +++ b/include/linux/ring_buffer.h
 @@ -117,6 +117,9 @@ int ring_buffer_unlock_commit(struct ring_buffer *buffer,
@@ -38,7 +38,7 @@ index 45d5bec..b0e72c6 100644
  ring_buffer_peek(struct ring_buffer *buffer, int cpu, u64 *ts,
  		 unsigned long *lost_events);
 diff --git a/kernel/trace/ring_buffer.c b/kernel/trace/ring_buffer.c
-index 608d73e..1724006 100644
+index 608d73e77e9b..1724006bd2e3 100644
 --- a/kernel/trace/ring_buffer.c
 +++ b/kernel/trace/ring_buffer.c
 @@ -477,6 +477,7 @@ struct ring_buffer_per_cpu {

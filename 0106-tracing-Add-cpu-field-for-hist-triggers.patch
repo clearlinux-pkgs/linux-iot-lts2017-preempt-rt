@@ -18,7 +18,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 42 insertions(+), 1 deletion(-)
 
 diff --git a/Documentation/trace/histogram.txt b/Documentation/trace/histogram.txt
-index 25c9473..be612ca 100644
+index 25c94730d3fe..be612ca79455 100644
 --- a/Documentation/trace/histogram.txt
 +++ b/Documentation/trace/histogram.txt
 @@ -172,6 +172,21 @@
@@ -44,7 +44,7 @@ index 25c9473..be612ca 100644
  6.2 'hist' trigger examples
  ---------------------------
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
-index 38a59ed..5155564 100644
+index 38a59ed8e565..515556489565 100644
 --- a/kernel/trace/trace_events_hist.c
 +++ b/kernel/trace/trace_events_hist.c
 @@ -227,6 +227,7 @@ enum hist_field_flags {

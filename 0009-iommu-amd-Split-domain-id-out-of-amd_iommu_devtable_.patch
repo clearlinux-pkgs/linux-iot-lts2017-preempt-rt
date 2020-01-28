@@ -17,7 +17,7 @@ Signed-off-by: Joerg Roedel <jroedel@suse.de>
  1 file changed, 5 insertions(+), 7 deletions(-)
 
 diff --git a/drivers/iommu/amd_iommu.c b/drivers/iommu/amd_iommu.c
-index 00b8fe4..ff27e27 100644
+index 908b60ae10ef..57c41ff44bba 100644
 --- a/drivers/iommu/amd_iommu.c
 +++ b/drivers/iommu/amd_iommu.c
 @@ -82,6 +82,7 @@
@@ -28,7 +28,7 @@ index 00b8fe4..ff27e27 100644
  
  /* List of all available dev_data structures */
  static LLIST_HEAD(dev_data_list);
-@@ -1626,29 +1627,26 @@ static void del_domain_from_list(struct protection_domain *domain)
+@@ -1630,29 +1631,26 @@ static void del_domain_from_list(struct protection_domain *domain)
  
  static u16 domain_id_alloc(void)
  {

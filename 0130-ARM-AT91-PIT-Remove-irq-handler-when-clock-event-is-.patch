@@ -22,7 +22,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 31 insertions(+), 22 deletions(-)
 
 diff --git a/drivers/clocksource/timer-atmel-pit.c b/drivers/clocksource/timer-atmel-pit.c
-index 2fab18f..68c5303 100644
+index 2fab18fae4fc..68c530354512 100644
 --- a/drivers/clocksource/timer-atmel-pit.c
 +++ b/drivers/clocksource/timer-atmel-pit.c
 @@ -96,15 +96,24 @@ static int pit_clkevt_shutdown(struct clock_event_device *dev)
@@ -68,7 +68,7 @@ index 2fab18f..68c5303 100644
  	data->clkevt.name = "pit";
  	data->clkevt.features = CLOCK_EVT_FEAT_PERIODIC;
 diff --git a/drivers/clocksource/timer-atmel-st.c b/drivers/clocksource/timer-atmel-st.c
-index d2e660f..c63b96c 100644
+index d2e660f475af..c63b96cfc23e 100644
 --- a/drivers/clocksource/timer-atmel-st.c
 +++ b/drivers/clocksource/timer-atmel-st.c
 @@ -115,18 +115,29 @@ static void clkdev32k_disable_and_flush_irq(void)

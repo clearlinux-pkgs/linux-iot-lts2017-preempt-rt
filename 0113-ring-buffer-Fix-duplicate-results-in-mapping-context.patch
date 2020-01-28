@@ -24,7 +24,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 1 insertion(+), 2 deletions(-)
 
 diff --git a/kernel/trace/ring_buffer.c b/kernel/trace/ring_buffer.c
-index b7d9d7b..608d73e 100644
+index b7d9d7b27a3b..608d73e77e9b 100644
 --- a/kernel/trace/ring_buffer.c
 +++ b/kernel/trace/ring_buffer.c
 @@ -2635,8 +2635,7 @@ trace_recursive_lock(struct ring_buffer_per_cpu *cpu_buffer)

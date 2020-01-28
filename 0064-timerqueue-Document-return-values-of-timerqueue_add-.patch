@@ -14,7 +14,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 5 insertions(+), 3 deletions(-)
 
 diff --git a/lib/timerqueue.c b/lib/timerqueue.c
-index 4a720ed..0d54bcb 100644
+index 4a720ed4fdaf..0d54bcbc8170 100644
 --- a/lib/timerqueue.c
 +++ b/lib/timerqueue.c
 @@ -33,8 +33,9 @@

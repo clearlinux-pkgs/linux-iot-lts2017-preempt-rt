@@ -26,7 +26,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  3 files changed, 39 insertions(+), 1 deletion(-)
 
 diff --git a/include/linux/hrtimer.h b/include/linux/hrtimer.h
-index 98ed357..26ae8a8 100644
+index eab763d2617e..b2bb5844d645 100644
 --- a/include/linux/hrtimer.h
 +++ b/include/linux/hrtimer.h
 @@ -33,14 +33,24 @@ struct hrtimer_cpu_base;
@@ -66,7 +66,7 @@ index 98ed357..26ae8a8 100644
  };
  
 diff --git a/include/trace/events/timer.h b/include/trace/events/timer.h
-index 744b431..a57e4ee 100644
+index 744b4310b24b..a57e4ee989d6 100644
 --- a/include/trace/events/timer.h
 +++ b/include/trace/events/timer.h
 @@ -148,7 +148,11 @@ DEFINE_EVENT(timer_class, timer_cancel,
@@ -83,7 +83,7 @@ index 744b431..a57e4ee 100644
  /**
   * hrtimer_init - called when the hrtimer is initialized
 diff --git a/kernel/time/hrtimer.c b/kernel/time/hrtimer.c
-index 86cdc9a..b512184 100644
+index f2f4a4fe1c02..48bb599fa6fa 100644
 --- a/kernel/time/hrtimer.c
 +++ b/kernel/time/hrtimer.c
 @@ -92,6 +92,26 @@ DEFINE_PER_CPU(struct hrtimer_cpu_base, hrtimer_bases) =

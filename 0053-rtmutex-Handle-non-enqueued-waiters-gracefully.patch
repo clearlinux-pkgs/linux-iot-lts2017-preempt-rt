@@ -20,7 +20,7 @@ Cc: stable-rt@vger.kernel.org
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/kernel/locking/rtmutex.c b/kernel/locking/rtmutex.c
-index b4a83a6..f41d6b5 100644
+index b4a83a6d6417..f41d6b590a9b 100644
 --- a/kernel/locking/rtmutex.c
 +++ b/kernel/locking/rtmutex.c
 @@ -1803,7 +1803,7 @@ int rt_mutex_start_proxy_lock(struct rt_mutex *lock,

@@ -35,10 +35,10 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  4 files changed, 656 insertions(+), 16 deletions(-)
 
 diff --git a/kernel/trace/trace.c b/kernel/trace/trace.c
-index 145390f..b841ab4 100644
+index 32b738d66e7e..fe5606cfba19 100644
 --- a/kernel/trace/trace.c
 +++ b/kernel/trace/trace.c
-@@ -7813,6 +7813,7 @@ static int instance_mkdir(const char *name)
+@@ -7835,6 +7835,7 @@ static int instance_mkdir(const char *name)
  
  	INIT_LIST_HEAD(&tr->systems);
  	INIT_LIST_HEAD(&tr->events);
@@ -46,7 +46,7 @@ index 145390f..b841ab4 100644
  
  	if (allocate_trace_buffers(tr, trace_buf_size) < 0)
  		goto out_free_tr;
-@@ -8561,6 +8562,7 @@ __init static int tracer_alloc_buffers(void)
+@@ -8583,6 +8584,7 @@ __init static int tracer_alloc_buffers(void)
  
  	INIT_LIST_HEAD(&global_trace.systems);
  	INIT_LIST_HEAD(&global_trace.events);
@@ -55,7 +55,7 @@ index 145390f..b841ab4 100644
  
  	apply_trace_boot_options();
 diff --git a/kernel/trace/trace.h b/kernel/trace/trace.h
-index b2d5339..f9877ef 100644
+index b2d5339a8223..f9877ef17ab1 100644
 --- a/kernel/trace/trace.h
 +++ b/kernel/trace/trace.h
 @@ -274,6 +274,7 @@ struct trace_array {
@@ -76,7 +76,7 @@ index b2d5339..f9877ef 100644
  extern int unregister_event_command(struct event_command *cmd);
  extern int register_trigger_hist_enable_disable_cmds(void);
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
-index c03da55..45a5008 100644
+index c03da55ec8ae..45a50081c819 100644
 --- a/kernel/trace/trace_events_hist.c
 +++ b/kernel/trace/trace_events_hist.c
 @@ -59,7 +59,12 @@ struct hist_field {
@@ -945,7 +945,7 @@ index c03da55..45a5008 100644
  
  	destroy_hist_data(hist_data);
 diff --git a/kernel/trace/trace_events_trigger.c b/kernel/trace/trace_events_trigger.c
-index fd26c06..bfe56ed 100644
+index fd26c0678d7d..bfe56edccaea 100644
 --- a/kernel/trace/trace_events_trigger.c
 +++ b/kernel/trace/trace_events_trigger.c
 @@ -917,6 +917,12 @@ void set_named_trigger_data(struct event_trigger_data *data,

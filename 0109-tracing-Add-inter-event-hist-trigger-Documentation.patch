@@ -18,7 +18,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 381 insertions(+)
 
 diff --git a/Documentation/trace/histogram.txt b/Documentation/trace/histogram.txt
-index 0aec2d8..df08882 100644
+index 0aec2d8e166b..df08882d091c 100644
 --- a/Documentation/trace/histogram.txt
 +++ b/Documentation/trace/histogram.txt
 @@ -1603,3 +1603,384 @@

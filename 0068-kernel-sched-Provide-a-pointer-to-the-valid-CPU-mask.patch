@@ -84,7 +84,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  24 files changed, 77 insertions(+), 76 deletions(-)
 
 diff --git a/arch/ia64/kernel/mca.c b/arch/ia64/kernel/mca.c
-index 555b111..6866201 100644
+index 555b11180156..6866201a7603 100644
 --- a/arch/ia64/kernel/mca.c
 +++ b/arch/ia64/kernel/mca.c
 @@ -1824,7 +1824,7 @@ format_mca_init_stack(void *mca_data, unsigned long offset,
@@ -97,7 +97,7 @@ index 555b111..6866201 100644
  	p->parent = p->real_parent = p->group_leader = p;
  	INIT_LIST_HEAD(&p->children);
 diff --git a/arch/mips/include/asm/switch_to.h b/arch/mips/include/asm/switch_to.h
-index e610473..1428b4f 100644
+index e610473d61b8..1428b4febbc9 100644
 --- a/arch/mips/include/asm/switch_to.h
 +++ b/arch/mips/include/asm/switch_to.h
 @@ -42,7 +42,7 @@ extern struct task_struct *ll_task;
@@ -119,7 +119,7 @@ index e610473..1428b4f 100644
  	next->thread.emulated_fp = 0;					\
  } while(0)
 diff --git a/arch/mips/kernel/mips-mt-fpaff.c b/arch/mips/kernel/mips-mt-fpaff.c
-index a7c0f97..1a08428 100644
+index a7c0f97e4b0d..1a08428eedcf 100644
 --- a/arch/mips/kernel/mips-mt-fpaff.c
 +++ b/arch/mips/kernel/mips-mt-fpaff.c
 @@ -177,7 +177,7 @@ asmlinkage long mipsmt_sys_sched_getaffinity(pid_t pid, unsigned int len,
@@ -132,7 +132,7 @@ index a7c0f97..1a08428 100644
  
  out_unlock:
 diff --git a/arch/mips/kernel/traps.c b/arch/mips/kernel/traps.c
-index 583aed9..24ad7aa 100644
+index 583aed906933..24ad7aaca5eb 100644
 --- a/arch/mips/kernel/traps.c
 +++ b/arch/mips/kernel/traps.c
 @@ -1193,12 +1193,12 @@ static void mt_ase_fp_affinity(void)
@@ -152,7 +152,7 @@ index 583aed9..24ad7aa 100644
  			set_cpus_allowed_ptr(current, &tmask);
  			set_thread_flag(TIF_FPUBOUND);
 diff --git a/arch/powerpc/platforms/cell/spufs/sched.c b/arch/powerpc/platforms/cell/spufs/sched.c
-index 1fbb5da..ca86366 100644
+index 1fbb5da17dd2..ca86366d5424 100644
 --- a/arch/powerpc/platforms/cell/spufs/sched.c
 +++ b/arch/powerpc/platforms/cell/spufs/sched.c
 @@ -141,7 +141,7 @@ void __spu_update_sched_info(struct spu_context *ctx)
@@ -165,7 +165,7 @@ index 1fbb5da..ca86366 100644
  	/* Save the current cpu id for spu interrupt routing. */
  	ctx->last_ran = raw_smp_processor_id();
 diff --git a/arch/tile/include/asm/setup.h b/arch/tile/include/asm/setup.h
-index 2a0347a..670fa2f 100644
+index 2a0347af0702..670fa2f4cfc3 100644
 --- a/arch/tile/include/asm/setup.h
 +++ b/arch/tile/include/asm/setup.h
 @@ -49,7 +49,7 @@ int hardwall_ipi_valid(int cpu);
@@ -178,7 +178,7 @@ index 2a0347a..670fa2f 100644
  } while (0)
  #endif
 diff --git a/arch/tile/kernel/hardwall.c b/arch/tile/kernel/hardwall.c
-index 2fd1694..98f4fb6 100644
+index 2fd1694ac1d0..98f4fb696289 100644
 --- a/arch/tile/kernel/hardwall.c
 +++ b/arch/tile/kernel/hardwall.c
 @@ -590,12 +590,12 @@ static int hardwall_activate(struct hardwall_info *info)
@@ -218,7 +218,7 @@ index 2fd1694..98f4fb6 100644
  	}
  
 diff --git a/drivers/infiniband/hw/hfi1/affinity.c b/drivers/infiniband/hw/hfi1/affinity.c
-index b197e92..95ac319 100644
+index b197e925fe36..95ac319c8e69 100644
 --- a/drivers/infiniband/hw/hfi1/affinity.c
 +++ b/drivers/infiniband/hw/hfi1/affinity.c
 @@ -593,7 +593,7 @@ int hfi1_get_proc_affinity(int node)
@@ -249,7 +249,7 @@ index b197e92..95ac319 100644
  			  current->pid, current->comm,
  			  cpumask_pr_args(proc_mask));
 diff --git a/drivers/infiniband/hw/hfi1/sdma.c b/drivers/infiniband/hw/hfi1/sdma.c
-index 6781bcd..d069ad2 100644
+index 741938409f8e..973b2f8c1be8 100644
 --- a/drivers/infiniband/hw/hfi1/sdma.c
 +++ b/drivers/infiniband/hw/hfi1/sdma.c
 @@ -856,14 +856,13 @@ struct sdma_engine *sdma_select_user_engine(struct hfi1_devdata *dd,
@@ -269,7 +269,7 @@ index 6781bcd..d069ad2 100644
  
  	cpu_id = smp_processor_id();
 diff --git a/drivers/infiniband/hw/qib/qib_file_ops.c b/drivers/infiniband/hw/qib/qib_file_ops.c
-index 40efc91..12924aa 100644
+index 40efc9151ec4..12924aad90cc 100644
 --- a/drivers/infiniband/hw/qib/qib_file_ops.c
 +++ b/drivers/infiniband/hw/qib/qib_file_ops.c
 @@ -1167,7 +1167,7 @@ static unsigned int qib_poll(struct file *fp, struct poll_table_struct *pt)
@@ -294,7 +294,7 @@ index 40efc91..12924aa 100644
  		if (weight == 1 && !test_bit(cpu, qib_cpulist))
  			if (!find_hca(cpu, &unit) && unit >= 0)
 diff --git a/fs/proc/array.c b/fs/proc/array.c
-index 37c7ed0..e871600 100644
+index 37c7ed0dc820..e8716006ad58 100644
 --- a/fs/proc/array.c
 +++ b/fs/proc/array.c
 @@ -386,9 +386,9 @@ static inline void task_context_switch_counts(struct seq_file *m,
@@ -310,7 +310,7 @@ index 37c7ed0..e871600 100644
  
  int proc_pid_status(struct seq_file *m, struct pid_namespace *ns,
 diff --git a/include/linux/init_task.h b/include/linux/init_task.h
-index 8062e6c..53ee20e 100644
+index 8062e6cc607c..53ee20e0b168 100644
 --- a/include/linux/init_task.h
 +++ b/include/linux/init_task.h
 @@ -234,7 +234,8 @@ extern struct cred init_cred;
@@ -324,7 +324,7 @@ index 8062e6c..53ee20e 100644
  	.mm		= NULL,						\
  	.active_mm	= &init_mm,					\
 diff --git a/include/linux/sched.h b/include/linux/sched.h
-index 866439c..7a8983b 100644
+index b06577652643..8cfee2ebc8b7 100644
 --- a/include/linux/sched.h
 +++ b/include/linux/sched.h
 @@ -618,7 +618,8 @@ struct task_struct {
@@ -337,7 +337,7 @@ index 866439c..7a8983b 100644
  
  #ifdef CONFIG_PREEMPT_RCU
  	int				rcu_read_lock_nesting;
-@@ -1355,7 +1356,7 @@ extern struct pid *cad_pid;
+@@ -1356,7 +1357,7 @@ extern struct pid *cad_pid;
  #define PF_KTHREAD		0x00200000	/* I am a kernel thread */
  #define PF_RANDOMIZE		0x00400000	/* Randomize virtual address space */
  #define PF_SWAPWRITE		0x00800000	/* Allowed to write to swap */
@@ -347,7 +347,7 @@ index 866439c..7a8983b 100644
  #define PF_MUTEX_TESTER		0x20000000	/* Thread belongs to the rt mutex tester */
  #define PF_FREEZER_SKIP		0x40000000	/* Freezer should not count it as freezable */
 diff --git a/kernel/cgroup/cpuset.c b/kernel/cgroup/cpuset.c
-index 0a0e1aa..76d8d53 100644
+index 0a0e1aa11f5e..76d8d538e67a 100644
 --- a/kernel/cgroup/cpuset.c
 +++ b/kernel/cgroup/cpuset.c
 @@ -2094,7 +2094,7 @@ static void cpuset_fork(struct task_struct *task)
@@ -360,10 +360,10 @@ index 0a0e1aa..76d8d53 100644
  }
  
 diff --git a/kernel/fork.c b/kernel/fork.c
-index 919e7cd..fc9b3a6 100644
+index 0a328cf0cb13..e9a7b4c009a0 100644
 --- a/kernel/fork.c
 +++ b/kernel/fork.c
-@@ -563,7 +563,8 @@ static struct task_struct *dup_task_struct(struct task_struct *orig, int node)
+@@ -558,7 +558,8 @@ static struct task_struct *dup_task_struct(struct task_struct *orig, int node)
  #ifdef CONFIG_CC_STACKPROTECTOR
  	tsk->stack_canary = get_random_canary();
  #endif
@@ -374,10 +374,10 @@ index 919e7cd..fc9b3a6 100644
  	 * One for us, one for whoever does the "release_task()" (usually
  	 * parent)
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index ff128e2..af67b9f 100644
+index 97a27726ea21..964be627ab8d 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
-@@ -912,7 +912,7 @@ static inline bool is_per_cpu_kthread(struct task_struct *p)
+@@ -913,7 +913,7 @@ static inline bool is_per_cpu_kthread(struct task_struct *p)
   */
  static inline bool is_cpu_allowed(struct task_struct *p, int cpu)
  {
@@ -386,7 +386,7 @@ index ff128e2..af67b9f 100644
  		return false;
  
  	if (is_per_cpu_kthread(p))
-@@ -1007,7 +1007,7 @@ static int migration_cpu_stop(void *data)
+@@ -1008,7 +1008,7 @@ static int migration_cpu_stop(void *data)
  	local_irq_disable();
  	/*
  	 * We need to explicitly wake pending tasks before running
@@ -395,7 +395,7 @@ index ff128e2..af67b9f 100644
  	 * during wakeups, see set_cpus_allowed_ptr()'s TASK_WAKING test.
  	 */
  	sched_ttwu_pending();
-@@ -1038,7 +1038,7 @@ static int migration_cpu_stop(void *data)
+@@ -1039,7 +1039,7 @@ static int migration_cpu_stop(void *data)
   */
  void set_cpus_allowed_common(struct task_struct *p, const struct cpumask *new_mask)
  {
@@ -404,7 +404,7 @@ index ff128e2..af67b9f 100644
  	p->nr_cpus_allowed = cpumask_weight(new_mask);
  }
  
-@@ -1108,7 +1108,7 @@ static int __set_cpus_allowed_ptr(struct task_struct *p,
+@@ -1109,7 +1109,7 @@ static int __set_cpus_allowed_ptr(struct task_struct *p,
  		goto out;
  	}
  
@@ -412,8 +412,8 @@ index ff128e2..af67b9f 100644
 +	if (cpumask_equal(p->cpus_ptr, new_mask))
  		goto out;
  
- 	if (!cpumask_intersects(new_mask, cpu_valid_mask)) {
-@@ -1269,10 +1269,10 @@ static int migrate_swap_stop(void *data)
+ 	dest_cpu = cpumask_any_and(cpu_valid_mask, new_mask);
+@@ -1270,10 +1270,10 @@ static int migrate_swap_stop(void *data)
  	if (task_cpu(arg->src_task) != arg->src_cpu)
  		goto unlock;
  
@@ -426,7 +426,7 @@ index ff128e2..af67b9f 100644
  		goto unlock;
  
  	__migrate_swap_task(arg->src_task, arg->dst_cpu);
-@@ -1313,10 +1313,10 @@ int migrate_swap(struct task_struct *cur, struct task_struct *p)
+@@ -1314,10 +1314,10 @@ int migrate_swap(struct task_struct *cur, struct task_struct *p)
  	if (!cpu_active(arg.src_cpu) || !cpu_active(arg.dst_cpu))
  		goto out;
  
@@ -439,7 +439,7 @@ index ff128e2..af67b9f 100644
  		goto out;
  
  	trace_sched_swap_numa(cur, arg.src_cpu, p, arg.dst_cpu);
-@@ -1460,7 +1460,7 @@ void kick_process(struct task_struct *p)
+@@ -1461,7 +1461,7 @@ void kick_process(struct task_struct *p)
  EXPORT_SYMBOL_GPL(kick_process);
  
  /*
@@ -448,7 +448,7 @@ index ff128e2..af67b9f 100644
   *
   * A few notes on cpu_active vs cpu_online:
   *
-@@ -1500,14 +1500,14 @@ static int select_fallback_rq(int cpu, struct task_struct *p)
+@@ -1501,14 +1501,14 @@ static int select_fallback_rq(int cpu, struct task_struct *p)
  		for_each_cpu(dest_cpu, nodemask) {
  			if (!cpu_active(dest_cpu))
  				continue;
@@ -465,7 +465,7 @@ index ff128e2..af67b9f 100644
  			if (!is_cpu_allowed(p, dest_cpu))
  				continue;
  
-@@ -1551,7 +1551,7 @@ static int select_fallback_rq(int cpu, struct task_struct *p)
+@@ -1552,7 +1552,7 @@ static int select_fallback_rq(int cpu, struct task_struct *p)
  }
  
  /*
@@ -474,7 +474,7 @@ index ff128e2..af67b9f 100644
   */
  static inline
  int select_task_rq(struct task_struct *p, int cpu, int sd_flags, int wake_flags)
-@@ -1561,11 +1561,11 @@ int select_task_rq(struct task_struct *p, int cpu, int sd_flags, int wake_flags)
+@@ -1562,11 +1562,11 @@ int select_task_rq(struct task_struct *p, int cpu, int sd_flags, int wake_flags)
  	if (p->nr_cpus_allowed > 1)
  		cpu = p->sched_class->select_task_rq(p, cpu, sd_flags, wake_flags);
  	else
@@ -488,7 +488,7 @@ index ff128e2..af67b9f 100644
  	 * CPU.
  	 *
  	 * Since this is common to all placement strategies, this lives here.
-@@ -2462,7 +2462,7 @@ void wake_up_new_task(struct task_struct *p)
+@@ -2463,7 +2463,7 @@ void wake_up_new_task(struct task_struct *p)
  #ifdef CONFIG_SMP
  	/*
  	 * Fork balancing, do it here and not earlier because:
@@ -497,7 +497,7 @@ index ff128e2..af67b9f 100644
  	 *  - any previously selected CPU might disappear through hotplug
  	 *
  	 * Use __set_task_cpu() to avoid calling sched_class::migrate_task_rq,
-@@ -4164,7 +4164,7 @@ static int __sched_setscheduler(struct task_struct *p,
+@@ -4165,7 +4165,7 @@ static int __sched_setscheduler(struct task_struct *p,
  			 * the entire root_domain to become SCHED_DEADLINE. We
  			 * will also fail if there's no bandwidth available.
  			 */
@@ -506,7 +506,7 @@ index ff128e2..af67b9f 100644
  			    rq->rd->dl_bw.bw == 0) {
  				task_rq_unlock(rq, p, &rf);
  				return -EPERM;
-@@ -4758,7 +4758,7 @@ long sched_getaffinity(pid_t pid, struct cpumask *mask)
+@@ -4759,7 +4759,7 @@ long sched_getaffinity(pid_t pid, struct cpumask *mask)
  		goto out_unlock;
  
  	raw_spin_lock_irqsave(&p->pi_lock, flags);
@@ -515,7 +515,7 @@ index ff128e2..af67b9f 100644
  	raw_spin_unlock_irqrestore(&p->pi_lock, flags);
  
  out_unlock:
-@@ -5323,7 +5323,7 @@ int task_can_attach(struct task_struct *p,
+@@ -5325,7 +5325,7 @@ int task_can_attach(struct task_struct *p,
  	 * allowed nodes is unnecessary.  Thus, cpusets are not
  	 * applicable for such threads.  This prevents checking for
  	 * success of set_cpus_allowed_ptr() on all attached tasks
@@ -524,7 +524,7 @@ index ff128e2..af67b9f 100644
  	 */
  	if (p->flags & PF_NO_SETAFFINITY) {
  		ret = -EINVAL;
-@@ -5350,7 +5350,7 @@ int migrate_task_to(struct task_struct *p, int target_cpu)
+@@ -5352,7 +5352,7 @@ int migrate_task_to(struct task_struct *p, int target_cpu)
  	if (curr_cpu == target_cpu)
  		return 0;
  
@@ -533,7 +533,7 @@ index ff128e2..af67b9f 100644
  		return -EINVAL;
  
  	/* TODO: This is not properly updating schedstats */
-@@ -5487,7 +5487,7 @@ static void migrate_tasks(struct rq *dead_rq, struct rq_flags *rf)
+@@ -5489,7 +5489,7 @@ static void migrate_tasks(struct rq *dead_rq, struct rq_flags *rf)
  		put_prev_task(rq, next);
  
  		/*
@@ -543,7 +543,7 @@ index ff128e2..af67b9f 100644
  		 * stabilizes the mask.
  		 *
 diff --git a/kernel/sched/cpudeadline.c b/kernel/sched/cpudeadline.c
-index 8d9562d..91a0702 100644
+index 8d9562d890d3..91a0702fe3df 100644
 --- a/kernel/sched/cpudeadline.c
 +++ b/kernel/sched/cpudeadline.c
 @@ -127,13 +127,13 @@ int cpudl_find(struct cpudl *cp, struct task_struct *p,
@@ -563,7 +563,7 @@ index 8d9562d..91a0702 100644
  			if (later_mask)
  				cpumask_set_cpu(best_cpu, later_mask);
 diff --git a/kernel/sched/cpupri.c b/kernel/sched/cpupri.c
-index 2511aba..7b9bc1d 100644
+index 2511aba36b89..7b9bc1de0e6c 100644
 --- a/kernel/sched/cpupri.c
 +++ b/kernel/sched/cpupri.c
 @@ -103,11 +103,11 @@ int cpupri_find(struct cpupri *cp, struct task_struct *p,
@@ -581,7 +581,7 @@ index 2511aba..7b9bc1d 100644
  			/*
  			 * We have to ensure that we have at least one bit
 diff --git a/kernel/sched/deadline.c b/kernel/sched/deadline.c
-index 2277016..92d1d80 100644
+index 22770168bff8..92d1d805a9f5 100644
 --- a/kernel/sched/deadline.c
 +++ b/kernel/sched/deadline.c
 @@ -503,7 +503,7 @@ static struct rq *dl_task_offline_migration(struct rq *rq, struct task_struct *p
@@ -612,7 +612,7 @@ index 2277016..92d1d80 100644
  				     !dl_task(task) ||
  				     !task_on_rq_queued(task))) {
 diff --git a/kernel/sched/fair.c b/kernel/sched/fair.c
-index c298d47..30514e6 100644
+index 0b4e997fea1a..4c17bf98804e 100644
 --- a/kernel/sched/fair.c
 +++ b/kernel/sched/fair.c
 @@ -1597,7 +1597,7 @@ static void task_numa_compare(struct task_numa_env *env,
@@ -633,7 +633,7 @@ index c298d47..30514e6 100644
  			continue;
  
  		env->dst_cpu = cpu;
-@@ -5544,7 +5544,7 @@ find_idlest_group(struct sched_domain *sd, struct task_struct *p,
+@@ -5491,7 +5491,7 @@ find_idlest_group(struct sched_domain *sd, struct task_struct *p,
  
  		/* Skip over this group if it has no CPUs allowed */
  		if (!cpumask_intersects(sched_group_span(group),
@@ -642,7 +642,7 @@ index c298d47..30514e6 100644
  			continue;
  
  		local_group = cpumask_test_cpu(this_cpu,
-@@ -5664,7 +5664,7 @@ find_idlest_cpu(struct sched_group *group, struct task_struct *p, int this_cpu)
+@@ -5611,7 +5611,7 @@ find_idlest_cpu(struct sched_group *group, struct task_struct *p, int this_cpu)
  		return cpumask_first(sched_group_span(group));
  
  	/* Traverse only the allowed CPUs */
@@ -651,7 +651,7 @@ index c298d47..30514e6 100644
  		if (idle_cpu(i)) {
  			struct rq *rq = cpu_rq(i);
  			struct cpuidle_state *idle = idle_get_state(rq);
-@@ -5768,7 +5768,7 @@ static int select_idle_core(struct task_struct *p, struct sched_domain *sd, int
+@@ -5715,7 +5715,7 @@ static int select_idle_core(struct task_struct *p, struct sched_domain *sd, int
  	if (!test_idle_cores(target, false))
  		return -1;
  
@@ -660,7 +660,7 @@ index c298d47..30514e6 100644
  
  	for_each_cpu_wrap(core, cpus, target) {
  		bool idle = true;
-@@ -5802,7 +5802,7 @@ static int select_idle_smt(struct task_struct *p, struct sched_domain *sd, int t
+@@ -5749,7 +5749,7 @@ static int select_idle_smt(struct task_struct *p, struct sched_domain *sd, int t
  		return -1;
  
  	for_each_cpu(cpu, cpu_smt_mask(target)) {
@@ -669,7 +669,7 @@ index c298d47..30514e6 100644
  			continue;
  		if (idle_cpu(cpu))
  			return cpu;
-@@ -5865,7 +5865,7 @@ static int select_idle_cpu(struct task_struct *p, struct sched_domain *sd, int t
+@@ -5812,7 +5812,7 @@ static int select_idle_cpu(struct task_struct *p, struct sched_domain *sd, int t
  	for_each_cpu_wrap(cpu, sched_domain_span(sd), target) {
  		if (!--nr)
  			return -1;
@@ -678,7 +678,7 @@ index c298d47..30514e6 100644
  			continue;
  		if (idle_cpu(cpu))
  			break;
-@@ -6020,7 +6020,7 @@ select_task_rq_fair(struct task_struct *p, int prev_cpu, int sd_flag, int wake_f
+@@ -5967,7 +5967,7 @@ select_task_rq_fair(struct task_struct *p, int prev_cpu, int sd_flag, int wake_f
  	if (sd_flag & SD_BALANCE_WAKE) {
  		record_wakee(p);
  		want_affine = !wake_wide(p) && !wake_cap(p, cpu, prev_cpu)
@@ -687,7 +687,7 @@ index c298d47..30514e6 100644
  	}
  
  	rcu_read_lock();
-@@ -6769,14 +6769,14 @@ int can_migrate_task(struct task_struct *p, struct lb_env *env)
+@@ -6716,14 +6716,14 @@ int can_migrate_task(struct task_struct *p, struct lb_env *env)
  	/*
  	 * We do not migrate tasks that are:
  	 * 1) throttled_lb_pair, or
@@ -704,7 +704,7 @@ index c298d47..30514e6 100644
  		int cpu;
  
  		schedstat_inc(p->se.statistics.nr_failed_migrations_affine);
-@@ -6796,7 +6796,7 @@ int can_migrate_task(struct task_struct *p, struct lb_env *env)
+@@ -6743,7 +6743,7 @@ int can_migrate_task(struct task_struct *p, struct lb_env *env)
  
  		/* Prevent to re-select dst_cpu via env's cpus */
  		for_each_cpu_and(cpu, env->dst_grpmask, env->cpus) {
@@ -713,7 +713,7 @@ index c298d47..30514e6 100644
  				env->flags |= LBF_DST_PINNED;
  				env->new_dst_cpu = cpu;
  				break;
-@@ -7341,7 +7341,7 @@ check_cpu_capacity(struct rq *rq, struct sched_domain *sd)
+@@ -7288,7 +7288,7 @@ check_cpu_capacity(struct rq *rq, struct sched_domain *sd)
  
  /*
   * Group imbalance indicates (and tries to solve) the problem where balancing
@@ -722,7 +722,7 @@ index c298d47..30514e6 100644
   *
   * Imagine a situation of two groups of 4 cpus each and 4 tasks each with a
   * cpumask covering 1 cpu of the first group and 3 cpus of the second group.
-@@ -7917,7 +7917,7 @@ static struct sched_group *find_busiest_group(struct lb_env *env)
+@@ -7864,7 +7864,7 @@ static struct sched_group *find_busiest_group(struct lb_env *env)
  	/*
  	 * If the busiest group is imbalanced the below checks don't
  	 * work because they assume all things are equal, which typically
@@ -731,7 +731,7 @@ index c298d47..30514e6 100644
  	 */
  	if (busiest->group_type == group_imbalanced)
  		goto force_balance;
-@@ -8309,7 +8309,7 @@ static int load_balance(int this_cpu, struct rq *this_rq,
+@@ -8256,7 +8256,7 @@ static int load_balance(int this_cpu, struct rq *this_rq,
  			 * if the curr task on busiest cpu can't be
  			 * moved to this_cpu
  			 */
@@ -741,7 +741,7 @@ index c298d47..30514e6 100644
  							    flags);
  				env.flags |= LBF_ALL_PINNED;
 diff --git a/kernel/sched/rt.c b/kernel/sched/rt.c
-index cc7dd1a..6890ec5 100644
+index cc7dd1aaf08e..6890ec572eec 100644
 --- a/kernel/sched/rt.c
 +++ b/kernel/sched/rt.c
 @@ -1596,7 +1596,7 @@ static void put_prev_task_rt(struct rq *rq, struct task_struct *p)
@@ -763,10 +763,10 @@ index cc7dd1a..6890ec5 100644
  				     !rt_task(task) ||
  				     !task_on_rq_queued(task))) {
 diff --git a/kernel/trace/trace_hwlat.c b/kernel/trace/trace_hwlat.c
-index d7c8e4e..518c61a 100644
+index bff6c033d70e..5cac908a0bd9 100644
 --- a/kernel/trace/trace_hwlat.c
 +++ b/kernel/trace/trace_hwlat.c
-@@ -279,7 +279,7 @@ static void move_to_next_cpu(void)
+@@ -281,7 +281,7 @@ static void move_to_next_cpu(void)
  	 * of this thread, than stop migrating for the duration
  	 * of the current test.
  	 */
@@ -776,7 +776,7 @@ index d7c8e4e..518c61a 100644
  
  	get_online_cpus();
 diff --git a/lib/smp_processor_id.c b/lib/smp_processor_id.c
-index 835cc6d..6f4a4ae 100644
+index 835cc6df2776..6f4a4ae881c8 100644
 --- a/lib/smp_processor_id.c
 +++ b/lib/smp_processor_id.c
 @@ -23,7 +23,7 @@ notrace static unsigned int check_preemption_disabled(const char *what1,
@@ -789,7 +789,7 @@ index 835cc6d..6f4a4ae 100644
  
  	/*
 diff --git a/samples/trace_events/trace-events-sample.c b/samples/trace_events/trace-events-sample.c
-index 5522692..8b4be8e 100644
+index 5522692100ba..8b4be8e1802a 100644
 --- a/samples/trace_events/trace-events-sample.c
 +++ b/samples/trace_events/trace-events-sample.c
 @@ -33,7 +33,7 @@ static void simple_thread_func(int cnt)

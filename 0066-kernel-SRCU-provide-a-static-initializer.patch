@@ -20,7 +20,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  3 files changed, 39 insertions(+), 15 deletions(-)
 
 diff --git a/include/linux/notifier.h b/include/linux/notifier.h
-index 6d73111..e758627 100644
+index 6d731110e0db..e758627da14d 100644
 --- a/include/linux/notifier.h
 +++ b/include/linux/notifier.h
 @@ -7,7 +7,7 @@
@@ -111,7 +111,7 @@ index 6d73111..e758627 100644
  
  /* netdevice notifiers are defined in include/linux/netdevice.h */
 diff --git a/include/linux/srcutiny.h b/include/linux/srcutiny.h
-index 261471f..f41d2fb 100644
+index 261471f407a5..f41d2fb09f87 100644
 --- a/include/linux/srcutiny.h
 +++ b/include/linux/srcutiny.h
 @@ -43,7 +43,7 @@ struct srcu_struct {
@@ -136,7 +136,7 @@ index 261471f..f41d2fb 100644
  void synchronize_srcu(struct srcu_struct *sp);
  
 diff --git a/include/linux/srcutree.h b/include/linux/srcutree.h
-index a949f4f..85ae8c0 100644
+index a949f4f9e4d7..85ae8c0dddb4 100644
 --- a/include/linux/srcutree.h
 +++ b/include/linux/srcutree.h
 @@ -104,9 +104,9 @@ struct srcu_struct {

@@ -15,7 +15,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 76 deletions(-)
 
 diff --git a/include/linux/interrupt.h b/include/linux/interrupt.h
-index 69c2382..af15bfd 100644
+index 69c238210325..af15bfd89598 100644
 --- a/include/linux/interrupt.h
 +++ b/include/linux/interrupt.h
 @@ -618,31 +618,6 @@ extern void tasklet_kill_immediate(struct tasklet_struct *t, unsigned int cpu);
@@ -51,7 +51,7 @@ index 69c2382..af15bfd 100644
   * Autoprobing for irqs:
   *
 diff --git a/kernel/softirq.c b/kernel/softirq.c
-index a4c87cf..1a5dfc8 100644
+index a4c87cf27f9d..1a5dfc8dcf49 100644
 --- a/kernel/softirq.c
 +++ b/kernel/softirq.c
 @@ -588,57 +588,6 @@ void tasklet_kill(struct tasklet_struct *t)

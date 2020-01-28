@@ -16,7 +16,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 1 insertion(+), 4 deletions(-)
 
 diff --git a/drivers/gpu/drm/i915/i915_gem_timeline.c b/drivers/gpu/drm/i915/i915_gem_timeline.c
-index c597ce2..c1108d3 100644
+index c597ce277a04..c1108d3921f8 100644
 --- a/drivers/gpu/drm/i915/i915_gem_timeline.c
 +++ b/drivers/gpu/drm/i915/i915_gem_timeline.c
 @@ -33,11 +33,8 @@ static void __intel_timeline_init(struct intel_timeline *tl,

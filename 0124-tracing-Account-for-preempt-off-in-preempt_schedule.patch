@@ -27,10 +27,10 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 9 insertions(+)
 
 diff --git a/kernel/sched/core.c b/kernel/sched/core.c
-index 2e9da2a..fee0ef2 100644
+index 64b0c1bf7e8d..1d2dca66fb61 100644
 --- a/kernel/sched/core.c
 +++ b/kernel/sched/core.c
-@@ -3607,7 +3607,16 @@ asmlinkage __visible void __sched notrace preempt_schedule_notrace(void)
+@@ -3608,7 +3608,16 @@ asmlinkage __visible void __sched notrace preempt_schedule_notrace(void)
  		 * an infinite recursion.
  		 */
  		prev_ctx = exception_enter();

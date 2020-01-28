@@ -53,7 +53,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 36 insertions(+), 5 deletions(-)
 
 diff --git a/kernel/trace/tracing_map.c b/kernel/trace/tracing_map.c
-index 07e7534..b30f343 100644
+index 4ccdf92e1b36..868d0be7abd8 100644
 --- a/kernel/trace/tracing_map.c
 +++ b/kernel/trace/tracing_map.c
 @@ -414,7 +414,9 @@ static inline struct tracing_map_elt *

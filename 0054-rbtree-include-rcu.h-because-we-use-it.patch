@@ -15,7 +15,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 2 insertions(+)
 
 diff --git a/include/linux/rbtree_augmented.h b/include/linux/rbtree_augmented.h
-index 6bfd2b5..af8a61b 100644
+index 6bfd2b581f75..af8a61be2d8d 100644
 --- a/include/linux/rbtree_augmented.h
 +++ b/include/linux/rbtree_augmented.h
 @@ -26,6 +26,7 @@
@@ -27,7 +27,7 @@ index 6bfd2b5..af8a61b 100644
  /*
   * Please note - only struct rb_augment_callbacks and the prototypes for
 diff --git a/include/linux/rbtree_latch.h b/include/linux/rbtree_latch.h
-index ece43e8..7d012fa 100644
+index ece43e882b56..7d012faa509a 100644
 --- a/include/linux/rbtree_latch.h
 +++ b/include/linux/rbtree_latch.h
 @@ -35,6 +35,7 @@

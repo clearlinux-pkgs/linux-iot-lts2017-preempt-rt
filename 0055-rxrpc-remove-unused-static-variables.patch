@@ -14,7 +14,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 3 deletions(-)
 
 diff --git a/net/rxrpc/security.c b/net/rxrpc/security.c
-index e9f4283..c4479af 100644
+index e9f428351293..c4479afe8ae7 100644
 --- a/net/rxrpc/security.c
 +++ b/net/rxrpc/security.c
 @@ -19,9 +19,6 @@

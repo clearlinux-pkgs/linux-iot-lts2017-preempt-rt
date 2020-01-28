@@ -25,7 +25,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 3 insertions(+), 3 deletions(-)
 
 diff --git a/kernel/time/hrtimer.c b/kernel/time/hrtimer.c
-index 1b28666..9030dcb 100644
+index 7864169c8e61..c236466fa6d5 100644
 --- a/kernel/time/hrtimer.c
 +++ b/kernel/time/hrtimer.c
 @@ -650,10 +650,10 @@ static inline void retrigger_next_event(void *arg) { }
@@ -41,7 +41,7 @@ index 1b28666..9030dcb 100644
  	ktime_t expires = ktime_sub(hrtimer_get_expires(timer), base->offset);
  
  	WARN_ON_ONCE(hrtimer_get_expires_tv64(timer) < 0);
-@@ -943,7 +943,7 @@ void hrtimer_start_range_ns(struct hrtimer *timer, ktime_t tim,
+@@ -946,7 +946,7 @@ void hrtimer_start_range_ns(struct hrtimer *timer, ktime_t tim,
  	if (!leftmost)
  		goto unlock;
  

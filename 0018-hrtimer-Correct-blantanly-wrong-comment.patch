@@ -21,10 +21,10 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 3 insertions(+), 3 deletions(-)
 
 diff --git a/kernel/time/hrtimer.c b/kernel/time/hrtimer.c
-index 883fef2..65543d3 100644
+index 4af9bf1a96a4..845c9913fbff 100644
 --- a/kernel/time/hrtimer.c
 +++ b/kernel/time/hrtimer.c
-@@ -1204,9 +1204,9 @@ static void __run_hrtimer(struct hrtimer_cpu_base *cpu_base,
+@@ -1207,9 +1207,9 @@ static void __run_hrtimer(struct hrtimer_cpu_base *cpu_base,
  		timer->is_rel = false;
  
  	/*

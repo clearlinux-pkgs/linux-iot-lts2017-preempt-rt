@@ -19,7 +19,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  create mode 100644 Documentation/trace/histogram.txt
 
 diff --git a/Documentation/trace/events.txt b/Documentation/trace/events.txt
-index 2cc08d4..e28f7f2 100644
+index 2cc08d4a326e..e28f7f29f2b3 100644
 --- a/Documentation/trace/events.txt
 +++ b/Documentation/trace/events.txt
 @@ -517,1550 +517,4 @@ The following commands are supported:
@@ -1576,7 +1576,7 @@ index 2cc08d4..e28f7f2 100644
 +  See Documentation/trace/histogram.txt for details and examples.
 diff --git a/Documentation/trace/histogram.txt b/Documentation/trace/histogram.txt
 new file mode 100644
-index 00000000..b2145f4
+index 000000000000..b2145f44b190
 --- /dev/null
 +++ b/Documentation/trace/histogram.txt
 @@ -0,0 +1,1568 @@

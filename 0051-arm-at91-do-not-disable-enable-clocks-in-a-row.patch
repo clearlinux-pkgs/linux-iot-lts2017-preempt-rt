@@ -13,7 +13,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 29 insertions(+), 4 deletions(-)
 
 diff --git a/drivers/clocksource/tcb_clksrc.c b/drivers/clocksource/tcb_clksrc.c
-index 9de47d4..4f45be2 100644
+index 9de47d4d2d9e..4f45be268e52 100644
 --- a/drivers/clocksource/tcb_clksrc.c
 +++ b/drivers/clocksource/tcb_clksrc.c
 @@ -126,6 +126,7 @@ static struct clocksource clksrc = {

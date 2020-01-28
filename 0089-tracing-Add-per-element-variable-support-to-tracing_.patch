@@ -29,7 +29,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 119 insertions(+)
 
 diff --git a/kernel/trace/tracing_map.c b/kernel/trace/tracing_map.c
-index f47a4d5..5cadb1b 100644
+index f6c7e1f81f85..c22913f259ac 100644
 --- a/kernel/trace/tracing_map.c
 +++ b/kernel/trace/tracing_map.c
 @@ -66,6 +66,73 @@ u64 tracing_map_read_sum(struct tracing_map_elt *elt, unsigned int i)
@@ -176,7 +176,7 @@ index f47a4d5..5cadb1b 100644
  
  	if (map->ops && map->ops->elt_alloc) {
 diff --git a/kernel/trace/tracing_map.h b/kernel/trace/tracing_map.h
-index de57887..053eb92 100644
+index de57887c0670..053eb92b2d31 100644
 --- a/kernel/trace/tracing_map.h
 +++ b/kernel/trace/tracing_map.h
 @@ -10,6 +10,7 @@

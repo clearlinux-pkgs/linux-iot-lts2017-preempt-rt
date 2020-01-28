@@ -34,7 +34,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 170 insertions(+), 14 deletions(-)
 
 diff --git a/Documentation/trace/histogram.txt b/Documentation/trace/histogram.txt
-index be612ca..0aec2d8 100644
+index be612ca79455..0aec2d8e166b 100644
 --- a/Documentation/trace/histogram.txt
 +++ b/Documentation/trace/histogram.txt
 @@ -188,6 +188,26 @@
@@ -65,7 +65,7 @@ index be612ca..0aec2d8 100644
  ---------------------------
  
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
-index cc587bf..bd33cec 100644
+index cc587bf7ea42..bd33cec2b100 100644
 --- a/kernel/trace/trace_events_hist.c
 +++ b/kernel/trace/trace_events_hist.c
 @@ -351,6 +351,65 @@ struct action_data {

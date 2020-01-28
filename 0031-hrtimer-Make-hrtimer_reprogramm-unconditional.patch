@@ -20,7 +20,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 65 insertions(+), 70 deletions(-)
 
 diff --git a/include/linux/hrtimer.h b/include/linux/hrtimer.h
-index 2d3e1d6..98ed357 100644
+index ea5f5ab76fcd..eab763d2617e 100644
 --- a/include/linux/hrtimer.h
 +++ b/include/linux/hrtimer.h
 @@ -182,10 +182,10 @@ struct hrtimer_cpu_base {
@@ -38,7 +38,7 @@ index 2d3e1d6..98ed357 100644
  	unsigned short			nr_retries;
  	unsigned short			nr_hangs;
 diff --git a/kernel/time/hrtimer.c b/kernel/time/hrtimer.c
-index e01c2e7..37085a1 100644
+index b4ba6f91c8fd..9222119e7de3 100644
 --- a/kernel/time/hrtimer.c
 +++ b/kernel/time/hrtimer.c
 @@ -581,68 +581,6 @@ hrtimer_force_reprogram(struct hrtimer_cpu_base *cpu_base, int skip_equal)

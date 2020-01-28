@@ -31,7 +31,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 4 insertions(+), 12 deletions(-)
 
 diff --git a/include/linux/hrtimer.h b/include/linux/hrtimer.h
-index bb7270e..2d3e1d6 100644
+index 5eac50b9322e..ea5f5ab76fcd 100644
 --- a/include/linux/hrtimer.h
 +++ b/include/linux/hrtimer.h
 @@ -164,13 +164,13 @@ enum  hrtimer_base_type {
@@ -65,7 +65,7 @@ index bb7270e..2d3e1d6 100644
  } ____cacheline_aligned;
  
 diff --git a/kernel/time/hrtimer.c b/kernel/time/hrtimer.c
-index b1016aa..e01c2e7 100644
+index 8636d2552e9a..b4ba6f91c8fd 100644
 --- a/kernel/time/hrtimer.c
 +++ b/kernel/time/hrtimer.c
 @@ -459,21 +459,13 @@ __next_base(struct hrtimer_cpu_base *cpu_base, unsigned int *active)

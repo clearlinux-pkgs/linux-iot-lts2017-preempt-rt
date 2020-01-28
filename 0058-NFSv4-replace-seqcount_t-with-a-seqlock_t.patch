@@ -26,10 +26,10 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  4 files changed, 21 insertions(+), 11 deletions(-)
 
 diff --git a/fs/nfs/delegation.c b/fs/nfs/delegation.c
-index 606dd38..fa41eb7 100644
+index 09b3bcb86d32..f0e311976200 100644
 --- a/fs/nfs/delegation.c
 +++ b/fs/nfs/delegation.c
-@@ -150,11 +150,11 @@ static int nfs_delegation_claim_opens(struct inode *inode,
+@@ -160,11 +160,11 @@ static int nfs_delegation_claim_opens(struct inode *inode,
  		sp = state->owner;
  		/* Block nfs4_proc_unlck */
  		mutex_lock(&sp->so_delegreturn_mutex);
@@ -37,14 +37,14 @@ index 606dd38..fa41eb7 100644
 +		seq = read_seqbegin(&sp->so_reclaim_seqlock);
  		err = nfs4_open_delegation_recall(ctx, state, stateid, type);
  		if (!err)
- 			err = nfs_delegation_claim_locks(ctx, state, stateid);
+ 			err = nfs_delegation_claim_locks(state, stateid);
 -		if (!err && read_seqcount_retry(&sp->so_reclaim_seqcount, seq))
 +		if (!err && read_seqretry(&sp->so_reclaim_seqlock, seq))
  			err = -EAGAIN;
  		mutex_unlock(&sp->so_delegreturn_mutex);
  		put_nfs_open_context(ctx);
 diff --git a/fs/nfs/nfs4_fs.h b/fs/nfs/nfs4_fs.h
-index 22cff39..ccc20dc 100644
+index 22cff39cca29..ccc20dc115af 100644
 --- a/fs/nfs/nfs4_fs.h
 +++ b/fs/nfs/nfs4_fs.h
 @@ -112,7 +112,7 @@ struct nfs4_state_owner {
@@ -57,10 +57,10 @@ index 22cff39..ccc20dc 100644
  };
  
 diff --git a/fs/nfs/nfs4proc.c b/fs/nfs/nfs4proc.c
-index 6409ff4..0516578 100644
+index 3dd403943b07..81e21b58963f 100644
 --- a/fs/nfs/nfs4proc.c
 +++ b/fs/nfs/nfs4proc.c
-@@ -2715,7 +2715,7 @@ static int _nfs4_open_and_get_state(struct nfs4_opendata *opendata,
+@@ -2712,7 +2712,7 @@ static int _nfs4_open_and_get_state(struct nfs4_opendata *opendata,
  	unsigned int seq;
  	int ret;
  
@@ -69,7 +69,7 @@ index 6409ff4..0516578 100644
  
  	ret = _nfs4_proc_open(opendata);
  	if (ret != 0)
-@@ -2753,7 +2753,7 @@ static int _nfs4_open_and_get_state(struct nfs4_opendata *opendata,
+@@ -2750,7 +2750,7 @@ static int _nfs4_open_and_get_state(struct nfs4_opendata *opendata,
  
  	if (d_inode(dentry) == state->inode) {
  		nfs_inode_attach_open_context(ctx);
@@ -79,7 +79,7 @@ index 6409ff4..0516578 100644
  	}
  out:
 diff --git a/fs/nfs/nfs4state.c b/fs/nfs/nfs4state.c
-index f92bfc7..76658b5 100644
+index f92bfc787c5f..76658b54d02b 100644
 --- a/fs/nfs/nfs4state.c
 +++ b/fs/nfs/nfs4state.c
 @@ -498,7 +498,7 @@ nfs4_alloc_state_owner(struct nfs_server *server,

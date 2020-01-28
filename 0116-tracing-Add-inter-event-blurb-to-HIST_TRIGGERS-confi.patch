@@ -18,7 +18,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 4 insertions(+), 1 deletion(-)
 
 diff --git a/kernel/trace/Kconfig b/kernel/trace/Kconfig
-index 4ad6f6c..55d39a3 100644
+index 4ad6f6ca18c1..55d39a3fbdf7 100644
 --- a/kernel/trace/Kconfig
 +++ b/kernel/trace/Kconfig
 @@ -585,7 +585,10 @@ config HIST_TRIGGERS

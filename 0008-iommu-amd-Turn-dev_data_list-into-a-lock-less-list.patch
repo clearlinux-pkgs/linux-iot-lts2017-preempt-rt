@@ -24,7 +24,7 @@ Signed-off-by: Joerg Roedel <jroedel@suse.de>
  2 files changed, 11 insertions(+), 19 deletions(-)
 
 diff --git a/drivers/iommu/amd_iommu.c b/drivers/iommu/amd_iommu.c
-index 2945011..00b8fe4 100644
+index 89f47a94d355..908b60ae10ef 100644
 --- a/drivers/iommu/amd_iommu.c
 +++ b/drivers/iommu/amd_iommu.c
 @@ -84,8 +84,7 @@
@@ -37,7 +37,7 @@ index 2945011..00b8fe4 100644
  
  LIST_HEAD(ioapic_map);
  LIST_HEAD(hpet_map);
-@@ -204,40 +203,33 @@ static struct dma_ops_domain* to_dma_ops_domain(struct protection_domain *domain
+@@ -208,40 +207,33 @@ static struct dma_ops_domain* to_dma_ops_domain(struct protection_domain *domain
  static struct iommu_dev_data *alloc_dev_data(u16 devid)
  {
  	struct iommu_dev_data *dev_data;
@@ -88,7 +88,7 @@ index 2945011..00b8fe4 100644
  
  static int __last_alias(struct pci_dev *pdev, u16 alias, void *data)
 diff --git a/drivers/iommu/amd_iommu_types.h b/drivers/iommu/amd_iommu_types.h
-index aadd3c6..419655a 100644
+index aadd3c6f0120..419655af60d2 100644
 --- a/drivers/iommu/amd_iommu_types.h
 +++ b/drivers/iommu/amd_iommu_types.h
 @@ -627,7 +627,7 @@ struct devid_map {

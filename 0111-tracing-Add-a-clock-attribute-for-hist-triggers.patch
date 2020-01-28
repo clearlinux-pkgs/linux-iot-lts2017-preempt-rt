@@ -22,7 +22,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 49 insertions(+), 4 deletions(-)
 
 diff --git a/Documentation/trace/histogram.txt b/Documentation/trace/histogram.txt
-index df08882..6e05510 100644
+index df08882d091c..6e05510afc28 100644
 --- a/Documentation/trace/histogram.txt
 +++ b/Documentation/trace/histogram.txt
 @@ -1671,7 +1671,16 @@ features have been added to the hist trigger support:
@@ -44,7 +44,7 @@ index df08882..6e05510 100644
  2.2.1 Histogram Variables
  -------------------------
 diff --git a/kernel/trace/trace_events_hist.c b/kernel/trace/trace_events_hist.c
-index bd33cec..dab6dbd 100644
+index bd33cec2b100..dab6dbd40cad 100644
 --- a/kernel/trace/trace_events_hist.c
 +++ b/kernel/trace/trace_events_hist.c
 @@ -242,6 +242,7 @@ struct hist_trigger_attrs {
