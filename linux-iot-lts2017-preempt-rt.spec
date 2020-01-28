@@ -2373,6 +2373,10 @@ Patch2342: 2342-media-intel-ipu4-Fix-possible-deadlock.patch
 Patch2343: 2343-media-intel-ipu4-fix-potential-memory-leak.patch
 #END XXXX: PK Series
 
+# Clear Linux port patch set
+patch8001: 8001-fix-drm-i915-Move-rps.hw_lock-to-dev_priv.patch
+patch8002: 8002-fix-drm-i915-drop-duplicate-eb_use_cmdparser-functio.patch
+
 # Clear Linux patch
 Patch9001: 9001-init-wait-for-partition-and-retry-scan.patch
 Patch9002: 9002-Add-boot-option-to-allow-unsigned-modules.patch
@@ -4737,6 +4741,10 @@ Linux kernel extra files
 %patch2342 -p1
 %patch2343 -p1
 # End XXXX PK Series
+
+# Clear Linux port patch set
+%patch8001 -p1
+%patch8002 -p1
 
 # Clear Linux patch
 %patch9001 -p1
