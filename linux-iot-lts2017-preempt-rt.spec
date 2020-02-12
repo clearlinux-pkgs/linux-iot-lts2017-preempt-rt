@@ -2,7 +2,7 @@
 
 Name:           linux-iot-lts2017-preempt-rt
 Version:        4.14.168
-Release:        14
+Release:        15
 License:        GPL-2.0
 Summary:        The Linux kernel
 Url:            http://www.kernel.org/
@@ -2381,7 +2381,6 @@ patch8003: 8003-fix-x86-intel_rdt-update-cpus_ptr-pointer.patch
 # Clear Linux patch
 Patch9001: 9001-init-wait-for-partition-and-retry-scan.patch
 Patch9002: 9002-Add-boot-option-to-allow-unsigned-modules.patch
-Patch9003: 9003-add-workaround-for-binutils-optimization.patch
 
 %description
 The Linux kernel.
@@ -4751,7 +4750,6 @@ Linux kernel extra files
 # Clear Linux patch
 %patch9001 -p1
 %patch9002 -p1
-%patch9003 -p1
 
 cp %{SOURCE2} .
 cp %{SOURCE3} .
