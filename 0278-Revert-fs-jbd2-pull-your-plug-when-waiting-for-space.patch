@@ -14,7 +14,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 2 deletions(-)
 
 diff --git a/fs/jbd2/checkpoint.c b/fs/jbd2/checkpoint.c
-index 03f08a7ca5bc..fe4fe155b7fb 100644
+index b03b6fd8d5fa..15d129b7494b 100644
 --- a/fs/jbd2/checkpoint.c
 +++ b/fs/jbd2/checkpoint.c
 @@ -116,8 +116,6 @@ void __jbd2_log_wait_for_space(journal_t *journal)

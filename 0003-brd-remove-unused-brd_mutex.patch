@@ -16,7 +16,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 1 deletion(-)
 
 diff --git a/drivers/block/brd.c b/drivers/block/brd.c
-index 2d7178f7754e..c1cf87718c2e 100644
+index 0129b1921cb3..b469b876168b 100644
 --- a/drivers/block/brd.c
 +++ b/drivers/block/brd.c
 @@ -60,7 +60,6 @@ struct brd_device {

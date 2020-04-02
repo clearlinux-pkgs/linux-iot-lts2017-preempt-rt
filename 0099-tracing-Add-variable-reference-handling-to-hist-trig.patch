@@ -35,10 +35,10 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  4 files changed, 656 insertions(+), 16 deletions(-)
 
 diff --git a/kernel/trace/trace.c b/kernel/trace/trace.c
-index 32b738d66e7e..fe5606cfba19 100644
+index 901d2a9bcf18..e1808d52d83b 100644
 --- a/kernel/trace/trace.c
 +++ b/kernel/trace/trace.c
-@@ -7835,6 +7835,7 @@ static int instance_mkdir(const char *name)
+@@ -7837,6 +7837,7 @@ static int instance_mkdir(const char *name)
  
  	INIT_LIST_HEAD(&tr->systems);
  	INIT_LIST_HEAD(&tr->events);
@@ -46,7 +46,7 @@ index 32b738d66e7e..fe5606cfba19 100644
  
  	if (allocate_trace_buffers(tr, trace_buf_size) < 0)
  		goto out_free_tr;
-@@ -8583,6 +8584,7 @@ __init static int tracer_alloc_buffers(void)
+@@ -8585,6 +8586,7 @@ __init static int tracer_alloc_buffers(void)
  
  	INIT_LIST_HEAD(&global_trace.systems);
  	INIT_LIST_HEAD(&global_trace.events);
@@ -55,7 +55,7 @@ index 32b738d66e7e..fe5606cfba19 100644
  
  	apply_trace_boot_options();
 diff --git a/kernel/trace/trace.h b/kernel/trace/trace.h
-index b2d5339a8223..f9877ef17ab1 100644
+index 3e8c01664834..2aca76cd4954 100644
 --- a/kernel/trace/trace.h
 +++ b/kernel/trace/trace.h
 @@ -274,6 +274,7 @@ struct trace_array {
@@ -66,7 +66,7 @@ index b2d5339a8223..f9877ef17ab1 100644
  };
  
  enum {
-@@ -1601,6 +1602,8 @@ extern void pause_named_trigger(struct event_trigger_data *data);
+@@ -1620,6 +1621,8 @@ extern void pause_named_trigger(struct event_trigger_data *data);
  extern void unpause_named_trigger(struct event_trigger_data *data);
  extern void set_named_trigger_data(struct event_trigger_data *data,
  				   struct event_trigger_data *named_data);
@@ -945,10 +945,10 @@ index c03da55ec8ae..45a50081c819 100644
  
  	destroy_hist_data(hist_data);
 diff --git a/kernel/trace/trace_events_trigger.c b/kernel/trace/trace_events_trigger.c
-index fd26c0678d7d..bfe56edccaea 100644
+index 139a7aedead3..e6428554f060 100644
 --- a/kernel/trace/trace_events_trigger.c
 +++ b/kernel/trace/trace_events_trigger.c
-@@ -917,6 +917,12 @@ void set_named_trigger_data(struct event_trigger_data *data,
+@@ -918,6 +918,12 @@ void set_named_trigger_data(struct event_trigger_data *data,
  	data->named_data = named_data;
  }
  

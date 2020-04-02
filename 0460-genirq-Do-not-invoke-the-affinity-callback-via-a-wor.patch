@@ -53,7 +53,7 @@ index 0f25fa19b2d8..233e3c027f53 100644
  	struct work_struct work;
  #endif
 diff --git a/kernel/irq/manage.c b/kernel/irq/manage.c
-index f9415590661c..3d5b33fe874b 100644
+index acef33fc9a05..f04891ff6cc1 100644
 --- a/kernel/irq/manage.c
 +++ b/kernel/irq/manage.c
 @@ -228,7 +228,7 @@ int irq_set_affinity_locked(struct irq_data *data, const struct cpumask *mask,

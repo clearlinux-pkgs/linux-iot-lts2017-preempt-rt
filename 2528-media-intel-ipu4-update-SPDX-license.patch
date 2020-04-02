@@ -1,0 +1,1453 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Ding Yunliang <yunliang.ding@intel.com>
+Date: Fri, 11 May 2018 10:17:45 +0800
+Subject: [PATCH] media: intel-ipu4: update SPDX license
+
+Message for Open Source:
+The SPDX license format which were used before was not correct,
+update them accrording to the community rule.
+
+Message for Internal:
+[Issue] Format not correct.
+[Changes] Change _ to - as required.
+
+Change-Id: Ic42115dce25aafc60893ba028c670b7f2b948e50
+Tracked-On: #JICCCN-228
+Signed-off-by: Ding Yunliang <yunliang.ding@intel.com>
+Signed-off-by: Meng Wei <wei.meng@intel.com>
+---
+ drivers/media/i2c/ad5816g.c                                   | 2 +-
+ drivers/media/i2c/ad5816g.h                                   | 2 +-
+ drivers/media/i2c/ak7375.c                                    | 2 +-
+ drivers/media/i2c/as3638.c                                    | 2 +-
+ drivers/media/i2c/bu64295.c                                   | 2 +-
+ drivers/media/i2c/bu64295.h                                   | 2 +-
+ drivers/media/i2c/crlmodule/crl_adv7481_configuration.h       | 2 +-
+ drivers/media/i2c/crlmodule/crl_adv7481_cvbs_configuration.h  | 2 +-
+ drivers/media/i2c/crlmodule/crl_adv7481_eval_configuration.h  | 2 +-
+ drivers/media/i2c/crlmodule/crl_adv7481_hdmi_configuration.c  | 2 +-
+ drivers/media/i2c/crlmodule/crl_adv7481_hdmi_configuration.h  | 2 +-
+ drivers/media/i2c/crlmodule/crl_imx132_configuration.h        | 2 +-
+ drivers/media/i2c/crlmodule/crl_imx135_configuration.h        | 2 +-
+ drivers/media/i2c/crlmodule/crl_imx185_configuration.h        | 2 +-
+ drivers/media/i2c/crlmodule/crl_imx214_configuration.h        | 2 +-
+ drivers/media/i2c/crlmodule/crl_imx230_configuration.h        | 2 +-
+ drivers/media/i2c/crlmodule/crl_imx274_configuration.h        | 2 +-
+ drivers/media/i2c/crlmodule/crl_imx290_configuration.h        | 2 +-
+ drivers/media/i2c/crlmodule/crl_imx318_configuration.h        | 2 +-
+ drivers/media/i2c/crlmodule/crl_imx477_common_regs.h          | 2 +-
+ drivers/media/i2c/crlmodule/crl_imx477_master_configuration.h | 2 +-
+ drivers/media/i2c/crlmodule/crl_imx477_slave_configuration.h  | 2 +-
+ drivers/media/i2c/crlmodule/crl_magna_configuration.h         | 2 +-
+ drivers/media/i2c/crlmodule/crl_ov10635_configuration.h       | 2 +-
+ drivers/media/i2c/crlmodule/crl_ov10640_configuration.h       | 2 +-
+ drivers/media/i2c/crlmodule/crl_ov13860_configuration.h       | 2 +-
+ drivers/media/i2c/crlmodule/crl_ov2740_configuration.h        | 2 +-
+ drivers/media/i2c/crlmodule/crl_ov5670_configuration.h        | 2 +-
+ drivers/media/i2c/crlmodule/crl_ov8858_configuration.h        | 2 +-
+ drivers/media/i2c/crlmodule/crl_ov9281_configuration.h        | 2 +-
+ drivers/media/i2c/crlmodule/crl_pixter_stub_configuration.h   | 2 +-
+ drivers/media/i2c/crlmodule/crlmodule-core.c                  | 2 +-
+ drivers/media/i2c/crlmodule/crlmodule-data.c                  | 2 +-
+ drivers/media/i2c/crlmodule/crlmodule-msrlist.c               | 2 +-
+ drivers/media/i2c/crlmodule/crlmodule-msrlist.h               | 2 +-
+ drivers/media/i2c/crlmodule/crlmodule-nvm.c                   | 2 +-
+ drivers/media/i2c/crlmodule/crlmodule-nvm.h                   | 2 +-
+ drivers/media/i2c/crlmodule/crlmodule-regs.c                  | 2 +-
+ drivers/media/i2c/crlmodule/crlmodule-regs.h                  | 2 +-
+ drivers/media/i2c/crlmodule/crlmodule-sensor-ds.h             | 2 +-
+ drivers/media/i2c/crlmodule/crlmodule.h                       | 2 +-
+ drivers/media/i2c/dw9714.c                                    | 2 +-
+ drivers/media/i2c/imx319.c                                    | 2 +-
+ drivers/media/i2c/imx355.c                                    | 2 +-
+ drivers/media/i2c/lc898122/lc898122-oiscmd.c                  | 2 +-
+ drivers/media/i2c/lc898122/lc898122-oisfil.h                  | 2 +-
+ drivers/media/i2c/lc898122/lc898122-oisinit.c                 | 2 +-
+ drivers/media/i2c/lc898122/lc898122-oisinit.h                 | 2 +-
+ drivers/media/i2c/lc898122/lc898122-regs.h                    | 2 +-
+ drivers/media/i2c/lc898122/lc898122.c                         | 2 +-
+ drivers/media/i2c/lc898122/lc898122.h                         | 2 +-
+ drivers/media/i2c/lm3643.c                                    | 2 +-
+ drivers/media/i2c/ov8856.c                                    | 2 +-
+ drivers/media/i2c/ti964-reg.h                                 | 2 +-
+ drivers/media/i2c/ti964.c                                     | 2 +-
+ drivers/media/i2c/vcm_stub.c                                  | 2 +-
+ drivers/media/i2c/vcm_stub.h                                  | 2 +-
+ drivers/media/pci/intel/ipu-bus.c                             | 2 +-
+ drivers/media/pci/intel/ipu-bus.h                             | 2 +-
+ drivers/media/pci/intel/ipu-buttress.c                        | 2 +-
+ drivers/media/pci/intel/ipu-buttress.h                        | 2 +-
+ drivers/media/pci/intel/ipu-cpd.c                             | 2 +-
+ drivers/media/pci/intel/ipu-cpd.h                             | 2 +-
+ drivers/media/pci/intel/ipu-dma.c                             | 2 +-
+ drivers/media/pci/intel/ipu-dma.h                             | 2 +-
+ drivers/media/pci/intel/ipu-fw-com.c                          | 2 +-
+ drivers/media/pci/intel/ipu-fw-com.h                          | 2 +-
+ drivers/media/pci/intel/ipu-fw-isys.c                         | 2 +-
+ drivers/media/pci/intel/ipu-fw-isys.h                         | 2 +-
+ drivers/media/pci/intel/ipu-fw-psys.c                         | 2 +-
+ drivers/media/pci/intel/ipu-fw-psys.h                         | 2 +-
+ drivers/media/pci/intel/ipu-isys-csi2-be-soc.c                | 2 +-
+ drivers/media/pci/intel/ipu-isys-csi2-be.c                    | 2 +-
+ drivers/media/pci/intel/ipu-isys-csi2-be.h                    | 2 +-
+ drivers/media/pci/intel/ipu-isys-csi2.c                       | 2 +-
+ drivers/media/pci/intel/ipu-isys-csi2.h                       | 2 +-
+ drivers/media/pci/intel/ipu-isys-media.h                      | 2 +-
+ drivers/media/pci/intel/ipu-isys-queue.c                      | 2 +-
+ drivers/media/pci/intel/ipu-isys-queue.h                      | 2 +-
+ drivers/media/pci/intel/ipu-isys-subdev.c                     | 2 +-
+ drivers/media/pci/intel/ipu-isys-subdev.h                     | 2 +-
+ drivers/media/pci/intel/ipu-isys-tpg.c                        | 2 +-
+ drivers/media/pci/intel/ipu-isys-tpg.h                        | 2 +-
+ drivers/media/pci/intel/ipu-isys-video.c                      | 2 +-
+ drivers/media/pci/intel/ipu-isys-video.h                      | 2 +-
+ drivers/media/pci/intel/ipu-isys.c                            | 2 +-
+ drivers/media/pci/intel/ipu-isys.h                            | 2 +-
+ drivers/media/pci/intel/ipu-mmu.c                             | 2 +-
+ drivers/media/pci/intel/ipu-mmu.h                             | 2 +-
+ drivers/media/pci/intel/ipu-pdata.h                           | 2 +-
+ drivers/media/pci/intel/ipu-psys-compat32.c                   | 2 +-
+ drivers/media/pci/intel/ipu-psys.c                            | 2 +-
+ drivers/media/pci/intel/ipu-psys.h                            | 2 +-
+ drivers/media/pci/intel/ipu-trace-event.h                     | 2 +-
+ drivers/media/pci/intel/ipu-trace.c                           | 2 +-
+ drivers/media/pci/intel/ipu-trace.h                           | 2 +-
+ drivers/media/pci/intel/ipu-wrapper.c                         | 2 +-
+ drivers/media/pci/intel/ipu-wrapper.h                         | 2 +-
+ drivers/media/pci/intel/ipu.c                                 | 2 +-
+ drivers/media/pci/intel/ipu.h                                 | 2 +-
+ drivers/media/pci/intel/ipu4/ipu-platform-buttress-regs.h     | 2 +-
+ drivers/media/pci/intel/ipu4/ipu-platform-isys-csi2-reg.h     | 2 +-
+ drivers/media/pci/intel/ipu4/ipu-platform-isys.h              | 2 +-
+ drivers/media/pci/intel/ipu4/ipu-platform-regs.h              | 2 +-
+ drivers/media/pci/intel/ipu4/ipu-platform-resources.h         | 2 +-
+ drivers/media/pci/intel/ipu4/ipu-platform.h                   | 2 +-
+ drivers/media/pci/intel/ipu4/ipu4-css/libintel-ipu4.c         | 2 +-
+ drivers/media/pci/intel/ipu4/ipu4-fw-resources.c              | 2 +-
+ drivers/media/pci/intel/ipu4/ipu4-isys-csi2.c                 | 2 +-
+ drivers/media/pci/intel/ipu4/ipu4-isys-isa.c                  | 2 +-
+ drivers/media/pci/intel/ipu4/ipu4-isys-isa.h                  | 2 +-
+ drivers/media/pci/intel/ipu4/ipu4-isys.c                      | 2 +-
+ drivers/media/pci/intel/ipu4/ipu4-psys.c                      | 2 +-
+ drivers/media/pci/intel/ipu4/ipu4-resources.c                 | 2 +-
+ drivers/media/pci/intel/ipu4/ipu4.c                           | 2 +-
+ drivers/media/pci/intel/ipu4/ipu4p-css/libintel-ipu4p.c       | 2 +-
+ drivers/media/pci/intel/ipu4/ipu4p-isys-csi2.c                | 2 +-
+ drivers/media/platform/intel/ipu4-bxt-p-pdata.c               | 2 +-
+ drivers/media/platform/intel/ipu4p-cnl-rvp-pdata.c            | 2 +-
+ include/media/as3638.h                                        | 2 +-
+ include/media/crlmodule.h                                     | 2 +-
+ include/media/dw9714.h                                        | 2 +-
+ include/media/ipu-isys.h                                      | 2 +-
+ include/media/lc898122.h                                      | 2 +-
+ include/media/lm3643.h                                        | 2 +-
+ include/media/ti964.h                                         | 2 +-
+ include/uapi/linux/crlmodule.h                                | 2 +-
+ include/uapi/linux/ipu-isys-isa-fw.h                          | 2 +-
+ include/uapi/linux/ipu-isys.h                                 | 2 +-
+ include/uapi/linux/ipu-psys.h                                 | 2 +-
+ 130 files changed, 130 insertions(+), 130 deletions(-)
+
+diff --git a/drivers/media/i2c/ad5816g.c b/drivers/media/i2c/ad5816g.c
+index 8f04b4df367d..a1d23f26a184 100644
+--- a/drivers/media/i2c/ad5816g.c
++++ b/drivers/media/i2c/ad5816g.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2016 - 2018 Intel Corporation
+ 
+ #include <linux/delay.h>
+diff --git a/drivers/media/i2c/ad5816g.h b/drivers/media/i2c/ad5816g.h
+index 14dbcbf47dfe..9c417a820e57 100644
+--- a/drivers/media/i2c/ad5816g.h
++++ b/drivers/media/i2c/ad5816g.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2016 - 2018 Intel Corporation */
+ #ifndef __AD5816G_H__
+ #define __AD5816G_H__
+diff --git a/drivers/media/i2c/ak7375.c b/drivers/media/i2c/ak7375.c
+index 890983ea02d8..9150f770badd 100644
+--- a/drivers/media/i2c/ak7375.c
++++ b/drivers/media/i2c/ak7375.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2018 Intel Corporation
+ 
+ #include <linux/acpi.h>
+diff --git a/drivers/media/i2c/as3638.c b/drivers/media/i2c/as3638.c
+index d873c0223e01..7ccdab91c053 100644
+--- a/drivers/media/i2c/as3638.c
++++ b/drivers/media/i2c/as3638.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2016 - 2018 Intel Corporation
+ 
+ #include <linux/module.h>
+diff --git a/drivers/media/i2c/bu64295.c b/drivers/media/i2c/bu64295.c
+index f8e3aa286bb2..6d1c4c0de566 100644
+--- a/drivers/media/i2c/bu64295.c
++++ b/drivers/media/i2c/bu64295.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2016 - 2018 Intel Corporation
+ 
+ #include <linux/gpio.h>
+diff --git a/drivers/media/i2c/bu64295.h b/drivers/media/i2c/bu64295.h
+index 15c720d2eebd..36b873d2adde 100644
+--- a/drivers/media/i2c/bu64295.h
++++ b/drivers/media/i2c/bu64295.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2016 - 2018 Intel Corporation */
+ #ifndef __BU64295_H__
+ #define __BU64295_H__
+diff --git a/drivers/media/i2c/crlmodule/crl_adv7481_configuration.h b/drivers/media/i2c/crlmodule/crl_adv7481_configuration.h
+index 472acc05963f..9cf6e37074a8 100644
+--- a/drivers/media/i2c/crlmodule/crl_adv7481_configuration.h
++++ b/drivers/media/i2c/crlmodule/crl_adv7481_configuration.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2015 - 2018 Intel Corporation
+  *
+  * Author: Jianxu Zheng <jian.xu.zheng@intel.com>
+diff --git a/drivers/media/i2c/crlmodule/crl_adv7481_cvbs_configuration.h b/drivers/media/i2c/crlmodule/crl_adv7481_cvbs_configuration.h
+index 39d0f887bdb3..34f33ac8762c 100644
+--- a/drivers/media/i2c/crlmodule/crl_adv7481_cvbs_configuration.h
++++ b/drivers/media/i2c/crlmodule/crl_adv7481_cvbs_configuration.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2015 - 2018 Intel Corporation
+  *
+  * Author: Jianxu Zheng <jian.xu.zheng@intel.com>
+diff --git a/drivers/media/i2c/crlmodule/crl_adv7481_eval_configuration.h b/drivers/media/i2c/crlmodule/crl_adv7481_eval_configuration.h
+index b23ff35f701a..c7781706d1f3 100644
+--- a/drivers/media/i2c/crlmodule/crl_adv7481_eval_configuration.h
++++ b/drivers/media/i2c/crlmodule/crl_adv7481_eval_configuration.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2015 - 2018 Intel Corporation
+  *
+  * Author: Jianxu Zheng <jian.xu.zheng@intel.com>
+diff --git a/drivers/media/i2c/crlmodule/crl_adv7481_hdmi_configuration.c b/drivers/media/i2c/crlmodule/crl_adv7481_hdmi_configuration.c
+index 96465e15f1f4..d8d9c7b930a8 100644
+--- a/drivers/media/i2c/crlmodule/crl_adv7481_hdmi_configuration.c
++++ b/drivers/media/i2c/crlmodule/crl_adv7481_hdmi_configuration.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2016 - 2018 Intel Corporation
+ 
+ #include <linux/device.h>
+diff --git a/drivers/media/i2c/crlmodule/crl_adv7481_hdmi_configuration.h b/drivers/media/i2c/crlmodule/crl_adv7481_hdmi_configuration.h
+index cc70c360dc03..9a7eca452fb4 100644
+--- a/drivers/media/i2c/crlmodule/crl_adv7481_hdmi_configuration.h
++++ b/drivers/media/i2c/crlmodule/crl_adv7481_hdmi_configuration.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2016 - 2018 Intel Corporation */
+ 
+ #ifndef __CRLMODULE_ADV7481_HDMI_CONFIGURATION_H_
+diff --git a/drivers/media/i2c/crlmodule/crl_imx132_configuration.h b/drivers/media/i2c/crlmodule/crl_imx132_configuration.h
+index 6cae84ed1eab..128ccb50e4f8 100644
+--- a/drivers/media/i2c/crlmodule/crl_imx132_configuration.h
++++ b/drivers/media/i2c/crlmodule/crl_imx132_configuration.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2015 - 2018 Intel Corporation */
+ 
+ #ifndef __CRLMODULE_IMX132_CONFIGURATION_H_
+diff --git a/drivers/media/i2c/crlmodule/crl_imx135_configuration.h b/drivers/media/i2c/crlmodule/crl_imx135_configuration.h
+index 135c9a1c148f..82efac824e73 100644
+--- a/drivers/media/i2c/crlmodule/crl_imx135_configuration.h
++++ b/drivers/media/i2c/crlmodule/crl_imx135_configuration.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2015 - 2018 Intel Corporation */
+ 
+ #ifndef __CRLMODULE_IMX135_CONFIGURATION_H_
+diff --git a/drivers/media/i2c/crlmodule/crl_imx185_configuration.h b/drivers/media/i2c/crlmodule/crl_imx185_configuration.h
+index df9e480c3555..168455b63d20 100644
+--- a/drivers/media/i2c/crlmodule/crl_imx185_configuration.h
++++ b/drivers/media/i2c/crlmodule/crl_imx185_configuration.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2017 - 2018 Intel Corporation
+  *
+  * Author: Shuguang Gong <shuguang.gong@intel.com>
+diff --git a/drivers/media/i2c/crlmodule/crl_imx214_configuration.h b/drivers/media/i2c/crlmodule/crl_imx214_configuration.h
+index 0835e25a6ea0..8dc536fe6280 100644
+--- a/drivers/media/i2c/crlmodule/crl_imx214_configuration.h
++++ b/drivers/media/i2c/crlmodule/crl_imx214_configuration.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2014 - 2018 Intel Corporation
+  *
+  * Author: Vinod Govindapillai <vinod.govindapillai@intel.com>
+diff --git a/drivers/media/i2c/crlmodule/crl_imx230_configuration.h b/drivers/media/i2c/crlmodule/crl_imx230_configuration.h
+index af569e64bc41..c19afad589e5 100644
+--- a/drivers/media/i2c/crlmodule/crl_imx230_configuration.h
++++ b/drivers/media/i2c/crlmodule/crl_imx230_configuration.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2014 - 2018 Intel Corporation
+  *
+  * Author: Vinod Govindapillai <vinod.govindapillai@intel.com>
+diff --git a/drivers/media/i2c/crlmodule/crl_imx274_configuration.h b/drivers/media/i2c/crlmodule/crl_imx274_configuration.h
+index 558faea73e94..6ec84fb42a32 100644
+--- a/drivers/media/i2c/crlmodule/crl_imx274_configuration.h
++++ b/drivers/media/i2c/crlmodule/crl_imx274_configuration.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2016 - 2018 Intel Corporation
+  *
+  * Author: Yuning Pu <yuning.pu@intel.com>
+diff --git a/drivers/media/i2c/crlmodule/crl_imx290_configuration.h b/drivers/media/i2c/crlmodule/crl_imx290_configuration.h
+index 998b3d9872f3..6a3561bea27f 100644
+--- a/drivers/media/i2c/crlmodule/crl_imx290_configuration.h
++++ b/drivers/media/i2c/crlmodule/crl_imx290_configuration.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2017 - 2018 Intel Corporation
+  *
+  * Author: Yuning Pu <yuning.pu@intel.com>
+diff --git a/drivers/media/i2c/crlmodule/crl_imx318_configuration.h b/drivers/media/i2c/crlmodule/crl_imx318_configuration.h
+index 45553134bed9..631a6d10400f 100644
+--- a/drivers/media/i2c/crlmodule/crl_imx318_configuration.h
++++ b/drivers/media/i2c/crlmodule/crl_imx318_configuration.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2016 - 2018 Intel Corporation
+  *
+  * Author: Jouni Ukkonen <jouni.ukkonen@intel.com>
+diff --git a/drivers/media/i2c/crlmodule/crl_imx477_common_regs.h b/drivers/media/i2c/crlmodule/crl_imx477_common_regs.h
+index ecf20b9d08db..eebb884df8c8 100644
+--- a/drivers/media/i2c/crlmodule/crl_imx477_common_regs.h
++++ b/drivers/media/i2c/crlmodule/crl_imx477_common_regs.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2017 - 2018 Intel Corporation
+  *
+  * Author: Alexei Zavjalov <alexei.zavjalov@intel.com>
+diff --git a/drivers/media/i2c/crlmodule/crl_imx477_master_configuration.h b/drivers/media/i2c/crlmodule/crl_imx477_master_configuration.h
+index f28343cd34f8..10be93b07215 100644
+--- a/drivers/media/i2c/crlmodule/crl_imx477_master_configuration.h
++++ b/drivers/media/i2c/crlmodule/crl_imx477_master_configuration.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2017 - 2018 Intel Corporation
+  *
+  * Author: Alexei Zavjalov <alexei.zavjalov@intel.com>
+diff --git a/drivers/media/i2c/crlmodule/crl_imx477_slave_configuration.h b/drivers/media/i2c/crlmodule/crl_imx477_slave_configuration.h
+index 9e9f04080665..b8dc15c0f1f8 100644
+--- a/drivers/media/i2c/crlmodule/crl_imx477_slave_configuration.h
++++ b/drivers/media/i2c/crlmodule/crl_imx477_slave_configuration.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2017 - 2018 Intel Corporation
+  *
+  * Author: Alexei Zavjalov <alexei.zavjalov@intel.com>
+diff --git a/drivers/media/i2c/crlmodule/crl_magna_configuration.h b/drivers/media/i2c/crlmodule/crl_magna_configuration.h
+index bb2dee19f6d1..cd1e316a2cab 100644
+--- a/drivers/media/i2c/crlmodule/crl_magna_configuration.h
++++ b/drivers/media/i2c/crlmodule/crl_magna_configuration.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2017 - 2018 Intel Corporation
+  *
+  * Author: Kishore Bodke <kishore.k.bodke@intel.com>
+diff --git a/drivers/media/i2c/crlmodule/crl_ov10635_configuration.h b/drivers/media/i2c/crlmodule/crl_ov10635_configuration.h
+index c056e4bf03f1..d771953a2fbf 100644
+--- a/drivers/media/i2c/crlmodule/crl_ov10635_configuration.h
++++ b/drivers/media/i2c/crlmodule/crl_ov10635_configuration.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2016 - 2018 Intel Corporation
+  *
+  * Author: Yunliang Ding <yunliang.ding@intel.com>
+diff --git a/drivers/media/i2c/crlmodule/crl_ov10640_configuration.h b/drivers/media/i2c/crlmodule/crl_ov10640_configuration.h
+index da3d332e12e0..ab8378bc0988 100644
+--- a/drivers/media/i2c/crlmodule/crl_ov10640_configuration.h
++++ b/drivers/media/i2c/crlmodule/crl_ov10640_configuration.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2017 - 2018 Intel Corporation
+  *
+  * Author: Shuguang Gong <shuguang.gong@intel.com>
+diff --git a/drivers/media/i2c/crlmodule/crl_ov13860_configuration.h b/drivers/media/i2c/crlmodule/crl_ov13860_configuration.h
+index 2c69b935d1ee..4f8e7c651fdd 100644
+--- a/drivers/media/i2c/crlmodule/crl_ov13860_configuration.h
++++ b/drivers/media/i2c/crlmodule/crl_ov13860_configuration.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2015 - 2018 Intel Corporation
+  *
+  * Author: Kamal Ramamoorthy <kamalanathan.ramamoorthy@intel.com>
+diff --git a/drivers/media/i2c/crlmodule/crl_ov2740_configuration.h b/drivers/media/i2c/crlmodule/crl_ov2740_configuration.h
+index 58a3f6702d20..f6c56f31c354 100755
+--- a/drivers/media/i2c/crlmodule/crl_ov2740_configuration.h
++++ b/drivers/media/i2c/crlmodule/crl_ov2740_configuration.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2017 - 2018 Intel Corporation
+  *
+  * Author: Roy Yang <royx.yang@intel.com>
+diff --git a/drivers/media/i2c/crlmodule/crl_ov5670_configuration.h b/drivers/media/i2c/crlmodule/crl_ov5670_configuration.h
+index d1579dda79b5..7badb609dd45 100644
+--- a/drivers/media/i2c/crlmodule/crl_ov5670_configuration.h
++++ b/drivers/media/i2c/crlmodule/crl_ov5670_configuration.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2016 - 2018 Intel Corporation
+  *
+  * Author: Tommi Franttila <tommi.franttila@intel.com>
+diff --git a/drivers/media/i2c/crlmodule/crl_ov8858_configuration.h b/drivers/media/i2c/crlmodule/crl_ov8858_configuration.h
+index e2c706e2208f..63faedcf85ce 100644
+--- a/drivers/media/i2c/crlmodule/crl_ov8858_configuration.h
++++ b/drivers/media/i2c/crlmodule/crl_ov8858_configuration.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2014 - 2018 Intel Corporation
+  *
+  * Author: Vinod Govindapillai <vinod.govindapillai@intel.com>
+diff --git a/drivers/media/i2c/crlmodule/crl_ov9281_configuration.h b/drivers/media/i2c/crlmodule/crl_ov9281_configuration.h
+index 75fe0ba61493..b052d3058431 100644
+--- a/drivers/media/i2c/crlmodule/crl_ov9281_configuration.h
++++ b/drivers/media/i2c/crlmodule/crl_ov9281_configuration.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2018 Intel Corporation
+  *
+  * Author: Wu Xia <xia.wu@intel.com>
+diff --git a/drivers/media/i2c/crlmodule/crl_pixter_stub_configuration.h b/drivers/media/i2c/crlmodule/crl_pixter_stub_configuration.h
+index d33eb18eeac2..e6ffbb231d66 100644
+--- a/drivers/media/i2c/crlmodule/crl_pixter_stub_configuration.h
++++ b/drivers/media/i2c/crlmodule/crl_pixter_stub_configuration.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2016 - 2018 Intel Corporation
+  *
+  * Author: Wang, Zaikuo <zaikuo.wang@intel.com>
+diff --git a/drivers/media/i2c/crlmodule/crlmodule-core.c b/drivers/media/i2c/crlmodule/crlmodule-core.c
+index faeedf8bab64..a4cd4bc4033f 100755
+--- a/drivers/media/i2c/crlmodule/crlmodule-core.c
++++ b/drivers/media/i2c/crlmodule/crlmodule-core.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ /* Copyright (C) 2014 - 2018 Intel Corporation
+  *
+  * Author: Vinod Govindapillai <vinod.govindapillai@intel.com>
+diff --git a/drivers/media/i2c/crlmodule/crlmodule-data.c b/drivers/media/i2c/crlmodule/crlmodule-data.c
+index 512c597ec8a1..b1a2412519e3 100755
+--- a/drivers/media/i2c/crlmodule/crlmodule-data.c
++++ b/drivers/media/i2c/crlmodule/crlmodule-data.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ /* Copyright (C) 2014 - 2018 Intel Corporation
+  *
+  * Author: Vinod Govindapillai <vinod.govindapillai@intel.com>
+diff --git a/drivers/media/i2c/crlmodule/crlmodule-msrlist.c b/drivers/media/i2c/crlmodule/crlmodule-msrlist.c
+index 732f6c1b2b79..a15b76b921d2 100644
+--- a/drivers/media/i2c/crlmodule/crlmodule-msrlist.c
++++ b/drivers/media/i2c/crlmodule/crlmodule-msrlist.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2016 - 2018 Intel Corporation
+ 
+ #include <linux/i2c.h>
+diff --git a/drivers/media/i2c/crlmodule/crlmodule-msrlist.h b/drivers/media/i2c/crlmodule/crlmodule-msrlist.h
+index 978ec02c3831..013469bfec1a 100644
+--- a/drivers/media/i2c/crlmodule/crlmodule-msrlist.h
++++ b/drivers/media/i2c/crlmodule/crlmodule-msrlist.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2016 - 2018 Intel Corporation */
+ 
+ #ifndef __CRLMODULE_MSRLIST_H__
+diff --git a/drivers/media/i2c/crlmodule/crlmodule-nvm.c b/drivers/media/i2c/crlmodule/crlmodule-nvm.c
+index ef85b0c63ec4..691027b66446 100755
+--- a/drivers/media/i2c/crlmodule/crlmodule-nvm.c
++++ b/drivers/media/i2c/crlmodule/crlmodule-nvm.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ /* Copyright (C) 2016 - 2018 Intel Corporation
+  *
+  * Author: Tommi Franttila <tommi.franttila@intel.com>
+diff --git a/drivers/media/i2c/crlmodule/crlmodule-nvm.h b/drivers/media/i2c/crlmodule/crlmodule-nvm.h
+index 63093d08824c..42d462d321cc 100644
+--- a/drivers/media/i2c/crlmodule/crlmodule-nvm.h
++++ b/drivers/media/i2c/crlmodule/crlmodule-nvm.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2015 - 2018 Intel Corporation
+  *
+  * Author: Tommi Franttila <tommi.franttila@intel.com>
+diff --git a/drivers/media/i2c/crlmodule/crlmodule-regs.c b/drivers/media/i2c/crlmodule/crlmodule-regs.c
+index 5f09b3d3efd0..e4b8c8aa36e8 100644
+--- a/drivers/media/i2c/crlmodule/crlmodule-regs.c
++++ b/drivers/media/i2c/crlmodule/crlmodule-regs.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ /* Copyright (C) 2017 - 2018 Intel Corporation
+  *
+  * Author: Vinod Govindapillai <vinod.govindapillai@intel.com>
+diff --git a/drivers/media/i2c/crlmodule/crlmodule-regs.h b/drivers/media/i2c/crlmodule/crlmodule-regs.h
+index dc2c7d74ca93..6d84486e1ae1 100644
+--- a/drivers/media/i2c/crlmodule/crlmodule-regs.h
++++ b/drivers/media/i2c/crlmodule/crlmodule-regs.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2014 - 2018 Intel Corporation
+  *
+  * Author: Vinod Govindapillai <vinod.govindapillai@intel.com>
+diff --git a/drivers/media/i2c/crlmodule/crlmodule-sensor-ds.h b/drivers/media/i2c/crlmodule/crlmodule-sensor-ds.h
+index fdd2c4793eca..ff03185b1025 100644
+--- a/drivers/media/i2c/crlmodule/crlmodule-sensor-ds.h
++++ b/drivers/media/i2c/crlmodule/crlmodule-sensor-ds.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2014 - 2018 Intel Corporation
+  *
+  * Author: Vinod Govindapillai <vinod.govindapillai@intel.com>
+diff --git a/drivers/media/i2c/crlmodule/crlmodule.h b/drivers/media/i2c/crlmodule/crlmodule.h
+index 3791ccd27fad..e68e82fd0634 100644
+--- a/drivers/media/i2c/crlmodule/crlmodule.h
++++ b/drivers/media/i2c/crlmodule/crlmodule.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2014 - 2018 Intel Corporation
+  *
+  * Author: Vinod Govindapillai <vinod.govindapillai@intel.com>
+diff --git a/drivers/media/i2c/dw9714.c b/drivers/media/i2c/dw9714.c
+index 0b56fd9af00b..3fc171b5e5b4 100644
+--- a/drivers/media/i2c/dw9714.c
++++ b/drivers/media/i2c/dw9714.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ /* Copyright (C) 2015 - 2018 Intel Corporation
+  *
+  * Based on ATOMISP dw9714 implementation by
+diff --git a/drivers/media/i2c/imx319.c b/drivers/media/i2c/imx319.c
+index bb84981cac36..9fee39888408 100644
+--- a/drivers/media/i2c/imx319.c
++++ b/drivers/media/i2c/imx319.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2018 Intel Corporation
+ 
+ #include <asm/unaligned.h>
+diff --git a/drivers/media/i2c/imx355.c b/drivers/media/i2c/imx355.c
+index 27b5cfed55d0..3c092d02b1f5 100644
+--- a/drivers/media/i2c/imx355.c
++++ b/drivers/media/i2c/imx355.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2017 - 2018 Intel Corporation
+ 
+ #include <asm/unaligned.h>
+diff --git a/drivers/media/i2c/lc898122/lc898122-oiscmd.c b/drivers/media/i2c/lc898122/lc898122-oiscmd.c
+index fd5d545fe6d5..4bb4b268e621 100644
+--- a/drivers/media/i2c/lc898122/lc898122-oiscmd.c
++++ b/drivers/media/i2c/lc898122/lc898122-oiscmd.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ /* Copyright (C) 2015 - 2018 Intel Corporation
+  * Copyright (C) ON Semiconductor
+  *
+diff --git a/drivers/media/i2c/lc898122/lc898122-oisfil.h b/drivers/media/i2c/lc898122/lc898122-oisfil.h
+index db6374d35baf..5e73e5071735 100644
+--- a/drivers/media/i2c/lc898122/lc898122-oisfil.h
++++ b/drivers/media/i2c/lc898122/lc898122-oisfil.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2015 - 2018 Intel Corporation
+  * Copyright (C) ON Semiconductor
+  *
+diff --git a/drivers/media/i2c/lc898122/lc898122-oisinit.c b/drivers/media/i2c/lc898122/lc898122-oisinit.c
+index b5895eed46b1..429eb708cd54 100644
+--- a/drivers/media/i2c/lc898122/lc898122-oisinit.c
++++ b/drivers/media/i2c/lc898122/lc898122-oisinit.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ /* Copyright (C) 2015 - 2018 Intel Corporation
+  * Copyright (C) ON Semiconductor
+  *
+diff --git a/drivers/media/i2c/lc898122/lc898122-oisinit.h b/drivers/media/i2c/lc898122/lc898122-oisinit.h
+index 1c79040ad401..d619fe0a6002 100644
+--- a/drivers/media/i2c/lc898122/lc898122-oisinit.h
++++ b/drivers/media/i2c/lc898122/lc898122-oisinit.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2015 - 2018 Intel Corporation
+  * Copyright (C) ON Semiconductor
+  *
+diff --git a/drivers/media/i2c/lc898122/lc898122-regs.h b/drivers/media/i2c/lc898122/lc898122-regs.h
+index a6eea9e1b174..74caa3845209 100644
+--- a/drivers/media/i2c/lc898122/lc898122-regs.h
++++ b/drivers/media/i2c/lc898122/lc898122-regs.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2015 - 2018 Intel Corporation
+  * Copyright (C) ON Semiconductor
+  *
+diff --git a/drivers/media/i2c/lc898122/lc898122.c b/drivers/media/i2c/lc898122/lc898122.c
+index 9eda99a82967..41cff0027f87 100644
+--- a/drivers/media/i2c/lc898122/lc898122.c
++++ b/drivers/media/i2c/lc898122/lc898122.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2015 - 2018 Intel Corporation
+ 
+ #include <linux/gpio.h>
+diff --git a/drivers/media/i2c/lc898122/lc898122.h b/drivers/media/i2c/lc898122/lc898122.h
+index 2704a6dab620..5edf01769d0d 100644
+--- a/drivers/media/i2c/lc898122/lc898122.h
++++ b/drivers/media/i2c/lc898122/lc898122.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2015 - 2018 Intel Corporation */
+ 
+ #ifndef __LC898122_H__
+diff --git a/drivers/media/i2c/lm3643.c b/drivers/media/i2c/lm3643.c
+index a7c44e6bd919..695a23855a40 100644
+--- a/drivers/media/i2c/lm3643.c
++++ b/drivers/media/i2c/lm3643.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ /* Copyright (C) 2014 - 2018 Intel Corporation
+  *
+  * Lm3560 and other TI drivers used for this, written by
+diff --git a/drivers/media/i2c/ov8856.c b/drivers/media/i2c/ov8856.c
+index 16d253f3e55b..9c8fabd03fda 100644
+--- a/drivers/media/i2c/ov8856.c
++++ b/drivers/media/i2c/ov8856.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2017 - 2018 Intel Corporation
+ 
+ #include <linux/acpi.h>
+diff --git a/drivers/media/i2c/ti964-reg.h b/drivers/media/i2c/ti964-reg.h
+index 6800a1a9743a..e916c41b74a1 100644
+--- a/drivers/media/i2c/ti964-reg.h
++++ b/drivers/media/i2c/ti964-reg.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2016 - 2018 Intel Corporation */
+ 
+ #ifndef TI964_REG_H
+diff --git a/drivers/media/i2c/ti964.c b/drivers/media/i2c/ti964.c
+index 203f7f0ef435..7f97cd4b1c1c 100644
+--- a/drivers/media/i2c/ti964.c
++++ b/drivers/media/i2c/ti964.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2016 - 2018 Intel Corporation
+ 
+ #include <linux/device.h>
+diff --git a/drivers/media/i2c/vcm_stub.c b/drivers/media/i2c/vcm_stub.c
+index 33d7565a753e..773c2a379b92 100644
+--- a/drivers/media/i2c/vcm_stub.c
++++ b/drivers/media/i2c/vcm_stub.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2017 - 2018 Intel Corporation
+ 
+ #include <linux/i2c.h>
+diff --git a/drivers/media/i2c/vcm_stub.h b/drivers/media/i2c/vcm_stub.h
+index dd7d0bd0690d..f609ed223640 100644
+--- a/drivers/media/i2c/vcm_stub.h
++++ b/drivers/media/i2c/vcm_stub.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2017 - 2018 Intel Corporation */
+ 
+ #ifndef _VCM_STUB_H_
+diff --git a/drivers/media/pci/intel/ipu-bus.c b/drivers/media/pci/intel/ipu-bus.c
+index 886f28c5d8c1..a50b6ab5a4b0 100644
+--- a/drivers/media/pci/intel/ipu-bus.c
++++ b/drivers/media/pci/intel/ipu-bus.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2013 - 2018 Intel Corporation
+ 
+ #include <linux/delay.h>
+diff --git a/drivers/media/pci/intel/ipu-bus.h b/drivers/media/pci/intel/ipu-bus.h
+index 751e93d702cb..4226b865fe99 100644
+--- a/drivers/media/pci/intel/ipu-bus.h
++++ b/drivers/media/pci/intel/ipu-bus.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2013 - 2018 Intel Corporation */
+ 
+ #ifndef IPU_BUS_H
+diff --git a/drivers/media/pci/intel/ipu-buttress.c b/drivers/media/pci/intel/ipu-buttress.c
+index ab407877c15c..fc813387b2aa 100644
+--- a/drivers/media/pci/intel/ipu-buttress.c
++++ b/drivers/media/pci/intel/ipu-buttress.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2013 - 2018 Intel Corporation
+ 
+ #include <linux/clk.h>
+diff --git a/drivers/media/pci/intel/ipu-buttress.h b/drivers/media/pci/intel/ipu-buttress.h
+index fcb9aae7e3f8..7c29db5e7b55 100644
+--- a/drivers/media/pci/intel/ipu-buttress.h
++++ b/drivers/media/pci/intel/ipu-buttress.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2013 - 2018 Intel Corporation */
+ 
+ #ifndef IPU_BUTTRESS_H
+diff --git a/drivers/media/pci/intel/ipu-cpd.c b/drivers/media/pci/intel/ipu-cpd.c
+index 602ca157f074..dca03232aa4f 100644
+--- a/drivers/media/pci/intel/ipu-cpd.c
++++ b/drivers/media/pci/intel/ipu-cpd.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2015 - 2018 Intel Corporation
+ 
+ #include <linux/dma-mapping.h>
+diff --git a/drivers/media/pci/intel/ipu-cpd.h b/drivers/media/pci/intel/ipu-cpd.h
+index 47877f105ac7..c91ae33c1b85 100644
+--- a/drivers/media/pci/intel/ipu-cpd.h
++++ b/drivers/media/pci/intel/ipu-cpd.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2015 - 2018 Intel Corporation */
+ 
+ #ifndef IPU_CPD_H
+diff --git a/drivers/media/pci/intel/ipu-dma.c b/drivers/media/pci/intel/ipu-dma.c
+index 2d27780d7d0d..0770d8dbbadf 100644
+--- a/drivers/media/pci/intel/ipu-dma.c
++++ b/drivers/media/pci/intel/ipu-dma.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2013 - 2018 Intel Corporation
+ 
+ #include <asm/cacheflush.h>
+diff --git a/drivers/media/pci/intel/ipu-dma.h b/drivers/media/pci/intel/ipu-dma.h
+index d20c0349fcd8..9974b69fd6fd 100644
+--- a/drivers/media/pci/intel/ipu-dma.h
++++ b/drivers/media/pci/intel/ipu-dma.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2013 - 2018 Intel Corporation */
+ 
+ #ifndef IPU_DMA_H
+diff --git a/drivers/media/pci/intel/ipu-fw-com.c b/drivers/media/pci/intel/ipu-fw-com.c
+index 839fb92f8a8f..78c5c9291d70 100644
+--- a/drivers/media/pci/intel/ipu-fw-com.c
++++ b/drivers/media/pci/intel/ipu-fw-com.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2013 - 2018 Intel Corporation
+ 
+ #include <asm/cacheflush.h>
+diff --git a/drivers/media/pci/intel/ipu-fw-com.h b/drivers/media/pci/intel/ipu-fw-com.h
+index 9a39ac554298..de47455ea9a4 100644
+--- a/drivers/media/pci/intel/ipu-fw-com.h
++++ b/drivers/media/pci/intel/ipu-fw-com.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2013 - 2018 Intel Corporation */
+ 
+ #ifndef IPU_FW_COM_H
+diff --git a/drivers/media/pci/intel/ipu-fw-isys.c b/drivers/media/pci/intel/ipu-fw-isys.c
+index 6fc291792a46..ca0bdba60404 100644
+--- a/drivers/media/pci/intel/ipu-fw-isys.c
++++ b/drivers/media/pci/intel/ipu-fw-isys.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2013 - 2018 Intel Corporation
+ 
+ #include <asm/cacheflush.h>
+diff --git a/drivers/media/pci/intel/ipu-fw-isys.h b/drivers/media/pci/intel/ipu-fw-isys.h
+index 8ef68d470d87..110620257278 100644
+--- a/drivers/media/pci/intel/ipu-fw-isys.h
++++ b/drivers/media/pci/intel/ipu-fw-isys.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2013 - 2018 Intel Corporation */
+ 
+ #ifndef IPU_FW_ISYS_H
+diff --git a/drivers/media/pci/intel/ipu-fw-psys.c b/drivers/media/pci/intel/ipu-fw-psys.c
+index a8626bc916f9..5f0f601170ac 100644
+--- a/drivers/media/pci/intel/ipu-fw-psys.c
++++ b/drivers/media/pci/intel/ipu-fw-psys.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2016 - 2018 Intel Corporation
+ 
+ #include <linux/delay.h>
+diff --git a/drivers/media/pci/intel/ipu-fw-psys.h b/drivers/media/pci/intel/ipu-fw-psys.h
+index 58c2bce34f96..187a20a962ea 100644
+--- a/drivers/media/pci/intel/ipu-fw-psys.h
++++ b/drivers/media/pci/intel/ipu-fw-psys.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2016 - 2018 Intel Corporation */
+ 
+ #ifndef IPU_FW_PSYS_H
+diff --git a/drivers/media/pci/intel/ipu-isys-csi2-be-soc.c b/drivers/media/pci/intel/ipu-isys-csi2-be-soc.c
+index b0f973901101..8648b5f755ca 100644
+--- a/drivers/media/pci/intel/ipu-isys-csi2-be-soc.c
++++ b/drivers/media/pci/intel/ipu-isys-csi2-be-soc.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2014 - 2018 Intel Corporation
+ 
+ #include <linux/device.h>
+diff --git a/drivers/media/pci/intel/ipu-isys-csi2-be.c b/drivers/media/pci/intel/ipu-isys-csi2-be.c
+index 02ce5616f19f..deaf2a55362a 100644
+--- a/drivers/media/pci/intel/ipu-isys-csi2-be.c
++++ b/drivers/media/pci/intel/ipu-isys-csi2-be.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2014 - 2018 Intel Corporation
+ 
+ #include <linux/device.h>
+diff --git a/drivers/media/pci/intel/ipu-isys-csi2-be.h b/drivers/media/pci/intel/ipu-isys-csi2-be.h
+index d65926a06011..70a17833a9c4 100644
+--- a/drivers/media/pci/intel/ipu-isys-csi2-be.h
++++ b/drivers/media/pci/intel/ipu-isys-csi2-be.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2014 - 2018 Intel Corporation */
+ 
+ #ifndef IPU_ISYS_CSI2_BE_H
+diff --git a/drivers/media/pci/intel/ipu-isys-csi2.c b/drivers/media/pci/intel/ipu-isys-csi2.c
+index c10ea32d2626..4667df082344 100644
+--- a/drivers/media/pci/intel/ipu-isys-csi2.c
++++ b/drivers/media/pci/intel/ipu-isys-csi2.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2013 - 2018 Intel Corporation
+ 
+ #include <linux/device.h>
+diff --git a/drivers/media/pci/intel/ipu-isys-csi2.h b/drivers/media/pci/intel/ipu-isys-csi2.h
+index 10836c387f8b..a464df92dcf8 100644
+--- a/drivers/media/pci/intel/ipu-isys-csi2.h
++++ b/drivers/media/pci/intel/ipu-isys-csi2.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2013 - 2018 Intel Corporation */
+ 
+ #ifndef IPU_ISYS_CSI2_H
+diff --git a/drivers/media/pci/intel/ipu-isys-media.h b/drivers/media/pci/intel/ipu-isys-media.h
+index 1d88e8796070..823324ef4a16 100644
+--- a/drivers/media/pci/intel/ipu-isys-media.h
++++ b/drivers/media/pci/intel/ipu-isys-media.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2016 - 2018 Intel Corporation */
+ 
+ #ifndef IPU_ISYS_MEDIA_H
+diff --git a/drivers/media/pci/intel/ipu-isys-queue.c b/drivers/media/pci/intel/ipu-isys-queue.c
+index d716e1342574..1f6f76945953 100644
+--- a/drivers/media/pci/intel/ipu-isys-queue.c
++++ b/drivers/media/pci/intel/ipu-isys-queue.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2013 - 2018 Intel Corporation
+ 
+ #include <linux/completion.h>
+diff --git a/drivers/media/pci/intel/ipu-isys-queue.h b/drivers/media/pci/intel/ipu-isys-queue.h
+index 2a2e276fce27..4162b0547479 100644
+--- a/drivers/media/pci/intel/ipu-isys-queue.h
++++ b/drivers/media/pci/intel/ipu-isys-queue.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2013 - 2018 Intel Corporation */
+ 
+ #ifndef IPU_ISYS_QUEUE_H
+diff --git a/drivers/media/pci/intel/ipu-isys-subdev.c b/drivers/media/pci/intel/ipu-isys-subdev.c
+index b73b532a8ce2..7a72df4d3115 100644
+--- a/drivers/media/pci/intel/ipu-isys-subdev.c
++++ b/drivers/media/pci/intel/ipu-isys-subdev.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2013 - 2018 Intel Corporation
+ 
+ #include <linux/types.h>
+diff --git a/drivers/media/pci/intel/ipu-isys-subdev.h b/drivers/media/pci/intel/ipu-isys-subdev.h
+index 101466964b8c..6b08cf57e8ca 100644
+--- a/drivers/media/pci/intel/ipu-isys-subdev.h
++++ b/drivers/media/pci/intel/ipu-isys-subdev.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2013 - 2018 Intel Corporation */
+ 
+ #ifndef IPU_ISYS_SUBDEV_H
+diff --git a/drivers/media/pci/intel/ipu-isys-tpg.c b/drivers/media/pci/intel/ipu-isys-tpg.c
+index f15e1b4a3e4e..5fe004801751 100644
+--- a/drivers/media/pci/intel/ipu-isys-tpg.c
++++ b/drivers/media/pci/intel/ipu-isys-tpg.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2013 - 2018 Intel Corporation
+ 
+ #include <linux/device.h>
+diff --git a/drivers/media/pci/intel/ipu-isys-tpg.h b/drivers/media/pci/intel/ipu-isys-tpg.h
+index aae1ca6face6..4a2a23d3d75a 100644
+--- a/drivers/media/pci/intel/ipu-isys-tpg.h
++++ b/drivers/media/pci/intel/ipu-isys-tpg.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2013 - 2018 Intel Corporation */
+ 
+ #ifndef IPU_ISYS_TPG_H
+diff --git a/drivers/media/pci/intel/ipu-isys-video.c b/drivers/media/pci/intel/ipu-isys-video.c
+index 6d3edf0bb7e7..0c6e59bae841 100644
+--- a/drivers/media/pci/intel/ipu-isys-video.c
++++ b/drivers/media/pci/intel/ipu-isys-video.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2013 - 2018 Intel Corporation
+ 
+ #include <linux/delay.h>
+diff --git a/drivers/media/pci/intel/ipu-isys-video.h b/drivers/media/pci/intel/ipu-isys-video.h
+index c7a264b51527..c1375f70a897 100644
+--- a/drivers/media/pci/intel/ipu-isys-video.h
++++ b/drivers/media/pci/intel/ipu-isys-video.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2013 - 2018 Intel Corporation */
+ 
+ #ifndef IPU_ISYS_VIDEO_H
+diff --git a/drivers/media/pci/intel/ipu-isys.c b/drivers/media/pci/intel/ipu-isys.c
+index 5e4aecda3a46..6ce6bab5c771 100644
+--- a/drivers/media/pci/intel/ipu-isys.c
++++ b/drivers/media/pci/intel/ipu-isys.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2013 - 2018 Intel Corporation
+ 
+ #include <linux/debugfs.h>
+diff --git a/drivers/media/pci/intel/ipu-isys.h b/drivers/media/pci/intel/ipu-isys.h
+index f73517237279..b362f8613585 100644
+--- a/drivers/media/pci/intel/ipu-isys.h
++++ b/drivers/media/pci/intel/ipu-isys.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2013 - 2018 Intel Corporation */
+ 
+ #ifndef IPU_ISYS_H
+diff --git a/drivers/media/pci/intel/ipu-mmu.c b/drivers/media/pci/intel/ipu-mmu.c
+index 0e40f1f6b10c..f46f479afc98 100644
+--- a/drivers/media/pci/intel/ipu-mmu.c
++++ b/drivers/media/pci/intel/ipu-mmu.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2013 - 2018 Intel Corporation
+ 
+ #include <asm/cacheflush.h>
+diff --git a/drivers/media/pci/intel/ipu-mmu.h b/drivers/media/pci/intel/ipu-mmu.h
+index 68c8b06dc243..0e8863a2f024 100644
+--- a/drivers/media/pci/intel/ipu-mmu.h
++++ b/drivers/media/pci/intel/ipu-mmu.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2013 - 2018 Intel Corporation */
+ 
+ #ifndef IPU_MMU_H
+diff --git a/drivers/media/pci/intel/ipu-pdata.h b/drivers/media/pci/intel/ipu-pdata.h
+index 1ca3a1cff48d..66f111266f05 100644
+--- a/drivers/media/pci/intel/ipu-pdata.h
++++ b/drivers/media/pci/intel/ipu-pdata.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2013 - 2018 Intel Corporation */
+ 
+ #ifndef IPU_PDATA_H
+diff --git a/drivers/media/pci/intel/ipu-psys-compat32.c b/drivers/media/pci/intel/ipu-psys-compat32.c
+index ab7f94da0fd6..452fd3860456 100644
+--- a/drivers/media/pci/intel/ipu-psys-compat32.c
++++ b/drivers/media/pci/intel/ipu-psys-compat32.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2013 - 2018 Intel Corporation
+ 
+ #include <linux/compat.h>
+diff --git a/drivers/media/pci/intel/ipu-psys.c b/drivers/media/pci/intel/ipu-psys.c
+index 6dc2821c1539..714a79090bf0 100644
+--- a/drivers/media/pci/intel/ipu-psys.c
++++ b/drivers/media/pci/intel/ipu-psys.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2013 - 2018 Intel Corporation
+ 
+ #include <linux/debugfs.h>
+diff --git a/drivers/media/pci/intel/ipu-psys.h b/drivers/media/pci/intel/ipu-psys.h
+index 27dda498aba1..762950f4261f 100644
+--- a/drivers/media/pci/intel/ipu-psys.h
++++ b/drivers/media/pci/intel/ipu-psys.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2013 - 2018 Intel Corporation */
+ 
+ #ifndef IPU_PSYS_H
+diff --git a/drivers/media/pci/intel/ipu-trace-event.h b/drivers/media/pci/intel/ipu-trace-event.h
+index 173c93185f3d..b5e8d4be42ed 100644
+--- a/drivers/media/pci/intel/ipu-trace-event.h
++++ b/drivers/media/pci/intel/ipu-trace-event.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2015 - 2018 Intel Corporation */
+ 
+ #undef TRACE_SYSTEM
+diff --git a/drivers/media/pci/intel/ipu-trace.c b/drivers/media/pci/intel/ipu-trace.c
+index bece0ab7791e..5e0795d78649 100644
+--- a/drivers/media/pci/intel/ipu-trace.c
++++ b/drivers/media/pci/intel/ipu-trace.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2014 - 2018 Intel Corporation
+ 
+ #include <linux/debugfs.h>
+diff --git a/drivers/media/pci/intel/ipu-trace.h b/drivers/media/pci/intel/ipu-trace.h
+index 4c54436e4384..9167c0400273 100644
+--- a/drivers/media/pci/intel/ipu-trace.h
++++ b/drivers/media/pci/intel/ipu-trace.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2014 - 2018 Intel Corporation */
+ 
+ #ifndef IPU_TRACE_H
+diff --git a/drivers/media/pci/intel/ipu-wrapper.c b/drivers/media/pci/intel/ipu-wrapper.c
+index 456f82c08da2..9e06887dd857 100644
+--- a/drivers/media/pci/intel/ipu-wrapper.c
++++ b/drivers/media/pci/intel/ipu-wrapper.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2013 - 2018 Intel Corporation
+ 
+ #include <asm/cacheflush.h>
+diff --git a/drivers/media/pci/intel/ipu-wrapper.h b/drivers/media/pci/intel/ipu-wrapper.h
+index 4441d0531a13..b7df285e1142 100644
+--- a/drivers/media/pci/intel/ipu-wrapper.h
++++ b/drivers/media/pci/intel/ipu-wrapper.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2013 - 2018 Intel Corporation */
+ 
+ #ifndef IPU_WRAPPER_H
+diff --git a/drivers/media/pci/intel/ipu.c b/drivers/media/pci/intel/ipu.c
+index d1f955e27cca..cccd6d2b7ba2 100644
+--- a/drivers/media/pci/intel/ipu.c
++++ b/drivers/media/pci/intel/ipu.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2013 - 2018 Intel Corporation
+ 
+ #include <linux/debugfs.h>
+diff --git a/drivers/media/pci/intel/ipu.h b/drivers/media/pci/intel/ipu.h
+index 3c1241eb5404..1916018858a7 100644
+--- a/drivers/media/pci/intel/ipu.h
++++ b/drivers/media/pci/intel/ipu.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2013 - 2018 Intel Corporation */
+ 
+ #ifndef IPU_H
+diff --git a/drivers/media/pci/intel/ipu4/ipu-platform-buttress-regs.h b/drivers/media/pci/intel/ipu4/ipu-platform-buttress-regs.h
+index a2684ca968be..ffd770c88198 100644
+--- a/drivers/media/pci/intel/ipu4/ipu-platform-buttress-regs.h
++++ b/drivers/media/pci/intel/ipu4/ipu-platform-buttress-regs.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2014 - 2018 Intel Corporation */
+ 
+ #ifndef IPU_PLATFORM_BUTTRESS_REGS_H
+diff --git a/drivers/media/pci/intel/ipu4/ipu-platform-isys-csi2-reg.h b/drivers/media/pci/intel/ipu4/ipu-platform-isys-csi2-reg.h
+index f504d9f19c8f..f19372ba3e57 100644
+--- a/drivers/media/pci/intel/ipu4/ipu-platform-isys-csi2-reg.h
++++ b/drivers/media/pci/intel/ipu4/ipu-platform-isys-csi2-reg.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2013 - 2018 Intel Corporation */
+ 
+ #ifndef IPU_PLATFORM_ISYS_CSI2_REG_H
+diff --git a/drivers/media/pci/intel/ipu4/ipu-platform-isys.h b/drivers/media/pci/intel/ipu4/ipu-platform-isys.h
+index 8e24406e85ed..51f26f2198e2 100644
+--- a/drivers/media/pci/intel/ipu4/ipu-platform-isys.h
++++ b/drivers/media/pci/intel/ipu4/ipu-platform-isys.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2018 Intel Corporation */
+ 
+ #ifndef IPU_PLATFORM_ISYS_H
+diff --git a/drivers/media/pci/intel/ipu4/ipu-platform-regs.h b/drivers/media/pci/intel/ipu4/ipu-platform-regs.h
+index 7f27273e8c30..e54b2b55afbf 100644
+--- a/drivers/media/pci/intel/ipu4/ipu-platform-regs.h
++++ b/drivers/media/pci/intel/ipu4/ipu-platform-regs.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2014 - 2018 Intel Corporation */
+ 
+ #ifndef IPU_PLATFORM_REGS_H
+diff --git a/drivers/media/pci/intel/ipu4/ipu-platform-resources.h b/drivers/media/pci/intel/ipu4/ipu-platform-resources.h
+index 52dbd1ea0cef..59b2cd46c9f1 100644
+--- a/drivers/media/pci/intel/ipu4/ipu-platform-resources.h
++++ b/drivers/media/pci/intel/ipu4/ipu-platform-resources.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2016 - 2018 Intel Corporation */
+ 
+ #ifndef IPU_PLATFORM_RESOURCES_H
+diff --git a/drivers/media/pci/intel/ipu4/ipu-platform.h b/drivers/media/pci/intel/ipu4/ipu-platform.h
+index d8af4ba59baa..924cb2ef7e34 100644
+--- a/drivers/media/pci/intel/ipu4/ipu-platform.h
++++ b/drivers/media/pci/intel/ipu4/ipu-platform.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2013 - 2018 Intel Corporation */
+ 
+ #ifndef IPU_PLATFORM_H
+diff --git a/drivers/media/pci/intel/ipu4/ipu4-css/libintel-ipu4.c b/drivers/media/pci/intel/ipu4/ipu4-css/libintel-ipu4.c
+index 89234c076804..a7128898e449 100644
+--- a/drivers/media/pci/intel/ipu4/ipu4-css/libintel-ipu4.c
++++ b/drivers/media/pci/intel/ipu4/ipu4-css/libintel-ipu4.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2014 - 2018 Intel Corporation
+ 
+ #include <linux/module.h>
+diff --git a/drivers/media/pci/intel/ipu4/ipu4-fw-resources.c b/drivers/media/pci/intel/ipu4/ipu4-fw-resources.c
+index 7d50bce843a9..581b7379cef8 100644
+--- a/drivers/media/pci/intel/ipu4/ipu4-fw-resources.c
++++ b/drivers/media/pci/intel/ipu4/ipu4-fw-resources.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2015 - 2018 Intel Corporation
+ 
+ #include "ipu-fw-psys.h"
+diff --git a/drivers/media/pci/intel/ipu4/ipu4-isys-csi2.c b/drivers/media/pci/intel/ipu4/ipu4-isys-csi2.c
+index 0c9392d72000..11e409187216 100644
+--- a/drivers/media/pci/intel/ipu4/ipu4-isys-csi2.c
++++ b/drivers/media/pci/intel/ipu4/ipu4-isys-csi2.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2013 - 2018 Intel Corporation
+ 
+ #include "ipu.h"
+diff --git a/drivers/media/pci/intel/ipu4/ipu4-isys-isa.c b/drivers/media/pci/intel/ipu4/ipu4-isys-isa.c
+index ff17d595b5ac..e5af62af6622 100644
+--- a/drivers/media/pci/intel/ipu4/ipu4-isys-isa.c
++++ b/drivers/media/pci/intel/ipu4/ipu4-isys-isa.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2014 - 2018 Intel Corporation
+ 
+ #include <linux/device.h>
+diff --git a/drivers/media/pci/intel/ipu4/ipu4-isys-isa.h b/drivers/media/pci/intel/ipu4/ipu4-isys-isa.h
+index a32157f14c25..649714dca2f4 100644
+--- a/drivers/media/pci/intel/ipu4/ipu4-isys-isa.h
++++ b/drivers/media/pci/intel/ipu4/ipu4-isys-isa.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2014 - 2018 Intel Corporation */
+ 
+ #ifndef IPU_ISYS_ISA_H
+diff --git a/drivers/media/pci/intel/ipu4/ipu4-isys.c b/drivers/media/pci/intel/ipu4/ipu4-isys.c
+index 6848ebaf0687..30cc42db49c7 100644
+--- a/drivers/media/pci/intel/ipu4/ipu4-isys.c
++++ b/drivers/media/pci/intel/ipu4/ipu4-isys.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2018 Intel Corporation
+ 
+ #include <linux/module.h>
+diff --git a/drivers/media/pci/intel/ipu4/ipu4-psys.c b/drivers/media/pci/intel/ipu4/ipu4-psys.c
+index a90ce0a6966e..82e80d1ccbd3 100644
+--- a/drivers/media/pci/intel/ipu4/ipu4-psys.c
++++ b/drivers/media/pci/intel/ipu4/ipu4-psys.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2018 Intel Corporation
+ 
+ #include <linux/uaccess.h>
+diff --git a/drivers/media/pci/intel/ipu4/ipu4-resources.c b/drivers/media/pci/intel/ipu4/ipu4-resources.c
+index 651045049c6f..097ea1bb7ed9 100644
+--- a/drivers/media/pci/intel/ipu4/ipu4-resources.c
++++ b/drivers/media/pci/intel/ipu4/ipu4-resources.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2015 - 2018 Intel Corporation
+ 
+ #include <linux/bitmap.h>
+diff --git a/drivers/media/pci/intel/ipu4/ipu4.c b/drivers/media/pci/intel/ipu4/ipu4.c
+index 74a85ebd5660..c3615d225431 100644
+--- a/drivers/media/pci/intel/ipu4/ipu4.c
++++ b/drivers/media/pci/intel/ipu4/ipu4.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2018 Intel Corporation
+ 
+ #include <linux/device.h>
+diff --git a/drivers/media/pci/intel/ipu4/ipu4p-css/libintel-ipu4p.c b/drivers/media/pci/intel/ipu4/ipu4p-css/libintel-ipu4p.c
+index b6c5f1cfc067..cb6fd0499c5c 100644
+--- a/drivers/media/pci/intel/ipu4/ipu4p-css/libintel-ipu4p.c
++++ b/drivers/media/pci/intel/ipu4/ipu4p-css/libintel-ipu4p.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2014 - 2018 Intel Corporation
+ 
+ #include <linux/module.h>
+diff --git a/drivers/media/pci/intel/ipu4/ipu4p-isys-csi2.c b/drivers/media/pci/intel/ipu4/ipu4p-isys-csi2.c
+index 934db9e39e26..0ced354effe8 100644
+--- a/drivers/media/pci/intel/ipu4/ipu4p-isys-csi2.c
++++ b/drivers/media/pci/intel/ipu4/ipu4p-isys-csi2.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ //  Copyright (C) 2018 Intel Corporation
+ 
+ #include "ipu.h"
+diff --git a/drivers/media/platform/intel/ipu4-bxt-p-pdata.c b/drivers/media/platform/intel/ipu4-bxt-p-pdata.c
+index d6fab2ac7e19..53c0037295d9 100755
+--- a/drivers/media/platform/intel/ipu4-bxt-p-pdata.c
++++ b/drivers/media/platform/intel/ipu4-bxt-p-pdata.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2015 - 2018 Intel Corporation
+ 
+ #include <linux/clk.h>
+diff --git a/drivers/media/platform/intel/ipu4p-cnl-rvp-pdata.c b/drivers/media/platform/intel/ipu4p-cnl-rvp-pdata.c
+index 633d7ad11119..74bfe3260d4b 100644
+--- a/drivers/media/platform/intel/ipu4p-cnl-rvp-pdata.c
++++ b/drivers/media/platform/intel/ipu4p-cnl-rvp-pdata.c
+@@ -1,4 +1,4 @@
+-// SPDX-License_Identifier: GPL-2.0
++// SPDX-License-Identifier: GPL-2.0
+ // Copyright (C) 2018 Intel Corporation
+ 
+ #include <linux/clk.h>
+diff --git a/include/media/as3638.h b/include/media/as3638.h
+index 949dc6d82229..8e847efaac9f 100644
+--- a/include/media/as3638.h
++++ b/include/media/as3638.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2016 - 2018 Intel Corporation */
+ 
+ #ifndef __AS3638_H__
+diff --git a/include/media/crlmodule.h b/include/media/crlmodule.h
+index 4605522741f9..45174304b0a0 100644
+--- a/include/media/crlmodule.h
++++ b/include/media/crlmodule.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2014 - 2018 Intel Corporation
+  * Generic driver for common register list based camera sensor modules
+  *
+diff --git a/include/media/dw9714.h b/include/media/dw9714.h
+index 58986291abd4..11737c6ca824 100755
+--- a/include/media/dw9714.h
++++ b/include/media/dw9714.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2015 - 2018 Intel Corporation
+  *
+  * Based on ATOMISP dw9714 implementation by
+diff --git a/include/media/ipu-isys.h b/include/media/ipu-isys.h
+index be9af27caf1c..b2acb94a1fb1 100644
+--- a/include/media/ipu-isys.h
++++ b/include/media/ipu-isys.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2014 - 2018 Intel Corporation */
+ 
+ #ifndef MEDIA_IPU_H
+diff --git a/include/media/lc898122.h b/include/media/lc898122.h
+index b380f474df56..5c426407b5ed 100644
+--- a/include/media/lc898122.h
++++ b/include/media/lc898122.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2016 - 2018 Intel Corporation */
+ 
+ #ifndef __LC898122_HEADER__
+diff --git a/include/media/lm3643.h b/include/media/lm3643.h
+index 16bb6832bc9a..58acf6f9662a 100644
+--- a/include/media/lm3643.h
++++ b/include/media/lm3643.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2013 - 2018 Intel Corporation */
+ 
+ #ifndef __LM3643_H__
+diff --git a/include/media/ti964.h b/include/media/ti964.h
+index 8943daf56a46..28ffaacca800 100644
+--- a/include/media/ti964.h
++++ b/include/media/ti964.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2016 - 2018 Intel Corporation */
+ 
+ #ifndef TI964_H
+diff --git a/include/uapi/linux/crlmodule.h b/include/uapi/linux/crlmodule.h
+index f0a48f4e2646..8bcb8c92830f 100644
+--- a/include/uapi/linux/crlmodule.h
++++ b/include/uapi/linux/crlmodule.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2016 - 2018 Intel Corporation */
+ 
+ #ifndef UAPI_LINUX_CRLMODULE_H
+diff --git a/include/uapi/linux/ipu-isys-isa-fw.h b/include/uapi/linux/ipu-isys-isa-fw.h
+index 0385abc64d46..f0914bce7966 100644
+--- a/include/uapi/linux/ipu-isys-isa-fw.h
++++ b/include/uapi/linux/ipu-isys-isa-fw.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2014 - 2018 Intel Corporation */
+ 
+ #ifndef IPU_ISYS_ISA_FW_H
+diff --git a/include/uapi/linux/ipu-isys.h b/include/uapi/linux/ipu-isys.h
+index b00e8a7d3824..850767b68ee7 100644
+--- a/include/uapi/linux/ipu-isys.h
++++ b/include/uapi/linux/ipu-isys.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2016 - 2018 Intel Corporation */
+ 
+ #ifndef UAPI_LINUX_IPU_ISYS_H
+diff --git a/include/uapi/linux/ipu-psys.h b/include/uapi/linux/ipu-psys.h
+index f23bc8554f8a..0f26dbfe436e 100644
+--- a/include/uapi/linux/ipu-psys.h
++++ b/include/uapi/linux/ipu-psys.h
+@@ -1,4 +1,4 @@
+-/* SPDX-License_Identifier: GPL-2.0 */
++/* SPDX-License-Identifier: GPL-2.0 */
+ /* Copyright (C) 2013 - 2018 Intel Corporation */
+ 
+ #ifndef _UAPI_IPU_PSYS_H
+-- 
+https://clearlinux.org
+

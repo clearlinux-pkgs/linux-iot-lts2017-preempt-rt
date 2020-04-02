@@ -12,7 +12,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 6 insertions(+), 7 deletions(-)
 
 diff --git a/mm/slub.c b/mm/slub.c
-index f2b4b6a80a82..3dcd5c924b59 100644
+index 235104a22215..d53038b0d9ce 100644
 --- a/mm/slub.c
 +++ b/mm/slub.c
 @@ -1567,14 +1567,17 @@ static struct page *allocate_slab(struct kmem_cache *s, gfp_t flags, int node)

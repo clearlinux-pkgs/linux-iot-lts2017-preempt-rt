@@ -120,10 +120,10 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  3 files changed, 7 insertions(+), 7 deletions(-)
 
 diff --git a/crypto/algapi.c b/crypto/algapi.c
-index 50eb828db767..7bce92a6599a 100644
+index 603d2d637209..10e92ba5f7a4 100644
 --- a/crypto/algapi.c
 +++ b/crypto/algapi.c
-@@ -731,13 +731,13 @@ EXPORT_SYMBOL_GPL(crypto_spawn_tfm2);
+@@ -723,13 +723,13 @@ EXPORT_SYMBOL_GPL(crypto_spawn_tfm2);
  
  int crypto_register_notifier(struct notifier_block *nb)
  {
@@ -140,7 +140,7 @@ index 50eb828db767..7bce92a6599a 100644
  EXPORT_SYMBOL_GPL(crypto_unregister_notifier);
  
 diff --git a/crypto/api.c b/crypto/api.c
-index e485aed11ad0..089e648d2fa9 100644
+index 187795a6687d..3e66a90a19ac 100644
 --- a/crypto/api.c
 +++ b/crypto/api.c
 @@ -31,7 +31,7 @@ EXPORT_SYMBOL_GPL(crypto_alg_list);
@@ -166,7 +166,7 @@ index e485aed11ad0..089e648d2fa9 100644
  
  	return ok;
 diff --git a/crypto/internal.h b/crypto/internal.h
-index f07320423191..333d985088fe 100644
+index 6262ec0435b4..e480c949b48f 100644
 --- a/crypto/internal.h
 +++ b/crypto/internal.h
 @@ -47,7 +47,7 @@ struct crypto_larval {
@@ -178,7 +178,7 @@ index f07320423191..333d985088fe 100644
  
  #ifdef CONFIG_PROC_FS
  void __init crypto_init_proc(void);
-@@ -143,7 +143,7 @@ static inline int crypto_is_moribund(struct crypto_alg *alg)
+@@ -142,7 +142,7 @@ static inline int crypto_is_moribund(struct crypto_alg *alg)
  
  static inline void crypto_notify(unsigned long val, void *v)
  {

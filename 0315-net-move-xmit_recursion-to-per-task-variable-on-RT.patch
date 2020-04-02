@@ -23,7 +23,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  4 files changed, 51 insertions(+), 8 deletions(-)
 
 diff --git a/include/linux/netdevice.h b/include/linux/netdevice.h
-index f0b77dc7651f..2e61500beda4 100644
+index 9a8a1d742246..72ae40b8a95f 100644
 --- a/include/linux/netdevice.h
 +++ b/include/linux/netdevice.h
 @@ -2448,14 +2448,53 @@ void netdev_freemem(struct net_device *dev);
@@ -96,7 +96,7 @@ index 65b5544d3212..cd5be2f65364 100644
  	int				pagefault_disabled;
  #ifdef CONFIG_MMU
 diff --git a/net/core/dev.c b/net/core/dev.c
-index 4232db70da2f..b8fc4882345a 100644
+index eeff2a601285..42d86065e62e 100644
 --- a/net/core/dev.c
 +++ b/net/core/dev.c
 @@ -3270,8 +3270,10 @@ static void skb_update_prio(struct sk_buff *skb)

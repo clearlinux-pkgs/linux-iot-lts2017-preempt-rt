@@ -12,10 +12,10 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 3 insertions(+), 3 deletions(-)
 
 diff --git a/kernel/signal.c b/kernel/signal.c
-index 33a5b21518dd..277e2517af0b 100644
+index a562ca0b6db7..68e759d19427 100644
 --- a/kernel/signal.c
 +++ b/kernel/signal.c
-@@ -1352,12 +1352,12 @@ struct sighand_struct *__lock_task_sighand(struct task_struct *tsk,
+@@ -1357,12 +1357,12 @@ struct sighand_struct *__lock_task_sighand(struct task_struct *tsk,
  		 * Disable interrupts early to avoid deadlocks.
  		 * See rcu_read_unlock() comment header for details.
  		 */
@@ -30,7 +30,7 @@ index 33a5b21518dd..277e2517af0b 100644
  			break;
  		}
  		/*
-@@ -1378,7 +1378,7 @@ struct sighand_struct *__lock_task_sighand(struct task_struct *tsk,
+@@ -1383,7 +1383,7 @@ struct sighand_struct *__lock_task_sighand(struct task_struct *tsk,
  		}
  		spin_unlock(&sighand->siglock);
  		rcu_read_unlock();

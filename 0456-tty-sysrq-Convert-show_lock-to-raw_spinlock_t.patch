@@ -34,7 +34,7 @@ Signed-off-by: Tom Zanussi <tom.zanussi@linux.intel.com>
  1 file changed, 3 insertions(+), 3 deletions(-)
 
 diff --git a/drivers/tty/sysrq.c b/drivers/tty/sysrq.c
-index 377b3592384e..5d1c6d496e2e 100644
+index 4c716ddd6599..47666c180ef9 100644
 --- a/drivers/tty/sysrq.c
 +++ b/drivers/tty/sysrq.c
 @@ -215,7 +215,7 @@ static struct sysrq_key_op sysrq_showlocks_op = {

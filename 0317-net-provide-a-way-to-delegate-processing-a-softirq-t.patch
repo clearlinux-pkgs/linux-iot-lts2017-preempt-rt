@@ -71,7 +71,7 @@ index da87715b10be..e3f89bcef432 100644
   * This function must run with irqs disabled!
   */
 diff --git a/net/core/dev.c b/net/core/dev.c
-index 49bbe32abb0d..952e367572aa 100644
+index b59dd5774f15..606eedbbd569 100644
 --- a/net/core/dev.c
 +++ b/net/core/dev.c
 @@ -5702,7 +5702,7 @@ static __latent_entropy void net_rx_action(struct softirq_action *h)

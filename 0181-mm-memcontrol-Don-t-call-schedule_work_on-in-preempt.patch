@@ -47,7 +47,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/mm/memcontrol.c b/mm/memcontrol.c
-index 326525a97c47..fe1b0286e4b1 100644
+index 5d6ebd1449f0..3a615bfa678b 100644
 --- a/mm/memcontrol.c
 +++ b/mm/memcontrol.c
 @@ -1850,7 +1850,7 @@ static void drain_all_stock(struct mem_cgroup *root_memcg)

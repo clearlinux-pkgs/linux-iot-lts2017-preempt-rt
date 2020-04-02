@@ -35,10 +35,10 @@ Cc: stable-rt@vger.kernel.org
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/net/core/dev.c b/net/core/dev.c
-index f6fbe7201c30..4232db70da2f 100644
+index 359f8aaad337..eeff2a601285 100644
 --- a/net/core/dev.c
 +++ b/net/core/dev.c
-@@ -8486,7 +8486,7 @@ static int dev_cpu_dead(unsigned int oldcpu)
+@@ -8496,7 +8496,7 @@ static int dev_cpu_dead(unsigned int oldcpu)
  		netif_rx_ni(skb);
  		input_queue_head_incr(oldsd);
  	}

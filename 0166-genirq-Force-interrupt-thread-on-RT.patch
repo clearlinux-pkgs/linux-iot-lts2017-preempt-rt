@@ -32,7 +32,7 @@ index 2957da07e967..2395ebb443b9 100644
  
  #ifndef __ARCH_SET_SOFTIRQ_PENDING
 diff --git a/kernel/irq/manage.c b/kernel/irq/manage.c
-index 9c86a3e45110..06863aad8882 100644
+index 037e8fc1b008..6c5dc34c2e55 100644
 --- a/kernel/irq/manage.c
 +++ b/kernel/irq/manage.c
 @@ -24,6 +24,7 @@

@@ -11,10 +11,10 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/arch/powerpc/Kconfig b/arch/powerpc/Kconfig
-index 038445e7f5a9..cfc5829c3dab 100644
+index d5ca79439868..1f006520bf01 100644
 --- a/arch/powerpc/Kconfig
 +++ b/arch/powerpc/Kconfig
-@@ -396,7 +396,7 @@ menu "Kernel options"
+@@ -397,7 +397,7 @@ menu "Kernel options"
  
  config HIGHMEM
  	bool "High memory support"

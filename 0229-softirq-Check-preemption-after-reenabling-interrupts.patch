@@ -116,7 +116,7 @@ index 86a709954f5a..9c069ef83d6d 100644
  	return 0;
  }
 diff --git a/net/core/dev.c b/net/core/dev.c
-index f9f05b3df460..7dbd05c24770 100644
+index 36d926d2d5f0..2e9aabf8c5e0 100644
 --- a/net/core/dev.c
 +++ b/net/core/dev.c
 @@ -2460,6 +2460,7 @@ static void __netif_reschedule(struct Qdisc *q)
@@ -166,7 +166,7 @@ index f9f05b3df460..7dbd05c24770 100644
  }
  EXPORT_SYMBOL(__napi_schedule);
  
-@@ -8455,6 +8461,7 @@ static int dev_cpu_dead(unsigned int oldcpu)
+@@ -8465,6 +8471,7 @@ static int dev_cpu_dead(unsigned int oldcpu)
  
  	raise_softirq_irqoff(NET_TX_SOFTIRQ);
  	local_irq_enable();

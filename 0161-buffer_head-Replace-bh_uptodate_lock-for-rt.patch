@@ -87,7 +87,7 @@ index bdca7b10e239..ce1bbc779c75 100644
  		__this_cpu_inc(bh_accounting.nr);
  		recalc_bh_state();
 diff --git a/fs/ext4/page-io.c b/fs/ext4/page-io.c
-index db7590178dfc..d76364124443 100644
+index 9cc79b7b0df1..3f4ba2011499 100644
 --- a/fs/ext4/page-io.c
 +++ b/fs/ext4/page-io.c
 @@ -95,8 +95,7 @@ static void ext4_finish_bio(struct bio *bio)

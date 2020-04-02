@@ -57,7 +57,7 @@ index 22cff39cca29..ccc20dc115af 100644
  };
  
 diff --git a/fs/nfs/nfs4proc.c b/fs/nfs/nfs4proc.c
-index 3dd403943b07..81e21b58963f 100644
+index 4d45786738ab..b956671ad97b 100644
 --- a/fs/nfs/nfs4proc.c
 +++ b/fs/nfs/nfs4proc.c
 @@ -2712,7 +2712,7 @@ static int _nfs4_open_and_get_state(struct nfs4_opendata *opendata,

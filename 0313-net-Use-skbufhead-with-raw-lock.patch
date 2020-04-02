@@ -15,7 +15,7 @@ Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
  3 files changed, 32 insertions(+), 7 deletions(-)
 
 diff --git a/include/linux/netdevice.h b/include/linux/netdevice.h
-index 8818291815bc..f0b77dc7651f 100644
+index 31fc54757bf2..9a8a1d742246 100644
 --- a/include/linux/netdevice.h
 +++ b/include/linux/netdevice.h
 @@ -2807,6 +2807,7 @@ struct softnet_data {
@@ -52,7 +52,7 @@ index a9a764a17c28..96a2622011ff 100644
  		struct lock_class_key *class)
  {
 diff --git a/net/core/dev.c b/net/core/dev.c
-index 9e8e082e5b9e..f6fbe7201c30 100644
+index 7374f0f9a353..359f8aaad337 100644
 --- a/net/core/dev.c
 +++ b/net/core/dev.c
 @@ -217,14 +217,14 @@ static inline struct hlist_head *dev_index_hash(struct net *net, int ifindex)
@@ -140,7 +140,7 @@ index 9e8e082e5b9e..f6fbe7201c30 100644
  	for (;;) {
  		struct napi_struct *n;
  
-@@ -8477,6 +8490,9 @@ static int dev_cpu_dead(unsigned int oldcpu)
+@@ -8487,6 +8500,9 @@ static int dev_cpu_dead(unsigned int oldcpu)
  		netif_rx_ni(skb);
  		input_queue_head_incr(oldsd);
  	}
@@ -150,7 +150,7 @@ index 9e8e082e5b9e..f6fbe7201c30 100644
  
  	return 0;
  }
-@@ -8782,8 +8798,9 @@ static int __init net_dev_init(void)
+@@ -8792,8 +8808,9 @@ static int __init net_dev_init(void)
  
  		INIT_WORK(flush, flush_backlog);
  

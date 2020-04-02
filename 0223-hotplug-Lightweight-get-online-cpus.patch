@@ -42,7 +42,7 @@ index 67e8ba81c35f..580c1b5bee1e 100644
  
  /* Wrappers which go away once all code is converted */
 diff --git a/kernel/cpu.c b/kernel/cpu.c
-index 49273130e4f1..597b2353ebba 100644
+index 96c0a868232e..088542eb325e 100644
 --- a/kernel/cpu.c
 +++ b/kernel/cpu.c
 @@ -288,6 +288,21 @@ static int cpu_hotplug_disabled;

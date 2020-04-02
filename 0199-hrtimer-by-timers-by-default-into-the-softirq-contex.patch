@@ -26,10 +26,10 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  10 files changed, 48 insertions(+), 12 deletions(-)
 
 diff --git a/arch/x86/kvm/lapic.c b/arch/x86/kvm/lapic.c
-index 2307f63efd20..ce85d4a2676b 100644
+index 537c36b55b5d..76d8c0dc2da7 100644
 --- a/arch/x86/kvm/lapic.c
 +++ b/arch/x86/kvm/lapic.c
-@@ -2141,7 +2141,7 @@ int kvm_create_lapic(struct kvm_vcpu *vcpu)
+@@ -2145,7 +2145,7 @@ int kvm_create_lapic(struct kvm_vcpu *vcpu)
  	apic->vcpu = vcpu;
  
  	hrtimer_init(&apic->lapic_timer.timer, CLOCK_MONOTONIC,
@@ -63,7 +63,7 @@ index f540fe18696e..0c23bbff3d6b 100644
  
  /*
 diff --git a/kernel/events/core.c b/kernel/events/core.c
-index 2ac73b4cb8a9..4714dd5911b6 100644
+index 845c8a1a9d30..39e53182bfc1 100644
 --- a/kernel/events/core.c
 +++ b/kernel/events/core.c
 @@ -1065,7 +1065,7 @@ static void __perf_mux_hrtimer_init(struct perf_cpu_context *cpuctx, int cpu)
@@ -75,7 +75,7 @@ index 2ac73b4cb8a9..4714dd5911b6 100644
  	timer->function = perf_mux_hrtimer_handler;
  }
  
-@@ -8775,7 +8775,7 @@ static void perf_swevent_init_hrtimer(struct perf_event *event)
+@@ -8783,7 +8783,7 @@ static void perf_swevent_init_hrtimer(struct perf_event *event)
  	if (!is_sampling_event(event))
  		return;
  
@@ -219,10 +219,10 @@ index 3891b56d3ca0..580de4dfd7c8 100644
  
  	/* Get the next period (per-CPU) */
 diff --git a/kernel/watchdog.c b/kernel/watchdog.c
-index 087994b23f8b..ea4c09109ce4 100644
+index e4db5d54c07c..263a900e0b11 100644
 --- a/kernel/watchdog.c
 +++ b/kernel/watchdog.c
-@@ -462,7 +462,7 @@ static void watchdog_enable(unsigned int cpu)
+@@ -464,7 +464,7 @@ static void watchdog_enable(unsigned int cpu)
  	 * Start the timer first to prevent the NMI watchdog triggering
  	 * before the timer has a chance to fire.
  	 */

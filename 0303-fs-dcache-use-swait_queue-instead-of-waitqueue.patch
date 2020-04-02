@@ -97,10 +97,10 @@ index 4d95a416fc36..de3339103f4a 100644
  	if (!o->nodeid) {
  		/*
 diff --git a/fs/namei.c b/fs/namei.c
-index d1e467b7b9de..895363adbd32 100644
+index c5ebe33984f4..278bcb2d9efe 100644
 --- a/fs/namei.c
 +++ b/fs/namei.c
-@@ -1668,7 +1668,7 @@ static struct dentry *lookup_slow(const struct qstr *name,
+@@ -1669,7 +1669,7 @@ static struct dentry *lookup_slow(const struct qstr *name,
  {
  	struct dentry *dentry = ERR_PTR(-ENOENT), *old;
  	struct inode *inode = dir->d_inode;
@@ -109,7 +109,7 @@ index d1e467b7b9de..895363adbd32 100644
  
  	inode_lock_shared(inode);
  	/* Don't go there if it's already dead */
-@@ -3141,7 +3141,7 @@ static int lookup_open(struct nameidata *nd, struct path *path,
+@@ -3142,7 +3142,7 @@ static int lookup_open(struct nameidata *nd, struct path *path,
  	struct dentry *dentry;
  	int error, create_error = 0;
  	umode_t mode = op->mode;
@@ -119,10 +119,10 @@ index d1e467b7b9de..895363adbd32 100644
  	if (unlikely(IS_DEADDIR(dir_inode)))
  		return -ENOENT;
 diff --git a/fs/nfs/dir.c b/fs/nfs/dir.c
-index b53ce57f0ead..8e894587ad32 100644
+index 7a1d021684c6..0807358f1766 100644
 --- a/fs/nfs/dir.c
 +++ b/fs/nfs/dir.c
-@@ -452,7 +452,7 @@ static
+@@ -464,7 +464,7 @@ static
  void nfs_prime_dcache(struct dentry *parent, struct nfs_entry *entry)
  {
  	struct qstr filename = QSTR_INIT(entry->name, entry->len);
@@ -131,7 +131,7 @@ index b53ce57f0ead..8e894587ad32 100644
  	struct dentry *dentry;
  	struct dentry *alias;
  	struct inode *dir = d_inode(parent);
-@@ -1479,7 +1479,7 @@ int nfs_atomic_open(struct inode *dir, struct dentry *dentry,
+@@ -1500,7 +1500,7 @@ int nfs_atomic_open(struct inode *dir, struct dentry *dentry,
  		    struct file *file, unsigned open_flags,
  		    umode_t mode, int *opened)
  {

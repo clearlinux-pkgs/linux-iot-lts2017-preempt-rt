@@ -24,7 +24,7 @@ Signed-off-by: Tom Zanussi <zanussi@kernel.org>
  1 file changed, 3 insertions(+), 1 deletion(-)
 
 diff --git a/kernel/irq/manage.c b/kernel/irq/manage.c
-index 3d5b33fe874b..071691963f7b 100644
+index f04891ff6cc1..aa854629ee4a 100644
 --- a/kernel/irq/manage.c
 +++ b/kernel/irq/manage.c
 @@ -352,7 +352,9 @@ irq_set_affinity_notifier(unsigned int irq, struct irq_affinity_notify *notify)

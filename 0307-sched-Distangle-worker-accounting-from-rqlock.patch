@@ -160,7 +160,7 @@ index fee94fc02ac2..de6b2b7cf845 100644
  EXPORT_SYMBOL(schedule);
  
 diff --git a/kernel/workqueue.c b/kernel/workqueue.c
-index 86d22614a405..26144f91f9b5 100644
+index 1934f654af24..80743305176b 100644
 --- a/kernel/workqueue.c
 +++ b/kernel/workqueue.c
 @@ -845,43 +845,32 @@ static void wake_up_worker(struct worker_pool *pool)

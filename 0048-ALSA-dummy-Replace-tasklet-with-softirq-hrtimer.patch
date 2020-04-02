@@ -23,7 +23,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 12 insertions(+), 15 deletions(-)
 
 diff --git a/sound/drivers/dummy.c b/sound/drivers/dummy.c
-index c0939a0164a6..549e014ecc0d 100644
+index aeb65d7d4cb3..738d5e327105 100644
 --- a/sound/drivers/dummy.c
 +++ b/sound/drivers/dummy.c
 @@ -376,17 +376,9 @@ struct dummy_hrtimer_pcm {

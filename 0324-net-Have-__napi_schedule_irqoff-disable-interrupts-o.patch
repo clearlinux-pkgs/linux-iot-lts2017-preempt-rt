@@ -27,7 +27,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  2 files changed, 14 insertions(+)
 
 diff --git a/include/linux/netdevice.h b/include/linux/netdevice.h
-index 1c3b8174da67..f5e558778fa8 100644
+index 794c18e41f9c..30d69acf66cf 100644
 --- a/include/linux/netdevice.h
 +++ b/include/linux/netdevice.h
 @@ -409,7 +409,19 @@ typedef enum rx_handler_result rx_handler_result_t;
@@ -51,7 +51,7 @@ index 1c3b8174da67..f5e558778fa8 100644
  static inline bool napi_disable_pending(struct napi_struct *n)
  {
 diff --git a/net/core/dev.c b/net/core/dev.c
-index 400025c260c5..5c23752e051c 100644
+index dc5de086ec6b..37cff1a59e7e 100644
 --- a/net/core/dev.c
 +++ b/net/core/dev.c
 @@ -5294,6 +5294,7 @@ bool napi_schedule_prep(struct napi_struct *n)

@@ -38,7 +38,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 6 insertions(+), 7 deletions(-)
 
 diff --git a/mm/memcontrol.c b/mm/memcontrol.c
-index 1600f527c38b..0503b31e2a87 100644
+index b3b5a8c94b7c..1d040e0f6f76 100644
 --- a/mm/memcontrol.c
 +++ b/mm/memcontrol.c
 @@ -1742,7 +1742,6 @@ struct memcg_stock_pcp {

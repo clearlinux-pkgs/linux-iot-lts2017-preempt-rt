@@ -15,10 +15,10 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 1 insertion(+)
 
 diff --git a/mm/slub.c b/mm/slub.c
-index 7572ec72386b..f2b4b6a80a82 100644
+index ef33da67ac82..235104a22215 100644
 --- a/mm/slub.c
 +++ b/mm/slub.c
-@@ -3218,6 +3218,7 @@ int kmem_cache_alloc_bulk(struct kmem_cache *s, gfp_t flags, size_t size,
+@@ -3227,6 +3227,7 @@ int kmem_cache_alloc_bulk(struct kmem_cache *s, gfp_t flags, size_t size,
  	return i;
  error:
  	local_irq_enable();

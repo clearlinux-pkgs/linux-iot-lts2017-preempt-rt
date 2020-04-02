@@ -22,7 +22,7 @@ Signed-off-by: Tom Zanussi <zanussi@kernel.org>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/drivers/pci/switch/switchtec.c b/drivers/pci/switch/switchtec.c
-index 0f27427b3ea4..9a9a3352d8d1 100644
+index 1b7d56cbc54d..d3126bbe361e 100644
 --- a/drivers/pci/switch/switchtec.c
 +++ b/drivers/pci/switch/switchtec.c
 @@ -621,7 +621,7 @@ static int switchtec_dev_open(struct inode *inode, struct file *filp)

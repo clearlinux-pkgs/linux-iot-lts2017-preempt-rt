@@ -15,10 +15,10 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/kernel/time/alarmtimer.c b/kernel/time/alarmtimer.c
-index f4255a65c44b..1d1f077cffb3 100644
+index 9eece67f29f3..a465564367ec 100644
 --- a/kernel/time/alarmtimer.c
 +++ b/kernel/time/alarmtimer.c
-@@ -436,7 +436,7 @@ int alarm_cancel(struct alarm *alarm)
+@@ -438,7 +438,7 @@ int alarm_cancel(struct alarm *alarm)
  		int ret = alarm_try_to_cancel(alarm);
  		if (ret >= 0)
  			return ret;

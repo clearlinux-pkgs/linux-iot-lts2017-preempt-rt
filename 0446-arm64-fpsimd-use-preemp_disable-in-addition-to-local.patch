@@ -25,7 +25,7 @@ Signed-off-by: Tom Zanussi <tom.zanussi@linux.intel.com>
  1 file changed, 10 insertions(+)
 
 diff --git a/arch/arm64/kernel/fpsimd.c b/arch/arm64/kernel/fpsimd.c
-index f4fdf6420ac5..2531e485d615 100644
+index 4cd962f6c430..6cf375d5df41 100644
 --- a/arch/arm64/kernel/fpsimd.c
 +++ b/arch/arm64/kernel/fpsimd.c
 @@ -173,6 +173,7 @@ void fpsimd_flush_thread(void)
@@ -59,15 +59,15 @@ index f4fdf6420ac5..2531e485d615 100644
  }
  
  /*
-@@ -209,6 +213,7 @@ void fpsimd_restore_current_state(void)
- 	if (!system_supports_fpsimd())
+@@ -220,6 +224,7 @@ void fpsimd_restore_current_state(void)
  		return;
+ 	}
  
 +	preempt_disable();
  	local_bh_disable();
  
  	if (test_and_clear_thread_flag(TIF_FOREIGN_FPSTATE)) {
-@@ -220,6 +225,7 @@ void fpsimd_restore_current_state(void)
+@@ -231,6 +236,7 @@ void fpsimd_restore_current_state(void)
  	}
  
  	local_bh_enable();
@@ -75,15 +75,15 @@ index f4fdf6420ac5..2531e485d615 100644
  }
  
  /*
-@@ -232,6 +238,7 @@ void fpsimd_update_current_state(struct fpsimd_state *state)
- 	if (!system_supports_fpsimd())
+@@ -243,6 +249,7 @@ void fpsimd_update_current_state(struct fpsimd_state *state)
+ 	if (WARN_ON(!system_supports_fpsimd()))
  		return;
  
 +	preempt_disable();
  	local_bh_disable();
  
  	fpsimd_load_state(state);
-@@ -243,6 +250,7 @@ void fpsimd_update_current_state(struct fpsimd_state *state)
+@@ -254,6 +261,7 @@ void fpsimd_update_current_state(struct fpsimd_state *state)
  	}
  
  	local_bh_enable();
@@ -91,7 +91,7 @@ index f4fdf6420ac5..2531e485d615 100644
  }
  
  /*
-@@ -282,6 +290,7 @@ void kernel_neon_begin(void)
+@@ -293,6 +301,7 @@ void kernel_neon_begin(void)
  
  	BUG_ON(!may_use_simd());
  
@@ -99,7 +99,7 @@ index f4fdf6420ac5..2531e485d615 100644
  	local_bh_disable();
  
  	__this_cpu_write(kernel_neon_busy, true);
-@@ -296,6 +305,7 @@ void kernel_neon_begin(void)
+@@ -307,6 +316,7 @@ void kernel_neon_begin(void)
  	preempt_disable();
  
  	local_bh_enable();

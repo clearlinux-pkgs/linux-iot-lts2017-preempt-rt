@@ -12,7 +12,7 @@ Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  1 file changed, 16 insertions(+), 8 deletions(-)
 
 diff --git a/mm/memcontrol.c b/mm/memcontrol.c
-index fe1b0286e4b1..0503b31e2a87 100644
+index 3a615bfa678b..1d040e0f6f76 100644
 --- a/mm/memcontrol.c
 +++ b/mm/memcontrol.c
 @@ -69,6 +69,7 @@
@@ -91,7 +91,7 @@ index fe1b0286e4b1..0503b31e2a87 100644
  }
  
  DEFINE_STATIC_KEY_FALSE(memcg_sockets_enabled_key);
-@@ -6046,6 +6049,7 @@ void mem_cgroup_swapout(struct page *page, swp_entry_t entry)
+@@ -6036,6 +6039,7 @@ void mem_cgroup_swapout(struct page *page, swp_entry_t entry)
  	struct mem_cgroup *memcg, *swap_memcg;
  	unsigned int nr_entries;
  	unsigned short oldid;
@@ -99,7 +99,7 @@ index fe1b0286e4b1..0503b31e2a87 100644
  
  	VM_BUG_ON_PAGE(PageLRU(page), page);
  	VM_BUG_ON_PAGE(page_count(page), page);
-@@ -6091,13 +6095,17 @@ void mem_cgroup_swapout(struct page *page, swp_entry_t entry)
+@@ -6081,13 +6085,17 @@ void mem_cgroup_swapout(struct page *page, swp_entry_t entry)
  	 * important here to have the interrupts disabled because it is the
  	 * only synchronisation we have for udpating the per-CPU variables.
  	 */

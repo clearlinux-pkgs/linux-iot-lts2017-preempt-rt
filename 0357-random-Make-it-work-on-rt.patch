@@ -126,10 +126,10 @@ index 79f987b942b8..d1dbacc29941 100644
  	if (!noirqdebug)
  		note_interrupt(desc, retval);
 diff --git a/kernel/irq/manage.c b/kernel/irq/manage.c
-index e12dce05b026..f9415590661c 100644
+index 30b47e04e640..acef33fc9a05 100644
 --- a/kernel/irq/manage.c
 +++ b/kernel/irq/manage.c
-@@ -1038,6 +1038,12 @@ static int irq_thread(void *data)
+@@ -1024,6 +1024,12 @@ static int irq_thread(void *data)
  		if (action_ret == IRQ_WAKE_THREAD)
  			irq_wake_secondary(desc, action);
  
