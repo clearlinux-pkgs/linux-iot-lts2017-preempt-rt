@@ -8,7 +8,7 @@ Subject: [PATCH] fix x86/intel_rdt: update cpus_ptr pointer
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/arch/x86/kernel/cpu/intel_rdt_pseudo_lock.c b/arch/x86/kernel/cpu/intel_rdt_pseudo_lock.c
-index 07fb58362..17482ea30 100644
+index 07fb58362381..17482ea3029d 100644
 --- a/arch/x86/kernel/cpu/intel_rdt_pseudo_lock.c
 +++ b/arch/x86/kernel/cpu/intel_rdt_pseudo_lock.c
 @@ -1501,7 +1501,7 @@ static int pseudo_lock_dev_mmap(struct file *filp, struct vm_area_struct *vma)
